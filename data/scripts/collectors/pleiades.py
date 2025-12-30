@@ -63,11 +63,13 @@ class PleiadesCollector:
         graph = places_data.get("@graph", [])
 
         for place in graph:
-            # Skip non-place entries
-            if place.get("@type") != "Place":
-                continue
+            # Pleiades uses type=FeatureCollection for places
+            if place.get("type") not in ("FeatureCollection", "Place"):
+                # Also check @type for older format
+                if place.get("@type") != "Place":
+                    continue
 
-            # Extract coordinates
+            # Extract coordinates from reprPoint or features
             coords = None
             repr_point = place.get("reprPoint")
             if repr_point and len(repr_point) >= 2:
@@ -75,12 +77,28 @@ class PleiadesCollector:
                 lon, lat = repr_point[0], repr_point[1]
                 coords = {"latitude": lat, "longitude": lon}
 
+            # Try features if no reprPoint
+            if not coords:
+                features = place.get("features", [])
+                for feat in features:
+                    geom = feat.get("geometry")
+                    if geom and geom.get("type") == "Point":
+                        coord_list = geom.get("coordinates", [])
+                        if len(coord_list) >= 2:
+                            lon, lat = coord_list[0], coord_list[1]
+                            coords = {"latitude": lat, "longitude": lon}
+                            break
+
             if not coords:
                 continue
 
+            # Get ID from id field or @id field
+            pleiades_id = str(place.get("id", "")) or place.get("@id", "").split("/")[-1]
+            uri = place.get("uri") or place.get("@id")
+
             location = {
-                "pleiades_id": place.get("@id", "").split("/")[-1],
-                "uri": place.get("@id"),
+                "pleiades_id": pleiades_id,
+                "uri": uri,
                 "title": place.get("title"),
                 "description": place.get("description"),
                 "names": [],
@@ -108,7 +126,8 @@ class PleiadesCollector:
                     })
 
             # Extract connections to other places
-            for conn in place.get("connectsWith", []):
+            connections = place.get("connectsWith", []) or place.get("connections", [])
+            for conn in connections:
                 if isinstance(conn, str):
                     location["connections"].append(conn.split("/")[-1])
 

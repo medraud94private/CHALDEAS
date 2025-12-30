@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(pip install:*)",
+      "Bash(docker --version:*)",
+      "Bash(docker-compose:*)",
+      "Bash(python data/scripts/collect_all.py:*)",
+      "Bash(python data/scripts/transform_data.py:*)",
+      "Bash(psql:*)",
+      "Bash(python:*)",
+      "Bash(uvicorn:*)",
+      "Bash(curl:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(cat:*)",
+      "Bash(npm view:*)",
+      "Bash(netstat:*)",
+      "Bash(taskkill:*)",
+      "Bash(ls:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(gh auth status:*)",
+      "WebFetch(domain:www.cgtrader.com)",
+      "WebFetch(domain:svs.gsfc.nasa.gov)",
+      "WebFetch(domain:supermap.world)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git restore:*)"
+    ]
+  }
+}

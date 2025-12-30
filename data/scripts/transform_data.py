@@ -123,8 +123,8 @@ class DataTransformer:
         # Transform each source
         await self.transform_wikidata()
         await self.transform_pleiades()
+        await self.transform_dbpedia()
         # await self.transform_perseus()  # Future
-        # await self.transform_gutenberg()  # Future
 
         # Save statistics
         self._save_stats()
@@ -414,6 +414,183 @@ class DataTransformer:
 
         print(f"  Saved {len(unified_locations)} locations to {output_file.name}")
 
+    async def transform_dbpedia(self):
+        """Transform DBpedia collected data."""
+        dbpedia_dir = self.input_dir / "dbpedia"
+        if not dbpedia_dir.exists():
+            print("DBpedia data not found, skipping...")
+            return
+
+        print("\nTransforming DBpedia data...")
+
+        # Process events
+        events_file = dbpedia_dir / "dbpedia_events.json"
+        if events_file.exists():
+            await self._transform_dbpedia_events(events_file)
+
+        # Process places
+        places_file = dbpedia_dir / "dbpedia_places.json"
+        if places_file.exists():
+            await self._transform_dbpedia_places(places_file)
+
+        # Process persons
+        persons_file = dbpedia_dir / "dbpedia_persons.json"
+        if persons_file.exists():
+            await self._transform_dbpedia_persons(persons_file)
+
+    async def _transform_dbpedia_events(self, file_path: Path):
+        """Transform DBpedia events."""
+        print(f"  Processing events from {file_path.name}...")
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            raw_events = json.load(f)
+
+        unified_events = []
+
+        for raw in raw_events:
+            self.stats["events_processed"] += 1
+
+            date_start, date_precision = self._parse_date(raw.get("date"))
+            if date_start is None:
+                continue
+
+            lat, lng = None, None
+            coords = raw.get("coordinates")
+            if coords:
+                lat = coords.get("latitude")
+                lng = coords.get("longitude")
+                self.stats["events_with_coords"] += 1
+
+            dbpedia_id = raw.get("dbpedia_id", "")
+            event = UnifiedEvent(
+                id=f"dbp_{dbpedia_id}",
+                title=raw.get("name"),
+                title_ko=None,
+                description=raw.get("description"),
+                description_ko=None,
+                date_start=date_start,
+                date_end=None,
+                date_precision=date_precision,
+                location_name=raw.get("location"),
+                latitude=lat,
+                longitude=lng,
+                location_source="dbpedia" if lat else None,
+                location_confidence=0.85 if lat else None,
+                category=raw.get("category", "general"),
+                importance=3,
+                source_type="dbpedia",
+                source_id=dbpedia_id,
+                source_url=raw.get("uri"),
+                related_persons=[],
+                related_events=[],
+                tags=[],
+            )
+
+            unified_events.append(asdict(event))
+
+        output_file = self.output_dir / "events_dbpedia.json"
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(unified_events, f, indent=2, ensure_ascii=False)
+
+        print(f"  Saved {len(unified_events)} events to {output_file.name}")
+
+    async def _transform_dbpedia_places(self, file_path: Path):
+        """Transform DBpedia places."""
+        print(f"  Processing places from {file_path.name}...")
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            raw_places = json.load(f)
+
+        unified_locations = []
+
+        for raw in raw_places:
+            self.stats["locations_processed"] += 1
+
+            coords = raw.get("coordinates")
+            if not coords:
+                continue
+
+            dbpedia_id = raw.get("dbpedia_id", "")
+            location = UnifiedLocation(
+                id=f"dbp_{dbpedia_id}",
+                name=raw.get("name"),
+                name_ko=None,
+                modern_name=None,
+                latitude=coords.get("latitude"),
+                longitude=coords.get("longitude"),
+                location_type="historic_place",
+                time_periods=[],
+                source_type="dbpedia",
+                source_id=dbpedia_id,
+                source_url=raw.get("uri"),
+                pleiades_id=None,
+                wikidata_id=None,
+            )
+
+            unified_locations.append(asdict(location))
+
+        output_file = self.output_dir / "locations_dbpedia.json"
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(unified_locations, f, indent=2, ensure_ascii=False)
+
+        print(f"  Saved {len(unified_locations)} locations to {output_file.name}")
+
+    async def _transform_dbpedia_persons(self, file_path: Path):
+        """Transform DBpedia persons."""
+        print(f"  Processing persons from {file_path.name}...")
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            raw_persons = json.load(f)
+
+        unified_persons = []
+
+        for raw in raw_persons:
+            self.stats["persons_processed"] += 1
+
+            birth_year, _ = self._parse_date(raw.get("birth_date"))
+            death_year, _ = self._parse_date(raw.get("death_date"))
+
+            birth_lat, birth_lng = None, None
+            if raw.get("birth_coordinates"):
+                birth_lat = raw["birth_coordinates"].get("latitude")
+                birth_lng = raw["birth_coordinates"].get("longitude")
+                self.stats["persons_with_coords"] += 1
+
+            death_lat, death_lng = None, None
+            if raw.get("death_coordinates"):
+                death_lat = raw["death_coordinates"].get("latitude")
+                death_lng = raw["death_coordinates"].get("longitude")
+
+            dbpedia_id = raw.get("dbpedia_id", "")
+            person = UnifiedPerson(
+                id=f"dbp_{dbpedia_id}",
+                name=raw.get("name"),
+                name_ko=None,
+                description=raw.get("description"),
+                birth_year=birth_year,
+                death_year=death_year,
+                birth_place=raw.get("birth_place"),
+                birth_latitude=birth_lat,
+                birth_longitude=birth_lng,
+                death_place=raw.get("death_place"),
+                death_latitude=death_lat,
+                death_longitude=death_lng,
+                occupation=None,
+                source_type="dbpedia",
+                source_id=dbpedia_id,
+                source_url=raw.get("uri"),
+                related_events=[],
+                tags=[],
+            )
+
+            unified_persons.append(asdict(person))
+
+        output_file = self.output_dir / "persons_dbpedia.json"
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(unified_persons, f, indent=2, ensure_ascii=False)
+
+        print(f"  Saved {len(unified_persons)} persons to {output_file.name}")
+
     def _parse_date(self, date_str: str) -> tuple[Optional[int], str]:
         """
         Parse a date string into year (BCE as negative) and precision.
@@ -425,22 +602,24 @@ class DataTransformer:
             return None, "unknown"
 
         try:
-            # ISO format: 2024-01-15T00:00:00Z or -0490-01-01T00:00:00Z
-            if "T" in date_str:
-                date_part = date_str.split("T")[0]
+            # Remove timezone info if present
+            date_str = date_str.split("T")[0] if "T" in date_str else date_str
 
-                # Handle BCE dates (negative years)
-                if date_part.startswith("-"):
-                    # Format: -YYYY-MM-DD
-                    year = int(date_part.split("-")[1]) * -1
-                    return year, "year"
-                else:
-                    # Format: YYYY-MM-DD
-                    year = int(date_part.split("-")[0])
-                    return year, "year"
+            # Handle BCE dates (negative years)
+            if date_str.startswith("-"):
+                # Format: -YYYY-MM-DD or -YYYY
+                parts = date_str[1:].split("-")
+                year = int(parts[0]) * -1
+                return year, "year"
+
+            # Handle YYYY-MM-DD format
+            if "-" in date_str:
+                parts = date_str.split("-")
+                year = int(parts[0])
+                return year, "year"
 
             # Simple year
-            if date_str.lstrip("-").isdigit():
+            if date_str.isdigit():
                 return int(date_str), "year"
 
         except (ValueError, IndexError):

@@ -101,7 +101,7 @@ async def rag_chat(request: RAGRequest):
 
     Uses:
     - text-embedding-3-large for semantic search
-    - gpt-4o-mini for response generation
+    - gpt-5-nano for response generation
     - pgvector for vector storage
 
     Example:

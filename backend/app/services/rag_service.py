@@ -56,7 +56,7 @@ Fate/Grand Order의 칼데아 시스템처럼, 역사적 사건과 인물에 대
         self,
         embedding_service: Optional[EmbeddingService] = None,
         vector_store: Optional[VectorStore] = None,
-        chat_model: str = "gpt-4o-mini",
+        chat_model: str = "gpt-5-nano",
         api_key: Optional[str] = None
     ):
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
