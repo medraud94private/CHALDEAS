@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --chaldea-primary: #1a1a2e;
+  --chaldea-secondary: #16213e;
+  --chaldea-accent: #0f3460;
+  --chaldea-gold: #e94560;
+  --chaldea-light: #eaeaea;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--chaldea-primary);
+  color: var(--chaldea-light);
+  overflow: hidden;
+}
+
+/* Globe container */
+.globe-container {
+  position: absolute;
+  inset: 0;
+}
+
+/* Timeline slider */
+.timeline-slider {
+  background: linear-gradient(to top, rgba(22, 33, 62, 0.95), transparent);
+  padding: 1rem 2rem 2rem;
+}
+
+/* Wiki panel */
+.wiki-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background: rgba(22, 33, 62, 0.95);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.wiki-panel.open {
+  transform: translateX(0);
+}
+
+/* Marker tooltip */
+.marker-tooltip {
+  background: rgba(22, 33, 62, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  max-width: 200px;
+}
+
+.marker-tooltip strong {
+  color: #e94560;
+}
+
+/* Search bar */
+.search-bar input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: white;
+  width: 100%;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.search-bar input:focus {
+  border-color: var(--chaldea-gold);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--chaldea-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chaldea-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--chaldea-gold);
+}
