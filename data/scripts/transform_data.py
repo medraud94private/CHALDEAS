@@ -69,6 +69,7 @@ class UnifiedPerson:
     occupation: Optional[str]
     source_type: str
     source_id: Optional[str]
+    source_url: Optional[str]
     related_events: list[str]
     tags: list[str]
 
@@ -86,6 +87,7 @@ class UnifiedLocation:
     time_periods: list[str]
     source_type: str
     source_id: Optional[str]
+    source_url: Optional[str]
     pleiades_id: Optional[str]
     wikidata_id: Optional[str]
 
@@ -197,13 +199,13 @@ class DataTransformer:
                     self.stats["events_resolved"] += 1
                     self._track_resolution_source(resolved.source)
 
-            # Determine category from description
-            category = self._categorize_event(raw.get("description", ""))
+            # Use category from raw if available, otherwise determine from description
+            category = raw.get("category") or self._categorize_event(raw.get("description", ""))
 
             event = UnifiedEvent(
                 id=f"wd_{raw.get('wikidata_id', '')}",
                 title=raw.get("name"),
-                title_ko=None,  # Can add translation later
+                title_ko=None,
                 description=raw.get("description"),
                 description_ko=None,
                 date_start=date_start,
@@ -278,8 +280,9 @@ class DataTransformer:
                     death_lat = resolved.latitude
                     death_lng = resolved.longitude
 
+            wikidata_id = raw.get("wikidata_id", "")
             person = UnifiedPerson(
-                id=f"wd_{raw.get('wikidata_id', '')}",
+                id=f"wd_{wikidata_id}",
                 name=raw.get("name"),
                 name_ko=None,
                 description=raw.get("description"),
@@ -293,7 +296,8 @@ class DataTransformer:
                 death_longitude=death_lng,
                 occupation=raw.get("occupation"),
                 source_type="wikidata",
-                source_id=raw.get("wikidata_id"),
+                source_id=wikidata_id,
+                source_url=f"https://www.wikidata.org/wiki/{wikidata_id}" if wikidata_id else None,
                 related_events=[],
                 tags=[],
             )
@@ -327,8 +331,9 @@ class DataTransformer:
             if not coords:
                 continue
 
+            wikidata_id = raw.get("wikidata_id", "")
             location = UnifiedLocation(
-                id=f"wd_{raw.get('wikidata_id', '')}",
+                id=f"wd_{wikidata_id}",
                 name=raw.get("name"),
                 name_ko=None,
                 modern_name=None,
@@ -337,9 +342,10 @@ class DataTransformer:
                 location_type="city",
                 time_periods=[],
                 source_type="wikidata",
-                source_id=raw.get("wikidata_id"),
+                source_id=wikidata_id,
+                source_url=f"https://www.wikidata.org/wiki/{wikidata_id}" if wikidata_id else None,
                 pleiades_id=None,
-                wikidata_id=raw.get("wikidata_id"),
+                wikidata_id=wikidata_id,
             )
 
             unified_locations.append(asdict(location))
@@ -382,8 +388,9 @@ class DataTransformer:
                 if isinstance(tp, dict) and tp.get("period"):
                     time_periods.append(tp["period"])
 
+            pleiades_id = raw.get("pleiades_id", "")
             location = UnifiedLocation(
-                id=f"pl_{raw.get('pleiades_id', '')}",
+                id=f"pl_{pleiades_id}",
                 name=raw.get("title"),
                 name_ko=None,
                 modern_name=None,
@@ -392,8 +399,9 @@ class DataTransformer:
                 location_type=raw.get("place_types", ["unknown"])[0] if raw.get("place_types") else "unknown",
                 time_periods=time_periods,
                 source_type="pleiades",
-                source_id=raw.get("pleiades_id"),
-                pleiades_id=raw.get("pleiades_id"),
+                source_id=pleiades_id,
+                source_url=f"https://pleiades.stoa.org/places/{pleiades_id}" if pleiades_id else None,
+                pleiades_id=pleiades_id,
                 wikidata_id=None,
             )
 
