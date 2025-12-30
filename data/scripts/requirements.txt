@@ -1,0 +1,12 @@
+# HTTP Client
+httpx==0.26.0
+
+# Database
+asyncpg==0.29.0
+
+# HTML Parsing
+beautifulsoup4==4.12.2
+lxml==5.1.0
+
+# Utilities
+python-dotenv==1.0.0
