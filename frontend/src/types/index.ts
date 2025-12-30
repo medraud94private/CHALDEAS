@@ -26,18 +26,22 @@ export interface Location {
 }
 
 export interface Event {
-  id: number
+  id: number | string
   title: string
   title_ko?: string
-  slug: string
+  slug?: string
   description?: string
   description_ko?: string
   date_start: number // Negative for BCE
   date_end?: number
-  date_display: string // "490 BCE"
-  date_precision: 'exact' | 'year' | 'decade' | 'century'
-  importance: 1 | 2 | 3 | 4 | 5
-  category?: Category
+  date_display?: string // "490 BCE"
+  date_precision?: 'exact' | 'year' | 'decade' | 'century'
+  importance: number
+  category?: Category | string
+  // Direct coordinates (from API)
+  latitude?: number
+  longitude?: number
+  // Or nested location object
   location?: Location // Primary location
   locations?: LocationRole[]
   persons?: PersonRole[]

@@ -45,23 +45,33 @@ export function GlobeContainer({ onEventClick }: GlobeContainerProps) {
     }
   }, [eventsData, setEvents])
 
+  // Category colors
+  const categoryColors: Record<string, string> = {
+    battle: '#EF4444',      // Red
+    war: '#DC2626',         // Dark red
+    political: '#3B82F6',   // Blue
+    cultural: '#8B5CF6',    // Purple
+    scientific: '#10B981',  // Green
+    religious: '#F59E0B',   // Amber
+    general: '#6B7280',     // Gray
+  }
+
   // Filter events for current time
   const visibleEvents = useMemo(() => {
     return events.filter((event) => {
       const start = event.date_start
       const end = event.date_end || start
 
-      // Check time range (within 20 years)
-      if (Math.abs(currentYear - start) > 20 && currentYear < start) return false
-      if (Math.abs(currentYear - end) > 20 && currentYear > end) return false
+      // Check time range (within 50 years for more visibility)
+      if (Math.abs(currentYear - start) > 50 && currentYear < start) return false
+      if (Math.abs(currentYear - end) > 50 && currentYear > end) return false
 
-      // Check category filter
-      if (
-        selectedCategories.length > 0 &&
-        event.category &&
-        !selectedCategories.includes(event.category.id)
-      ) {
-        return false
+      // Check category filter (handle both string and object category)
+      if (selectedCategories.length > 0 && event.category) {
+        const catId = typeof event.category === 'string'
+          ? event.category
+          : event.category.id
+        if (!selectedCategories.includes(catId)) return false
       }
 
       // Check importance filter
@@ -73,7 +83,10 @@ export function GlobeContainer({ onEventClick }: GlobeContainerProps) {
 
   // Marker color based on category
   const getMarkerColor = useCallback((event: Event) => {
-    return event.category?.color || '#3B82F6'
+    const cat = typeof event.category === 'string'
+      ? event.category
+      : event.category?.slug || 'general'
+    return categoryColors[cat] || '#3B82F6'
   }, [])
 
   // Marker size based on importance
@@ -98,8 +111,8 @@ export function GlobeContainer({ onEventClick }: GlobeContainerProps) {
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         // Points Layer (Event Markers)
         pointsData={visibleEvents}
-        pointLat={(d: Event) => d.location?.latitude || 0}
-        pointLng={(d: Event) => d.location?.longitude || 0}
+        pointLat={(d: Event) => d.latitude || d.location?.latitude || 0}
+        pointLng={(d: Event) => d.longitude || d.location?.longitude || 0}
         pointColor={getMarkerColor}
         pointAltitude={getMarkerAltitude}
         pointRadius={getMarkerSize}
