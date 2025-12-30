@@ -1,57 +1,66 @@
 """
 Locations API endpoints.
 
-Provides CRUD operations for geographical locations.
+Provides access to geographical locations from Pleiades and Wikidata.
 """
-from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy.orm import Session
+from fastapi import APIRouter, Query
 from typing import Optional
 
-from app.db.session import get_db
-from app.schemas.location import Location, LocationList, LocationDetail
-from app.services import location_service
+from app.services.json_data import get_data_service
 
 router = APIRouter()
 
 
-@router.get("", response_model=LocationList)
+@router.get("")
 async def list_locations(
-    type: Optional[str] = Query(None, description="Location type (city, region, landmark)"),
-    limit: int = Query(100, ge=1, le=1000),
-    offset: int = Query(0, ge=0),
-    db: Session = Depends(get_db),
+    lat_min: Optional[float] = Query(None, description="Minimum latitude"),
+    lat_max: Optional[float] = Query(None, description="Maximum latitude"),
+    lng_min: Optional[float] = Query(None, description="Minimum longitude"),
+    lng_max: Optional[float] = Query(None, description="Maximum longitude"),
+    limit: int = Query(100, ge=1, le=10000),
 ):
-    """List locations with optional filtering."""
-    locations, total = location_service.get_locations(
-        db,
-        location_type=type,
+    """
+    List locations with optional bounding box filtering.
+
+    Returns locations from Pleiades and Wikidata sources.
+    """
+    data_service = get_data_service()
+    locations = data_service.get_locations(
+        lat_min=lat_min,
+        lat_max=lat_max,
+        lng_min=lng_min,
+        lng_max=lng_max,
         limit=limit,
-        offset=offset,
     )
-    return LocationList(items=locations, total=total)
+    return {
+        "items": locations,
+        "total": len(data_service.locations),
+        "filtered": len(locations),
+    }
 
 
-@router.get("/{location_id}", response_model=LocationDetail)
-async def get_location(
-    location_id: int,
-    db: Session = Depends(get_db),
-):
-    """Get detailed information about a location."""
-    location = location_service.get_location_by_id(db, location_id)
-    if not location:
-        raise HTTPException(status_code=404, detail="Location not found")
-    return location
+@router.get("/stats")
+async def get_location_stats():
+    """Get statistics about location data."""
+    data_service = get_data_service()
+    locations = data_service.locations
+
+    # Count by source
+    pleiades_count = sum(1 for l in locations if l.get("source") == "pleiades")
+    wikidata_count = sum(1 for l in locations if l.get("source") == "wikidata")
+
+    return {
+        "total": len(locations),
+        "pleiades": pleiades_count,
+        "wikidata": wikidata_count,
+    }
 
 
-@router.get("/{location_id}/events")
-async def get_location_events(
-    location_id: int,
-    year_start: Optional[int] = Query(None),
-    year_end: Optional[int] = Query(None),
-    db: Session = Depends(get_db),
-):
-    """Get events that occurred at a location."""
-    events = location_service.get_location_events(
-        db, location_id, year_start, year_end
-    )
-    return {"location_id": location_id, "events": events}
+@router.get("/{location_id}")
+async def get_location(location_id: str):
+    """Get detailed information about a specific location."""
+    data_service = get_data_service()
+    for location in data_service.locations:
+        if location.get("id") == location_id:
+            return location
+    return {"error": "Location not found"}
