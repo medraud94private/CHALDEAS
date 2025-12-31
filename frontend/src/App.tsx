@@ -53,7 +53,7 @@ function App() {
   // Fetch ALL events for sidebar (not time-filtered)
   const { data: allEventsData } = useQuery({
     queryKey: ['all-events'],
-    queryFn: () => api.get('/events', { params: { limit: 1000 } }),
+    queryFn: () => api.get('/events', { params: { limit: 15000 } }),
     select: (res) => res.data.items,
   })
 
@@ -82,7 +82,7 @@ function App() {
       return true
     })
     .sort((a: Event, b: Event) => a.date_start - b.date_start)
-    .slice(0, 100)
+    .slice(0, 500)
 
   const yearDisplay = formatYear(currentYear)
 
