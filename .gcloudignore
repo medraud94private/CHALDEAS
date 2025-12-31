@@ -1,0 +1,17 @@
+# Large files - 업로드 제외
+*.sql
+*.dump
+*.exe
+
+# Dependencies
+node_modules/
+__pycache__/
+.venv/
+
+# Git
+.git
+
+# Temp
+*.log
+test_output.txt
+filter_test.txt

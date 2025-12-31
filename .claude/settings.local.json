@@ -115,7 +115,19 @@
       "Bash(gsutil iam ch:*)",
       "Bash(gcloud artifacts repositories create:*)",
       "Bash(gcloud artifacts repositories add-iam-policy-binding:*)",
-      "Bash(timeout 30 python:*)"
+      "Bash(timeout 30 python:*)",
+      "Bash(\"/c/Program Files/PostgreSQL/18/bin/psql.exe\" -U postgres -h localhost -p 5433 -d chaldeas -c \"SELECT ''events'' as t, COUNT\\(*\\) FROM events UNION ALL SELECT ''persons'', COUNT\\(*\\) FROM persons UNION ALL SELECT ''locations'', COUNT\\(*\\) FROM locations ORDER BY t;\")",
+      "Bash(\"/c/Program Files/PostgreSQL/18/bin/psql.exe\" -U postgres -h localhost -p 5432 -d chaldeas -c \"SELECT ''events'' as t, COUNT\\(*\\) FROM events UNION ALL SELECT ''persons'', COUNT\\(*\\) FROM persons UNION ALL SELECT ''locations'', COUNT\\(*\\) FROM locations ORDER BY t;\")",
+      "Bash(gcloud sql instances patch:*)",
+      "Bash(gcloud sql users set-password:*)",
+      "Bash(PGPASSWORD=chaldeas_gcp_2025 \"/c/Program Files/PostgreSQL/18/bin/psql.exe\":*)",
+      "Bash(PGPASSWORD=chaldeas_dev \"/c/Program Files/PostgreSQL/18/bin/psql.exe\":*)",
+      "Bash(PGPASSWORD=chaldeas_dev \"/c/Program Files/PostgreSQL/18/bin/pg_dump.exe\":*)",
+      "Bash(gcloud secrets versions access:*)",
+      "Bash(gcloud secrets versions add:*)",
+      "Bash(gcloud run deploy:*)",
+      "Bash(gsutil mb:*)",
+      "Bash(gcloud storage buckets create:*)"
     ]
   }
 }

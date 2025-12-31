@@ -25,7 +25,7 @@ class VectorStore:
     def __init__(
         self,
         connection_string: Optional[str] = None,
-        embedding_dimension: int = 3072  # text-embedding-3-large
+        embedding_dimension: int = 1536  # text-embedding-3-small
     ):
         self.connection_string = connection_string or os.getenv("DATABASE_URL")
         self.embedding_dimension = embedding_dimension
