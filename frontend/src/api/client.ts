@@ -71,8 +71,8 @@ export const chatApi = {
     api.post('/chat', { query, context }),
   observe: (query: string) => api.post('/chat/observe', { query }),
   // Agent-based intelligent query (api_key optional - falls back to BM25 if not provided)
-  agent: (query: string, apiKey?: string) =>
-    api.post('/chat/agent', { query, api_key: apiKey || undefined }),
+  agent: (query: string, apiKey?: string, language: string = 'en') =>
+    api.post('/chat/agent', { query, api_key: apiKey || undefined, language }),
 }
 
 // Showcase/Archive API

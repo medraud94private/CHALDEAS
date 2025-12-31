@@ -183,6 +183,7 @@ class AgentRequest(BaseModel):
     """Request for agent-based intelligent processing."""
     query: str = Field(..., description="User query in any language")
     api_key: Optional[str] = Field(None, description="User's OpenAI API key (required)")
+    language: str = Field("en", description="Response language: en, ko, ja")
 
 
 class StructuredDataModel(BaseModel):
@@ -338,7 +339,7 @@ async def agent_chat(request: AgentRequest):
             api_key=api_key
         )
 
-        result = user_agent.process(request.query)
+        result = user_agent.process(request.query, language=request.language)
 
         return AgentResponse(
             analysis=AgentAnalysis(**result["analysis"]),

@@ -30,7 +30,7 @@ interface Props {
 const API_KEY_STORAGE_KEY = 'chaldeas_openai_api_key'
 
 export function ChatPanel({ isOpen, onClose, onFollowupClick, initialQuery, onQueryProcessed }: Props) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [messages, setMessages] = useState<ChatMessage[]>([])
   const [input, setInput] = useState('')
   const [apiKey, setApiKey] = useState('')
@@ -77,9 +77,9 @@ export function ChatPanel({ isOpen, onClose, onFollowupClick, initialQuery, onQu
     }
   }, [isOpen])
 
-  // Agent mutation - passes API key if available
+  // Agent mutation - passes API key and current language
   const agentMutation = useMutation({
-    mutationFn: (query: string) => chatApi.agent(query, apiKey || undefined),
+    mutationFn: (query: string) => chatApi.agent(query, apiKey || undefined, i18n.language),
     onSuccess: (response) => {
       const agentResponse = response.data as AgentResponse
       setMessages((prev) => [

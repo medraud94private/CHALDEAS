@@ -127,7 +127,11 @@
       "Bash(gcloud secrets versions add:*)",
       "Bash(gcloud run deploy:*)",
       "Bash(gsutil mb:*)",
-      "Bash(gcloud storage buckets create:*)"
+      "Bash(gcloud storage buckets create:*)",
+      "Bash(git -C /c/Projects/Chaldeas status)",
+      "Bash(git reset:*)",
+      "Bash(gcloud run domain-mappings create:*)",
+      "Bash(gcloud beta run domain-mappings create:*)"
     ]
   }
 }

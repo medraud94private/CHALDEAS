@@ -98,7 +98,7 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default' }: GlobeCo
           year_start: currentYear - 50,
           year_end: currentYear + 50,
           importance_min: minImportance,
-          limit: 500,
+          limit: 5000,  // Show all events in time range
         },
       }),
     select: (res) => res.data.items,

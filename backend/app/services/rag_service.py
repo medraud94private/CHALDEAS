@@ -139,7 +139,8 @@ class RAGService:
     def generate_response(
         self,
         query: str,
-        context: List[dict]
+        context: List[dict],
+        language: str = "en"
     ) -> str:
         """
         LOGOS: Generate response using LLM with retrieved context.
@@ -147,10 +148,19 @@ class RAGService:
         Args:
             query: User's question
             context: Retrieved documents
+            language: Response language (en, ko, ja)
 
         Returns:
             Generated answer
         """
+        # Language-specific labels
+        labels = {
+            "ko": {"title": "제목", "date": "시기", "no_data": "관련 데이터가 없습니다."},
+            "ja": {"title": "タイトル", "date": "時期", "no_data": "関連データがありません。"},
+            "en": {"title": "Title", "date": "Date", "no_data": "No relevant data found."},
+        }
+        lang_labels = labels.get(language, labels["en"])
+
         # Build context string
         context_parts = []
         for i, doc in enumerate(context, 1):
@@ -160,25 +170,32 @@ class RAGService:
             if doc.get("metadata"):
                 meta = doc["metadata"]
                 if meta.get("title"):
-                    ctx += f"\n제목: {meta['title']}"
+                    ctx += f"\n{lang_labels['title']}: {meta['title']}"
                 if meta.get("date"):
-                    ctx += f"\n시기: {meta['date']}"
+                    ctx += f"\n{lang_labels['date']}: {meta['date']}"
             context_parts.append(ctx)
 
-        context_str = "\n\n".join(context_parts) if context_parts else "관련 데이터가 없습니다."
+        context_str = "\n\n".join(context_parts) if context_parts else lang_labels["no_data"]
+
+        # Language instruction
+        lang_instruction = {
+            "ko": "한국어로 답변해주세요.",
+            "ja": "日本語で回答してください。",
+            "en": "Please respond in English.",
+        }.get(language, "Please respond in English.")
 
         # Generate response
         messages = [
-            {"role": "system", "content": self.SYSTEM_PROMPT},
-            {"role": "user", "content": f"""다음 역사 데이터를 참고하여 질문에 답변해주세요.
+            {"role": "system", "content": f"{self.SYSTEM_PROMPT}\n\n{lang_instruction}"},
+            {"role": "user", "content": f"""Based on the following historical data, answer the question.
 
-## 검색된 역사 데이터:
+## Retrieved historical data:
 {context_str}
 
-## 질문:
+## Question:
 {query}
 
-## 답변:"""}
+## Answer:"""}
         ]
 
         response = self.client.chat.completions.create(

@@ -423,6 +423,14 @@ class HistoryAgent:
             "cards": '{"type": "cards", "cards": []}'
         }
 
+        # Language instruction
+        lang = getattr(self, 'language', 'en')
+        lang_instruction = {
+            "ko": "IMPORTANT: Respond in Korean (한국어로 답변).",
+            "ja": "IMPORTANT: Respond in Japanese (日本語で回答).",
+            "en": "IMPORTANT: Respond in English.",
+        }.get(lang, "IMPORTANT: Respond in English.")
+
         prompt = self.RESPONSE_PROMPT.format(
             response_format=format_key,
             format_instructions=format_instructions,
@@ -434,7 +442,7 @@ class HistoryAgent:
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[
-                {"role": "system", "content": prompt}
+                {"role": "system", "content": f"{prompt}\n\n{lang_instruction}"}
             ],
             temperature=0.7,
             response_format={"type": "json_object"}
@@ -470,9 +478,13 @@ class HistoryAgent:
             navigation=navigation if navigation else None
         )
 
-    def process(self, query: str) -> Dict[str, Any]:
+    def process(self, query: str, language: str = "en") -> Dict[str, Any]:
         """
         전체 파이프라인 실행
+
+        Args:
+            query: User's question
+            language: Response language (en, ko, ja)
 
         Returns:
             {
@@ -481,6 +493,8 @@ class HistoryAgent:
                 "response": StructuredResponse
             }
         """
+        self.language = language  # Store for response generation
+
         # 1. 분석
         analysis = self.analyze_query(query)
 

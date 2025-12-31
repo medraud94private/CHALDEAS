@@ -77,3 +77,4 @@ credentials.json
 # Windows special files
 nul
 NUL
+chaldeas_dump.sql
