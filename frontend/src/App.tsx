@@ -56,7 +56,7 @@ function App() {
     queryKey: ['sidebar-events', currentYear, showAllEras],
     queryFn: () => api.get('/events', {
       params: showAllEras
-        ? { limit: 2000 }  // All eras: limited
+        ? { limit: 1000 }  // All eras: max 1000 (backend limit)
         : { year_start: currentYear - TIME_RANGE, year_end: currentYear + TIME_RANGE, limit: 1000 }
     }),
     select: (res) => res.data.items,
