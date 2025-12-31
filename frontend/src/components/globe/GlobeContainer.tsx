@@ -91,7 +91,7 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default' }: GlobeCo
 
   // Fetch events from API
   const { data: eventsData } = useQuery({
-    queryKey: ['events', currentYear],
+    queryKey: ['events', currentYear, minImportance],
     queryFn: () =>
       api.get('/events', {
         params: {
@@ -102,7 +102,14 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default' }: GlobeCo
         },
       }),
     select: (res) => res.data.items,
+    // Don't keep previous data when year changes - avoids stale markers
+    placeholderData: undefined,
   })
+
+  // Clear events when year changes, then set new data when it arrives
+  useEffect(() => {
+    setEvents([])  // Clear immediately on year change
+  }, [currentYear, setEvents])
 
   useEffect(() => {
     if (eventsData) {
