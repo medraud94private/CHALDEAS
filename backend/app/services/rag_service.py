@@ -74,15 +74,15 @@ class RAGService:
         self.client = OpenAI(api_key=self.api_key)
         self.chat_model = chat_model
 
-        # Initialize embedding service
+        # Initialize embedding service (default: small for cost efficiency)
         self.embedding_service = embedding_service or EmbeddingService(
-            model="text-embedding-3-large",
+            model="small",
             api_key=self.api_key
         )
 
-        # Initialize vector store
+        # Initialize vector store with matching dimensions
         self.vector_store = vector_store or VectorStore(
-            embedding_dimension=3072
+            embedding_dimension=self.embedding_service.embedding_dimension
         )
 
     def translate_to_english(self, query: str) -> str:

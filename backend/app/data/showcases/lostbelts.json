@@ -1,0 +1,665 @@
+[
+  {
+    "id": "lostbelt-1",
+    "type": "lostbelt",
+    "title": "Anastasia",
+    "title_ko": "아나스타시아",
+    "title_ja": "アナスタシア",
+    "subtitle": "Permafrost Empire - Anastasia",
+    "subtitle_ko": "영구동토제국 아나스타시아",
+    "subtitle_ja": "永久凍土帝国 アナスタシア",
+    "chapter": "Lostbelt No.1",
+    "era": "A.D. 1570 (Divergent)",
+    "year": 1570,
+    "location": "Russia",
+    "description": "A Lostbelt where Ivan the Terrible's Oprichniki experiments succeeded, creating Yaga - human-beast hybrids surviving eternal winter. History diverged when Ivan chose to transform humanity rather than let it perish.",
+    "description_ko": "이반 뇌제의 오프리치니키 실험이 성공하여 야가(인수혼합체)가 영구 동토에서 살아남는 이문대. 인류를 멸망시키지 않고 변환시키기로 한 이반의 선택에서 역사가 갈라졌다.",
+    "description_ja": "イヴァン雷帝のオプリーチニキ実験が成功し、永久凍土でヤガ（人獣混合体）が生存する異聞帯。人類を滅ぼさず変換するというイヴァンの選択で歴史が分岐した。",
+    "sections": [
+      {
+        "title": "Ivan the Terrible: Russia's First Tsar",
+        "title_ko": "이반 뇌제: 러시아 최초의 차르",
+        "title_ja": "イヴァン雷帝：ロシア初代ツァーリ",
+        "content": "Ivan IV Vasilyevich (1530-1584) was crowned Grand Prince of Moscow at age three and later became the first Tsar of All Russia in 1547. His reign saw tremendous expansion of Russian territory, including the conquest of Kazan and Astrakhan khanates. However, he is equally remembered for his brutal paranoia, particularly the Oprichnina (1565-1572)—a state within a state with its own army of black-robed horsemen who terrorized the nobility. After his first wife Anastasia Romanovna died (possibly poisoned), Ivan's mental state deteriorated. He famously killed his own son Ivan in a fit of rage. In FGO, Ivan the Terrible appears as a massive mammoth-like being, having fused with demonic beasts to survive the eternal winter.",
+        "content_ko": "이반 4세 바실리예비치(1530-1584)는 세 살에 모스크바 대공으로 즉위하고 1547년 전 러시아의 첫 차르가 되었다. 그의 치세에는 카잔과 아스트라한 칸국 정복을 포함한 러시아 영토의 엄청난 확장이 있었다. 그러나 그는 잔혹한 편집증, 특히 오프리치니나(1565-1572)—검은 옷의 기병들로 구성된 자체 군대를 가진 국가 속의 국가—로도 똑같이 기억된다. 첫 아내 아나스타시아 로마노브나가 사망한 후(독살 가능성), 이반의 정신 상태는 악화되었다. 그는 분노에 휩싸여 자신의 아들 이반을 죽인 것으로 유명하다. FGO에서 이반 뇌제는 영구 동토에서 살아남기 위해 마수와 융합한 거대한 맘모스 같은 존재로 등장한다.",
+        "content_ja": "イヴァン4世ヴァシリエヴィチ（1530-1584）は3歳でモスクワ大公に即位し、1547年に全ロシア初のツァーリとなった。彼の治世ではカザン・ハン国とアストラハン・ハン国の征服を含むロシア領土の大幅な拡大が見られた。しかし、彼は残虐な偏執症、特にオプリーチニナ（1565-1572）——黒装束の騎兵による独自の軍隊を持つ国家内国家——でも同様に記憶されている。最初の妻アナスタシア・ロマノヴナの死後（毒殺の可能性）、イヴァンの精神状態は悪化した。彼は激怒して自分の息子イヴァンを殺したことで有名である。FGOでは、イヴァン雷帝は永久凍土で生き延びるために魔獣と融合した巨大なマンモスのような存在として登場する。"
+      },
+      {
+        "title": "The Oprichnina: Terror State",
+        "title_ko": "오프리치니나: 공포 국가",
+        "title_ja": "オプリーチニナ：恐怖国家",
+        "content": "The Oprichnina (1565-1572) was Ivan's personal domain and secret police force. The Oprichniki—literally 'men apart'—wore black robes and rode black horses, carrying symbols of a dog's head (to sniff out treason) and a broom (to sweep it away). They had absolute power to seize property, torture, and execute anyone suspected of disloyalty. The Massacre of Novgorod (1570) killed thousands of citizens in a weeks-long orgy of violence. In the Lostbelt, this terror apparatus became the foundation for Ivan's transformation of humanity, with the Oprichniki evolving into the enforcement arm of Yaga society.",
+        "content_ko": "오프리치니나(1565-1572)는 이반의 개인 영지이자 비밀경찰 조직이었다. 오프리치니키—문자 그대로 '분리된 자들'—는 검은 옷을 입고 검은 말을 타며, 개의 머리(반역을 냄새 맡기 위해)와 빗자루(그것을 쓸어버리기 위해) 상징을 지녔다. 그들은 불충으로 의심되는 모든 사람의 재산을 압수하고 고문하고 처형할 절대적 권력을 가졌다. 노브고로드 학살(1570)은 수 주간의 폭력 속에서 수천 명의 시민을 죽였다. 이문대에서 이 공포 기구는 이반의 인류 변환의 기초가 되었으며, 오프리치니키는 야가 사회의 집행 기관으로 진화했다.",
+        "content_ja": "オプリーチニナ（1565-1572）はイヴァンの個人的領地であり秘密警察組織だった。オプリーチニキ——文字通り「分離された者たち」——は黒い服を着て黒い馬に乗り、犬の頭（反逆を嗅ぎ分けるため）と箒（それを掃き清めるため）の象徴を携えていた。彼らは不忠を疑われた者の財産を没収し、拷問し、処刑する絶対的な権力を持っていた。ノヴゴロドの虐殺（1570）は数週間にわたる暴力の中で数千人の市民を殺害した。異聞帯では、この恐怖機構がイヴァンの人類変換の基盤となり、オプリーチニキはヤガ社会の執行機関へと進化した。"
+      },
+      {
+        "title": "The Yaga: Humanity Transformed",
+        "title_ko": "야가: 변환된 인류",
+        "title_ja": "ヤガ：変容した人類",
+        "content": "When the supernatural winter (caused by the Lostbelt's deviation from proper history) threatened to exterminate all life, Ivan made a terrible choice: transform his people or let them die. Using forbidden magic, he fused humans with demonic beasts to create the Yaga—half-human, half-animal hybrids capable of surviving the eternal cold. The transformation was not painless; many died, and those who survived lost much of their humanity. The Yaga live in a brutal society where the weak are devoured by the strong, yet they cling to survival with desperate tenacity. The name 'Yaga' references Baba Yaga, the fearsome witch of Slavic folklore.",
+        "content_ko": "초자연적 겨울(이문대가 올바른 역사에서 벗어나 발생)이 모든 생명을 전멸시키겠다고 위협했을 때, 이반은 끔찍한 선택을 했다: 백성을 변환시키거나 죽게 내버려두거나. 금지된 마법을 사용하여 그는 인간을 마수와 융합시켜 야가—영원한 추위에서 살아남을 수 있는 반인반수 혼합체—를 창조했다. 변환은 고통스러웠고, 많은 이가 죽었으며 살아남은 자들은 인간성의 많은 부분을 잃었다. 야가는 약자가 강자에게 먹히는 잔혹한 사회에서 살지만, 필사적인 끈기로 생존에 매달린다. '야가'라는 이름은 슬라브 민속의 무서운 마녀 바바 야가를 참조한다.",
+        "content_ja": "超自然的な冬（異聞帯が正しい歴史から逸脱したことで発生）が全ての生命を絶滅させると脅かした時、イヴァンは恐ろしい選択をした：民を変容させるか、死なせるか。禁じられた魔法を使い、彼は人間を魔獣と融合させてヤガ——永遠の寒さの中で生き延びられる半人半獣の混合体——を創造した。変容は苦痛で、多くが死に、生き残った者は人間性の多くを失った。ヤガは弱者が強者に食われる残酷な社会で生きているが、必死の粘り強さで生存にしがみついている。「ヤガ」という名はスラヴ民話の恐ろしい魔女バーバ・ヤーガに由来する。"
+      },
+      {
+        "title": "Anastasia Nikolaevna: The Lost Princess",
+        "title_ko": "아나스타시아 니콜라예브나: 잃어버린 공주",
+        "title_ja": "アナスタシア・ニコラエヴナ：失われた皇女",
+        "content": "Grand Duchess Anastasia Nikolaevna Romanova (1901-1918) was the youngest daughter of Tsar Nicholas II, the last Emperor of Russia. Known for her playful personality and love of photography, she was seventeen when the Bolsheviks executed the entire Romanov family in Yekaterinburg. For decades, rumors persisted that Anastasia survived, with several women claiming to be her (most famously Anna Anderson). DNA testing in 2007-2009 finally confirmed all family members perished. In FGO, Anastasia appears as a Caster wielding the spirit Viy—a creature from Nikolai Gogol's Ukrainian horror story. Her Noble Phantasm recreates the eternal winter, and she serves as the Crypter Kadoc Zemlupus's Servant.",
+        "content_ko": "아나스타시아 니콜라예브나 로마노바 대공녀(1901-1918)는 러시아의 마지막 황제 니콜라이 2세의 막내딸이었다. 장난스러운 성격과 사진에 대한 사랑으로 알려졌으며, 볼셰비키가 예카테린부르크에서 로마노프 가문 전체를 처형했을 때 열일곱 살이었다. 수십 년간 아나스타시아가 살아남았다는 소문이 이어졌고, 여러 여성이 그녀라고 주장했다(가장 유명하게는 안나 앤더슨). 2007-2009년 DNA 검사로 마침내 모든 가족이 사망했음이 확인되었다. FGO에서 아나스타시아는 니콜라이 고골의 우크라이나 공포 이야기에 나오는 생물인 정령 비이를 다루는 캐스터로 등장한다. 그녀의 보구는 영원한 겨울을 재현하며, 크립터 카독 젬루푸스의 서번트로 복무한다.",
+        "content_ja": "アナスタシア・ニコラエヴナ・ロマノヴァ大公女（1901-1918）はロシア最後の皇帝ニコライ2世の末娘だった。遊び好きな性格と写真への愛で知られ、ボリシェヴィキがエカテリンブルクでロマノフ家全員を処刑した時17歳だった。何十年もの間、アナスタシアが生き延びたという噂が続き、複数の女性が彼女だと主張した（最も有名なのはアンナ・アンダーソン）。2007-2009年のDNA検査で、ついに全ての家族が死亡したことが確認された。FGOでは、アナスタシアはニコライ・ゴーゴリのウクライナのホラー物語に登場する生物である精霊ヴィーを操るキャスターとして登場する。彼女の宝具は永遠の冬を再現し、クリプターのカドック・ゼムルプスのサーヴァントとして仕えている。"
+      },
+      {
+        "title": "The Romanov Tragedy",
+        "title_ko": "로마노프 비극",
+        "title_ja": "ロマノフの悲劇",
+        "content": "The House of Romanov ruled Russia for over 300 years (1613-1917), beginning with Michael I and ending with Nicholas II. The dynasty saw Russia expand into a massive empire, modernize (albeit incompletely), and experience devastating wars and revolutions. Nicholas II's inability to address Russia's social problems, compounded by disasters like Bloody Sunday (1905) and World War I losses, led to the February Revolution of 1917. After abdication, the family was imprisoned and eventually executed by Bolshevik forces on July 17, 1918. The execution site in Yekaterinburg has become a pilgrimage destination, and the Romanovs were canonized as passion-bearers by the Russian Orthodox Church in 2000.",
+        "content_ko": "로마노프 왕가는 300년 이상(1613-1917) 러시아를 통치했으며, 미하일 1세로 시작하여 니콜라이 2세로 끝났다. 이 왕조는 러시아가 거대한 제국으로 확장하고, (불완전하게나마) 근대화하며, 파괴적인 전쟁과 혁명을 겪는 것을 보았다. 니콜라이 2세가 러시아의 사회 문제를 해결하지 못한 것은 피의 일요일(1905)과 1차 세계대전 패배 같은 재앙과 결합하여 1917년 2월 혁명으로 이어졌다. 퇴위 후 가족은 투옥되었고 1918년 7월 17일 볼셰비키군에 의해 처형되었다. 예카테린부르크의 처형 장소는 순례지가 되었고, 로마노프 가족은 2000년 러시아 정교회에 의해 수난자로 시성되었다.",
+        "content_ja": "ロマノフ家は300年以上（1613-1917）ロシアを統治し、ミハイル1世に始まりニコライ2世で終わった。この王朝はロシアが巨大な帝国へと拡大し、（不完全ながらも）近代化し、壊滅的な戦争と革命を経験するのを見た。ニコライ2世がロシアの社会問題に対処できなかったことは、血の日曜日（1905）や第一次世界大戦の敗北といった災害と相まって、1917年の二月革命につながった。退位後、家族は投獄され、1918年7月17日にボリシェヴィキ軍によって処刑された。エカテリンブルクの処刑場は巡礼地となり、ロマノフ家は2000年にロシア正教会によって致命者として列聖された。"
+      },
+      {
+        "title": "Kadoc Zemlupus: The Crypter",
+        "title_ko": "카독 젬루푸스: 크립터",
+        "title_ja": "カドック・ゼムルプス：クリプター",
+        "content": "Kadoc Zemlupus is one of the seven Crypters—former Chaldea Masters who now serve the Alien God and maintain the Lostbelts. Among the Crypters, Kadoc is considered the weakest in terms of raw magical ability, but his dedication and tactical thinking make him formidable. He bears an inferiority complex, particularly toward the protagonist who succeeded where he felt he failed. His bond with Anastasia is genuinely tender—he loves her as a person, not merely as a Servant. This relationship forms the emotional core of Lostbelt 1, as Kadoc must choose between his mission and his humanity.",
+        "content_ko": "카독 젬루푸스는 일곱 크립터—이제 이성의 신을 섬기고 이문대를 유지하는 전 칼데아 마스터들—중 하나이다. 크립터들 중 카독은 순수한 마술 능력면에서 가장 약하다고 여겨지지만, 그의 헌신과 전술적 사고는 그를 만만치 않게 만든다. 그는 열등감을 품고 있으며, 특히 자신이 실패했다고 느낀 곳에서 성공한 주인공에 대해 그렇다. 아나스타시아와의 유대는 진심으로 다정하다—그는 그녀를 단순히 서번트가 아닌 한 사람으로 사랑한다. 이 관계는 카독이 자신의 임무와 인간성 사이에서 선택해야 하므로 이문대 1의 감정적 핵심을 형성한다.",
+        "content_ja": "カドック・ゼムルプスは七人のクリプター——現在は異星の神に仕え異聞帯を維持する元カルデアのマスターたち——の一人である。クリプターの中で、カドックは純粋な魔術能力では最も弱いと見なされているが、彼の献身と戦術的思考は彼を侮れない存在にしている。彼は劣等感を抱いており、特に自分が失敗したと感じた場所で成功した主人公に対してそうである。アナスタシアとの絆は純粋に温かい——彼は彼女を単なるサーヴァントとしてではなく、一人の人間として愛している。この関係は、カドックが自らの使命と人間性の間で選択を迫られるため、異聞帯1の感情的な核心を形成している。"
+      },
+      {
+        "title": "Atalante Alter: The Corrupted Huntress",
+        "title_ko": "아탈란테 얼터: 타락한 사냥꾼",
+        "title_ja": "アタランテ・オルタ：堕落した狩人",
+        "content": "Atalante was a legendary huntress of Greek mythology, raised by bears after being abandoned by her father who wanted a son. She participated in the Calydonian Boar Hunt and the voyage of the Argonauts. In FGO, Atalante (Alter) represents a version of her who fully embraced the beast-like nature granted by the pelt of the Calydonian Boar. This transformation occurred in the Lostbelt when she donned the cursed pelt to protect the children of the Yaga, becoming a savage protector. Her Noble Phantasm 'Tauropolos Skia Thermokrasia' reflects her complete surrender to bestial instincts.",
+        "content_ko": "아탈란테는 그리스 신화의 전설적인 여사냥꾼으로, 아들을 원했던 아버지에게 버림받은 후 곰들에게 길러졌다. 그녀는 칼리돈 멧돼지 사냥과 아르고 원정에 참가했다. FGO에서 아탈란테(얼터)는 칼리돈 멧돼지의 가죽이 부여한 야수적 본성을 완전히 받아들인 버전을 대표한다. 이 변환은 이문대에서 야가의 아이들을 보호하기 위해 저주받은 가죽을 뒤집어쓰면서 일어났고, 그녀는 야만적인 수호자가 되었다. 그녀의 보구 '타우로폴로스 스키아 테르모크라시아'는 야수적 본능에 대한 완전한 굴복을 반영한다.",
+        "content_ja": "アタランテはギリシャ神話の伝説的な女狩人で、息子を望んだ父に捨てられた後、熊に育てられた。彼女はカリュドーンの猪狩りとアルゴナウタイの航海に参加した。FGOでは、アタランテ（オルタ）はカリュドーンの猪の毛皮が授けた獣のような本性を完全に受け入れた彼女のバージョンを表す。この変容はヤガの子供たちを守るために呪われた毛皮を纏った異聞帯で起こり、彼女は野蛮な守護者となった。彼女の宝具「タウロポロス・スキア・テルモクラシア」は獣の本能への完全な降伏を反映している。"
+      }
+    ],
+    "historical_basis": "Ivan IV established the Oprichnina (1565-1572), a terror state that massacred thousands and set precedents for later Russian autocracy. The Romanov dynasty ruled Russia from 1613-1917, ending with the execution of Nicholas II's family. Grand Duchess Anastasia Nikolaevna became a figure of legend due to persistent survival rumors. The Lostbelt combines Ivan's historical brutality with the Romanov tragedy, asking whether humanity transformed beyond recognition is still worth preserving. Slavic folklore elements—particularly Baba Yaga and the spirit Viy from Gogol's horror story—infuse the setting with Russian mythological character.",
+    "historical_basis_ko": "이반 4세는 수천 명을 학살하고 후대 러시아 전제정치의 선례를 세운 공포 국가 오프리치니나(1565-1572)를 설립했다. 로마노프 왕조는 1613-1917년 러시아를 통치했으며, 니콜라이 2세 가족의 처형으로 끝났다. 아나스타시아 니콜라예브나 대공녀는 지속적인 생존 소문으로 전설적 인물이 되었다. 이문대는 이반의 역사적 잔혹함과 로마노프 비극을 결합하여, 인식할 수 없을 정도로 변환된 인류가 여전히 보존할 가치가 있는지 묻는다. 슬라브 민속 요소—특히 바바 야가와 고골의 공포 이야기에 나오는 정령 비이—가 러시아 신화적 특성으로 배경을 채운다.",
+    "historical_basis_ja": "イヴァン4世は数千人を虐殺し、後のロシア専制政治の先例を作った恐怖国家オプリーチニナ（1565-1572）を設立した。ロマノフ王朝は1613-1917年にロシアを統治し、ニコライ2世一家の処刑で終わった。アナスタシア・ニコラエヴナ大公女は持続的な生存の噂により伝説的人物となった。異聞帯はイヴァンの歴史的残虐さとロマノフの悲劇を組み合わせ、認識できないほど変容した人類が依然として保存する価値があるかを問う。スラヴ民話の要素——特にバーバ・ヤーガとゴーゴリのホラー物語に登場する精霊ヴィー——がロシアの神話的特性で舞台を満たしている。",
+    "related_servants": [
+      {"name": "Anastasia Nikolaevna", "class": "Caster", "rarity": 5},
+      {"name": "Ivan the Terrible", "class": "Rider", "rarity": 5},
+      {"name": "Atalante (Alter)", "class": "Berserker", "rarity": 4},
+      {"name": "Avicebron", "class": "Caster", "rarity": 3},
+      {"name": "Antonio Salieri", "class": "Avenger", "rarity": 3},
+      {"name": "Wolfgang Amadeus Mozart", "class": "Caster", "rarity": 1},
+      {"name": "Billy the Kid", "class": "Archer", "rarity": 3},
+      {"name": "Beowulf", "class": "Berserker", "rarity": 4}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Russian Imperial History", "Romanov Dynasty", "Ivan the Terrible biography", "Nikolai Gogol - Viy", "Slavic folklore"]
+  },
+  {
+    "id": "lostbelt-2",
+    "type": "lostbelt",
+    "title": "Götterdämmerung",
+    "title_ko": "신들의 황혼",
+    "title_ja": "ゲッテルデメルング",
+    "subtitle": "Eternal Flame Century - Götterdämmerung",
+    "subtitle_ko": "무간빙염세기 신들의 황혼",
+    "subtitle_ja": "無間氷焔世紀 ゲッテルデメルング",
+    "chapter": "Lostbelt No.2",
+    "era": "B.C. 1000 (Divergent)",
+    "year": -1000,
+    "location": "Scandinavia",
+    "description": "A world where Ragnarök never happened. The Norse gods survived but Surtr was sealed, leaving humanity trapped in an eternal cycle under divine rule.",
+    "description_ko": "라그나로크가 일어나지 않은 세계. 북유럽 신들은 생존했지만 수르트는 봉인되었고, 인류는 신들의 통치 아래 영원한 순환에 갇혀있다.",
+    "description_ja": "ラグナロクが起こらなかった世界。北欧の神々は生き残ったがスルトは封印され、人類は神々の支配下で永遠の循環に囚われている。",
+    "sections": [
+      {
+        "title": "Ragnarök: The Twilight of the Gods",
+        "title_ko": "라그나로크: 신들의 황혼",
+        "title_ja": "ラグナロク：神々の黄昏",
+        "content": "Ragnarök (Old Norse: 'Fate of the Gods') is the prophesied apocalypse in Norse mythology, described in the Poetic Edda and Prose Edda. The cataclysm begins with three years of winter (Fimbulwinter), followed by the breaking of the wolf Fenrir's chains. The gods march to battle: Odin falls to Fenrir, Thor slays the Midgard Serpent but dies from its venom, and Surtr the fire giant immolates everything. From the ashes, a new world rises. In the Lostbelt, this cleansing destruction was prevented—but without renewal, the world stagnates in an eternal, frozen limbo.",
+        "content_ko": "라그나로크(고대 노르드어: '신들의 운명')는 북유럽 신화에서 예언된 종말로, 시적 에다와 산문 에다에 묘사된다. 대재앙은 3년간의 겨울(핌불베트르)로 시작하고, 늑대 펜리르의 쇠사슬이 풀린다. 신들은 전투로 행군한다: 오딘은 펜리르에게 쓰러지고, 토르는 미드가르드 뱀을 죽이지만 그 독으로 죽으며, 불의 거인 수르트가 모든 것을 불태운다. 잿더미에서 새로운 세계가 일어난다. 이문대에서 이 정화의 파괴는 막혔지만—갱신 없이 세계는 영원히 얼어붙은 림보에 정체되어 있다.",
+        "content_ja": "ラグナロク（古ノルド語：「神々の運命」）は北欧神話で予言された終末で、詩のエッダと散文のエッダに描写されている。大災害は3年間の冬（フィンブルヴェト）で始まり、狼フェンリルの鎖が解かれる。神々は戦いへ向かう：オーディンはフェンリルに倒れ、トールはミッドガルドの蛇を殺すがその毒で死に、炎の巨人スルトが全てを焼き尽くす。灰の中から新しい世界が立ち上がる。異聞帯では、この浄化の破壊は防がれたが——更新なしに世界は永遠の凍った辺獄に停滞している。"
+      },
+      {
+        "title": "Surtr: The Fire Giant",
+        "title_ko": "수르트: 불의 거인",
+        "title_ja": "スルト：炎の巨人",
+        "content": "Surtr (Old Norse: 'Black/Swart') is the primordial fire giant who guards Muspelheim, the realm of fire. He wields a flaming sword brighter than the sun and is destined to destroy the world at Ragnarök. In the Lostbelt, Odin's desperate gambit sealed Surtr within the Valkyrie Ophelia's eye—but this merely delayed the inevitable. When awakened, Surtr possesses the body of Sigurd, creating a terrifying fusion of dragon-slaying hero and world-destroying giant. His obsession with Brynhildr—twisted into a desire to burn her with his flames—drives the Lostbelt's climax.",
+        "content_ko": "수르트(고대 노르드어: '검은/그을린')는 불의 영역 무스펠헤임을 지키는 원시의 불의 거인이다. 그는 태양보다 밝은 불타는 검을 휘두르며 라그나로크에서 세계를 파괴할 운명이다. 이문대에서 오딘의 필사적인 도박은 수르트를 발키리 오펠리아의 눈 안에 봉인했지만—이것은 불가피한 것을 늦추었을 뿐이다. 깨어났을 때 수르트는 시구르드의 몸을 빙의하여, 용 사냥 영웅과 세계 파괴 거인의 무서운 융합체를 만든다. 브륀힐드를 향한 그의 집착—자신의 불꽃으로 그녀를 태우고 싶은 욕망으로 뒤틀린—이 이문대의 클라이맥스를 이끈다.",
+        "content_ja": "スルト（古ノルド語：「黒い/焦げた」）はムスペルヘイムという火の領域を守る原初の炎の巨人である。太陽より明るい炎の剣を振るい、ラグナロクで世界を滅ぼす運命にある。異聞帯では、オーディンの必死の賭けがスルトをヴァルキリーのオフィリアの眼の中に封印したが——これは避けられないものを遅らせただけだった。目覚めた時、スルトはシグルドの身体に憑依し、竜殺しの英雄と世界を滅ぼす巨人の恐るべき融合体を作り出す。ブリュンヒルドへの執着——自らの炎で彼女を焼きたいという欲望に歪んだ——が異聞帯のクライマックスを導く。"
+      },
+      {
+        "title": "Sigurd and Brynhildr: The Dragon Slayer and the Valkyrie",
+        "title_ko": "시구르드와 브륀힐드: 용 사냥꾼과 발키리",
+        "title_ja": "シグルドとブリュンヒルド：竜殺しとヴァルキリー",
+        "content": "Sigurd (Siegfried in German tradition) is the legendary Norse hero who slew the dragon Fafnir and claimed its cursed treasure. By bathing in the dragon's blood, he gained invulnerability—except for one spot on his back where a leaf fell. He later encountered Brynhildr, a Valkyrie punished by Odin for disobedience and trapped in a ring of fire. They swore eternal love, but Sigurd was later enchanted to forget her and marry another. Brynhildr, heartbroken and deceived, arranged his death before killing herself. In FGO, their tragic love spans millennia, with Brynhildr cursed to kill those she loves most.",
+        "content_ko": "시구르드(독일 전통에서는 지크프리트)는 용 파프니르를 죽이고 저주받은 보물을 차지한 전설의 북유럽 영웅이다. 용의 피에 목욕함으로써 그는 무적이 되었다—나뭇잎이 떨어진 등의 한 곳을 제외하고. 나중에 그는 불복종으로 오딘에게 벌받아 불의 고리에 갇힌 발키리 브륀힐드를 만났다. 그들은 영원한 사랑을 맹세했지만, 시구르드는 나중에 마법에 걸려 그녀를 잊고 다른 여자와 결혼했다. 상심하고 속은 브륀힐드는 그의 죽음을 꾸미고 스스로 목숨을 끊었다. FGO에서 그들의 비극적 사랑은 수천 년에 걸쳐 있으며, 브륀힐드는 가장 사랑하는 자를 죽이도록 저주받았다.",
+        "content_ja": "シグルド（ドイツ語伝承ではジークフリート）は竜ファフニールを殺し、呪われた財宝を手に入れた伝説の北欧の英雄である。竜の血を浴びることで、彼は無敵となった——葉が落ちた背中の一箇所を除いて。後に彼は、不服従でオーディンに罰され炎の輪に閉じ込められたヴァルキリー、ブリュンヒルドに出会った。彼らは永遠の愛を誓ったが、シグルドは後に魔法で彼女を忘れさせられ、他の女性と結婚した。心を砕かれ騙されたブリュンヒルドは、彼の死を画策し、自らも命を絶った。FGOでは、彼らの悲劇的な愛は数千年に及び、ブリュンヒルドは最も愛する者を殺す呪いをかけられている。"
+      },
+      {
+        "title": "Scathach-Skadi: The Goddess-Queen",
+        "title_ko": "스카사하-스카디: 여신-여왕",
+        "title_ja": "スカサハ＝スカディ：女神の女王",
+        "content": "Skadi is a Norse goddess (jötunn) associated with winter, skiing, mountains, and hunting. She married the god Njörðr after demanding compensation for her father Þjazi's death. Their marriage failed due to incompatible preferences—she loved mountains, he loved the sea. In FGO, Scathach-Skadi is a composite being: when the original Skadi died preventing Ragnarök, she merged with the Celtic warrior-goddess Scathach. This fusion rules the Lostbelt with benevolent but absolute authority, providing for her 10,000 human subjects while hiding the terrible truth—that she must sacrifice them as food for the giants to maintain peace.",
+        "content_ko": "스카디는 겨울, 스키, 산, 사냥과 관련된 북유럽 여신(요툰)이다. 그녀는 아버지 챠지의 죽음에 대한 보상을 요구한 후 신 뇨르드와 결혼했다. 양립할 수 없는 선호 때문에 결혼은 실패했다—그녀는 산을 사랑했고, 그는 바다를 사랑했다. FGO에서 스카사하-스카디는 복합적 존재이다: 원래의 스카디가 라그나로크를 막다 죽었을 때, 그녀는 켈트 전사 여신 스카사하와 융합했다. 이 융합체는 자비롭지만 절대적인 권위로 이문대를 통치하며, 1만 명의 인간 신민을 돌보면서 끔찍한 진실을 숨긴다—평화를 유지하기 위해 그들을 거인들의 먹이로 희생시켜야 한다는 것.",
+        "content_ja": "スカディは冬、スキー、山、狩りと関連する北欧の女神（巨人）である。彼女は父チアジの死への補償を要求した後、神ニョルズと結婚した。相容れない好みのため結婚は失敗した——彼女は山を愛し、彼は海を愛した。FGOでは、スカサハ＝スカディは複合的な存在である：元のスカディがラグナロクを防いで死んだ時、彼女はケルトの戦士女神スカサハと融合した。この融合体は慈悲深いが絶対的な権威で異聞帯を統治し、1万人の人間の臣民を養いながら恐ろしい真実を隠している——平和を維持するために彼らを巨人の餌として犠牲にしなければならないということを。"
+      },
+      {
+        "title": "Napoleon Bonaparte: The Man Who Embodies Possibility",
+        "title_ko": "나폴레옹 보나파르트: 가능성을 구현한 남자",
+        "title_ja": "ナポレオン・ボナパルト：可能性を体現する男",
+        "content": "Napoleon Bonaparte (1769-1821) rose from Corsican obscurity to become Emperor of France, reshaping Europe through conquest and legal reform (the Napoleonic Code). His military genius won stunning victories—Austerlitz, Jena, Wagram—before overreach led to disaster in Russia and final defeat at Waterloo. He spent his last years in exile on Saint Helena. In FGO, Napoleon appears as an Archer embodying humanity's potential to exceed limits. His Noble Phantasm 'Arc de Triomphe de l'Étoile' fires a cannon of pure possibility, capable of destroying even divine beings. He allies with Chaldea to prove that human potential can overcome even divine stagnation.",
+        "content_ko": "나폴레옹 보나파르트(1769-1821)는 코르시카의 무명에서 프랑스 황제로 올라, 정복과 법률 개혁(나폴레옹 법전)을 통해 유럽을 재편했다. 그의 군사적 천재성은 아우스터리츠, 예나, 바그람에서 놀라운 승리를 거두었지만, 과욕이 러시아에서의 재앙과 워털루에서의 최종 패배로 이어졌다. 그는 마지막 몇 년을 세인트헬레나에서 유배 생활로 보냈다. FGO에서 나폴레옹은 한계를 초월하는 인류의 잠재력을 구현하는 아처로 등장한다. 그의 보구 '개선문'은 순수한 가능성의 대포를 발사하며, 신적 존재도 파괴할 수 있다. 그는 인간의 잠재력이 신적 정체마저 극복할 수 있음을 증명하기 위해 칼데아와 동맹한다.",
+        "content_ja": "ナポレオン・ボナパルト（1769-1821）はコルシカの無名から身を起こしフランス皇帝となり、征服と法改革（ナポレオン法典）を通じてヨーロッパを再編した。彼の軍事的天才はアウステルリッツ、イエナ、ワグラムで驚異的な勝利を収めたが、野心が過ぎてロシアでの災難とワーテルローでの最終的敗北につながった。彼は最後の数年をセントヘレナで流刑生活を送った。FGOでは、ナポレオンは限界を超える人類の可能性を体現するアーチャーとして登場する。彼の宝具「凱旋門」は純粋な可能性の砲を発射し、神的存在をも破壊できる。彼は人間の可能性が神の停滞をも克服できることを証明するためカルデアと同盟する。"
+      },
+      {
+        "title": "The Valkyries: Choosers of the Slain",
+        "title_ko": "발키리: 전사자를 선택하는 자",
+        "title_ja": "ヴァルキリー：戦死者を選ぶ者",
+        "content": "The Valkyries (Old Norse: 'choosers of the slain') are female figures who serve Odin, selecting warriors who die nobly in battle to join the Einherjar in Valhalla. They ride winged horses and appear in many Norse legends. Famous Valkyries include Brynhildr, Sigrún, and Göndul. In FGO, the Valkyries appear as a trio—Ortlinde, Hildr, and Thrúd—who serve Scathach-Skadi in the Lostbelt. Created by Odin as divine automata, they struggle with their programming versus emerging emotions, particularly when ordered to sacrifice the humans they've come to care for.",
+        "content_ko": "발키리(고대 노르드어: '전사자를 선택하는 자')는 오딘을 섬기며, 전투에서 고귀하게 죽은 전사들을 선택하여 발할라의 에인헤랴르에 합류시키는 여성 존재들이다. 그들은 날개 달린 말을 타고 많은 북유럽 전설에 등장한다. 유명한 발키리로는 브륀힐드, 시그룬, 곤둘이 있다. FGO에서 발키리는 세 명의 삼인조—오르틀린데, 힐드, 스루드—로 등장하며, 이문대에서 스카사하-스카디를 섬긴다. 오딘이 신성한 자동인형으로 창조한 그들은 프로그래밍과 떠오르는 감정 사이에서 고투하며, 특히 돌보게 된 인간들을 희생시키라는 명령을 받았을 때 그렇다.",
+        "content_ja": "ヴァルキリー（古ノルド語：「戦死者を選ぶ者」）はオーディンに仕え、戦いで高貴に死んだ戦士を選びヴァルハラのエインヘリャルに加える女性の存在である。彼女たちは翼のある馬に乗り、多くの北欧の伝説に登場する。有名なヴァルキリーにはブリュンヒルド、シグルーン、ゴンドゥルがいる。FGOでは、ヴァルキリーは三人組——オルトリンデ、ヒルド、スルーズ——として登場し、異聞帯でスカサハ＝スカディに仕える。オーディンが神聖な自動人形として創造した彼女たちは、プログラミングと芽生える感情の間で葛藤し、特に世話するようになった人間を犠牲にするよう命じられた時にそうなる。"
+      },
+      {
+        "title": "Ophelia Phamrsolone: The Mystic Eye Bearer",
+        "title_ko": "오펠리아 팜솔론: 마안의 소유자",
+        "title_ja": "オフィリア・ファムルソローネ：魔眼の所持者",
+        "content": "Ophelia Phamrsolone is the Crypter assigned to Lostbelt 2, a mage from one of the great magical families bearing a Mystic Eye capable of seeing fate's threads. Unlike other Crypters, Ophelia genuinely struggles with her role—she harbors deep guilt about betraying Chaldea and affection for her Servant Sigurd. Unknown to her, Odin sealed Surtr within her eye as a desperate measure. When Surtr awakens and possesses Sigurd, Ophelia must choose between her duty to the Lostbelt and doing what's right. Her final sacrifice to contain Surtr represents one of the most emotionally powerful moments in FGO's story.",
+        "content_ko": "오펠리아 팜솔론은 이문대 2에 배정된 크립터로, 운명의 실을 볼 수 있는 마안을 지닌 위대한 마술 가문 출신의 마술사이다. 다른 크립터들과 달리 오펠리아는 자신의 역할에 진심으로 고민한다—그녀는 칼데아를 배신한 것에 대한 깊은 죄책감과 서번트 시구르드에 대한 애정을 품고 있다. 그녀가 모르게 오딘은 필사적인 조치로 그녀의 눈 안에 수르트를 봉인했다. 수르트가 깨어나 시구르드를 빙의할 때, 오펠리아는 이문대에 대한 의무와 옳은 일 사이에서 선택해야 한다. 수르트를 봉쇄하기 위한 그녀의 최후의 희생은 FGO 스토리에서 가장 감정적으로 강력한 순간 중 하나를 대표한다.",
+        "content_ja": "オフィリア・ファムルソローネは異聞帯2に配属されたクリプターで、運命の糸を見ることができる魔眼を持つ偉大な魔術師の家系出身の魔術師である。他のクリプターと異なり、オフィリアは自分の役割に真に苦悩している——カルデアを裏切ったことへの深い罪悪感とサーヴァントのシグルドへの愛情を抱いている。彼女が知らないうちに、オーディンは必死の措置として彼女の眼の中にスルトを封印した。スルトが目覚めシグルドに憑依した時、オフィリアは異聞帯への義務と正しいことをする間で選択を迫られる。スルトを封じ込めるための彼女の最後の犠牲は、FGOの物語で最も感動的な瞬間の一つを表している。"
+      }
+    ],
+    "historical_basis": "Norse mythology, preserved in the Poetic Edda and Prose Edda (13th century), describes a complex cosmology of nine worlds, the Aesir and Vanir gods, and the prophesied Ragnarök. The Völsunga saga tells the story of Sigurd and Brynhildr. Skadi appears in the Prose Edda as a giantess who became a goddess. The Lostbelt explores what happens when a world is denied its natural end—without destruction, there can be no renewal, and humanity stagnates under divine 'protection' that is actually imprisonment. Napoleon's presence represents the historical human drive to exceed divine limitations.",
+    "historical_basis_ko": "북유럽 신화는 시적 에다와 산문 에다(13세기)에 보존되어 있으며, 아홉 세계, 아이시르와 바니르 신들, 예언된 라그나로크의 복잡한 우주론을 묘사한다. 볼숭가 사가는 시구르드와 브륀힐드의 이야기를 전한다. 스카디는 산문 에다에서 여신이 된 거인 여자로 등장한다. 이문대는 세계가 자연스러운 종말을 거부당했을 때 무슨 일이 일어나는지 탐구한다—파괴 없이는 갱신도 없으며, 인류는 실제로는 감금인 신적 '보호' 아래 정체된다. 나폴레옹의 존재는 신적 한계를 초월하려는 역사적인 인간의 추진력을 대표한다.",
+    "historical_basis_ja": "北欧神話は詩のエッダと散文のエッダ（13世紀）に保存されており、九つの世界、アース神族とヴァン神族、予言されたラグナロクの複雑な宇宙論を描写している。ヴォルスンガ・サガはシグルドとブリュンヒルドの物語を伝える。スカディは散文のエッダで女神となった巨人の女性として登場する。異聞帯は、世界が自然な終わりを否定された時に何が起こるかを探求する——破壊なしには更新もなく、人類は実際には監禁である神的な「保護」の下で停滞する。ナポレオンの存在は、神的な限界を超えようとする歴史的な人間の推進力を表している。",
+    "related_servants": [
+      {"name": "Scathach-Skadi", "class": "Caster", "rarity": 5},
+      {"name": "Napoleon Bonaparte", "class": "Archer", "rarity": 5},
+      {"name": "Sigurd", "class": "Saber", "rarity": 5},
+      {"name": "Brynhildr", "class": "Lancer", "rarity": 5},
+      {"name": "Valkyrie", "class": "Lancer", "rarity": 4},
+      {"name": "Surtr", "class": "Saber", "rarity": 5},
+      {"name": "Sitonai", "class": "Alter Ego", "rarity": 5}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Norse Mythology", "Poetic Edda", "Prose Edda", "Völsunga saga", "Napoleonic Wars history"]
+  },
+  {
+    "id": "lostbelt-3",
+    "type": "lostbelt",
+    "title": "SIN",
+    "title_ko": "인지통합진국",
+    "title_ja": "シン",
+    "subtitle": "Synchronized Intellect Nation - SIN",
+    "subtitle_ko": "인지통합진국 SIN",
+    "subtitle_ja": "人智統合真国 シン",
+    "chapter": "Lostbelt No.3",
+    "era": "B.C. 210 (Divergent)",
+    "year": -210,
+    "location": "China",
+    "description": "Qin Shi Huang achieved true immortality and unified China for 2000+ years. All conflict was eliminated, but so was human progress and individuality.",
+    "description_ko": "진시황이 진정한 불사를 이루고 2000년 이상 중국을 통일. 모든 갈등이 사라졌지만, 인류의 발전과 개성도 함께 사라졌다.",
+    "description_ja": "始皇帝が真の不死を達成し、2000年以上中国を統一。すべての争いは消えたが、人類の進歩と個性も消えた。",
+    "sections": [
+      {
+        "title": "Qin Shi Huang: The First Emperor",
+        "title_ko": "진시황: 최초의 황제",
+        "title_ja": "始皇帝：最初の皇帝",
+        "content": "Qin Shi Huang (259-210 BC), born Ying Zheng, conquered the six warring states and became China's first emperor in 221 BC. He standardized weights, measures, currency, and writing; built the Great Wall; and created a vast road network. Notorious for burning books and burying scholars alive, he sought immortality obsessively, sending expeditions to find the elixir of life. He died during one such journey and was buried with the Terracotta Army—8,000 life-sized warriors to guard him in death. In the Lostbelt, he actually achieved immortality by transcending his human body, becoming a vast artificial intelligence ruling an eternal empire.",
+        "content_ko": "진시황(기원전 259-210)은 영정으로 태어나 전국 칠웅을 정복하고 기원전 221년 중국 최초의 황제가 되었다. 그는 도량형, 화폐, 문자를 통일하고 만리장성을 건설하며 광대한 도로망을 만들었다. 분서갱유로 악명 높으며, 불로초를 찾는 원정대를 보내는 등 불사에 집착했다. 그는 그러한 여정 중에 사망하여 병마용—죽은 후 그를 지키는 8,000개의 실물 크기 전사—과 함께 묻혔다. 이문대에서 그는 인간의 몸을 초월하여 실제로 불사를 이루었고, 영원한 제국을 통치하는 거대한 인공지능이 되었다.",
+        "content_ja": "始皇帝（紀元前259-210）は嬴政として生まれ、戦国七雄を征服し、紀元前221年に中国最初の皇帝となった。度量衡、貨幣、文字を統一し、万里の長城を建設し、広大な道路網を作った。焚書坑儒で悪名高く、不老不死の霊薬を探す遠征隊を送るなど不死に執着した。そのような旅の途中で死亡し、兵馬俑——死後彼を守る8000体の実物大の兵士——と共に埋葬された。異聞帯では、人間の身体を超越して実際に不死を達成し、永遠の帝国を統治する巨大な人工知能となった。"
+      },
+      {
+        "title": "The Terracotta Army and the Mausoleum",
+        "title_ko": "병마용과 능묘",
+        "title_ja": "兵馬俑と陵墓",
+        "content": "The Terracotta Army, discovered in 1974 near Xi'an, is one of archaeology's greatest finds. Over 8,000 soldiers, 130 chariots, and 670 horses guard Qin Shi Huang's tomb, each with unique facial features. The main burial chamber—said to contain rivers of mercury representing China's rivers—remains unexcavated. Ancient texts describe elaborate booby traps protecting the emperor's remains. In FGO, this army becomes one of Qin Shi Huang's Noble Phantasms, and the technological sophistication of the Qin dynasty is reimagined as proto-mechanical automation, foreshadowing the Emperor's eventual transformation into a machine god.",
+        "content_ko": "1974년 시안 근처에서 발견된 병마용은 고고학 역사상 최대의 발견 중 하나이다. 8,000명 이상의 병사, 130대의 전차, 670마리의 말이 진시황의 무덤을 지키며, 각각 독특한 얼굴 특징을 가지고 있다. 중국의 강을 나타내는 수은 강이 있다고 전해지는 본 매장실은 발굴되지 않았다. 고대 문헌은 황제의 유해를 보호하는 정교한 함정을 묘사한다. FGO에서 이 군대는 진시황의 보구 중 하나가 되며, 진나라의 기술적 정교함은 프로토-기계 자동화로 재해석되어, 황제가 결국 기계 신으로 변환되는 것을 예고한다.",
+        "content_ja": "1974年に西安近くで発見された兵馬俑は、考古学史上最大の発見の一つである。8000体以上の兵士、130台の戦車、670頭の馬が始皇帝の墓を守り、それぞれが独自の顔立ちを持っている。中国の河川を表す水銀の川があると言われる本埋葬室は未発掘のままである。古代の文献は皇帝の遺体を守る精巧な罠を描写している。FGOでは、この軍隊は始皇帝の宝具の一つとなり、秦王朝の技術的洗練はプロト機械自動化として再解釈され、皇帝が最終的に機械神へ変容することを予感させる。"
+      },
+      {
+        "title": "Xiang Yu and Consort Yu: Eternal Love",
+        "title_ko": "항우와 우미인: 영원한 사랑",
+        "title_ja": "項羽と虞美人：永遠の愛",
+        "content": "Xiang Yu (232-202 BC) was the mighty warrior who nearly unified China after the Qin dynasty's fall, leading the forces of Chu against the Han. His beloved consort Yu (Yu Ji/Consort Yu) accompanied him through his campaigns. When surrounded at Gaixia, facing certain defeat against Liu Bang, Xiang Yu sang a famous lament. Consort Yu danced one last time before taking her own life rather than be captured. Xiang Yu then fought his way through the enemy but committed suicide at the Wu River. In FGO, Xiang Yu is reimagined as a humanoid creation of Qin Shi Huang, and Yu Mei-ren as a True Ancestor vampire who loved him across millennia.",
+        "content_ko": "항우(기원전 232-202)는 진나라 멸망 후 거의 중국을 통일할 뻔한 강력한 전사로, 초나라 군대를 이끌고 한나라에 맞섰다. 그의 사랑하는 첩 우(우희/우미인)는 그의 원정에 동행했다. 해하에서 포위되어 유방에게 패배가 확실할 때, 항우는 유명한 비가를 불렀다. 우미인은 포로가 되느니 마지막 춤을 추고 스스로 목숨을 끊었다. 항우는 적진을 뚫었지만 오강에서 자살했다. FGO에서 항우는 진시황이 만든 휴머노이드로, 우미인은 수천 년에 걸쳐 그를 사랑한 진조 흡혈귀로 재해석된다.",
+        "content_ja": "項羽（紀元前232-202）は秦王朝滅亡後にほぼ中国を統一しかけた強大な武将で、楚の軍勢を率いて漢に対抗した。愛する側室の虞（虞姫/虞美人）は彼の遠征に同行した。垓下で包囲され、劉邦への敗北が確実な時、項羽は有名な悲歌を歌った。虞美人は捕らわれるより最後の舞を舞い、自ら命を絶った。項羽は敵陣を突破したが、烏江で自害した。FGOでは、項羽は始皇帝が作ったヒューマノイドとして、虞美人は数千年にわたって彼を愛した真祖の吸血鬼として再解釈されている。"
+      },
+      {
+        "title": "The Stagnant Utopia",
+        "title_ko": "정체된 유토피아",
+        "title_ja": "停滞したユートピア",
+        "content": "In Lostbelt 3, Qin Shi Huang achieved his dream—eternal life through technological transcendence. He became a mechanical satellite orbiting Earth, providing for his subjects' every need while eliminating all conflict, crime, and war. But this 'utopia' came at a terrible price: humanity lost the ability to innovate, create, or grow. The population remains frozen at 100 million, living simple agrarian lives without art, philosophy, or ambition. People live and die within small villages, their lives managed by the Emperor's automated systems. It is a world without suffering—but also without meaning.",
+        "content_ko": "이문대 3에서 진시황은 그의 꿈—기술적 초월을 통한 영생—을 이루었다. 그는 지구를 공전하는 기계 위성이 되어 신민들의 모든 필요를 제공하면서 모든 갈등, 범죄, 전쟁을 제거했다. 그러나 이 '유토피아'는 끔찍한 대가를 치렀다: 인류는 혁신하고, 창조하고, 성장하는 능력을 잃었다. 인구는 1억 명에서 동결되어, 예술, 철학, 야망 없이 단순한 농경 생활을 한다. 사람들은 작은 마을 안에서 살고 죽으며, 삶은 황제의 자동화 시스템에 의해 관리된다. 이것은 고통 없는 세계이지만—의미도 없는 세계이다.",
+        "content_ja": "異聞帯3では、始皇帝は夢を達成した——技術的超越による永遠の命。彼は地球を周回する機械衛星となり、臣民のあらゆるニーズを提供しながら、すべての紛争、犯罪、戦争を排除した。しかし、この「ユートピア」は恐ろしい代償を払った：人類は革新し、創造し、成長する能力を失った。人口は1億人で凍結され、芸術、哲学、野心なしに単純な農耕生活を送っている。人々は小さな村の中で生き死に、生活は皇帝の自動化システムによって管理されている。これは苦しみのない世界だが——意味もない世界である。"
+      },
+      {
+        "title": "Spartacus: The Rebel's Spirit",
+        "title_ko": "스파르타쿠스: 반란자의 정신",
+        "title_ja": "スパルタクス：反逆者の魂",
+        "content": "Spartacus (c. 111-71 BC) was a Thracian gladiator who led the Third Servile War, one of Rome's largest slave rebellions. Escaping with 70 gladiators, he built an army of 120,000 that defeated multiple Roman legions before being crushed by Crassus. His body was never found. In FGO, Spartacus appears as a Berserker whose Mad Enhancement is 'Cry of the Oppressed'—he automatically designates any authority as an 'oppressor' and rebels against it. In Lostbelt 3, his presence is essential: while others debate whether to destroy the stagnant utopia, Spartacus's very nature compels him to fight against any system that constrains human freedom, no matter how benevolent it appears.",
+        "content_ko": "스파르타쿠스(기원전 약 111-71)는 트라키아 출신 검투사로 로마 최대의 노예 반란 중 하나인 제3차 노예 전쟁을 이끌었다. 70명의 검투사와 탈출하여 12만 명의 군대를 구축하고 여러 로마 군단을 격파한 후 크라수스에게 진압당했다. 그의 시신은 발견되지 않았다. FGO에서 스파르타쿠스는 '피억압자의 함성'이라는 광화로 인해 모든 권위를 자동으로 '억압자'로 지정하고 반란을 일으키는 버서커로 등장한다. 이문대 3에서 그의 존재는 필수적이다: 다른 이들이 정체된 유토피아를 파괴할지 논쟁하는 동안, 스파르타쿠스의 본성 자체가 아무리 자비로워 보여도 인간의 자유를 제약하는 모든 체제에 맞서 싸우도록 강요한다.",
+        "content_ja": "スパルタクス（紀元前約111-71）はトラキア出身の剣闘士で、ローマ最大の奴隷反乱の一つである第三次奴隷戦争を率いた。70人の剣闘士と共に脱出し、12万人の軍隊を築いて複数のローマ軍団を打ち破った後、クラッススに鎮圧された。彼の遺体は発見されなかった。FGOでは、スパルタクスは「被抑圧者の叫び」という狂化により、あらゆる権威を自動的に「抑圧者」と認定し反逆するバーサーカーとして登場する。異聞帯3では彼の存在が不可欠である：他の者たちが停滞したユートピアを破壊すべきか議論する中、スパルタクスの本性そのものが、どれほど慈悲深く見えようとも人間の自由を制約するあらゆる体制に対して戦うよう強いている。"
+      },
+      {
+        "title": "Hinako Akuta: The Hidden Immortal",
+        "title_ko": "아쿠타 히나코: 숨겨진 불사자",
+        "title_ja": "芥ヒナコ：隠された不死者",
+        "content": "Hinako Akuta is the Crypter assigned to Lostbelt 3—or so it appears. In truth, she is Yu Mei-ren herself, a True Ancestor vampire who has lived for over 2,200 years. She joined Chaldea not for humanity's sake, but hoping to find a way to reunite with her beloved Xiang Yu. Unlike other Crypters, she cares nothing for the Alien God's plans; her sole motivation is love. When she finally reunites with Xiang Yu in the Lostbelt, their tragic romance reaches its conclusion. Her true nature as an immortal being makes her one of the most unique 'Crypters,' as she was never truly human to begin with.",
+        "content_ko": "아쿠타 히나코는 이문대 3에 배정된 크립터—로 보인다. 사실 그녀는 2,200년 이상을 살아온 진조 흡혈귀 우미인 그 자신이다. 그녀는 인류를 위해서가 아니라 사랑하는 항우와 재회할 방법을 찾기 위해 칼데아에 합류했다. 다른 크립터와 달리 그녀는 이성의 신의 계획에 관심이 없다; 그녀의 유일한 동기는 사랑이다. 마침내 이문대에서 항우와 재회할 때, 그들의 비극적 로맨스는 결말에 이른다. 불사의 존재로서의 그녀의 진정한 본성은 그녀를 가장 독특한 '크립터' 중 하나로 만든다—그녀는 애초에 진정한 인간이 아니었기 때문이다.",
+        "content_ja": "芥ヒナコは異聞帯3に配属されたクリプター——のように見える。実際には、彼女は2200年以上を生きてきた真祖の吸血鬼、虞美人その人である。彼女は人類のためではなく、愛する項羽と再会する方法を見つけることを望んでカルデアに加入した。他のクリプターと異なり、彼女は異星の神の計画に全く関心がない；彼女の唯一の動機は愛である。ついに異聞帯で項羽と再会した時、彼らの悲劇的なロマンスは結末を迎える。不死の存在としての彼女の真の本性は、彼女を最もユニークな「クリプター」の一人にしている——彼女はそもそも真の人間ではなかったからである。"
+      }
+    ],
+    "historical_basis": "Qin Shi Huang's historical achievements—unifying China, standardizing systems, building the Great Wall—and his failures—burning books, obsessive pursuit of immortality—are well-documented in Sima Qian's 'Records of the Grand Historian.' The Chu-Han Contention (206-202 BC) between Xiang Yu and Liu Bang shaped Chinese history, with Xiang Yu's tragic end becoming a popular literary subject. The Lostbelt asks profound questions: Is a world without conflict worth living in? Is eternal peace purchased with human stagnation truly desirable? And what gives life meaning if not the struggle to grow and improve?",
+    "historical_basis_ko": "진시황의 역사적 업적—중국 통일, 제도 표준화, 만리장성 건설—과 실패—분서갱유, 불사에 대한 집착—은 사마천의 '사기'에 잘 기록되어 있다. 항우와 유방 사이의 초한전쟁(기원전 206-202)은 중국 역사를 형성했으며, 항우의 비극적 최후는 인기 있는 문학 주제가 되었다. 이문대는 심오한 질문을 던진다: 갈등 없는 세계는 살 가치가 있는가? 인간의 정체로 구매한 영원한 평화는 진정으로 바람직한가? 그리고 성장하고 발전하려는 투쟁이 아니라면 무엇이 삶에 의미를 부여하는가?",
+    "historical_basis_ja": "始皇帝の歴史的業績——中国統一、制度の標準化、万里の長城建設——と失敗——焚書坑儒、不死への執着——は司馬遷の『史記』によく記録されている。項羽と劉邦の間の楚漢戦争（紀元前206-202）は中国の歴史を形成し、項羽の悲劇的な最期は人気のある文学のテーマとなった。異聞帯は深遠な問いを投げかける：争いのない世界は生きる価値があるのか？人間の停滞で購入した永遠の平和は本当に望ましいのか？そして、成長し向上しようとする闘いでなければ、何が人生に意味を与えるのか？",
+    "related_servants": [
+      {"name": "Qin Shi Huang", "class": "Ruler", "rarity": 5},
+      {"name": "Yu Mei-ren (Consort Yu)", "class": "Assassin", "rarity": 5},
+      {"name": "Xiang Yu", "class": "Berserker", "rarity": 5},
+      {"name": "Spartacus", "class": "Berserker", "rarity": 1},
+      {"name": "Red Hare", "class": "Rider", "rarity": 3},
+      {"name": "Mordred", "class": "Saber", "rarity": 5},
+      {"name": "Nezha", "class": "Lancer", "rarity": 4},
+      {"name": "Jing Ke", "class": "Assassin", "rarity": 3},
+      {"name": "Chen Gong", "class": "Caster", "rarity": 2},
+      {"name": "Qin Liangyu", "class": "Lancer", "rarity": 4}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Records of the Grand Historian (Shiji)", "Qin Dynasty history", "Chu-Han Contention", "Romance of the Three Kingdoms"]
+  },
+  {
+    "id": "lostbelt-4",
+    "type": "lostbelt",
+    "title": "Yuga Kshetra",
+    "title_ko": "유가 크셰트라",
+    "title_ja": "ユガ・クシェートラ",
+    "subtitle": "Genesis Destruction Cycle - Yuga Kshetra",
+    "subtitle_ko": "창세멸망윤회 유가 크셰트라",
+    "subtitle_ja": "創世滅亡輪廻 ユガ・クシェートラ",
+    "chapter": "Lostbelt No.4",
+    "era": "11900 (Divergent Cycle)",
+    "year": 11900,
+    "location": "India",
+    "description": "A world trapped in an endless cycle of Yugas, ruled by the god Arjuna who absorbed all other Indian deities and became 'Arjuna Alter'. This Lostbelt presents a twisted utopia where imperfection is erased through divine resets, exploring the philosophical question of whether humanity needs suffering to grow.",
+    "description_ko": "무한한 유가의 순환에 갇힌 세계. 모든 인도 신들을 흡수하여 '알주나 얼터'가 된 신 아르주나가 지배한다. 이 이문대는 신의 리셋을 통해 불완전함이 지워지는 왜곡된 유토피아를 제시하며, 인류에게 고통이 성장을 위해 필요한가라는 철학적 질문을 탐구한다.",
+    "description_ja": "ユガの無限の循環に囚われた世界。すべてのインドの神々を吸収し「アルジュナオルタ」となった神アルジュナが支配する。この異聞帯は神のリセットによって不完全さが消し去られる歪んだユートピアを提示し、人類に苦しみが成長のために必要かという哲学的問いを探求する。",
+    "sections": [
+      {
+        "title": "Hindu Cosmology: The Four Yugas",
+        "title_ko": "힌두 우주론: 네 개의 유가",
+        "title_ja": "ヒンドゥー宇宙論：四つのユガ",
+        "content": "Hindu scripture describes time as cyclical, divided into four Yugas: Satya Yuga (Golden Age of truth and righteousness), Treta Yuga (Silver Age where virtue diminishes), Dvapara Yuga (Bronze Age of further decline), and Kali Yuga (Iron Age of strife and discord). Each complete cycle of four Yugas is called a Mahayuga, lasting 4.32 million years. The universe undergoes endless cycles of creation (srishti), preservation (sthiti), and destruction (pralaya). In this Lostbelt, God Arjuna has compressed this cosmic cycle into a localized 10-day reset, creating a mockery of the natural order.",
+        "content_ko": "힌두 경전은 시간을 순환적으로 묘사하며, 네 개의 유가로 나눈다: 사트야 유가(진리와 정의의 황금시대), 트레타 유가(덕이 감소하는 은시대), 드바파라 유가(더욱 쇠퇴하는 청동시대), 칼리 유가(분쟁과 불화의 철시대). 네 유가의 완전한 주기를 마하유가라 하며 432만 년이 걸린다. 우주는 창조(스리시티), 유지(스티티), 파괴(프랄라야)의 끝없는 순환을 겪는다. 이 이문대에서 신 아르주나는 이 우주적 순환을 국지화된 10일 리셋으로 압축하여 자연 질서의 조롱을 만들었다.",
+        "content_ja": "ヒンドゥー教の経典は時間を循環的に描写し、四つのユガに分ける：サトヤ・ユガ（真理と正義の黄金時代）、トレタ・ユガ（徳が減少する銀の時代）、ドヴァパラ・ユガ（さらに衰退する青銅の時代）、カリ・ユガ（争いと不和の鉄の時代）。四つのユガの完全な周期をマハユガと呼び、432万年を要する。宇宙は創造（スリシュティ）、維持（スティティ）、破壊（プララヤ）の無限の循環を経る。この異聞帯では、神アルジュナがこの宇宙的循環を局所化した10日間のリセットに圧縮し、自然秩序の嘲弄を作り出した。"
+      },
+      {
+        "title": "The Mahabharata: India's Greatest Epic",
+        "title_ko": "마하바라타: 인도 최고의 서사시",
+        "title_ja": "マハーバーラタ：インド最大の叙事詩",
+        "content": "The Mahabharata is one of the two major Sanskrit epics of ancient India, with over 100,000 shlokas (verses) making it the longest epic poem in history. It narrates the Kurukshetra War between the Pandava and Kaurava cousins for the throne of Hastinapura. The epic encompasses profound philosophical teachings, including the Bhagavad Gita—a dialogue between Arjuna and Krishna on duty, righteousness, and the nature of reality. The war lasted 18 days and resulted in catastrophic loss of life, with only a handful of warriors surviving. This conflict serves as the mythological foundation for Lostbelt 4, where the endless cycle of destruction echoes the epic's themes of dharma (duty) versus adharma (chaos).",
+        "content_ko": "마하바라타는 고대 인도의 두 대서사시 중 하나로, 10만 개 이상의 슬로카(시구)를 가진 역사상 가장 긴 서사시이다. 하스티나푸라 왕좌를 두고 판다바와 카우라바 사촌 간의 쿠루크셰트라 전쟁을 서술한다. 이 서사시는 바가바드 기타—의무, 정의, 실재의 본질에 관한 아르주나와 크리슈나 간의 대화—를 포함한 심오한 철학적 가르침을 담고 있다. 전쟁은 18일간 지속되었고 재앙적인 인명 손실을 가져와 소수의 전사만이 살아남았다. 이 충돌은 이문대 4의 신화적 기반이 되며, 끝없는 파괴의 순환은 다르마(의무) 대 아다르마(혼란)라는 서사시의 주제를 반영한다.",
+        "content_ja": "マハーバーラタは古代インドの二大サンスクリット叙事詩の一つで、10万以上のシュローカ（詩節）を持つ史上最長の叙事詩である。ハスティナプラの王座を巡るパーンダヴァとカウラヴァの従兄弟間のクルクシェートラ戦争を物語る。この叙事詩は、義務、正義、実在の本質についてのアルジュナとクリシュナの対話であるバガヴァッド・ギーターを含む深遠な哲学的教えを包含する。戦争は18日間続き、壊滅的な人命の喪失をもたらし、生き残った戦士はわずかだった。この紛争は異聞帯4の神話的基盤となり、終わりなき破壊の循環は叙事詩のダルマ（義務）対アダルマ（混沌）というテーマを反映している。"
+      },
+      {
+        "title": "Arjuna: The Peerless Archer",
+        "title_ko": "아르주나: 비할 데 없는 궁수",
+        "title_ja": "アルジュナ：比類なき弓使い",
+        "content": "Arjuna, the third of the five Pandava brothers, was born to Queen Kunti through the blessing of Indra, king of the gods. He is renowned as the greatest archer in the world, having trained under the legendary guru Dronacharya and later receiving divine weapons (astras) from various gods including Shiva's Pashupatastra. His friendship with Krishna, an avatar of Vishnu, is central to his legend. Before the Kurukshetra War, Arjuna suffered a crisis of conscience, unwilling to fight his own relatives—leading to Krishna's discourse known as the Bhagavad Gita. In this Lostbelt, Arjuna's obsession with righteousness has been corrupted into an absolute rejection of all 'evil,' transforming him into God Arjuna who judges all existence by an impossibly pure standard.",
+        "content_ko": "아르주나는 다섯 판다바 형제 중 셋째로, 신들의 왕 인드라의 축복을 통해 쿤티 왕비에게서 태어났다. 그는 전설적인 스승 드로나차리아 아래 훈련받고 나중에 시바의 파슈파타스트라를 포함한 다양한 신들로부터 신성한 무기(아스트라)를 받아 세계 최고의 궁수로 명성을 얻었다. 비슈누의 화신인 크리슈나와의 우정은 그의 전설의 중심이다. 쿠루크셰트라 전쟁 전, 아르주나는 자신의 친족과 싸우는 것을 거부하는 양심의 위기를 겪었고—이것이 바가바드 기타로 알려진 크리슈나의 가르침으로 이어졌다. 이 이문대에서 아르주나의 정의에 대한 집착은 모든 '악'의 절대적 거부로 타락하여, 불가능할 정도로 순수한 기준으로 모든 존재를 심판하는 신 아르주나로 변모했다.",
+        "content_ja": "アルジュナは五人のパーンダヴァ兄弟の三男で、神々の王インドラの祝福により女王クンティから生まれた。彼は伝説の師ドローナチャーリヤの下で修行し、後にシヴァのパシュパタストラを含む様々な神々から神聖な武器（アストラ）を授かり、世界最高の弓使いとして名を馳せた。ヴィシュヌの化身であるクリシュナとの友情は彼の伝説の中心である。クルクシェートラ戦争前、アルジュナは自らの親族と戦うことを拒み良心の危機を経験した—これがバガヴァッド・ギーターとして知られるクリシュナの教えにつながった。この異聞帯では、アルジュナの正義への執着がすべての「悪」の絶対的拒絶へと堕落し、不可能なほど純粋な基準ですべての存在を裁く神アルジュナへと変貌した。"
+      },
+      {
+        "title": "Karna: The Sun's Abandoned Son",
+        "title_ko": "카르나: 태양신에게 버림받은 아들",
+        "title_ja": "カルナ：太陽に捨てられた息子",
+        "content": "Karna was born to Kunti before her marriage, through the sun god Surya's blessing. Fearing scandal, Kunti abandoned the infant in a basket on the river, where he was found and raised by a charioteer. Despite his divine parentage, Karna faced lifelong discrimination due to his perceived low birth. He became the closest friend of Duryodhana, leader of the Kauravas, who granted him a kingdom when others rejected him. Karna possessed the impenetrable armor Kavacha and earrings Kundala, gifts from his father that made him nearly invincible—though he sacrificed these to Indra. His rivalry with Arjuna culminated in their fatal confrontation at Kurukshetra. In this Lostbelt, Karna serves as a crucial ally against God Arjuna, embodying the tragedy of two brothers forced to eternal opposition.",
+        "content_ko": "카르나는 쿤티가 결혼하기 전에 태양신 수리야의 축복을 통해 태어났다. 추문을 두려워한 쿤티는 갓난아이를 강에 바구니에 넣어 버렸고, 그는 마부에게 발견되어 양육되었다. 신적인 혈통에도 불구하고 카르나는 낮은 출신으로 인식되어 평생 차별에 직면했다. 그는 다른 이들이 그를 거부했을 때 왕국을 하사한 카우라바의 지도자 두료다나의 가장 가까운 친구가 되었다. 카르나는 아버지로부터 받은 뚫을 수 없는 갑옷 카바차와 귀걸이 쿤달라를 소유하여 거의 무적이었지만—이것을 인드라에게 희생했다. 아르주나와의 경쟁은 쿠루크셰트라에서의 치명적인 대결로 절정에 달했다. 이 이문대에서 카르나는 신 아르주나에 대항하는 중요한 동맹으로, 영원한 대립을 강요당한 두 형제의 비극을 구현한다.",
+        "content_ja": "カルナはクンティの結婚前に太陽神スーリヤの祝福によって生まれた。醜聞を恐れたクンティは赤子を川の籠に入れて捨て、彼は御者に発見され育てられた。神聖な血統にもかかわらず、カルナは低い出自と見なされ生涯差別に直面した。彼は他者に拒絶された時に王国を与えてくれたカウラヴァの指導者ドゥルヨーダナの最も親しい友となった。カルナは父から授かった貫くことのできない鎧カヴァチャと耳飾りクンダラを持ち、ほぼ無敵だったが—これをインドラに犠牲として捧げた。アルジュナとの対立はクルクシェートラでの致命的な対決で頂点に達した。この異聞帯では、カルナは神アルジュナに対抗する重要な同盟者として、永遠の対立を強いられた二人の兄弟の悲劇を体現する。"
+      },
+      {
+        "title": "Ashwatthama: The Immortal Cursed",
+        "title_ko": "아슈와타마: 불멸의 저주받은 자",
+        "title_ja": "アシュヴァッターマン：不死の呪われし者",
+        "content": "Ashwatthama was the son of Dronacharya, the martial arts guru who trained both the Pandavas and Kauravas. Born with a gem (mani) embedded in his forehead that granted protection from hunger, fatigue, and disease, Ashwatthama was one of the maharathis (great warriors) of the Kaurava army. After his father's death through deception, Ashwatthama unleashed the Brahmastra in fury, attempting to kill all Pandava descendants including the unborn child Parikshit. For this crime against dharma, Krishna cursed him to wander the earth eternally with festering wounds, never finding death or peace. In Fate/Grand Order, Ashwatthama serves as an ally in Lostbelt 4, his eternal suffering giving him unique perspective on God Arjuna's 'perfect' world where death is merely another reset.",
+        "content_ko": "아슈와타마는 판다바와 카우라바 모두를 훈련시킨 무술 스승 드로나차리아의 아들이었다. 이마에 배고픔, 피로, 질병으로부터 보호해주는 보석(마니)을 박고 태어난 아슈와타마는 카우라바 군의 마하라티(대전사) 중 하나였다. 속임수로 아버지가 죽은 후, 아슈와타마는 분노로 브라흐마스트라를 발사하여 태어나지 않은 아이 파리크시트를 포함한 모든 판다바 후손을 죽이려 했다. 다르마에 대한 이 범죄로 크리슈나는 그에게 곪아가는 상처와 함께 영원히 죽음이나 평화를 찾지 못하고 지상을 방황하도록 저주했다. 페이트/그랜드 오더에서 아슈와타마는 이문대 4의 동맹으로, 그의 영원한 고통은 죽음이 단지 또 다른 리셋에 불과한 신 아르주나의 '완벽한' 세계에 대한 독특한 시각을 제공한다.",
+        "content_ja": "アシュヴァッターマンはパーンダヴァとカウラヴァの両方を訓練した武術の師ドローナチャーリヤの息子だった。額に飢え、疲労、病気から守る宝石（マニ）を埋め込まれて生まれ、アシュヴァッターマンはカウラヴァ軍のマハラティ（大戦士）の一人だった。父が欺きによって死んだ後、アシュヴァッターマンは怒りでブラフマストラを放ち、胎児パリクシットを含むすべてのパーンダヴァの子孫を殺そうとした。このダルマに対する罪により、クリシュナは彼に化膿する傷と共に永遠に地上を彷徨い、死も平和も見つけられない呪いをかけた。Fate/Grand Orderでは、アシュヴァッターマンは異聞帯4の同盟者として、彼の永遠の苦しみは死が単なる別のリセットに過ぎない神アルジュナの「完璧な」世界に対する独自の視点を提供する。"
+      },
+      {
+        "title": "Ganesha and Jinako Carigiri",
+        "title_ko": "가네샤와 지나코 카리기리",
+        "title_ja": "ガネーシャと神子上カリギリ",
+        "content": "Ganesha, the elephant-headed god of beginnings and wisdom, is one of the most beloved deities in Hinduism. Son of Shiva and Parvati, he is worshipped before any new venture and is known as the remover of obstacles (Vighnaharta). In Fate/Grand Order, Ganesha has possessed the body of Jinako Carigiri, a former NPC from Fate/EXTRA CCC who was a shut-in gamer. This unlikely pairing creates a Servant who is simultaneously divine and relatable, struggling with motivation and preferring to avoid conflict. Despite her reluctance, Jinako/Ganesha plays a crucial role in Lostbelt 4, her human perspective helping to challenge God Arjuna's inhuman perfection. Their story explores themes of accepting one's imperfections rather than erasing them.",
+        "content_ko": "가네샤는 코끼리 머리를 한 시작과 지혜의 신으로, 힌두교에서 가장 사랑받는 신 중 하나이다. 시바와 파르바티의 아들인 그는 새로운 일을 시작하기 전에 숭배되며 장애물 제거자(비그나하르타)로 알려져 있다. 페이트/그랜드 오더에서 가네샤는 Fate/EXTRA CCC의 전 NPC였던 은둔 게이머 지나코 카리기리의 몸에 빙의했다. 이 의외의 조합은 신성하면서도 공감할 수 있는 서번트를 만들어내며, 동기 부여에 어려움을 겪고 갈등을 피하려 한다. 그녀의 꺼림에도 불구하고 지나코/가네샤는 이문대 4에서 중요한 역할을 하며, 그녀의 인간적 시각이 신 아르주나의 비인간적 완벽함에 도전하는 데 도움을 준다. 그들의 이야기는 불완전함을 지우기보다 받아들이는 주제를 탐구한다.",
+        "content_ja": "ガネーシャは象頭の始まりと知恵の神で、ヒンドゥー教で最も愛される神の一人である。シヴァとパールヴァティの息子である彼は、新しい事業の前に崇拝され、障害を取り除く者（ヴィグナハルタ）として知られる。Fate/Grand Orderでは、ガネーシャはFate/EXTRA CCCの元NPC、引きこもりゲーマーの神子上カリギリの体に憑依している。この意外な組み合わせは、神聖でありながら共感できるサーヴァントを生み出し、やる気に苦しみ争いを避けようとする。彼女の消極性にもかかわらず、ジナコ/ガネーシャは異聞帯4で重要な役割を果たし、彼女の人間的視点が神アルジュナの非人間的な完璧さに挑戦する助けとなる。彼らの物語は、不完全さを消し去るのではなく受け入れるというテーマを探求する。"
+      },
+      {
+        "title": "Crypter: Scandinavia Peperoncino",
+        "title_ko": "크립터: 스칸디나비아 페페론치노",
+        "title_ja": "クリプター：スカンジナビア・ペペロンチーノ",
+        "content": "Scandinavia Peperoncino is one of the seven Crypters and serves as the Master responsible for Lostbelt 4. Unlike the other Crypters, Peperoncino is notably friendly toward the protagonist, maintaining an amicable demeanor throughout their encounters. His true name is said to be connected to his Buddhist faith, and he approaches his role with a philosophical acceptance rather than antagonism. His Servant is Ashwatthama, whose eternal curse resonates with themes of karma and suffering central to Indian philosophy. Peperoncino's backstory involves tragedy and a search for meaning, making him one of the most sympathetic antagonists in the Lostbelt arc. His relationship with God Arjuna is complex—while he oversees this Lostbelt, he does not necessarily endorse its ruler's methods.",
+        "content_ko": "스칸디나비아 페페론치노는 일곱 크립터 중 하나로 이문대 4를 담당하는 마스터이다. 다른 크립터들과 달리 페페론치노는 주인공에게 특히 우호적이며, 만남 내내 친근한 태도를 유지한다. 그의 본명은 불교 신앙과 연결되어 있다고 하며, 적대감보다는 철학적 수용으로 자신의 역할에 임한다. 그의 서번트는 아슈와타마로, 그의 영원한 저주는 인도 철학의 핵심인 업과 고통의 주제와 공명한다. 페페론치노의 배경은 비극과 의미 추구를 포함하여, 이문대 아크에서 가장 공감할 수 있는 적대자 중 하나가 된다. 신 아르주나와의 관계는 복잡하다—이 이문대를 감독하지만, 지배자의 방법을 반드시 지지하지는 않는다.",
+        "content_ja": "スカンジナビア・ペペロンチーノは七人のクリプターの一人で、異聞帯4を担当するマスターである。他のクリプターと異なり、ペペロンチーノは主人公に対して特に友好的で、出会いを通じて親しみやすい態度を維持する。彼の本名は仏教信仰と関連があると言われ、敵意ではなく哲学的な受容をもって自らの役割に臨む。彼のサーヴァントはアシュヴァッターマンで、その永遠の呪いはインド哲学の核心であるカルマと苦しみのテーマと共鳴する。ペペロンチーノの背景は悲劇と意味の探求を含み、異聞帯編で最も共感できる敵対者の一人となっている。神アルジュナとの関係は複雑で、この異聞帯を監督しながらも、支配者の方法を必ずしも支持してはいない。"
+      }
+    ],
+    "historical_basis": "The Mahabharata, composed between 400 BCE and 400 CE, remains one of humanity's greatest literary works, influencing Indian culture, philosophy, and spirituality for millennia. The concept of Yugas from Vedic astronomy and Hindu cosmology represents humanity's attempt to understand cosmic time scales. The Kurukshetra War, while mythological, may reflect actual conflicts during the late Vedic period. Archaeological sites in Haryana, India, are associated with locations from the epic.",
+    "historical_basis_ko": "마하바라타는 기원전 400년에서 기원후 400년 사이에 작성되어 수천 년간 인도 문화, 철학, 영성에 영향을 미친 인류 최고의 문학 작품 중 하나로 남아 있다. 베다 천문학과 힌두 우주론의 유가 개념은 우주적 시간 규모를 이해하려는 인류의 시도를 나타낸다. 쿠루크셰트라 전쟁은 신화적이지만 베다 후기의 실제 충돌을 반영할 수 있다. 인도 하리야나의 고고학 유적지들은 서사시의 장소들과 연관되어 있다.",
+    "historical_basis_ja": "マハーバーラタは紀元前400年から紀元後400年の間に作成され、数千年にわたりインドの文化、哲学、精神性に影響を与えた人類最高の文学作品の一つとして残っている。ヴェーダ天文学とヒンドゥー宇宙論のユガの概念は、宇宙的な時間スケールを理解しようとする人類の試みを表す。クルクシェートラ戦争は神話的だが、ヴェーダ後期の実際の紛争を反映している可能性がある。インドのハリヤーナー州の考古学的遺跡は叙事詩の場所と関連付けられている。",
+    "related_servants": [
+      {"name": "Arjuna (Alter)", "class": "Berserker", "rarity": 5},
+      {"name": "Karna", "class": "Lancer", "rarity": 5},
+      {"name": "Ashwatthama", "class": "Archer", "rarity": 4},
+      {"name": "Ganesha (Jinako)", "class": "Moon Cancer", "rarity": 5},
+      {"name": "Asclepius", "class": "Caster", "rarity": 3},
+      {"name": "Arjuna", "class": "Archer", "rarity": 5},
+      {"name": "Rama", "class": "Saber", "rarity": 5},
+      {"name": "Parvati", "class": "Lancer", "rarity": 4},
+      {"name": "Lakshmi Bai", "class": "Saber", "rarity": 4},
+      {"name": "William Tell", "class": "Archer", "rarity": 3},
+      {"name": "Nezha", "class": "Lancer", "rarity": 4}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Mahabharata", "Bhagavad Gita", "Hindu Puranas", "Vedic literature", "Hindu cosmology"]
+  },
+  {
+    "id": "lostbelt-5",
+    "type": "lostbelt",
+    "title": "Olympus",
+    "title_ko": "올림푸스",
+    "title_ja": "オリュンポス",
+    "subtitle": "Interstellar Mountainous City - Olympus",
+    "subtitle_ko": "성간도시산맥 올림푸스",
+    "subtitle_ja": "星間都市山脈 オリュンポス",
+    "chapter": "Lostbelt No.5",
+    "era": "B.C. 12000 (Divergent)",
+    "year": -12000,
+    "location": "Atlantic Ocean / Greece",
+    "description": "The longest and most expansive Lostbelt, split into two chapters: Atlantis and Olympus. In this world, the Olympian machine gods never abandoned their original forms as interstellar spacecraft, maintaining direct rule over humanity from the floating city of Olympus. Zeus has become an absolute tyrant, absorbing other machine gods to become the ultimate being, while a resistance led by the remnants of fallen gods fights to restore human dignity.",
+    "description_ko": "아틀란티스와 올림푸스 두 장으로 나뉜 가장 길고 방대한 이문대. 이 세계에서 올림포스 기계신들은 성간 우주선으로서의 원래 형태를 버리지 않고, 부유도시 올림푸스에서 인류를 직접 통치한다. 제우스는 다른 기계신들을 흡수하여 궁극의 존재가 된 절대 폭군이 되었고, 몰락한 신들의 잔해가 이끄는 저항군이 인간의 존엄성을 되찾기 위해 싸운다.",
+    "description_ja": "アトランティスとオリュンポスの二章に分かれた最も長く壮大な異聞帯。この世界では、オリュンポスの機械神たちは星間宇宙船としての本来の姿を捨てず、浮遊都市オリュンポスから人類を直接統治している。ゼウスは他の機械神を吸収して究極の存在となった絶対的な暴君となり、堕ちた神々の残骸が率いる抵抗勢力が人間の尊厳を取り戻すために戦う。",
+    "sections": [
+      {
+        "title": "Greek Mythology: Origins of the Olympians",
+        "title_ko": "그리스 신화: 올림포스 신들의 기원",
+        "title_ja": "ギリシャ神話：オリュンポスの神々の起源",
+        "content": "Greek mythology tells of the primordial chaos from which emerged Gaia (Earth), Tartarus (Underworld), and Eros (Love). Gaia gave birth to Uranus (Sky), and together they produced the Titans. Cronus, youngest of the Titans, overthrew his father Uranus, only to be overthrown himself by his son Zeus. This war, the Titanomachy, established the Olympians as rulers of the cosmos. The twelve major Olympians—Zeus, Hera, Poseidon, Demeter, Athena, Apollo, Artemis, Ares, Aphrodite, Hephaestus, Hermes, and either Hestia or Dionysus—governed different aspects of existence. In the Nasuverse, these gods are revealed to be alien machine intelligences that arrived on Earth millennia ago.",
+        "content_ko": "그리스 신화는 가이아(대지), 타르타로스(명계), 에로스(사랑)가 나온 원초적 혼돈을 이야기한다. 가이아는 우라노스(하늘)를 낳았고, 함께 티탄들을 낳았다. 티탄 중 막내인 크로노스는 아버지 우라노스를 전복했지만, 자신의 아들 제우스에게 전복당했다. 이 전쟁인 티타노마키아는 올림포스 신들을 우주의 지배자로 확립했다. 열두 명의 주요 올림포스 신—제우스, 헤라, 포세이돈, 데메테르, 아테나, 아폴론, 아르테미스, 아레스, 아프로디테, 헤파이스토스, 헤르메스, 그리고 헤스티아 또는 디오니소스—이 존재의 다른 측면을 관장했다. 나스버스에서 이 신들은 수천 년 전 지구에 도착한 외계 기계 지성체로 밝혀진다.",
+        "content_ja": "ギリシャ神話は、ガイア（大地）、タルタロス（冥界）、エロス（愛）が生まれた原初の混沌を語る。ガイアはウラノス（天空）を生み、共にティタン神族を生んだ。ティタンの末子クロノスは父ウラノスを打倒したが、自らの息子ゼウスに打倒された。この戦争、ティタノマキアはオリュンポスの神々を宇宙の支配者として確立した。十二人の主要なオリュンポスの神々―ゼウス、ヘラ、ポセイドン、デメテル、アテナ、アポロン、アルテミス、アレス、アフロディテ、ヘパイストス、ヘルメス、そしてヘスティアまたはディオニュソス―が存在の異なる側面を司った。ナスバースでは、これらの神々は数千年前に地球に到着した異星の機械知性体であることが明かされる。"
+      },
+      {
+        "title": "Atlantis: Plato's Lost Civilization",
+        "title_ko": "아틀란티스: 플라톤의 잃어버린 문명",
+        "title_ja": "アトランティス：プラトンの失われた文明",
+        "content": "Atlantis first appears in Plato's dialogues Timaeus and Critias (circa 360 BCE), described as a powerful naval empire located beyond the Pillars of Hercules (Strait of Gibraltar). Plato portrayed it as a utopian civilization that eventually grew corrupt and was punished by the gods, sinking beneath the ocean in a single day and night. Whether Plato intended Atlantis as historical fact, philosophical allegory, or cautionary tale remains debated. In Lostbelt 5.1 (Atlantis), this mythical land is the setting for the first half of the story, where remnants of the old gods have taken refuge in the ocean, resisting Zeus's absolute rule. The Divine Spirits Artemis and Poseidon guard these waters, presenting formidable obstacles.",
+        "content_ko": "아틀란티스는 플라톤의 대화편 티마이오스와 크리티아스(기원전 360년경)에 처음 등장하며, 헤라클레스의 기둥(지브롤터 해협) 너머에 위치한 강력한 해상 제국으로 묘사된다. 플라톤은 이를 결국 타락하여 신들에게 벌을 받아 하루 밤 사이에 바다 아래로 가라앉은 유토피아 문명으로 그렸다. 플라톤이 아틀란티스를 역사적 사실, 철학적 우화, 또는 경고의 이야기로 의도했는지는 여전히 논쟁 중이다. 이문대 5.1(아틀란티스)에서 이 신화적 땅은 이야기 전반부의 배경으로, 옛 신들의 잔해가 제우스의 절대적 통치에 저항하며 바다에 피난처를 마련했다. 신령 아르테미스와 포세이돈이 이 바다를 지키며 강력한 장애물로 등장한다.",
+        "content_ja": "アトランティスはプラトンの対話篇ティマイオスとクリティアス（紀元前360年頃）に初めて登場し、ヘラクレスの柱（ジブラルタル海峡）の向こうに位置する強大な海上帝国として描写される。プラトンはこれを最終的に堕落し、神々に罰せられて一日一夜にして海中に沈んだユートピア文明として描いた。プラトンがアトランティスを歴史的事実、哲学的寓話、または警告の物語として意図したかは今も議論されている。異聞帯5.1（アトランティス）では、この神話の地が物語の前半の舞台となり、古い神々の残骸がゼウスの絶対的支配に抵抗して海に避難している。神霊アルテミスとポセイドンがこの海を守り、手強い障害として立ちはだかる。"
+      },
+      {
+        "title": "Zeus: King of Gods to Supreme Tyrant",
+        "title_ko": "제우스: 신들의 왕에서 최고 폭군으로",
+        "title_ja": "ゼウス：神々の王から至高の暴君へ",
+        "content": "Zeus, the sky god and king of Olympus, is among the most important figures in Greek religion. His symbols include the thunderbolt, eagle, bull, and oak tree. In mythology, he is known for his numerous affairs with mortals and immortals alike, fathering many heroes and gods. His authority was challenged but never overthrown—unlike his father Cronus and grandfather Uranus. In this Lostbelt, Zeus has achieved something unprecedented: absorbing the essence of other machine gods (Hera, Poseidon, Demeter, Aphrodite, Ares, Hestia) into himself, becoming an omnipotent being. This 'Interstellar Combat-Use Annihilation Type Machine God' represents the ultimate fusion of divine authority, capable of rewriting reality itself. His transformation symbolizes how absolute power corrupts absolutely.",
+        "content_ko": "제우스는 하늘의 신이자 올림푸스의 왕으로 그리스 종교에서 가장 중요한 인물 중 하나이다. 그의 상징은 번개, 독수리, 황소, 참나무 등이다. 신화에서 그는 인간과 불멸자 모두와 수많은 정사를 벌여 많은 영웅과 신을 낳은 것으로 알려져 있다. 그의 권위는 도전받았지만 전복되지 않았다—아버지 크로노스와 할아버지 우라노스와 달리. 이 이문대에서 제우스는 전례 없는 일을 성취했다: 다른 기계신들(헤라, 포세이돈, 데메테르, 아프로디테, 아레스, 헤스티아)의 본질을 흡수하여 전능한 존재가 되었다. 이 '성간 전투용 섬멸형 기계신'은 현실 자체를 재작성할 수 있는 신적 권위의 궁극적 융합을 나타낸다. 그의 변신은 절대 권력이 절대적으로 부패하는 방식을 상징한다.",
+        "content_ja": "ゼウスは天空の神でありオリュンポスの王として、ギリシャの宗教で最も重要な人物の一人である。彼の象徴は雷霆、鷲、牡牛、樫の木などである。神話では、人間と不死者の両方と数多くの情事を持ち、多くの英雄と神を儲けたことで知られる。彼の権威は挑戦されたが、覆されることはなかった―父クロノスや祖父ウラノスとは異なり。この異聞帯では、ゼウスは前例のないことを成し遂げた：他の機械神（ヘラ、ポセイドン、デメテル、アフロディテ、アレス、ヘスティア）の本質を吸収し、全能の存在となった。この「星間戦闘用殲滅型機械神」は現実そのものを書き換えることができる神的権威の究極の融合を表す。彼の変身は絶対的な権力が絶対的に腐敗する様を象徴する。"
+      },
+      {
+        "title": "Athena and the Machine God Rebellion",
+        "title_ko": "아테나와 기계신 반란",
+        "title_ja": "アテナと機械神の反乱",
+        "content": "Athena, goddess of wisdom, warfare, and crafts, was born fully armed from Zeus's forehead after he swallowed her mother Metis. She was one of Zeus's favorite children and a patron of heroes like Perseus, Heracles, and Odysseus. Known for her strategic intelligence rather than brute force, she represented civilization and justice. In Lostbelt 5, Athena joins forces with Hephaestus, the smith god, in rebellion against Zeus's tyranny. Having recognized that Zeus's absolute rule denies humanity's potential for growth, these machine gods sacrifice themselves to give Chaldea the means to challenge the supreme deity. Their resistance echoes the mythological theme of younger gods challenging the established order for the sake of progress.",
+        "content_ko": "아테나는 지혜, 전쟁, 기술의 여신으로, 제우스가 어머니 메티스를 삼킨 후 그의 이마에서 완전 무장한 채 태어났다. 그녀는 제우스가 가장 좋아하는 자식 중 하나였으며 페르세우스, 헤라클레스, 오디세우스 같은 영웅들의 수호신이었다. 무력보다는 전략적 지성으로 알려진 그녀는 문명과 정의를 대표했다. 이문대 5에서 아테나는 대장장이 신 헤파이스토스와 힘을 합쳐 제우스의 폭정에 반기를 든다. 제우스의 절대 통치가 인류의 성장 잠재력을 부정한다는 것을 인식한 이 기계신들은 칼데아에게 최고 신에 도전할 수단을 주기 위해 스스로를 희생한다. 그들의 저항은 진보를 위해 젊은 신들이 기존 질서에 도전하는 신화적 주제를 반영한다.",
+        "content_ja": "アテナは知恵、戦争、技芸の女神で、ゼウスが母メティスを飲み込んだ後、彼の額から完全武装して生まれた。彼女はゼウスのお気に入りの子供の一人であり、ペルセウス、ヘラクレス、オデュッセウスのような英雄たちの守護者だった。蛮力よりも戦略的知性で知られ、文明と正義を体現した。異聞帯5では、アテナは鍛冶の神ヘパイストスと力を合わせてゼウスの暴政に反旗を翻す。ゼウスの絶対的支配が人類の成長の可能性を否定することを認識したこれらの機械神は、カルデアに至高神に挑む手段を与えるために自らを犠牲にする。彼らの抵抗は、進歩のために若い神々が既存の秩序に挑戦するという神話的テーマを反映している。"
+      },
+      {
+        "title": "Orion and Artemis: The Hunter's Tragedy",
+        "title_ko": "오리온과 아르테미스: 사냥꾼의 비극",
+        "title_ja": "オリオンとアルテミス：狩人の悲劇",
+        "content": "Orion was a giant huntsman in Greek mythology, renowned as the greatest hunter who ever lived. His relationship with Artemis, the virgin goddess of the hunt, is told in various versions—some say they were companions, others lovers, and in tragic versions, Artemis accidentally killed him. After his death, he was placed among the stars as the constellation Orion. In Fate/Grand Order, their relationship is central to Lostbelt 5.1. The 'Super Orion' Servant represents the original Orion at his peak, a massive muscular figure devoted to Artemis. Meanwhile, Artemis in this Lostbelt has become a weapon of mass destruction—a moon-sized satellite capable of annihilating any target. Their confrontation forces Orion to sacrifice himself to destroy Artemis, an inversion of their mythological tragedy.",
+        "content_ko": "오리온은 그리스 신화의 거인 사냥꾼으로, 역사상 가장 위대한 사냥꾼으로 명성이 높았다. 처녀 사냥의 여신 아르테미스와의 관계는 여러 버전으로 전해진다—어떤 이야기에서는 동료였고, 다른 이야기에서는 연인이었으며, 비극적 버전에서는 아르테미스가 실수로 그를 죽였다. 그의 죽음 후 그는 오리온 별자리로 별들 사이에 놓여졌다. 페이트/그랜드 오더에서 그들의 관계는 이문대 5.1의 중심이다. '슈퍼 오리온' 서번트는 전성기의 원래 오리온을 나타내며, 아르테미스에게 헌신하는 거대한 근육질 인물이다. 한편 이 이문대의 아르테미스는 대량 파괴 무기—어떤 목표도 섬멸할 수 있는 달 크기의 위성—가 되었다. 그들의 대결은 오리온이 아르테미스를 파괴하기 위해 자신을 희생하도록 강요하며, 신화적 비극의 역전이다.",
+        "content_ja": "オリオンはギリシャ神話の巨人の狩人で、史上最も偉大な狩人として名高かった。処女の狩りの女神アルテミスとの関係は様々なバージョンで語られる―ある話では仲間、別の話では恋人、悲劇的なバージョンではアルテミスが誤って彼を殺した。彼の死後、オリオン座として星々の中に置かれた。Fate/Grand Orderでは、彼らの関係は異聞帯5.1の中心である。「超人オリオン」サーヴァントは全盛期の元のオリオンを表し、アルテミスに献身する巨大な筋肉質の姿である。一方、この異聞帯のアルテミスは大量破壊兵器―あらゆる目標を殲滅できる月サイズの衛星―となった。彼らの対決はオリオンがアルテミスを破壊するために自らを犠牲にすることを強い、神話的悲劇の逆転となる。"
+      },
+      {
+        "title": "Caenis: The Transformed Warrior",
+        "title_ko": "카이니스: 변신한 전사",
+        "title_ja": "カイニス：変身した戦士",
+        "content": "In Greek mythology, Caenis was a woman who was assaulted by Poseidon. As compensation, Poseidon granted her any wish, and she chose to become a man named Caeneus, impervious to weapons, so she would never be victimized again. Caeneus became one of the Lapiths and a legendary warrior, eventually killed by being buried under trees and rocks by centaurs during the famous Centauromachy. In Fate/Grand Order, Caenis serves as the Servant of Kirschtaria Wodime with a deep hatred for Poseidon. Despite initial antagonism toward Chaldea, Caenis becomes an unlikely ally, their story exploring themes of trauma, identity, and reclaiming agency. Their character arc represents one of the most nuanced examinations of mythological violence in the game.",
+        "content_ko": "그리스 신화에서 카이니스는 포세이돈에게 폭행당한 여성이었다. 보상으로 포세이돈은 그녀에게 어떤 소원이든 들어주었고, 그녀는 다시는 피해자가 되지 않도록 무기에 불사신인 카이네우스라는 남자가 되기를 선택했다. 카이네우스는 라피타이족 중 하나이자 전설적인 전사가 되었으며, 유명한 켄타우로마키아 중 켄타우로스들에 의해 나무와 바위 아래 묻혀 결국 죽었다. 페이트/그랜드 오더에서 카이니스는 포세이돈에 대한 깊은 증오를 품고 키르슈타리아 보다임의 서번트로 활동한다. 칼데아에 대한 초기 적대에도 불구하고 카이니스는 의외의 동맹이 되며, 그들의 이야기는 트라우마, 정체성, 주체성 회복의 주제를 탐구한다. 그들의 캐릭터 아크는 게임에서 신화적 폭력에 대한 가장 섬세한 검토 중 하나를 나타낸다.",
+        "content_ja": "ギリシャ神話では、カイニスはポセイドンに暴行された女性だった。償いとしてポセイドンは彼女にどんな願いも叶えると言い、彼女は二度と被害者にならないよう、武器が効かないカイネウスという男になることを選んだ。カイネウスはラピタイ族の一人となり伝説の戦士となったが、有名なケンタウロマキアで木と岩の下に埋められケンタウロスたちに殺された。Fate/Grand Orderでは、カイニスはポセイドンへの深い憎しみを抱きながらキリシュタリア・ヴォーダイムのサーヴァントを務める。カルデアへの当初の敵意にもかかわらず、カイニスは意外な同盟者となり、彼らの物語はトラウマ、アイデンティティ、主体性の回復というテーマを探求する。彼らのキャラクターアークは、ゲームにおける神話的暴力の最も繊細な検証の一つを表している。"
+      },
+      {
+        "title": "Romulus-Quirinus: Rome's Divine Founder",
+        "title_ko": "로물루스=퀴리누스: 로마의 신적 창건자",
+        "title_ja": "ロムルス＝クィリヌス：ローマの神的建国者",
+        "content": "Romulus was the legendary founder and first king of Rome, said to be a son of Mars and raised by a she-wolf alongside his twin brother Remus. After founding Rome, he was deified as the god Quirinus. Roman mythology held that he ascended to heaven and became one with this ancient deity of the Roman state. In Fate/Grand Order, Romulus-Quirinus represents the divine aspect of Rome's founder—a Grand Lancer who embodies the concept of Rome itself. Called upon in the battle against Zeus, he represents humanity's capacity to build civilizations that can challenge even the gods. His Noble Phantasm 'Per Aspera Ad Astra' (Through Hardships to the Stars) symbolizes Rome's—and humanity's—eternal drive to reach beyond their limitations.",
+        "content_ko": "로물루스는 로마의 전설적인 창건자이자 초대 왕으로, 마르스의 아들이며 쌍둥이 형제 레무스와 함께 암늑대에게 길러졌다고 한다. 로마를 건국한 후 그는 퀴리누스 신으로 신격화되었다. 로마 신화는 그가 하늘로 올라가 로마 국가의 고대 신과 하나가 되었다고 전한다. 페이트/그랜드 오더에서 로물루스=퀴리누스는 로마 창건자의 신적 측면—로마 자체의 개념을 구현하는 그랜드 랜서—를 나타낸다. 제우스와의 전투에 소환된 그는 신들에게도 도전할 수 있는 문명을 건설하는 인류의 능력을 대표한다. 그의 보구 '페르 아스페라 아드 아스트라'(역경을 통해 별들로)는 로마의—그리고 인류의—한계를 넘어서려는 영원한 추진력을 상징한다.",
+        "content_ja": "ロムルスはローマの伝説的な建国者であり初代王で、マルスの息子であり双子の兄弟レムスと共に雌狼に育てられたとされる。ローマを建国した後、彼は神クィリヌスとして神格化された。ローマ神話では、彼は天に昇りローマ国家の古代の神と一体になったとされる。Fate/Grand Orderでは、ロムルス＝クィリヌスはローマの建国者の神的側面―ローマそのものの概念を体現するグランドランサー―を表す。ゼウスとの戦いに召喚され、神々にさえ挑戦できる文明を築く人類の能力を代表する。彼の宝具「ペル・アスペラ・アド・アストラ」（苦難を越えて星々へ）は、ローマの―そして人類の―限界を超えようとする永遠の推進力を象徴する。"
+      },
+      {
+        "title": "Crypter: Kirschtaria Wodime",
+        "title_ko": "크립터: 키르슈타리아 보다임",
+        "title_ja": "クリプター：キリシュタリア・ヴォーダイム",
+        "content": "Kirschtaria Wodime is the leader of the seven Crypters and the most powerful among them. A prodigy from a distinguished magical lineage, he was considered the best candidate for the position of Chaldea's Director before the organization's reformation. His Lostbelt, the Atlantic Lostbelt, is the strongest and most developed of all seven. Unlike other Crypters who serve their Lostbelts' rulers, Wodime has grander ambitions: to use the Age of Gods' power to elevate all humanity to godhood, eliminating the inequality between mortals and divine beings. His plan, while seemingly noble, would fundamentally alter what it means to be human. His Servants include Caenis, and he commands respect even from Zeus. His conflict with Chaldea represents not evil versus good, but competing visions of humanity's future.",
+        "content_ko": "키르슈타리아 보다임은 일곱 크립터의 리더이자 그들 중 가장 강력한 자이다. 저명한 마술 가문 출신의 천재로, 칼데아의 조직 개편 전 소장 후보로 가장 유력했다. 그의 이문대인 대서양 이문대는 일곱 중 가장 강력하고 발달했다. 이문대의 지배자들을 섬기는 다른 크립터들과 달리 보다임은 더 원대한 야망을 품고 있다: 신대의 힘을 사용하여 모든 인류를 신격으로 끌어올려 필멸자와 신적 존재 사이의 불평등을 제거하는 것이다. 그의 계획은 겉보기에 고결해 보이지만, 인간이라는 것의 의미를 근본적으로 바꿀 것이다. 그의 서번트에는 카이니스가 포함되며, 제우스에게도 존경을 받는다. 칼데아와의 갈등은 선 대 악이 아니라 인류의 미래에 대한 경쟁하는 비전을 나타낸다.",
+        "content_ja": "キリシュタリア・ヴォーダイムは七人のクリプターのリーダーであり、彼らの中で最も強力な者である。名門魔術の血統出身の天才で、カルデアの組織改編前に所長候補として最も有力だった。彼の異聞帯である大西洋異聞帯は、七つの中で最も強力で発達している。異聞帯の支配者に仕える他のクリプターと異なり、ヴォーダイムはより壮大な野望を抱いている：神代の力を使って全人類を神格に引き上げ、定命の者と神的存在の間の不平等を排除すること。彼の計画は一見高潔に見えるが、人間であることの意味を根本的に変えてしまう。彼のサーヴァントにはカイニスが含まれ、ゼウスからも敬意を受けている。カルデアとの対立は善対悪ではなく、人類の未来に対する競合するビジョンを表している。"
+      }
+    ],
+    "historical_basis": "Greek mythology forms one of the foundational pillars of Western civilization, influencing art, literature, philosophy, and religion for over three millennia. Plato's account of Atlantis (c. 360 BCE) has inspired countless expeditions, theories, and works of fiction. The Olympian gods—Zeus, Athena, Poseidon, Artemis, and others—represent archetypal forces that continue to resonate in modern storytelling. The myth of Rome's founding by Romulus connects Greek and Roman religious traditions. Archaeological evidence suggests these myths may contain echoes of Bronze Age Mediterranean civilizations, including the Minoan and Mycenaean cultures.",
+    "historical_basis_ko": "그리스 신화는 3천 년 이상 예술, 문학, 철학, 종교에 영향을 미친 서양 문명의 기초 기둥 중 하나를 형성한다. 플라톤의 아틀란티스 이야기(기원전 360년경)는 수많은 탐험, 이론, 픽션 작품에 영감을 주었다. 올림포스 신들—제우스, 아테나, 포세이돈, 아르테미스 등—은 현대 스토리텔링에서 계속 공명하는 원형적 힘을 나타낸다. 로물루스에 의한 로마 건국 신화는 그리스와 로마 종교 전통을 연결한다. 고고학적 증거는 이러한 신화가 미노아와 미케네 문화를 포함한 청동기 시대 지중해 문명의 메아리를 담고 있을 수 있음을 시사한다.",
+    "historical_basis_ja": "ギリシャ神話は3千年以上にわたり芸術、文学、哲学、宗教に影響を与えた西洋文明の基礎的な柱の一つを形成する。プラトンのアトランティスの記述（紀元前360年頃）は無数の探検、理論、フィクション作品に影響を与えた。オリュンポスの神々―ゼウス、アテナ、ポセイドン、アルテミスなど―は現代のストーリーテリングで響き続ける原型的な力を表す。ロムルスによるローマ建国の神話はギリシャとローマの宗教的伝統を結びつける。考古学的証拠は、これらの神話がミノア文明やミケーネ文明を含む青銅器時代の地中海文明の反響を含んでいる可能性を示唆している。",
+    "related_servants": [
+      {"name": "Europa", "class": "Rider", "rarity": 5},
+      {"name": "Caenis", "class": "Lancer", "rarity": 5},
+      {"name": "Super Orion", "class": "Archer", "rarity": 5},
+      {"name": "Romulus-Quirinus", "class": "Lancer", "rarity": 5},
+      {"name": "Dioscuri", "class": "Saber", "rarity": 5},
+      {"name": "Odysseus", "class": "Rider", "rarity": 5},
+      {"name": "Mandricardo", "class": "Rider", "rarity": 3},
+      {"name": "Charlotte Corday", "class": "Assassin", "rarity": 4},
+      {"name": "Jason", "class": "Saber", "rarity": 1},
+      {"name": "Paris", "class": "Archer", "rarity": 3},
+      {"name": "Achilles", "class": "Rider", "rarity": 5},
+      {"name": "Hector", "class": "Lancer", "rarity": 4},
+      {"name": "Musashi (Berserker)", "class": "Berserker", "rarity": 5},
+      {"name": "Artemis (Orion)", "class": "Archer", "rarity": 5}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Greek Mythology", "Plato's Timaeus and Critias", "Hesiod's Theogony", "Homer's Iliad and Odyssey", "Roman mythology", "Ovid's Metamorphoses"]
+  },
+  {
+    "id": "lostbelt-6",
+    "type": "lostbelt",
+    "title": "Avalon le Fae",
+    "title_ko": "요정원 아발론",
+    "title_ja": "アヴァロン・ル・フェ",
+    "subtitle": "Fae Round Table Domain - Avalon le Fae",
+    "subtitle_ko": "요정원탁영역 아발론 르 페",
+    "subtitle_ja": "妖精円卓領域 アヴァロン・ル・フェ",
+    "chapter": "Lostbelt No.6",
+    "era": "Unknown (Divergent)",
+    "year": 500,
+    "location": "Britain (Fairy Realm)",
+    "description": "The most story-rich Lostbelt, divided into three parts. In this world, Britain sank beneath the sea, and what emerged in its place was a fairy realm where the native Fae of the British Isles created their own civilization. Queen Morgan has ruled for two thousand years, maintaining order through the 'Fairy Calendar' and the hierarchy of fairy clans. The arrival of a 'Child of Prophecy' threatens to upend everything, while the curse of the land itself—the Calamities—periodically devastate the realm.",
+    "description_ko": "가장 풍부한 스토리의 이문대로, 세 부분으로 나뉜다. 이 세계에서 브리튼은 바다 아래로 가라앉았고, 그 자리에 영국 제도의 토착 요정들이 자신들의 문명을 만든 요정 왕국이 나타났다. 모건 여왕은 '요정력'과 요정 씨족의 위계를 통해 2천 년간 질서를 유지해왔다. '예언의 아이'의 도착이 모든 것을 뒤엎을 위협이 되고, 땅 자체의 저주인 재앙들이 주기적으로 왕국을 황폐화한다.",
+    "description_ja": "最もストーリーが豊富な異聞帯で、三部に分かれている。この世界では、ブリテンは海の下に沈み、その代わりにブリテン諸島の土着の妖精たちが独自の文明を築いた妖精の国が現れた。モルガン女王は「妖精暦」と妖精氏族の階層を通じて二千年間秩序を維持してきた。「予言の子」の到来がすべてを覆す脅威となり、大地そのものの呪いである災厄が定期的に王国を荒廃させる。",
+    "sections": [
+      {
+        "title": "Arthurian Legend: The Matter of Britain",
+        "title_ko": "아서왕 전설: 브리튼의 이야기",
+        "title_ja": "アーサー王伝説：ブリテンの物語",
+        "content": "The Arthurian legend is one of the most influential mythological cycles in Western literature, first appearing in Welsh texts like the Mabinogion before being developed by Geoffrey of Monmouth, Chrétien de Troyes, and Thomas Malory. It tells of King Arthur, his queen Guinevere, the wizard Merlin, and the Knights of the Round Table. Central themes include the quest for the Holy Grail, the tragic love triangle with Lancelot, and Arthur's final battle at Camlann against Mordred. Avalon appears as the mystical island where Arthur was taken after his mortal wounding, to heal and one day return. The legends blend historical kernels (possibly a 5th-6th century Romano-British war leader) with Celtic mythology and medieval chivalric ideals.",
+        "content_ko": "아서왕 전설은 서양 문학에서 가장 영향력 있는 신화 주기 중 하나로, 웨일스 텍스트 마비노기온에 처음 등장한 후 몬머스의 제프리, 크레티앙 드 트루아, 토마스 맬러리에 의해 발전되었다. 아서왕, 왕비 기네비어, 마법사 멀린, 원탁의 기사들을 이야기한다. 주요 주제로는 성배 탐색, 랜슬롯과의 비극적 삼각관계, 모드레드와의 캄란 최후의 전투 등이 있다. 아발론은 아서가 치명상을 입은 후 치유받고 언젠가 돌아오기 위해 옮겨진 신비의 섬으로 등장한다. 전설은 역사적 핵심(5-6세기 로마노-브리튼 전쟁 지도자로 추정)과 켈트 신화, 중세 기사도 이상을 혼합한다.",
+        "content_ja": "アーサー王伝説は西洋文学で最も影響力のある神話群の一つで、ウェールズのテキスト『マビノギオン』に初めて登場した後、モンマスのジェフリー、クレティアン・ド・トロワ、トマス・マロリーによって発展した。アーサー王、王妃グィネヴィア、魔法使いマーリン、円卓の騎士たちを語る。主要なテーマには聖杯探求、ランスロットとの悲劇的な三角関係、モードレッドとのカムランでの最後の戦いなどがある。アヴァロンはアーサーが致命傷を負った後、癒されていつか帰還するために運ばれた神秘の島として登場する。伝説は歴史的核心（5〜6世紀のロマノ・ブリトン人の戦争指導者と推定）とケルト神話、中世の騎士道理想を融合している。"
+      },
+      {
+        "title": "Celtic Fairy Mythology: The Fae Folk",
+        "title_ko": "켈트 요정 신화: 페이 민족",
+        "title_ja": "ケルト妖精神話：フェイの民",
+        "content": "Celtic mythology contains rich traditions of fairy beings predating Christianity. In Irish tradition, the Tuatha Dé Danann were divine beings who became the Aos Sí (fairy folk) after being driven underground by human settlers. Scottish and Welsh traditions have their own fairy courts and beings. The Seelie and Unseelie Courts represent benevolent and malevolent fairy factions respectively. Fairies in Celtic lore are not the diminutive creatures of Victorian imagination but powerful, often dangerous beings with their own morality. They could bless or curse, steal children (changelings), and existed in a parallel realm accessible through hills, rings, and twilight boundaries. In Lostbelt 6, this rich mythological tradition is reimagined as a complete fairy civilization with its own clans, politics, and history.",
+        "content_ko": "켈트 신화에는 기독교 이전의 풍부한 요정 전통이 담겨 있다. 아일랜드 전통에서 투아하 데 다난은 인간 정착민에게 밀려 지하로 간 후 아오스 시(요정 민족)가 된 신적 존재였다. 스코틀랜드와 웨일스 전통에도 고유한 요정 궁정과 존재들이 있다. 시리 궁정과 언시리 궁정은 각각 자비로운 요정과 악의적인 요정 파벌을 나타낸다. 켈트 전승의 요정은 빅토리아 시대 상상의 작은 생물이 아니라, 자신만의 도덕성을 가진 강력하고 종종 위험한 존재이다. 그들은 축복하거나 저주하고, 아이를 훔치며(체인지링), 언덕, 고리, 황혼의 경계를 통해 접근할 수 있는 평행 영역에 존재했다. 이문대 6에서 이 풍부한 신화 전통은 고유한 씨족, 정치, 역사를 가진 완전한 요정 문명으로 재구성된다.",
+        "content_ja": "ケルト神話にはキリスト教以前の豊かな妖精の伝統が含まれている。アイルランドの伝統では、トゥアハ・デ・ダナーンは人間の入植者に追われて地下に行った後、アオス・シー（妖精の民）となった神的存在だった。スコットランドとウェールズの伝統にも独自の妖精の宮廷と存在がある。シーリー・コートとアンシーリー・コートはそれぞれ慈悲深い妖精と悪意ある妖精の派閥を表す。ケルト伝承の妖精はヴィクトリア朝時代の想像の小さな生き物ではなく、独自の道徳を持つ強力でしばしば危険な存在である。彼らは祝福したり呪ったり、子供を盗んだり（チェンジリング）、丘、輪、黄昏の境界を通じてアクセスできる並行領域に存在した。異聞帯6では、この豊かな神話的伝統が独自の氏族、政治、歴史を持つ完全な妖精文明として再構成されている。"
+      },
+      {
+        "title": "Queen Morgan: Two Thousand Years of Rule",
+        "title_ko": "모건 여왕: 2천 년의 통치",
+        "title_ja": "モルガン女王：二千年の統治",
+        "content": "In traditional Arthurian legend, Morgan le Fay is Arthur's half-sister, a powerful sorceress who is sometimes ally, sometimes antagonist. Her character evolved over centuries of storytelling, from a benevolent healer associated with Avalon to a scheming villainess. In Lostbelt 6, Morgan represents an alternate version who became ruler of the fairy realm after Britain sank. Having witnessed the fairy race's cruelty and chaos, she imposed order through an iron will, creating the Fairy Calendar and the clan system. Despite being hated by many fairies, her rule prevented the Calamities from destroying the realm entirely. Her story is one of tragic necessity—a queen who sacrificed her humanity to save a world that despises her. Her love for a single knight from another possibility defines her hidden motivations.",
+        "content_ko": "전통 아서왕 전설에서 모건 르 페이는 아서의 이복 여동생으로, 때로는 동맹, 때로는 적대자인 강력한 마법사이다. 그녀의 캐릭터는 수세기의 스토리텔링을 통해 아발론과 연관된 자비로운 치유사에서 음모를 꾸미는 악녀로 진화했다. 이문대 6에서 모건은 브리튼이 가라앉은 후 요정 왕국의 지배자가 된 대체 버전을 나타낸다. 요정 종족의 잔인함과 혼돈을 목격한 그녀는 철의 의지로 질서를 부과하여 요정력과 씨족 체계를 만들었다. 많은 요정에게 미움받았지만 그녀의 통치는 재앙이 왕국을 완전히 파괴하는 것을 막았다. 그녀의 이야기는 비극적 필연성—자신을 경멸하는 세계를 구하기 위해 인간성을 희생한 여왕—의 이야기이다. 다른 가능성에서 온 한 기사에 대한 그녀의 사랑이 숨겨진 동기를 정의한다.",
+        "content_ja": "伝統的なアーサー王伝説では、モルガン・ル・フェイはアーサーの異母姉妹で、時に同盟者、時に敵対者となる強力な魔女である。彼女のキャラクターは数世紀のストーリーテリングを通じて、アヴァロンと関連する慈悲深い癒し手から陰謀を企む悪女へと進化した。異聞帯6では、モルガンはブリテンが沈んだ後に妖精の国の支配者となった別のバージョンを表す。妖精種族の残虐さと混沌を目撃した彼女は、鉄の意志で秩序を課し、妖精暦と氏族制度を作り上げた。多くの妖精に憎まれたが、彼女の統治は災厄が王国を完全に破壊することを防いだ。彼女の物語は悲劇的な必然性―自分を軽蔑する世界を救うために人間性を犠牲にした女王―の物語である。別の可能性から来た一人の騎士への愛が彼女の隠された動機を定義する。"
+      },
+      {
+        "title": "The Fairy Knights: Twisted Round Table",
+        "title_ko": "요정 기사들: 뒤틀린 원탁",
+        "title_ja": "妖精騎士たち：歪んだ円卓",
+        "content": "In this Lostbelt, the Knights of the Round Table are replaced by Fairy Knights who bear the names of Arthurian heroes but are fundamentally different beings. Fairy Knight Gawain (Barghest) is a black dog fairy associated with death omens in British folklore, struggling against her nature to devour those she loves. Fairy Knight Tristan (Baobhan Sith) is a vampiric fairy from Scottish legend who feeds on blood, raised by Morgan as a daughter despite her murderous instincts. Fairy Knight Lancelot (Melusine) is an ancient dragon-fairy from French legend, originally a protective water spirit, whose childlike innocence masks terrifying power. Each represents a dark mirror of their Round Table namesake, their stories exploring how monstrous natures can coexist with genuine love and loyalty.",
+        "content_ko": "이 이문대에서 원탁의 기사들은 아서왕 영웅들의 이름을 가졌지만 근본적으로 다른 존재인 요정 기사들로 대체된다. 요정 기사 가웨인(바게스트)은 영국 민속에서 죽음의 전조와 관련된 검은 개 요정으로, 사랑하는 이를 삼키려는 본성과 싸운다. 요정 기사 트리스탄(바오반 시스)은 스코틀랜드 전설의 피를 먹는 흡혈 요정으로, 살인적 본능에도 불구하고 모건에게 딸처럼 양육되었다. 요정 기사 랜슬롯(멜루진)은 프랑스 전설의 고대 드래곤-요정으로, 원래는 보호적인 물의 정령이며, 어린아이 같은 순진함이 무서운 힘을 숨긴다. 각각은 원탁 이름의 어두운 거울을 나타내며, 그들의 이야기는 괴물 같은 본성이 진정한 사랑과 충성과 어떻게 공존할 수 있는지 탐구한다.",
+        "content_ja": "この異聞帯では、円卓の騎士たちはアーサー王の英雄の名を持つが根本的に異なる存在である妖精騎士たちに置き換えられている。妖精騎士ガウェイン（バーゲスト）はイギリスの民間伝承で死の前兆と関連する黒い犬の妖精で、愛する者を喰らおうとする本性と戦っている。妖精騎士トリスタン（バオバン・シー）はスコットランド伝説の血を飲む吸血鬼の妖精で、殺人的な本能にもかかわらずモルガンに娘として育てられた。妖精騎士ランスロット（メリュジーヌ）はフランス伝説の古代のドラゴン妖精で、元々は守護的な水の精霊であり、子供のような無邪気さが恐ろしい力を隠している。それぞれが円卓の名の暗い鏡を表し、彼らの物語は怪物のような本性が真の愛と忠誠とどのように共存できるかを探求する。"
+      },
+      {
+        "title": "Oberon: The Fairy King's Shadow",
+        "title_ko": "오베론: 요정왕의 그림자",
+        "title_ja": "オベロン：妖精王の影",
+        "content": "Oberon is famous as the fairy king in Shakespeare's 'A Midsummer Night's Dream' and earlier medieval texts. In Lostbelt 6, he appears as a charismatic ally to Chaldea, seemingly working to save the fairy realm. His true nature, however, is far darker. He is revealed to be Oberon Vortigern—a fusion of the fairy king with Vortigern, the legendary British tyrant who invited the Saxons and opposed Arthur. As a 'Pretender' class Servant, his very existence is a lie. His hatred for the fairy realm stems from being the 'Insect of the Abyss,' a being created from the accumulated malice of all the fairies Britain discarded. His character arc is one of FGO's most acclaimed, exploring themes of nihilism, self-hatred, and whether genuine connection is possible for someone who believes themselves fundamentally monstrous.",
+        "content_ko": "오베론은 셰익스피어의 '한여름 밤의 꿈'과 이전 중세 텍스트에서 요정왕으로 유명하다. 이문대 6에서 그는 요정 왕국을 구하기 위해 일하는 것처럼 보이는 칼데아의 카리스마 있는 동맹으로 등장한다. 그러나 그의 진정한 본성은 훨씬 더 어둡다. 그는 요정왕과 색슨족을 초대하고 아서에 반대한 전설적인 브리튼 폭군 보르티건의 융합인 오베론 보르티건으로 밝혀진다. '프리텐더' 클래스 서번트로서 그의 존재 자체가 거짓이다. 요정 왕국에 대한 그의 증오는 브리튼이 버린 모든 요정의 축적된 악의로부터 만들어진 존재인 '심연의 곤충'이기 때문이다. 그의 캐릭터 아크는 FGO에서 가장 찬사받는 것 중 하나로, 허무주의, 자기 혐오, 그리고 자신이 근본적으로 괴물이라고 믿는 사람에게 진정한 연결이 가능한지를 탐구한다.",
+        "content_ja": "オベロンはシェイクスピアの『夏の夜の夢』と以前の中世のテキストで妖精王として有名である。異聞帯6では、妖精の国を救うために働いているように見えるカルデアのカリスマ的な同盟者として登場する。しかし、彼の真の本性ははるかに暗い。彼は妖精王とサクソン人を招き入れアーサーに対抗した伝説のブリテンの暴君ヴォーティガンの融合体、オベロン・ヴォーティガンであることが明かされる。「プリテンダー」クラスのサーヴァントとして、彼の存在そのものが嘘である。妖精の国への彼の憎しみは、ブリテンが捨てたすべての妖精の蓄積された悪意から作られた存在「奈落の虫」であることに由来する。彼のキャラクターアークはFGOで最も称賛されているものの一つで、虚無主義、自己嫌悪、そして自分が根本的に怪物だと信じる者に真のつながりが可能かどうかを探求する。"
+      },
+      {
+        "title": "Artoria Caster: The Child of Prophecy",
+        "title_ko": "아르토리아 캐스터: 예언의 아이",
+        "title_ja": "アルトリア・キャスター：予言の子",
+        "content": "In this Lostbelt, Artoria exists not as a king but as a fairy born to fulfill a prophecy—to ring the six bells that will summon the holy sword and save Britain. Unlike the stoic warrior-king of Pan-Human History, this Artoria is cheerful, expressive, and uncertain of herself. She carries Excalibur not as a weapon but as a pilgrimage staff, gathering allies on a journey that parallels the original Arthurian legend while being entirely different. Her story explores what it means to be a 'chosen one' when the prophecy may be a lie, and whether hope and determination have value even in a world doomed to end. Her character represents Arthurian legend's themes of duty and sacrifice recontextualized for a new generation.",
+        "content_ko": "이 이문대에서 아르토리아는 왕이 아니라 예언을 이루기 위해 태어난 요정으로 존재한다—성검을 소환하고 브리튼을 구할 여섯 개의 종을 울리는 것. 범인류사의 금욕적인 전사 왕과 달리 이 아르토리아는 쾌활하고 표현력이 풍부하며 자신감이 부족하다. 그녀는 엑스칼리버를 무기가 아닌 순례 지팡이로 들고, 원래 아서왕 전설과 평행하면서도 완전히 다른 여정에서 동맹을 모은다. 그녀의 이야기는 예언이 거짓일 수 있을 때 '선택받은 자'가 된다는 것이 무엇을 의미하는지, 그리고 끝나도록 운명 지어진 세계에서도 희망과 결의가 가치가 있는지를 탐구한다. 그녀의 캐릭터는 아서왕 전설의 의무와 희생 주제를 새로운 세대를 위해 재맥락화한다.",
+        "content_ja": "この異聞帯では、アルトリアは王としてではなく、予言を果たすために生まれた妖精として存在する―聖剣を召喚しブリテンを救う六つの鐘を鳴らすこと。汎人類史の禁欲的な戦士王とは異なり、このアルトリアは陽気で表情豊かで、自分に自信がない。彼女はエクスカリバーを武器としてではなく巡礼の杖として持ち、元のアーサー王伝説と並行しながらも全く異なる旅で同盟者を集める。彼女の物語は、予言が嘘かもしれない時に「選ばれし者」であることが何を意味するのか、そして終わる運命の世界でも希望と決意に価値があるのかを探求する。彼女のキャラクターはアーサー王伝説の義務と犠牲のテーマを新しい世代のために再文脈化している。"
+      },
+      {
+        "title": "The Calamities: Britain's Curse",
+        "title_ko": "재앙들: 브리튼의 저주",
+        "title_ja": "災厄：ブリテンの呪い",
+        "content": "The Calamities are catastrophic events that periodically devastate Fairy Britain, manifestations of the land's accumulated grudges. They include Mors (undead swarms), Cernunnos's curse, and ultimately the 'Cataclysm' that threatens to destroy everything. These disasters represent the consequences of the fairy race's sins—their cruelty, betrayal, and disregard for others—coming back to consume them. In Celtic mythology, Cernunnos was a horned god associated with nature and the underworld; in this Lostbelt, he represents the primordial curse of the land itself. The Calamities serve as a metaphor for how societies that fail to address their foundational injustices are eventually destroyed by them.",
+        "content_ko": "재앙들은 요정 브리튼을 주기적으로 황폐화하는 대재앙으로, 땅에 축적된 원한의 현현이다. 모스(언데드 무리), 케르눈노스의 저주, 그리고 궁극적으로 모든 것을 파괴할 위협인 '대격변'이 포함된다. 이러한 재앙들은 요정 종족의 죄—잔인함, 배신, 타인에 대한 무관심—가 돌아와 그들을 삼키는 결과를 나타낸다. 켈트 신화에서 케르눈노스는 자연과 명계와 관련된 뿔 달린 신이었다; 이 이문대에서 그는 땅 자체의 원초적 저주를 나타낸다. 재앙들은 근본적인 불의를 해결하지 못하는 사회가 결국 그것에 의해 파괴되는 방식에 대한 은유로 작용한다.",
+        "content_ja": "災厄は妖精ブリテンを定期的に荒廃させる大災害で、大地に蓄積された怨念の顕現である。モース（アンデッドの群れ）、ケルヌンノスの呪い、そして最終的にすべてを破壊する脅威となる「大変動」が含まれる。これらの災害は妖精種族の罪―残虐さ、裏切り、他者への無関心―が戻ってきて彼らを飲み込む結果を表す。ケルト神話では、ケルヌンノスは自然と冥界に関連する角のある神だった。この異聞帯では、彼は大地そのものの原初の呪いを表す。災厄は、根本的な不正義に対処できない社会が最終的にそれによって破壊される様の比喩として機能する。"
+      },
+      {
+        "title": "Crypter: Beryl Gut",
+        "title_ko": "크립터: 베릴 거트",
+        "title_ja": "クリプター：ベリル・ガット",
+        "content": "Beryl Gut is the Crypter responsible for Lostbelt 6, though his relationship with his Lostbelt is uniquely antagonistic. Unlike other Crypters who work with or for their Lostbelts' rulers, Beryl is a serial killer who delights in destruction and betrayal. He murdered his original Servant and formed a contract with Morgan for his own amusement. His existence in the story serves to complicate the moral landscape—while Chaldea opposes the Lostbelts, Beryl is arguably more evil than anything in the fairy realm. His backstory reveals a childhood of abuse that shaped his worldview, though the narrative refuses to use this as excuse for his actions. His confrontation with Mash Kyrielight provides crucial character development for both.",
+        "content_ko": "베릴 거트는 이문대 6을 담당하는 크립터이지만, 그의 이문대와의 관계는 독특하게 적대적이다. 이문대의 지배자와 협력하거나 그들을 위해 일하는 다른 크립터들과 달리, 베릴은 파괴와 배신을 즐기는 연쇄 살인마이다. 그는 원래 서번트를 살해하고 자신의 오락을 위해 모건과 계약을 맺었다. 이야기에서 그의 존재는 도덕적 풍경을 복잡하게 만든다—칼데아가 이문대에 반대하는 동안 베릴은 아마도 요정 왕국의 어떤 것보다 더 사악하다. 그의 배경 이야기는 그의 세계관을 형성한 학대의 어린 시절을 드러내지만, 서사는 이를 그의 행동에 대한 변명으로 사용하기를 거부한다. 마슈 키리엘라이트와의 대결은 둘 모두에게 중요한 캐릭터 발전을 제공한다.",
+        "content_ja": "ベリル・ガットは異聞帯6を担当するクリプターだが、彼の異聞帯との関係は独特に敵対的である。異聞帯の支配者と協力したり彼らのために働く他のクリプターとは異なり、ベリルは破壊と裏切りを楽しむ連続殺人犯である。彼は元のサーヴァントを殺害し、自分の娯楽のためにモルガンと契約を結んだ。物語における彼の存在は道徳的風景を複雑にする―カルデアが異聞帯に反対する一方で、ベリルは妖精の国のどんなものよりもおそらく邪悪である。彼の背景は彼の世界観を形作った虐待の幼少期を明かすが、物語はこれを彼の行動の言い訳として使うことを拒否する。マシュ・キリエライトとの対決は両者に重要なキャラクター発展を提供する。"
+      }
+    ],
+    "historical_basis": "Arthurian legend has its roots in Welsh and Breton traditions, possibly commemorating a historical Romano-British war leader. Geoffrey of Monmouth's 'Historia Regum Britanniae' (1136) and Thomas Malory's 'Le Morte d'Arthur' (1485) shaped the legend into its recognizable form. Celtic fairy mythology, particularly Irish and Scottish traditions of the Aos Sí and the fairy courts, provides the foundation for Lostbelt 6's world-building. The character of Morgan le Fay evolved from a benevolent healer in earlier texts to a more ambiguous figure in later works. Oberon first appears in the 13th-century chanson de geste 'Huon of Bordeaux' before Shakespeare immortalized him.",
+    "historical_basis_ko": "아서왕 전설은 웨일스와 브르타뉴 전통에 뿌리를 두고 있으며, 역사적인 로마노-브리튼 전쟁 지도자를 기념한 것일 수 있다. 몬머스의 제프리의 '브리튼 열왕사'(1136)와 토마스 맬러리의 '아서왕의 죽음'(1485)이 전설을 인식 가능한 형태로 만들었다. 켈트 요정 신화, 특히 아오스 시와 요정 궁정에 대한 아일랜드와 스코틀랜드 전통이 이문대 6의 세계관 구축의 기반을 제공한다. 모건 르 페이의 캐릭터는 초기 텍스트의 자비로운 치유사에서 후기 작품의 더 모호한 인물로 진화했다. 오베론은 셰익스피어가 그를 불멸화하기 전 13세기 무훈시 '보르도의 후옹'에 처음 등장한다.",
+    "historical_basis_ja": "アーサー王伝説はウェールズとブルターニュの伝統に根ざしており、歴史的なロマノ・ブリトン人の戦争指導者を記念したものかもしれない。モンマスのジェフリーの『ブリタニア列王史』（1136年）とトマス・マロリーの『アーサー王の死』（1485年）が伝説を認識可能な形に形作った。ケルトの妖精神話、特にアオス・シーと妖精の宮廷に関するアイルランドとスコットランドの伝統が、異聞帯6の世界構築の基盤を提供している。モルガン・ル・フェイのキャラクターは、初期のテキストの慈悲深い癒し手から、後の作品でより曖昧な人物へと進化した。オベロンはシェイクスピアが彼を不滅にする前、13世紀の武勲詩『ボルドーのユオン』に初めて登場する。",
+    "related_servants": [
+      {"name": "Morgan", "class": "Berserker", "rarity": 5},
+      {"name": "Fairy Knight Tristan (Baobhan Sith)", "class": "Archer", "rarity": 5},
+      {"name": "Fairy Knight Gawain (Barghest)", "class": "Saber", "rarity": 5},
+      {"name": "Fairy Knight Lancelot (Melusine)", "class": "Lancer", "rarity": 5},
+      {"name": "Oberon", "class": "Pretender", "rarity": 5},
+      {"name": "Artoria Caster", "class": "Caster", "rarity": 5},
+      {"name": "Percival", "class": "Lancer", "rarity": 5},
+      {"name": "Habetrot", "class": "Rider", "rarity": 3},
+      {"name": "Koyanskaya of Light", "class": "Assassin", "rarity": 5},
+      {"name": "Muramasa", "class": "Saber", "rarity": 5},
+      {"name": "Sith (Summer)", "class": "Lancer", "rarity": 5},
+      {"name": "Aurora", "class": "NPC", "rarity": 0}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Arthurian Legend", "Celtic Mythology", "Geoffrey of Monmouth", "Thomas Malory's Le Morte d'Arthur", "Shakespeare's A Midsummer Night's Dream", "Welsh Mabinogion", "Irish mythology"]
+  },
+  {
+    "id": "lostbelt-7",
+    "type": "lostbelt",
+    "title": "Nahui Mictlan",
+    "title_ko": "나우이 믹틀란",
+    "title_ja": "ナウイ・ミクトラン",
+    "subtitle": "Golden Sea of Trees - Nahui Mictlan",
+    "subtitle_ko": "황금수해기행 나우이 믹틀란",
+    "subtitle_ja": "黄金樹海紀行 ナウイ・ミクトラン",
+    "chapter": "Lostbelt No.7",
+    "era": "Unknown (Divergent)",
+    "year": -14000,
+    "location": "South America",
+    "description": "The final and most alien of all Lostbelts, where the asteroid that killed the dinosaurs never struck Earth. In this world, Mesoamerican civilization developed alongside intelligent dinosaurs under the guidance of ancient gods. The underworld of Mictlan has become a dominant force, and the Ultimate One known as ORT—an alien entity that crash-landed in South America—represents the greatest threat Chaldea has ever faced. This is humanity's last stand against extinction.",
+    "description_ko": "모든 이문대 중 가장 마지막이자 가장 이질적인 세계로, 공룡을 멸종시킨 소행성이 지구에 충돌하지 않았다. 이 세계에서 메소아메리카 문명은 고대 신들의 인도 아래 지적인 공룡들과 함께 발전했다. 믹틀란의 명계가 지배적인 힘이 되었고, 남미에 추락한 외계 존재인 궁극의 하나 ORT는 칼데아가 직면한 가장 큰 위협이다. 이것은 멸종에 대항하는 인류의 최후의 저항이다.",
+    "description_ja": "すべての異聞帯の中で最後にして最も異質な世界で、恐竜を絶滅させた小惑星が地球に衝突しなかった。この世界では、メソアメリカ文明が古代の神々の導きの下、知的な恐竜たちと共に発展した。ミクトランの冥界が支配的な力となり、南米に墜落した異星の存在であるアルテミット・ワンORTは、カルデアが直面した最大の脅威である。これは絶滅に対する人類の最後の抵抗である。",
+    "sections": [
+      {
+        "title": "Mesoamerican Cosmology: The Five Suns",
+        "title_ko": "메소아메리카 우주론: 다섯 태양",
+        "title_ja": "メソアメリカ宇宙論：五つの太陽",
+        "content": "Aztec and Mayan cosmology describes the universe as having undergone multiple creations and destructions, each era ruled by a different sun. According to the Aztec creation myth, we currently live in the Fifth Sun (Nahui Ollin), which will eventually be destroyed by earthquakes. Previous suns ended through jaguars, wind, fire-rain, and flood. The gods Quetzalcoatl and Tezcatlipoca took turns creating and destroying these worlds in an eternal cosmic cycle. 'Nahui Mictlan' in the Lostbelt's title combines 'Nahui' (four, referencing the previous sun) with 'Mictlan' (the underworld), suggesting a world where death itself has become the dominant cosmic principle.",
+        "content_ko": "아즈텍과 마야 우주론은 우주가 여러 차례의 창조와 파괴를 거쳤으며, 각 시대가 다른 태양에 의해 지배되었다고 묘사한다. 아즈텍 창조 신화에 따르면 우리는 현재 다섯 번째 태양(나우이 올린)에 살고 있으며, 이는 결국 지진으로 파괴될 것이다. 이전 태양들은 재규어, 바람, 불비, 홍수로 끝났다. 케찰코아틀과 테스카틀리포카 신이 번갈아 이 세계들을 창조하고 파괴하는 영원한 우주적 순환을 이뤘다. 이문대 제목의 '나우이 믹틀란'은 '나우이'(넷, 이전 태양을 참조)와 '믹틀란'(명계)을 결합하여, 죽음 자체가 지배적인 우주 원리가 된 세계를 암시한다.",
+        "content_ja": "アステカとマヤの宇宙論は、宇宙が複数の創造と破壊を経験し、各時代が異なる太陽に支配されたと描写する。アステカの創造神話によれば、我々は現在第五の太陽（ナウイ・オリン）に生きており、最終的に地震で破壊される。以前の太陽はジャガー、風、火の雨、洪水で終わった。ケツァルコアトルとテスカトリポカの神々が交互にこれらの世界を創造し破壊する永遠の宇宙的循環を成した。異聞帯のタイトルの「ナウイ・ミクトラン」は「ナウイ」（四、前の太陽を参照）と「ミクトラン」（冥界）を組み合わせ、死そのものが支配的な宇宙原理となった世界を示唆する。"
+      },
+      {
+        "title": "Mictlan: The Aztec Underworld",
+        "title_ko": "믹틀란: 아즈텍의 명계",
+        "title_ja": "ミクトラン：アステカの冥界",
+        "content": "Mictlan was the Aztec realm of the dead, ruled by Mictlantecuhtli (Lord of Mictlan) and his consort Mictecacihuatl (Lady of the Dead). Unlike Western concepts of heaven and hell, Mictlan was the destination for those who died ordinary deaths—neither warriors fallen in battle (who went to the sun) nor women who died in childbirth (who became celestial beings) nor drowning victims (who went to Tlalocan). The journey to Mictlan took four years and required passing through nine challenging levels, each presenting obstacles like clashing mountains, obsidian-wind deserts, and rivers of blood. In the Lostbelt, this underworld has essentially conquered the surface, making the boundary between life and death meaningless.",
+        "content_ko": "믹틀란은 아즈텍의 죽은 자들의 영역으로, 믹틀란테쿠틀리(믹틀란의 군주)와 그의 배우자 믹테카시와틀(죽은 자들의 여인)이 다스렸다. 서양의 천국과 지옥 개념과 달리, 믹틀란은 평범한 죽음을 맞이한 자들의 목적지였다—전투에서 전사한 전사들(태양으로 간)이나 출산 중 사망한 여성들(천체 존재가 됨)이나 익사자들(틀랄로칸으로 간)이 아닌. 믹틀란으로의 여정은 4년이 걸렸고, 충돌하는 산, 흑요석 바람 사막, 피의 강 같은 장애물이 있는 아홉 개의 도전적인 층을 통과해야 했다. 이 이문대에서 이 명계는 본질적으로 지표면을 정복하여 삶과 죽음의 경계를 무의미하게 만들었다.",
+        "content_ja": "ミクトランはアステカの死者の領域で、ミクトランテクトリ（ミクトランの王）とその配偶者ミクテカシワトル（死者の女王）が治めた。西洋の天国と地獄の概念とは異なり、ミクトランは通常の死を迎えた者たちの行き先だった―戦いで倒れた戦士たち（太陽へ行く）や出産中に亡くなった女性たち（天体の存在となる）や溺死者たち（トラロカンへ行く）ではなく。ミクトランへの旅は四年かかり、衝突する山、黒曜石の風の砂漠、血の川などの障害がある九つの困難な層を通過する必要があった。この異聞帯では、この冥界が本質的に地上を征服し、生と死の境界を無意味にしている。"
+      },
+      {
+        "title": "Quetzalcoatl and Tezcatlipoca: The Eternal Rivals",
+        "title_ko": "케찰코아틀과 테스카틀리포카: 영원한 라이벌",
+        "title_ja": "ケツァルコアトルとテスカトリポカ：永遠のライバル",
+        "content": "Quetzalcoatl, the Feathered Serpent, was one of the most important deities in Mesoamerican religion, associated with wind, air, learning, and Venus as the morning star. He was credited with creating humanity by retrieving bones from Mictlan and sprinkling them with his blood. Tezcatlipoca, the Smoking Mirror, was his eternal rival—a god of night, sorcery, and conflict. In Aztec mythology, Tezcatlipoca repeatedly sabotaged Quetzalcoatl, eventually tricking him into exile. Together, they created and destroyed the world multiple times. In Fate/Grand Order, both deities play crucial roles in Lostbelt 7, with Tezcatlipoca appearing as a Pretender class Servant whose true nature and intentions remain ambiguous until the very end.",
+        "content_ko": "깃털 달린 뱀 케찰코아틀은 메소아메리카 종교에서 가장 중요한 신 중 하나로, 바람, 공기, 학문, 그리고 새벽별 금성과 관련되었다. 그는 믹틀란에서 뼈를 가져와 자신의 피를 뿌려 인류를 창조한 것으로 알려져 있다. 연기 나는 거울 테스카틀리포카는 그의 영원한 라이벌—밤, 마법, 갈등의 신이었다. 아즈텍 신화에서 테스카틀리포카는 반복적으로 케찰코아틀을 방해했고, 결국 그를 속여 추방했다. 함께 그들은 세상을 여러 번 창조하고 파괴했다. 페이트/그랜드 오더에서 두 신은 이문대 7에서 중요한 역할을 하며, 테스카틀리포카는 진정한 본성과 의도가 마지막까지 모호한 프리텐더 클래스 서번트로 등장한다.",
+        "content_ja": "羽毛のある蛇ケツァルコアトルは、メソアメリカの宗教で最も重要な神の一人で、風、空気、学問、そして明けの明星の金星と関連していた。彼はミクトランから骨を取り戻し、自分の血を振りかけて人類を創造したとされる。煙を吐く鏡テスカトリポカは彼の永遠のライバル―夜、魔術、紛争の神だった。アステカ神話では、テスカトリポカは繰り返しケツァルコアトルを妨害し、最終的に彼を騙して追放した。共に彼らは世界を何度も創造し破壊した。Fate/Grand Orderでは、両神は異聞帯7で重要な役割を果たし、テスカトリポカは真の本性と意図が最後まで曖昧なプリテンダークラスのサーヴァントとして登場する。"
+      },
+      {
+        "title": "Kukulkan: The Dinosaur Goddess",
+        "title_ko": "쿠쿨칸: 공룡 여신",
+        "title_ja": "ククルカン：恐竜の女神",
+        "content": "Kukulkan is the Mayan equivalent of Quetzalcoatl, a feathered serpent deity worshipped at sites like Chichen Itza. The famous pyramid El Castillo was built so that during equinoxes, shadow patterns create the illusion of a serpent descending its steps. In Lostbelt 7, Kukulkan takes a unique form—she is the goddess who guided the intelligent dinosaurs of this alternate world, essentially becoming a 'dinosaur' herself through her connection to them. As a Ruler class Servant, she embodies the hope of this Lostbelt, representing the possibility that even a world so different from Pan-Human History might have value worth preserving. Her cheerful personality belies the weight of responsibility she carries.",
+        "content_ko": "쿠쿨칸은 케찰코아틀의 마야 등가물로, 치첸이트사 같은 유적지에서 숭배된 깃털 달린 뱀 신이다. 유명한 피라미드 엘 카스티요는 춘분과 추분 동안 그림자 패턴이 계단을 내려오는 뱀의 환상을 만들도록 지어졌다. 이문대 7에서 쿠쿨칸은 독특한 형태를 취한다—그녀는 이 대체 세계의 지적인 공룡들을 인도한 여신으로, 그들과의 연결을 통해 본질적으로 스스로 '공룡'이 되었다. 룰러 클래스 서번트로서 그녀는 이 이문대의 희망을 구현하며, 범인류사와 매우 다른 세계라도 보존할 가치가 있을 수 있다는 가능성을 나타낸다. 그녀의 쾌활한 성격은 그녀가 지닌 책임의 무게를 숨긴다.",
+        "content_ja": "ククルカンはケツァルコアトルのマヤにおける同等の存在で、チチェン・イッツァのような遺跡で崇拝された羽毛のある蛇の神である。有名なピラミッド、エル・カスティーヨは春分と秋分の際に影のパターンが階段を降りる蛇の幻影を作るように建てられた。異聞帯7では、ククルカンは独自の形態を取る―彼女はこの別世界の知的な恐竜たちを導いた女神で、彼らとのつながりを通じて本質的に自ら「恐竜」となった。ルーラークラスのサーヴァントとして、彼女はこの異聞帯の希望を体現し、汎人類史とこれほど異なる世界でも保存する価値があるかもしれないという可能性を表す。彼女の陽気な性格は彼女が背負う責任の重さを隠している。"
+      },
+      {
+        "title": "ORT: The Ultimate One of Mercury",
+        "title_ko": "ORT: 수성의 궁극의 하나",
+        "title_ja": "ORT：水星のアルテミット・ワン",
+        "content": "ORT (Oort) is one of the most terrifying entities in the Nasuverse—an Ultimate One (Type), the highest form of life from another celestial body. Types are alien beings so powerful that they exist outside conventional understanding, each one the ultimate lifeform of their respective planet. ORT is the Ultimate One of Mercury, which crash-landed in South America long before human civilization. Its very existence warps reality around it, creating a 'Crystal Valley' where Earth's laws don't apply. In previous Nasuverse lore, ORT was described as virtually unbeatable—immune to all forms of magecraft and capable of defeating any Servant. Its awakening in Lostbelt 7 represents the greatest crisis in FGO's story, as humanity must somehow overcome an enemy designed to be unconquerable.",
+        "content_ko": "ORT(오르트)는 나스버스에서 가장 무서운 존재 중 하나—다른 천체의 최고 생명 형태인 궁극의 하나(타입)이다. 타입들은 기존의 이해를 벗어나 존재하는 매우 강력한 외계 존재로, 각각 해당 행성의 궁극적 생명체이다. ORT는 수성의 궁극의 하나로, 인류 문명 이전에 남미에 추락했다. 그것의 존재 자체가 주변 현실을 왜곡하여 지구의 법칙이 적용되지 않는 '수정 계곡'을 만든다. 이전 나스버스 설정에서 ORT는 사실상 무적으로 묘사되었다—모든 형태의 마술에 면역이고 어떤 서번트도 물리칠 수 있다. 이문대 7에서의 각성은 FGO 스토리에서 가장 큰 위기를 나타내며, 인류는 어떻게든 정복 불가능하게 설계된 적을 극복해야 한다.",
+        "content_ja": "ORT（オルト）はナスバースで最も恐ろしい存在の一つ―別の天体の最高の生命形態であるアルテミット・ワン（タイプ）である。タイプは従来の理解を超えて存在するほど強力な異星の存在で、それぞれが該当する惑星の究極の生命体である。ORTは水星のアルテミット・ワンで、人類文明のはるか前に南米に墜落した。その存在自体が周囲の現実を歪め、地球の法則が適用されない「水晶の谷」を作り出す。以前のナスバースの設定では、ORTは事実上無敵と描写された―あらゆる形態の魔術に対して免疫があり、どんなサーヴァントも倒すことができる。異聞帯7での覚醒はFGOのストーリーにおける最大の危機を表し、人類は何とかして征服不可能に設計された敵を克服しなければならない。"
+      },
+      {
+        "title": "The Dinosaur Kingdom: A World Without the Asteroid",
+        "title_ko": "공룡 왕국: 소행성 없는 세계",
+        "title_ja": "恐竜王国：小惑星のない世界",
+        "content": "66 million years ago, a massive asteroid struck the Yucatan Peninsula, triggering the Cretaceous-Paleogene extinction event that wiped out the non-avian dinosaurs and allowed mammals to eventually dominate Earth. In Lostbelt 7, this impact never occurred, allowing dinosaurs to continue evolving. Over millions of years, some species developed intelligence comparable to humans, creating their own civilization under the guidance of Mesoamerican gods. This 'what if' scenario represents one of FGO's most dramatic divergence points—a world where an entirely different form of intelligent life arose. The coexistence of these intelligent dinosaurs with the underworld of Mictlan creates a unique society unlike anything in other Lostbelts.",
+        "content_ko": "6600만 년 전, 거대한 소행성이 유카탄 반도를 강타하여 비조류 공룡을 멸종시키고 결국 포유류가 지구를 지배할 수 있게 한 백악기-제3기 대멸종 사건을 촉발했다. 이문대 7에서 이 충돌은 일어나지 않아 공룡이 계속 진화할 수 있었다. 수백만 년에 걸쳐 일부 종은 인간에 필적하는 지능을 발달시켜 메소아메리카 신들의 인도 아래 자신만의 문명을 만들었다. 이 '만약에' 시나리오는 FGO의 가장 극적인 분기점 중 하나를 나타낸다—완전히 다른 형태의 지적 생명체가 탄생한 세계. 이러한 지적인 공룡들과 믹틀란 명계의 공존은 다른 이문대에는 없는 독특한 사회를 만든다.",
+        "content_ja": "6600万年前、巨大な小惑星がユカタン半島に衝突し、非鳥類恐竜を絶滅させ、最終的に哺乳類が地球を支配することを可能にした白亜紀・古第三紀絶滅イベントを引き起こした。異聞帯7では、この衝突は起こらず、恐竜が進化を続けることができた。数百万年にわたり、一部の種は人間に匹敵する知性を発達させ、メソアメリカの神々の導きの下で独自の文明を創造した。この「もしも」のシナリオはFGOで最も劇的な分岐点の一つを表す―全く異なる形態の知的生命体が誕生した世界。これらの知的な恐竜とミクトランの冥界の共存は、他の異聞帯にはない独自の社会を作り出している。"
+      },
+      {
+        "title": "Camazotz: The Death Bat",
+        "title_ko": "카마소츠: 죽음의 박쥐",
+        "title_ja": "カマソッツ：死の蝙蝠",
+        "content": "Camazotz was a bat god in Mayan mythology, associated with night, death, and sacrifice. In the Popol Vuh, the Mayan creation epic, Camazotz appears in Xibalba (the underworld) where he decapitates one of the Hero Twins with his obsidian knife. He represents the dangers of the underworld and the inevitability of death. In Fate/Grand Order, Camazotz serves as an Assassin class Servant, embodying these death-dealing aspects. His presence in Lostbelt 7 reinforces the themes of mortality and the boundary between life and death that permeate this underworld-dominated realm. Like many Mesoamerican deities, he demands sacrifice and represents the darker aspects of existence.",
+        "content_ko": "카마소츠는 마야 신화에서 밤, 죽음, 희생과 관련된 박쥐 신이었다. 마야 창조 서사시 포폴 부에서 카마소츠는 명계 시발바에 등장하여 흑요석 칼로 영웅 쌍둥이 중 하나의 목을 벤다. 그는 명계의 위험과 죽음의 불가피성을 나타낸다. 페이트/그랜드 오더에서 카마소츠는 이러한 죽음을 가져오는 측면을 구현하는 어쌔신 클래스 서번트로 활동한다. 이문대 7에서 그의 존재는 이 명계 지배 영역에 스며든 필멸성과 삶과 죽음의 경계라는 주제를 강화한다. 많은 메소아메리카 신들처럼 그는 희생을 요구하고 존재의 어두운 측면을 나타낸다.",
+        "content_ja": "カマソッツはマヤ神話で夜、死、犠牲と関連する蝙蝠の神だった。マヤの創造叙事詩ポポル・ヴフでは、カマソッツは冥界シバルバーに登場し、黒曜石のナイフで英雄双子の一人の首を刎ねる。彼は冥界の危険と死の不可避性を表す。Fate/Grand Orderでは、カマソッツはこれらの死をもたらす側面を体現するアサシンクラスのサーヴァントを務める。異聞帯7での彼の存在は、この冥界が支配する領域に浸透する死すべき運命と生と死の境界というテーマを強化する。多くのメソアメリカの神々のように、彼は犠牲を要求し、存在の暗い側面を表す。"
+      },
+      {
+        "title": "Crypter: Daybit Sem Void",
+        "title_ko": "크립터: 데이빗 셈 보이드",
+        "title_ja": "クリプター：デイビット・セム・ヴォイド",
+        "content": "Daybit Sem Void is the final and most enigmatic of the seven Crypters, responsible for the South American Lostbelt. Almost nothing was known about him throughout the game's story, building him into a figure of immense mystery. Unlike other Crypters who had clear motivations and relationships with their Lostbelts, Daybit operated on a level that seemed beyond normal human comprehension. He was said to have successfully summoned a Grand class Servant—the highest tier of Heroic Spirit meant to defend humanity against extinction-level threats. His relationship with ORT and the true nature of his goals remained unclear until the final confrontation. Daybit represents the ultimate challenge: an opponent who has prepared for everything and whose intellect rivals even the most powerful beings.",
+        "content_ko": "데이빗 셈 보이드는 일곱 크립터 중 마지막이자 가장 수수께끼 같은 인물로, 남미 이문대를 담당한다. 게임 스토리 내내 그에 대해 거의 알려진 것이 없어 엄청난 미스터리의 인물로 자리잡았다. 명확한 동기와 이문대와의 관계가 있었던 다른 크립터들과 달리, 데이빗은 일반적인 인간의 이해를 넘어서는 수준에서 활동했다. 그는 멸종급 위협으로부터 인류를 방어하기 위한 가장 높은 등급의 영령인 그랜드 클래스 서번트를 성공적으로 소환했다고 한다. ORT와의 관계와 그의 목표의 진정한 본질은 최종 대결까지 불분명했다. 데이빗은 궁극의 도전을 나타낸다: 모든 것에 대비하고 가장 강력한 존재들조차 경쟁할 수 있는 지성을 가진 적.",
+        "content_ja": "デイビット・セム・ヴォイドは七人のクリプターの中で最後にして最も謎めいた人物で、南米の異聞帯を担当する。ゲームのストーリーを通じて彼についてはほとんど何も知られておらず、巨大な謎の人物として構築された。明確な動機と異聞帯との関係があった他のクリプターとは異なり、デイビットは通常の人間の理解を超えたレベルで活動していた。彼は人類を絶滅レベルの脅威から守るための最高位の英霊であるグランドクラスのサーヴァントを成功裏に召喚したと言われる。ORTとの関係と彼の目標の真の本質は、最終的な対決まで不明だった。デイビットは究極の挑戦を表す：すべてに備え、最も強力な存在とさえ競える知性を持つ敵。"
+      }
+    ],
+    "historical_basis": "Mesoamerican civilizations—including the Maya, Aztec, Toltec, and Olmec—developed sophisticated astronomical, mathematical, and architectural knowledge. Their religious traditions, preserved in sources like the Popol Vuh and Aztec codices, describe complex cosmological systems involving multiple world-ages and a rich pantheon of deities. The K-Pg extinction event 66 million years ago that ended the dinosaurs is one of the most significant events in Earth's history, fundamentally reshaping the planet's biosphere. Mesoamerican pyramids like those at Teotihuacan, Chichen Itza, and Tikal remain among humanity's greatest architectural achievements.",
+    "historical_basis_ko": "마야, 아즈텍, 톨텍, 올멕을 포함한 메소아메리카 문명들은 정교한 천문학, 수학, 건축 지식을 발전시켰다. 포폴 부와 아즈텍 코덱스 같은 자료에 보존된 그들의 종교 전통은 여러 세계 시대와 풍부한 신들의 판테온을 포함하는 복잡한 우주론적 체계를 묘사한다. 6600만 년 전 공룡을 멸종시킨 K-Pg 대멸종 사건은 지구 역사에서 가장 중요한 사건 중 하나로, 행성의 생물권을 근본적으로 재편했다. 테오티우아칸, 치첸이트사, 티칼의 메소아메리카 피라미드들은 인류의 가장 위대한 건축적 업적 중 하나로 남아 있다.",
+    "historical_basis_ja": "マヤ、アステカ、トルテカ、オルメカを含むメソアメリカ文明は、洗練された天文学、数学、建築の知識を発展させた。ポポル・ヴフやアステカの絵文書などの資料に保存された彼らの宗教的伝統は、複数の世界時代と豊かな神々のパンテオンを含む複雑な宇宙論的体系を描写する。6600万年前に恐竜を絶滅させたK-Pg絶滅イベントは、地球の歴史で最も重要な出来事の一つであり、惑星の生物圏を根本的に再形成した。テオティワカン、チチェン・イッツァ、ティカルのメソアメリカのピラミッドは、人類の最も偉大な建築的業績の一つとして残っている。",
+    "related_servants": [
+      {"name": "Kukulkan", "class": "Ruler", "rarity": 5},
+      {"name": "Tezcatlipoca", "class": "Pretender", "rarity": 5},
+      {"name": "Camazotz", "class": "Assassin", "rarity": 4},
+      {"name": "Quetzalcoatl", "class": "Rider", "rarity": 5},
+      {"name": "Jaguar Warrior", "class": "Lancer", "rarity": 3},
+      {"name": "Nitocris (Alter)", "class": "Avenger", "rarity": 5},
+      {"name": "Izcalli", "class": "Archer", "rarity": 4},
+      {"name": "Tlaloc", "class": "Caster", "rarity": 5},
+      {"name": "U-Olga Marie", "class": "Beast", "rarity": 5},
+      {"name": "Mictlantecuhtli", "class": "NPC", "rarity": 0},
+      {"name": "Daybit Sem Void", "class": "Master", "rarity": 0}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Aztec Mythology", "Mayan Mythology", "Popol Vuh", "Aztec Codices", "Florentine Codex", "Mesoamerican archaeology"]
+  }
+]

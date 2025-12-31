@@ -149,18 +149,20 @@
       "singularity": "Singularity",
       "lostbelt": "Lostbelt",
       "servant": "Servant",
-      "article": "Archive"
+      "article": "Article"
     },
     "historicalBasis": "Historical Basis",
     "relatedServants": "Related Servants",
     "relatedEvents": "Related Historical Records",
     "sources": "References",
+    "loading": "Loading data...",
     "tabs": {
       "fgo": "Fate/Grand Order",
       "panHuman": "Pan-Human History"
     },
     "menu": {
-      "title": "Archive",
+      "title": "TRISMEGISTUS",
+      "subtitle": "Rayshift Library",
       "singularities": "Singularities",
       "lostbelts": "Lostbelts",
       "servants": "Servants",

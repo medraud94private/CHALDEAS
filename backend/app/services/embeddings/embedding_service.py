@@ -16,12 +16,29 @@ class EmbeddingService:
     Can switch to text-embedding-3-large (3072 dimensions) for better quality.
     """
 
+    # Model configuration
+    MODELS = {
+        "small": {
+            "name": "text-embedding-3-small",
+            "dimensions": 1536,
+        },
+        "large": {
+            "name": "text-embedding-3-large",
+            "dimensions": 3072,
+        },
+    }
+
     def __init__(
         self,
-        model: str = "text-embedding-3-large",
+        model: str = "small",  # Default to small (accepts "small", "large", or full model name)
         api_key: Optional[str] = None
     ):
-        self.model = model
+        # Resolve model name
+        if model in self.MODELS:
+            self.model = self.MODELS[model]["name"]
+        else:
+            self.model = model  # Allow full model names like "text-embedding-3-small"
+
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
 
         if not self.api_key:

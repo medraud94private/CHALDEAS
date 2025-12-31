@@ -1,0 +1,773 @@
+[
+  {
+    "id": "singularity-f",
+    "type": "singularity",
+    "title": "Fuyuki",
+    "title_ko": "후유키",
+    "title_ja": "冬木",
+    "subtitle": "Flame Contaminated City",
+    "subtitle_ko": "불꽃에 오염된 도시",
+    "subtitle_ja": "炎汚染都市",
+    "chapter": "Singularity F",
+    "era": "Modern Era",
+    "year": 2004,
+    "location": "Fuyuki, Japan",
+    "description": "The prologue singularity and the first Rayshift operation conducted by Chaldea. Set in Fuyuki City, Japan in 2004, this anomaly represents a timeline where the Fifth Holy Grail War never concluded. The corrupted Holy Grail has transformed the city into an eternal inferno, with Servants continuing their battle endlessly. This singularity serves as the training ground for the newly contracted Master and Mash Kyrielight, introducing them to the nature of Heroic Spirit combat and the dangers of temporal anomalies.",
+    "description_ko": "칼데아가 수행한 첫 번째 레이시프트 작전인 프롤로그 특이점. 2004년 일본 후유키 시를 배경으로, 제5차 성배전쟁이 끝나지 않은 시간선의 이상 현상이다. 오염된 성배가 도시를 영원한 지옥불로 변모시켰으며, 서번트들은 끝없이 전투를 계속한다. 이 특이점은 새로 계약한 마스터와 마슈 키리엘라이트에게 영령 전투의 본질과 시간적 이상 현상의 위험성을 알려주는 훈련장 역할을 한다.",
+    "description_ja": "カルデアが実施した最初のレイシフト作戦であるプロローグ特異点。2004年の日本・冬木市を舞台に、第五次聖杯戦争が終結しなかった時間軸の異常を描く。汚染された聖杯は街を永遠の業火へと変え、サーヴァントたちは終わりなき戦いを続ける。この特異点は新たに契約したマスターとマシュ・キリエライトに、英霊戦闘の本質と時間異常の危険性を教える訓練場として機能する。",
+    "sections": [
+      {
+        "title": "Synopsis",
+        "title_ko": "줄거리",
+        "title_ja": "あらすじ",
+        "content": "Fuyuki City has been transformed into a burning hellscape where the Holy Grail War never ended. The Master and Mash arrive to find a city consumed by flames, with corrupted Servants roaming the ruins. They must survive their first combat against Heroic Spirits and confront the shadow of Saber Alter, a darkened version of the legendary King of Knights.",
+        "content_ko": "후유키 시는 성배전쟁이 끝나지 않은 불타는 지옥으로 변했다. 마스터와 마슈는 불길에 휩싸인 도시에 도착하여 폐허를 배회하는 오염된 서번트들과 마주한다. 그들은 영령과의 첫 전투에서 살아남고, 전설의 기사왕의 어둠에 물든 버전인 세이버 얼터의 그림자와 대면해야 한다.",
+        "content_ja": "冬木市は聖杯戦争が終わることのない燃え盛る地獄と化した。マスターとマシュは炎に包まれた街に到着し、廃墟を彷徨う汚染されたサーヴァントたちと遭遇する。彼らは英霊との初戦闘を生き延び、伝説の騎士王の闇に染まった姿であるセイバーオルタの影と対峙しなければならない。"
+      },
+      {
+        "title": "Fuyuki and Kobe: The Real-World Connection",
+        "title_ko": "후유키와 고베: 현실 세계의 연결",
+        "title_ja": "冬木と神戸：現実世界との繋がり",
+        "content": "Fuyuki City is widely believed to be modeled after Kobe, a major port city in Hyogo Prefecture, Japan. The city's geography—including its mountain backdrop, port area, and urban layout—closely mirrors Kobe's distinctive cityscape. The Fuyuki Bridge in the series bears resemblance to Kobe's iconic bridges, and the residential areas reflect Kobe's hillside neighborhoods.",
+        "content_ko": "후유키 시는 일본 효고현의 주요 항구도시인 고베를 모델로 한 것으로 널리 알려져 있다. 산을 배경으로 한 지형, 항구 지역, 도시 레이아웃 등이 고베의 독특한 도시 경관과 밀접하게 일치한다. 시리즈의 후유키 대교는 고베의 상징적인 다리들과 닮았으며, 주거 지역은 고베의 언덕 마을을 반영한다.",
+        "content_ja": "冬木市は、日本の兵庫県にある主要港湾都市・神戸をモデルにしたと広く考えられている。山を背景とした地形、港湾エリア、都市のレイアウトなど、神戸の特徴的な街並みと密接に一致する。シリーズの冬木大橋は神戸の象徴的な橋に似ており、住宅地は神戸の丘陵地帯を反映している。"
+      },
+      {
+        "title": "The Great Hanshin Earthquake (1995)",
+        "title_ko": "한신·아와지 대지진 (1995)",
+        "title_ja": "阪神・淡路大震災（1995年）",
+        "content": "On January 17, 1995, the Great Hanshin Earthquake struck Kobe with a magnitude of 6.9, killing over 6,400 people and destroying 100,000 buildings. The earthquake caused massive fires that burned for days, leaving indelible images of a city consumed by flames—imagery that resonates deeply with Fuyuki's burning landscape in Fate/Zero and Fate/Grand Order. The Fourth Holy Grail War's climax, where a corrupted Grail engulfs the city in fire, may evoke memories of this real tragedy.",
+        "content_ko": "1995년 1월 17일, 규모 6.9의 한신·아와지 대지진이 고베를 강타하여 6,400명 이상이 사망하고 10만 채의 건물이 파괴되었다. 지진은 며칠 동안 타오른 대규모 화재를 일으켜, 불길에 휩싸인 도시의 지울 수 없는 이미지를 남겼다—이는 Fate/Zero와 Fate/Grand Order에서 불타는 후유키의 풍경과 깊이 공명한다. 오염된 성배가 도시를 불길로 휩싸는 제4차 성배전쟁의 클라이맥스는 이 실제 비극의 기억을 환기시킬 수 있다.",
+        "content_ja": "1995年1月17日、マグニチュード6.9の阪神・淡路大震災が神戸を襲い、6,400人以上が死亡し、10万棟の建物が倒壊した。地震は何日も燃え続ける大規模な火災を引き起こし、炎に包まれた街という消えることのないイメージを残した—これはFate/ZeroやFate/Grand Orderにおける燃え盛る冬木の風景と深く共鳴する。汚染された聖杯が街を炎で包む第四次聖杯戦争のクライマックスは、この現実の悲劇の記憶を呼び起こすかもしれない。"
+      },
+      {
+        "title": "The Holy Grail War System",
+        "title_ko": "성배전쟁 시스템",
+        "title_ja": "聖杯戦争システム",
+        "content": "The Holy Grail War is a secret magical ritual held in Fuyuki City, where seven Masters summon seven Servants—Heroic Spirits from legend—to battle for the Holy Grail. The system was established by three founding families: Tohsaka, Matou, and Einzbern. The wars have occurred roughly every 60 years, with the Fourth War (Fate/Zero) in 1994 and the Fifth War (Fate/stay night) in 2004.",
+        "content_ko": "성배전쟁은 후유키 시에서 열리는 비밀 마술 의식으로, 일곱 명의 마스터가 전설의 영령인 일곱 서번트를 소환하여 성배를 놓고 싸운다. 이 시스템은 세 창시 가문인 토오사카, 마토, 아인츠베른에 의해 확립되었다. 전쟁은 대략 60년마다 발생했으며, 제4차 전쟁(Fate/Zero)은 1994년, 제5차 전쟁(Fate/stay night)은 2004년에 일어났다.",
+        "content_ja": "聖杯戦争は冬木市で行われる秘密の魔術儀式で、七人のマスターが伝説の英霊である七騎のサーヴァントを召喚し、聖杯を巡って戦う。このシステムは三つの創設家系—遠坂、間桐、アインツベルン—によって確立された。戦争はおよそ60年ごとに発生しており、第四次戦争（Fate/Zero）は1994年に、第五次戦争（Fate/stay night）は2004年に起こった。"
+      },
+      {
+        "title": "The Fire of Fuyuki (1994)",
+        "title_ko": "후유키의 화재 (1994)",
+        "title_ja": "冬木の大火災（1994年）",
+        "content": "At the climax of the Fourth Holy Grail War, Kiritsugu Emiya ordered Saber to destroy the corrupted Holy Grail. The resulting explosion unleashed Angra Mainyu's curse, creating a devastating fire that killed over 500 people and orphaned young Shirou Emiya. This tragedy—where a young boy walks through flames searching for survivors—is the defining moment of the Fate series and directly leads to the events of Singularity F.",
+        "content_ko": "제4차 성배전쟁의 클라이맥스에서 키리츠구 에미야는 세이버에게 오염된 성배를 파괴하라고 명령했다. 그 결과 폭발은 앙그라 마이뉴의 저주를 풀어놓아 500명 이상을 죽이고 어린 시로 에미야를 고아로 만든 참혹한 화재를 일으켰다. 어린 소년이 생존자를 찾아 불길 속을 걸어가는 이 비극은 Fate 시리즈의 결정적인 순간이며, 특이점 F의 사건으로 직접 이어진다.",
+        "content_ja": "第四次聖杯戦争のクライマックスで、衛宮切嗣はセイバーに汚染された聖杯の破壊を命じた。その結果生じた爆発はアンリマユの呪いを解き放ち、500人以上を死亡させ、幼い衛宮士郎を孤児にした壊滅的な火災を引き起こした。炎の中を生存者を探して歩く少年—この悲劇はFateシリーズを決定づける瞬間であり、特異点Fの事件へと直接繋がっている。"
+      },
+      {
+        "title": "Saber Alter: The Corrupted King",
+        "title_ko": "세이버 얼터: 타락한 왕",
+        "title_ja": "セイバーオルタ：堕ちた王",
+        "content": "In Singularity F, the Master encounters Saber Alter—Artoria Pendragon corrupted by the dark mud of Angra Mainyu. This blackened King of Knights represents what could have happened if Artoria had been fully consumed by the Grail's corruption during the Fourth War. She serves as both the final boss of the singularity and a dark mirror of the noble king she once was.",
+        "content_ko": "특이점 F에서 마스터는 앙그라 마이뉴의 검은 진흙에 오염된 아르토리아 펜드래곤인 세이버 얼터와 조우한다. 이 검게 물든 기사왕은 제4차 전쟁 중 아르토리아가 성배의 오염에 완전히 잠식되었다면 어떻게 되었을지를 상징한다. 그녀는 특이점의 최종 보스이자 한때 고귀했던 왕의 어두운 거울 역할을 한다.",
+        "content_ja": "特異点Fで、マスターはアンリマユの黒い泥に汚染されたアルトリア・ペンドラゴン—セイバーオルタと遭遇する。この黒く染まった騎士王は、第四次戦争中にアルトリアが聖杯の汚染に完全に呑まれていたらどうなっていたかを象徴する。彼女は特異点の最終ボスであると同時に、かつての高貴な王の暗い鏡像でもある。"
+      }
+    ],
+    "historical_basis": "Fuyuki City is believed to be modeled after Kobe, Japan. The city's burning imagery may evoke the Great Hanshin Earthquake of 1995, which devastated Kobe with fires that burned for days. The Holy Grail War concept draws from the legend of the Holy Grail and Arthurian mythology.",
+    "historical_basis_ko": "후유키 시는 일본 고베를 모델로 한 것으로 알려져 있다. 도시가 불타는 이미지는 며칠간 화재가 지속되어 고베를 황폐화시킨 1995년 한신·아와지 대지진을 연상시킬 수 있다. 성배전쟁 개념은 성배 전설과 아서왕 신화에서 유래한다.",
+    "historical_basis_ja": "冬木市は日本の神戸をモデルにしたと考えられている。街が燃える描写は、何日も火災が続き神戸を壊滅させた1995年の阪神・淡路大震災を想起させるかもしれない。聖杯戦争のコンセプトは聖杯伝説とアーサー王神話に由来する。",
+    "related_servants": [
+      {"name": "Mash Kyrielight", "class": "Shielder", "rarity": 3},
+      {"name": "Caster (Cu Chulainn)", "class": "Caster", "rarity": 3},
+      {"name": "Saber Alter", "class": "Saber", "rarity": 4},
+      {"name": "EMIYA", "class": "Archer", "rarity": 4},
+      {"name": "Artoria Pendragon", "class": "Saber", "rarity": 5}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Fate/stay night", "Fate/Zero", "Great Hanshin Earthquake records"]
+  },
+  {
+    "id": "singularity-1",
+    "type": "singularity",
+    "title": "Orleans",
+    "title_ko": "오를레앙",
+    "title_ja": "オルレアン",
+    "subtitle": "Hundred Years' War of the Evil Dragons",
+    "subtitle_ko": "사룡백년전쟁",
+    "subtitle_ja": "邪竜百年戦争",
+    "chapter": "First Singularity",
+    "era": "Medieval",
+    "year": 1431,
+    "location": "France",
+    "description": "The First Singularity takes place during the Hundred Years' War in 1431 France. A twisted version of Jeanne d'Arc, consumed by hatred and summoned as a corrupted Avenger-class Servant, leads an army of wyverns and dragons to lay waste to the French countryside. The Holy Maiden, burned at the stake by the very nation she saved, now seeks vengeance against all of France. Chaldea's Master must ally with the true Jeanne d'Arc, Marie Antoinette, and other French Heroic Spirits to stop the Dragon Witch before she rewrites history entirely.",
+    "description_ko": "제1특이점은 1431년 프랑스, 백년전쟁 시기를 배경으로 한다. 증오에 사로잡혀 타락한 어벤저 클래스 서번트로 소환된 잔 다르크의 왜곡된 버전이 와이번과 용의 군단을 이끌고 프랑스 전역을 황폐화시킨다. 자신이 구한 나라에 의해 화형당한 성녀는 이제 프랑스 전체에 복수를 꾀한다. 칼데아의 마스터는 진정한 잔 다르크, 마리 앙투아네트, 그리고 다른 프랑스 영령들과 동맹하여 용의 마녀가 역사를 완전히 다시 쓰기 전에 저지해야 한다.",
+    "description_ja": "第一特異点は1431年のフランス、百年戦争の時代を舞台とする。憎しみに囚われ堕落したアヴェンジャークラスのサーヴァントとして召喚されたジャンヌ・ダルクの歪んだ姿が、ワイバーンと竜の軍団を率いてフランス全土を荒廃させる。自らが救った国に火刑に処された聖女は、今やフランス全体への復讐を企てる。カルデアのマスターは真のジャンヌ・ダルク、マリー・アントワネット、そして他のフランスの英霊たちと同盟し、竜の魔女が歴史を完全に書き換える前に阻止しなければならない。",
+    "sections": [
+      {
+        "title": "The Hundred Years' War",
+        "title_ko": "백년전쟁",
+        "title_ja": "百年戦争",
+        "content": "The Hundred Years' War (1337-1453) was a series of conflicts between England and France over succession to the French throne. By 1429, France was on the verge of defeat, with English forces occupying much of northern France including Paris. The war saw the rise of longbow warfare, the decline of feudal chivalry, and the emergence of national identities in both nations.",
+        "content_ko": "백년전쟁(1337-1453)은 프랑스 왕위 계승을 둘러싼 영국과 프랑스 간의 일련의 분쟁이었다. 1429년까지 프랑스는 패배 직전이었으며, 영국군이 파리를 포함한 북프랑스 대부분을 점령하고 있었다. 이 전쟁은 장궁 전술의 발전, 봉건 기사도의 쇠퇴, 양국에서의 국민 정체성 출현을 목격했다.",
+        "content_ja": "百年戦争（1337-1453）はフランス王位継承を巡る英仏間の一連の紛争だった。1429年までにフランスは敗北寸前で、イングランド軍がパリを含む北フランスの大部分を占領していた。この戦争は長弓戦術の台頭、封建騎士道の衰退、両国における国民的アイデンティティの出現を見た。"
+      },
+      {
+        "title": "Joan of Arc: The Maid of Orleans",
+        "title_ko": "잔 다르크: 오를레앙의 성녀",
+        "title_ja": "ジャンヌ・ダルク：オルレアンの乙女",
+        "content": "Jeanne d'Arc (1412-1431), a peasant girl from Domrémy, claimed divine visions instructed her to support Charles VII and recover France from English domination. At just 17, she led French forces to break the Siege of Orleans in 1429, turning the tide of the war. She was captured by Burgundians, sold to the English, tried for heresy, and burned at the stake in Rouen on May 30, 1431. She was canonized as a saint in 1920.",
+        "content_ko": "잔 다르크(1412-1431)는 돔레미 출신의 농민 소녀로, 신의 환상이 샤를 7세를 지원하고 프랑스를 영국 지배에서 회복하라고 지시했다고 주장했다. 17세에 불과할 때 1429년 오를레앙 포위전을 돌파하며 프랑스군을 이끌어 전쟁의 흐름을 바꿨다. 부르고뉴파에 체포되어 영국에 팔렸고, 이단 혐의로 재판받아 1431년 5월 30일 루앙에서 화형당했다. 1920년에 성인으로 시성되었다.",
+        "content_ja": "ジャンヌ・ダルク（1412-1431）はドンレミ出身の農民の少女で、神の幻視がシャルル7世を支援しフランスを英国支配から回復せよと命じたと主張した。わずか17歳で1429年のオルレアン包囲戦を突破してフランス軍を率い、戦争の流れを変えた。ブルゴーニュ派に捕らえられてイングランドに売られ、異端の罪で裁かれ、1431年5月30日にルーアンで火刑に処された。1920年に聖人として列聖された。"
+      },
+      {
+        "title": "The Dragon Witch",
+        "title_ko": "용의 마녀",
+        "title_ja": "竜の魔女",
+        "content": "Jeanne d'Arc Alter represents the hatred and resentment that could have consumed Joan if she had cursed God and France at her execution. Summoned by Gilles de Rais using the Holy Grail, she commands the power of dragons—a twisted manifestation of her 'Dragon Witch' legend. Unlike the true Jeanne who accepted her fate with grace, the Alter version embodies vengeance incarnate, determined to burn France as France burned her.",
+        "content_ko": "잔 다르크 얼터는 처형 당시 신과 프랑스를 저주했다면 잔을 삼켰을 증오와 원한을 상징한다. 질 드 레가 성배를 사용하여 소환한 그녀는 '용의 마녀' 전설의 왜곡된 발현인 용의 힘을 지휘한다. 우아하게 운명을 받아들인 진정한 잔과 달리, 얼터 버전은 복수의 화신을 구현하며, 프랑스가 자신을 불태웠듯이 프랑스를 불태우려 한다.",
+        "content_ja": "ジャンヌ・ダルク・オルタは、処刑時に神とフランスを呪っていたら聖女を飲み込んでいたであろう憎しみと怨念を象徴する。ジル・ド・レが聖杯を使って召喚した彼女は、「竜の魔女」伝説の歪んだ顕現である竜の力を操る。優雅に運命を受け入れた真のジャンヌと異なり、オルタ版は復讐の化身を体現し、フランスが自分を焼いたようにフランスを焼き尽くそうとしている。"
+      },
+      {
+        "title": "Gilles de Rais: The Marshal's Fall",
+        "title_ko": "질 드 레: 원수의 타락",
+        "title_ja": "ジル・ド・レ：元帥の堕落",
+        "content": "Gilles de Montmorency-Laval, Baron de Rais (1404-1440), was a French nobleman and military commander who fought alongside Joan of Arc. After her death, he descended into depravity, allegedly murdering hundreds of children in occult rituals. He was executed for his crimes in 1440. In Orleans, both his Saber form (loyal knight) and Caster form (depraved serial killer) appear, representing the tragic arc of a hero who fell to madness after losing his light.",
+        "content_ko": "질 드 몽모랑시-라발, 레 남작(1404-1440)은 잔 다르크와 함께 싸운 프랑스 귀족이자 군사 지휘관이었다. 그녀의 죽음 후 그는 타락의 길로 빠져, 주술 의식에서 수백 명의 어린이를 살해한 혐의를 받았다. 1440년 그의 범죄로 처형되었다. 오를레앙에서는 그의 세이버 형태(충성스러운 기사)와 캐스터 형태(타락한 연쇄 살인마) 모두 등장하며, 빛을 잃은 후 광기에 빠진 영웅의 비극적 궤적을 보여준다.",
+        "content_ja": "ジル・ド・モンモランシー＝ラヴァル、レ男爵（1404-1440）は、ジャンヌ・ダルクと共に戦ったフランス貴族・軍事指揮官だった。彼女の死後、彼は堕落の道へ落ち、オカルト儀式で何百人もの子供を殺害したとされる。1440年にその罪で処刑された。オルレアンでは、彼のセイバー形態（忠実な騎士）とキャスター形態（堕落した連続殺人鬼）の両方が登場し、光を失った後に狂気に陥った英雄の悲劇的な軌跡を示している。"
+      },
+      {
+        "title": "Marie Antoinette: The Queen's Grace",
+        "title_ko": "마리 앙투아네트: 여왕의 은총",
+        "title_ja": "マリー・アントワネット：王妃の気品",
+        "content": "Though historically from a later era (1755-1793), Marie Antoinette appears as an ally in Orleans, representing the spirit of French royalty. The last Queen of France before the Revolution, she was executed by guillotine during the Reign of Terror. In FGO, she fights alongside the Master with her eternal optimism and love for France, proving that royalty means serving one's people—even across time.",
+        "content_ko": "역사적으로는 후대(1755-1793)의 인물이지만, 마리 앙투아네트는 프랑스 왕실의 정신을 대표하며 오를레앙에서 동맹으로 등장한다. 혁명 전 마지막 프랑스 여왕이었던 그녀는 공포정치 기간에 단두대에서 처형되었다. FGO에서 그녀는 영원한 낙관주의와 프랑스에 대한 사랑으로 마스터와 함께 싸우며, 왕족이란 시간을 초월해서라도 국민을 섬기는 것임을 증명한다.",
+        "content_ja": "歴史的には後の時代（1755-1793）の人物だが、マリー・アントワネットはフランス王室の精神を代表してオルレアンで味方として登場する。革命前最後のフランス王妃だった彼女は、恐怖政治の時代にギロチンで処刑された。FGOでは、永遠の楽観主義とフランスへの愛をもってマスターと共に戦い、王族とは時を超えてでも民に仕えることだと証明する。"
+      },
+      {
+        "title": "The Siege of Orleans",
+        "title_ko": "오를레앙 포위전",
+        "title_ja": "オルレアン包囲戦",
+        "content": "The historical Siege of Orleans (October 1428 - May 1429) was the turning point of the Hundred Years' War. English forces besieged the strategic city of Orleans, the last major French stronghold on the Loire River. Joan of Arc arrived with French reinforcements and, through a combination of military action and inspirational leadership, broke the siege in just nine days. This victory led to Charles VII's coronation at Reims and the eventual French victory in the war.",
+        "content_ko": "역사적 오를레앙 포위전(1428년 10월 - 1429년 5월)은 백년전쟁의 전환점이었다. 영국군은 루아르 강의 마지막 주요 프랑스 거점인 전략적 도시 오를레앙을 포위했다. 잔 다르크가 프랑스 증원군과 함께 도착하여 군사 행동과 영감을 주는 지도력의 조합으로 단 9일 만에 포위를 돌파했다. 이 승리는 샤를 7세의 랭스 대관식과 결국 프랑스의 전쟁 승리로 이어졌다.",
+        "content_ja": "歴史的なオルレアン包囲戦（1428年10月〜1429年5月）は百年戦争の転換点だった。イングランド軍はロワール川最後の主要フランス拠点である戦略的都市オルレアンを包囲した。ジャンヌ・ダルクがフランス援軍と共に到着し、軍事行動と感動的な指導力の組み合わせで、わずか9日で包囲を打ち破った。この勝利はシャルル7世のランス戴冠式と、最終的なフランスの勝利につながった。"
+      }
+    ],
+    "historical_basis": "The Hundred Years' War (1337-1453) was a prolonged conflict between England and France. Joan of Arc (1412-1431) led French forces to victory at Orleans before being captured, tried for heresy, and burned at the stake. Gilles de Rais, her companion in arms, later became infamous as a serial killer of children.",
+    "historical_basis_ko": "백년전쟁(1337-1453)은 영국과 프랑스 사이의 장기 분쟁이었다. 잔 다르크(1412-1431)는 프랑스군을 이끌고 오를레앙에서 승리했으나 체포되어 이단 혐의로 재판받고 화형당했다. 그녀의 전우였던 질 드 레는 후에 아동 연쇄 살인범으로 악명을 떨쳤다.",
+    "historical_basis_ja": "百年戦争（1337-1453）は英仏間の長期にわたる紛争だった。ジャンヌ・ダルク（1412-1431）はフランス軍を率いてオルレアンで勝利したが、捕らえられて異端の罪で裁かれ、火刑に処された。彼女の戦友だったジル・ド・レは、後に子供の連続殺人犯として悪名高くなった。",
+    "related_servants": [
+      {"name": "Jeanne d'Arc", "class": "Ruler", "rarity": 5},
+      {"name": "Jeanne d'Arc (Alter)", "class": "Avenger", "rarity": 5},
+      {"name": "Marie Antoinette", "class": "Rider", "rarity": 4},
+      {"name": "Gilles de Rais (Saber)", "class": "Saber", "rarity": 3},
+      {"name": "Gilles de Rais (Caster)", "class": "Caster", "rarity": 3},
+      {"name": "Chevalier d'Eon", "class": "Saber", "rarity": 4},
+      {"name": "Siegfried", "class": "Saber", "rarity": 4},
+      {"name": "Saint George", "class": "Rider", "rarity": 2},
+      {"name": "Amadeus Mozart", "class": "Caster", "rarity": 1},
+      {"name": "Phantom of the Opera", "class": "Assassin", "rarity": 2},
+      {"name": "Sanson", "class": "Assassin", "rarity": 2}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Historical records of Joan of Arc", "Chronicles of the Hundred Years' War", "Trial records of Gilles de Rais"]
+  },
+  {
+    "id": "singularity-2",
+    "type": "singularity",
+    "title": "Septem",
+    "title_ko": "세풀템",
+    "title_ja": "セプテム",
+    "subtitle": "Eternal Madness Empire",
+    "subtitle_ko": "영원광염제국",
+    "subtitle_ja": "永続狂気帝国",
+    "chapter": "Second Singularity",
+    "era": "Ancient",
+    "year": 60,
+    "location": "Rome",
+    "description": "The Second Singularity is set in 60 AD Rome during Emperor Nero's reign. A coalition of Roman emperors from various eras—including Romulus, Caligula, and Caesar—has united under the banner of the 'United Roman Empire' to challenge Nero's legitimacy. Emperor Nero Claudius Caesar Augustus Germanicus must defend her throne against this impossible alliance while dealing with internal treachery. The Master fights alongside Nero, Boudica, and other Roman-era heroes to preserve the proper flow of history and prevent Rome from falling to this temporal paradox.",
+    "description_ko": "제2특이점은 기원후 60년, 네로 황제 치세의 로마를 배경으로 한다. 로물루스, 칼리굴라, 카이사르를 포함한 여러 시대의 로마 황제들이 '연합 로마 제국'의 깃발 아래 네로의 정통성에 도전하기 위해 연합했다. 네로 클라우디우스 카이사르 아우구스투스 게르마니쿠스 황제는 내부의 배신을 다루면서 이 불가능한 동맹에 맞서 왕좌를 지켜야 한다. 마스터는 네로, 부디카, 그리고 다른 로마 시대 영웅들과 함께 싸워 역사의 올바른 흐름을 보존하고 로마가 이 시간적 역설에 무너지는 것을 막아야 한다.",
+    "description_ja": "第二特異点は紀元60年、ネロ皇帝治世のローマを舞台とする。ロムルス、カリギュラ、カエサルを含む様々な時代のローマ皇帝たちが「連合ローマ帝国」の旗の下、ネロの正統性に挑戦するため結集した。ネロ・クラウディウス・カエサル・アウグストゥス・ゲルマニクス皇帝は内部の裏切りに対処しながら、この不可能な同盟に対し玉座を守らなければならない。マスターはネロ、ブーディカ、そして他のローマ時代の英雄たちと共に戦い、歴史の正しい流れを守り、ローマがこの時間的パラドックスに陥ることを防がなければならない。",
+    "sections": [
+      {
+        "title": "The Roman Empire at Its Height",
+        "title_ko": "전성기의 로마 제국",
+        "title_ja": "最盛期のローマ帝国",
+        "content": "By the 1st century AD, Rome controlled the entire Mediterranean world, from Britain to Egypt, from Spain to Mesopotamia. The Pax Romana brought unprecedented peace and prosperity. Roman law, engineering, and culture spread across three continents. The city of Rome itself had over a million inhabitants, the largest city in the ancient world.",
+        "content_ko": "기원후 1세기경, 로마는 브리튼에서 이집트까지, 스페인에서 메소포타미아까지 전체 지중해 세계를 지배했다. 팍스 로마나는 전례 없는 평화와 번영을 가져왔다. 로마법, 공학, 문화가 세 대륙에 퍼졌다. 로마 시 자체의 인구는 100만 명 이상으로, 고대 세계 최대의 도시였다.",
+        "content_ja": "紀元1世紀までに、ローマはブリタニアからエジプトまで、スペインからメソポタミアまで地中海世界全域を支配していた。パクス・ロマーナは前例のない平和と繁栄をもたらした。ローマ法、工学、文化が三大陸に広まった。ローマ市自体の人口は100万人を超え、古代世界最大の都市だった。"
+      },
+      {
+        "title": "Emperor Nero: The Artist Emperor",
+        "title_ko": "네로 황제: 예술가 황제",
+        "title_ja": "ネロ皇帝：芸術家皇帝",
+        "content": "Nero Claudius Caesar Augustus Germanicus (37-68 AD) became emperor at 16. Despite his later infamy, his early reign was considered a golden age. He was passionate about the arts—singing, poetry, chariot racing—often performing publicly, which scandalized the Roman elite. The Great Fire of Rome in 64 AD destroyed much of the city; Nero's response included building the extravagant Domus Aurea and persecuting Christians as scapegoats.",
+        "content_ko": "네로 클라우디우스 카이사르 아우구스투스 게르마니쿠스(37-68년)는 16세에 황제가 되었다. 후대의 악명에도 불구하고, 그의 초기 치세는 황금기로 여겨졌다. 그는 예술에 열정적이어서—노래, 시, 전차 경주—종종 공개적으로 공연하여 로마 엘리트들에게 충격을 주었다. 64년 로마 대화재로 도시 대부분이 파괴되었고, 네로는 호화로운 도무스 아우레아를 건설하고 기독교인들을 희생양으로 삼아 박해했다.",
+        "content_ja": "ネロ・クラウディウス・カエサル・アウグストゥス・ゲルマニクス（37-68年）は16歳で皇帝となった。後の悪名にもかかわらず、初期の治世は黄金時代とされた。彼は芸術に情熱的で—歌、詩、戦車競走—しばしば公開で演技し、ローマのエリート層に衝撃を与えた。64年のローマ大火で都市の大部分が破壊され、ネロは豪華なドムス・アウレアを建設し、スケープゴートとしてキリスト教徒を迫害した。"
+      },
+      {
+        "title": "Romulus: The Founder of Rome",
+        "title_ko": "로물루스: 로마의 건국자",
+        "title_ja": "ロムルス：ローマの建国者",
+        "content": "According to legend, Romulus and Remus were twins raised by a she-wolf, sons of Mars the war god. After killing his brother in a dispute over where to found their city, Romulus established Rome on April 21, 753 BC. He created the Roman Senate, organized the first legions, and established many Roman traditions. In FGO, Romulus embodies Rome itself—a divine concept of eternal empire that transcends any single ruler.",
+        "content_ko": "전설에 따르면, 로물루스와 레무스는 전쟁의 신 마르스의 아들로 암늑대에게 길러진 쌍둥이였다. 도시를 어디에 세울지에 대한 분쟁에서 동생을 죽인 후, 로물루스는 기원전 753년 4월 21일 로마를 세웠다. 그는 로마 원로원을 창설하고, 최초의 군단을 조직하며, 많은 로마 전통을 확립했다. FGO에서 로물루스는 로마 자체를 구현한다—어떤 단일 통치자도 초월하는 영원한 제국의 신적 개념.",
+        "content_ja": "伝説によると、ロムルスとレムスは軍神マルスの息子で、雌狼に育てられた双子だった。都市をどこに建てるかの争いで弟を殺した後、ロムルスは紀元前753年4月21日にローマを建国した。彼はローマ元老院を創設し、最初の軍団を組織し、多くのローマの伝統を確立した。FGOでは、ロムルスはローマそのものを体現する—いかなる単一の支配者をも超越する永遠の帝国という神的概念。"
+      },
+      {
+        "title": "Julius Caesar: The Dictator",
+        "title_ko": "율리우스 카이사르: 독재관",
+        "title_ja": "ユリウス・カエサル：独裁官",
+        "content": "Gaius Julius Caesar (100-44 BC) was a military genius who conquered Gaul, crossed the Rubicon to start a civil war, and became dictator perpetuo of Rome. His assassination on the Ides of March (March 15, 44 BC) by senators including Brutus and Cassius ended the Roman Republic. In Septem, Caesar leads the United Empire's forces with his tactical brilliance, though his motives remain complex.",
+        "content_ko": "가이우스 율리우스 카이사르(기원전 100-44년)는 갈리아를 정복하고, 내전을 시작하기 위해 루비콘 강을 건너며, 로마의 종신 독재관이 된 군사적 천재였다. 3월의 이데스(기원전 44년 3월 15일)에 브루투스와 카시우스를 포함한 원로원 의원들에 의한 암살로 로마 공화정이 끝났다. 세풀템에서 카이사르는 연합 제국의 군대를 그의 뛰어난 전술로 이끌지만, 동기는 복잡하다.",
+        "content_ja": "ガイウス・ユリウス・カエサル（紀元前100-44年）はガリアを征服し、内戦を始めるためにルビコン川を渡り、ローマの終身独裁官となった軍事的天才だった。3月のイデス（紀元前44年3月15日）にブルータスとカッシウスを含む元老院議員による暗殺で、ローマ共和政は終焉を迎えた。セプテムでは、カエサルは彼の戦術的才能で連合帝国軍を率いるが、その動機は複雑なままだ。"
+      },
+      {
+        "title": "Boudica: The Celtic Queen",
+        "title_ko": "부디카: 켈트족의 여왕",
+        "title_ja": "ブーディカ：ケルトの女王",
+        "content": "Boudica (died 60/61 AD) was queen of the Iceni tribe in Roman Britain. After her husband's death, the Romans seized her lands, flogged her, and assaulted her daughters. In response, she led a massive uprising that burned Londinium (London), Camulodunum (Colchester), and Verulamium (St Albans), killing an estimated 70,000-80,000 Romans and Britons. Though defeated, she became a symbol of resistance against tyranny.",
+        "content_ko": "부디카(60/61년 사망)는 로마 브리튼의 이케니족 여왕이었다. 남편의 죽음 후, 로마인들은 그녀의 영토를 빼앗고, 그녀를 채찍질하며, 딸들을 폭행했다. 이에 대응하여 그녀는 론디니움(런던), 카물로두눔(콜체스터), 베룰라미움(세인트올번스)을 불태우고 약 70,000-80,000명의 로마인과 브리튼인을 죽인 대규모 봉기를 이끌었다. 패배했지만 폭정에 대한 저항의 상징이 되었다.",
+        "content_ja": "ブーディカ（60/61年没）はローマ・ブリタニアのイケニ族の女王だった。夫の死後、ローマ人は彼女の領土を奪い、彼女を鞭打ち、娘たちを暴行した。それに応じて、彼女はロンディニウム（ロンドン）、カムロドゥヌム（コルチェスター）、ウェルラミウム（セントオールバンズ）を焼き、推定70,000-80,000人のローマ人とブリトン人を殺した大規模な蜂起を率いた。敗北したが、暴政への抵抗の象徴となった。"
+      },
+      {
+        "title": "Caligula: The Mad Emperor",
+        "title_ko": "칼리굴라: 광기의 황제",
+        "title_ja": "カリギュラ：狂気の皇帝",
+        "content": "Gaius Julius Caesar Augustus Germanicus (12-41 AD), known as Caligula ('Little Boots'), was Rome's third emperor. His early reign showed promise, but illness may have triggered erratic behavior—legend claims he planned to make his horse a consul. He was assassinated by the Praetorian Guard after just four years. In FGO, Caligula is cursed by the moon goddess Diana to eternal madness, driven insane by his love for his sister.",
+        "content_ko": "가이우스 율리우스 카이사르 아우구스투스 게르마니쿠스(12-41년), 칼리굴라('작은 군화')로 알려진 그는 로마의 세 번째 황제였다. 초기 치세는 유망했으나, 질병이 불규칙한 행동을 촉발했을 수 있다—전설에 따르면 그가 말을 집정관으로 만들려 했다고 한다. 그는 불과 4년 만에 근위대에 의해 암살당했다. FGO에서 칼리굴라는 달의 여신 다이아나에게 영원한 광기의 저주를 받아, 여동생에 대한 사랑으로 미쳐버렸다.",
+        "content_ja": "ガイウス・ユリウス・カエサル・アウグストゥス・ゲルマニクス（12-41年）、カリギュラ（「小さな軍靴」）として知られる彼は、ローマの第三代皇帝だった。初期の治世は有望だったが、病気が不安定な行動を引き起こした可能性がある—伝説では彼が馬を執政官にしようとしたと言われる。わずか4年で親衛隊に暗殺された。FGOでは、カリギュラは月の女神ディアナに永遠の狂気を呪われ、姉への愛で狂わされている。"
+      },
+      {
+        "title": "The United Roman Empire",
+        "title_ko": "연합 로마 제국",
+        "title_ja": "連合ローマ帝国",
+        "content": "In this singularity, emperors from across Roman history have been summoned to challenge Nero. Led by Romulus with his divine authority as Rome's founder, and Julius Caesar with his military genius, this impossible alliance represents the weight of Roman history itself. Their goal is not destruction but to determine who is truly worthy to lead Rome—testing whether Nero, often dismissed as a tyrant, can prove herself a true emperor.",
+        "content_ko": "이 특이점에서 로마 역사 전체의 황제들이 네로에게 도전하기 위해 소환되었다. 로마 건국자로서의 신성한 권위를 가진 로물루스와 군사적 천재 율리우스 카이사르가 이끄는 이 불가능한 동맹은 로마 역사 자체의 무게를 대표한다. 그들의 목표는 파괴가 아니라 누가 진정으로 로마를 이끌 자격이 있는지 결정하는 것—종종 폭군으로 치부되는 네로가 진정한 황제임을 증명할 수 있는지 시험한다.",
+        "content_ja": "この特異点では、ローマ史全体から皇帝たちがネロに挑戦するために召喚された。ローマ建国者としての神聖な権威を持つロムルスと、軍事的天才のユリウス・カエサルが率いるこの不可能な同盟は、ローマ史そのものの重みを代表する。彼らの目的は破壊ではなく、誰が真にローマを率いる資格があるかを決定すること—しばしば暴君として片付けられるネロが、真の皇帝であることを証明できるかを試すことだ。"
+      }
+    ],
+    "historical_basis": "Nero (37-68 AD) was the fifth Roman Emperor and the last of the Julio-Claudian dynasty. His reign saw the Great Fire of Rome (64 AD), persecution of Christians, and eventually his suicide during a revolt. Romulus founded Rome in 753 BC. Julius Caesar (100-44 BC) was assassinated after becoming dictator. Boudica led a revolt against Rome in 60-61 AD. Caligula's brief reign (37-41 AD) became synonymous with cruelty and madness.",
+    "historical_basis_ko": "네로(37-68년)는 다섯 번째 로마 황제이자 율리우스-클라우디우스 왕조의 마지막이었다. 그의 치세에는 로마 대화재(64년), 기독교 박해, 그리고 결국 반란 중 자살이 있었다. 로물루스는 기원전 753년 로마를 건국했다. 율리우스 카이사르(기원전 100-44년)는 독재관이 된 후 암살당했다. 부디카는 60-61년에 로마에 대한 반란을 이끌었다. 칼리굴라의 짧은 치세(37-41년)는 잔인함과 광기의 대명사가 되었다.",
+    "historical_basis_ja": "ネロ（37-68年）は第五代ローマ皇帝で、ユリウス・クラウディウス朝最後の皇帝だった。彼の治世にはローマ大火（64年）、キリスト教徒迫害、そして最終的に反乱中の自殺があった。ロムルスは紀元前753年にローマを建国した。ユリウス・カエサル（紀元前100-44年）は独裁官となった後に暗殺された。ブーディカは60-61年にローマに対する反乱を率いた。カリギュラの短い治世（37-41年）は残虐さと狂気の代名詞となった。",
+    "related_servants": [
+      {"name": "Nero Claudius", "class": "Saber", "rarity": 4},
+      {"name": "Romulus", "class": "Lancer", "rarity": 3},
+      {"name": "Caligula", "class": "Berserker", "rarity": 2},
+      {"name": "Boudica", "class": "Rider", "rarity": 3},
+      {"name": "Julius Caesar", "class": "Saber", "rarity": 3},
+      {"name": "Spartacus", "class": "Berserker", "rarity": 1},
+      {"name": "Jing Ke", "class": "Assassin", "rarity": 3},
+      {"name": "Lu Bu", "class": "Berserker", "rarity": 3},
+      {"name": "Alexander", "class": "Rider", "rarity": 3},
+      {"name": "Darius III", "class": "Berserker", "rarity": 3},
+      {"name": "Leonidas I", "class": "Lancer", "rarity": 2},
+      {"name": "Saint Martha", "class": "Rider", "rarity": 4}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Roman Imperial history", "Tacitus - Annals", "Suetonius - The Twelve Caesars"]
+  },
+  {
+    "id": "singularity-3",
+    "type": "singularity",
+    "title": "Okeanos",
+    "title_ko": "오케아노스",
+    "title_ja": "オケアノス",
+    "subtitle": "Sealed Ends of the Four Seas",
+    "subtitle_ko": "봉쇄종국사해",
+    "subtitle_ja": "封鎖終局四海",
+    "chapter": "Third Singularity",
+    "era": "Age of Exploration",
+    "year": 1573,
+    "location": "Caribbean Sea",
+    "description": "The Third Singularity unfolds across the open seas during the Age of Exploration in 1573. The legendary English privateer Sir Francis Drake finds herself caught in a three-way battle between pirate factions, each seeking a Holy Grail hidden somewhere in the Caribbean. Legendary figures including Edward Teach (Blackbeard), Anne Bonny, Mary Read, and even heroes from the Trojan War such as Hektor clash on the high seas. The Master joins Drake's crew aboard the Golden Hind to navigate treacherous waters, confront supernatural threats, and locate the Grail before it falls into the wrong hands.",
+    "description_ko": "제3특이점은 1573년 대항해시대의 대양을 배경으로 펼쳐진다. 전설적인 영국 사략선장 프랜시스 드레이크 경은 카리브해 어딘가에 숨겨진 성배를 찾는 해적 세력들 간의 삼파전에 휘말린다. 에드워드 티치(검은수염), 앤 보니, 메리 리드, 그리고 트로이 전쟁의 헥토르 같은 전설적 인물들이 공해에서 충돌한다. 마스터는 골든 하인드호에서 드레이크의 선원으로 합류하여 위험한 바다를 항해하고, 초자연적 위협에 맞서며, 성배가 잘못된 손에 떨어지기 전에 찾아야 한다.",
+    "description_ja": "第三特異点は1573年の大航海時代、大洋を舞台に展開する。伝説の英国私掠船長フランシス・ドレイク卿は、カリブ海のどこかに隠された聖杯を巡る海賊勢力の三つ巴の戦いに巻き込まれる。エドワード・ティーチ（黒髭）、アン・ボニー、メアリー・リード、さらにはトロイ戦争のヘクトールのような伝説的人物が公海で激突する。マスターはゴールデン・ハインド号でドレイクの乗組員として加わり、危険な海を航海し、超自然的脅威に立ち向かい、聖杯が悪しき者の手に落ちる前に見つけ出さなければならない。",
+    "sections": [
+      {
+        "title": "The Age of Exploration",
+        "title_ko": "대항해시대",
+        "title_ja": "大航海時代",
+        "content": "The Age of Exploration (15th-17th centuries) was an era of European maritime exploration that reshaped the world. Spanish conquistadors conquered the Americas, Portuguese sailors reached India and Japan, and English privateers challenged Spanish dominance. This period saw the Columbian Exchange, the rise of global trade, and the tragic beginning of the transatlantic slave trade.",
+        "content_ko": "대항해시대(15-17세기)는 세계를 재편한 유럽 해상 탐험의 시대였다. 스페인 정복자들이 아메리카를 정복하고, 포르투갈 선원들이 인도와 일본에 도달했으며, 영국 사략선이 스페인 지배에 도전했다. 이 시기는 콜럼버스 교환, 세계 무역의 부상, 그리고 대서양 노예 무역의 비극적 시작을 목격했다.",
+        "content_ja": "大航海時代（15-17世紀）は世界を再編したヨーロッパの海上探検の時代だった。スペインのコンキスタドールがアメリカ大陸を征服し、ポルトガルの船乗りがインドと日本に到達し、イングランドの私掠船がスペインの支配に挑戦した。この時代はコロンブス交換、世界貿易の台頭、そして大西洋奴隷貿易の悲劇的な始まりを見た。"
+      },
+      {
+        "title": "Francis Drake: The Sea Dog",
+        "title_ko": "프랜시스 드레이크: 바다의 개",
+        "title_ja": "フランシス・ドレイク：海の犬",
+        "content": "Sir Francis Drake (c. 1540-1596) was an English sea captain, privateer, and explorer. He was the second person to circumnavigate the globe (1577-1580) and led attacks on Spanish treasure fleets, earning him the nickname 'El Draque' from the Spanish. He played a crucial role in defeating the Spanish Armada in 1588. In FGO, Drake is portrayed as a bold, freedom-loving woman who achieved the impossible through sheer willpower.",
+        "content_ko": "프랜시스 드레이크 경(약 1540-1596)은 영국의 선장, 사략선장, 탐험가였다. 그는 세계 일주를 한 두 번째 인물(1577-1580)이었고 스페인 보물 함대를 공격하여 스페인인들로부터 '엘 드라케'라는 별명을 얻었다. 1588년 스페인 무적함대를 격파하는 데 중요한 역할을 했다. FGO에서 드레이크는 순수한 의지력으로 불가능을 이룬 대담하고 자유를 사랑하는 여성으로 묘사된다.",
+        "content_ja": "フランシス・ドレイク卿（約1540-1596）はイングランドの船長、私掠船長、探検家だった。彼は世界一周を成し遂げた二人目の人物（1577-1580）で、スペインの宝船団を攻撃し、スペイン人から「エル・ドラケ」のあだ名を得た。1588年のスペイン無敵艦隊撃破で重要な役割を果たした。FGOでは、ドレイクは純粋な意志力で不可能を成し遂げた大胆で自由を愛する女性として描かれている。"
+      },
+      {
+        "title": "The Golden Age of Piracy",
+        "title_ko": "해적의 황금시대",
+        "title_ja": "海賊の黄金時代",
+        "content": "The Golden Age of Piracy (roughly 1650s-1730s) saw pirates terrorize the Caribbean, Atlantic coast, and Indian Ocean. Famous pirates like Blackbeard, Calico Jack, and the female pirates Anne Bonny and Mary Read became legendary figures. Pirates operated from havens like Nassau, Tortuga, and Port Royal, preying on treasure-laden Spanish galleons and merchant vessels.",
+        "content_ko": "해적의 황금시대(대략 1650년대-1730년대)에는 해적들이 카리브해, 대서양 연안, 인도양을 공포에 떨게 했다. 검은수염, 캘리코 잭, 그리고 여성 해적 앤 보니와 메리 리드 같은 유명 해적들이 전설적인 인물이 되었다. 해적들은 나소, 토르투가, 포트 로열 같은 은신처에서 활동하며 보물을 실은 스페인 갤리온선과 상선을 약탈했다.",
+        "content_ja": "海賊の黄金時代（おおよそ1650年代-1730年代）には、海賊たちがカリブ海、大西洋岸、インド洋を恐怖に陥れた。黒髭、キャリコ・ジャック、そして女海賊のアン・ボニーとメアリー・リードなどの有名な海賊が伝説的人物となった。海賊たちはナッソー、トルトゥーガ、ポートロイヤルなどの拠点から活動し、宝を積んだスペインのガレオン船や商船を襲った。"
+      },
+      {
+        "title": "Blackbeard: Terror of the Seas",
+        "title_ko": "검은수염: 바다의 공포",
+        "title_ja": "黒髭：海の恐怖",
+        "content": "Edward Teach, known as Blackbeard (c. 1680-1718), was one of history's most infamous pirates. He cultivated a terrifying image, weaving slow-burning fuses into his beard during battle to create a demonic appearance wreathed in smoke. Operating primarily from the Carolinas and the Caribbean, he was killed in a bloody battle with the Royal Navy. In FGO, Blackbeard is portrayed as a surprisingly gentle otaku with a love for 'young maidens.'",
+        "content_ko": "검은수염으로 알려진 에드워드 티치(약 1680-1718)는 역사상 가장 악명 높은 해적 중 하나였다. 그는 전투 중 천천히 타는 도화선을 수염에 엮어 연기에 휩싸인 악마 같은 모습을 연출하며 무시무시한 이미지를 만들었다. 주로 캐롤라이나와 카리브해에서 활동하다가 영국 해군과의 피비린내 나는 전투에서 사망했다. FGO에서 검은수염은 '어린 소녀'에 대한 사랑을 가진 의외로 온화한 오타쿠로 묘사된다.",
+        "content_ja": "黒髭として知られるエドワード・ティーチ（約1680-1718）は、歴史上最も悪名高い海賊の一人だった。彼は戦闘中にゆっくり燃える導火線を髭に編み込み、煙に包まれた悪魔のような姿を作り出して恐ろしいイメージを築いた。主にカロライナとカリブ海で活動し、イギリス海軍との血みどろの戦いで殺された。FGOでは、黒髭は「若き乙女」への愛を持つ意外にも穏やかなオタクとして描かれている。"
+      },
+      {
+        "title": "Anne Bonny and Mary Read",
+        "title_ko": "앤 보니와 메리 리드",
+        "title_ja": "アン・ボニーとメアリー・リード",
+        "content": "Anne Bonny (c. 1697-1782) and Mary Read (c. 1685-1721) were two of history's most famous female pirates. They served aboard Calico Jack Rackham's ship and were known for their fierce combat prowess. When captured, they escaped execution by claiming pregnancy. Their legend has inspired countless portrayals of women defying gender roles to live freely on the high seas.",
+        "content_ko": "앤 보니(약 1697-1782)와 메리 리드(약 1685-1721)는 역사상 가장 유명한 여성 해적 둘이었다. 그들은 캘리코 잭 래컴의 배에서 복무했으며 격렬한 전투 기술로 알려졌다. 체포되었을 때 임신을 주장하여 처형을 면했다. 그들의 전설은 성 역할을 거부하고 공해에서 자유롭게 살기 위한 수많은 여성들의 묘사에 영감을 주었다.",
+        "content_ja": "アン・ボニー（約1697-1782）とメアリー・リード（約1685-1721）は歴史上最も有名な女海賊だった。彼女たちはキャリコ・ジャック・ラッカムの船で働き、激しい戦闘能力で知られていた。捕らえられた時、妊娠を主張して処刑を免れた。彼女たちの伝説は、性別役割に逆らい公海で自由に生きる女性たちの無数の描写に影響を与えてきた。"
+      },
+      {
+        "title": "Hektor: Prince of Troy",
+        "title_ko": "헥토르: 트로이의 왕자",
+        "title_ja": "ヘクトール：トロイアの王子",
+        "content": "Hektor was the greatest warrior of Troy and heir to King Priam. Unlike the glory-seeking Achilles, Hektor fought to protect his city, wife Andromache, and son Astyanax. His death at Achilles' hands and the subsequent desecration of his body are among the most tragic moments of the Iliad. In Okeanos, Hektor has been summoned by Jason and serves reluctantly, his weary demeanor hiding a noble spirit.",
+        "content_ko": "헥토르는 트로이의 가장 위대한 전사이자 프리아모스 왕의 후계자였다. 영광을 추구하는 아킬레우스와 달리 헥토르는 자신의 도시, 아내 안드로마케, 아들 아스티아낙스를 지키기 위해 싸웠다. 아킬레우스의 손에 죽고 이후 시신이 훼손된 것은 일리아드의 가장 비극적인 순간 중 하나다. 오케아노스에서 헥토르는 이아손에게 소환되어 마지못해 복무하며, 지친 태도 뒤에 고귀한 정신을 숨기고 있다.",
+        "content_ja": "ヘクトールはトロイア最強の戦士でありプリアモス王の後継者だった。栄光を求めるアキレウスとは異なり、ヘクトールは自分の都市、妻アンドロマケー、息子アスティアナクスを守るために戦った。アキレウスの手で死に、その後遺体が冒涜されたことは、イリアスで最も悲劇的な瞬間の一つである。オケアノスでは、ヘクトールはイアソンに召喚され不承不承仕えており、疲れた態度の裏に高貴な精神を隠している。"
+      },
+      {
+        "title": "Jason and the Argonauts",
+        "title_ko": "이아손과 아르고나우타이",
+        "title_ja": "イアソンとアルゴナウタイ",
+        "content": "Jason was a Greek hero who led the Argonauts on their quest for the Golden Fleece. His crew included the greatest heroes of Greek mythology: Heracles, Orpheus, Atalante, and many others. In Okeanos, Jason serves as an antagonist, having obtained the Holy Grail and using it to summon legendary warriors to his cause. His cowardly yet cunning nature contrasts with the heroic Argonauts he commands.",
+        "content_ko": "이아손은 황금 양털을 찾기 위해 아르고나우타이를 이끈 그리스 영웅이었다. 그의 선원에는 헤라클레스, 오르페우스, 아탈란테 등 그리스 신화의 가장 위대한 영웅들이 포함되어 있었다. 오케아노스에서 이아손은 성배를 획득하고 이를 사용하여 전설적인 전사들을 소환하는 적대자로 등장한다. 그의 비겁하지만 교활한 본성은 그가 지휘하는 영웅적인 아르고나우타이와 대비된다.",
+        "content_ja": "イアソンは黄金の羊毛を求めてアルゴナウタイを率いたギリシャの英雄だった。彼の乗組員にはヘラクレス、オルフェウス、アタランテなど、ギリシャ神話で最も偉大な英雄たちが含まれていた。オケアノスでは、イアソンは聖杯を手に入れ、それを使って伝説の戦士たちを召喚する敵役として登場する。彼の臆病でありながら狡猾な性質は、彼が指揮する英雄的なアルゴナウタイと対照的である。"
+      }
+    ],
+    "historical_basis": "The Age of Exploration (15th-17th centuries) and the Golden Age of Piracy (1650s-1730s) shaped the modern world through maritime trade and colonization. Francis Drake circumnavigated the globe and helped defeat the Spanish Armada. Blackbeard terrorized the Caribbean until 1718. Anne Bonny and Mary Read were real female pirates. Jason and the Argonauts, including Hektor of Troy, come from Greek mythology.",
+    "historical_basis_ko": "대항해시대(15-17세기)와 해적의 황금시대(1650년대-1730년대)는 해상 무역과 식민지화를 통해 현대 세계를 형성했다. 프랜시스 드레이크는 세계를 일주하고 스페인 무적함대 격파를 도왔다. 검은수염은 1718년까지 카리브해를 공포에 떨게 했다. 앤 보니와 메리 리드는 실존한 여성 해적이었다. 트로이의 헥토르를 포함한 이아손과 아르고나우타이는 그리스 신화에서 유래한다.",
+    "historical_basis_ja": "大航海時代（15-17世紀）と海賊の黄金時代（1650年代-1730年代）は、海上貿易と植民地化を通じて現代世界を形成した。フランシス・ドレイクは世界一周を達成し、スペイン無敵艦隊の撃破を助けた。黒髭は1718年までカリブ海を恐怖に陥れた。アン・ボニーとメアリー・リードは実在の女海賊だった。トロイのヘクトールを含むイアソンとアルゴナウタイは、ギリシャ神話に由来する。",
+    "related_servants": [
+      {"name": "Francis Drake", "class": "Rider", "rarity": 5},
+      {"name": "Edward Teach (Blackbeard)", "class": "Rider", "rarity": 2},
+      {"name": "Anne Bonny & Mary Read", "class": "Rider", "rarity": 4},
+      {"name": "Hektor", "class": "Lancer", "rarity": 3},
+      {"name": "Medea", "class": "Caster", "rarity": 3},
+      {"name": "Medea (Lily)", "class": "Caster", "rarity": 4},
+      {"name": "Asterios", "class": "Berserker", "rarity": 1},
+      {"name": "Euryale", "class": "Archer", "rarity": 3},
+      {"name": "Stheno", "class": "Assassin", "rarity": 4},
+      {"name": "Atalante", "class": "Archer", "rarity": 4},
+      {"name": "David", "class": "Archer", "rarity": 3},
+      {"name": "Orion", "class": "Archer", "rarity": 5},
+      {"name": "Heracles", "class": "Berserker", "rarity": 4}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Age of Piracy history", "Homer - Iliad", "Apollonius of Rhodes - Argonautica"]
+  },
+  {
+    "id": "singularity-4",
+    "type": "singularity",
+    "title": "London",
+    "title_ko": "런던",
+    "title_ja": "ロンドン",
+    "subtitle": "Death World in the City of Demonic Fog",
+    "subtitle_ko": "사계마무도시",
+    "subtitle_ja": "死界魔霧都市",
+    "chapter": "Fourth Singularity",
+    "era": "Victorian",
+    "year": 1888,
+    "location": "London, England",
+    "description": "The Fourth Singularity is set in 1888 London during the height of the Victorian era. A supernatural demonic fog has engulfed the city, and at the heart of this chaos lurks the infamous Jack the Ripper—but this is no ordinary serial killer. The Clock Tower of the Mage's Association has been destroyed, and a grand conspiracy involving the legendary inventors Nikola Tesla and Thomas Edison unfolds. The Master must navigate through the fog-shrouded streets alongside Mordred, Frankenstein's Monster, and Jekyll/Hyde to uncover the truth behind the demonic mist and prevent the destruction of London itself.",
+    "description_ko": "제4특이점은 빅토리아 시대의 정점인 1888년 런던을 배경으로 한다. 초자연적인 마무가 도시를 뒤덮었고, 이 혼돈의 중심에 악명 높은 잭 더 리퍼가 도사리고 있다—하지만 이것은 평범한 연쇄 살인마가 아니다. 마술협회의 시계탑이 파괴되었고, 전설적인 발명가 니콜라 테슬라와 토마스 에디슨이 연루된 거대한 음모가 펼쳐진다. 마스터는 모드레드, 프랑켄슈타인의 괴물, 지킬/하이드와 함께 안개에 뒤덮인 거리를 헤쳐나가며 마무의 진실을 밝히고 런던 자체의 파괴를 막아야 한다.",
+    "description_ja": "第四特異点はヴィクトリア朝の絶頂期である1888年のロンドンを舞台とする。超自然的な魔霧が街を覆い、その混沌の中心に悪名高い切り裂きジャックが潜んでいる—しかしこれは普通の連続殺人犯ではない。魔術協会の時計塔は破壊され、伝説の発明家ニコラ・テスラとトーマス・エジソンが絡む巨大な陰謀が展開する。マスターはモードレッド、フランケンシュタインの怪物、ジキル/ハイドと共に霧に包まれた通りを進み、魔霧の真実を暴き、ロンドンそのものの破壊を防がなければならない。",
+    "sections": [
+      {
+        "title": "Victorian London",
+        "title_ko": "빅토리아 시대의 런던",
+        "title_ja": "ヴィクトリア朝のロンドン",
+        "content": "The Victorian era (1837-1901) saw London become the world's largest city and capital of the British Empire. The Industrial Revolution transformed society, bringing both unprecedented prosperity and terrible poverty. The infamous London fog—a toxic mixture of coal smoke and natural mist—killed thousands and created the perfect atmosphere for crime and mystery.",
+        "content_ko": "빅토리아 시대(1837-1901)에 런던은 세계 최대의 도시이자 대영제국의 수도가 되었다. 산업혁명이 사회를 변화시켜 전례 없는 번영과 끔찍한 빈곤을 동시에 가져왔다. 석탄 연기와 자연 안개가 섞인 유독한 혼합물인 악명 높은 런던 안개는 수천 명을 죽이고 범죄와 미스터리에 완벽한 분위기를 만들었다.",
+        "content_ja": "ヴィクトリア朝時代（1837-1901）、ロンドンは世界最大の都市で大英帝国の首都となった。産業革命が社会を変革し、前例のない繁栄と恐ろしい貧困の両方をもたらした。石炭の煙と自然の霧が混じった有毒な混合物である悪名高いロンドンの霧は、数千人を殺し、犯罪とミステリーに完璧な雰囲気を作り出した。"
+      },
+      {
+        "title": "Jack the Ripper",
+        "title_ko": "잭 더 리퍼",
+        "title_ja": "切り裂きジャック",
+        "content": "In autumn 1888, an unidentified serial killer murdered at least five women in London's Whitechapel district. The brutal nature of the killings, the taunting letters sent to police, and the killer's unknown identity created a legend that persists to this day. In FGO, Jack the Ripper is portrayed as the collective ghost of aborted children in Victorian London, a tragic figure born from society's darkest sins.",
+        "content_ko": "1888년 가을, 신원 미상의 연쇄 살인마가 런던 화이트채플 지구에서 최소 5명의 여성을 살해했다. 잔혹한 살인 방식, 경찰에 보낸 조롱하는 편지, 살인마의 미지의 정체는 오늘날까지 이어지는 전설을 만들었다. FGO에서 잭 더 리퍼는 빅토리아 시대 런던에서 낙태된 아이들의 집합적 유령으로 묘사되며, 사회의 가장 어두운 죄악에서 태어난 비극적인 존재다.",
+        "content_ja": "1888年の秋、身元不明の連続殺人犯がロンドンのホワイトチャペル地区で少なくとも5人の女性を殺害した。残虐な殺害方法、警察に送られた挑発的な手紙、殺人犯の未知の正体は、今日まで続く伝説を生み出した。FGOでは、切り裂きジャックはヴィクトリア朝ロンドンで堕胎された子供たちの集合的な亡霊として描かれ、社会の最も暗い罪から生まれた悲劇的な存在である。"
+      },
+      {
+        "title": "Mordred: The Knight of Treachery",
+        "title_ko": "모드레드: 반역의 기사",
+        "title_ja": "モードレッド：叛逆の騎士",
+        "content": "Mordred was the illegitimate child of King Arthur and his half-sister Morgan le Fay. Raised in secret and denied recognition, Mordred eventually led a rebellion against Arthur, culminating in the Battle of Camlann where both died. In London, Mordred appears as a red Saber, fierce and rebellious, but fundamentally seeking her father's acknowledgment. Her partnership with Dr. Jekyll represents her struggle between destructive impulses and the desire for acceptance.",
+        "content_ko": "모드레드는 아서왕과 그의 이복 여동생 모건 르 페이 사이의 사생아였다. 비밀리에 자라며 인정받지 못한 모드레드는 결국 아서에 대한 반란을 이끌었고, 둘 다 죽은 캠란 전투로 절정에 달했다. 런던에서 모드레드는 붉은 세이버로 등장하며, 격렬하고 반항적이지만 근본적으로 아버지의 인정을 갈구한다. 지킬 박사와의 파트너십은 파괴적 충동과 수용에 대한 갈망 사이의 투쟁을 보여준다.",
+        "content_ja": "モードレッドはアーサー王と異母姉妹モルガン・ル・フェイとの間の庶子だった。秘密裏に育てられ認知されなかったモードレッドは、最終的にアーサーへの反乱を率い、両者が死んだカムランの戦いでクライマックスを迎えた。ロンドンでは、モードレッドは赤いセイバーとして登場し、激しく反抗的だが、根本的には父の承認を求めている。ジキル博士とのパートナーシップは、破壊的衝動と受容への渇望の間の葛藤を表している。"
+      },
+      {
+        "title": "Frankenstein's Monster",
+        "title_ko": "프랑켄슈타인의 괴물",
+        "title_ja": "フランケンシュタインの怪物",
+        "content": "Created by Victor Frankenstein using corpses and forbidden science, the Monster (often called 'Frankenstein' after her creator in FGO) is a tragic figure seeking love and acceptance in a world that rejects her. Mary Shelley's 1818 novel explored themes of scientific hubris and parental abandonment. In FGO, she appears as a female Berserker, innocent despite her monstrous origin, forming a touching bond with the Master.",
+        "content_ko": "빅터 프랑켄슈타인이 시체와 금지된 과학을 사용하여 창조한 괴물(FGO에서는 종종 창조자의 이름을 따 '프랑켄슈타인'으로 불림)은 자신을 거부하는 세계에서 사랑과 수용을 갈구하는 비극적인 존재다. 메리 셸리의 1818년 소설은 과학적 오만과 부모의 유기라는 주제를 탐구했다. FGO에서 그녀는 여성 버서커로 등장하며, 괴물 같은 기원에도 불구하고 순수하며, 마스터와 감동적인 유대를 형성한다.",
+        "content_ja": "ヴィクター・フランケンシュタインが死体と禁断の科学を使って創造した怪物（FGOでは創造者にちなんで「フランケンシュタイン」と呼ばれることが多い）は、自分を拒絶する世界で愛と受容を求める悲劇的な存在だ。メアリー・シェリーの1818年の小説は、科学的傲慢さと親の遺棄というテーマを探求した。FGOでは、彼女は女性のバーサーカーとして登場し、怪物的な起源にもかかわらず純真で、マスターと感動的な絆を結ぶ。"
+      },
+      {
+        "title": "Dr. Jekyll and Mr. Hyde",
+        "title_ko": "지킬 박사와 하이드 씨",
+        "title_ja": "ジキル博士とハイド氏",
+        "content": "Robert Louis Stevenson's 1886 novella explored the duality of human nature through a scientist who transforms into his evil alter ego. Dr. Henry Jekyll created a potion to separate his good and evil natures, resulting in the monstrous Edward Hyde. In FGO, Jekyll is a gentle Assassin whose Hyde transformation represents his power as a Berserker—a literal manifestation of humanity's capacity for both good and evil.",
+        "content_ko": "로버트 루이스 스티븐슨의 1886년 소설은 자신의 사악한 분신으로 변신하는 과학자를 통해 인간 본성의 이중성을 탐구했다. 헨리 지킬 박사는 자신의 선과 악의 본성을 분리하기 위한 물약을 만들었고, 그 결과 괴물 같은 에드워드 하이드가 탄생했다. FGO에서 지킬은 온화한 어새신이며, 그의 하이드 변신은 버서커로서의 힘을 대표한다—선과 악 양쪽에 대한 인류의 능력을 문자 그대로 구현한 것.",
+        "content_ja": "ロバート・ルイス・スティーヴンソンの1886年の中編小説は、邪悪な分身に変身する科学者を通して人間性の二面性を探求した。ヘンリー・ジキル博士は善と悪の本性を分離する薬を作り、その結果、怪物的なエドワード・ハイドが生まれた。FGOでは、ジキルは穏やかなアサシンで、ハイドへの変身はバーサーカーとしての力を表す—善と悪の両方に対する人類の能力を文字通り具現化したものだ。"
+      },
+      {
+        "title": "Nikola Tesla: The Man Who Lit the World",
+        "title_ko": "니콜라 테슬라: 세계를 밝힌 남자",
+        "title_ja": "ニコラ・テスラ：世界を照らした男",
+        "content": "Nikola Tesla (1856-1943) was a Serbian-American inventor and electrical engineer whose contributions to AC power systems revolutionized the modern world. His rivalry with Thomas Edison in the 'War of Currents' is legendary. Tesla envisioned wireless power transmission and invented the Tesla coil. In FGO, Tesla appears as an Archer, wielding lightning itself as his Noble Phantasm, embodying humanity's triumph through science.",
+        "content_ko": "니콜라 테슬라(1856-1943)는 세르비아계 미국인 발명가이자 전기 엔지니어로, 교류 전력 시스템에 대한 기여가 현대 세계를 혁명적으로 변화시켰다. '전류 전쟁'에서 토마스 에디슨과의 경쟁은 전설적이다. 테슬라는 무선 전력 전송을 구상하고 테슬라 코일을 발명했다. FGO에서 테슬라는 아처로 등장하며, 번개 자체를 보구로 휘두르며 과학을 통한 인류의 승리를 구현한다.",
+        "content_ja": "ニコラ・テスラ（1856-1943）は、AC電力システムへの貢献が現代世界を革命的に変えたセルビア系アメリカ人の発明家・電気技術者だった。「電流戦争」でのトーマス・エジソンとの競争は伝説的である。テスラはワイヤレス電力伝送を構想し、テスラコイルを発明した。FGOでは、テスラはアーチャーとして登場し、雷そのものを宝具として振るい、科学による人類の勝利を体現する。"
+      },
+      {
+        "title": "The Clock Tower",
+        "title_ko": "시계탑",
+        "title_ja": "時計塔",
+        "content": "In the Fate universe, the Clock Tower is the headquarters of the Mage's Association, located in the British Museum in London. It serves as the center of magical research and politics in the Western magical world. In this singularity, the destruction of the Clock Tower represents the collapse of magical order, forcing mages and Heroic Spirits alike to confront the demonic fog threatening all of London.",
+        "content_ko": "Fate 세계관에서 시계탑은 런던의 대영박물관에 위치한 마술협회의 본부다. 서양 마술 세계에서 마술 연구와 정치의 중심 역할을 한다. 이 특이점에서 시계탑의 파괴는 마술 질서의 붕괴를 대표하며, 마술사와 영령 모두 런던 전체를 위협하는 마무에 맞서야 한다.",
+        "content_ja": "Fate世界では、時計塔はロンドンの大英博物館にある魔術協会の本部である。西洋の魔術世界における魔術研究と政治の中心として機能している。この特異点では、時計塔の破壊は魔術秩序の崩壊を表し、魔術師も英霊もロンドン全体を脅かす魔霧に立ち向かわなければならなくなる。"
+      }
+    ],
+    "historical_basis": "Victorian London (1837-1901) was the heart of the British Empire, marked by industrialization, scientific progress, and stark class divisions. Jack the Ripper murdered at least five women in Whitechapel in 1888, becoming history's most infamous unidentified serial killer. Mary Shelley's Frankenstein (1818) and Stevenson's Dr. Jekyll and Mr. Hyde (1886) are foundational works of Gothic horror. Nikola Tesla (1856-1943) revolutionized electrical engineering with his work on AC power.",
+    "historical_basis_ko": "빅토리아 시대 런던(1837-1901)은 산업화, 과학적 진보, 극명한 계급 분열로 특징지어지는 대영제국의 심장부였다. 잭 더 리퍼는 1888년 화이트채플에서 최소 5명의 여성을 살해하여 역사상 가장 악명 높은 미확인 연쇄 살인마가 되었다. 메리 셸리의 프랑켄슈타인(1818)과 스티븐슨의 지킬 박사와 하이드 씨(1886)는 고딕 호러의 기초적 작품이다. 니콜라 테슬라(1856-1943)는 교류 전력에 대한 연구로 전기 공학에 혁명을 일으켰다.",
+    "historical_basis_ja": "ヴィクトリア朝ロンドン（1837-1901）は、工業化、科学的進歩、明確な階級分裂を特徴とする大英帝国の心臓部だった。切り裂きジャックは1888年にホワイトチャペルで少なくとも5人の女性を殺害し、史上最も悪名高い未確認の連続殺人犯となった。メアリー・シェリーのフランケンシュタイン（1818）とスティーヴンソンのジキル博士とハイド氏（1886）は、ゴシックホラーの基礎的作品である。ニコラ・テスラ（1856-1943）は交流電力の研究で電気工学に革命をもたらした。",
+    "related_servants": [
+      {"name": "Jack the Ripper", "class": "Assassin", "rarity": 5},
+      {"name": "Mordred", "class": "Saber", "rarity": 5},
+      {"name": "Nikola Tesla", "class": "Archer", "rarity": 5},
+      {"name": "Frankenstein", "class": "Berserker", "rarity": 4},
+      {"name": "Henry Jekyll & Hyde", "class": "Assassin", "rarity": 3},
+      {"name": "Paracelsus von Hohenheim", "class": "Caster", "rarity": 3},
+      {"name": "Charles Babbage", "class": "Caster", "rarity": 3},
+      {"name": "Mephistopheles", "class": "Caster", "rarity": 3},
+      {"name": "Hans Christian Andersen", "class": "Caster", "rarity": 2},
+      {"name": "Shakespeare", "class": "Caster", "rarity": 2},
+      {"name": "Tamamo-no-Mae", "class": "Caster", "rarity": 5},
+      {"name": "Kintoki", "class": "Berserker", "rarity": 5}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Victorian London history", "Mary Shelley - Frankenstein", "R.L. Stevenson - Strange Case of Dr Jekyll and Mr Hyde", "Jack the Ripper case files"]
+  },
+  {
+    "id": "singularity-5",
+    "type": "singularity",
+    "title": "E Pluribus Unum",
+    "title_ko": "이 플루리버스 우눔",
+    "title_ja": "イ・プルーリバス・ウナム",
+    "subtitle": "North American Myth War",
+    "subtitle_ko": "북미신화대전",
+    "subtitle_ja": "北米神話大戦",
+    "chapter": "Fifth Singularity",
+    "era": "19th Century",
+    "year": 1783,
+    "location": "North America",
+    "description": "The Fifth Singularity is set during the American Revolutionary War in 1783, but the conflict has been transformed into a supernatural war. Queen Medb of Connacht leads an army of Celtic warriors empowered by the corrupted Cu Chulainn Alter, seeking to conquer North America. Meanwhile, Native American heroes led by Geronimo fight to protect their homeland. The nascent United States, represented by figures like Billy the Kid and Nero's Western allies, stands caught between these powers. The Master must navigate this three-way conflict alongside Scathach and forge unlikely alliances to restore the proper course of history.",
+    "description_ko": "제5특이점은 1783년 미국 독립전쟁을 배경으로 하지만, 전쟁이 초자연적 전쟁으로 변모했다. 코나흐트의 여왕 메이브가 타락한 쿠 훌린 얼터의 힘을 받은 켈트 전사 군대를 이끌고 북미 정복을 노린다. 한편, 제로니모가 이끄는 아메리카 원주민 영웅들은 고향을 지키기 위해 싸운다. 빌리 더 키드와 네로의 서부 동맹자들로 대표되는 신생 미합중국은 이 세력들 사이에 끼어 있다. 마스터는 스카사하와 함께 이 삼파전을 헤쳐나가고 뜻밖의 동맹을 맺어 역사의 올바른 흐름을 복원해야 한다.",
+    "description_ja": "第五特異点は1783年のアメリカ独立戦争を舞台とするが、その戦いは超自然的な戦争へと変貌している。コナハトの女王メイヴが堕落したクー・フーリン・オルタの力を得たケルト戦士の軍団を率い、北米征服を目論む。一方、ジェロニモ率いるネイティブアメリカンの英雄たちは故郷を守るため戦う。ビリー・ザ・キッドやネロの西部の盟友たちに代表される新生アメリカ合衆国は、これらの勢力の狭間に立っている。マスターはスカサハと共にこの三つ巴の紛争を乗り越え、思いがけない同盟を結び、歴史の正しい流れを取り戻さなければならない。",
+    "sections": [
+      {
+        "title": "The American Revolutionary War",
+        "title_ko": "미국 독립전쟁",
+        "title_ja": "アメリカ独立戦争",
+        "content": "The American Revolutionary War (1775-1783) was the defining conflict that birthed the United States. The Thirteen Colonies, tired of British taxation without representation, declared independence in 1776. Key figures like George Washington, Benjamin Franklin, and Thomas Jefferson led the revolutionary cause. The war ended with the Treaty of Paris in 1783, recognizing American independence. In the Singularity, this foundational moment becomes a battleground for supernatural forces.",
+        "content_ko": "미국 독립전쟁(1775-1783)은 미합중국을 탄생시킨 결정적 전쟁이었다. 대표 없는 과세에 지친 13개 식민지는 1776년 독립을 선언했다. 조지 워싱턴, 벤저민 프랭클린, 토마스 제퍼슨 같은 핵심 인물들이 혁명을 이끌었다. 전쟁은 1783년 파리 조약으로 끝나며 미국의 독립을 인정받았다. 특이점에서 이 건국의 순간은 초자연적 세력들의 전장이 된다.",
+        "content_ja": "アメリカ独立戦争（1775-1783）はアメリカ合衆国を誕生させた決定的な戦争だった。代表なき課税に疲れた13植民地は1776年に独立を宣言した。ジョージ・ワシントン、ベンジャミン・フランクリン、トマス・ジェファーソンといった重要人物が革命を率いた。戦争は1783年のパリ条約で終結し、アメリカの独立が認められた。特異点では、この建国の瞬間が超自然的な勢力の戦場となる。"
+      },
+      {
+        "title": "Queen Medb and the Celtic Invasion",
+        "title_ko": "여왕 메이브와 켈트 침공",
+        "title_ja": "女王メイヴとケルト侵攻",
+        "content": "Queen Medb of Connacht is one of the most famous figures in Irish mythology, appearing in the Ulster Cycle as the warrior queen who launched the Cattle Raid of Cooley (Táin Bó Cúailnge). Known for her pride, ambition, and many consorts, she was the mortal enemy of Cu Chulainn. In the Singularity, she leads an army of Celtic warriors, wielding her Noble Phantasm Chariot My Love. Her obsession with Cu Chulainn manifests in the corrupted Cu Chulainn Alter, whom she controls through the Holy Grail's power.",
+        "content_ko": "코나흐트의 여왕 메이브는 아일랜드 신화에서 가장 유명한 인물 중 하나로, 얼스터 주기에서 쿨리의 소떼 습격(타인 보 쿠얼링게)을 일으킨 전사 여왕으로 등장한다. 자존심, 야망, 많은 배우자로 유명하며, 쿠 훌린의 숙적이었다. 특이점에서 그녀는 보구 '나의 사랑의 전차'를 휘두르며 켈트 전사 군대를 이끈다. 쿠 훌린에 대한 그녀의 집착은 성배의 힘으로 조종하는 타락한 쿠 훌린 얼터로 나타난다.",
+        "content_ja": "コナハトの女王メイヴはアイルランド神話で最も有名な人物の一人で、アルスター・サイクルではクーリーの牛捕り（タイン・ボー・クアルンゲ）を起こした戦士の女王として登場する。誇り高さ、野心、多くの愛人で知られ、クー・フーリンの宿敵だった。特異点では、宝具「私の愛し子よ」を振るいケルト戦士の軍団を率いる。クー・フーリンへの執着は、聖杯の力で操る堕落したクー・フーリン・オルタとして現れる。"
+      },
+      {
+        "title": "Cu Chulainn: The Hound of Ulster",
+        "title_ko": "쿠 훌린: 얼스터의 사냥개",
+        "title_ja": "クー・フーリン：アルスターの猛犬",
+        "content": "Cu Chulainn (Setanta) is the greatest hero of Irish mythology, son of the god Lugh and the mortal Deichtine. His name means 'Hound of Culann,' earned after killing the smith's guard dog and offering to take its place. Famous for his battle frenzy (ríastrad) and the cursed spear Gáe Bolg, he single-handedly defended Ulster against Medb's army. In the Singularity, the corrupted 'Alter' version represents a Cu Chulainn who succumbed to his monstrous nature under the Grail's influence, serving as Medb's berserker champion.",
+        "content_ko": "쿠 훌린(세탄타)은 아일랜드 신화 최고의 영웅으로, 신 루그와 인간 데흐티네의 아들이다. 그의 이름은 '쿨란의 사냥개'를 뜻하며, 대장장이의 경비견을 죽이고 그 자리를 대신하겠다고 제안한 후 얻었다. 전투 광란(리아스트라드)과 저주받은 창 게 볼가로 유명하며, 혼자서 메이브의 군대로부터 얼스터를 방어했다. 특이점에서 타락한 '얼터' 버전은 성배의 영향으로 괴물적 본성에 굴복한 쿠 훌린을 나타내며, 메이브의 버서커 용사로 복무한다.",
+        "content_ja": "クー・フーリン（セタンタ）はアイルランド神話最大の英雄で、神ルーと人間デヒティネの息子である。その名は「クランの猛犬」を意味し、鍛冶屋の番犬を殺してその代わりになると申し出たことで得た。戦闘狂乱（リアストラッド）と呪いの槍ゲイ・ボルグで有名で、単身でメイヴの軍勢からアルスターを守った。特異点では、堕落した「オルタ」版は聖杯の影響で怪物的本性に屈したクー・フーリンを表し、メイヴのバーサーカーの勇者として仕える。"
+      },
+      {
+        "title": "Scathach: The Warrior Queen of Dún Scáith",
+        "title_ko": "스카사하: 던 스카하의 전사 여왕",
+        "title_ja": "スカサハ：影の国の女王",
+        "content": "Scathach (The Shadowy One) is a legendary Scottish warrior woman and martial arts instructor who ran a military academy in the Land of Shadows (Dún Scáith). She trained many heroes, including Cu Chulainn, to whom she taught the secrets of Gáe Bolg. She is associated with the Isle of Skye in Scottish tradition. In FGO, she is depicted as an immortal who has lived for millennia, desperately seeking death but unable to find anyone strong enough to kill her. She becomes a crucial ally in the Singularity, fighting against her former student's corrupted form.",
+        "content_ko": "스카사하(그림자의 여인)는 전설적인 스코틀랜드 여전사이자 무술 교관으로, 그림자의 땅(던 스카하)에서 군사 학교를 운영했다. 쿠 훌린을 포함한 많은 영웅들을 훈련시켰으며, 그에게 게 볼가의 비밀을 가르쳤다. 스코틀랜드 전통에서 스카이 섬과 연관된다. FGO에서 그녀는 수천 년을 살아온 불사의 존재로, 필사적으로 죽음을 찾지만 자신을 죽일 수 있을 만큼 강한 자를 찾지 못한다. 특이점에서 그녀는 타락한 옛 제자에 맞서 싸우며 중요한 동맹자가 된다.",
+        "content_ja": "スカサハ（影のもの）は伝説的なスコットランドの女戦士にして武術教官で、影の国（ドゥン・スカーハ）で軍事学校を運営していた。クー・フーリンを含む多くの英雄を訓練し、彼にゲイ・ボルグの秘密を教えた。スコットランドの伝統ではスカイ島と関連づけられる。FGOでは数千年を生きた不死者として描かれ、必死に死を求めるが、自分を殺せるほど強い者を見つけられない。特異点では、堕落した元弟子と戦う重要な同盟者となる。"
+      },
+      {
+        "title": "Geronimo and the Native American Resistance",
+        "title_ko": "제로니모와 아메리카 원주민 저항",
+        "title_ja": "ジェロニモとネイティブアメリカンの抵抗",
+        "content": "Geronimo (Goyaałé, 1829-1909) was a Bedonkohe Apache leader who fought against Mexican and American forces for decades. His name struck fear into settlers across the Southwest, and he became a symbol of Native American resistance. He led raids and evasive actions that frustrated the U.S. Army for years before his final surrender in 1886. In the Singularity, Geronimo leads a faction of Native American heroes including Robin Hood and others, fighting to protect their land from both Celtic invaders and colonial powers.",
+        "content_ko": "제로니모(고야알레, 1829-1909)는 수십 년간 멕시코와 미국군에 맞서 싸운 베돈코헤 아파치 지도자였다. 그의 이름은 남서부 전역의 정착민들에게 공포를 불러일으켰고, 아메리카 원주민 저항의 상징이 되었다. 1886년 최종 항복 전까지 수년간 미군을 좌절시키는 습격과 회피 작전을 이끌었다. 특이점에서 제로니모는 로빈 후드 등을 포함한 아메리카 원주민 영웅 세력을 이끌며, 켈트 침략자와 식민 세력 모두로부터 땅을 지키기 위해 싸운다.",
+        "content_ja": "ジェロニモ（ゴヤアレ、1829-1909）は数十年にわたってメキシコとアメリカの軍隊と戦ったベドンコヘ・アパッチの指導者だった。その名は南西部全域の入植者に恐怖を与え、ネイティブアメリカン抵抗の象徴となった。1886年の最終降伏まで何年もアメリカ陸軍を翻弄する襲撃と回避行動を率いた。特異点では、ロビン・フッドらを含むネイティブアメリカンの英雄の一派を率い、ケルトの侵略者と植民地勢力の両方から土地を守るために戦う。"
+      },
+      {
+        "title": "Thomas Edison: The Wizard of Menlo Park",
+        "title_ko": "토마스 에디슨: 멘로 파크의 마법사",
+        "title_ja": "トーマス・エジソン：メンロパークの魔術師",
+        "content": "Thomas Edison (1847-1931) was America's most prolific inventor, holding over 1,000 patents including the phonograph, motion picture camera, and practical electric light bulb. His Menlo Park laboratory was the world's first industrial research facility. In FGO, Edison appears as a Caster with a lion's head, representing the 'King of Inventors.' This bizarre appearance symbolizes the accumulated will of all American presidents, giving him power beyond his normal abilities. He leads the American resistance forces with his Craft Essence weapon, representing American technological might.",
+        "content_ko": "토마스 에디슨(1847-1931)은 미국에서 가장 다작한 발명가로, 축음기, 영화 카메라, 실용적인 전구 등 1,000개 이상의 특허를 보유했다. 그의 멘로 파크 연구소는 세계 최초의 산업 연구 시설이었다. FGO에서 에디슨은 '발명왕'을 상징하는 사자 머리를 한 캐스터로 등장한다. 이 기이한 외모는 모든 미국 대통령의 누적된 의지를 상징하며, 그에게 정상 이상의 힘을 부여한다. 그는 미국의 기술력을 대표하는 예장 무기로 미국 저항군을 이끈다.",
+        "content_ja": "トーマス・エジソン（1847-1931）はアメリカ最多作の発明家で、蓄音機、映画カメラ、実用的な電球など1,000以上の特許を持っていた。彼のメンロパーク研究所は世界初の産業研究施設だった。FGOでは、「発明王」を象徴するライオンの頭を持つキャスターとして登場する。この奇妙な外見は歴代アメリカ大統領の累積した意志を象徴し、通常以上の力を与えている。アメリカの技術力を代表する礼装武器でアメリカ抵抗軍を率いる。"
+      },
+      {
+        "title": "Florence Nightingale: The Lady with the Lamp",
+        "title_ko": "플로렌스 나이팅게일: 등불을 든 여인",
+        "title_ja": "フローレンス・ナイチンゲール：ランプの貴婦人",
+        "content": "Florence Nightingale (1820-1910) was the founder of modern nursing. During the Crimean War, she organized care for wounded soldiers at Scutari, reducing the death rate from 42% to 2% through sanitary reforms. She became known as 'The Lady with the Lamp' for her nightly rounds. Her statistical innovations and advocacy revolutionized healthcare worldwide. In FGO, she appears as a Berserker whose 'madness' is her absolute obsession with healing and hygiene. Her relentless drive to save lives, regardless of personal cost, manifests as Berserker class madness.",
+        "content_ko": "플로렌스 나이팅게일(1820-1910)은 현대 간호학의 창시자였다. 크림 전쟁 중 그녀는 스쿠타리에서 부상병 치료를 조직하며, 위생 개혁을 통해 사망률을 42%에서 2%로 낮췄다. 매일 밤 순회를 도는 것으로 '등불을 든 여인'으로 알려졌다. 그녀의 통계적 혁신과 옹호는 전 세계 의료를 혁신했다. FGO에서 그녀는 치료와 위생에 대한 절대적 집착이 '광기'인 버서커로 등장한다. 개인적 희생에 관계없이 생명을 구하려는 그녀의 끊임없는 의지가 버서커 클래스의 광기로 나타난다.",
+        "content_ja": "フローレンス・ナイチンゲール（1820-1910）は近代看護学の創始者だった。クリミア戦争中、スクタリで負傷兵の看護を組織し、衛生改革により死亡率を42%から2%に下げた。毎晩の巡回で「ランプの貴婦人」として知られるようになった。彼女の統計的革新と提唱は世界の医療を革新した。FGOでは、治療と衛生への絶対的執着が「狂気」であるバーサーカーとして登場する。個人的犠牲を顧みず命を救おうとする彼女の絶え間ない意志がバーサーカークラスの狂気として現れる。"
+      }
+    ],
+    "historical_basis": "The American Revolutionary War (1775-1783) established the United States as an independent nation. The conflict between Britain and the colonies drew in international powers including France, who provided crucial support. The Singularity incorporates Irish mythology (Ulster Cycle) and Native American history, particularly the later resistance movements of figures like Geronimo. The Wild West era characters like Billy the Kid add an anachronistic but thematically appropriate American frontier element.",
+    "historical_basis_ko": "미국 독립전쟁(1775-1783)은 미합중국을 독립 국가로 수립했다. 영국과 식민지 간의 갈등은 결정적 지원을 제공한 프랑스를 포함한 국제 세력을 끌어들였다. 특이점은 아일랜드 신화(얼스터 주기)와 아메리카 원주민 역사, 특히 제로니모 같은 인물들의 후기 저항 운동을 통합한다. 빌리 더 키드 같은 서부 개척 시대 캐릭터들은 시대착오적이지만 주제적으로 적절한 미국 개척 시대 요소를 더한다.",
+    "historical_basis_ja": "アメリカ独立戦争（1775-1783）はアメリカ合衆国を独立国家として樹立した。イギリスと植民地間の紛争は、決定的な支援を提供したフランスを含む国際勢力を巻き込んだ。特異点はアイルランド神話（アルスター・サイクル）とネイティブアメリカンの歴史、特にジェロニモのような人物の後期抵抗運動を統合している。ビリー・ザ・キッドのような西部開拓時代のキャラクターは時代錯誤だが、テーマ的に適切なアメリカのフロンティア要素を加えている。",
+    "related_servants": [
+      {"name": "Cu Chulainn (Alter)", "class": "Berserker", "rarity": 5},
+      {"name": "Medb", "class": "Rider", "rarity": 5},
+      {"name": "Scathach", "class": "Lancer", "rarity": 5},
+      {"name": "Geronimo", "class": "Caster", "rarity": 3},
+      {"name": "Billy the Kid", "class": "Archer", "rarity": 3},
+      {"name": "Thomas Edison", "class": "Caster", "rarity": 4},
+      {"name": "Florence Nightingale", "class": "Berserker", "rarity": 5},
+      {"name": "Helena Blavatsky", "class": "Caster", "rarity": 4},
+      {"name": "Rama", "class": "Saber", "rarity": 4},
+      {"name": "Nero Claudius (Bride)", "class": "Saber", "rarity": 5},
+      {"name": "Karna", "class": "Lancer", "rarity": 5},
+      {"name": "Li Shuwen", "class": "Lancer", "rarity": 4},
+      {"name": "Robin Hood", "class": "Archer", "rarity": 3},
+      {"name": "Fergus mac Roich", "class": "Saber", "rarity": 3}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "American Revolutionary War", "Ulster Cycle (Irish mythology)", "Native American History", "Wild West History"]
+  },
+  {
+    "id": "singularity-6",
+    "type": "singularity",
+    "title": "Camelot",
+    "title_ko": "캬멜롯",
+    "title_ja": "キャメロット",
+    "subtitle": "Divine Realm of the Round Table",
+    "subtitle_ko": "신성원탁영역",
+    "subtitle_ja": "神聖円卓領域",
+    "chapter": "Sixth Singularity",
+    "era": "Medieval",
+    "year": 1273,
+    "location": "Jerusalem / Egypt",
+    "description": "The Sixth Singularity is set in 1273 AD Jerusalem during the Ninth Crusade. The Holy Land has fallen under the absolute rule of the Lion King—a divine version of King Arthur wielding the holy spear Rhongomyniad instead of Excalibur. From her fortress Camelot, she plans to judge and select only the worthy to survive an coming apocalypse, consigning the rest to oblivion. The Knights of the Round Table serve as her enforcers, while the Order of Assassins, led by the legendary Hassan-i-Sabbah, wages guerrilla warfare against this divine tyranny. The Master must ally with Ozymandias, the rebellious knights, and the Assassins to challenge the Lion King's absolute judgment.",
+    "description_ko": "제6특이점은 1273년 예루살렘, 제9차 십자군 시대를 배경으로 한다. 성지는 엑스칼리버 대신 성창 론고미니아드를 휘두르는 아서왕의 신성한 버전인 사자왕의 절대적 지배 아래 놓였다. 그녀의 요새 캬멜롯에서, 그녀는 다가오는 종말에서 살아남을 자격 있는 자만을 심판하고 선별하며, 나머지는 망각에 맡길 계획이다. 원탁의 기사들은 그녀의 집행자로 복무하고, 전설적인 하산이사바가 이끄는 암살 교단은 이 신성한 폭정에 맞서 게릴라전을 벌인다. 마스터는 오지만디아스, 반역한 기사들, 암살자들과 동맹하여 사자왕의 절대적 심판에 맞서야 한다.",
+    "description_ja": "第六特異点は1273年のエルサレム、第9回十字軍の時代を舞台とする。聖地はエクスカリバーではなく聖槍ロンゴミニアドを振るうアーサー王の神聖なる姿——獅子王の絶対的支配下に置かれている。彼女の要塞キャメロットから、迫り来る終末を生き延びる資格ある者のみを審判し選び、残りは忘却に委ねる計画を立てている。円卓の騎士たちは彼女の執行者として仕え、伝説のハサン・サッバーフが率いる暗殺教団はこの神聖な暴政に対しゲリラ戦を展開する。マスターはオジマンディアス、反逆した騎士たち、そして暗殺者たちと同盟し、獅子王の絶対的審判に立ち向かわなければならない。",
+    "sections": [
+      {
+        "title": "The Crusades and the Holy Land",
+        "title_ko": "십자군 전쟁과 성지",
+        "title_ja": "十字軍と聖地",
+        "content": "The Crusades (1095-1291) were a series of religious wars launched by Western Christians to reclaim the Holy Land from Islamic rule. The Ninth Crusade (1271-1272), led by Prince Edward of England, was the last major Crusade. By 1273, the Crusader states were crumbling, with Acre remaining as the last major Christian stronghold. Jerusalem itself had been lost to Saladin in 1187. This era of religious conflict, cultural exchange, and political intrigue forms the historical backdrop for the Singularity.",
+        "content_ko": "십자군 전쟁(1095-1291)은 서방 기독교인들이 성지를 이슬람 지배로부터 탈환하기 위해 일으킨 일련의 종교 전쟁이었다. 영국의 에드워드 왕자가 이끈 제9차 십자군(1271-1272)은 마지막 주요 십자군이었다. 1273년경 십자군 국가들은 무너지고 있었으며, 아크레가 마지막 주요 기독교 거점으로 남아있었다. 예루살렘 자체는 1187년 살라딘에게 함락되었다. 이 종교적 갈등, 문화 교류, 정치적 음모의 시대가 특이점의 역사적 배경을 형성한다.",
+        "content_ja": "十字軍（1095-1291）は、西方キリスト教徒が聖地をイスラム支配から奪還するために起こした一連の宗教戦争だった。イングランドのエドワード王子が率いた第9回十字軍（1271-1272）は最後の主要な十字軍だった。1273年までに十字軍国家は崩壊しつつあり、アッコが最後の主要なキリスト教拠点として残っていた。エルサレム自体は1187年にサラディンに陥落していた。この宗教的対立、文化交流、政治的陰謀の時代が特異点の歴史的背景を形成する。"
+      },
+      {
+        "title": "The Lion King and Rhongomyniad",
+        "title_ko": "사자왕과 론고미니아드",
+        "title_ja": "獅子王とロンゴミニアド",
+        "content": "Rhongomyniad (Ron) is a holy spear from Welsh mythology, mentioned in Culhwch and Olwen as one of Arthur's prized possessions. In FGO's interpretation, the spear is a pillar that anchors the World, far more powerful than Excalibur. By wielding it instead of the sword, Artoria became a semi-divine being—the Lion King—who views humanity from a godly perspective rather than a human one. Her judgment is not cruel but coldly logical: facing the coming incineration of humanity, she would save only a chosen few by crystallizing them in the holy lance, preserving their souls eternally.",
+        "content_ko": "론고미니아드(론)는 웨일스 신화의 성창으로, 쿨흐와 올웬에서 아서의 귀중한 소유물 중 하나로 언급된다. FGO의 해석에서 이 창은 세계를 고정시키는 기둥으로, 엑스칼리버보다 훨씬 강력하다. 검 대신 창을 휘두름으로써 아르토리아는 반신적 존재—사자왕—이 되었으며, 인류를 인간의 관점이 아닌 신의 관점에서 바라본다. 그녀의 심판은 잔혹하지 않지만 냉정하게 논리적이다: 다가오는 인류 소각에 직면하여, 그녀는 선택받은 소수만을 성창에 결정화시켜 그들의 영혼을 영원히 보존함으로써 구원하려 한다.",
+        "content_ja": "ロンゴミニアド（ロン）はウェールズ神話の聖槍で、『キルッフとオルウェン』でアーサーの貴重な所有物の一つとして言及されている。FGOの解釈では、この槍は世界を固定する柱であり、エクスカリバーより遥かに強力である。剣の代わりに槍を振るうことで、アルトリアは半神的存在——獅子王——となり、人類を人間の視点ではなく神の視点から見るようになった。彼女の審判は残酷ではなく冷徹に論理的だ：迫り来る人類焼却に直面し、選ばれた少数だけを聖槍に結晶化させ、彼らの魂を永遠に保存することで救おうとしている。"
+      },
+      {
+        "title": "The Knights of the Round Table",
+        "title_ko": "원탁의 기사들",
+        "title_ja": "円卓の騎士",
+        "content": "The Knights of the Round Table were legendary warriors serving King Arthur, first mentioned in Wace's Roman de Brut (1155). In the Singularity, several knights serve the Lion King as her Gift-bearing enforcers: Gawain with 'Numeral of the Saint' (invincibility under sunlight), Lancelot, Mordred, Tristan, and Agravain. However, Bedivere—the faithful knight who returned Excalibur to the Lady of the Lake—opposes her, having witnessed the true Arthur's final moments. The internal conflict among the knights reflects their varied interpretations of loyalty and justice.",
+        "content_ko": "원탁의 기사들은 아서왕을 섬긴 전설의 전사들로, 와스의 로망 드 브뤼(1155)에서 처음 언급되었다. 특이점에서 여러 기사가 사자왕의 축복받은 집행자로 복무한다: '성자의 수자'(햇빛 아래 무적)를 가진 가웨인, 란슬롯, 모드레드, 트리스탄, 아그라베인. 그러나 엑스칼리버를 호수의 여인에게 돌려준 충직한 기사 베디비어는 진정한 아서의 마지막 순간을 목격했기에 그녀에게 반대한다. 기사들 간의 내부 갈등은 충성과 정의에 대한 그들의 다양한 해석을 반영한다.",
+        "content_ja": "円卓の騎士はアーサー王に仕えた伝説の戦士たちで、ウァースの『ブリュ物語』（1155）で初めて言及された。特異点では、複数の騎士が獅子王のギフトを持つ執行者として仕える：「聖者の数字」（日光下での無敵）を持つガウェイン、ランスロット、モードレッド、トリスタン、アグラヴェイン。しかし、エクスカリバーを湖の乙女に返した忠実な騎士ベディヴィエールは、真のアーサーの最期を目撃したため彼女に反対する。騎士たちの内部対立は、忠誠と正義に対する彼らの異なる解釈を反映している。"
+      },
+      {
+        "title": "Hassan-i-Sabbah and the Order of Assassins",
+        "title_ko": "하산이사바와 암살 교단",
+        "title_ja": "ハサン・サッバーフと暗殺教団",
+        "content": "Hassan-i-Sabbah (1050-1124) founded the Order of Assassins (Nizari Ismaili state), operating from Alamut Castle in Persia. The Assassins became legendary for their targeted killings of political enemies, their impregnable mountain fortresses, and the devotion of their fedayeen. In FGO, 'Hassan-i-Sabbah' is a title passed down through 19 individuals, each becoming 'Old Man of the Mountain' upon taking the name. The 'First Hassan' (King Hassan) is the founder who grants and judges all who bear the title, wielding the concept of 'death' itself as his weapon.",
+        "content_ko": "하산이사바(1050-1124)는 페르시아의 알라무트 성에서 활동하며 암살 교단(니자리 이스마일 국가)을 창설했다. 암살자들은 정치적 적의 표적 살해, 난공불락의 산악 요새, 페다인의 헌신으로 전설이 되었다. FGO에서 '하산이사바'는 19명의 개인을 거쳐 전해지는 칭호로, 각자 그 이름을 받으며 '산의 노인'이 된다. '초대 하산'(킹 하산)은 그 칭호를 가진 모든 이를 부여하고 심판하는 창시자로, '죽음'이라는 개념 자체를 무기로 휘두른다.",
+        "content_ja": "ハサン・サッバーフ（1050-1124）はペルシアのアラムート城を拠点に暗殺教団（ニザール派イスマイール国家）を創設した。暗殺者たちは政敵の標的殺害、難攻不落の山岳要塞、フィダーイーの献身で伝説となった。FGOでは「ハサン・サッバーフ」は19人の個人に受け継がれる称号で、それぞれがその名を受けて「山の翁」となる。「初代ハサン」（キングハサン）はその称号を持つ全ての者を授け裁く創始者で、「死」という概念そのものを武器として振るう。"
+      },
+      {
+        "title": "Ozymandias: King of Kings",
+        "title_ko": "오지만디아스: 왕 중의 왕",
+        "title_ja": "オジマンディアス：王の中の王",
+        "content": "Ozymandias is the Greek name for Ramesses II (c. 1303-1213 BC), one of ancient Egypt's most powerful pharaohs. He reigned for 66 years, built monumental temples including Abu Simbel, and led Egypt through its golden age. His treaty with the Hittites is the oldest known peace treaty. Shelley's poem 'Ozymandias' immortalized the fall of great empires. In FGO, he commands the Ramesseum Tentyris—a flying temple-city—and refuses to bow to anyone, including gods. He becomes an unlikely ally against the Lion King, seeing her divine pretension as an insult to true kingship.",
+        "content_ko": "오지만디아스는 람세스 2세(기원전 약 1303-1213)의 그리스 이름으로, 고대 이집트에서 가장 강력한 파라오 중 하나였다. 그는 66년간 통치하며 아부 심벨을 포함한 기념비적 신전을 건설하고 이집트의 황금기를 이끌었다. 히타이트와의 조약은 알려진 가장 오래된 평화 조약이다. 셸리의 시 '오지만디아스'는 위대한 제국의 몰락을 불멸화했다. FGO에서 그는 비행 신전 도시 라메세움 텐티리스를 지휘하며, 신을 포함한 누구에게도 고개 숙이지 않는다. 그는 사자왕의 신성한 허세를 진정한 왕도에 대한 모욕으로 여기며 예상치 못한 동맹자가 된다.",
+        "content_ja": "オジマンディアスはラムセス2世（紀元前約1303-1213）のギリシャ名で、古代エジプト最強のファラオの一人だった。66年間統治し、アブ・シンベルを含む記念碑的神殿を建設し、エジプトを黄金時代に導いた。ヒッタイトとの条約は現存する最古の平和条約である。シェリーの詩『オジマンディアス』は偉大な帝国の没落を不朽のものとした。FGOでは飛行神殿都市ラメセウム・テンティリスを指揮し、神を含む誰にも頭を下げない。獅子王の神聖な見せかけを真の王道への侮辱と見なし、意外な同盟者となる。"
+      },
+      {
+        "title": "Bedivere: The Faithful Knight",
+        "title_ko": "베디비어: 충실한 기사",
+        "title_ja": "ベディヴィエール：忠義の騎士",
+        "content": "Sir Bedivere is one of the earliest knights associated with King Arthur, appearing in Welsh tradition as Bedwyr. He is famous for being the knight who returned Excalibur to the Lady of the Lake after Arthur's final battle. In FGO's Camelot, Bedivere is revealed to have failed this duty in an alternate timeline—keeping Excalibur instead of returning it—which prevented Arthur's proper death and created the Lion King. His silver arm, Airgetlám, is actually Excalibur transformed, and his quest is to finally complete his duty by returning it, no matter the cost to himself.",
+        "content_ko": "베디비어 경은 아서왕과 관련된 가장 초기 기사 중 하나로, 웨일스 전통에서 베드위르로 등장한다. 그는 아서의 마지막 전투 후 엑스칼리버를 호수의 여인에게 돌려준 기사로 유명하다. FGO의 캬멜롯에서 베디비어는 다른 시간선에서 이 의무를 이행하지 못한 것으로 밝혀진다—엑스칼리버를 돌려주는 대신 간직했고—이로 인해 아서의 적절한 죽음이 방해되고 사자왕이 탄생했다. 그의 은팔 아게틀람은 사실 변형된 엑스칼리버이며, 그의 여정은 자신에게 어떤 대가가 오더라도 마침내 그것을 돌려줌으로써 의무를 완수하는 것이다.",
+        "content_ja": "ベディヴィエール卿はアーサー王と関連する最も初期の騎士の一人で、ウェールズの伝統ではベドウィルとして登場する。アーサーの最後の戦いの後、エクスカリバーを湖の乙女に返した騎士として有名である。FGOのキャメロットでは、ベディヴィエールは別の時間軸でこの義務を果たせなかったことが明らかになる——エクスカリバーを返す代わりに手元に置いたことで——アーサーの適切な死が妨げられ、獅子王が生まれた。彼の銀の腕アガートラムは実は変形したエクスカリバーであり、彼の使命は自らにどんな代償が降りかかろうとも、ついにそれを返すことで義務を完遂することである。"
+      },
+      {
+        "title": "Xuanzang Sanzang: The Journey West",
+        "title_ko": "현장 삼장: 서유기",
+        "title_ja": "玄奘三蔵：西遊記",
+        "content": "Xuanzang (602-664) was a Chinese Buddhist monk who undertook an epic 17-year journey to India to obtain Buddhist scriptures. His travels inspired the novel 'Journey to the West' (Xi You Ji), one of the Four Great Classical Novels of Chinese literature, featuring the Monkey King Sun Wukong. Historically, Xuanzang brought back 657 Sanskrit texts and spent the rest of his life translating them. In FGO, Sanzang appears as an energetic young woman who provides both combat support and spiritual guidance, representing the power of faith and determination in the face of overwhelming odds.",
+        "content_ko": "현장(602-664)은 불경을 얻기 위해 17년간의 대장정을 떠나 인도로 간 중국 승려였다. 그의 여행은 중국 문학 4대 고전소설 중 하나인 '서유기'(시유지)에 영감을 주었으며, 원숭이왕 손오공이 등장한다. 역사적으로 현장은 657부의 산스크리트 경전을 가져와 여생을 번역에 바쳤다. FGO에서 삼장은 활기찬 젊은 여성으로 등장하여 전투 지원과 영적 지도를 모두 제공하며, 압도적인 역경 앞에서 신앙과 결의의 힘을 대표한다.",
+        "content_ja": "玄奘（602-664）は仏典を求めて17年に及ぶ壮大な旅に出てインドへ向かった中国の仏僧だった。彼の旅は中国文学四大奇書の一つ『西遊記』に霊感を与え、孫悟空が登場する。歴史的に、玄奘は657部のサンスクリット経典を持ち帰り、残りの生涯をその翻訳に費やした。FGOでは三蔵は活発な若い女性として登場し、戦闘支援と精神的指導の両方を提供し、圧倒的な困難に直面しても信仰と決意の力を体現する。"
+      },
+      {
+        "title": "Arash: The Heroic Archer",
+        "title_ko": "아라쉬: 영웅적 궁수",
+        "title_ja": "アーラシュ：英雄的な弓兵",
+        "content": "Arash the Archer (Arash-e Kamangir) is a legendary hero in Persian mythology. According to the Shahnameh and other sources, he shot an arrow that flew from dawn to dusk to mark the border between Iran and Turan, ending a devastating war. The effort cost him his life—his body shattered from the impossible feat. In FGO, Arash is a humble 1-star Servant whose Noble Phantasm 'Stella' sacrifices himself to deal massive damage, recreating his legendary self-sacrifice. He becomes a symbol of selfless heroism in the Singularity, inspiring both allies and enemies.",
+        "content_ko": "궁수 아라쉬(아라쉬에 카만기르)는 페르시아 신화의 전설적 영웅이다. 샤나메와 다른 자료에 따르면, 그는 새벽부터 해질녘까지 날아간 화살을 쏘아 이란과 투란의 국경을 표시하고 파괴적인 전쟁을 종식시켰다. 그 노력은 그의 목숨을 앗아갔다—불가능한 위업으로 그의 몸이 산산이 부서졌다. FGO에서 아라쉬는 보구 '스텔라'로 자신을 희생하여 막대한 피해를 주는 겸손한 1성 서번트로, 그의 전설적인 자기희생을 재현한다. 그는 특이점에서 무사무욕한 영웅주의의 상징이 되어 아군과 적 모두에게 영감을 준다.",
+        "content_ja": "アーラシュ（アーラシェ・カマンギール）はペルシャ神話の伝説的英雄である。『シャー・ナーメ』などの資料によると、彼は夜明けから日没まで飛んだ矢を放ちイランとトゥランの国境を定め、壊滅的な戦争を終結させた。その努力は彼の命を奪った——不可能な偉業で彼の身体は砕け散った。FGOでは、アーラシュは宝具「ステラ」で自らを犠牲にして莫大なダメージを与える謙虚な星1のサーヴァントで、彼の伝説的な自己犠牲を再現する。特異点では無私の英雄主義の象徴となり、味方と敵の両方に霊感を与える。"
+      }
+    ],
+    "historical_basis": "The Crusades shaped the medieval world through religious warfare, cultural exchange, and political intrigue. The Ninth Crusade (1271-1272) was the last major attempt to reclaim the Holy Land. The Order of Assassins (Nizari Ismailis) operated from 1090-1275, becoming legendary for political assassinations. Arthurian legend, rooted in British mythology, provides the template for the Lion King and her knights. The Singularity uniquely combines these Western and Middle Eastern traditions, exploring themes of absolute justice, divine right, and the meaning of salvation.",
+    "historical_basis_ko": "십자군 전쟁은 종교 전쟁, 문화 교류, 정치적 음모를 통해 중세 세계를 형성했다. 제9차 십자군(1271-1272)은 성지를 탈환하려는 마지막 주요 시도였다. 암살 교단(니자리 이스마일)은 1090-1275년에 활동하며 정치적 암살로 전설이 되었다. 영국 신화에 뿌리를 둔 아서왕 전설은 사자왕과 그녀의 기사들의 원형을 제공한다. 특이점은 이 서양과 중동 전통을 독특하게 결합하여 절대적 정의, 신성한 권리, 구원의 의미라는 주제를 탐구한다.",
+    "historical_basis_ja": "十字軍は宗教戦争、文化交流、政治的陰謀を通じて中世世界を形成した。第9回十字軍（1271-1272）は聖地奪還の最後の主要な試みだった。暗殺教団（ニザール派イスマイール）は1090-1275年に活動し、政治的暗殺で伝説となった。イギリス神話に根ざしたアーサー王伝説は、獅子王と彼女の騎士たちの原型を提供する。特異点はこれらの西洋と中東の伝統を独自に組み合わせ、絶対的正義、神聖な権利、救済の意味というテーマを探求する。",
+    "related_servants": [
+      {"name": "Artoria Pendragon (Lancer)", "class": "Lancer", "rarity": 5},
+      {"name": "Ozymandias", "class": "Rider", "rarity": 5},
+      {"name": "Nitocris", "class": "Caster", "rarity": 4},
+      {"name": "Lancelot (Saber)", "class": "Saber", "rarity": 4},
+      {"name": "Gawain", "class": "Saber", "rarity": 4},
+      {"name": "Tristan", "class": "Archer", "rarity": 4},
+      {"name": "Mordred", "class": "Saber", "rarity": 5},
+      {"name": "Bedivere", "class": "Saber", "rarity": 3},
+      {"name": "Agravain", "class": "Saber", "rarity": 4},
+      {"name": "Hassan of Serenity", "class": "Assassin", "rarity": 3},
+      {"name": "Hassan of the Cursed Arm", "class": "Assassin", "rarity": 2},
+      {"name": "Hassan of the Hundred Faces", "class": "Assassin", "rarity": 3},
+      {"name": "King Hassan", "class": "Assassin", "rarity": 5},
+      {"name": "Xuanzang Sanzang", "class": "Caster", "rarity": 5},
+      {"name": "Tawara Touta", "class": "Archer", "rarity": 3},
+      {"name": "Arash", "class": "Archer", "rarity": 1}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Crusades history", "Arthurian legend", "History of the Assassins", "Ancient Egyptian history", "Journey to the West", "Persian mythology (Shahnameh)"]
+  },
+  {
+    "id": "singularity-7",
+    "type": "singularity",
+    "title": "Babylonia",
+    "title_ko": "바빌로니아",
+    "title_ja": "バビロニア",
+    "subtitle": "Absolute Demonic Front",
+    "subtitle_ko": "절대마수전선",
+    "subtitle_ja": "絶対魔獣戦線",
+    "chapter": "Seventh Singularity",
+    "era": "Ancient",
+    "year": -2655,
+    "location": "Mesopotamia",
+    "description": "The Seventh and final Singularity is set in 2655 BC Mesopotamia, the legendary kingdom of Uruk ruled by the King of Heroes, Gilgamesh. This is humanity's last stand against complete annihilation. The primordial goddess Tiamat, mother of all Mesopotamian gods, has awakened and seeks to reclaim Earth for her children. The Three Goddess Alliance—comprising Gorgon, Quetzalcoatl, and Ereshkigal—each control vast territories threatening human survival. Gilgamesh and Enkidu lead the defense of the last human city, but even their legendary power may not be enough. The Master, Mash, and their Servant allies must unite all of Uruk's defenders in the Absolute Demonic Front to prevent humanity's extinction.",
+    "description_ko": "제7특이점이자 마지막 특이점은 기원전 2655년, 영웅왕 길가메시가 다스리는 전설의 왕국 우루크를 배경으로 한다. 이것은 완전한 멸망에 맞선 인류의 마지막 저항이다. 모든 메소포타미아 신들의 어머니인 원초 여신 티아마트가 깨어나 자신의 자녀들을 위해 지구를 되찾으려 한다. 고르곤, 케찰코아틀, 에레슈키갈로 구성된 삼여신동맹은 각각 인류의 생존을 위협하는 광대한 영토를 지배한다. 길가메시와 엔키두가 마지막 인류 도시의 방어를 이끌지만, 그들의 전설적인 힘조차 충분하지 않을 수 있다. 마스터, 마슈, 그리고 서번트 동맹자들은 인류의 멸종을 막기 위해 절대마수전선에서 우루크의 모든 수호자들을 단결시켜야 한다.",
+    "description_ja": "第七にして最後の特異点は紀元前2655年のメソポタミア、英雄王ギルガメッシュが治める伝説の王国ウルクを舞台とする。これは完全なる滅亡に対する人類最後の抵抗である。全メソポタミアの神々の母である原初の女神ティアマトが目覚め、自らの子供たちのために地球を取り戻そうとしている。ゴルゴン、ケツァルコアトル、エレシュキガルで構成される三女神同盟は、それぞれ人類の生存を脅かす広大な領域を支配する。ギルガメッシュとエンキドゥが最後の人類都市の防衛を率いるが、彼らの伝説的な力でさえ十分ではないかもしれない。マスター、マシュ、そしてサーヴァントの盟友たちは、人類の絶滅を防ぐため絶対魔獣戦線でウルクの全ての守護者を結集させなければならない。",
+    "sections": [
+      {
+        "title": "Ancient Mesopotamia and Uruk",
+        "title_ko": "고대 메소포타미아와 우루크",
+        "title_ja": "古代メソポタミアとウルク",
+        "content": "Mesopotamia (modern-day Iraq) is the 'cradle of civilization,' where writing, agriculture, and urban centers first emerged. Uruk (Erech in the Bible, modern Warka) was one of the world's first major cities, flourishing from around 4000-3200 BC during the Uruk period. At its peak, it had 40,000-80,000 inhabitants and covered over 6 km². The city was dedicated to the goddess Inanna (Ishtar) and featured the massive White Temple. The Epic of Gilgamesh, mankind's oldest surviving literary work, was composed here. In the Singularity, Uruk represents humanity's cradle—and its last fortress.",
+        "content_ko": "메소포타미아(현대 이라크)는 '문명의 요람'으로, 문자, 농경, 도시 중심지가 처음 등장한 곳이다. 우루크(성경의 에렉, 현대 와르카)는 세계 최초의 주요 도시 중 하나로, 우루크 시대(기원전 약 4000-3200년) 동안 번성했다. 전성기에는 4만-8만 명의 주민이 거주했고 6km² 이상을 차지했다. 도시는 여신 이난나(이슈타르)에게 봉헌되었으며 거대한 백색 신전이 있었다. 인류 최초의 현존 문학 작품인 길가메시 서사시가 여기서 작성되었다. 특이점에서 우루크는 인류의 요람이자 마지막 요새를 대표한다.",
+        "content_ja": "メソポタミア（現代のイラク）は「文明の発祥地」であり、文字、農業、都市中心地が最初に出現した場所である。ウルク（聖書のエレク、現代のワルカ）は世界初の主要都市の一つで、ウルク期（紀元前約4000-3200年）に繁栄した。最盛期には4万-8万人の住民がおり、6km²以上を占めていた。都市は女神イナンナ（イシュタル）に捧げられ、巨大な白神殿があった。人類最古の現存する文学作品であるギルガメシュ叙事詩がここで作成された。特異点では、ウルクは人類の発祥地であり最後の砦を代表する。"
+      },
+      {
+        "title": "Gilgamesh: The King of Heroes",
+        "title_ko": "길가메시: 영웅왕",
+        "title_ja": "ギルガメッシュ：英雄王",
+        "content": "Gilgamesh was a historical king of Uruk around 2700-2500 BC, later deified and immortalized in the Epic of Gilgamesh. The epic describes him as two-thirds god and one-third human, possessing superhuman strength and wisdom. After the death of his friend Enkidu, he embarked on a quest for immortality, eventually accepting human mortality after meeting Utnapishtim (the Mesopotamian Noah). In FGO, Gilgamesh is presented at two points in his life: the young, arrogant king (Archer) who collects all treasures in his Gate of Babylon, and the wiser Caster version ruling Uruk during the Singularity. As Caster, he has abandoned his arrogance to lead his people against extinction.",
+        "content_ko": "길가메시는 기원전 약 2700-2500년경 우루크의 역사적 왕으로, 후에 신격화되어 길가메시 서사시에 불멸화되었다. 서사시는 그를 3분의 2가 신이고 3분의 1이 인간인 존재로, 초인적 힘과 지혜를 가졌다고 묘사한다. 친구 엔키두의 죽음 후, 그는 불멸을 찾아 여정을 떠났고, 결국 우트나피슈팀(메소포타미아의 노아)을 만난 후 인간의 필멸성을 받아들였다. FGO에서 길가메시는 그의 삶의 두 시점으로 제시된다: 바빌론의 문에 모든 보물을 수집한 젊고 오만한 왕(아처), 그리고 특이점에서 우루크를 다스리는 더 현명한 캐스터 버전. 캐스터로서 그는 멸종에 맞서 자신의 백성을 이끌기 위해 오만함을 버렸다.",
+        "content_ja": "ギルガメッシュは紀元前約2700-2500年頃のウルクの歴史的王で、後に神格化されギルガメッシュ叙事詩に不朽のものとなった。叙事詩は彼を3分の2が神で3分の1が人間の存在として、超人的な力と知恵を持つと描写する。友エンキドゥの死後、彼は不死を求める旅に出て、最終的にウトナピシュティム（メソポタミアのノア）に会った後、人間の死すべき運命を受け入れた。FGOでは、ギルガメッシュは彼の人生の二つの時点で提示される：バビロンの門に全ての宝を収集した若く傲慢な王（アーチャー）、そして特異点でウルクを治めるより賢明なキャスター版。キャスターとして、彼は民を絶滅から導くために傲慢さを捨てている。"
+      },
+      {
+        "title": "Enkidu: The Chains of Heaven",
+        "title_ko": "엔키두: 천상의 쇠사슬",
+        "title_ja": "エンキドゥ：天の鎖",
+        "content": "Enkidu is Gilgamesh's closest companion in the Epic of Gilgamesh. Created by the goddess Aruru from clay to rival Gilgamesh, Enkidu was initially a wild man living among animals. After being civilized by the temple prostitute Shamhat, he fought Gilgamesh to a standstill and became his inseparable friend. Together they slew the demon Humbaba and the Bull of Heaven. The gods punished them by condemning Enkidu to death, sparking Gilgamesh's quest for immortality. In FGO, Enkidu appears as a genderless being made of divine clay, wielding Enuma Elish—the same Noble Phantasm name as Gilgamesh's but representing the binding chains of heaven rather than destruction.",
+        "content_ko": "엔키두는 길가메시 서사시에서 길가메시의 가장 가까운 동반자이다. 여신 아루루가 길가메시에 맞설 존재로 점토에서 창조했으며, 엔키두는 처음에 동물들 사이에서 사는 야인이었다. 신전 창녀 샴하트에 의해 문명화된 후, 그는 길가메시와 맞붙어 무승부를 이루고 떼려야 뗄 수 없는 친구가 되었다. 함께 그들은 악마 훔바바와 천상의 황소를 물리쳤다. 신들은 엔키두를 죽음에 처하게 하여 그들을 벌했고, 이는 길가메시의 불멸 추구를 촉발했다. FGO에서 엔키두는 신성한 점토로 만들어진 무성의 존재로 등장하며, 에누마 엘리쉬—길가메시와 같은 보구 이름이지만 파괴가 아닌 천상의 속박 쇠사슬을 대표한다—를 휘두른다.",
+        "content_ja": "エンキドゥはギルガメッシュ叙事詩におけるギルガメッシュの最も親しい友である。女神アルルがギルガメッシュに対抗する存在として粘土から創造し、エンキドゥは当初、動物たちの中で暮らす野人だった。神殿娼婦シャムハトによって文明化された後、ギルガメッシュと引き分けるまで戦い、切り離せない友となった。共に彼らは悪魔フンババと天の牡牛を倒した。神々はエンキドゥを死に処することで彼らを罰し、これがギルガメッシュの不死の探求を引き起こした。FGOでは、エンキドゥは神聖な粘土で作られた性別のない存在として登場し、エヌマ・エリシュ——ギルガメッシュと同じ宝具名だが、破壊ではなく天の縛鎖を表す——を振るう。"
+      },
+      {
+        "title": "Ishtar and Ereshkigal: Sisters of Heaven and Underworld",
+        "title_ko": "이슈타르와 에레슈키갈: 천상과 저승의 자매",
+        "title_ja": "イシュタルとエレシュキガル：天界と冥界の姉妹",
+        "content": "Ishtar (Inanna in Sumerian) was the Mesopotamian goddess of love, beauty, sex, war, and political power. Her symbol was the eight-pointed star, and the lion was her sacred animal. She was famously rejected by Gilgamesh, leading her to send the Bull of Heaven against Uruk. Her sister Ereshkigal ruled Kur, the underworld, governing the realm of the dead. The myth 'Inanna's Descent to the Underworld' describes Ishtar's journey to visit her sister, during which she must pass through seven gates, surrendering her power at each. In FGO, both goddesses are summoned using Rin Tohsaka's body as a pseudo-Servant vessel, inheriting some of her personality traits alongside their divine powers.",
+        "content_ko": "이슈타르(수메르어로 이난나)는 사랑, 아름다움, 성, 전쟁, 정치적 권력의 메소포타미아 여신이었다. 그녀의 상징은 팔각별이었고, 사자는 그녀의 신성한 동물이었다. 그녀는 길가메시에게 거부당한 것으로 유명하며, 이로 인해 천상의 황소를 우루크에 보냈다. 그녀의 자매 에레슈키갈은 저승 쿠르를 다스리며 죽은 자의 영역을 통치했다. '이난나의 저승 하강' 신화는 이슈타르가 자매를 방문하러 가는 여정을 묘사하며, 일곱 문을 통과하며 각각에서 자신의 힘을 내려놓아야 했다. FGO에서 두 여신 모두 토오사카 린의 몸을 의사 서번트 그릇으로 사용하여 소환되며, 신성한 힘과 함께 그녀의 성격 특성 일부를 물려받는다.",
+        "content_ja": "イシュタル（シュメール語でイナンナ）は愛、美、性、戦争、政治的権力のメソポタミアの女神だった。彼女の象徴は八芒星で、ライオンは彼女の神聖な動物だった。ギルガメッシュに拒絶されたことで有名で、これが天の牡牛をウルクに送ることにつながった。彼女の妹エレシュキガルは冥界クルを統治し、死者の領域を治めていた。「イナンナの冥界下り」の神話は、イシュタルが妹を訪ねる旅を描写し、七つの門を通過し、それぞれで自らの力を手放さなければならなかった。FGOでは、両女神とも遠坂凛の身体を疑似サーヴァントの器として使用して召喚され、神聖な力と共に彼女の性格特性の一部を受け継いでいる。"
+      },
+      {
+        "title": "Tiamat: The Primordial Mother",
+        "title_ko": "티아마트: 원초의 어머니",
+        "title_ja": "ティアマト：原初の母",
+        "content": "Tiamat is the primordial goddess of the salt sea in Babylonian mythology, appearing in the creation epic Enuma Elish. She and her consort Apsu (fresh water) gave birth to the first gods. When Apsu plotted to destroy their noisy offspring, the young god Ea killed him. Tiamat, enraged, created eleven monsters to avenge him, including dragons and scorpion-men. The young god Marduk slew Tiamat and used her body to create the heavens and earth. In FGO, Tiamat represents the ultimate threat—a Beast-class entity embodying the 'return to the mother.' She wishes not destruction but regression: to reabsorb all life back into herself, undoing creation itself.",
+        "content_ko": "티아마트는 바빌로니아 신화에서 소금 바다의 원초 여신으로, 창조 서사시 에누마 엘리쉬에 등장한다. 그녀와 배우자 압수(민물)는 최초의 신들을 낳았다. 압수가 시끄러운 자손들을 파괴하려 음모를 꾸몄을 때, 젊은 신 에아가 그를 죽였다. 격노한 티아마트는 용과 전갈인간을 포함한 11마리 괴물을 창조하여 그를 복수하려 했다. 젊은 신 마르둑이 티아마트를 죽이고 그녀의 몸으로 천지를 창조했다. FGO에서 티아마트는 궁극적 위협—'어머니에게로의 회귀'를 구현하는 비스트급 존재—을 대표한다. 그녀는 파괴가 아닌 퇴행을 원한다: 모든 생명을 자신에게 다시 흡수하여 창조 자체를 무효화하는 것.",
+        "content_ja": "ティアマトはバビロニア神話における塩水の原初の女神で、創造叙事詩エヌマ・エリシュに登場する。彼女と配偶者アプス（真水）は最初の神々を生んだ。アプスが騒がしい子孫を滅ぼそうと企んだとき、若い神エアが彼を殺した。激怒したティアマトは彼の復讐のため竜やサソリ人間を含む11体の怪物を創造した。若い神マルドゥクがティアマトを殺し、その身体で天と地を創造した。FGOでは、ティアマトは究極の脅威——「母への回帰」を体現するビースト級の存在——を代表する。彼女が望むのは破壊ではなく退行だ：全ての生命を自らに再吸収し、創造そのものを無に帰すこと。"
+      },
+      {
+        "title": "The Three Goddess Alliance",
+        "title_ko": "삼여신동맹",
+        "title_ja": "三女神同盟",
+        "content": "The Three Goddess Alliance is a coalition formed to oppose Uruk: Gorgon (the composite goddess-monster from Greek mythology, fused with Tiamat's power), Quetzalcoatl (the Aztec Feathered Serpent god), and Ereshkigal (the Mesopotamian underworld goddess). Each controls territory around Uruk: Gorgon dominates the jungle Blood Fort Andromeda with her demonic beasts, Quetzalcoatl rules the southern lands from her temple, and Ereshkigal commands the underworld beneath. However, their alliance is uneasy—Quetzalcoatl secretly opposes Tiamat, loving humanity despite her role, while Ereshkigal is lonely and yearns for connection. Only Gorgon truly serves destruction.",
+        "content_ko": "삼여신동맹은 우루크에 대항하여 형성된 연합이다: 고르곤(그리스 신화의 합성 여신-괴물로, 티아마트의 힘과 융합), 케찰코아틀(아즈텍의 깃털 달린 뱀 신), 그리고 에레슈키갈(메소포타미아 저승 여신). 각각 우루크 주변 영토를 지배한다: 고르곤은 마수들과 함께 정글 블러드 포트 안드로메다를 지배하고, 케찰코아틀은 신전에서 남부 땅을 다스리며, 에레슈키갈은 지하 저승을 지휘한다. 그러나 동맹은 불안정하다—케찰코아틀은 비밀리에 티아마트에 반대하며, 자신의 역할에도 불구하고 인류를 사랑한다. 에레슈키갈은 외롭고 연결을 갈망한다. 오직 고르곤만이 진정으로 파괴에 복무한다.",
+        "content_ja": "三女神同盟はウルクに対抗するために形成された連合である：ゴルゴン（ギリシャ神話の複合女神-怪物、ティアマトの力と融合）、ケツァルコアトル（アステカの羽毛ある蛇神）、そしてエレシュキガル（メソポタミアの冥界女神）。それぞれがウルク周辺の領土を支配する：ゴルゴンは魔獣と共にジャングルのブラッドフォート・アンドロメダを支配し、ケツァルコアトルは神殿から南の地を統治し、エレシュキガルは地下の冥界を指揮する。しかし同盟は不安定だ——ケツァルコアトルは密かにティアマトに反対し、自らの役割にもかかわらず人類を愛している。エレシュキガルは孤独で繋がりを渇望している。ゴルゴンだけが真に破壊に仕えている。"
+      },
+      {
+        "title": "Quetzalcoatl: The Feathered Serpent",
+        "title_ko": "케찰코아틀: 깃털 달린 뱀",
+        "title_ja": "ケツァルコアトル：羽毛ある蛇",
+        "content": "Quetzalcoatl was one of the most important deities in ancient Mesoamerican religion, worshipped by the Aztecs, Maya, and others. The name means 'Feathered Serpent' in Nahuatl. Unlike gods demanding human sacrifice, Quetzalcoatl was associated with wind, air, learning, and priests. Legend says he opposed human sacrifice and was tricked into abandoning his people, promising to return. In FGO, Quetzalcoatl appears as an energetic goddess who loves humanity—particularly the wrestling move lucha libre, which she considers a beautiful expression of human spirit. Despite joining the Alliance, she secretly aids Uruk, unable to truly wish for human extinction.",
+        "content_ko": "케찰코아틀은 고대 메소아메리카 종교에서 가장 중요한 신 중 하나로, 아즈텍, 마야 등에서 숭배되었다. 이름은 나와틀어로 '깃털 달린 뱀'을 의미한다. 인신공양을 요구하는 신들과 달리, 케찰코아틀은 바람, 공기, 학문, 사제와 연관되었다. 전설에 따르면 그는 인신공양에 반대했고 속임을 당해 자신의 백성을 버렸으며, 돌아오겠다고 약속했다. FGO에서 케찰코아틀은 인류를 사랑하는 활기찬 여신으로 등장한다—특히 인간 정신의 아름다운 표현으로 여기는 루차 리브레(프로레슬링). 동맹에 가입했음에도 그녀는 비밀리에 우루크를 돕는데, 진정으로 인류 멸종을 바랄 수 없기 때문이다.",
+        "content_ja": "ケツァルコアトルは古代メソアメリカ宗教で最も重要な神の一柱で、アステカ、マヤなどで崇拝された。名前はナワトル語で「羽毛ある蛇」を意味する。人身供犠を要求する神々と異なり、ケツァルコアトルは風、空気、学問、神官と関連していた。伝説では彼は人身供犠に反対し、騙されて民を捨て、戻ってくると約束したという。FGOでは、ケツァルコアトルは人類を愛する活発な女神として登場する——特にルチャ・リブレ（プロレス）を人間精神の美しい表現として愛している。同盟に加わりながらも、真に人類の絶滅を望むことができず、密かにウルクを助けている。"
+      },
+      {
+        "title": "Merlin: The Mage of Flowers",
+        "title_ko": "멀린: 꽃의 마술사",
+        "title_ja": "マーリン：花の魔術師",
+        "content": "Merlin is the legendary wizard from Arthurian legend, advisor to King Arthur and architect of Camelot's rise. In FGO's lore, Merlin is half-human and half-incubus (succubus's male counterpart), granting him powerful illusion magic but leaving him unable to truly understand human emotions. He is immortal, currently trapped in the Garden of Avalon at the end of the world. In Babylonia, Merlin projects himself from Avalon to aid the Master, wielding his Noble Phantasm 'Garden of Avalon' to protect and heal allies. His playful personality masks genuine concern for humanity's survival, though he admits he can only observe and assist, never truly understand human feelings.",
+        "content_ko": "멀린은 아서왕 전설의 전설적 마법사로, 아서왕의 조언자이자 캬멜롯 부상의 설계자이다. FGO의 설정에서 멀린은 반인반몽마(인큐버스, 서큐버스의 남성형)로, 강력한 환상 마법을 부여받았지만 인간의 감정을 진정으로 이해할 수 없다. 그는 불멸이며, 현재 세계 끝의 아발론 정원에 갇혀 있다. 바빌로니아에서 멀린은 아발론에서 자신을 투영하여 마스터를 돕고, 보구 '아발론의 정원'을 휘두르며 동료를 보호하고 치유한다. 그의 장난스러운 성격은 인류 생존에 대한 진정한 관심을 감추고 있지만, 그는 관찰하고 돕는 것만 할 수 있을 뿐 인간의 감정을 진정으로 이해할 수 없다고 인정한다.",
+        "content_ja": "マーリンはアーサー王伝説の伝説的魔術師で、アーサー王の助言者でありキャメロット隆盛の立役者である。FGOの設定では、マーリンは半人半夢魔（インキュバス、サキュバスの男性形）で、強力な幻術魔法を授かっているが、人間の感情を真に理解することができない。彼は不死であり、現在は世界の果てのアヴァロンの園に囚われている。バビロニアでは、マーリンはアヴァロンから自身を投影してマスターを助け、宝具「アヴァロンの庭」を振るって味方を守り癒す。彼の悪戯っぽい性格は人類の生存への真の関心を隠しているが、観察し助けることしかできず、人間の感情を真に理解することはできないと認めている。"
+      },
+      {
+        "title": "Ushiwakamaru: The Legendary General",
+        "title_ko": "우시와카마루: 전설의 장군",
+        "title_ja": "牛若丸：伝説の将",
+        "content": "Ushiwakamaru is the childhood name of Minamoto no Yoshitsune (1159-1189), one of Japan's greatest military commanders. A tragic hero of the Genpei War, he led the Minamoto clan to victory over the Taira but was later betrayed by his own brother Yoritomo. Legends describe his incredible agility, supposedly learning swordsmanship from tengu (mountain goblins). His retainer Benkei's last stand defending him has become iconic in Japanese culture. In FGO's Babylonia, Ushiwakamaru serves as one of Uruk's key defenders, her unwavering loyalty and martial skill making her invaluable. Her fate in the Singularity becomes one of its most tragic moments.",
+        "content_ko": "우시와카마루는 일본 최고의 군 지휘관 중 하나인 미나모토노 요시츠네(1159-1189)의 어린 시절 이름이다. 겐페이 전쟁의 비극적 영웅으로, 미나모토 가문을 이끌어 타이라를 물리쳤지만 나중에 형 요리토모에게 배신당했다. 전설은 그의 믿을 수 없는 민첩함을 묘사하며, 텐구(산 도깨비)에게서 검술을 배웠다고 한다. 그의 가신 벤케이가 그를 지키며 최후를 맞은 이야기는 일본 문화의 상징이 되었다. FGO의 바빌로니아에서 우시와카마루는 우루크의 핵심 수비자 중 하나로, 흔들림 없는 충성과 무술 실력으로 귀중한 존재가 된다. 특이점에서 그녀의 운명은 가장 비극적인 순간 중 하나가 된다.",
+        "content_ja": "牛若丸は日本最高の軍司令官の一人、源義経（1159-1189）の幼名である。源平合戦の悲劇的英雄で、源氏を率いて平氏を破ったが、後に兄の頼朝に裏切られた。伝説は彼の信じられない俊敏さを描写し、天狗（山の妖怪）から剣術を学んだとされる。家臣弁慶が彼を守って最期を遂げた話は日本文化の象徴となった。FGOのバビロニアでは、牛若丸はウルクの主要な防衛者の一人として、揺るぎない忠誠と武芸で貴重な存在となる。特異点における彼女の運命は、最も悲劇的な瞬間の一つとなる。"
+      },
+      {
+        "title": "Leonidas: The Shield of Thermopylae",
+        "title_ko": "레오니다스: 테르모필레의 방패",
+        "title_ja": "レオニダス：テルモピュライの盾",
+        "content": "Leonidas I was the king of Sparta who famously led 300 Spartans (and several thousand allied Greeks) against the massive Persian army at the Battle of Thermopylae in 480 BC. Though they were ultimately defeated and killed, their sacrifice bought time for Greece to prepare and eventually defeat Persia. Leonidas's last stand has become the archetypal example of military courage against overwhelming odds. In FGO's Babylonia, Leonidas serves as Uruk's shield, training soldiers and holding defensive lines. His experience with desperate last stands makes him invaluable against Tiamat's endless hordes of demonic beasts.",
+        "content_ko": "레오니다스 1세는 기원전 480년 테르모필레 전투에서 300명의 스파르타 병사(와 수천 명의 동맹 그리스군)를 이끌고 거대한 페르시아 군대에 맞선 것으로 유명한 스파르타 왕이었다. 결국 패배하고 전사했지만, 그들의 희생은 그리스가 준비하고 결국 페르시아를 물리칠 시간을 벌어주었다. 레오니다스의 최후의 항전은 압도적인 역경에 맞선 군사적 용기의 전형적 예가 되었다. FGO의 바빌로니아에서 레오니다스는 우루크의 방패로 복무하며, 병사들을 훈련시키고 방어선을 유지한다. 필사적인 최후의 항전 경험은 티아마트의 끝없는 마수 무리에 대항하는 데 귀중하다.",
+        "content_ja": "レオニダス1世は紀元前480年のテルモピュライの戦いで300人のスパルタ兵（と数千人の同盟ギリシャ軍）を率いて巨大なペルシャ軍に立ち向かったことで有名なスパルタ王だった。最終的に敗北し戦死したが、その犠牲はギリシャが準備し、最終的にペルシャを打ち破る時間を稼いだ。レオニダスの最後の抵抗は、圧倒的な困難に対する軍事的勇気の典型例となった。FGOのバビロニアでは、レオニダスはウルクの盾として仕え、兵士を訓練し防衛線を維持する。決死の最後の抵抗の経験は、ティアマトの無尽蔵の魔獣の群れに対抗するのに貴重である。"
+      }
+    ],
+    "historical_basis": "Mesopotamia (modern Iraq) is the cradle of civilization, where writing, cities, and complex society first emerged around 3500 BC. Uruk was one of the world's first great cities. The Epic of Gilgamesh, composed around 2100 BC, is humanity's oldest known literary work, exploring themes of friendship, mortality, and the search for meaning. The Singularity draws heavily from Mesopotamian mythology—Tiamat, Ishtar, Ereshkigal—while incorporating figures from other traditions (Quetzalcoatl from Aztec, Gorgon from Greek) to create a multicultural defense of human civilization. The story serves as a meditation on what it means to be human and whether humanity deserves to survive.",
+    "historical_basis_ko": "메소포타미아(현대 이라크)는 문명의 요람으로, 문자, 도시, 복잡한 사회가 기원전 약 3500년에 처음 등장한 곳이다. 우루크는 세계 최초의 위대한 도시 중 하나였다. 기원전 약 2100년에 작성된 길가메시 서사시는 인류 최초의 알려진 문학 작품으로, 우정, 필멸성, 의미 추구의 주제를 탐구한다. 특이점은 메소포타미아 신화—티아마트, 이슈타르, 에레슈키갈—에서 크게 끌어오면서 다른 전통의 인물들(아즈텍의 케찰코아틀, 그리스의 고르곤)을 통합하여 인류 문명의 다문화적 방어를 창조한다. 이야기는 인간이 된다는 것의 의미와 인류가 생존할 자격이 있는지에 대한 명상으로 기능한다.",
+    "historical_basis_ja": "メソポタミア（現代のイラク）は文明の発祥地で、文字、都市、複雑な社会が紀元前約3500年に初めて出現した場所である。ウルクは世界最初の偉大な都市の一つだった。紀元前約2100年に作成されたギルガメッシュ叙事詩は人類最古の知られた文学作品で、友情、死すべき運命、意味の探求というテーマを探求している。特異点はメソポタミア神話——ティアマト、イシュタル、エレシュキガル——から大きく引用しながら、他の伝統からの人物（アステカのケツァルコアトル、ギリシャのゴルゴン）を統合し、人類文明の多文化的防衛を創造している。物語は人間であることの意味と、人類が生き残る資格があるかどうかについての瞑想として機能する。",
+    "related_servants": [
+      {"name": "Gilgamesh (Caster)", "class": "Caster", "rarity": 4},
+      {"name": "Gilgamesh", "class": "Archer", "rarity": 5},
+      {"name": "Enkidu", "class": "Lancer", "rarity": 5},
+      {"name": "Ishtar", "class": "Archer", "rarity": 5},
+      {"name": "Ereshkigal", "class": "Lancer", "rarity": 5},
+      {"name": "Quetzalcoatl", "class": "Rider", "rarity": 5},
+      {"name": "Merlin", "class": "Caster", "rarity": 5},
+      {"name": "Gorgon", "class": "Avenger", "rarity": 4},
+      {"name": "Ana", "class": "Lancer", "rarity": 4},
+      {"name": "Ushiwakamaru", "class": "Rider", "rarity": 3},
+      {"name": "Leonidas I", "class": "Lancer", "rarity": 2},
+      {"name": "Benkei", "class": "Lancer", "rarity": 2},
+      {"name": "Jaguar Warrior", "class": "Lancer", "rarity": 4},
+      {"name": "Kingu", "class": "Lancer", "rarity": 4},
+      {"name": "Ziusu-dra", "class": "Grand", "rarity": 5},
+      {"name": "Tiamat", "class": "Beast", "rarity": 5}
+    ],
+    "related_event_ids": [],
+    "sources": ["Fate/Grand Order", "Epic of Gilgamesh", "Enuma Elish", "Mesopotamian mythology", "Descent of Inanna", "Aztec mythology", "Greek mythology (Medusa)", "Arthurian legend (Merlin)", "Tale of the Heike (Yoshitsune)"]
+  }
+]

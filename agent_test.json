@@ -1,0 +1,196 @@
+{
+  "analysis": {
+    "original_query": "마라톤 전투와 살라미스 해전 비교해줘",
+    "english_query": "Compare the Battle of Marathon and the Battle of Salamis",
+    "intent": "comparison",
+    "intent_confidence": "high",
+    "entities": {
+      "events": [
+        "Battle of Marathon",
+        "Battle of Salamis"
+      ],
+      "persons": [],
+      "locations": [],
+      "time_periods": [],
+      "categories": [
+        "battle"
+      ],
+      "keywords": [
+        "Battle of Marathon",
+        "Battle of Salamis",
+        "comparison"
+      ]
+    },
+    "response_format": "comparison_table",
+    "search_strategy": "Find key differences and similarities between the two battles.",
+    "requires_multiple_searches": false
+  },
+  "search_results": [
+    {
+      "query_used": "Battle of Marathon",
+      "filters_applied": {
+        "category": "battle"
+      },
+      "results": [
+        {
+          "content_type": "event",
+          "content_id": 31900,
+          "content_text": "Title: Battle of Marathon\nDescription: 490 BCE battle in the Greco-Persian wars\nDate: 489 BCE\nCategory: battle",
+          "metadata": {
+            "lat": 38.118055555,
+            "lng": 23.978333333,
+            "title": "Battle of Marathon",
+            "category": "battle",
+            "date_start": -489
+          },
+          "similarity": 0.6544593182528436
+        },
+        {
+          "content_type": "event",
+          "content_id": 503982,
+          "content_text": "Title: Battle of Mycale\nDescription: 479 BCE battle that decisively ended Xerxes's invasion of Greece\nDate: 478 BCE\nCategory: battle",
+          "metadata": {
+            "lat": 37.6909,
+            "lng": 27.1574,
+            "title": "Battle of Mycale",
+            "category": "battle",
+            "date_start": -478
+          },
+          "similarity": 0.4867450900825814
+        },
+        {
+          "content_type": "event",
+          "content_id": 278903,
+          "content_text": "Title: Battle of Lechaeum\nDescription: 390 BCE battle\nDate: 390 BCE\nCategory: battle",
+          "metadata": {
+            "lat": 37.934142,
+            "lng": 22.884225,
+            "title": "Battle of Lechaeum",
+            "category": "battle",
+            "date_start": -390
+          },
+          "similarity": 0.4806304574012791
+        }
+      ],
+      "result_count": 3
+    },
+    {
+      "query_used": "Battle of Salamis",
+      "filters_applied": {
+        "category": "battle"
+      },
+      "results": [
+        {
+          "content_type": "event",
+          "content_id": 1247317,
+          "content_text": "Title: Battle of Salamis\nDescription: naval battle during the Wars of the Diadochi\nDate: 305 BCE\nCategory: battle",
+          "metadata": {
+            "lat": 35.166666666,
+            "lng": 33.916666666,
+            "title": "Battle of Salamis",
+            "category": "battle",
+            "date_start": -305
+          },
+          "similarity": 0.6163138975910021
+        },
+        {
+          "content_type": "event",
+          "content_id": 97306047,
+          "content_text": "Title: Siege of Salamis\nDate: 305 BCE\nCategory: battle",
+          "metadata": {
+            "lat": 35.183333333,
+            "lng": 33.9,
+            "title": "Siege of Salamis",
+            "category": "battle",
+            "date_start": -305
+          },
+          "similarity": 0.6035475730895996
+        },
+        {
+          "content_type": "event",
+          "content_id": 503982,
+          "content_text": "Title: Battle of Mycale\nDescription: 479 BCE battle that decisively ended Xerxes's invasion of Greece\nDate: 478 BCE\nCategory: battle",
+          "metadata": {
+            "lat": 37.6909,
+            "lng": 27.1574,
+            "title": "Battle of Mycale",
+            "category": "battle",
+            "date_start": -478
+          },
+          "similarity": 0.5122915506362915
+        }
+      ],
+      "result_count": 3
+    }
+  ],
+  "response": {
+    "intent": "comparison",
+    "format": "comparison_table",
+    "answer": "마라톤 전투와 살라미스 해전을 비교해보면, 두 전투 모두 그리스 역사에서 중요한 전환점이었거든. 마라톤 전투는 기원전 490년에 있었고, 살라미스 해전은 기원전 305년에 벌어졌는데, 둘 다 그리스의 독립을 지키는 데 결정적인 역할을 했어. 마라톤 전투는 페르시아 제국과의 전투였고, 그리스가 승리하면서 페르시아의 침략을 저지했지. 이 승리는 그리스 시민들의 자부심을 높이고, 이후의 전투에서 단결하게 만드는 계기가 되었어. 반면 살라미스 해전은 디아도코이 전쟁 중 해상 전투로, 그리스 연합군이 마케도니아 제국과의 전투에서 중요한 승리를 거둔 거야. 이 해전의 승리는 그리스의 해상 세력을 강화하고, 마케도니아의 세력 확장을 저지하는 데 기여했어. \n\n결국 두 전투 모두 그리스의 독립과 자주성을 지키는 데 중요한 역할을 했고, 전투의 성격이 다르긴 하지만 그리스의 역사에서 연결된 이야기라고 할 수 있어.",
+    "structured_data": {
+      "type": "comparison",
+      "items": [
+        {
+          "title": "마라톤 전투",
+          "date": "490 BCE",
+          "key_points": [
+            "페르시아 제국과의 전투",
+            "그리스의 승리로 페르시아 침략 저지",
+            "그리스 시민들의 자부심 증가"
+          ]
+        },
+        {
+          "title": "살라미스 해전",
+          "date": "305 BCE",
+          "key_points": [
+            "디아도코이 전쟁 중 해상 전투",
+            "그리스 연합군의 승리로 마케도니아 세력 저지",
+            "그리스의 해상 세력 강화"
+          ]
+        }
+      ],
+      "comparison_axes": [
+        "전투의 성격",
+        "결과",
+        "영향"
+      ]
+    },
+    "sources": [
+      {
+        "id": 31900,
+        "title": "Battle of Marathon",
+        "similarity": 0.6544593182528436
+      },
+      {
+        "id": 503982,
+        "title": "Battle of Mycale",
+        "similarity": 0.4867450900825814
+      },
+      {
+        "id": 278903,
+        "title": "Battle of Lechaeum",
+        "similarity": 0.4806304574012791
+      },
+      {
+        "id": 1247317,
+        "title": "Battle of Salamis",
+        "similarity": 0.6163138975910021
+      },
+      {
+        "id": 97306047,
+        "title": "Siege of Salamis",
+        "similarity": 0.6035475730895996
+      },
+      {
+        "id": 503982,
+        "title": "Battle of Mycale",
+        "similarity": 0.5122915506362915
+      }
+    ],
+    "confidence": 0.6544593182528436,
+    "suggested_followups": [
+      "마라톤 전투의 전략은 어땠어?",
+      "살라미스 해전에서의 주요 인물은 누구야?"
+    ]
+  }
+}

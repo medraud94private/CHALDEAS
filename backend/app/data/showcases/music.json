@@ -1,0 +1,84 @@
+[
+  {
+    "id": "music-mozart",
+    "type": "article",
+    "title": "Wolfgang Amadeus Mozart",
+    "title_ko": "볼프강 아마데우스 모차르트",
+    "title_ja": "ヴォルフガング・アマデウス・モーツァルト",
+    "subtitle": "The prodigy who defined Classical music",
+    "subtitle_ko": "클래식 음악을 정의한 천재",
+    "subtitle_ja": "古典派音楽を定義した天才",
+    "era": "Early Modern",
+    "year": 1756,
+    "location": "Salzburg / Vienna",
+    "description": "Mozart was a prolific composer who created over 600 works during his 35 years of life.",
+    "description_ko": "모차르트는 35년의 생애 동안 600곡 이상을 작곡한 다작의 작곡가였다.",
+    "description_ja": "モーツァルトは35年の生涯で600曲以上を作曲した多作の作曲家だった。",
+    "sections": [
+      {
+        "title": "Child Prodigy",
+        "title_ko": "신동",
+        "title_ja": "神童",
+        "content": "Mozart showed exceptional ability from age 3, composing from age 5.",
+        "content_ko": "모차르트는 3세 때부터 비범한 재능을 보였고, 5세부터 작곡을 시작했다.",
+        "content_ja": "モーツァルトは3歳から非凡な才能を見せ、5歳から作曲を始めた。"
+      },
+      {
+        "title": "Major Works",
+        "title_ko": "주요 작품",
+        "title_ja": "主要作品",
+        "content": "Operas include The Marriage of Figaro, Don Giovanni, The Magic Flute. His Requiem remained unfinished.",
+        "content_ko": "오페라로는 피가로의 결혼, 돈 조반니, 마술피리가 있다. 레퀴엠은 미완성으로 남았다.",
+        "content_ja": "オペラにはフィガロの結婚、ドン・ジョヴァンニ、魔笛がある。レクイエムは未完のまま残った。"
+      }
+    ],
+    "historical_basis": "Mozart's letters and contemporary accounts document his life extensively.",
+    "related_servants": [
+      {"name": "Amadeus Mozart", "class": "Caster", "rarity": 4},
+      {"name": "Antonio Salieri", "class": "Avenger", "rarity": 3},
+      {"name": "Marie Antoinette", "class": "Rider", "rarity": 4}
+    ],
+    "related_event_ids": [],
+    "sources": ["Mozart's letters", "Contemporary accounts"]
+  },
+  {
+    "id": "music-phantom",
+    "type": "article",
+    "title": "The Phantom of the Opera",
+    "title_ko": "오페라의 유령",
+    "title_ja": "オペラ座の怪人",
+    "subtitle": "From French novel to legendary musical",
+    "subtitle_ko": "프랑스 소설에서 전설적인 뮤지컬로",
+    "subtitle_ja": "フランス小説から伝説的ミュージカルへ",
+    "era": "Modern",
+    "year": 1910,
+    "location": "Paris Opera House",
+    "description": "The Phantom of the Opera began as a serialized French novel by Gaston Leroux.",
+    "description_ko": "오페라의 유령은 가스통 르루의 연재 소설로 시작되었다.",
+    "description_ja": "オペラ座の怪人はガストン・ルルーの連載小説として始まった。",
+    "sections": [
+      {
+        "title": "The Original Novel",
+        "title_ko": "원작 소설",
+        "title_ja": "原作小説",
+        "content": "Gaston Leroux published 'Le Fantome de l'Opera' in 1910, inspired by real incidents.",
+        "content_ko": "가스통 르루가 실제 사건에서 영감을 받아 1910년에 '오페라의 유령'을 출간했다.",
+        "content_ja": "ガストン・ルルーが実際の事件に触発されて1910年に『オペラ座の怪人』を出版した。"
+      },
+      {
+        "title": "Andrew Lloyd Webber's Musical",
+        "title_ko": "앤드루 로이드 웨버의 뮤지컬",
+        "title_ja": "アンドリュー・ロイド・ウェバーのミュージカル",
+        "content": "The 1986 musical became the longest-running show in Broadway history.",
+        "content_ko": "1986년 뮤지컬은 브로드웨이 역사상 최장기 공연 기록을 세웠다.",
+        "content_ja": "1986年のミュージカルはブロードウェイ史上最長の上演記録を達成した。"
+      }
+    ],
+    "historical_basis": "The Palais Garnier (opened 1875) does have underground levels and a subterranean lake.",
+    "related_servants": [
+      {"name": "Phantom of the Opera", "class": "Assassin", "rarity": 2}
+    ],
+    "related_event_ids": [],
+    "sources": ["Gaston Leroux - Le Fantome de l'Opera", "Paris Opera archives"]
+  }
+]

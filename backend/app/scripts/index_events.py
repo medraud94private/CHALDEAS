@@ -140,7 +140,7 @@ def main():
     # Initialize services
     print("\nInitializing embedding service...")
     embedding_service = EmbeddingService(
-        model="text-embedding-3-large",
+        model="small",  # Default to small for cost efficiency
         api_key=api_key
     )
     print(f"Embedding model: {embedding_service.model}")

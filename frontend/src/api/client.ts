@@ -74,3 +74,20 @@ export const chatApi = {
   agent: (query: string, apiKey?: string) =>
     api.post('/chat/agent', { query, api_key: apiKey || undefined }),
 }
+
+// Showcase/Archive API
+export const showcaseApi = {
+  // FGO content
+  getSingularities: () => api.get('/showcases/fgo/singularities'),
+  getLostbelts: () => api.get('/showcases/fgo/lostbelts'),
+  getServants: () => api.get('/showcases/fgo/servants'),
+  // Pan-Human History
+  getHistory: () => api.get('/showcases/history'),
+  getLiterature: () => api.get('/showcases/literature'),
+  getMusic: () => api.get('/showcases/music'),
+  // Generic
+  getAll: (params?: { type?: string; limit?: number }) =>
+    api.get('/showcases', { params }),
+  getById: (id: string) => api.get(`/showcases/${id}`),
+  getStats: () => api.get('/showcases/stats/summary'),
+}

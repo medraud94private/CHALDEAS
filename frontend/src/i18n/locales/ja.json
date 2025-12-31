@@ -149,18 +149,20 @@
       "singularity": "特異点",
       "lostbelt": "異聞帯",
       "servant": "サーヴァント",
-      "article": "アーカイブ"
+      "article": "記事"
     },
     "historicalBasis": "歴史的背景",
     "relatedServants": "関連サーヴァント",
     "relatedEvents": "関連歴史記録",
     "sources": "参考資料",
+    "loading": "データ読み込み中...",
     "tabs": {
       "fgo": "Fate/Grand Order",
       "panHuman": "汎人類史"
     },
     "menu": {
-      "title": "アーカイブ",
+      "title": "トリスメギストス",
+      "subtitle": "レイシフト ライブラリ",
       "singularities": "特異点",
       "lostbelts": "異聞帯",
       "servants": "サーヴァント",

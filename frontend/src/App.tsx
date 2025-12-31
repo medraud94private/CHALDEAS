@@ -120,6 +120,16 @@ function App() {
           <LanguageSelector />
         </div>
 
+        {/* Archive Menu - FGO & Pan-Human History */}
+        <div className="archive-menu-section">
+          <ShowcaseMenu
+            onSelectContent={(content) => {
+              setShowcaseContent(content)
+              setIsShowcaseOpen(true)
+            }}
+          />
+        </div>
+
         <div className="search-container">
           <input
             type="text"
@@ -193,12 +203,6 @@ function App() {
       {/* Center - Globe */}
       <section className="globe-section">
         <div className="globe-overlay-top">
-          <ShowcaseMenu
-            onSelectContent={(content) => {
-              setShowcaseContent(content)
-              setIsShowcaseOpen(true)
-            }}
-          />
           <div className="globe-control">
             {t('globe.camMode')}: <span>{t('globe.orbit')}</span>
           </div>

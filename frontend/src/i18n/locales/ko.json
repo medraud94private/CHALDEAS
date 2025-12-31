@@ -149,18 +149,20 @@
       "singularity": "특이점",
       "lostbelt": "이문대",
       "servant": "서번트",
-      "article": "아카이브"
+      "article": "기사"
     },
     "historicalBasis": "역사적 배경",
     "relatedServants": "관련 서번트",
     "relatedEvents": "관련 역사 기록",
     "sources": "참고 자료",
+    "loading": "데이터 로딩 중...",
     "tabs": {
       "fgo": "Fate/Grand Order",
       "panHuman": "범인류사"
     },
     "menu": {
-      "title": "아카이브",
+      "title": "트리스메기스투스",
+      "subtitle": "레이시프트 라이브러리",
       "singularities": "특이점",
       "lostbelts": "이문대",
       "servants": "서번트",

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "servant-gilgamesh",
+    "type": "servant",
+    "title": "Gilgamesh - King of Heroes",
+    "title_ko": "길가메시 - 영웅왕",
+    "title_ja": "ギルガメッシュ - 英雄王",
+    "subtitle": "The oldest hero in human history",
+    "subtitle_ko": "인류사 최고(最古)의 영웅",
+    "subtitle_ja": "人類史最古の英雄",
+    "era": "Ancient Mesopotamia",
+    "year": -2700,
+    "location": "Uruk, Sumer",
+    "description": "Gilgamesh, the demigod king of Uruk, is considered the oldest hero whose tale has survived in writing.",
+    "description_ko": "우루크의 반신반인 왕 길가메시는 글로 전해지는 가장 오래된 영웅으로 여겨진다.",
+    "description_ja": "ウルクの半神半人の王ギルガメッシュは、文字で残る最古の英雄とされる。",
+    "sections": [
+      {
+        "title": "Historical Background",
+        "title_ko": "역사적 배경",
+        "title_ja": "歴史的背景",
+        "content": "Gilgamesh was a real historical figure, the fifth king of Uruk's First Dynasty (c. 2900-2350 BC).",
+        "content_ko": "길가메시는 실존 인물로, 우루크 제1왕조의 다섯 번째 왕이었다 (기원전 2900-2350년경).",
+        "content_ja": "ギルガメッシュは実在の人物で、ウルク第一王朝の5代目の王だった（紀元前2900-2350年頃）。"
+      },
+      {
+        "title": "The Epic of Gilgamesh",
+        "title_ko": "길가메시 서사시",
+        "title_ja": "ギルガメシュ叙事詩",
+        "content": "The Epic describes Gilgamesh's friendship with Enkidu, their adventures, and his quest for immortality.",
+        "content_ko": "서사시는 길가메시와 엔키두의 우정, 모험, 그리고 불멸을 향한 여정을 묘사한다.",
+        "content_ja": "叙事詩はギルガメッシュとエンキドゥの友情、彼らの冒険、そして不死への探求を描く。"
+      },
+      {
+        "title": "Fate Interpretation",
+        "title_ko": "페이트 해석",
+        "title_ja": "Fateでの解釈",
+        "content": "In Fate, Gilgamesh wields the Gate of Babylon, containing all prototypes of humanity's treasures.",
+        "content_ko": "페이트에서 길가메시는 인류 보물의 모든 원형을 담은 왕의 재보를 사용한다.",
+        "content_ja": "Fateでギルガメッシュは、人類の宝物の全ての原型を納めた王の財宝を振るう。"
+      }
+    ],
+    "historical_basis": "The Epic of Gilgamesh is among humanity's oldest literary works.",
+    "related_servants": [
+      {"name": "Enkidu", "class": "Lancer", "rarity": 5},
+      {"name": "Ishtar", "class": "Archer", "rarity": 5}
+    ],
+    "related_event_ids": [],
+    "sources": ["Epic of Gilgamesh", "Sumerian King List", "Fate/stay night", "Fate/Grand Order"]
+  },
+  {
+    "id": "servant-leonidas",
+    "type": "servant",
+    "title": "Leonidas I - King of Sparta",
+    "title_ko": "레오니다스 1세 - 스파르타의 왕",
+    "title_ja": "レオニダス一世 - スパルタ王",
+    "subtitle": "The warrior who defied an empire",
+    "subtitle_ko": "제국에 맞선 전사",
+    "subtitle_ja": "帝国に立ち向かった戦士",
+    "era": "Classical Greece",
+    "year": -480,
+    "location": "Thermopylae, Greece",
+    "description": "Leonidas I led 300 Spartans against the massive Persian army at Thermopylae.",
+    "description_ko": "레오니다스 1세는 테르모필레에서 300명의 스파르타 전사를 이끌고 페르시아 대군에 맞섰다.",
+    "description_ja": "レオニダス一世はテルモピュライで300人のスパルタ戦士を率いてペルシア大軍に立ち向かった。",
+    "sections": [
+      {
+        "title": "The Battle of Thermopylae",
+        "title_ko": "테르모필레 전투",
+        "title_ja": "テルモピュライの戦い",
+        "content": "In 480 BC, Leonidas led 7,000 Greeks including 300 Spartiates to hold the narrow pass.",
+        "content_ko": "기원전 480년, 레오니다스는 300명의 스파르티아타이를 포함한 7,000명의 그리스군을 이끌고 좁은 협곡을 방어했다.",
+        "content_ja": "紀元前480年、レオニダスは300人のスパルティアタイを含む7,000人のギリシャ軍を率いて狭い峠を守った。"
+      },
+      {
+        "title": "Historical Legacy",
+        "title_ko": "역사적 유산",
+        "title_ja": "歴史的遺産",
+        "content": "The delay allowed Greek states to prepare, leading to Persian defeat at Salamis and Plataea.",
+        "content_ko": "이 지연 덕분에 그리스 국가들이 준비할 시간을 벌었고, 살라미스와 플라타이아에서 페르시아가 패배했다.",
+        "content_ja": "この遅延によりギリシャ諸国が準備する時間を稼ぎ、サラミスとプラタイアでペルシアが敗北した。"
+      }
+    ],
+    "historical_basis": "Herodotus provides the primary account of Thermopylae in his Histories.",
+    "related_servants": [
+      {"name": "Iskandar", "class": "Rider", "rarity": 5},
+      {"name": "Darius III", "class": "Berserker", "rarity": 3}
+    ],
+    "related_event_ids": [],
+    "sources": ["Herodotus - Histories", "Plutarch - Parallel Lives", "Fate/Grand Order"]
+  }
+]

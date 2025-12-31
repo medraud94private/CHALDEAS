@@ -3,7 +3,7 @@ API v1 Router - Aggregates all API endpoints.
 """
 from fastapi import APIRouter
 
-from app.api.v1 import events, locations, search, chat, categories
+from app.api.v1 import events, locations, search, chat, categories, showcases
 
 api_router = APIRouter()
 
@@ -13,6 +13,9 @@ api_router.include_router(locations.router, prefix="/locations", tags=["Location
 
 # Categories (Singularities, Lostbelts)
 api_router.include_router(categories.router, prefix="/categories", tags=["Categories"])
+
+# Showcase/Archive endpoints (FGO + Pan-Human History)
+api_router.include_router(showcases.router, prefix="/showcases", tags=["Showcases"])
 
 # Search endpoints (Basic/Advanced)
 api_router.include_router(search.router, prefix="/search", tags=["Search"])

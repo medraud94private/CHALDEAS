@@ -1,0 +1,26 @@
+=== 필터 없이: 고대 전투 ===
+Sources: 3
+  Title: Antigonid–Nabataean confrontations
+Description: ancient war
+Date: 311 BCE...
+  Title: Battle of Bi
+Description: battle
+Date: 596 BCE
+Category: battle...
+  Title: Siege of Babylon
+Description: ancient battle
+Date: 688 BCE
+Category: batt...
+
+=== 카테고리=battle, 시대=-500~0 ===
+Sources: 3
+  Title: Battle of Mount Olympus
+Description: 188 BCE battle
+Date: 188 BCE
+Categor...
+  Title: Siege of Eion
+Date: 476 BCE
+Category: battle...
+  Title: Battle of Mount Lycaeum
+Description: 227 BCE battle in ancient Greece
+Dat...

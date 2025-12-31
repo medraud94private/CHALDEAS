@@ -32,8 +32,8 @@ class BibliothecaAugustanaCollector:
     """
 
     BASE_URL = "https://www.hs-augsburg.de/~harsch/augustana.html"
-    GRAECA_URL = "https://www.hs-augsburg.de/~harsch/graeca/g_alpha.html"
-    LATINA_URL = "https://www.hs-augsburg.de/~harsch/latina/l_alpha.html"
+    GRAECA_URL = "https://www.hs-augsburg.de/~harsch/graeca/Auctores/g_alpha.html"
+    LATINA_URL = "https://www.hs-augsburg.de/~harsch/a_alpha.html"
 
     def __init__(self, output_dir: Path):
         self.output_dir = output_dir

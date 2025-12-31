@@ -1,0 +1,148 @@
+[
+  {
+    "id": "history-crusades",
+    "type": "article",
+    "title": "The Crusades",
+    "title_ko": "십자군 전쟁",
+    "title_ja": "十字軍",
+    "subtitle": "Holy Wars that shaped medieval Europe and the Middle East",
+    "subtitle_ko": "중세 유럽과 중동을 형성한 성전",
+    "subtitle_ja": "中世ヨーロッパと中東を形作った聖戦",
+    "era": "Medieval",
+    "year": 1095,
+    "location": "Europe / Middle East",
+    "description": "The Crusades were a series of religious wars initiated by the Latin Church to recover the Holy Land.",
+    "description_ko": "십자군 전쟁은 라틴 교회가 성지를 되찾기 위해 시작한 일련의 종교 전쟁이었다.",
+    "description_ja": "十字軍は、聖地を奪還するためにラテン教会が開始した一連の宗教戦争だった。",
+    "sections": [
+      {
+        "title": "Origins",
+        "title_ko": "기원",
+        "title_ja": "起源",
+        "content": "In 1095, Pope Urban II called for a military expedition at the Council of Clermont.",
+        "content_ko": "1095년, 교황 우르바노 2세가 클레르몽 공의회에서 군사 원정을 촉구했다.",
+        "content_ja": "1095年、教皇ウルバヌス2世がクレルモン公会議で軍事遠征を呼びかけた。"
+      },
+      {
+        "title": "Major Crusades",
+        "title_ko": "주요 십자군",
+        "title_ja": "主要な十字軍",
+        "content": "The First Crusade captured Jerusalem. The Third saw Richard the Lionheart face Saladin.",
+        "content_ko": "제1차 십자군은 예루살렘을 점령했다. 제3차에서는 사자심왕 리처드가 살라딘과 대결했다.",
+        "content_ja": "第1回十字軍はエルサレムを占領した。第3回では獅子心王リチャードがサラディンと対峙した。"
+      }
+    ],
+    "historical_basis": "Primary sources include chronicles from both Christian and Islamic perspectives.",
+    "related_servants": [
+      {"name": "Richard I", "class": "Saber", "rarity": 5},
+      {"name": "Saint George", "class": "Rider", "rarity": 2}
+    ],
+    "related_event_ids": [],
+    "sources": ["Chronicles of the Crusades", "Arab historians"]
+  },
+  {
+    "id": "history-alexander",
+    "type": "article",
+    "title": "Alexander the Great",
+    "title_ko": "알렉산드로스 대왕",
+    "title_ja": "アレクサンドロス大王",
+    "subtitle": "The conqueror who forged the largest empire in ancient history",
+    "subtitle_ko": "고대 역사상 최대 제국을 세운 정복자",
+    "subtitle_ja": "古代史上最大の帝国を築いた征服者",
+    "era": "Classical",
+    "year": -356,
+    "location": "Macedonia / Asia",
+    "description": "Alexander III of Macedon created one of the largest empires in history by age thirty.",
+    "description_ko": "마케도니아의 알렉산드로스 3세는 서른 살에 역사상 최대 제국 중 하나를 건설했다.",
+    "description_ja": "マケドニアのアレクサンドロス3世は30歳までに史上最大の帝国の一つを築いた。",
+    "sections": [
+      {
+        "title": "Rise to Power",
+        "title_ko": "권력 장악",
+        "title_ja": "権力掌握",
+        "content": "Tutored by Aristotle, Alexander succeeded Philip II at age 20.",
+        "content_ko": "아리스토텔레스에게 사사받은 알렉산드로스는 20세에 필리포스 2세의 뒤를 이었다.",
+        "content_ja": "アリストテレスに師事したアレクサンドロスは20歳でフィリッポス2世を継いだ。"
+      },
+      {
+        "title": "Conquests",
+        "title_ko": "정복",
+        "title_ja": "征服",
+        "content": "Key battles include Granicus (334 BC), Issus (333 BC), Gaugamela (331 BC).",
+        "content_ko": "주요 전투로는 그라니코스(기원전 334년), 이수스(기원전 333년), 가우가멜라(기원전 331년)가 있다.",
+        "content_ja": "主要な戦いにはグラニコス（紀元前334年）、イッソス（紀元前333年）、ガウガメラ（紀元前331年）がある。"
+      }
+    ],
+    "historical_basis": "Arrian's Anabasis and Plutarch's Life of Alexander are primary sources.",
+    "related_servants": [
+      {"name": "Iskandar", "class": "Rider", "rarity": 5},
+      {"name": "Darius III", "class": "Berserker", "rarity": 3}
+    ],
+    "related_event_ids": [],
+    "sources": ["Arrian - Anabasis", "Plutarch - Life of Alexander"]
+  },
+  {
+    "id": "history-kobe-earthquake",
+    "type": "article",
+    "title": "The Great Hanshin Earthquake",
+    "title_ko": "한신·아와지 대지진",
+    "title_ja": "阪神・淡路大震災",
+    "subtitle": "The disaster that reshaped modern Japan's disaster preparedness",
+    "subtitle_ko": "현대 일본의 재난 대비를 재편한 재해",
+    "subtitle_ja": "現代日本の防災を再編した災害",
+    "era": "Contemporary",
+    "year": 1995,
+    "location": "Kobe, Japan",
+    "description": "On January 17, 1995, at 5:46 AM, a magnitude 6.9 earthquake struck the southern part of Hyogo Prefecture, Japan. The Great Hanshin Earthquake killed 6,434 people, injured over 43,000, and left more than 300,000 homeless. Kobe, a major port city, suffered catastrophic damage—highways collapsed, buildings crumbled, and fires raged for days across the city. The disaster exposed critical weaknesses in Japan's earthquake preparedness and led to sweeping reforms in building codes, emergency response, and volunteer coordination.",
+    "description_ko": "1995년 1월 17일 오전 5시 46분, 규모 6.9의 지진이 일본 효고현 남부를 강타했다. 한신·아와지 대지진으로 6,434명이 사망하고 43,000명 이상이 부상했으며 300,000명 이상이 이재민이 되었다. 주요 항구도시 고베는 참혹한 피해를 입었다—고속도로가 붕괴되고, 건물이 무너지며, 화재가 며칠 동안 도시 전역에서 타올랐다. 이 재난은 일본의 지진 대비에서 중대한 약점을 드러냈고, 건축 기준, 비상 대응, 자원봉사 조정에 광범위한 개혁을 이끌어냈다.",
+    "description_ja": "1995年1月17日午前5時46分、マグニチュード6.9の地震が兵庫県南部を襲った。阪神・淡路大震災により6,434人が死亡、43,000人以上が負傷し、30万人以上が家を失った。主要港湾都市の神戸は壊滅的な被害を受けた—高速道路が倒壊し、建物が崩れ、火災が何日も街中で燃え続けた。この災害は日本の地震対策における重大な弱点を露呈し、建築基準、緊急対応、ボランティア調整の広範な改革につながった。",
+    "sections": [
+      {
+        "title": "The City of Kobe",
+        "title_ko": "고베 시",
+        "title_ja": "神戸市",
+        "content": "Kobe is a major port city located between the Rokko Mountains and Osaka Bay in Hyogo Prefecture. Since opening to foreign trade in 1868, Kobe has been one of Japan's most cosmopolitan cities, known for its European-style architecture, Chinatown (Nankinmachi), and world-famous Kobe beef. The city's hillside neighborhoods and port district give it a distinctive character unlike any other Japanese city. This unique geography—mountains behind, sea in front—is often cited as the model for Fuyuki City in the Fate series.",
+        "content_ko": "고베는 효고현의 롯코 산맥과 오사카 만 사이에 위치한 주요 항구도시다. 1868년 외국 무역에 개항한 이래, 고베는 유럽풍 건축물, 차이나타운(난킨마치), 세계적으로 유명한 고베 소고기로 알려진 일본에서 가장 국제적인 도시 중 하나가 되었다. 언덕 위 주거지역과 항구 지구는 다른 일본 도시와 다른 독특한 특성을 부여한다. 이 독특한 지형—뒤로는 산, 앞으로는 바다—은 종종 Fate 시리즈의 후유키 시의 모델로 인용된다.",
+        "content_ja": "神戸は兵庫県の六甲山地と大阪湾の間に位置する主要港湾都市である。1868年の外国貿易開港以来、神戸はヨーロッパ風の建築、中華街（南京町）、世界的に有名な神戸牛で知られる日本で最も国際的な都市の一つとなった。丘陵地の住宅街と港湾地区は、他の日本の都市とは異なる独特の特徴を与えている。この独特の地形—背後に山、前方に海—はしばしばFateシリーズの冬木市のモデルとして挙げられる。"
+      },
+      {
+        "title": "The Earthquake and Its Immediate Impact",
+        "title_ko": "지진과 즉각적인 영향",
+        "title_ja": "地震とその直接的影響",
+        "content": "The earthquake struck along the Nojima Fault at 5:46 AM local time. The shallow depth (16 km) and proximity to densely populated areas made it particularly destructive. The iconic image of the collapsed Hanshin Expressway became a symbol of the disaster. Over 100,000 buildings were completely destroyed, and another 100,000 were severely damaged. The fires that broke out—fueled by gas leaks and broken water mains that couldn't be extinguished—burned for days, creating an apocalyptic landscape of flames against the morning sky.",
+        "content_ko": "지진은 현지 시각 오전 5시 46분에 노지마 단층을 따라 발생했다. 얕은 진원 깊이(16km)와 인구 밀집 지역에 대한 근접성이 특히 파괴적인 결과를 낳았다. 붕괴된 한신 고속도로의 상징적인 이미지는 재난의 상징이 되었다. 10만 채 이상의 건물이 완전히 파괴되었고, 또 다른 10만 채가 심각하게 손상되었다. 가스 누출과 끌 수 없었던 파열된 수도관으로 인해 며칠 동안 타오른 화재는 아침 하늘을 배경으로 불길의 종말론적 풍경을 만들어냈다.",
+        "content_ja": "地震は現地時間午前5時46分に野島断層に沿って発生した。浅い震源深度（16km）と人口密集地域への近さが特に破壊的な結果をもたらした。倒壊した阪神高速道路の象徴的な映像は災害の象徴となった。10万棟以上の建物が完全に倒壊し、さらに10万棟が深刻な被害を受けた。ガス漏れと消火できなかった破裂した水道管により何日も燃え続けた火災は、朝焼けを背景に炎の黙示録的風景を作り出した。"
+      },
+      {
+        "title": "Connection to Fate Series: Fuyuki City",
+        "title_ko": "Fate 시리즈와의 연결: 후유키 시",
+        "title_ja": "Fateシリーズとの繋がり：冬木市",
+        "content": "The Fate series' fictional Fuyuki City is widely believed to be modeled after Kobe. The similarities are striking: both are port cities with mountains behind them, both have distinctive bridges and hillside residential areas, and both feature a mix of traditional and Western architecture. Most significantly, the 'Fire of Fuyuki' in Fate/Zero—where the city burns at the end of the Fourth Holy Grail War in 1994—bears an eerie resemblance to the fires that would devastate Kobe just months later in January 1995. Whether coincidence or inspiration, the image of a burning city has become central to the Fate narrative.",
+        "content_ko": "Fate 시리즈의 가상 도시 후유키는 고베를 모델로 한 것으로 널리 알려져 있다. 유사점이 놀랍다: 둘 다 뒤로 산이 있는 항구도시이고, 둘 다 특징적인 다리와 언덕 위 주거지역이 있으며, 둘 다 전통과 서양 건축의 조화를 특징으로 한다. 가장 중요한 것은, 1994년 제4차 성배전쟁 말미에 도시가 불타는 Fate/Zero의 '후유키의 화재'가 불과 몇 달 뒤인 1995년 1월 고베를 황폐화시킨 화재와 섬뜩할 정도로 닮았다는 점이다. 우연인지 영감인지, 불타는 도시의 이미지는 Fate 서사의 중심이 되었다.",
+        "content_ja": "Fateシリーズの架空の都市・冬木は神戸をモデルにしたと広く考えられている。類似点は驚くべきものだ：どちらも背後に山がある港湾都市であり、どちらも特徴的な橋と丘陵地の住宅地があり、どちらも伝統と西洋建築の融合が特徴である。最も重要なのは、1994年の第四次聖杯戦争の終わりに街が燃えるFate/Zeroの「冬木の大火災」が、そのわずか数ヶ月後の1995年1月に神戸を壊滅させた火災と不気味なほど似ているということだ。偶然か着想か、燃える街のイメージはFateの物語の中心となった。"
+      },
+      {
+        "title": "Legacy and Reconstruction",
+        "title_ko": "유산과 재건",
+        "title_ja": "遺産と復興",
+        "content": "The earthquake transformed Japan's approach to disaster management. Building codes were strengthened, the Self-Defense Forces' disaster response protocols were revised, and Japan established January 17 as Disaster Prevention and Volunteerism Day. Kobe's reconstruction took a decade, but the city emerged with improved infrastructure and a renewed sense of community. The Kobe Luminarie, an annual light festival, was established in 1995 to commemorate the victims and celebrate the city's recovery. Today, Kobe stands as a testament to resilience—a city that rose from the ashes much as its fictional counterpart Fuyuki would in the Fate narrative.",
+        "content_ko": "지진은 일본의 재난 관리 접근 방식을 변화시켰다. 건축 기준이 강화되고, 자위대의 재난 대응 절차가 수정되었으며, 일본은 1월 17일을 방재 및 자원봉사의 날로 제정했다. 고베의 재건에는 10년이 걸렸지만, 도시는 개선된 인프라와 새로워진 공동체 의식으로 부활했다. 연례 빛 축제인 고베 루미나리에는 희생자를 추모하고 도시의 회복을 축하하기 위해 1995년에 시작되었다. 오늘날 고베는 회복력의 증거로 서 있다—Fate 서사에서 가상의 후유키가 그러하듯 잿더미에서 일어선 도시.",
+        "content_ja": "地震は日本の防災への取り組みを一変させた。建築基準が強化され、自衛隊の災害対応手順が見直され、日本は1月17日を「防災とボランティアの日」と定めた。神戸の復興には10年かかったが、街は改善されたインフラと新たなコミュニティ意識を持って蘇った。毎年開催される光の祭典「神戸ルミナリエ」は、犠牲者を追悼し街の復興を祝うため1995年に始まった。今日、神戸は回復力の証として立っている—Fateの物語で架空の冬木がそうであるように、灰の中から蘇った街。"
+      },
+      {
+        "title": "Kobe in History and Culture",
+        "title_ko": "역사와 문화 속의 고베",
+        "title_ja": "歴史と文化の中の神戸",
+        "content": "Kobe's history extends far beyond the earthquake. The city was one of the first ports opened to foreign trade after Japan's 200-year isolation ended in 1868. This international heritage is visible in the Kitano-cho district, where Western-style houses built by foreign merchants still stand. Kobe is also home to one of Japan's oldest Shinto shrines, Ikuta Shrine, mentioned in the Nihon Shoki (720 AD). The city's port has been crucial to Japan's trade for over a millennium, and its strategic location made it a target during World War II. Through all these transformations, Kobe has maintained its unique character as a bridge between East and West.",
+        "content_ko": "고베의 역사는 지진을 훨씬 넘어선다. 이 도시는 1868년 일본의 200년 쇄국이 끝난 후 처음으로 외국 무역에 개방된 항구 중 하나였다. 이 국제적 유산은 외국 상인들이 지은 서양식 가옥이 여전히 남아있는 기타노초 지구에서 볼 수 있다. 고베는 일본서기(720년)에 언급된 일본에서 가장 오래된 신사 중 하나인 이쿠타 신사의 고향이기도 하다. 도시의 항구는 천 년 넘게 일본 무역에 중요했으며, 전략적 위치로 인해 제2차 세계대전 중 목표가 되었다. 이 모든 변화를 통해 고베는 동서양의 가교로서 독특한 특성을 유지해왔다.",
+        "content_ja": "神戸の歴史は地震をはるかに超えて広がる。この街は1868年に日本の200年間の鎖国が終わった後、最初に外国貿易に開かれた港の一つだった。この国際的な遺産は、外国商人が建てた洋館が今も残る北野町地区で見ることができる。神戸は日本書紀（720年）に言及される日本最古の神社の一つである生田神社の所在地でもある。街の港は千年以上にわたり日本の貿易に不可欠であり、その戦略的位置により第二次世界大戦中は標的となった。これらすべての変遷を通じて、神戸は東西の架け橋としての独自の特性を維持してきた。"
+      }
+    ],
+    "historical_basis": "The Great Hanshin Earthquake is one of the most documented disasters in Japanese history, with extensive records, photographs, and survivor testimonies.",
+    "historical_basis_ko": "한신·아와지 대지진은 방대한 기록, 사진, 생존자 증언이 있는 일본 역사상 가장 잘 기록된 재해 중 하나다.",
+    "historical_basis_ja": "阪神・淡路大震災は、膨大な記録、写真、生存者の証言がある日本史上最も詳細に記録された災害の一つである。",
+    "related_servants": [],
+    "related_event_ids": [],
+    "sources": ["Japanese Cabinet Office records", "Kobe City Archives", "Earthquake Engineering Research Institute"]
+  }
+]

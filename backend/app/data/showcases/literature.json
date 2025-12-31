@@ -1,0 +1,87 @@
+[
+  {
+    "id": "literature-iliad",
+    "type": "article",
+    "title": "The Iliad",
+    "title_ko": "일리아스",
+    "title_ja": "イリアス",
+    "subtitle": "Homer's epic poem of the Trojan War",
+    "subtitle_ko": "호메로스의 트로이 전쟁 서사시",
+    "subtitle_ja": "ホメロスのトロイア戦争叙事詩",
+    "era": "Classical",
+    "year": -750,
+    "location": "Greece / Troy",
+    "description": "The Iliad is an ancient Greek epic poem set during the Trojan War, telling of the quarrel between Agamemnon and Achilles.",
+    "description_ko": "일리아스는 트로이 전쟁을 배경으로 한 고대 그리스 서사시로, 아가멤논과 아킬레우스 사이의 다툼을 다룬다.",
+    "description_ja": "イリアスはトロイア戦争を舞台にした古代ギリシャの叙事詩で、アガメムノンとアキレウスの争いを描く。",
+    "sections": [
+      {
+        "title": "The Story",
+        "title_ko": "이야기",
+        "title_ja": "物語",
+        "content": "The poem covers weeks in the final year of the Trojan War, from Achilles' anger to Hector's funeral.",
+        "content_ko": "이 시는 트로이 전쟁 마지막 해의 몇 주를 다루며, 아킬레우스의 분노부터 헥토르의 장례까지 이어진다.",
+        "content_ja": "この詩はトロイア戦争の最終年の数週間を描き、アキレウスの怒りからヘクトールの葬儀までを語る。"
+      },
+      {
+        "title": "Major Characters",
+        "title_ko": "주요 인물",
+        "title_ja": "主要人物",
+        "content": "Greek heroes include Achilles, Odysseus, Ajax. Trojans include Hector, Paris, Priam.",
+        "content_ko": "그리스 영웅으로는 아킬레우스, 오디세우스, 아이아스가 있고, 트로이 측에는 헥토르, 파리스, 프리아모스가 있다.",
+        "content_ja": "ギリシャの英雄にはアキレウス、オデュッセウス、アイアスがいる。トロイア側にはヘクトール、パリス、プリアモスがいる。"
+      }
+    ],
+    "historical_basis": "Archaeological findings at Hisarlik support the existence of ancient Troy.",
+    "related_servants": [
+      {"name": "Achilles", "class": "Rider", "rarity": 5},
+      {"name": "Hector", "class": "Lancer", "rarity": 4},
+      {"name": "Paris", "class": "Archer", "rarity": 4}
+    ],
+    "related_event_ids": [],
+    "sources": ["Homer - Iliad", "Ancient Greek tradition"]
+  },
+  {
+    "id": "literature-arthurian",
+    "type": "article",
+    "title": "Arthurian Legend",
+    "title_ko": "아서왕 전설",
+    "title_ja": "アーサー王伝説",
+    "subtitle": "The Matter of Britain and the Knights of the Round Table",
+    "subtitle_ko": "브리튼의 이야기와 원탁의 기사들",
+    "subtitle_ja": "ブリテンの物語と円卓の騎士たち",
+    "era": "Medieval",
+    "year": 500,
+    "location": "Britain",
+    "description": "The legends of King Arthur, Camelot, and the Knights of the Round Table.",
+    "description_ko": "아서왕, 카멜롯, 그리고 원탁의 기사들에 관한 전설.",
+    "description_ja": "アーサー王、キャメロット、そして円卓の騎士たちの伝説。",
+    "sections": [
+      {
+        "title": "Historical Basis",
+        "title_ko": "역사적 근거",
+        "title_ja": "歴史的根拠",
+        "content": "If Arthur existed, he likely lived around 500 AD as a Romano-British war leader.",
+        "content_ko": "아서가 실존했다면, 500년경 로마계 브리튼 군사 지도자였을 것이다.",
+        "content_ja": "アーサーが実在したなら、500年頃にローマ系ブリトン人の軍事指導者として生きていたと思われる。"
+      },
+      {
+        "title": "Key Elements",
+        "title_ko": "핵심 요소",
+        "title_ja": "主要な要素",
+        "content": "Excalibur, Merlin, the Round Table, the Holy Grail, and the Lancelot-Guinevere-Arthur triangle.",
+        "content_ko": "엑스칼리버, 멀린, 원탁, 성배, 그리고 란슬롯-귀네비어-아서의 삼각관계.",
+        "content_ja": "エクスカリバー、マーリン、円卓、聖杯、そしてランスロット・グィネヴィア・アーサーの三角関係。"
+      }
+    ],
+    "historical_basis": "Geoffrey of Monmouth's Historia Regum Britanniae popularized the legends.",
+    "related_servants": [
+      {"name": "Artoria Pendragon", "class": "Saber", "rarity": 5},
+      {"name": "Merlin", "class": "Caster", "rarity": 5},
+      {"name": "Lancelot", "class": "Saber", "rarity": 4},
+      {"name": "Mordred", "class": "Saber", "rarity": 5}
+    ],
+    "related_event_ids": [],
+    "sources": ["Geoffrey of Monmouth", "Thomas Malory - Le Morte d'Arthur"]
+  }
+]

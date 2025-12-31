@@ -93,6 +93,8 @@ class GutenbergCollector:
         print(f"Found {len(filtered)} relevant books")
 
         # Collect limited number
+        downloaded = 0
+        skipped = 0
         for book in filtered[:limit]:
             book_id = book.get("Text#")
             title = book.get("Title", "Unknown")
@@ -100,16 +102,28 @@ class GutenbergCollector:
             if not book_id:
                 continue
 
-            print(f"Downloading: {title[:50]}...")
+            output_file = self.output_dir / f"pg{book_id}.txt"
+
+            # Skip if already downloaded
+            if output_file.exists():
+                skipped += 1
+                continue
+
+            # Safe print (handle unicode issues on Windows)
+            safe_title = title[:50].encode('ascii', 'replace').decode('ascii')
+            print(f"[{downloaded+skipped+1}/{min(limit, len(filtered))}] Downloading: {safe_title}...")
+
             text = await self.get_book(int(book_id))
 
             if text:
-                output_file = self.output_dir / f"pg{book_id}.txt"
                 with open(output_file, "w", encoding="utf-8") as f:
                     f.write(text)
+                downloaded += 1
 
             # Rate limiting
             await asyncio.sleep(0.5)
+
+        print(f"Downloaded: {downloaded}, Skipped (existing): {skipped}")
 
     async def close(self):
         await self.client.aclose()

@@ -596,6 +596,18 @@
   opacity: 0.8;
 }
 
+/* Loading State */
+.showcase-loading {
+  padding: 2rem;
+  text-align: center;
+}
+
+.showcase-loading .loading-text {
+  font-size: 0.75rem;
+  color: var(--chaldea-text);
+  letter-spacing: 0.1em;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .showcase-overlay {
