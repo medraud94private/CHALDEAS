@@ -3,7 +3,7 @@
  * Split into FGO content and Pan-Human History content
  * Now fetches from backend API with i18n support
  */
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useQuery } from '@tanstack/react-query'
 import type { ShowcaseContent } from './ShowcaseModal'
