@@ -1,6 +1,8 @@
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8100'
+// Production backend URL (fallback from env var)
+const API_URL = import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD ? 'https://chaldeas-backend-uh6woizycq-du.a.run.app' : 'http://localhost:8100')
 
 export const api = axios.create({
   baseURL: `${API_URL}/api/v1`,
