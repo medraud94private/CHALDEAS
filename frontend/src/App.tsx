@@ -50,25 +50,21 @@ function App() {
     setSelectedEvent(null)
   }
 
-  // Fetch ALL events for sidebar (not time-filtered)
+  // Fetch events for sidebar - filtered by current era
+  const TIME_RANGE = 50 // ±50 years for nearby era filter
   const { data: allEventsData } = useQuery({
-    queryKey: ['all-events'],
-    queryFn: () => api.get('/events', { params: { limit: 15000 } }),
+    queryKey: ['sidebar-events', currentYear, showAllEras],
+    queryFn: () => api.get('/events', {
+      params: showAllEras
+        ? { limit: 2000 }  // All eras: limited
+        : { year_start: currentYear - TIME_RANGE, year_end: currentYear + TIME_RANGE, limit: 1000 }
+    }),
     select: (res) => res.data.items,
   })
 
-  // Filter events for sidebar list
-  const TIME_RANGE = 10 // ±10 years for nearby era filter
+  // Filter events for sidebar list (category & search only - era already filtered by API)
   const filteredEvents = (allEventsData || [])
     .filter((e: Event) => {
-      // Era filter: nearby (±10 years) or all
-      if (!showAllEras) {
-        const start = e.date_start
-        const end = e.date_end || start
-        if (currentYear < start - TIME_RANGE || currentYear > end + TIME_RANGE) {
-          return false
-        }
-      }
       // Category filter
       if (selectedCategory !== 'all') {
         const cat = typeof e.category === 'string' ? e.category : e.category?.slug
