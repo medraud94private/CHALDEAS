@@ -29,7 +29,7 @@ function App() {
   const [globeStyle, setGlobeStyle] = useState('default')
   const [isChatOpen, setIsChatOpen] = useState(false)
   const [initialChatQuery, setInitialChatQuery] = useState<string | null>(null)
-  const [showAllEras, setShowAllEras] = useState(true) // Toggle for sidebar: all eras vs nearby
+  const [showAllEras, setShowAllEras] = useState(false) // Toggle for sidebar: nearby era by default
   const [showcaseContent, setShowcaseContent] = useState<ShowcaseContent | null>(null)
   const [isShowcaseOpen, setIsShowcaseOpen] = useState(false)
 
