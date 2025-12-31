@@ -9,12 +9,14 @@ from app.models.location import Location
 from app.models.event import Event
 from app.models.person import Person
 from app.models.source import Source
+from app.models.master import Master, SearchLog
 from app.models.associations import (
     event_locations,
     event_persons,
     event_sources,
     person_sources,
     person_relationships,
+    event_relationships,
 )
 
 __all__ = [
@@ -24,9 +26,12 @@ __all__ = [
     "Event",
     "Person",
     "Source",
+    "Master",
+    "SearchLog",
     "event_locations",
     "event_persons",
     "event_sources",
     "person_sources",
     "person_relationships",
+    "event_relationships",
 ]

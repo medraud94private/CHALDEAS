@@ -6,7 +6,14 @@
 
 ```
 docs/
-├── README.md                    # 이 파일
+├── README.md                    # 이 파일 (문서 목차)
+│
+├── 배포 & 운영 가이드
+│   ├── CLOUD_OVERVIEW.md        # 클라우드 배포 개요
+│   ├── DEPLOYMENT.md            # 상세 배포 가이드 (GCP)
+│   ├── COST_ANALYSIS.md         # 비용 분석
+│   └── KNOWLEDGE_SHARING.md     # 지식 공유 가이드
+│
 ├── implemented/                 # 구현 완료된 기능 문서
 │   ├── ARCHITECTURE.md          # 시스템 아키텍처
 │   ├── DATABASE.md              # 데이터베이스 스키마
@@ -23,6 +30,19 @@ docs/
     ├── CONTRIBUTING.md          # 기여 가이드
     └── DATA_FORMAT.md           # 데이터 형식 가이드
 ```
+
+---
+
+## 배포 & 운영 가이드
+
+| 문서 | 설명 |
+|------|------|
+| [CLOUD_OVERVIEW.md](./CLOUD_OVERVIEW.md) | 클라우드 배포 옵션 비교, 아키텍처 개요 |
+| [DEPLOYMENT.md](./DEPLOYMENT.md) | Google Cloud Run 배포 상세 가이드 |
+| [COST_ANALYSIS.md](./COST_ANALYSIS.md) | 서비스별 비용 분석, 최적화 전략 |
+| [KNOWLEDGE_SHARING.md](./KNOWLEDGE_SHARING.md) | 기술 지식 공유 방법 가이드 |
+
+---
 
 ## 프로젝트 개요
 

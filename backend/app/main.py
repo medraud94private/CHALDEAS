@@ -4,6 +4,10 @@ CHALDEAS - Main FastAPI Application
 The entry point for the Chaldeas historical knowledge system.
 Implements World-Centric Architecture with FGO-inspired naming.
 """
+# Load environment variables first
+from dotenv import load_dotenv
+load_dotenv("../.env")
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 

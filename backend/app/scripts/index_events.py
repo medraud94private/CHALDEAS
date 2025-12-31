@@ -24,41 +24,46 @@ def load_events_from_json() -> list:
     """Load events from JSON data files."""
     events = []
 
-    # Try different possible paths
-    data_paths = [
-        Path("data/json/events.json"),
-        Path("../data/json/events.json"),
-        Path(__file__).parent.parent.parent.parent / "data" / "json" / "events.json",
+    # Project root
+    project_root = Path(__file__).parent.parent.parent.parent
+
+    # Processed data paths (main sources)
+    processed_paths = [
+        project_root / "data" / "processed" / "events_wikidata.json",
+        project_root / "data" / "processed" / "events_dbpedia.json",
     ]
 
-    for path in data_paths:
+    for path in processed_paths:
         if path.exists():
             print(f"Loading events from: {path}")
-            with open(path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                if isinstance(data, list):
-                    events = data
-                elif isinstance(data, dict) and 'events' in data:
-                    events = data['events']
-            break
-
-    # Also try wikidata events
-    wikidata_paths = [
-        Path("data/json/wikidata_events.json"),
-        Path("../data/json/wikidata_events.json"),
-        Path(__file__).parent.parent.parent.parent / "data" / "json" / "wikidata_events.json",
-    ]
-
-    for path in wikidata_paths:
-        if path.exists():
-            print(f"Loading wikidata events from: {path}")
             with open(path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 if isinstance(data, list):
                     events.extend(data)
                 elif isinstance(data, dict) and 'events' in data:
                     events.extend(data['events'])
-            break
+                elif isinstance(data, dict) and 'data' in data:
+                    events.extend(data['data'])
+            print(f"  Loaded {len(events)} events so far")
+
+    # Raw wikidata events (backup)
+    raw_paths = [
+        project_root / "data" / "raw" / "wikidata" / "wikidata_events.json",
+    ]
+
+    if not events:
+        for path in raw_paths:
+            if path.exists():
+                print(f"Loading raw events from: {path}")
+                with open(path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    if isinstance(data, list):
+                        events.extend(data)
+                    elif isinstance(data, dict):
+                        for key in ['events', 'results', 'data', 'items']:
+                            if key in data:
+                                events.extend(data[key])
+                                break
 
     return events
 

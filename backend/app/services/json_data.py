@@ -14,8 +14,18 @@ class JSONDataService:
 
     def __init__(self, data_dir: Path = None):
         if data_dir is None:
-            # Default path relative to backend
-            data_dir = Path(__file__).parent.parent.parent.parent / "data" / "processed"
+            # Try multiple paths for flexibility (local dev vs Docker)
+            possible_paths = [
+                Path(__file__).parent.parent.parent.parent / "data" / "processed",  # Local dev
+                Path("/app/data/processed"),  # Docker absolute
+                Path("./data/processed"),  # Docker relative
+            ]
+            for path in possible_paths:
+                if path.exists():
+                    data_dir = path
+                    break
+            else:
+                data_dir = possible_paths[0]  # Fallback
 
         self.data_dir = data_dir
         self._events = None

@@ -30,9 +30,9 @@ export function WikiPanel({ isOpen, event, onClose }: WikiPanelProps) {
         <div className="flex items-center gap-3 mb-4">
           <span
             className="px-2 py-1 rounded text-sm"
-            style={{ backgroundColor: event.category?.color || '#3B82F6' }}
+            style={{ backgroundColor: typeof event.category === 'object' ? event.category?.color : '#3B82F6' }}
           >
-            {event.category?.name || 'Event'}
+            {typeof event.category === 'object' ? event.category?.name : (event.category || 'Event')}
           </span>
           <span className="text-gray-400">{event.date_display}</span>
         </div>

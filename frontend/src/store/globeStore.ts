@@ -7,6 +7,13 @@ interface CameraPosition {
   altitude: number
 }
 
+interface HighlightedLocation {
+  title: string
+  lat: number
+  lng: number
+  year?: number
+}
+
 interface GlobeState {
   // Data
   events: Event[]
@@ -18,6 +25,7 @@ interface GlobeState {
   hoveredEvent: Event | null
   cameraPosition: CameraPosition
   autoRotate: boolean
+  highlightedLocations: HighlightedLocation[]
 
   // Filters
   selectedCategories: number[]
@@ -34,6 +42,8 @@ interface GlobeState {
   toggleCategory: (categoryId: number) => void
   setMinImportance: (importance: number) => void
   flyToLocation: (lat: number, lng: number) => void
+  setHighlightedLocations: (locs: HighlightedLocation[]) => void
+  clearHighlightedLocations: () => void
 }
 
 export const useGlobeStore = create<GlobeState>((set, get) => ({
@@ -45,6 +55,7 @@ export const useGlobeStore = create<GlobeState>((set, get) => ({
   hoveredEvent: null,
   cameraPosition: { lat: 30, lng: 20, altitude: 2.5 },
   autoRotate: true,
+  highlightedLocations: [],
   selectedCategories: [],
   minImportance: 1,
 
@@ -85,4 +96,17 @@ export const useGlobeStore = create<GlobeState>((set, get) => ({
     set({
       cameraPosition: { lat, lng, altitude: 1.5 },
     }),
+
+  setHighlightedLocations: (locs) => {
+    set({ highlightedLocations: locs })
+    // Auto fly to first highlighted location
+    if (locs.length > 0) {
+      set({
+        cameraPosition: { lat: locs[0].lat, lng: locs[0].lng, altitude: 1.5 },
+        autoRotate: false,
+      })
+    }
+  },
+
+  clearHighlightedLocations: () => set({ highlightedLocations: [] }),
 }))

@@ -10,13 +10,8 @@ export default defineConfig({
     },
   },
   server: {
-    port: 5173,
+    port: 5200,  // Fixed port for Chaldeas
     host: true,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8000',
-        changeOrigin: true,
-      },
-    },
+    strictPort: true,  // Fail if port is in use
   },
 })

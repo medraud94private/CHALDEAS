@@ -52,3 +52,16 @@ person_relationships = Table(
     Column("relationship_type", String(50)),  # teacher, student, rival, ally, family
     Column("description", Text),
 )
+
+# Event <-> Event (relationships) - 재귀적 그래프 누적용
+event_relationships = Table(
+    "event_relationships",
+    Base.metadata,
+    Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("from_event_id", Integer, ForeignKey("events.id", ondelete="CASCADE"), nullable=False, index=True),
+    Column("to_event_id", Integer, ForeignKey("events.id", ondelete="CASCADE"), nullable=False, index=True),
+    Column("relationship_type", String(50), nullable=False),  # causes, follows, part_of, related_to, opposes
+    Column("strength", Integer, default=3),  # 1-5: 관계 강도
+    Column("description", Text),
+    Column("source_query", String(500)),  # 이 관계를 발견한 검색 쿼리
+)

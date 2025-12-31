@@ -3,16 +3,24 @@
 @tailwind utilities;
 
 :root {
-  /* FGO Chaldeas Color Scheme */
-  --chaldea-bg: #0a0e17;
-  --chaldea-panel: #0d1520;
+  /* FGO Chaldeas Color Scheme - Enhanced */
+  --chaldea-bg: #050810;
+  --chaldea-panel: #0a1018;
+  --chaldea-panel-alt: #0d1520;
   --chaldea-border: #1a3a4a;
+  --chaldea-border-glow: #00d4ff40;
   --chaldea-cyan: #00d4ff;
   --chaldea-cyan-dim: #0a5a6a;
+  --chaldea-orange: #ff9500;
+  --chaldea-orange-dim: #6a4000;
   --chaldea-magenta: #ff3366;
+  --chaldea-gold: #ffd700;
   --chaldea-text: #8ba4b4;
   --chaldea-text-bright: #d0e8f0;
   --chaldea-green: #00ff88;
+
+  /* FGO Terminal Frame */
+  --frame-corner: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath d='M0 20V0h20' fill='none' stroke='%2300d4ff' stroke-width='2'/%3E%3C/svg%3E");
 }
 
 body {
@@ -46,12 +54,91 @@ body {
 .sidebar-header {
   padding: 1rem 1.25rem;
   border-bottom: 1px solid var(--chaldea-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+/* Language Selector */
+.language-selector {
+  position: relative;
+}
+
+.language-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: var(--chaldea-panel-alt);
+  border: 1px solid var(--chaldea-border);
+  border-radius: 4px;
+  color: var(--chaldea-text);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.language-btn:hover {
+  border-color: var(--chaldea-cyan);
+  color: var(--chaldea-cyan);
+}
+
+.lang-arrow {
+  font-size: 0.5rem;
+  opacity: 0.7;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  background: var(--chaldea-panel);
+  border: 1px solid var(--chaldea-border);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 100;
+  min-width: 100px;
+}
+
+.language-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  color: var(--chaldea-text);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.language-option:hover {
+  background: var(--chaldea-panel-alt);
+  color: var(--chaldea-cyan);
+}
+
+.language-option.active {
+  color: var(--chaldea-cyan);
+  background: var(--chaldea-cyan-dim);
+}
+
+.lang-native {
+  font-weight: 500;
+}
+
+.lang-code-small {
+  opacity: 0.6;
+  font-size: 0.65rem;
 }
 
 .logo-icon {
@@ -329,21 +416,41 @@ body {
   margin-top: 0.25rem;
 }
 
-/* Detail Panel - Overlay on right */
+/* Detail Panel - FGO Terminal Style */
 .detail-panel {
   position: fixed;
   top: 0;
   right: 0;
-  width: 400px;
+  width: 420px;
   height: 100vh;
-  background: rgba(13, 21, 32, 0.95);
-  backdrop-filter: blur(10px);
-  border-left: 1px solid var(--chaldea-border);
+  background: linear-gradient(135deg, rgba(10, 16, 24, 0.98), rgba(5, 8, 16, 0.98));
+  backdrop-filter: blur(20px);
+  border-left: 2px solid var(--chaldea-border);
   display: flex;
   flex-direction: column;
   transform: translateX(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 100;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5), inset 1px 0 0 var(--chaldea-border-glow);
+}
+
+.detail-panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 212, 255, 0.02) 2px,
+      rgba(0, 212, 255, 0.02) 4px
+    );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .detail-panel.hidden {
@@ -351,21 +458,44 @@ body {
   pointer-events: none;
 }
 
+/* Terminal Frame Corners */
+.detail-panel::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border-top: 2px solid var(--chaldea-orange);
+  border-right: 2px solid var(--chaldea-orange);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .detail-header {
-  padding: 1.25rem;
+  padding: 1.5rem;
   border-bottom: 1px solid var(--chaldea-border);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(0, 212, 255, 0.08), transparent);
 }
 
 .detail-meta {
   font-size: 0.7rem;
   color: var(--chaldea-text);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-transform: uppercase;
+}
+
+.detail-meta::before {
+  content: '◈';
+  color: var(--chaldea-orange);
 }
 
 .detail-year {
@@ -373,72 +503,244 @@ body {
 }
 
 .detail-year-number {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: var(--chaldea-cyan);
   line-height: 1;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  font-family: 'Orbitron', 'Inter', sans-serif;
 }
 
 .detail-year-era {
   font-size: 1rem;
-  color: var(--chaldea-text);
-  letter-spacing: 0.1em;
+  color: var(--chaldea-orange);
+  letter-spacing: 0.2em;
+  font-weight: 600;
 }
 
 .detail-title {
-  padding: 0 1.25rem;
-  margin-top: 1rem;
+  padding: 0 1.5rem;
+  margin-top: 1.25rem;
+  position: relative;
+  z-index: 2;
+}
+
+.detail-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--chaldea-cyan), var(--chaldea-orange));
 }
 
 .detail-title h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--chaldea-text-bright);
   margin: 0;
+  line-height: 1.4;
 }
 
 .detail-content {
   flex: 1;
-  padding: 1.25rem;
+  padding: 1.5rem;
   overflow-y: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .detail-description {
   font-size: 0.9rem;
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--chaldea-text);
+  margin-bottom: 1.5rem;
+}
+
+/* Related Events Section */
+.detail-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--chaldea-border);
+}
+
+.detail-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--chaldea-orange);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.detail-section-header::before {
+  content: '▸';
+}
+
+.related-events {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.related-event-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(0, 212, 255, 0.05);
+  border: 1px solid var(--chaldea-border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.related-event-item:hover {
+  background: rgba(0, 212, 255, 0.1);
+  border-color: var(--chaldea-cyan);
+}
+
+.related-event-item.before {
+  border-left: 3px solid var(--chaldea-magenta);
+}
+
+.related-event-item.after {
+  border-left: 3px solid var(--chaldea-green);
+}
+
+.related-event-year {
+  font-size: 0.7rem;
+  color: var(--chaldea-cyan);
+  font-weight: 600;
+  min-width: 60px;
+}
+
+.related-event-title {
+  font-size: 0.8rem;
+  color: var(--chaldea-text-bright);
+  flex: 1;
+}
+
+.related-event-type {
+  font-size: 0.65rem;
+  color: var(--chaldea-text);
+  padding: 0.125rem 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Persons Section */
+.related-persons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.person-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background: rgba(255, 149, 0, 0.1);
+  border: 1px solid var(--chaldea-orange-dim);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--chaldea-orange);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.person-tag:hover {
+  background: rgba(255, 149, 0, 0.2);
+  border-color: var(--chaldea-orange);
+}
+
+.person-tag::before {
+  content: '◉';
+  font-size: 0.5rem;
+}
+
+/* Sources Section */
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.source-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--chaldea-text);
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+}
+
+.source-item::before {
+  content: '📜';
+  font-size: 0.9rem;
+}
+
+.source-reliability {
+  margin-left: auto;
+  color: var(--chaldea-gold);
+  font-size: 0.65rem;
 }
 
 .detail-footer {
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.5rem;
   border-top: 1px solid var(--chaldea-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .detail-coords {
-  font-size: 0.75rem;
-  color: var(--chaldea-text);
-  font-family: monospace;
+  font-size: 0.7rem;
+  color: var(--chaldea-cyan);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.05em;
 }
 
 .detail-status {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--chaldea-green);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.detail-status::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--chaldea-green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 10px var(--chaldea-green);
 }
 
 .close-btn {
   position: absolute;
-  top: 0.75rem;
+  top: 1rem;
   left: 1rem;
-  width: 32px;
-  height: 32px;
-  background: rgba(13, 21, 32, 0.9);
+  width: 36px;
+  height: 36px;
+  background: rgba(5, 8, 16, 0.9);
   border: 1px solid var(--chaldea-cyan);
   border-radius: 4px;
   color: var(--chaldea-cyan);
@@ -454,70 +756,195 @@ body {
 .close-btn:hover {
   border-color: var(--chaldea-magenta);
   color: var(--chaldea-magenta);
+  background: rgba(255, 51, 102, 0.1);
 }
 
-/* Timeline (Bottom of globe section) */
+/* Ask SHEBA Button */
+.ask-sheba-btn {
+  width: 100%;
+  padding: 0.875rem;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(255, 149, 0, 0.15));
+  border: 1px solid var(--chaldea-cyan);
+  border-radius: 4px;
+  color: var(--chaldea-cyan);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.ask-sheba-btn:hover {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.25), rgba(255, 149, 0, 0.25));
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.ask-sheba-btn::before {
+  content: '◎';
+  font-size: 1.2rem;
+}
+
+/* Timeline (Bottom of globe section) - FGO Style */
 .timeline-container {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 20;
-  padding: 1.5rem 2rem;
-  background: linear-gradient(to top, rgba(10, 14, 23, 0.95), transparent);
+  padding: 1rem 2rem 1.5rem;
+  background: linear-gradient(to top,
+    rgba(5, 8, 16, 0.98) 0%,
+    rgba(5, 8, 16, 0.9) 60%,
+    transparent 100%
+  );
   pointer-events: auto;
+}
+
+/* Era Display */
+.era-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.era-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid;
+  border-radius: 4px;
+  position: relative;
+}
+
+.era-badge::before,
+.era-badge::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid currentColor;
+}
+
+.era-badge::before {
+  top: -4px;
+  left: -4px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.era-badge::after {
+  bottom: -4px;
+  right: -4px;
+  border-left: none;
+  border-top: none;
+}
+
+.era-name {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.era-name-ko {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  letter-spacing: 0.1em;
+}
+
+.era-context {
+  font-size: 0.7rem;
+  color: var(--chaldea-text);
+  letter-spacing: 0.05em;
+  text-align: center;
+  max-width: 400px;
 }
 
 .timeline-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .timeline-btn {
-  padding: 0.5rem 1rem;
-  background: rgba(0, 212, 255, 0.1);
+  padding: 0.625rem 1rem;
+  background: rgba(0, 0, 0, 0.6);
   border: 1px solid var(--chaldea-border);
   border-radius: 4px;
   color: var(--chaldea-text);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
   pointer-events: auto;
+  letter-spacing: 0.05em;
 }
 
 .timeline-btn:hover {
   border-color: var(--chaldea-cyan);
   color: var(--chaldea-cyan);
+  background: rgba(0, 212, 255, 0.1);
 }
 
 .timeline-btn.play {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  background: var(--chaldea-cyan);
-  border-color: var(--chaldea-cyan);
+  background: linear-gradient(135deg, var(--chaldea-cyan), var(--chaldea-orange));
+  border: 2px solid var(--chaldea-cyan);
   color: var(--chaldea-bg);
-  font-size: 1rem;
+  font-size: 1.25rem;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.timeline-btn.play:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.6);
 }
 
 .timeline-year-display {
-  min-width: 140px;
+  min-width: 180px;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .timeline-year-label {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: var(--chaldea-text);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.25rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.375rem;
+  text-transform: uppercase;
 }
 
 .timeline-year-value {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--chaldea-cyan);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.year-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--chaldea-text-bright);
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  font-family: 'Orbitron', 'Inter', sans-serif;
+}
+
+.year-era {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
 
 /* Scrollbar */
@@ -555,4 +982,55 @@ body {
 /* Night style - enhanced brightness for city lights */
 .globe-container.style-night canvas {
   filter: brightness(1.2) saturate(1.2);
+}
+
+/* Era Filter Toggle */
+.era-filter-toggle {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--chaldea-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.era-toggle-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  border: 1px solid var(--chaldea-border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.era-toggle-btn:hover {
+  border-color: var(--chaldea-cyan);
+}
+
+.era-toggle-btn.active {
+  background: rgba(0, 212, 255, 0.15);
+  border-color: var(--chaldea-cyan);
+}
+
+.era-toggle-btn .toggle-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--chaldea-text);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.era-toggle-btn.active .toggle-label {
+  color: var(--chaldea-cyan);
+}
+
+.era-toggle-btn .toggle-desc {
+  font-size: 0.6rem;
+  color: var(--chaldea-text);
+  opacity: 0.6;
+  letter-spacing: 0.03em;
 }

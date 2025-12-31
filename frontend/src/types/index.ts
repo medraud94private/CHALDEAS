@@ -119,3 +119,120 @@ export interface ChatResponse {
   related_events: Event[]
   suggested_queries: string[]
 }
+
+// Agent Response Types
+export type ResponseFormat =
+  | 'narrative'
+  | 'comparison_table'
+  | 'timeline_list'
+  | 'flow_chart'
+  | 'map_markers'
+  | 'cards'
+
+export type QueryIntent =
+  | 'comparison'
+  | 'timeline'
+  | 'causation'
+  | 'deep_dive'
+  | 'overview'
+  | 'map_query'
+  | 'person_info'
+  | 'connection'
+
+export interface AgentAnalysis {
+  original_query: string
+  english_query: string
+  intent: QueryIntent
+  intent_confidence: 'high' | 'medium' | 'low'
+  entities: {
+    events: string[]
+    persons: string[]
+    locations: string[]
+    time_periods: Array<{ from?: number; to?: number; label?: string }>
+    categories: string[]
+    keywords: string[]
+  }
+  response_format: ResponseFormat
+  search_strategy: string
+  requires_multiple_searches: boolean
+}
+
+export interface AgentSearchResult {
+  query_used: string
+  filters_applied: Record<string, unknown>
+  results: Array<{
+    content_type: string
+    content_id: number
+    content_text: string
+    metadata: Record<string, unknown>
+    similarity: number
+  }>
+  result_count: number
+}
+
+export interface ComparisonItem {
+  title: string
+  date?: string
+  key_points: string[]
+}
+
+export interface TimelineEvent {
+  date: string
+  title: string
+  description: string
+}
+
+export interface CausalChain {
+  cause: string
+  effect: string
+  explanation: string
+}
+
+export interface MapMarker {
+  title: string
+  lat: number
+  lng: number
+  description: string
+}
+
+export interface CardItem {
+  title: string
+  subtitle?: string
+  content: string
+  tags?: string[]
+}
+
+export interface AgentStructuredData {
+  type: 'comparison' | 'timeline' | 'causation' | 'map' | 'cards'
+  items?: ComparisonItem[]
+  comparison_axes?: string[]
+  events?: TimelineEvent[]
+  chain?: CausalChain[]
+  markers?: MapMarker[]
+  cards?: CardItem[]
+}
+
+export interface AgentResponseData {
+  intent: string
+  format: ResponseFormat
+  answer: string
+  structured_data: AgentStructuredData
+  sources: Array<{
+    id: number
+    title: string
+    similarity: number
+    date_start?: number
+  }>
+  confidence: number
+  suggested_followups: string[]
+  navigation?: {
+    target_year?: number
+    locations?: Array<{ lat: number; lng: number; title: string }>
+  }
+}
+
+export interface AgentResponse {
+  analysis: AgentAnalysis
+  search_results: AgentSearchResult[]
+  response: AgentResponseData
+}

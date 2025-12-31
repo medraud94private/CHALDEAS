@@ -70,4 +70,7 @@ export const chatApi = {
   query: (query: string, context?: Record<string, unknown>) =>
     api.post('/chat', { query, context }),
   observe: (query: string) => api.post('/chat/observe', { query }),
+  // Agent-based intelligent query (api_key optional - falls back to BM25 if not provided)
+  agent: (query: string, apiKey?: string) =>
+    api.post('/chat/agent', { query, api_key: apiKey || undefined }),
 }

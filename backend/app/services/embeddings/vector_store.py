@@ -67,13 +67,16 @@ class VectorStore:
                     )
                 """)
 
-                # Create index for vector similarity search (IVFFlat)
-                cur.execute(f"""
-                    CREATE INDEX IF NOT EXISTS embeddings_vector_idx
-                    ON embeddings
-                    USING ivfflat (embedding vector_cosine_ops)
-                    WITH (lists = 100)
-                """)
+                # Skip vector index for high-dimensional embeddings (>2000)
+                # For datasets under 100k rows, brute force search is fast enough
+                # For larger datasets, consider using text-embedding-3-small (1536 dim)
+                if self.embedding_dimension <= 2000:
+                    cur.execute(f"""
+                        CREATE INDEX IF NOT EXISTS embeddings_vector_idx
+                        ON embeddings
+                        USING ivfflat (embedding vector_cosine_ops)
+                        WITH (lists = 100)
+                    """)
 
                 # Create index for content lookup
                 cur.execute("""
@@ -165,7 +168,8 @@ class VectorStore:
         query_embedding: List[float],
         content_type: Optional[str] = None,
         limit: int = 10,
-        min_similarity: float = 0.5
+        min_similarity: float = 0.5,
+        filters: Optional[dict] = None
     ) -> List[dict]:
         """
         Search for similar content using cosine similarity.
@@ -175,53 +179,71 @@ class VectorStore:
             content_type: Filter by content type (optional)
             limit: Maximum results to return
             min_similarity: Minimum similarity threshold (0-1)
+            filters: Metadata filters (optional)
+                - category: str (e.g., "battle", "treaty")
+                - date_from: int (e.g., -500 for 500 BCE)
+                - date_to: int (e.g., 1500 for 1500 CE)
 
         Returns:
             List of results with similarity scores
         """
+        import numpy as np
+
+        # Convert to numpy array for pgvector
+        query_vec = np.array(query_embedding, dtype=np.float32)
+
+        # Build WHERE clauses dynamically
+        conditions = []
+        params = []
+
+        # Base similarity condition
+        conditions.append("1 - (embedding <=> %(vec)s::vector) >= %(min_sim)s")
+
+        if content_type:
+            conditions.append("content_type = %(content_type)s")
+
+        if filters:
+            if filters.get("category"):
+                conditions.append("metadata->>'category' = %(category)s")
+
+            if filters.get("date_from") is not None:
+                conditions.append("(metadata->>'date_start')::int >= %(date_from)s")
+
+            if filters.get("date_to") is not None:
+                conditions.append("(metadata->>'date_start')::int <= %(date_to)s")
+
+        where_clause = " AND ".join(conditions)
+
+        # Build params dict
+        query_params = {
+            "vec": query_vec,
+            "min_sim": min_similarity,
+            "limit": limit,
+        }
+        if content_type:
+            query_params["content_type"] = content_type
+        if filters:
+            if filters.get("category"):
+                query_params["category"] = filters["category"]
+            if filters.get("date_from") is not None:
+                query_params["date_from"] = filters["date_from"]
+            if filters.get("date_to") is not None:
+                query_params["date_to"] = filters["date_to"]
+
         with self.get_connection() as conn:
             with conn.cursor(cursor_factory=RealDictCursor) as cur:
-                # Build query
-                if content_type:
-                    cur.execute("""
-                        SELECT
-                            content_type,
-                            content_id,
-                            content_text,
-                            metadata,
-                            1 - (embedding <=> %s) as similarity
-                        FROM embeddings
-                        WHERE content_type = %s
-                          AND 1 - (embedding <=> %s) >= %s
-                        ORDER BY embedding <=> %s
-                        LIMIT %s
-                    """, (
-                        query_embedding,
+                cur.execute(f"""
+                    SELECT
                         content_type,
-                        query_embedding,
-                        min_similarity,
-                        query_embedding,
-                        limit
-                    ))
-                else:
-                    cur.execute("""
-                        SELECT
-                            content_type,
-                            content_id,
-                            content_text,
-                            metadata,
-                            1 - (embedding <=> %s) as similarity
-                        FROM embeddings
-                        WHERE 1 - (embedding <=> %s) >= %s
-                        ORDER BY embedding <=> %s
-                        LIMIT %s
-                    """, (
-                        query_embedding,
-                        query_embedding,
-                        min_similarity,
-                        query_embedding,
-                        limit
-                    ))
+                        content_id,
+                        content_text,
+                        metadata,
+                        1 - (embedding <=> %(vec)s::vector) as similarity
+                    FROM embeddings
+                    WHERE {where_clause}
+                    ORDER BY embedding <=> %(vec)s::vector
+                    LIMIT %(limit)s
+                """, query_params)
 
                 results = cur.fetchall()
                 return [dict(r) for r in results]

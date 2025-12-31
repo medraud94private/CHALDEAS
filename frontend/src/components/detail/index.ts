@@ -1,0 +1,1 @@
+export { EventDetailPanel } from './EventDetailPanel'

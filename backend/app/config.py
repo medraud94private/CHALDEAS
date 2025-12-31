@@ -23,15 +23,20 @@ class Settings(BaseSettings):
     openai_api_key: str = ""
     anthropic_api_key: str = ""
 
-    # CORS - CHALDEAS uses port 5100 for frontend
+    # CORS - CHALDEAS fixed ports
     backend_cors_origins: list[str] = [
-        "http://localhost:5100",
+        "http://localhost:5200",  # Chaldeas frontend (fixed)
         "http://localhost:5173",
         "http://localhost:3000",
+        "https://chaldeas.site",  # Production domain
+        "https://www.chaldeas.site",
+        "https://chaldeas-frontend-951004107180.asia-northeast3.run.app",  # Cloud Run
+        "https://*.run.app",  # All Cloud Run domains
     ]
 
     class Config:
-        env_file = ".env"
+        env_file = "../.env"  # Load from project root
+        extra = "ignore"
         case_sensitive = False
 
 

@@ -1,0 +1,172 @@
+{
+  "app": {
+    "name": "CHALDEAS",
+    "nameFull": "疑似地球環境モデル・カルデアス",
+    "systemOnline": "システムオンライン",
+    "systemSpec": "カルデアス システムスペック III"
+  },
+  "sidebar": {
+    "searchPlaceholder": "アーカイブ検索...",
+    "records": "記録",
+    "latency": "遅延",
+    "eraFilter": {
+      "nearby": "現在の時代",
+      "nearbyDesc": "±10年以内",
+      "all": "全時代",
+      "allDesc": "すべての記録"
+    }
+  },
+  "categories": {
+    "all": "全て",
+    "battle": "戦闘",
+    "war": "戦争",
+    "politics": "政治",
+    "religion": "宗教",
+    "philosophy": "哲学",
+    "science": "科学",
+    "culture": "文化",
+    "civilization": "文明",
+    "discovery": "発見"
+  },
+  "globe": {
+    "camMode": "カメラモード",
+    "orbit": "軌道",
+    "styles": {
+      "default": "ブルーマーブル",
+      "holo": "ホロ",
+      "night": "ナイト"
+    }
+  },
+  "timeline": {
+    "observingYear": "観測年",
+    "era": {
+      "bc": "BC",
+      "ad": "AD",
+      "bce": "BCE",
+      "ce": "CE"
+    }
+  },
+  "detail": {
+    "overview": "概要",
+    "description": "説明",
+    "source": "出典",
+    "archive": "CHALDEAS アーカイブ",
+    "archiveId": "CHALDEAS アーカイブ #{{id}}",
+    "timeline": "タイムライン",
+    "relatedEvents": "関連イベント",
+    "askSheba": "シバに質問",
+    "askShebaAbout": "このイベントについてシバに質問",
+    "askShebaQuery": "{{title}}について詳しく教えて",
+    "close": "閉じる",
+    "primary": "一次史料",
+    "secondary": "二次史料",
+    "pendingDescription": "記録検証待ち。詳細分析はシバにお問い合わせください。",
+    "chronologicalContext": "年代的文脈",
+    "precedingEvents": "◀ 先行イベント",
+    "currentEvent": "◆ {{year}} — 現在",
+    "followingEvents": "後続イベント ▶",
+    "relatedRecords": "関連{{category}}記録",
+    "keyFigures": "主要人物",
+    "historicalSources": "歴史的出典",
+    "coordinates": "緯度: {{lat}} / 経度: {{lng}}",
+    "notAvailable": "N/A",
+    "verified": "検証済み"
+  },
+  "chat": {
+    "title": "シバ",
+    "titleFull": "近未来観測レンズ・シバ",
+    "subtitle": "歴史観測AI",
+    "welcome": {
+      "title": "近未来観測レンズ・シバ",
+      "description": "歴史的な出来事、人物、場所について質問してください。",
+      "examples": {
+        "compare": "マラトンの戦いとサラミスの海戦を比較して",
+        "socrates": "ソクラテスについて教えて",
+        "persian": "ペルシア戦争の主要な出来事"
+      }
+    },
+    "inputPlaceholder": "歴史について質問...",
+    "analyzing": "SHEBA分析中...",
+    "error": "クエリの処理中にエラーが発生しました。もう一度お試しください。",
+    "apiKey": {
+      "label": "OpenAI APIキー",
+      "placeholder": "sk-...",
+      "save": "保存",
+      "clear": "削除",
+      "saved": "保存済み",
+      "notSet": "未設定",
+      "hint": "AI分析に必要です。キーなしでも基本検索は可能です。",
+      "invalid": "無効なAPIキーです。"
+    }
+  },
+  "search": {
+    "basic": "一般検索",
+    "advanced": "高度検索",
+    "basicDesc": "キーワード検索（無料）",
+    "advancedDesc": "AI検索（APIキー必要）",
+    "apiKeyPlaceholder": "OpenAI APIキーを入力...",
+    "searchButton": "検索",
+    "results": "検索結果",
+    "noResults": "結果なし"
+  },
+  "master": {
+    "title": "マスター",
+    "number": "マスター番号",
+    "searchCount": "検索回数",
+    "publicLog": "公開記録"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "close": "閉じる",
+    "submit": "送信",
+    "cancel": "キャンセル"
+  },
+  "era": {
+    "names": {
+      "PREHISTORY": "先史時代",
+      "ANCIENT": "古代",
+      "CLASSICAL": "古典古代",
+      "MEDIEVAL": "中世",
+      "EARLY MODERN": "近世",
+      "MODERN": "近代",
+      "CONTEMPORARY": "現代",
+      "UNKNOWN ERA": "不明"
+    },
+    "contexts": {
+      "PREHISTORY": "文字記録以前、狩猟採集と農耕の始まり",
+      "ANCIENT": "文明の誕生、エジプト・メソポタミア・中国・インド",
+      "CLASSICAL": "ギリシャ・ローマ、ペルシア、春秋戦国、マウリヤ朝",
+      "MEDIEVAL": "封建制、ビザンツ、イスラム黄金時代、唐・宋",
+      "EARLY MODERN": "大航海時代、ルネサンス、宗教改革、絶対王政",
+      "MODERN": "産業革命、帝国主義、世界大戦",
+      "CONTEMPORARY": "冷戦、デジタル革命、グローバル化"
+    },
+    "observing": "観測中の時代"
+  },
+  "showcase": {
+    "types": {
+      "singularity": "特異点",
+      "lostbelt": "異聞帯",
+      "servant": "サーヴァント",
+      "article": "アーカイブ"
+    },
+    "historicalBasis": "歴史的背景",
+    "relatedServants": "関連サーヴァント",
+    "relatedEvents": "関連歴史記録",
+    "sources": "参考資料",
+    "tabs": {
+      "fgo": "Fate/Grand Order",
+      "panHuman": "汎人類史"
+    },
+    "menu": {
+      "title": "アーカイブ",
+      "singularities": "特異点",
+      "lostbelts": "異聞帯",
+      "servants": "サーヴァント",
+      "history": "歴史",
+      "literature": "文学",
+      "music": "音楽"
+    }
+  }
+}

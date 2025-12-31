@@ -1,0 +1,172 @@
+{
+  "app": {
+    "name": "CHALDEAS",
+    "nameFull": "Pseudo-Earth Environment Model CHALDEAS",
+    "systemOnline": "SYSTEM ONLINE",
+    "systemSpec": "CHALDEAS SYSTEM SPEC III"
+  },
+  "sidebar": {
+    "searchPlaceholder": "SEARCH ARCHIVES...",
+    "records": "RECORDS",
+    "latency": "LATENCY",
+    "eraFilter": {
+      "nearby": "CURRENT ERA",
+      "nearbyDesc": "±10 YEARS",
+      "all": "ALL ERAS",
+      "allDesc": "ALL RECORDS"
+    }
+  },
+  "categories": {
+    "all": "ALL",
+    "battle": "BATTLE",
+    "war": "WAR",
+    "politics": "POLITICS",
+    "religion": "RELIGION",
+    "philosophy": "PHILOSOPHY",
+    "science": "SCIENCE",
+    "culture": "CULTURE",
+    "civilization": "CIVILIZATION",
+    "discovery": "DISCOVERY"
+  },
+  "globe": {
+    "camMode": "CAM_MODE",
+    "orbit": "ORBIT",
+    "styles": {
+      "default": "BLUE MARBLE",
+      "holo": "HOLO",
+      "night": "NIGHT"
+    }
+  },
+  "timeline": {
+    "observingYear": "OBSERVING YEAR",
+    "era": {
+      "bc": "BC",
+      "ad": "AD",
+      "bce": "BCE",
+      "ce": "CE"
+    }
+  },
+  "detail": {
+    "overview": "Overview",
+    "description": "Description",
+    "source": "Source",
+    "archive": "CHALDEAS ARCHIVE",
+    "archiveId": "CHALDEAS ARCHIVE #{{id}}",
+    "timeline": "Timeline",
+    "relatedEvents": "Related Events",
+    "askSheba": "Ask SHEBA",
+    "askShebaAbout": "ASK SHEBA ABOUT THIS EVENT",
+    "askShebaQuery": "Tell me more about {{title}}",
+    "close": "Close",
+    "primary": "PRIMARY",
+    "secondary": "SECONDARY",
+    "pendingDescription": "Historical record pending verification. Consult SHEBA for detailed analysis.",
+    "chronologicalContext": "CHRONOLOGICAL CONTEXT",
+    "precedingEvents": "◀ PRECEDING EVENTS",
+    "currentEvent": "◆ {{year}} — CURRENT",
+    "followingEvents": "FOLLOWING EVENTS ▶",
+    "relatedRecords": "RELATED {{category}} RECORDS",
+    "keyFigures": "KEY FIGURES",
+    "historicalSources": "HISTORICAL SOURCES",
+    "coordinates": "LAT: {{lat}} / LNG: {{lng}}",
+    "notAvailable": "N/A",
+    "verified": "VERIFIED"
+  },
+  "chat": {
+    "title": "SHEBA",
+    "titleFull": "Near-Future Observation Lens SHEBA",
+    "subtitle": "Historical Observer AI",
+    "welcome": {
+      "title": "Near-Future Observation Lens SHEBA",
+      "description": "Ask me about historical events, people, or places.",
+      "examples": {
+        "compare": "Compare the Battle of Marathon and Salamis",
+        "socrates": "Tell me about Socrates",
+        "persian": "Major events of the Persian Wars"
+      }
+    },
+    "inputPlaceholder": "Ask about history...",
+    "analyzing": "SHEBA is analyzing...",
+    "error": "An error occurred while processing your query. Please try again.",
+    "apiKey": {
+      "label": "OpenAI API Key",
+      "placeholder": "sk-...",
+      "save": "Save",
+      "clear": "Clear",
+      "saved": "Saved",
+      "notSet": "Not Set",
+      "hint": "Required for AI analysis. Basic search works without a key.",
+      "invalid": "Invalid API key."
+    }
+  },
+  "search": {
+    "basic": "Basic Search",
+    "advanced": "Advanced Search",
+    "basicDesc": "Keyword search (Free)",
+    "advancedDesc": "AI search (API key required)",
+    "apiKeyPlaceholder": "Enter OpenAI API key...",
+    "searchButton": "Search",
+    "results": "Results",
+    "noResults": "No results"
+  },
+  "master": {
+    "title": "Master",
+    "number": "Master Number",
+    "searchCount": "Search Count",
+    "publicLog": "Public Log"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "era": {
+    "names": {
+      "PREHISTORY": "Prehistory",
+      "ANCIENT": "Ancient",
+      "CLASSICAL": "Classical",
+      "MEDIEVAL": "Medieval",
+      "EARLY MODERN": "Early Modern",
+      "MODERN": "Modern",
+      "CONTEMPORARY": "Contemporary",
+      "UNKNOWN ERA": "Unknown"
+    },
+    "contexts": {
+      "PREHISTORY": "Before written records, hunter-gatherers and early agriculture",
+      "ANCIENT": "Birth of civilizations: Egypt, Mesopotamia, China, India",
+      "CLASSICAL": "Greece & Rome, Persia, Warring States, Maurya Empire",
+      "MEDIEVAL": "Feudalism, Byzantium, Islamic Golden Age, Tang & Song",
+      "EARLY MODERN": "Age of Discovery, Renaissance, Reformation, Absolutism",
+      "MODERN": "Industrial Revolution, Imperialism, World Wars",
+      "CONTEMPORARY": "Cold War, Digital Revolution, Globalization"
+    },
+    "observing": "Observing era"
+  },
+  "showcase": {
+    "types": {
+      "singularity": "Singularity",
+      "lostbelt": "Lostbelt",
+      "servant": "Servant",
+      "article": "Archive"
+    },
+    "historicalBasis": "Historical Basis",
+    "relatedServants": "Related Servants",
+    "relatedEvents": "Related Historical Records",
+    "sources": "References",
+    "tabs": {
+      "fgo": "Fate/Grand Order",
+      "panHuman": "Pan-Human History"
+    },
+    "menu": {
+      "title": "Archive",
+      "singularities": "Singularities",
+      "lostbelts": "Lostbelts",
+      "servants": "Servants",
+      "history": "History",
+      "literature": "Literature",
+      "music": "Music"
+    }
+  }
+}

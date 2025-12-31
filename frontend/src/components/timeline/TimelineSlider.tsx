@@ -28,12 +28,6 @@ export function TimelineSlider() {
     setCurrentYear(sliderToYear(value))
   }
 
-  const formatYear = (year: number) => {
-    const absYear = Math.abs(year)
-    const era = year < 0 ? 'BCE' : 'CE'
-    return `${absYear} ${era}`
-  }
-
   // Era markers for the slider
   const eraMarkers = useMemo(
     () =>

@@ -63,7 +63,7 @@ function generateGraticules() {
 
 const GRATICULES = generateGraticules()
 
-export function GlobeContainer({ onEventClick, globeStyle = 'default', selectedEventId }: GlobeContainerProps) {
+export function GlobeContainer({ onEventClick, globeStyle = 'default' }: GlobeContainerProps) {
   const globeRef = useRef<GlobeMethods>()
   const {
     events,
@@ -73,6 +73,7 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default', selectedE
     selectedCategories,
     minImportance,
     selectedEvent,
+    highlightedLocations,
   } = useGlobeStore()
   const { currentYear } = useTimelineStore()
   const [focusedLocation, setFocusedLocation] = useState<{ lat: number; lng: number } | null>(null)
@@ -144,20 +145,23 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default', selectedE
 
   // Filter events for current time
   const visibleEvents = useMemo(() => {
+    const TIME_RANGE = 10 // Show events within ±10 years
+
     return events.filter((event) => {
       const start = event.date_start
       const end = event.date_end || start
 
-      // Check time range (within 50 years)
-      if (Math.abs(currentYear - start) > 50 && currentYear < start) return false
-      if (Math.abs(currentYear - end) > 50 && currentYear > end) return false
+      // Check time range: current year should be within [start - TIME_RANGE, end + TIME_RANGE]
+      if (currentYear < start - TIME_RANGE || currentYear > end + TIME_RANGE) {
+        return false
+      }
 
       // Check category filter (handle both string and object category)
       if (selectedCategories.length > 0 && event.category) {
         const catId = typeof event.category === 'string'
           ? event.category
           : event.category.id
-        if (!selectedCategories.includes(catId)) return false
+        if (!selectedCategories.includes(catId as number)) return false
       }
 
       // Check importance filter
@@ -200,11 +204,11 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default', selectedE
     [hoveredEvent]
   )
 
-  // Arcs data for connections (optional)
-  const arcsData = useMemo(() => {
-    // Create arcs between related events
-    return []
-  }, [visibleEvents])
+  // Arcs data for connections (optional) - reserved for future use
+  // const arcsData = useMemo(() => {
+  //   // Create arcs between related events
+  //   return []
+  // }, [visibleEvents])
 
   const globeTexture = GLOBE_TEXTURES[globeStyle] || GLOBE_TEXTURES.default
   const isHoloStyle = globeStyle === 'holo'
@@ -239,12 +243,14 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default', selectedE
         polygonAltitude={0.01}
         // Points Layer (Event Markers)
         pointsData={visibleEvents}
-        pointLat={(d: Event) => d.latitude || d.location?.latitude || 0}
-        pointLng={(d: Event) => d.longitude || d.location?.longitude || 0}
-        pointColor={getMarkerColor}
-        pointAltitude={getMarkerAltitude}
-        pointRadius={getMarkerSize}
-        pointLabel={(d: Event) => `
+        pointLat={(d) => (d as Event).latitude || (d as Event).location?.latitude || 0}
+        pointLng={(d) => (d as Event).longitude || (d as Event).location?.longitude || 0}
+        pointColor={(d) => getMarkerColor(d as Event)}
+        pointAltitude={(d) => getMarkerAltitude(d as Event)}
+        pointRadius={(d) => getMarkerSize(d as Event)}
+        pointLabel={(d) => {
+          const event = d as Event
+          return `
           <div style="
             background: rgba(10, 14, 23, 0.95);
             border: 1px solid #1a3a4a;
@@ -255,21 +261,64 @@ export function GlobeContainer({ onEventClick, globeStyle = 'default', selectedE
             max-width: 200px;
           ">
             <div style="color: #00d4ff; font-weight: 600; margin-bottom: 4px;">
-              ${d.title}
+              ${event.title}
             </div>
             <div style="color: #8ba4b4; font-size: 11px;">
-              ${Math.abs(d.date_start)} ${d.date_start < 0 ? 'BC' : 'AD'}
+              ${Math.abs(event.date_start)} ${event.date_start < 0 ? 'BC' : 'AD'}
             </div>
           </div>
-        `}
+        `}}
         onPointClick={(point) => onEventClick(point as Event)}
         onPointHover={(point) => setHoveredEvent(point as Event | null)}
-        // Ring effect - at focused location or hidden
-        ringsData={focusedLocation ? [focusedLocation] : (isHoloStyle ? [{ lat: 0, lng: 0 }] : [])}
-        ringColor={() => focusedLocation ? 'rgba(255, 51, 102, 0.6)' : 'rgba(0, 212, 255, 0.3)'}
-        ringMaxRadius={focusedLocation ? 8 : 90}
-        ringPropagationSpeed={focusedLocation ? 3 : 2}
-        ringRepeatPeriod={focusedLocation ? 800 : 2000}
+        // Ring effect - for focused location and highlighted locations from SHEBA search
+        ringsData={[
+          ...(focusedLocation ? [{ ...focusedLocation, type: 'focused' }] : []),
+          ...highlightedLocations.map(loc => ({ lat: loc.lat, lng: loc.lng, title: loc.title, type: 'highlighted' })),
+          ...(isHoloStyle && !focusedLocation && highlightedLocations.length === 0 ? [{ lat: 0, lng: 0, type: 'ambient' }] : [])
+        ]}
+        ringColor={(d: { type?: string }) =>
+          d.type === 'focused' ? 'rgba(255, 51, 102, 0.6)' :
+          d.type === 'highlighted' ? 'rgba(255, 215, 0, 0.8)' :  // Golden glow for SHEBA results
+          'rgba(0, 212, 255, 0.3)'
+        }
+        ringMaxRadius={(d: { type?: string }) => d.type === 'ambient' ? 90 : 8}
+        ringPropagationSpeed={(d: { type?: string }) => d.type === 'ambient' ? 2 : 3}
+        ringRepeatPeriod={(d: { type?: string }) => d.type === 'ambient' ? 2000 : 800}
+        // Custom HTML elements for highlighted location labels
+        htmlElementsData={highlightedLocations}
+        htmlLat={(d) => (d as { lat: number }).lat}
+        htmlLng={(d) => (d as { lng: number }).lng}
+        htmlAltitude={0.05}
+        htmlElement={(d) => {
+          const loc = d as { lat: number; lng: number; title: string }
+          const el = document.createElement('div')
+          el.innerHTML = `
+            <div style="
+              background: rgba(255, 215, 0, 0.9);
+              color: #000;
+              padding: 4px 8px;
+              border-radius: 4px;
+              font-size: 11px;
+              font-weight: bold;
+              white-space: nowrap;
+              cursor: pointer;
+              box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+              animation: pulse 1.5s infinite;
+            ">
+              📍 ${loc.title}
+            </div>
+          `
+          el.style.pointerEvents = 'auto'
+          el.onclick = () => {
+            // Find and click the event if it exists
+            const event = events.find(e =>
+              Math.abs((e.latitude || 0) - loc.lat) < 0.1 &&
+              Math.abs((e.longitude || 0) - loc.lng) < 0.1
+            )
+            if (event) onEventClick(event)
+          }
+          return el
+        }}
       />
     </div>
   )
