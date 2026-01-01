@@ -11,6 +11,7 @@ from sqlalchemy.orm import selectinload
 
 from app.config import settings
 from app.models import HistoricalChain, ChainSegment, Event, Person, Location, Period
+from app.models.person import EventPerson
 from app.schemas.chain import CurationRequest
 
 
@@ -244,10 +245,38 @@ class ChainGenerator:
 
     async def _get_person_events(self, person_id: int, limit: int) -> List[Event]:
         """Get events related to a person."""
-        # For PoC, simple query. In production, use EventPerson junction table
-        query = select(Event).order_by(Event.date_start).limit(limit)
+        # First, try to get events via EventPerson junction table
+        query = (
+            select(Event)
+            .join(EventPerson, Event.id == EventPerson.event_id)
+            .where(EventPerson.person_id == person_id)
+            .order_by(Event.date_start)
+            .limit(limit)
+        )
         result = await self.db.execute(query)
-        return list(result.scalars().all())
+        events = list(result.scalars().all())
+
+        # If no events found via junction table, filter by person's lifespan
+        if not events:
+            person = await self.db.get(Person, person_id)
+            if person and person.birth_year:
+                # Get events during person's lifetime (or nearby)
+                year_start = person.birth_year - 20  # 20 years before birth
+                year_end = (person.death_year or person.birth_year + 80) + 10
+
+                query = (
+                    select(Event)
+                    .where(and_(
+                        Event.date_start >= year_start,
+                        Event.date_start <= year_end
+                    ))
+                    .order_by(Event.importance.desc(), Event.date_start)
+                    .limit(limit)
+                )
+                result = await self.db.execute(query)
+                events = list(result.scalars().all())
+
+        return events
 
     async def _get_location_events(
         self,
