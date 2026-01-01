@@ -1,0 +1,314 @@
+{
+  "periods": [
+    {
+      "name": "Ancient History",
+      "name_ko": "고대사",
+      "slug": "ancient-history",
+      "year_start": -3000,
+      "year_end": 500,
+      "scale": "longue_duree",
+      "description": "From the invention of writing to the fall of Rome",
+      "description_ko": "문자의 발명부터 로마 멸망까지",
+      "is_manual": true,
+      "children": [
+        {
+          "name": "Ancient Egypt",
+          "name_ko": "고대 이집트",
+          "slug": "ancient-egypt",
+          "year_start": -3100,
+          "year_end": -30,
+          "scale": "longue_duree",
+          "description": "Egyptian civilization from unification to Roman conquest",
+          "description_ko": "통일부터 로마 정복까지의 이집트 문명"
+        },
+        {
+          "name": "Ancient Mesopotamia",
+          "name_ko": "고대 메소포타미아",
+          "slug": "ancient-mesopotamia",
+          "year_start": -3500,
+          "year_end": -539,
+          "scale": "longue_duree",
+          "description": "Sumerian, Akkadian, Babylonian, and Assyrian civilizations",
+          "description_ko": "수메르, 아카드, 바빌로니아, 아시리아 문명"
+        },
+        {
+          "name": "Ancient Greece",
+          "name_ko": "고대 그리스",
+          "slug": "ancient-greece",
+          "year_start": -800,
+          "year_end": -146,
+          "scale": "longue_duree",
+          "description": "Greek civilization from the Archaic period to Roman conquest",
+          "description_ko": "아르카이크 시대부터 로마 정복까지의 그리스 문명",
+          "children": [
+            {
+              "name": "Classical Greece",
+              "name_ko": "고전기 그리스",
+              "slug": "classical-greece",
+              "year_start": -500,
+              "year_end": -323,
+              "scale": "conjuncture",
+              "description": "Golden age of Greek culture, philosophy, and democracy",
+              "description_ko": "그리스 문화, 철학, 민주주의의 황금기"
+            },
+            {
+              "name": "Hellenistic Period",
+              "name_ko": "헬레니즘 시대",
+              "slug": "hellenistic-period",
+              "year_start": -323,
+              "year_end": -31,
+              "scale": "conjuncture",
+              "description": "From Alexander's death to Roman dominance",
+              "description_ko": "알렉산더 사망부터 로마 지배까지"
+            }
+          ]
+        },
+        {
+          "name": "Roman Civilization",
+          "name_ko": "로마 문명",
+          "slug": "roman-civilization",
+          "year_start": -753,
+          "year_end": 476,
+          "scale": "longue_duree",
+          "description": "Roman civilization from founding to fall of Western Rome",
+          "description_ko": "건국부터 서로마 멸망까지",
+          "children": [
+            {
+              "name": "Roman Republic",
+              "name_ko": "로마 공화정",
+              "slug": "roman-republic",
+              "year_start": -509,
+              "year_end": -27,
+              "scale": "conjuncture",
+              "description": "Republican period of Roman governance",
+              "description_ko": "공화정 시대의 로마"
+            },
+            {
+              "name": "Roman Empire",
+              "name_ko": "로마 제국",
+              "slug": "roman-empire",
+              "year_start": -27,
+              "year_end": 476,
+              "scale": "conjuncture",
+              "description": "Imperial period under emperors",
+              "description_ko": "황제 치하의 제국 시대"
+            }
+          ]
+        },
+        {
+          "name": "Ancient China",
+          "name_ko": "고대 중국",
+          "slug": "ancient-china",
+          "year_start": -2070,
+          "year_end": 220,
+          "scale": "longue_duree",
+          "description": "Chinese civilization from Xia dynasty to Han dynasty",
+          "description_ko": "하나라부터 한나라까지의 중국 문명",
+          "children": [
+            {
+              "name": "Spring and Autumn Period",
+              "name_ko": "춘추시대",
+              "slug": "spring-autumn",
+              "year_start": -770,
+              "year_end": -476,
+              "scale": "conjuncture",
+              "description": "Period of political fragmentation and philosophical flourishing",
+              "description_ko": "정치적 분열과 철학적 번영의 시대"
+            },
+            {
+              "name": "Warring States Period",
+              "name_ko": "전국시대",
+              "slug": "warring-states",
+              "year_start": -475,
+              "year_end": -221,
+              "scale": "conjuncture",
+              "description": "Seven kingdoms competing for supremacy",
+              "description_ko": "패권을 다투는 7개 왕국의 시대"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Medieval History",
+      "name_ko": "중세사",
+      "slug": "medieval-history",
+      "year_start": 500,
+      "year_end": 1500,
+      "scale": "longue_duree",
+      "description": "From the fall of Rome to the Renaissance",
+      "description_ko": "로마 멸망부터 르네상스까지",
+      "is_manual": true,
+      "children": [
+        {
+          "name": "Early Middle Ages",
+          "name_ko": "중세 초기",
+          "slug": "early-middle-ages",
+          "year_start": 500,
+          "year_end": 1000,
+          "scale": "conjuncture",
+          "description": "Dark Ages and Carolingian Empire",
+          "description_ko": "암흑기와 카롤링거 제국"
+        },
+        {
+          "name": "High Middle Ages",
+          "name_ko": "중세 성기",
+          "slug": "high-middle-ages",
+          "year_start": 1000,
+          "year_end": 1300,
+          "scale": "conjuncture",
+          "description": "Crusades, Gothic architecture, scholasticism",
+          "description_ko": "십자군, 고딕 건축, 스콜라 철학"
+        },
+        {
+          "name": "Late Middle Ages",
+          "name_ko": "중세 말기",
+          "slug": "late-middle-ages",
+          "year_start": 1300,
+          "year_end": 1500,
+          "scale": "conjuncture",
+          "description": "Black Death, Hundred Years' War, Renaissance beginnings",
+          "description_ko": "흑사병, 백년전쟁, 르네상스의 시작"
+        },
+        {
+          "name": "Islamic Golden Age",
+          "name_ko": "이슬람 황금기",
+          "slug": "islamic-golden-age",
+          "year_start": 750,
+          "year_end": 1258,
+          "scale": "conjuncture",
+          "description": "Flourishing of science, mathematics, and philosophy in Islamic world",
+          "description_ko": "이슬람 세계의 과학, 수학, 철학의 번영"
+        }
+      ]
+    },
+    {
+      "name": "Early Modern Period",
+      "name_ko": "근세",
+      "slug": "early-modern",
+      "year_start": 1500,
+      "year_end": 1800,
+      "scale": "longue_duree",
+      "description": "From Renaissance to French Revolution",
+      "description_ko": "르네상스부터 프랑스 혁명까지",
+      "is_manual": true,
+      "children": [
+        {
+          "name": "Renaissance",
+          "name_ko": "르네상스",
+          "slug": "renaissance",
+          "year_start": 1400,
+          "year_end": 1600,
+          "scale": "conjuncture",
+          "description": "Rebirth of classical learning and art in Europe",
+          "description_ko": "유럽의 고전 학문과 예술의 부흥"
+        },
+        {
+          "name": "Age of Exploration",
+          "name_ko": "대항해 시대",
+          "slug": "age-of-exploration",
+          "year_start": 1400,
+          "year_end": 1600,
+          "scale": "conjuncture",
+          "description": "European maritime exploration and colonization",
+          "description_ko": "유럽의 해상 탐험과 식민지화"
+        },
+        {
+          "name": "Reformation",
+          "name_ko": "종교개혁",
+          "slug": "reformation",
+          "year_start": 1517,
+          "year_end": 1648,
+          "scale": "conjuncture",
+          "description": "Protestant Reformation and religious wars",
+          "description_ko": "개신교 종교개혁과 종교전쟁"
+        },
+        {
+          "name": "Age of Enlightenment",
+          "name_ko": "계몽주의 시대",
+          "slug": "enlightenment",
+          "year_start": 1685,
+          "year_end": 1815,
+          "scale": "conjuncture",
+          "description": "Intellectual movement emphasizing reason and individualism",
+          "description_ko": "이성과 개인주의를 강조하는 지적 운동"
+        }
+      ]
+    },
+    {
+      "name": "Modern History",
+      "name_ko": "근현대사",
+      "slug": "modern-history",
+      "year_start": 1800,
+      "year_end": null,
+      "scale": "longue_duree",
+      "description": "From the Industrial Revolution to present",
+      "description_ko": "산업혁명부터 현재까지",
+      "is_manual": true,
+      "children": [
+        {
+          "name": "Industrial Revolution",
+          "name_ko": "산업혁명",
+          "slug": "industrial-revolution",
+          "year_start": 1760,
+          "year_end": 1840,
+          "scale": "conjuncture",
+          "description": "Transition to machine manufacturing",
+          "description_ko": "기계 제조업으로의 전환"
+        },
+        {
+          "name": "Age of Revolutions",
+          "name_ko": "혁명의 시대",
+          "slug": "age-of-revolutions",
+          "year_start": 1775,
+          "year_end": 1848,
+          "scale": "conjuncture",
+          "description": "American, French, and European revolutions",
+          "description_ko": "미국, 프랑스, 유럽 혁명"
+        },
+        {
+          "name": "World Wars Era",
+          "name_ko": "세계대전 시대",
+          "slug": "world-wars",
+          "year_start": 1914,
+          "year_end": 1945,
+          "scale": "conjuncture",
+          "description": "First and Second World Wars",
+          "description_ko": "제1차, 제2차 세계대전"
+        },
+        {
+          "name": "Cold War",
+          "name_ko": "냉전",
+          "slug": "cold-war",
+          "year_start": 1947,
+          "year_end": 1991,
+          "scale": "conjuncture",
+          "description": "Geopolitical tension between USA and USSR",
+          "description_ko": "미국과 소련 간의 지정학적 긴장"
+        }
+      ]
+    },
+    {
+      "name": "Mediterranean Trade Culture",
+      "name_ko": "지중해 무역 문화",
+      "slug": "mediterranean-trade",
+      "year_start": -3000,
+      "year_end": 1500,
+      "scale": "longue_duree",
+      "description": "Long-term structure of Mediterranean commerce and cultural exchange",
+      "description_ko": "지중해 상업과 문화 교류의 장기 구조",
+      "is_manual": true
+    },
+    {
+      "name": "Silk Road Era",
+      "name_ko": "실크로드 시대",
+      "slug": "silk-road",
+      "year_start": -130,
+      "year_end": 1450,
+      "scale": "longue_duree",
+      "description": "Trans-Eurasian trade and cultural exchange network",
+      "description_ko": "유라시아 횡단 무역과 문화 교류 네트워크",
+      "is_manual": true
+    }
+  ]
+}

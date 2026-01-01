@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHALDEAS PoC - Historical Chain</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            color: #00d4ff;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #aaa;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 6px;
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            font-size: 14px;
+        }
+        button {
+            background: linear-gradient(135deg, #00d4ff 0%, #0077ff 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        button:hover { opacity: 0.9; }
+        button:disabled {
+            background: #444;
+            cursor: not-allowed;
+        }
+        .result {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            display: none;
+        }
+        .result.show { display: block; }
+        .chain-title {
+            color: #00d4ff;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .segment {
+            background: rgba(255,255,255,0.05);
+            border-left: 3px solid #00d4ff;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 0 6px 6px 0;
+        }
+        .segment-order {
+            color: #00d4ff;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .loading {
+            text-align: center;
+            color: #00d4ff;
+            padding: 20px;
+        }
+        .error {
+            background: rgba(255,0,0,0.2);
+            border: 1px solid rgba(255,0,0,0.3);
+            color: #ff6b6b;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .status {
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        .status.connected { background: rgba(0,255,0,0.1); color: #4caf50; }
+        .status.disconnected { background: rgba(255,0,0,0.1); color: #f44336; }
+        .entities-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .entity-chip {
+            background: rgba(0,212,255,0.2);
+            border: 1px solid rgba(0,212,255,0.3);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .entity-chip:hover { background: rgba(0,212,255,0.3); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CHALDEAS PoC</h1>
+        <p class="subtitle">Historical Chain - Proof of Concept</p>
+
+        <div id="status" class="status">Checking server...</div>
+
+        <div class="card">
+            <h2>Generate Historical Chain</h2>
+            <div class="form-group">
+                <label>Chain Type</label>
+                <select id="chainType">
+                    <option value="person_story">Person Story - Biography of a historical figure</option>
+                    <option value="place_story">Place Story - History of a location</option>
+                    <option value="era_story">Era Story - Overview of a period</option>
+                    <option value="causal_chain">Causal Chain - Cause-effect sequence</option>
+                </select>
+            </div>
+
+            <div id="personSelect" class="form-group">
+                <label>Select Person</label>
+                <select id="personId"></select>
+            </div>
+
+            <div id="locationSelect" class="form-group" style="display:none">
+                <label>Select Location</label>
+                <select id="locationId"></select>
+            </div>
+
+            <div id="periodSelect" class="form-group" style="display:none">
+                <label>Select Period</label>
+                <select id="periodId"></select>
+            </div>
+
+            <div id="yearSelect" class="form-group" style="display:none">
+                <label>Start Year (e.g., -400 for 400 BCE)</label>
+                <input type="number" id="yearStart" value="-400">
+            </div>
+
+            <div class="form-group">
+                <label>Max Segments</label>
+                <input type="number" id="maxSegments" value="5" min="1" max="10">
+            </div>
+
+            <button id="generateBtn" onclick="generateChain()">Generate Chain</button>
+
+            <div id="result" class="result"></div>
+        </div>
+
+        <div class="card">
+            <h2>Available Entities</h2>
+            <div id="entities">
+                <p style="color:#888">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:8200/api/v1';
+
+        // Check server status
+        async function checkServer() {
+            const statusEl = document.getElementById('status');
+            try {
+                const res = await fetch('http://localhost:8200/health');
+                if (res.ok) {
+                    statusEl.textContent = 'Connected to PoC Server';
+                    statusEl.className = 'status connected';
+                    loadEntities();
+                } else {
+                    throw new Error('Server error');
+                }
+            } catch (e) {
+                statusEl.textContent = 'Server not running. Start with: uvicorn app.main:app --port 8200';
+                statusEl.className = 'status disconnected';
+            }
+        }
+
+        // Load entities from API
+        async function loadEntities() {
+            try {
+                const [persons, locations, periods] = await Promise.all([
+                    fetch(`${API_URL}/entities/persons`).then(r => r.json()),
+                    fetch(`${API_URL}/entities/locations`).then(r => r.json()),
+                    fetch(`${API_URL}/entities/periods`).then(r => r.json())
+                ]);
+
+                // Populate dropdowns
+                populateSelect('personId', persons, 'name');
+                populateSelect('locationId', locations, 'name');
+                populateSelect('periodId', periods, 'name');
+
+                // Show entities summary
+                const entitiesEl = document.getElementById('entities');
+                entitiesEl.innerHTML = `
+                    <h3 style="margin-bottom:10px;color:#aaa">Persons</h3>
+                    <div class="entities-list">
+                        ${persons.map(p => `<span class="entity-chip" onclick="selectPerson(${p.id})">${p.name}</span>`).join('')}
+                    </div>
+                    <h3 style="margin:15px 0 10px;color:#aaa">Locations</h3>
+                    <div class="entities-list">
+                        ${locations.map(l => `<span class="entity-chip" onclick="selectLocation(${l.id})">${l.name}</span>`).join('')}
+                    </div>
+                    <h3 style="margin:15px 0 10px;color:#aaa">Periods</h3>
+                    <div class="entities-list">
+                        ${periods.map(p => `<span class="entity-chip" onclick="selectPeriod(${p.id})">${p.name} (${p.year_start} ~ ${p.year_end || 'present'})</span>`).join('')}
+                    </div>
+                `;
+            } catch (e) {
+                console.error('Failed to load entities:', e);
+            }
+        }
+
+        function populateSelect(id, items, labelField) {
+            const select = document.getElementById(id);
+            select.innerHTML = items.map(item =>
+                `<option value="${item.id}">${item[labelField]}</option>`
+            ).join('');
+        }
+
+        function selectPerson(id) {
+            document.getElementById('chainType').value = 'person_story';
+            document.getElementById('personId').value = id;
+            updateVisibility();
+        }
+
+        function selectLocation(id) {
+            document.getElementById('chainType').value = 'place_story';
+            document.getElementById('locationId').value = id;
+            updateVisibility();
+        }
+
+        function selectPeriod(id) {
+            document.getElementById('chainType').value = 'era_story';
+            document.getElementById('periodId').value = id;
+            updateVisibility();
+        }
+
+        // Update form visibility based on chain type
+        document.getElementById('chainType').addEventListener('change', updateVisibility);
+
+        function updateVisibility() {
+            const type = document.getElementById('chainType').value;
+            document.getElementById('personSelect').style.display = type === 'person_story' ? 'block' : 'none';
+            document.getElementById('locationSelect').style.display = type === 'place_story' ? 'block' : 'none';
+            document.getElementById('periodSelect').style.display = type === 'era_story' ? 'block' : 'none';
+            document.getElementById('yearSelect').style.display = type === 'causal_chain' ? 'block' : 'none';
+        }
+
+        // Generate chain
+        async function generateChain() {
+            const btn = document.getElementById('generateBtn');
+            const resultEl = document.getElementById('result');
+
+            btn.disabled = true;
+            btn.textContent = 'Generating...';
+            resultEl.innerHTML = '<div class="loading">Generating chain with AI (this may take a moment)...</div>';
+            resultEl.className = 'result show';
+
+            const type = document.getElementById('chainType').value;
+            const payload = {
+                chain_type: type,
+                max_segments: parseInt(document.getElementById('maxSegments').value)
+            };
+
+            if (type === 'person_story') {
+                payload.person_id = parseInt(document.getElementById('personId').value);
+            } else if (type === 'place_story') {
+                payload.location_id = parseInt(document.getElementById('locationId').value);
+            } else if (type === 'era_story') {
+                payload.period_id = parseInt(document.getElementById('periodId').value);
+            } else if (type === 'causal_chain') {
+                payload.year_start = parseInt(document.getElementById('yearStart').value);
+            }
+
+            try {
+                const res = await fetch(`${API_URL}/chains/curate`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!res.ok) {
+                    const error = await res.json();
+                    throw new Error(error.detail || 'Generation failed');
+                }
+
+                const data = await res.json();
+                displayChain(data);
+            } catch (e) {
+                resultEl.innerHTML = `<div class="error">Error: ${e.message}</div>`;
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Generate Chain';
+            }
+        }
+
+        function displayChain(data) {
+            const resultEl = document.getElementById('result');
+            const chain = data.chain;
+            const cached = data.cached ? ' (cached)' : ' (newly generated)';
+
+            let html = `
+                <div class="chain-title">${chain.title}${cached}</div>
+                <p style="color:#888;margin-bottom:15px">${chain.description || ''}</p>
+            `;
+
+            if (chain.segments && chain.segments.length > 0) {
+                chain.segments.forEach(seg => {
+                    html += `
+                        <div class="segment">
+                            <span class="segment-order">#${seg.segment_order}</span>
+                            ${seg.narrative}
+                        </div>
+                    `;
+                });
+            } else {
+                html += '<p style="color:#888">No segments generated</p>';
+            }
+
+            resultEl.innerHTML = html;
+        }
+
+        // Initialize
+        checkServer();
+        updateVisibility();
+    </script>
+</body>
+</html>

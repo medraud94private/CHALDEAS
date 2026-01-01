@@ -6,7 +6,54 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 CHALDEAS is a world-centric historical knowledge system inspired by Fate/Grand Order's Chaldea. It provides an immersive 3D globe interface for exploring interconnected history, philosophy, science, mythology, and biographical information across time (BCE 3000 to present).
 
+**Core Philosophy**: "모든 역사는 **누가(Person)** **어디서(Location)** **언제(Time)** **무엇을(Event)** 했는가로 결정된다."
+
 **Core Principle**: "World State is explicit and immutable" - Intelligence proposes but never executes.
+
+---
+
+## Version System
+
+| 버전 | 설명 | 상태 | 경로 |
+|-----|------|------|------|
+| **V0** | 레거시 구조 (기존) | 운영 중 | `backend/app/models/`, `backend/app/api/v1/` |
+| **V1** | Historical Chain 기반 신규 구조 | 개발 중 | `backend/app/models/v1/`, `backend/app/api/v1_new/` |
+
+### V1 핵심 개념: Historical Chain (역사의 고리)
+
+4가지 큐레이션 유형:
+- **Person Story**: 인물의 생애와 주요 사건
+- **Place Story**: 장소의 역사적 변천
+- **Era Story**: 시대의 인물, 장소, 사건 종합
+- **Causal Chain**: 인과관계로 연결된 사건 흐름
+
+### V1 개발 원칙
+
+1. **V0 영향 없음**: 기존 서버/API 유지, 별도 경로에서 개발
+2. **체크포인트 작업**: `docs/planning/V1_WORKPLAN.md` 참조
+3. **작업 로그**: `docs/logs/V1_WORKLOG.md`에 진행상황 기록
+4. **완성 후 전환**: V1이 V0 기능 100% 커버 시 전환
+
+---
+
+## AI Models
+
+### 사용 모델
+
+| 모델 | 용도 | 비용 |
+|-----|------|------|
+| `gpt-5-nano` | NER 검증, 체인 생성 (기본) | ~$0.001/1K tokens |
+| `gpt-5.1-chat-latest` | 복잡한 체인 (폴백) | ~$0.01/1K tokens |
+| `spaCy en_core_web_lg` | 1차 NER 추출 | 무료 (로컬) |
+| `text-embedding-3-small` | 벡터 검색 | ~$0.00002/1K tokens |
+
+### 비용 예산
+
+- **초기 구축**: ~$47 (일회성)
+- **월간 운영**: ~$7/월
+- 상세: `docs/planning/COST_ESTIMATION.md`
+
+---
 
 ## Common Commands
 
@@ -48,6 +95,8 @@ docker-compose exec db psql -U chaldeas -d chaldeas
 - PostgreSQL: 5433 (external) / 5432 (internal)
 - API Docs: http://localhost:8100/docs
 
+---
+
 ## Architecture: 7-Layer World-Centric Model
 
 ```
@@ -76,6 +125,8 @@ Layer 1: SCHEMA                - World structure definition (CHALDEAS)
 User Query → CHALDEAS (state) → SHEBA (observe) → LOGOS (propose) → PAPERMOON (verify) → LAPLACE (explain) → Response
 ```
 
+---
+
 ## Tech Stack
 
 ### Frontend
@@ -88,21 +139,33 @@ User Query → CHALDEAS (state) → SHEBA (observe) → LOGOS (propose) → PAPE
 - Python 3.12 + FastAPI 0.109
 - SQLAlchemy 2.0 + Alembic (migrations)
 - pgvector (PostgreSQL vector search)
-- OpenAI/Anthropic (LLM integration via LangChain)
+- OpenAI (LLM integration)
 
 ### Database
 - PostgreSQL 16 with pgvector extension
 - BCE dates stored as negative integers (-490 = 490 BCE)
 
+---
+
 ## Key API Endpoints
 
+### V0 (현재 운영)
 ```
-GET  /api/v1/events                    # List events (filters: year_start, year_end, category_id)
+GET  /api/v1/events                    # List events
 GET  /api/v1/persons                   # List historical figures
 GET  /api/v1/locations                 # List places
 GET  /api/v1/search?q=...&type=all     # Unified search
-POST /api/v1/chat/agent                # Agent-based intelligent query (SHEBA + LOGOS)
+POST /api/v1/chat/agent                # Agent-based intelligent query
 ```
+
+### V1 (개발 중)
+```
+POST /api/v1/curation/chain            # 역사의 고리 생성/조회
+GET  /api/v1/curation/chain/{id}       # 체인 상세 조회
+GET  /api/v1/periods                   # 시대 목록
+```
+
+---
 
 ## Frontend State Stores (Zustand)
 
@@ -118,7 +181,14 @@ POSTGRES_PASSWORD=chaldeas_dev
 POSTGRES_DB=chaldeas
 OPENAI_API_KEY=sk-...
 VITE_API_URL=http://localhost:8100
+
+# V1 Model Settings
+NER_PRIMARY_MODEL=gpt-5-nano
+NER_FALLBACK_MODEL=gpt-5.1-chat-latest
+CHAIN_PRIMARY_MODEL=gpt-5-nano
 ```
+
+---
 
 ## Important Patterns
 
@@ -127,11 +197,46 @@ VITE_API_URL=http://localhost:8100
 3. **BCE Handling**: Use negative years for BCE dates in all calculations
 4. **Agent Responses**: Return structured data with confidence scores and follow-up suggestions
 5. **Multilingual**: Support `name_ko` fields for Korean translations
+6. **Braudel's Temporal Scale**: evenementielle (단기) / conjuncture (중기) / longue_duree (장기)
+
+---
 
 ## Documentation
 
+### 구현 완료 (Implemented)
 - `docs/implemented/ARCHITECTURE.md` - Full 7-layer design
 - `docs/implemented/API.md` - Complete API reference
 - `docs/implemented/DATABASE.md` - Schema and relationships
 - `docs/guides/SETUP.md` - Development environment setup
 - `docs/DEPLOYMENT.md` - GCP Cloud Run deployment
+
+### V1 계획 (Planning)
+- `docs/planning/METHODOLOGY.md` - 역사학 방법론 (CIDOC-CRM, Annales 학파 등)
+- `docs/planning/HISTORICAL_CHAIN_CONCEPT.md` - 역사의 고리 컨셉 설계
+- `docs/planning/REDESIGN_PLAN.md` - V1 재설계 상세 계획
+- `docs/planning/COST_ESTIMATION.md` - AI 비용 산정
+- `docs/planning/MODELS.md` - 사용 AI 모델 목록
+- `docs/planning/V1_WORKPLAN.md` - 체크포인트별 작업 계획
+
+### 작업 로그
+- `docs/logs/V1_WORKLOG.md` - V1 개발 진행 로그
+
+---
+
+## Development Workflow
+
+### V1 작업 시
+
+1. **체크포인트 확인**: `docs/planning/V1_WORKPLAN.md`에서 다음 CP 확인
+2. **작업 시작**: 해당 CP의 [ ] 체크박스를 [x]로 변경하며 진행
+3. **로그 기록**: `docs/logs/V1_WORKLOG.md`에 작업 내용 기록
+4. **테스트**: 각 CP 완료 시 관련 테스트 실행
+5. **커밋**: CP 단위로 커밋 (예: `feat(v1): CP-1.2 Period 모델 생성`)
+
+### 커밋 메시지 형식
+
+```
+feat(v1): CP-X.X 작업 내용
+fix(v0): 버그 수정 내용
+docs: 문서 업데이트
+```

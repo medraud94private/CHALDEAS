@@ -3,6 +3,11 @@ Event model.
 
 The core data type in CHALDEAS, representing historical occurrences
 in time and space. Supports BCE dates using negative integers.
+
+V1 Extension:
+- temporal_scale: Braudel's 3 levels (evenementielle, conjuncture, longue_duree)
+- period_id: Link to Period for era classification
+- certainty: How certain is this event? (fact, probable, legendary, mythological)
 """
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, CheckConstraint
 from sqlalchemy.orm import relationship
@@ -31,6 +36,36 @@ class Event(Base, TimestampMixin):
     date_end_month = Column(Integer)
     date_end_day = Column(Integer)
     date_precision = Column(String(20), default="year")  # exact, year, decade, century
+
+    # V1: Braudel's Temporal Scale
+    # evenementielle: Individual events (days to years) - e.g., "Battle of Marathon"
+    # conjuncture: Medium-term cycles (decades to century) - e.g., "Peloponnesian War"
+    # longue_duree: Long-term structures (centuries to millennia) - e.g., "Mediterranean Trade"
+    temporal_scale = Column(
+        String(20),
+        CheckConstraint(
+            "temporal_scale IN ('evenementielle', 'conjuncture', 'longue_duree')"
+        ),
+        default="evenementielle",
+        nullable=True  # V0 compatibility
+    )
+
+    # V1: Link to Period
+    period_id = Column(Integer, ForeignKey("periods.id"), nullable=True, index=True)
+
+    # V1: Certainty Level
+    # fact: Historically verified with strong evidence
+    # probable: Likely true but with some uncertainty
+    # legendary: Traditional account, may contain historical kernel
+    # mythological: Mythological or religious narrative
+    certainty = Column(
+        String(20),
+        CheckConstraint(
+            "certainty IN ('fact', 'probable', 'legendary', 'mythological')"
+        ),
+        default="fact",
+        nullable=True  # V0 compatibility
+    )
 
     # Importance (1-5, higher = more significant)
     importance = Column(
@@ -73,6 +108,9 @@ class Event(Base, TimestampMixin):
         secondary="event_sources",
         back_populates="events"
     )
+
+    # V1: Period relationship
+    period = relationship("Period", back_populates="events", foreign_keys=[period_id])
 
     def __repr__(self):
         return f"<Event(id={self.id}, title='{self.title}', year={self.date_start})>"

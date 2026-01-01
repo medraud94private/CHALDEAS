@@ -1,0 +1,179 @@
+{
+  "periods": [
+    {
+      "name": "Classical Greece",
+      "name_ko": "고대 그리스",
+      "slug": "classical-greece",
+      "year_start": -500,
+      "year_end": -323,
+      "scale": "conjuncture",
+      "description": "Golden age of Greek civilization"
+    },
+    {
+      "name": "Roman Republic",
+      "name_ko": "로마 공화정",
+      "slug": "roman-republic",
+      "year_start": -509,
+      "year_end": -27,
+      "scale": "conjuncture",
+      "description": "Period of ancient Roman civilization"
+    },
+    {
+      "name": "Renaissance",
+      "name_ko": "르네상스",
+      "slug": "renaissance",
+      "year_start": 1400,
+      "year_end": 1600,
+      "scale": "conjuncture",
+      "description": "Cultural rebirth in Europe"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Athens",
+      "name_ko": "아테네",
+      "latitude": 37.9838,
+      "longitude": 23.7275,
+      "location_type": "city",
+      "hierarchy_level": "city",
+      "description": "Ancient Greek city-state"
+    },
+    {
+      "name": "Rome",
+      "name_ko": "로마",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "location_type": "city",
+      "hierarchy_level": "city",
+      "description": "Capital of the Roman Empire"
+    },
+    {
+      "name": "Florence",
+      "name_ko": "피렌체",
+      "latitude": 43.7696,
+      "longitude": 11.2558,
+      "location_type": "city",
+      "hierarchy_level": "city",
+      "description": "Birthplace of the Renaissance"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Socrates",
+      "name_ko": "소크라테스",
+      "birth_year": -470,
+      "death_year": -399,
+      "birth_place": "Athens",
+      "occupation": "Philosopher",
+      "nationality": "Greek",
+      "description": "Classical Greek philosopher, founder of Western philosophy"
+    },
+    {
+      "name": "Plato",
+      "name_ko": "플라톤",
+      "birth_year": -428,
+      "death_year": -348,
+      "birth_place": "Athens",
+      "occupation": "Philosopher",
+      "nationality": "Greek",
+      "description": "Student of Socrates, founder of the Academy"
+    },
+    {
+      "name": "Aristotle",
+      "name_ko": "아리스토텔레스",
+      "birth_year": -384,
+      "death_year": -322,
+      "birth_place": "Stagira",
+      "occupation": "Philosopher",
+      "nationality": "Greek",
+      "description": "Student of Plato, tutor of Alexander the Great"
+    },
+    {
+      "name": "Julius Caesar",
+      "name_ko": "율리우스 카이사르",
+      "birth_year": -100,
+      "death_year": -44,
+      "birth_place": "Rome",
+      "occupation": "Military leader, Dictator",
+      "nationality": "Roman",
+      "description": "Roman general and statesman"
+    },
+    {
+      "name": "Leonardo da Vinci",
+      "name_ko": "레오나르도 다 빈치",
+      "birth_year": 1452,
+      "death_year": 1519,
+      "birth_place": "Vinci",
+      "occupation": "Artist, Inventor",
+      "nationality": "Italian",
+      "description": "Renaissance polymath"
+    }
+  ],
+  "events": [
+    {
+      "name": "Trial and Death of Socrates",
+      "name_ko": "소크라테스의 재판과 죽음",
+      "date_start": -399,
+      "date_end": -399,
+      "temporal_scale": "evenementielle",
+      "certainty": "fact",
+      "category": "Philosophy",
+      "importance": 9,
+      "description": "Socrates was tried and executed for impiety and corrupting the youth of Athens"
+    },
+    {
+      "name": "Founding of Plato's Academy",
+      "name_ko": "플라톤 아카데미 설립",
+      "date_start": -387,
+      "date_end": -387,
+      "temporal_scale": "evenementielle",
+      "certainty": "probable",
+      "category": "Education",
+      "importance": 8,
+      "description": "Plato founded the Academy in Athens, one of the first institutions of higher learning"
+    },
+    {
+      "name": "Battle of Marathon",
+      "name_ko": "마라톤 전투",
+      "date_start": -490,
+      "date_end": -490,
+      "temporal_scale": "evenementielle",
+      "certainty": "fact",
+      "category": "War",
+      "importance": 9,
+      "description": "Greek victory over the Persian Empire"
+    },
+    {
+      "name": "Assassination of Julius Caesar",
+      "name_ko": "율리우스 카이사르 암살",
+      "date_start": -44,
+      "date_end": -44,
+      "temporal_scale": "evenementielle",
+      "certainty": "fact",
+      "category": "Politics",
+      "importance": 10,
+      "description": "Caesar was assassinated by senators on the Ides of March"
+    },
+    {
+      "name": "Painting of the Mona Lisa",
+      "name_ko": "모나리자 제작",
+      "date_start": 1503,
+      "date_end": 1519,
+      "temporal_scale": "evenementielle",
+      "certainty": "probable",
+      "category": "Art",
+      "importance": 8,
+      "description": "Leonardo da Vinci painted the Mona Lisa"
+    }
+  ],
+  "text_sources": [
+    {
+      "source_type": "sample",
+      "external_id": "sample-001",
+      "title": "Apology of Socrates",
+      "author": "Plato",
+      "language": "en",
+      "content": "Socrates was a philosopher in Athens during the Classical period. He was accused of impiety and corrupting the youth. His student Plato recorded his defense speech, known as the Apology. Socrates was sentenced to death and drank hemlock in 399 BCE."
+    }
+  ]
+}
