@@ -1,5 +1,10 @@
 # CHALDEAS V2 재설계 계획
 
+> ⚠️ **ARCHIVED**: 이 문서는 [V1_ARCHITECTURE.md](./V1_ARCHITECTURE.md)로 대체되었습니다.
+> 아래 내용은 초기 계획으로, 참고용으로만 사용하세요.
+
+---
+
 ## 개요
 
 기존 구조를 레거시로 유지하면서 새로운 Historical Chain 기반 아키텍처를 병행 개발합니다.
