@@ -1,0 +1,530 @@
+# CHALDEAS V1 아키텍처
+
+> 정보 수집(Ingestion)과 질문 응답(Query)을 철저히 분리
+
+---
+
+## 핵심 원칙
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        CHALDEAS V1 아키텍처                              │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│   ┌─────────────────────────┐      ┌─────────────────────────────────┐  │
+│   │   INGESTION LAYER       │      │      QUERY LAYER                │  │
+│   │   (정보 수집)            │      │      (질문 응답)                 │  │
+│   │                         │      │                                 │  │
+│   │   • 오프라인 배치 처리   │      │   • 실시간 사용자 요청 처리      │  │
+│   │   • 데이터 품질 우선     │      │   • 응답 속도 우선              │  │
+│   │   • 비용 최소화 (Ollama) │      │   • 정확도 우선                 │  │
+│   │                         │      │                                 │  │
+│   └───────────┬─────────────┘      └─────────────┬───────────────────┘  │
+│               │                                  │                      │
+│               ▼                                  ▼                      │
+│        ┌─────────────────────────────────────────────────────┐          │
+│        │                  SHARED DATABASE                    │          │
+│        │           (PostgreSQL + pgvector)                   │          │
+│        └─────────────────────────────────────────────────────┘          │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**왜 분리하는가?**
+- 정보 수집: 시간이 걸려도 정확해야 함 (배치, 오프라인)
+- 질문 응답: 빨라야 함, 이미 처리된 데이터 활용 (실시간)
+
+---
+
+## 1. INGESTION LAYER (정보 수집)
+
+### 1.1 역할
+- 원본 텍스트에서 역사 데이터 추출
+- 엔티티 인식, 연결, 저장
+- **사용자 요청과 무관하게 백그라운드에서 동작**
+
+### 1.2 구성요소
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                      INGESTION LAYER                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+[RAW SOURCES] ────────────────────────────────────────────────────────────
+│
+│  data/raw/
+│  ├── gutenberg/     (12,031 files - 역사 관련 전체 사용 예정)
+│  ├── ctext/         (20 files - 중국 고전)
+│  ├── perseus/       (그리스/로마 원전)
+│  ├── wikidata/      (구조화된 데이터)
+│  ├── dbpedia/       (위키피디아 구조화)
+│  ├── pleiades/      (고대 장소)
+│  ├── britannica_1911/ (백과사전)
+│  ├── worldhistory/  (역사 기사)
+│  └── ...
+│
+▼
+[COLLECTOR] ──────────────────────────────────────────────────────────────
+│
+│  data/scripts/collectors/
+│  ├── gutenberg.py    # Gutenberg 역사 카테고리 전체 수집
+│  ├── ctext.py        # 중국 고전 수집
+│  ├── wikidata.py     # SPARQL 쿼리로 구조화 데이터
+│  ├── dbpedia.py      # DBpedia 데이터
+│  └── ...
+│
+│  기능:
+│  • 원본 소스에서 데이터 다운로드
+│  • 메타데이터 추출 (제목, 저자, 날짜)
+│  • raw/ 디렉토리에 저장
+│
+▼
+[EXTRACTOR] ───────────────────────────────────────────────────────────────
+│
+│  backend/app/core/extraction/  (신규)
+│  ├── ner_pipeline.py    # spaCy + Ollama NER
+│  ├── event_extractor.py # 이벤트 추출
+│  ├── relation_extractor.py # 관계 추출
+│  └── entity_linker.py   # 기존 엔티티와 연결
+│
+│  기능:
+│  • 청크 단위로 텍스트 처리
+│  • 인물/장소/시간/이벤트 추출
+│  • LLM으로 검증 및 정규화
+│
+▼
+[TRANSFORMER] ─────────────────────────────────────────────────────────────
+│
+│  data/scripts/transform_data.py (기존)
+│
+│  기능:
+│  • 다양한 소스 데이터를 통일된 형식으로 변환
+│  • 좌표 해상도 (장소 → lat/lng)
+│  • 날짜 정규화 (BCE 처리)
+│  • processed/ 디렉토리에 저장
+│
+▼
+[LOADER] ──────────────────────────────────────────────────────────────────
+│
+│  data/scripts/import_to_db.py (기존)
+│
+│  기능:
+│  • processed/ 데이터를 DB에 임포트
+│  • 중복 검사 및 병합
+│  • 관계 테이블 연결 (event_persons, event_locations)
+│  • TextMention 저장
+│
+▼
+[DATABASE] ────────────────────────────────────────────────────────────────
+
+  PostgreSQL + pgvector
+
+  테이블:
+  ├── persons (5,801+ rows)
+  ├── locations (43,956+ rows)
+  ├── events (24,376+ rows)
+  ├── periods
+  ├── event_persons (junction)
+  ├── event_locations (junction)
+  ├── text_sources
+  ├── text_mentions
+  └── ...
+```
+
+### 1.3 처리 흐름 (Gutenberg 예시)
+
+```
+[Step 1] 역사 관련 텍스트 필터링
+────────────────────────────────
+Gutenberg 카테고리:
+• History -- Ancient (고대사)
+• History -- Modern (근현대사)
+• History -- Medieval (중세사)
+• History -- Military (군사사)
+• Biography (전기)
+• Philosophy (철학)
+
+예상: 12,031개 중 ~3,000개 역사 관련
+
+
+[Step 2] 청킹
+────────────────────────────────
+각 텍스트를 2000자 단위로 분할
+• pg1234.txt (50,000자) → 25 chunks
+
+
+[Step 3] NER 추출 (배치)
+────────────────────────────────
+for each chunk:
+    spacy_result = spacy(chunk)      # 1초
+    verified = ollama(spacy_result)  # 30초
+    save(verified)
+
+예상 시간: 3,000 books × 25 chunks × 30초 = ~625시간 (26일)
+(병렬 처리 시 단축 가능)
+
+
+[Step 4] 엔티티 연결
+────────────────────────────────
+"Julius Caesar" → persons.id = 123 (기존)
+"Gaius Julius" → persons.id = 123 (별칭으로 연결)
+"Unknown General" → persons.id = NEW (신규 생성)
+
+
+[Step 5] TextMention 저장
+────────────────────────────────
+{
+  text_source_id: 1234,
+  entity_type: "person",
+  entity_id: 123,
+  quote: "Caesar crossed the Rubicon..."
+}
+```
+
+---
+
+## 2. QUERY LAYER (질문 응답)
+
+### 2.1 역할
+- 사용자 질문을 이해하고 응답
+- 이미 처리된 데이터만 사용
+- **Ingestion 작업과 완전히 독립**
+
+### 2.2 기존 프론트엔드 구조 (유지)
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     기존 프론트엔드 (유지)                               │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  ┌──────────────┐  ┌────────────────────────────┐  ┌────────────────┐  │
+│  │   SIDEBAR    │  │         GLOBE              │  │  DETAIL PANEL  │  │
+│  │              │  │                            │  │                │  │
+│  │ • 검색       │  │    [3D 지구본]             │  │ • 이벤트 상세  │  │
+│  │ • 카테고리   │  │    • 이벤트 마커           │  │ • 관련 인물    │  │
+│  │ • 시대 필터  │  │    • 클릭 → 상세           │  │ • 관련 장소    │  │
+│  │ • 이벤트 목록│  │                            │  │ • 출처         │  │
+│  │              │  │                            │  │                │  │
+│  └──────────────┘  └────────────────────────────┘  └────────────────┘  │
+│                                                                         │
+│                    ┌────────────────────────────┐                       │
+│                    │      TIMELINE              │                       │
+│                    │  ◀◀ ◀ [BC 490] ▶ ▶▶       │                       │
+│                    └────────────────────────────┘                       │
+│                                                                         │
+│  ┌──────────────────────────────────────────────────────────────────┐  │
+│  │                    SHEBA CHAT (확장)                              │  │
+│  │  "소크라테스에 대해 알려줘" → Chain 응답                          │  │
+│  └──────────────────────────────────────────────────────────────────┘  │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### 2.3 Query Layer 구성요소
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        QUERY LAYER                                      │
+└─────────────────────────────────────────────────────────────────────────┘
+
+[USER REQUEST] ───────────────────────────────────────────────────────────
+│
+│  Types:
+│  • 직접 클릭: 지구본 마커 클릭 → 이벤트 상세
+│  • 검색: "마라톤 전투" → 이벤트 목록
+│  • 자연어: "소크라테스의 생애" → Chain 응답
+│
+▼
+[SHEBA] ──────────────────────────────────────────────────────────────────
+│
+│  backend/app/core/sheba/
+│  ├── query_parser.py     # 질문 의도 파악
+│  ├── query_router.py     # 적절한 핸들러로 라우팅
+│  └── vector_search.py    # 임베딩 유사도 검색
+│
+│  질문 유형 분류:
+│  • "search:event" → 이벤트 검색
+│  • "search:person" → 인물 검색
+│  • "chain:person_story" → 인물 체인 생성
+│  • "chain:era_story" → 시대 체인 생성
+│  • "explain:why" → 인과관계 설명
+│
+▼
+[HANDLER] ────────────────────────────────────────────────────────────────
+│
+│  질문 유형별 처리:
+│
+│  ┌─ SearchHandler ─────────────────────────────────────────────────┐
+│  │  입력: "마라톤 전투"                                             │
+│  │  처리: DB 검색 (이름 매칭 + 벡터 유사도)                         │
+│  │  출력: 이벤트 목록 [{id, title, date, ...}]                     │
+│  └─────────────────────────────────────────────────────────────────┘
+│
+│  ┌─ ChainHandler ──────────────────────────────────────────────────┐
+│  │  입력: "소크라테스의 생애"                                       │
+│  │  처리:                                                          │
+│  │    1. 캐시 확인 (historical_chains 테이블)                       │
+│  │    2. 없으면 → ChainGenerator 호출                              │
+│  │    3. 결과 캐싱                                                 │
+│  │  출력: Chain {title, segments: [{event, narrative}]}            │
+│  └─────────────────────────────────────────────────────────────────┘
+│
+│  ┌─ ExplainHandler ────────────────────────────────────────────────┐
+│  │  입력: "왜 로마가 멸망했어?"                                     │
+│  │  처리:                                                          │
+│  │    1. 관련 이벤트 검색                                          │
+│  │    2. 인과관계 그래프 탐색 (event_relationships)                 │
+│  │    3. LLM으로 설명 생성                                         │
+│  │  출력: Explanation {summary, causes: [], effects: []}           │
+│  └─────────────────────────────────────────────────────────────────┘
+│
+▼
+[RESPONSE FORMATTER] ─────────────────────────────────────────────────────
+│
+│  프론트엔드 형식에 맞게 응답 변환:
+│
+│  For Globe:
+│  {
+│    markers: [{lat, lng, event_id, importance}],
+│    highlighted_events: [...]
+│  }
+│
+│  For Detail Panel:
+│  {
+│    event: {...},
+│    related_persons: [...],
+│    related_locations: [...],
+│    sources: [...]
+│  }
+│
+│  For Chat:
+│  {
+│    type: "chain",
+│    title: "소크라테스의 이야기",
+│    segments: [...],
+│    sources: [...]
+│  }
+│
+▼
+[FRONTEND] ───────────────────────────────────────────────────────────────
+
+  기존 컴포넌트에 표시:
+  • GlobeContainer: 마커 업데이트
+  • EventDetailPanel: 상세 정보
+  • ChatPanel: Chain/Explanation 표시
+```
+
+---
+
+## 3. 레이어 간 상호작용
+
+### 3.1 완전 분리 원칙
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│   INGESTION LAYER                    QUERY LAYER                        │
+│   (백그라운드 배치)                   (실시간 요청)                       │
+│                                                                         │
+│   ┌─────────────────┐               ┌─────────────────┐                 │
+│   │  Collector      │               │  SHEBA          │                 │
+│   │  Extractor      │               │  ChainGenerator │                 │
+│   │  Transformer    │               │  Explainer      │                 │
+│   └────────┬────────┘               └────────┬────────┘                 │
+│            │                                 │                          │
+│            │    ┌───────────────────────┐    │                          │
+│            └───▶│      DATABASE         │◀───┘                          │
+│                 │                       │                               │
+│                 │  • events             │                               │
+│                 │  • persons            │                               │
+│                 │  • locations          │                               │
+│                 │  • text_mentions      │                               │
+│                 │  • historical_chains  │                               │
+│                 │                       │                               │
+│                 └───────────────────────┘                               │
+│                                                                         │
+│   ✗ 직접 호출 없음                    ✓ DB만 읽기                        │
+│   ✗ 실시간 처리 없음                  ✓ 캐시 활용                        │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+### 3.2 데이터 흐름
+
+```
+[Ingestion - 오프라인]
+Gutenberg → Collector → raw/
+raw/ → Extractor → entities
+entities → Transformer → processed/
+processed/ → Loader → DATABASE
+
+
+[Query - 실시간]
+User → Frontend → API
+API → SHEBA → DATABASE (읽기만)
+DATABASE → Response → Frontend
+```
+
+---
+
+## 4. API 엔드포인트 설계
+
+### 4.1 기존 API (유지)
+
+```
+GET  /api/v1/events              # 이벤트 목록 (기존)
+GET  /api/v1/events/{id}         # 이벤트 상세 (기존)
+GET  /api/v1/persons             # 인물 목록 (기존)
+GET  /api/v1/locations           # 장소 목록 (기존)
+GET  /api/v1/search              # 통합 검색 (기존)
+POST /api/v1/chat/agent          # SHEBA 대화 (기존)
+```
+
+### 4.2 신규 API (Chain)
+
+```
+# Chain API (신규)
+POST /api/v1/chains/curate       # 체인 생성/조회
+GET  /api/v1/chains/{id}         # 체인 상세
+GET  /api/v1/chains              # 체인 목록
+
+# 요청 예시
+POST /api/v1/chains/curate
+{
+  "chain_type": "person_story",
+  "person_id": 1,
+  "max_segments": 5
+}
+
+# 응답 예시
+{
+  "chain": {
+    "title": "소크라테스의 이야기",
+    "segments": [
+      {
+        "event_id": 123,
+        "narrative": "기원전 470년경 아테네에서 태어난...",
+        "sources": ["플라톤의 대화편", "디오게네스"]
+      }
+    ]
+  },
+  "cached": true
+}
+```
+
+### 4.3 내부 API (Ingestion용 - 관리자 전용)
+
+```
+# 관리자 전용 - Ingestion 제어
+POST /api/admin/ingestion/start   # 배치 시작
+GET  /api/admin/ingestion/status  # 진행 상황
+POST /api/admin/ingestion/stop    # 배치 중지
+
+# 데이터 품질 관리
+GET  /api/admin/conflicts         # 충돌 목록
+POST /api/admin/conflicts/{id}/resolve  # 충돌 해결
+```
+
+---
+
+## 5. 구현 우선순위
+
+### Phase 1: 기존 데이터 활용 (1주)
+```
+□ wikidata/dbpedia 데이터 → V1 스키마로 마이그레이션
+□ 기존 events/persons/locations 테이블 확장
+□ Period 테이블 추가 및 연결
+□ 기존 API와 호환 유지
+```
+
+### Phase 2: Chain 시스템 통합 (1주)
+```
+□ ChainGenerator를 본 백엔드에 통합
+□ /api/v1/chains/curate 엔드포인트 추가
+□ ChatPanel에서 Chain 응답 렌더링
+□ 캐싱 시스템 구현
+```
+
+### Phase 3: Gutenberg 전체 처리 (2-4주)
+```
+□ 역사 카테고리 필터링 스크립트
+□ 배치 NER 파이프라인
+□ 엔티티 연결 및 저장
+□ 진행 상황 모니터링
+```
+
+### Phase 4: 품질 개선 (지속)
+```
+□ 충돌 감지 및 해결 UI
+□ 사용자 피드백 반영
+□ Chain 품질 평가
+```
+
+---
+
+## 6. 파일 구조
+
+```
+backend/
+├── app/
+│   ├── api/
+│   │   ├── v1/
+│   │   │   ├── events.py      # 기존
+│   │   │   ├── persons.py     # 기존
+│   │   │   ├── chains.py      # 신규 (PoC에서 이동)
+│   │   │   └── search.py      # 기존
+│   │   └── admin/
+│   │       └── ingestion.py   # 신규 (관리자용)
+│   │
+│   ├── core/
+│   │   ├── sheba/             # 기존 (Query Layer)
+│   │   │   ├── query_parser.py
+│   │   │   └── vector_search.py
+│   │   │
+│   │   ├── chain/             # 신규 (Query Layer)
+│   │   │   ├── generator.py   # PoC에서 이동
+│   │   │   └── cache.py
+│   │   │
+│   │   └── extraction/        # 신규 (Ingestion Layer)
+│   │       ├── ner_pipeline.py
+│   │       ├── event_extractor.py
+│   │       └── entity_linker.py
+│   │
+│   └── models/
+│       ├── event.py           # 기존 + 확장
+│       ├── person.py          # 기존 + 확장
+│       ├── period.py          # 신규
+│       ├── chain.py           # 신규
+│       └── text_mention.py    # 신규
+
+data/
+├── raw/                       # 기존 (Ingestion 입력)
+│   ├── gutenberg/
+│   ├── ctext/
+│   └── ...
+├── processed/                 # 기존 (Ingestion 출력)
+└── scripts/
+    ├── collectors/            # 기존 (Collector)
+    ├── transform_data.py      # 기존 (Transformer)
+    └── import_to_db.py        # 기존 (Loader)
+
+frontend/
+└── src/
+    ├── components/
+    │   ├── globe/             # 기존 (유지)
+    │   ├── chat/              # 기존 + Chain 렌더링 추가
+    │   ├── detail/            # 기존 (유지)
+    │   └── chain/             # 신규 (Chain 시각화)
+    └── ...
+```
+
+---
+
+## 요약
+
+| 레이어 | 역할 | 실행 시점 | 주요 컴포넌트 |
+|--------|------|----------|--------------|
+| **Ingestion** | 데이터 수집/처리 | 오프라인 배치 | Collector, Extractor, Loader |
+| **Query** | 질문 응답 | 실시간 요청 | SHEBA, ChainGenerator |
+| **Database** | 공유 저장소 | 항상 | PostgreSQL + pgvector |
+| **Frontend** | 사용자 인터페이스 | 항상 | Globe, Chat, Detail (기존 유지) |
