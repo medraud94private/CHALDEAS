@@ -1,0 +1,1215 @@
+{
+  "timestamp": "20260102_131356",
+  "processed_texts": 26,
+  "total_entities_processed": 406,
+  "stats": {
+    "decisions": {
+      "total_decisions": 406,
+      "create_new_count": 163,
+      "link_existing_count": 243,
+      "pending_count": 0,
+      "ordinal_conflicts_caught": 0,
+      "avg_confidence": 0.8321428571428614,
+      "avg_candidates_per_decision": 3.0738916256157625
+    },
+    "registry": {
+      "total": 163,
+      "by_type": {
+        "person": 77,
+        "location": 84,
+        "event": 2
+      }
+    },
+    "pending_queue_size": 0
+  },
+  "pending_items": [],
+  "sample_entities": [
+    {
+      "id": 1,
+      "text": "Project Gutenberg eBook",
+      "normalized": "Project Gutenberg eBook",
+      "type": "person",
+      "aliases": [
+        "Project Gutenberg"
+      ],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg33111.txt",
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "St. Gregory",
+      "normalized": "St. Gregory",
+      "type": "location",
+      "aliases": [
+        "Cross Street",
+        "St. Gregory's"
+      ],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the Gregorian Music\n\n    \n\nThis",
+      "normalized": "the Gregorian Music\n\n    \n\nThis",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the United States",
+      "normalized": "the United States",
+      "type": "location",
+      "aliases": [
+        "United States",
+        "the United States of America"
+      ],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg33111.txt",
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Project Gutenberg License",
+      "normalized": "the Project Gutenberg License",
+      "type": "location",
+      "aliases": [
+        "BEGIN PROJECT GUTENBERG",
+        "Google Print"
+      ],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg33111.txt",
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "E. G. P. Wyatt",
+      "normalized": "E. G. P. Wyatt",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Colin Bell",
+      "normalized": "Colin Bell",
+      "type": "person",
+      "aliases": [
+        "Boni"
+      ],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Stephen Hutcheson",
+      "normalized": "Stephen Hutcheson",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg40108.txt"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Joseph Cooper",
+      "normalized": "Joseph Cooper",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "PLAINSONG",
+      "normalized": "PLAINSONG",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "PRINTED BY SPRAGUE & CO.",
+      "normalized": "PRINTED BY SPRAGUE & CO.",
+      "type": "location",
+      "aliases": [
+        "CHARLES H. KERR & COMPANY",
+        "Historical Printing Club",
+        "PRINTE",
+        "United Kingdom: Ward, Lock and Co.",
+        "E. & J.B. YOUNG & CO."
+      ],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg33111.txt",
+        "gutenberg/pg31891.txt",
+        "gutenberg/pg24581.txt",
+        "gutenberg/pg70796.txt"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "LTD",
+      "normalized": "LTD",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "E.C.",
+      "normalized": "E.C.",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg16790.txt"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "LONDON",
+      "normalized": "LONDON",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg21697.txt",
+        "gutenberg/pg16790.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "PREFACE",
+      "normalized": "PREFACE",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg16790.txt"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "W. H.\n\nFrere",
+      "normalized": "W. H.\n\nFrere",
+      "type": "person",
+      "aliases": [
+        "W."
+      ],
+      "sources": [
+        "gutenberg/pg31582.txt",
+        "gutenberg/pg16790.txt"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Cheshire Garden:",
+      "normalized": "Cheshire Garden:",
+      "type": "location",
+      "aliases": [
+        "Cheshire Garden"
+      ],
+      "sources": [
+        "gutenberg/pg40249.txt"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Geoffrey Egerton-Warburton",
+      "normalized": "Geoffrey Egerton-Warburton",
+      "type": "person",
+      "aliases": [
+        "Rector of Warburton"
+      ],
+      "sources": [
+        "gutenberg/pg40249.txt"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Diane Monico",
+      "normalized": "Diane Monico",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg40249.txt"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "HUGHES",
+      "normalized": "HUGHES",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg40249.txt"
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Manchester",
+      "normalized": "Manchester",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg40249.txt"
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Guardian",
+      "normalized": "Guardian",
+      "type": "location",
+      "aliases": [
+        "Adair"
+      ],
+      "sources": [
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 23,
+      "text": "P. Ramsdale",
+      "normalized": "P. Ramsdale",
+      "type": "person",
+      "aliases": [
+        "Release",
+        "TRANSLATED"
+      ],
+      "sources": [
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg33111.txt",
+        "gutenberg/pg56177.txt",
+        "gutenberg/pg71264.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Heatley",
+      "normalized": "Heatley",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg40249.txt"
+      ]
+    },
+    {
+      "id": 25,
+      "text": "The Old Church",
+      "normalized": "The Old Church",
+      "type": "location",
+      "aliases": [
+        "the\n\nReformed Church"
+      ],
+      "sources": [
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg3161.txt"
+      ]
+    },
+    {
+      "id": 26,
+      "text": "The Flower Garden",
+      "normalized": "The Flower Garden",
+      "type": "location",
+      "aliases": [
+        "Acknowledgment"
+      ],
+      "sources": [
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Garrett",
+      "normalized": "Garrett",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg40249.txt"
+      ]
+    },
+    {
+      "id": 28,
+      "text": "CONTENTS",
+      "normalized": "CONTENTS",
+      "type": "location",
+      "aliases": [
+        "BOSTON",
+        "Sont"
+      ],
+      "sources": [
+        "gutenberg/pg40249.txt",
+        "gutenberg/pg24581.txt",
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Friedrich Engels",
+      "normalized": "Friedrich Engels",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg33111.txt"
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Ernest Untermann",
+      "normalized": "Ernest Untermann",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg33111.txt"
+      ]
+    },
+    {
+      "id": 31,
+      "text": "Fritz Ohrenschall",
+      "normalized": "Fritz Ohrenschall",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg33111.txt"
+      ]
+    },
+    {
+      "id": 32,
+      "text": "Martin Pettit",
+      "normalized": "Martin Pettit",
+      "type": "person",
+      "aliases": [
+        "Martin Rattler",
+        "Merlin"
+      ],
+      "sources": [
+        "gutenberg/pg33111.txt",
+        "gutenberg/pg21697.txt",
+        "arthurian/gutenberg_pg1251.txt"
+      ]
+    },
+    {
+      "id": 33,
+      "text": "CHICAGO",
+      "normalized": "CHICAGO",
+      "type": "location",
+      "aliases": [
+        "CHARING CROSS"
+      ],
+      "sources": [
+        "gutenberg/pg33111.txt",
+        "gutenberg/pg16790.txt"
+      ]
+    },
+    {
+      "id": 34,
+      "text": "Gens",
+      "normalized": "Gens",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg33111.txt"
+      ]
+    },
+    {
+      "id": 35,
+      "text": "Rome                   ",
+      "normalized": "Rome                   ",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg33111.txt"
+      ]
+    },
+    {
+      "id": 36,
+      "text": "New Netherland",
+      "normalized": "New Netherland",
+      "type": "location",
+      "aliases": [
+        "NETHERLAND",
+        "NORTHUMBERLAND AVENUE",
+        "Athena"
+      ],
+      "sources": [
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg16790.txt",
+        "theoi/theoi_catalog.json",
+        "theoi/theoi_figures_detailed.json"
+      ]
+    },
+    {
+      "id": 37,
+      "text": "J. Franklin Jameson",
+      "normalized": "J. Franklin Jameson",
+      "type": "person",
+      "aliases": [
+        "James Winthrop"
+      ],
+      "sources": [
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 38,
+      "text": "Tony Adam Anthony",
+      "normalized": "Tony Adam Anthony",
+      "type": "person",
+      "aliases": [
+        "Tony Adam",
+        "NY"
+      ],
+      "sources": [
+        "gutenberg/pg3161.txt"
+      ]
+    },
+    {
+      "id": 39,
+      "text": "David Widger",
+      "normalized": "David Widger",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg3073.txt",
+        "arthurian/gutenberg_pg1251.txt"
+      ]
+    },
+    {
+      "id": 40,
+      "text": "Michaelius",
+      "normalized": "Michaelius",
+      "type": "person",
+      "aliases": [
+        "Samuel Chase"
+      ],
+      "sources": [
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 41,
+      "text": "Jonas",
+      "normalized": "Jonas",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg3161.txt"
+      ]
+    },
+    {
+      "id": 42,
+      "text": "Charles Scribner's",
+      "normalized": "Charles Scribner's",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg3161.txt"
+      ]
+    },
+    {
+      "id": 43,
+      "text": "the United Netherlands",
+      "normalized": "the United Netherlands",
+      "type": "location",
+      "aliases": [
+        "Ireland"
+      ],
+      "sources": [
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 44,
+      "text": "Geneva",
+      "normalized": "Geneva",
+      "type": "location",
+      "aliases": [
+        "New Haven",
+        "England",
+        "Ungava"
+      ],
+      "sources": [
+        "gutenberg/pg3161.txt",
+        "gutenberg/pg31891.txt",
+        "gutenberg/pg21697.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 45,
+      "text": "Paul Leicester Ford",
+      "normalized": "Paul Leicester Ford",
+      "type": "person",
+      "aliases": [
+        "Paul Leicester Ford\n\n\n\n                              Brooklyn"
+      ],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 46,
+      "text": "N.Y.",
+      "normalized": "N.Y.",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 47,
+      "text": "The Letters Of Cassius",
+      "normalized": "The Letters Of Cassius",
+      "type": "location",
+      "aliases": [
+        "Letter Of A Friend"
+      ],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 48,
+      "text": "James Sullivan",
+      "normalized": "James Sullivan",
+      "type": "person",
+      "aliases": [
+        "Beth Sullivan",
+        "Beth\n\nSullivan"
+      ],
+      "sources": [
+        "gutenberg/pg31891.txt",
+        "gutenberg/pg3412.txt"
+      ]
+    },
+    {
+      "id": 49,
+      "text": "Gerry",
+      "normalized": "Gerry",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 50,
+      "text": "Oliver Ellsworth",
+      "normalized": "Oliver Ellsworth",
+      "type": "person",
+      "aliases": [
+        "Liveright"
+      ],
+      "sources": [
+        "gutenberg/pg31891.txt",
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 51,
+      "text": "William Williams",
+      "normalized": "William Williams",
+      "type": "person",
+      "aliases": [
+        "Mais"
+      ],
+      "sources": [
+        "gutenberg/pg31891.txt",
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 52,
+      "text": "Roger Sherman",
+      "normalized": "Roger Sherman",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 53,
+      "text": "George Clinton",
+      "normalized": "George Clinton",
+      "type": "person",
+      "aliases": [
+        "Grant Allen"
+      ],
+      "sources": [
+        "gutenberg/pg31891.txt",
+        "gutenberg/pg16790.txt"
+      ]
+    },
+    {
+      "id": 54,
+      "text": "Alexander Hamilton",
+      "normalized": "Alexander Hamilton",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 55,
+      "text": "Robert Yates",
+      "normalized": "Robert Yates",
+      "type": "person",
+      "aliases": [
+        "Bryan Ness"
+      ],
+      "sources": [
+        "gutenberg/pg31891.txt",
+        "gutenberg/pg24581.txt"
+      ]
+    },
+    {
+      "id": 56,
+      "text": "Cursory Remarks",
+      "normalized": "Cursory Remarks",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 57,
+      "text": "Letter Of Caution",
+      "normalized": "Letter Of Caution",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg31891.txt"
+      ]
+    },
+    {
+      "id": 58,
+      "text": "R. M. Ballantyne",
+      "normalized": "R. M. Ballantyne",
+      "type": "person",
+      "aliases": [
+        "R.M. Ballantyne",
+        "Clare Boothby",
+        "The James J. Kelly Library"
+      ],
+      "sources": [
+        "gutenberg/pg21697.txt",
+        "gutenberg/pg16790.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 59,
+      "text": "Nick Hodson",
+      "normalized": "Nick Hodson",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg21697.txt"
+      ]
+    },
+    {
+      "id": 60,
+      "text": "The Red Man's Revenge",
+      "normalized": "The Red Man's Revenge",
+      "type": "location",
+      "aliases": [
+        "the Red River Settlement"
+      ],
+      "sources": [
+        "gutenberg/pg21697.txt"
+      ]
+    },
+    {
+      "id": 61,
+      "text": "Robert Michael Ballantyne",
+      "normalized": "Robert Michael Ballantyne",
+      "type": "person",
+      "aliases": [
+        "W. B. CLARKE COMPANY\n\n  ",
+        "Liberty Hall",
+        "Robert J. Homa"
+      ],
+      "sources": [
+        "gutenberg/pg21697.txt",
+        "gutenberg/pg24581.txt",
+        "gutenberg/pg71264.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 62,
+      "text": "the Edinburgh Academy",
+      "normalized": "the Edinburgh Academy",
+      "type": "location",
+      "aliases": [
+        "Edinburgh",
+        "Encyclopædia Britannica"
+      ],
+      "sources": [
+        "gutenberg/pg21697.txt",
+        "britannica/Privateer",
+        "britannica/Quiberon, Campaign and Battle of"
+      ]
+    },
+    {
+      "id": 63,
+      "text": "the Hudson Bay Company",
+      "normalized": "the Hudson Bay Company",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg21697.txt"
+      ]
+    },
+    {
+      "id": 64,
+      "text": "Northen",
+      "normalized": "Northen",
+      "type": "location",
+      "aliases": [
+        "NORTH STREET",
+        "Toronto"
+      ],
+      "sources": [
+        "gutenberg/pg21697.txt",
+        "gutenberg/pg16790.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 65,
+      "text": "Canada",
+      "normalized": "Canada",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg21697.txt"
+      ]
+    },
+    {
+      "id": 66,
+      "text": "HBC",
+      "normalized": "HBC",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg21697.txt"
+      ]
+    },
+    {
+      "id": 67,
+      "text": "John Brown",
+      "normalized": "John Brown",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24581.txt"
+      ]
+    },
+    {
+      "id": 68,
+      "text": "Pittsfield",
+      "normalized": "Pittsfield",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24581.txt"
+      ]
+    },
+    {
+      "id": 69,
+      "text": "Massachusetts",
+      "normalized": "Massachusetts",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24581.txt"
+      ]
+    },
+    {
+      "id": 70,
+      "text": "the Brave Accuser",
+      "normalized": "the Brave Accuser",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24581.txt"
+      ]
+    },
+    {
+      "id": 71,
+      "text": "Benedict Arnold",
+      "normalized": "Benedict Arnold",
+      "type": "person",
+      "aliases": [
+        "Nora Connolly O'Brien"
+      ],
+      "sources": [
+        "gutenberg/pg24581.txt",
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 72,
+      "text": "Archibald Murray Howe",
+      "normalized": "Archibald Murray Howe",
+      "type": "person",
+      "aliases": [
+        "Humphrey Milford"
+      ],
+      "sources": [
+        "gutenberg/pg24581.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 73,
+      "text": "Richard J. Shiffer",
+      "normalized": "Richard J. Shiffer",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24581.txt"
+      ]
+    },
+    {
+      "id": 74,
+      "text": "NEW YORK",
+      "normalized": "NEW YORK",
+      "type": "location",
+      "aliases": [
+        "STONE & MACKENZIE\n\n  NEW YORK"
+      ],
+      "sources": [
+        "gutenberg/pg24581.txt",
+        "gutenberg/pg71264.txt",
+        "gutenberg/pg16790.txt",
+        "gutenberg/pg40108.txt"
+      ]
+    },
+    {
+      "id": 75,
+      "text": "H. ELLIS CO.",
+      "normalized": "H. ELLIS CO.",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24581.txt"
+      ]
+    },
+    {
+      "id": 76,
+      "text": "The Island of Fantasy",
+      "normalized": "The Island of Fantasy",
+      "type": "location",
+      "aliases": [
+        "The Island of Fantasy=\n\n                               A Romance"
+      ],
+      "sources": [
+        "gutenberg/pg56177.txt"
+      ]
+    },
+    {
+      "id": 77,
+      "text": "Suzanne Shell",
+      "normalized": "Suzanne Shell",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56177.txt"
+      ]
+    },
+    {
+      "id": 78,
+      "text": "the Online\n\n        Distributed Proofreading Team",
+      "normalized": "the Online\n\n        Distributed Proofreading Team",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56177.txt"
+      ]
+    },
+    {
+      "id": 79,
+      "text": "The Internet Archive/American Libraries",
+      "normalized": "The Internet Archive/American Libraries",
+      "type": "location",
+      "aliases": [
+        "The Internet Archive",
+        "Boni & Liveright, Inc."
+      ],
+      "sources": [
+        "gutenberg/pg56177.txt",
+        "gutenberg/pg56505.txt",
+        "gutenberg/pg71264.txt",
+        "gutenberg/pg70796.txt"
+      ]
+    },
+    {
+      "id": 80,
+      "text": "Bold",
+      "normalized": "Bold",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56177.txt"
+      ]
+    },
+    {
+      "id": 81,
+      "text": "Historic Bubbles",
+      "normalized": "Historic Bubbles",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 82,
+      "text": "Frederic Leake",
+      "normalized": "Frederic Leake",
+      "type": "person",
+      "aliases": [
+        "FREDERIC"
+      ],
+      "sources": [
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 83,
+      "text": "Chuck Greif",
+      "normalized": "Chuck Greif",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 84,
+      "text": "ALBANY",
+      "normalized": "ALBANY",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 85,
+      "text": "N. Y.:",
+      "normalized": "N. Y.:",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 86,
+      "text": "The Second House of",
+      "normalized": "The Second House of",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg56505.txt"
+      ]
+    },
+    {
+      "id": 87,
+      "text": "Al Haines",
+      "normalized": "Al Haines",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 88,
+      "text": "JAMES CONNOLLY",
+      "normalized": "JAMES CONNOLLY",
+      "type": "person",
+      "aliases": [
+        "Nora Connolly",
+        "Eamonn Ceannt"
+      ],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 89,
+      "text": "Copyright",
+      "normalized": "Copyright",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt",
+        "gutenberg/pg3073.txt"
+      ]
+    },
+    {
+      "id": 90,
+      "text": "Markievietz\n\n\n\n",
+      "normalized": "Markievietz\n\n\n\n",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 91,
+      "text": "Thomas J. Clarke",
+      "normalized": "Thomas J. Clarke",
+      "type": "person",
+      "aliases": [
+        "Thomas Malory"
+      ],
+      "sources": [
+        "gutenberg/pg71264.txt",
+        "arthurian/gutenberg_pg1251.txt"
+      ]
+    },
+    {
+      "id": 92,
+      "text": "John McDermott",
+      "normalized": "John McDermott",
+      "type": "person",
+      "aliases": [
+        "Thomas Macdonagh"
+      ],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 93,
+      "text": "Joseph Plunkett",
+      "normalized": "Joseph Plunkett",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 94,
+      "text": "Eoin MacNeill",
+      "normalized": "Eoin MacNeill",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 95,
+      "text": "Patrick H. Pearse",
+      "normalized": "Patrick H. Pearse",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 96,
+      "text": "MAPS",
+      "normalized": "MAPS",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 97,
+      "text": "Belfast",
+      "normalized": "Belfast",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 98,
+      "text": "Leek",
+      "normalized": "Leek",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 99,
+      "text": "Dundalk",
+      "normalized": "Dundalk",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    },
+    {
+      "id": 100,
+      "text": "Dublin",
+      "normalized": "Dublin",
+      "type": "location",
+      "aliases": [
+        "the Dublin Strike"
+      ],
+      "sources": [
+        "gutenberg/pg71264.txt"
+      ]
+    }
+  ]
+}

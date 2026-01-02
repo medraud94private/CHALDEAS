@@ -1,17 +1,31 @@
-# Large files - 업로드 제외
+#!include:.gitignore
+
+# Large files
 *.sql
 *.dump
 *.exe
+chaldeas_dump.sql
 
 # Dependencies
 node_modules/
+**/node_modules/
 __pycache__/
+**/__pycache__/
 .venv/
+venv/
 
 # Git
+.git/
 .git
 
-# Temp
+# IDE
+.idea/
+.vscode/
+
+# Temp/Test
 *.log
 test_output.txt
 filter_test.txt
+agent_test.json
+promptsample.txt
+nul

@@ -66,18 +66,20 @@ class HybridNERPipeline:
         return self.nlp
 
     async def _call_ollama(self, prompt: str) -> Optional[str]:
-        """Call Ollama API (local, FREE)."""
+        """Call Ollama API (local, FREE) using /api/chat with think:false."""
         try:
             async with httpx.AsyncClient(timeout=300.0) as client:  # 5 min for first load
                 # Add instruction for JSON output in prompt
                 json_prompt = prompt + "\n\nIMPORTANT: Respond with valid JSON only, no other text."
 
+                # Use /api/chat with think:false to disable Qwen3 thinking mode
                 response = await client.post(
-                    f"{settings.ollama_base_url}/api/generate",
+                    f"{settings.ollama_base_url}/api/chat",
                     json={
                         "model": settings.ollama_model,
-                        "prompt": json_prompt,
+                        "messages": [{"role": "user", "content": json_prompt}],
                         "stream": False,
+                        "think": False,  # Critical: disable Qwen3 thinking mode
                         "options": {
                             "temperature": 0.1  # Low temperature for consistent output
                         }
@@ -85,7 +87,8 @@ class HybridNERPipeline:
                 )
                 if response.status_code == 200:
                     result = response.json()
-                    response_text = result.get("response", "")
+                    # /api/chat returns message.content instead of response
+                    response_text = result.get("message", {}).get("content", "")
 
                     # Extract JSON from response (may have extra text)
                     if response_text:

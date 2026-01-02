@@ -1,0 +1,1175 @@
+{
+  "timestamp": "20260102_144024",
+  "processed_texts": 26,
+  "total_entities_processed": 402,
+  "stats": {
+    "decisions": {
+      "total_decisions": 402,
+      "create_new_count": 183,
+      "link_existing_count": 219,
+      "pending_count": 0,
+      "ordinal_conflicts_caught": 1,
+      "avg_confidence": 0.842910447761198,
+      "avg_candidates_per_decision": 2.325870646766171
+    },
+    "registry": {
+      "total": 183,
+      "by_type": {
+        "person": 90,
+        "location": 91,
+        "event": 2
+      }
+    },
+    "pending_queue_size": 0
+  },
+  "pending_items": [],
+  "sample_entities": [
+    {
+      "id": 1,
+      "text": "Project Gutenberg eBook",
+      "normalized": "Project Gutenberg eBook",
+      "type": "person",
+      "aliases": [
+        "Project Gutenberg Distributed Proofreaders",
+        "Gutenberg eBook"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt",
+        "gutenberg/pg24946.txt",
+        "gutenberg/pg65011.txt",
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the United States",
+      "normalized": "the United States",
+      "type": "location",
+      "aliases": [
+        "DEDICATION",
+        "United States",
+        "DIE USA",
+        "Budapest",
+        "THE UNITED STATES OF AMERICA"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt",
+        "gutenberg/pg24946.txt",
+        "gutenberg/pg65011.txt",
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the Project Gutenberg License",
+      "normalized": "the Project Gutenberg License",
+      "type": "location",
+      "aliases": [
+        "ARTHUR THOMAS QUILLER-COUCH"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt",
+        "gutenberg/pg24946.txt",
+        "gutenberg/pg65011.txt",
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Prosper Mérimée",
+      "normalized": "Prosper Mérimée",
+      "type": "person",
+      "aliases": [
+        "je comprenais"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Ebooks",
+      "normalized": "Ebooks",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "XIV",
+      "normalized": "XIV",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "XXI",
+      "normalized": "XXI",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Pè",
+      "normalized": "Pè",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Sta",
+      "normalized": "Sta",
+      "type": "person",
+      "aliases": [
+        "vasta anche ella",
+        "vista"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt",
+        "gutenberg/pg1408.txt"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "VOCERO DU NIOLO",
+      "normalized": "VOCERO DU NIOLO",
+      "type": "person",
+      "aliases": [
+        "Aldine House"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt",
+        "gutenberg/pg53961.txt"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Thomas Nevil",
+      "normalized": "Thomas Nevil",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Irlandais",
+      "normalized": "Irlandais",
+      "type": "location",
+      "aliases": [
+        "Marseille"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "distingué de l'armée",
+      "normalized": "distingué de l'armée",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "sa fille à l'hôtel Beauvau",
+      "normalized": "sa fille à l'hôtel Beauvau",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "d'un",
+      "normalized": "d'un",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "qu'appartenait",
+      "normalized": "qu'appartenait",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Lydia",
+      "normalized": "Lydia",
+      "type": "person",
+      "aliases": [
+        "Library"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt",
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Vésuve",
+      "normalized": "Vésuve",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "l'Italie",
+      "normalized": "l'Italie",
+      "type": "location",
+      "aliases": [
+        "del sito della"
+      ],
+      "sources": [
+        "gutenberg/pg16239.txt",
+        "gutenberg/pg53961.txt"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Explique",
+      "normalized": "Explique",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 21,
+      "text": "qui pourra",
+      "normalized": "qui pourra",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 22,
+      "text": "sens de ces\n\n",
+      "normalized": "sens de ces\n\n",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg16239.txt"
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Arthur Quiller-Couch",
+      "normalized": "Arthur Quiller-Couch",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24946.txt"
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Lionel Sear",
+      "normalized": "Lionel Sear",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24946.txt"
+      ]
+    },
+    {
+      "id": 25,
+      "text": "jargon",
+      "normalized": "jargon",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24946.txt"
+      ]
+    },
+    {
+      "id": 26,
+      "text": "American Insurance 'Lobbyist",
+      "normalized": "American Insurance 'Lobbyist",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg24946.txt"
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Armstrong Committee:--",
+      "normalized": "Armstrong Committee:--",
+      "type": "person",
+      "aliases": [
+        "U. S. Marine Operations"
+      ],
+      "sources": [
+        "gutenberg/pg24946.txt",
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 28,
+      "text": "U.S. Marine Operations",
+      "normalized": "U.S. Marine Operations",
+      "type": "location",
+      "aliases": [
+        "Marine Corps",
+        "U.S."
+      ],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Korea",
+      "normalized": "Korea",
+      "type": "location",
+      "aliases": [
+        "West Korea"
+      ],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Pat Meid",
+      "normalized": "Pat Meid",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 31,
+      "text": "James M. Yingling",
+      "normalized": "James M. Yingling",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 32,
+      "text": "Release",
+      "normalized": "Release",
+      "type": "person",
+      "aliases": [
+        "Arise",
+        "Ares"
+      ],
+      "sources": [
+        "gutenberg/pg65011.txt",
+        "gutenberg/pg12661.txt",
+        "gutenberg/pg4374.txt",
+        "gutenberg/pg1408.txt",
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 33,
+      "text": "Brian Coe",
+      "normalized": "Brian Coe",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 34,
+      "text": "Charlie Howard",
+      "normalized": "Charlie Howard",
+      "type": "person",
+      "aliases": [
+        "Katherine Howard    1"
+      ],
+      "sources": [
+        "gutenberg/pg65011.txt",
+        "gutenberg/pg51057.txt"
+      ]
+    },
+    {
+      "id": 35,
+      "text": "the Online Distributed Proofreading Team",
+      "normalized": "the Online Distributed Proofreading Team",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 36,
+      "text": "The Internet Archive",
+      "normalized": "The Internet Archive",
+      "type": "location",
+      "aliases": [
+        "Dedication"
+      ],
+      "sources": [
+        "gutenberg/pg65011.txt",
+        "gutenberg/pg17485.txt"
+      ]
+    },
+    {
+      "id": 37,
+      "text": "USMC",
+      "normalized": "USMC",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 38,
+      "text": "Washington",
+      "normalized": "Washington",
+      "type": "location",
+      "aliases": [
+        "ANTIGO"
+      ],
+      "sources": [
+        "gutenberg/pg65011.txt",
+        "gutenberg/pg69878.txt"
+      ]
+    },
+    {
+      "id": 39,
+      "text": "The Chosin Reservoir Campaign”\n\n  Volume IV",
+      "normalized": "The Chosin Reservoir Campaign”\n\n  Volume IV",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 40,
+      "text": "the Superintendent of Documents\n\n  U.S. Government Printing Office\n\n  ",
+      "normalized": "the Superintendent of Documents\n\n  U.S. Government Printing Office\n\n  ",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg65011.txt"
+      ]
+    },
+    {
+      "id": 41,
+      "text": "Jane Grey",
+      "normalized": "Jane Grey",
+      "type": "person",
+      "aliases": [
+        "Lady Jane Grey"
+      ],
+      "sources": [
+        "gutenberg/pg51057.txt"
+      ]
+    },
+    {
+      "id": 42,
+      "text": "Ida A. Taylor",
+      "normalized": "Ida A. Taylor",
+      "type": "person",
+      "aliases": [
+        "I. A. TAYLOR",
+        "LITT.D."
+      ],
+      "sources": [
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 43,
+      "text": "MWS",
+      "normalized": "MWS",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg51057.txt"
+      ]
+    },
+    {
+      "id": 44,
+      "text": "Lucas de Heere",
+      "normalized": "Lucas de Heere",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg51057.txt"
+      ]
+    },
+    {
+      "id": 45,
+      "text": "Friends”\n\n  “",
+      "normalized": "Friends”\n\n  “",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg51057.txt"
+      ]
+    },
+    {
+      "id": 46,
+      "text": "London",
+      "normalized": "London",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg53961.txt",
+        "gutenberg/pg12481.txt",
+        "arthurian/gutenberg_pg1961.txt"
+      ]
+    },
+    {
+      "id": 47,
+      "text": "HUTCHINSON & CO",
+      "normalized": "HUTCHINSON & CO",
+      "type": "location",
+      "aliases": [
+        "CO"
+      ],
+      "sources": [
+        "gutenberg/pg51057.txt",
+        "arthurian/gutenberg_pg1961.txt"
+      ]
+    },
+    {
+      "id": 48,
+      "text": "Europe",
+      "normalized": "Europe",
+      "type": "location",
+      "aliases": [
+        "Modern Europe"
+      ],
+      "sources": [
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 49,
+      "text": "England",
+      "normalized": "England",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 50,
+      "text": "Cranmer",
+      "normalized": "Cranmer",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg51057.txt"
+      ]
+    },
+    {
+      "id": 51,
+      "text": "Katherine Parr",
+      "normalized": "Katherine Parr",
+      "type": "person",
+      "aliases": [
+        "Katherine",
+        "PRINTED",
+        "PARTE I. E II"
+      ],
+      "sources": [
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg18969.txt",
+        "gutenberg/pg69878.txt"
+      ]
+    },
+    {
+      "id": 52,
+      "text": "Thomas Seymour",
+      "normalized": "Thomas Seymour",
+      "type": "person",
+      "aliases": [
+        "Athenaeum r.-t"
+      ],
+      "sources": [
+        "gutenberg/pg51057.txt",
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 53,
+      "text": "Canada",
+      "normalized": "Canada",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg12661.txt",
+        "gutenberg/pg12481.txt"
+      ]
+    },
+    {
+      "id": 54,
+      "text": "John George Bourinot",
+      "normalized": "John George Bourinot",
+      "type": "person",
+      "aliases": [
+        "JOHN G. BOURINOT"
+      ],
+      "sources": [
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 55,
+      "text": "the Million Book Project",
+      "normalized": "the Million Book Project",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 56,
+      "text": "BRITISH RULE",
+      "normalized": "BRITISH RULE",
+      "type": "location",
+      "aliases": [
+        "Schriftkultur",
+        "War & Battlelust"
+      ],
+      "sources": [
+        "gutenberg/pg12661.txt",
+        "gutenberg/pg4374.txt",
+        "theoi/theoi_figures_detailed.json"
+      ]
+    },
+    {
+      "id": 57,
+      "text": "K.C.M.G.",
+      "normalized": "K.C.M.G.",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 58,
+      "text": "MAPS",
+      "normalized": "MAPS",
+      "type": "location",
+      "aliases": [
+        "Mass."
+      ],
+      "sources": [
+        "gutenberg/pg12661.txt",
+        "gutenberg/pg32336.txt"
+      ]
+    },
+    {
+      "id": 59,
+      "text": "CAMBRIDGE",
+      "normalized": "CAMBRIDGE",
+      "type": "location",
+      "aliases": [
+        "CAMB"
+      ],
+      "sources": [
+        "gutenberg/pg12661.txt",
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 60,
+      "text": "G. W. PROTHERO",
+      "normalized": "G. W. PROTHERO",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 61,
+      "text": "Honorary Fellow",
+      "normalized": "Honorary Fellow",
+      "type": "person",
+      "aliases": [
+        "HON",
+        "Wolfner",
+        "ÉS WOLFNER IRODALMI"
+      ],
+      "sources": [
+        "gutenberg/pg12661.txt",
+        "gutenberg/pg18969.txt",
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 62,
+      "text": "King's College",
+      "normalized": "King's College",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 63,
+      "text": "the French Revolution",
+      "normalized": "the French Revolution",
+      "type": "event",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg12661.txt"
+      ]
+    },
+    {
+      "id": 64,
+      "text": "Mihai Nadin",
+      "normalized": "Mihai Nadin",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 65,
+      "text": "Michael Pullen",
+      "normalized": "Michael Pullen",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 66,
+      "text": "Das Zeitalter des Augenblicks",
+      "normalized": "Das Zeitalter des Augenblicks",
+      "type": "location",
+      "aliases": [
+        "DIE KULTUR"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 67,
+      "text": "Englischen von Norbert Greiner",
+      "normalized": "Englischen von Norbert Greiner",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 68,
+      "text": "Inhalt",
+      "normalized": "Inhalt",
+      "type": "location",
+      "aliases": [
+        "ATLANTA"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt",
+        "gutenberg/pg12481.txt"
+      ]
+    },
+    {
+      "id": 69,
+      "text": "ZUR",
+      "normalized": "ZUR",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 70,
+      "text": "Jenseits",
+      "normalized": "Jenseits",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 71,
+      "text": "BUCH I.\n\n\n\nKAPITEL 1:",
+      "normalized": "BUCH I.\n\n\n\nKAPITEL 1:",
+      "type": "location",
+      "aliases": [
+        "API"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt",
+        "ctext/ctp_book-of-changes.json",
+        "ctext/ctp_art-of-war.json"
+      ]
+    },
+    {
+      "id": 72,
+      "text": "Kontrastfiguren",
+      "normalized": "Kontrastfiguren",
+      "type": "person",
+      "aliases": [
+        "Aufgeladene Schriftkultur",
+        "Nesta segunda"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt",
+        "gutenberg/pg69878.txt"
+      ]
+    },
+    {
+      "id": 73,
+      "text": "Das Leben",
+      "normalized": "Das Leben",
+      "type": "person",
+      "aliases": [
+        "Dem Handel",
+        "de Lisboa"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt",
+        "gutenberg/pg69878.txt"
+      ]
+    },
+    {
+      "id": 74,
+      "text": "Der Mensch",
+      "normalized": "Der Mensch",
+      "type": "person",
+      "aliases": [
+        "Mensch",
+        "Der"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 75,
+      "text": "Ziel\n\n",
+      "normalized": "Ziel\n\n",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 76,
+      "text": "Abgrund",
+      "normalized": "Abgrund",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 77,
+      "text": "Malthus",
+      "normalized": "Malthus",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 78,
+      "text": "Schriftkultur",
+      "normalized": "Schriftkultur",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 79,
+      "text": "Erste Zeichenspuren",
+      "normalized": "Erste Zeichenspuren",
+      "type": "person",
+      "aliases": [
+        "DESCRIPTION"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt",
+        "gutenberg/pg17485.txt"
+      ]
+    },
+    {
+      "id": 80,
+      "text": "Skala",
+      "normalized": "Skala",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg4374.txt"
+      ]
+    },
+    {
+      "id": 81,
+      "text": "Schwelle",
+      "normalized": "Schwelle",
+      "type": "location",
+      "aliases": [
+        "Swell",
+        "WHOSE LOVE"
+      ],
+      "sources": [
+        "gutenberg/pg4374.txt",
+        "gutenberg/pg1408.txt",
+        "gutenberg/pg17485.txt"
+      ]
+    },
+    {
+      "id": 82,
+      "text": "Gilbert White",
+      "normalized": "Gilbert White",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg1408.txt"
+      ]
+    },
+    {
+      "id": 83,
+      "text": "Matsumoto",
+      "normalized": "Matsumoto",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg1408.txt"
+      ]
+    },
+    {
+      "id": 84,
+      "text": "Expand",
+      "normalized": "Expand",
+      "type": "location",
+      "aliases": [
+        "Payne"
+      ],
+      "sources": [
+        "gutenberg/pg1408.txt",
+        "arthurian/gutenberg_pg1961.txt"
+      ]
+    },
+    {
+      "id": 85,
+      "text": "Muse",
+      "normalized": "Muse",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg1408.txt"
+      ]
+    },
+    {
+      "id": 86,
+      "text": "Platform Monologues",
+      "normalized": "Platform Monologues",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 87,
+      "text": "T. G. Tucker",
+      "normalized": "T. G. Tucker",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 88,
+      "text": "Juliet Sutherland",
+      "normalized": "Juliet Sutherland",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg18969.txt",
+        "gutenberg/pg32336.txt"
+      ]
+    },
+    {
+      "id": 89,
+      "text": "Janet Blenkinship",
+      "normalized": "Janet Blenkinship",
+      "type": "person",
+      "aliases": [
+        "IP"
+      ],
+      "sources": [
+        "gutenberg/pg18969.txt",
+        "ctext/ctp_book-of-changes.json",
+        "ctext/ctp_art-of-war.json"
+      ]
+    },
+    {
+      "id": 90,
+      "text": "the University of Melbourne",
+      "normalized": "the University of Melbourne",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 91,
+      "text": "PREFACE",
+      "normalized": "PREFACE",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg18969.txt"
+      ]
+    },
+    {
+      "id": 92,
+      "text": "Albert László",
+      "normalized": "Albert László",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 93,
+      "text": "the Hungarian Electronic Library",
+      "normalized": "the Hungarian Electronic Library",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 94,
+      "text": "minden",
+      "normalized": "minden",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 95,
+      "text": "Singer & Wolfner",
+      "normalized": "Singer & Wolfner",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 96,
+      "text": "könyvnyomdája",
+      "normalized": "könyvnyomdája",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 97,
+      "text": "I. ARCKÉPEK",
+      "normalized": "I. ARCKÉPEK",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 98,
+      "text": "GRÓF TISZA ISTVÁN[1",
+      "normalized": "GRÓF TISZA ISTVÁN[1",
+      "type": "location",
+      "aliases": [
+        "Tisza"
+      ],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 99,
+      "text": "I.\n\n\n\nSoha",
+      "normalized": "I.\n\n\n\nSoha",
+      "type": "location",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    },
+    {
+      "id": 100,
+      "text": "ellenségei\n\n",
+      "normalized": "ellenségei\n\n",
+      "type": "person",
+      "aliases": [],
+      "sources": [
+        "gutenberg/pg76135.txt"
+      ]
+    }
+  ]
+}

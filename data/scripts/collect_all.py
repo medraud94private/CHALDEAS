@@ -52,6 +52,20 @@ from collectors.arthurian import ArthurianCollector
 from collectors.russian_history import RussianHistoryCollector
 from collectors.mesoamerican import MesoamericanCollector
 from collectors.indian_mythology import IndianMythologyCollector
+from collectors.open_library import OpenLibraryCollector
+
+
+async def collect_open_library(output_dir: Path, limit_per_subject: int = 500):
+    """Collect from Open Library (Internet Archive)."""
+    print("\n" + "=" * 60)
+    print("Collecting from Open Library")
+    print("=" * 60)
+
+    collector = OpenLibraryCollector(output_dir / "open_library")
+    try:
+        await collector.collect_all(use_api=True, limit_per_subject=limit_per_subject)
+    finally:
+        await collector.close()
 
 
 async def collect_perseus(output_dir: Path):
@@ -360,6 +374,9 @@ async def collect_all(output_dir: Path, **kwargs):
     await collect_wikidata(output_dir)
     await collect_topostext(output_dir)
 
+    # Priority 1.5: Open Library (large text archive)
+    await collect_open_library(output_dir, kwargs.get("limit", 500))
+
     # Priority 2: Text sources
     await collect_perseus(output_dir)
     await collect_ctext(output_dir, kwargs.get("api_key"))
@@ -395,7 +412,7 @@ async def main():
     parser.add_argument(
         "--source",
         choices=[
-            "all", "perseus", "ctext", "gutenberg",
+            "all", "perseus", "ctext", "gutenberg", "open_library",
             "pleiades", "wikidata", "latin_library", "augustana",
             "topostext", "theoi", "sacred_texts",
             "atlas_academy", "gamepress", "pantheon", "wikipedia",
@@ -438,6 +455,8 @@ async def main():
         await collect_ctext(args.output, args.api_key)
     elif args.source == "gutenberg":
         await collect_gutenberg(args.output, args.limit)
+    elif args.source == "open_library":
+        await collect_open_library(args.output, args.limit)
     elif args.source == "pleiades":
         await collect_pleiades(args.output)
     elif args.source == "wikidata":
