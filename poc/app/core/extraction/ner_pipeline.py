@@ -67,46 +67,56 @@ class HybridNERPipeline:
 
     async def _call_ollama(self, prompt: str) -> Optional[str]:
         """Call Ollama API (local, FREE) using /api/chat with think:false."""
-        try:
-            async with httpx.AsyncClient(timeout=300.0) as client:  # 5 min for first load
-                # Add instruction for JSON output in prompt
-                json_prompt = prompt + "\n\nIMPORTANT: Respond with valid JSON only, no other text."
+        import asyncio
+        json_prompt = prompt + "\n\nIMPORTANT: Respond with valid JSON only, no other text."
 
-                # Use /api/chat with think:false to disable Qwen3 thinking mode
-                response = await client.post(
-                    f"{settings.ollama_base_url}/api/chat",
-                    json={
-                        "model": settings.ollama_model,
-                        "messages": [{"role": "user", "content": json_prompt}],
-                        "stream": False,
-                        "think": False,  # Critical: disable Qwen3 thinking mode
-                        "options": {
-                            "temperature": 0.1  # Low temperature for consistent output
+        # Retry up to 3 times with exponential backoff
+        for attempt in range(3):
+            try:
+                async with httpx.AsyncClient(timeout=300.0) as client:  # 5 min for first load
+                    # Use /api/chat with think:false to disable Qwen3 thinking mode
+                    response = await client.post(
+                        f"{settings.ollama_base_url}/api/chat",
+                        json={
+                            "model": settings.ollama_model,
+                            "messages": [{"role": "user", "content": json_prompt}],
+                            "stream": False,
+                            "think": False,  # Critical: disable Qwen3 thinking mode
+                            "options": {
+                                "temperature": 0.1  # Low temperature for consistent output
+                            }
                         }
-                    }
-                )
-                if response.status_code == 200:
-                    result = response.json()
-                    # /api/chat returns message.content instead of response
-                    response_text = result.get("message", {}).get("content", "")
+                    )
+                    if response.status_code == 200:
+                        result = response.json()
+                        # /api/chat returns message.content instead of response
+                        response_text = result.get("message", {}).get("content", "")
 
-                    # Extract JSON from response (may have extra text)
-                    if response_text:
-                        # Find JSON object in response
-                        start = response_text.find("{")
-                        end = response_text.rfind("}") + 1
-                        if start != -1 and end > start:
-                            return response_text[start:end]
-                    return response_text
-                else:
-                    print(f"Ollama error: {response.status_code}")
-                    return None
-        except httpx.ConnectError:
-            print("Ollama not running. Start with: ollama serve")
-            return None
-        except Exception as e:
-            print(f"Ollama error: {e}")
-            return None
+                        # Extract JSON from response (may have extra text)
+                        if response_text:
+                            # Find JSON object in response
+                            start = response_text.find("{")
+                            end = response_text.rfind("}") + 1
+                            if start != -1 and end > start:
+                                return response_text[start:end]
+                        return response_text
+                    elif response.status_code >= 500:
+                        # Server error, retry after delay
+                        await asyncio.sleep(2 ** attempt)
+                        continue
+                    else:
+                        return None
+            except httpx.ConnectError:
+                await asyncio.sleep(2 ** attempt)
+                continue
+            except httpx.TimeoutException:
+                await asyncio.sleep(2 ** attempt)
+                continue
+            except Exception as e:
+                if attempt < 2:
+                    await asyncio.sleep(1)
+                    continue
+        return None
 
     async def _call_openai(self, prompt: str) -> Optional[str]:
         """Call OpenAI API (cloud, paid)."""

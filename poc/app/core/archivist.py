@@ -176,6 +176,7 @@ class Archivist:
     """
     The Archivist: Gatekeeper of the Storage.
     Uses Qwen to make intelligent entity matching decisions.
+    Supports fast_mode for rule-based matching without LLM.
     """
 
     ORDINAL_PATTERN = re.compile(
@@ -183,11 +184,12 @@ class Archivist:
         re.IGNORECASE
     )
 
-    def __init__(self, registry: EntityRegistry = None):
+    def __init__(self, registry: EntityRegistry = None, fast_mode: bool = False):
         self.registry = registry or EntityRegistry()
         self.decisions: List[ArchivistDecision] = []
         self.pending_queue: List[Dict] = []
         self._stats = ArchivistStats()
+        self.fast_mode = fast_mode  # Skip LLM, use rule-based matching
 
     async def process_entity(
         self,
@@ -230,8 +232,11 @@ class Archivist:
             self._record_decision(decision, start_time)
             return decision, entity
 
-        # 4. Use Qwen to decide
-        decision = await self._ask_qwen(text, entity_type, context, filtered_candidates)
+        # 4. Make decision (fast mode: rules only, normal: use Qwen)
+        if self.fast_mode:
+            decision = self._fast_decide(text, entity_type, filtered_candidates)
+        else:
+            decision = await self._ask_qwen(text, entity_type, context, filtered_candidates)
         decision.candidates_checked = len(candidates)
 
         # 5. Execute decision
@@ -259,6 +264,96 @@ class Archivist:
         self._record_decision(decision, start_time)
         return decision, entity
 
+    def _fast_decide(
+        self,
+        text: str,
+        entity_type: str,
+        candidates: List[EntityRecord]
+    ) -> ArchivistDecision:
+        """Fast rule-based decision without LLM.
+
+        Rules:
+        1. Exact name match (case-insensitive) -> LINK_EXISTING
+        2. Single candidate with high similarity (>0.8) -> LINK_EXISTING
+        3. Multiple similar candidates -> PENDING
+        4. Low similarity candidates -> CREATE_NEW
+        """
+        text_lower = text.lower().strip()
+
+        # Rule 1: Exact match
+        for c in candidates:
+            if c.normalized.lower().strip() == text_lower:
+                return ArchivistDecision(
+                    decision=Decision.LINK_EXISTING,
+                    confidence=0.95,
+                    reasoning="Exact name match",
+                    linked_entity_id=c.id,
+                    new_entity_text=text,
+                    new_entity_type=entity_type
+                )
+            # Also check aliases
+            for alias in c.aliases:
+                if alias.lower().strip() == text_lower:
+                    return ArchivistDecision(
+                        decision=Decision.LINK_EXISTING,
+                        confidence=0.90,
+                        reasoning="Alias match",
+                        linked_entity_id=c.id,
+                        new_entity_text=text,
+                        new_entity_type=entity_type
+                    )
+
+        # Rule 2: Calculate similarity scores
+        scored = []
+        for c in candidates:
+            sim = self.registry._name_similarity(text_lower, c.normalized.lower())
+            scored.append((c, sim))
+
+        scored.sort(key=lambda x: x[1], reverse=True)
+
+        if scored:
+            best_candidate, best_sim = scored[0]
+
+            # High similarity single match
+            if best_sim > 0.85:
+                # Check if there's a close second
+                if len(scored) > 1 and scored[1][1] > 0.8:
+                    # Multiple high-similarity candidates - needs review
+                    return ArchivistDecision(
+                        decision=Decision.PENDING,
+                        confidence=0.5,
+                        reasoning=f"Multiple similar candidates (top: {best_sim:.2f}, {scored[1][1]:.2f})",
+                        new_entity_text=text,
+                        new_entity_type=entity_type
+                    )
+                return ArchivistDecision(
+                    decision=Decision.LINK_EXISTING,
+                    confidence=best_sim,
+                    reasoning=f"High similarity match ({best_sim:.2f})",
+                    linked_entity_id=best_candidate.id,
+                    new_entity_text=text,
+                    new_entity_type=entity_type
+                )
+
+            # Medium similarity - could go either way
+            if best_sim > 0.6:
+                return ArchivistDecision(
+                    decision=Decision.PENDING,
+                    confidence=0.4,
+                    reasoning=f"Ambiguous similarity ({best_sim:.2f})",
+                    new_entity_text=text,
+                    new_entity_type=entity_type
+                )
+
+        # Low similarity - create new
+        return ArchivistDecision(
+            decision=Decision.CREATE_NEW,
+            confidence=0.75,
+            reasoning="No high-similarity candidates",
+            new_entity_text=text,
+            new_entity_type=entity_type
+        )
+
     async def _ask_qwen(
         self,
         text: str,
@@ -277,10 +372,11 @@ Candidates: {', '.join(cand_list)}
 
 Same entity? Reply JSON: {{"decision":"LINK_EXISTING","id":N}} or {{"decision":"CREATE_NEW"}}"""
 
-        # Retry up to 2 times
-        for attempt in range(2):
+        # Retry up to 3 times with exponential backoff
+        import asyncio
+        for attempt in range(3):
             try:
-                async with httpx.AsyncClient(timeout=60.0) as client:
+                async with httpx.AsyncClient(timeout=90.0) as client:
                     # Use /api/chat with think:false to disable Qwen3 thinking mode
                     response = await client.post(
                         f"{settings.ollama_base_url}/api/chat",
@@ -312,11 +408,22 @@ Same entity? Reply JSON: {{"decision":"LINK_EXISTING","id":N}} or {{"decision":"
                                 new_entity_text=text,
                                 new_entity_type=entity_type
                             )
+                    elif response.status_code >= 500:
+                        # Server error, retry after delay
+                        await asyncio.sleep(2 ** attempt)
+                        continue
+            except httpx.ConnectError:
+                # Connection failed, retry with delay
+                await asyncio.sleep(2 ** attempt)
+                continue
+            except httpx.TimeoutException:
+                # Timeout, retry with delay
+                await asyncio.sleep(2 ** attempt)
+                continue
             except Exception as e:
-                if attempt == 0:
-                    print(f"Qwen retry: {e}")
+                if attempt < 2:
+                    await asyncio.sleep(1)
                     continue
-                print(f"Qwen error: {e}")
 
         # Fallback: if only one candidate with high name match, link it
         if len(candidates) == 1:
