@@ -87,6 +87,46 @@ gpt-5-nano로 5개 요청 테스트 배치 실행:
 - **결과**: 5/5 성공 (100%)
 - **Batch ID**: `batch_695b8601a5d481909a189d6a9c59c50a`
 
+## Additional Fix: TXT File Support
+
+### 문제 4: Gutenberg 문서 누락
+
+**원인**: `batch_processor.py`가 `*_text.json`만 처리
+- British Library: JSON 형식 (63,985개)
+- Gutenberg: TXT 형식 (12,031개) - **누락됨**
+
+**수정**:
+```python
+# Before
+for doc_path in subdir.glob("*_text.json"):
+
+# After (JSON + TXT, 재귀 검색)
+for doc_path in subdir.rglob("*_text.json"):
+    doc_paths.append(doc_path)
+for doc_path in subdir.rglob("*.txt"):
+    doc_paths.append(doc_path)
+```
+
+`load_document()` 함수도 TXT 지원 추가:
+```python
+def load_document(doc_path: Path) -> str:
+    with open(doc_path, 'r', encoding='utf-8', errors='ignore') as f:
+        if doc_path.suffix == '.txt':
+            return f.read()
+        else:
+            data = json.load(f)
+            # ... JSON 처리
+```
+
+## Target Documents
+
+| 소스 | 형식 | 개수 |
+|------|------|------|
+| British Library | JSON | 63,985 |
+| Gutenberg | TXT | 12,031 |
+| Arthurian | TXT | 10 |
+| **총합** | | **76,026** |
+
 ## Next Steps
 
 1. 기존 잘못된 chunk 파일 삭제
@@ -97,14 +137,14 @@ gpt-5-nano로 5개 요청 테스트 배치 실행:
 
 | Item | Value |
 |------|-------|
-| Documents | ~64,000 |
+| Documents | 76,026 |
 | Avg input tokens | ~2,000 |
 | Avg output tokens | ~500 |
-| Total input | ~128M tokens |
-| Total output | ~32M tokens |
-| Input cost | $6.40 |
-| Output cost | $12.80 |
-| **Total** | **~$19.20** |
+| Total input | ~152M tokens |
+| Total output | ~38M tokens |
+| Input cost | $7.60 |
+| Output cost | $15.20 |
+| **Total** | **~$22.80** |
 
 ## Lessons Learned
 
@@ -112,3 +152,5 @@ gpt-5-nano로 5개 요청 테스트 배치 실행:
 2. GPT-5 시리즈는 파라미터 이름이 다름 (`max_completion_tokens`)
 3. Batch API 토큰 한도(40M) 고려하여 순차 제출 필요
 4. 배치 제출 전 소규모 테스트 필수
+5. 다양한 데이터 소스 형식 확인 (JSON, TXT 등)
+6. 중첩 폴더 구조 고려하여 `rglob` 사용
