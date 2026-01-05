@@ -144,21 +144,27 @@ TEXT:
 
 
 def load_document(doc_path: Path) -> str:
-    """British Library 문서 로드"""
-    with open(doc_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-
-    if isinstance(data, list):
-        return " ".join(item[1] if len(item) > 1 else "" for item in data)
-    return str(data)
+    """문서 로드 (JSON/TXT 모두 지원)"""
+    with open(doc_path, 'r', encoding='utf-8', errors='ignore') as f:
+        if doc_path.suffix == '.txt':
+            return f.read()
+        else:
+            data = json.load(f)
+            if isinstance(data, list):
+                return " ".join(item[1] if len(item) > 1 else "" for item in data)
+            return str(data)
 
 
 def collect_all_documents() -> List[Path]:
-    """모든 문서 경로 수집"""
+    """모든 문서 경로 수집 (JSON + TXT, 재귀 검색)"""
     doc_paths = []
     for subdir in sorted(DATA_DIR.iterdir()):
         if subdir.is_dir():
-            for doc_path in subdir.glob("*_text.json"):
+            # British Library 등 JSON 파일 (하위 폴더 포함)
+            for doc_path in subdir.rglob("*_text.json"):
+                doc_paths.append(doc_path)
+            # Gutenberg 등 TXT 파일
+            for doc_path in subdir.rglob("*.txt"):
                 doc_paths.append(doc_path)
     return doc_paths
 
