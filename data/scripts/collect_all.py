@@ -53,6 +53,7 @@ from collectors.russian_history import RussianHistoryCollector
 from collectors.mesoamerican import MesoamericanCollector
 from collectors.indian_mythology import IndianMythologyCollector
 from collectors.open_library import OpenLibraryCollector
+from collectors.british_library import BritishLibraryCollector
 
 
 async def collect_open_library(output_dir: Path, limit_per_subject: int = 500):
@@ -64,6 +65,22 @@ async def collect_open_library(output_dir: Path, limit_per_subject: int = 500):
     collector = OpenLibraryCollector(output_dir / "open_library")
     try:
         await collector.collect_all(use_api=True, limit_per_subject=limit_per_subject)
+    finally:
+        await collector.close()
+
+
+async def collect_british_library(output_dir: Path, metadata_only: bool = False):
+    """Collect from British Library Digitised Books (49,455 books, 1510-1900)."""
+    print("\n" + "=" * 60)
+    print("Collecting from British Library")
+    print("=" * 60)
+
+    collector = BritishLibraryCollector(output_dir / "british_library")
+    try:
+        if metadata_only:
+            await collector.collect_metadata_only()
+        else:
+            await collector.collect_all()
     finally:
         await collector.close()
 
@@ -417,7 +434,7 @@ async def main():
             "topostext", "theoi", "sacred_texts",
             "atlas_academy", "gamepress", "pantheon", "wikipedia",
             "avalon", "fordham", "worldhistory", "stanford_encyclopedia",
-            "britannica_1911",
+            "britannica_1911", "british_library",
             # Phase 3.5: FGO Coverage Expansion
             "arthurian", "russian_history", "mesoamerican", "indian_mythology"
         ],
@@ -489,6 +506,8 @@ async def main():
         await collect_stanford_encyclopedia(args.output)
     elif args.source == "britannica_1911":
         await collect_britannica_1911(args.output)
+    elif args.source == "british_library":
+        await collect_british_library(args.output)
     # Phase 3.5: FGO Coverage Expansion
     elif args.source == "arthurian":
         await collect_arthurian(args.output)

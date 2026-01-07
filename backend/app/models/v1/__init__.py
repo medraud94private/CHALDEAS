@@ -1,16 +1,29 @@
 # CHALDEAS V1 Models
 # Historical Chain 기반 신규 데이터 모델
+#
+# Theoretical Basis:
+# - CIDOC-CRM: Event-centric ontology
+# - Braudel/Annales: Temporal scales (evenementielle, conjuncture, longue_duree)
+# - Prosopography: Person network analysis
+# - Historical GIS: Dual hierarchies, temporal validity
 
 from .period import Period
-
-# 아직 구현되지 않은 모델들 (CP-2.1, CP-3.1에서 추가 예정)
-# from .chain import HistoricalChain, ChainSegment
-# from .text_mention import TextSource, TextMention
+from .polity import Polity
+from .chain import HistoricalChain, ChainSegment, ChainEntityRole
+from .text_mention import TextMention, EntityAlias, ImportBatch, PendingEntity
 
 __all__ = [
+    # Existing
     "Period",
-    # "HistoricalChain",
-    # "ChainSegment",
-    # "TextSource",
-    # "TextMention",
+    # New: Political entities
+    "Polity",
+    # New: Historical Chain
+    "HistoricalChain",
+    "ChainSegment",
+    "ChainEntityRole",
+    # New: Source tracking
+    "TextMention",
+    "EntityAlias",
+    "ImportBatch",
+    "PendingEntity",
 ]

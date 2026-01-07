@@ -1,0 +1,1281 @@
+{
+  "timestamp": "2026-01-07T10:59:57.663684",
+  "data_path": "C:\\Projects\\Chaldeas\\poc\\data\\integrated_ner_full\\aggregated",
+  "analyses": {
+    "confidence": {
+      "persons": {
+        "entity_type": "persons",
+        "total": 254943,
+        "distribution": {
+          "high": 94237,
+          "medium": 3601,
+          "low": 124234,
+          "very_low": 32871
+        },
+        "percentages": {
+          "high": "37.0%",
+          "medium": "1.4%",
+          "low": "48.7%",
+          "very_low": "12.9%"
+        }
+      },
+      "locations": {
+        "entity_type": "locations",
+        "total": 116062,
+        "distribution": {
+          "high": 29503,
+          "medium": 9910,
+          "low": 55644,
+          "very_low": 21005
+        },
+        "percentages": {
+          "high": "25.4%",
+          "medium": "8.5%",
+          "low": "47.9%",
+          "very_low": "18.1%"
+        }
+      },
+      "events": {
+        "entity_type": "events",
+        "total": 91977,
+        "distribution": {
+          "high": 10567,
+          "medium": 3028,
+          "low": 33975,
+          "very_low": 44407
+        },
+        "percentages": {
+          "high": "11.5%",
+          "medium": "3.3%",
+          "low": "36.9%",
+          "very_low": "48.3%"
+        }
+      },
+      "polities": {
+        "entity_type": "polities",
+        "total": 59836,
+        "distribution": {
+          "high": 1653,
+          "medium": 1390,
+          "low": 22198,
+          "very_low": 34595
+        },
+        "percentages": {
+          "high": "2.8%",
+          "medium": "2.3%",
+          "low": "37.1%",
+          "very_low": "57.8%"
+        }
+      },
+      "periods": {
+        "entity_type": "periods",
+        "total": 32393,
+        "distribution": {
+          "high": 1613,
+          "medium": 582,
+          "low": 8826,
+          "very_low": 21372
+        },
+        "percentages": {
+          "high": "5.0%",
+          "medium": "1.8%",
+          "low": "27.2%",
+          "very_low": "66.0%"
+        }
+      }
+    },
+    "era_distribution": {
+      "total_eras": 3597,
+      "top_20": [
+        {
+          "era": "Unknown",
+          "count": 208407
+        },
+        {
+          "era": "19th century",
+          "count": 9050
+        },
+        {
+          "era": "18th century",
+          "count": 2229
+        },
+        {
+          "era": "null",
+          "count": 1961
+        },
+        {
+          "era": "medieval",
+          "count": 1921
+        },
+        {
+          "era": "Medieval",
+          "count": 1899
+        },
+        {
+          "era": "Victorian Era",
+          "count": 1405
+        },
+        {
+          "era": "17th century",
+          "count": 1203
+        },
+        {
+          "era": "Victorian era",
+          "count": 1063
+        },
+        {
+          "era": "18th-19th century",
+          "count": 768
+        },
+        {
+          "era": "16th century",
+          "count": 742
+        },
+        {
+          "era": "modern",
+          "count": 677
+        },
+        {
+          "era": "Renaissance",
+          "count": 561
+        },
+        {
+          "era": "Victorian",
+          "count": 544
+        },
+        {
+          "era": "ancient",
+          "count": 522
+        },
+        {
+          "era": "early modern",
+          "count": 457
+        },
+        {
+          "era": "Early Modern",
+          "count": 431
+        },
+        {
+          "era": "unknown",
+          "count": 420
+        },
+        {
+          "era": "Middle Ages",
+          "count": 400
+        },
+        {
+          "era": "Ancient",
+          "count": 394
+        }
+      ]
+    },
+    "top_entities": {
+      "persons": [
+        {
+          "name": "Napoleon",
+          "mention_count": 630,
+          "confidence": 1.0,
+          "era": "Napoleonic Era"
+        },
+        {
+          "name": "Mary",
+          "mention_count": 556,
+          "confidence": 1.0,
+          "era": "Tudor period"
+        },
+        {
+          "name": "Elizabeth",
+          "mention_count": 422,
+          "confidence": 1.0,
+          "era": "Renaissance"
+        },
+        {
+          "name": "Shakespeare",
+          "mention_count": 384,
+          "confidence": 1.0,
+          "era": "Elizabethan"
+        },
+        {
+          "name": "Milton",
+          "mention_count": 368,
+          "confidence": 1.0,
+          "era": "Early Modern"
+        },
+        {
+          "name": "Byron",
+          "mention_count": 366,
+          "confidence": 1.0,
+          "era": "Romantic era"
+        },
+        {
+          "name": "LOUIS XIV",
+          "mention_count": 354,
+          "confidence": 1.0,
+          "era": "Monarchy"
+        },
+        {
+          "name": "Charles II",
+          "mention_count": 329,
+          "confidence": 1.0,
+          "era": "Stuart era"
+        },
+        {
+          "name": "Pope",
+          "mention_count": 319,
+          "confidence": 1.0,
+          "era": "modern"
+        },
+        {
+          "name": "Sir Walter Scott",
+          "mention_count": 312,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "John",
+          "mention_count": 301,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Horace",
+          "mention_count": 301,
+          "confidence": 1.0,
+          "era": "ancient"
+        },
+        {
+          "name": "Charles",
+          "mention_count": 299,
+          "confidence": 1.0,
+          "era": "13th century"
+        },
+        {
+          "name": "George",
+          "mention_count": 290,
+          "confidence": 1.0,
+          "era": "Georgian Era"
+        },
+        {
+          "name": "William",
+          "mention_count": 285,
+          "confidence": 1.0,
+          "era": "Medieval"
+        },
+        {
+          "name": "Voltaire",
+          "mention_count": 282,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Charles Dickens",
+          "mention_count": 275,
+          "confidence": 1.0,
+          "era": "Victorian Era"
+        },
+        {
+          "name": "Lord Byron",
+          "mention_count": 262,
+          "confidence": 1.0,
+          "era": "Romantic era"
+        },
+        {
+          "name": "Alexander",
+          "mention_count": 252,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "PHILIP",
+          "mention_count": 247,
+          "confidence": 1.0,
+          "era": null
+        }
+      ],
+      "locations": [
+        {
+          "name": "London",
+          "mention_count": 25854,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Paris",
+          "mention_count": 5272,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "New York",
+          "mention_count": 3871,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "United States",
+          "mention_count": 3619,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "England",
+          "mention_count": 3238,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Edinburgh",
+          "mention_count": 3087,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "France",
+          "mention_count": 2685,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Rome",
+          "mention_count": 1899,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Strand",
+          "mention_count": 1506,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Dublin",
+          "mention_count": 1397,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Boston",
+          "mention_count": 1207,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Oxford",
+          "mention_count": 1176,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Ireland",
+          "mention_count": 1129,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Fleet Street",
+          "mention_count": 1079,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Scotland",
+          "mention_count": 1054,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Berlin",
+          "mention_count": 1030,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "PICCADILLY",
+          "mention_count": 996,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Cambridge",
+          "mention_count": 986,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Egypt",
+          "mention_count": 963,
+          "confidence": 1.0,
+          "era": null
+        },
+        {
+          "name": "Italy",
+          "mention_count": 958,
+          "confidence": 1.0,
+          "era": null
+        }
+      ]
+    },
+    "temporal_coverage": {
+      "persons": {
+        "has_temporal_data": true,
+        "total_year_references": 23992,
+        "min_year": -4999,
+        "max_year": 32862,
+        "bce_count": 465,
+        "ce_count": 23527,
+        "bce_ratio": "1.9%",
+        "top_centuries": [
+          {
+            "century": "19 CE",
+            "count": 7944
+          },
+          {
+            "century": "18 CE",
+            "count": 5449
+          },
+          {
+            "century": "17 CE",
+            "count": 2505
+          },
+          {
+            "century": "16 CE",
+            "count": 2063
+          },
+          {
+            "century": "20 CE",
+            "count": 1460
+          },
+          {
+            "century": "15 CE",
+            "count": 1103
+          },
+          {
+            "century": "14 CE",
+            "count": 621
+          },
+          {
+            "century": "13 CE",
+            "count": 446
+          },
+          {
+            "century": "12 CE",
+            "count": 335
+          },
+          {
+            "century": "11 CE",
+            "count": 285
+          }
+        ]
+      },
+      "events": {
+        "has_temporal_data": true,
+        "total_year_references": 40643,
+        "min_year": -100000,
+        "max_year": 2147483647,
+        "bce_count": 1210,
+        "ce_count": 39433,
+        "bce_ratio": "3.0%",
+        "top_centuries": [
+          {
+            "century": "19 CE",
+            "count": 18506
+          },
+          {
+            "century": "18 CE",
+            "count": 6183
+          },
+          {
+            "century": "17 CE",
+            "count": 4059
+          },
+          {
+            "century": "16 CE",
+            "count": 2804
+          },
+          {
+            "century": "15 CE",
+            "count": 1269
+          },
+          {
+            "century": "14 CE",
+            "count": 915
+          },
+          {
+            "century": "20 CE",
+            "count": 884
+          },
+          {
+            "century": "1 CE",
+            "count": 816
+          },
+          {
+            "century": "13 CE",
+            "count": 789
+          },
+          {
+            "century": "2 CE",
+            "count": 564
+          }
+        ]
+      },
+      "polities": {
+        "has_temporal_data": true,
+        "total_year_references": 18413,
+        "min_year": -6000,
+        "max_year": 9999,
+        "bce_count": 652,
+        "ce_count": 17761,
+        "bce_ratio": "3.5%",
+        "top_centuries": [
+          {
+            "century": "19 CE",
+            "count": 6621
+          },
+          {
+            "century": "18 CE",
+            "count": 3116
+          },
+          {
+            "century": "17 CE",
+            "count": 2155
+          },
+          {
+            "century": "16 CE",
+            "count": 1421
+          },
+          {
+            "century": "20 CE",
+            "count": 718
+          },
+          {
+            "century": "15 CE",
+            "count": 606
+          },
+          {
+            "century": "13 CE",
+            "count": 480
+          },
+          {
+            "century": "14 CE",
+            "count": 471
+          },
+          {
+            "century": "1 CE",
+            "count": 398
+          },
+          {
+            "century": "11 CE",
+            "count": 335
+          }
+        ]
+      }
+    },
+    "duplicate_candidates": {
+      "persons": [
+        {
+          "name1": "Napoleon",
+          "name2": "Napoléon",
+          "similarity": "87.5%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napoleon I",
+          "similarity": "88.9%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napoleón",
+          "similarity": "87.5%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napoleone",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napóleon",
+          "similarity": "87.5%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napoleão",
+          "similarity": "87.5%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napoleons",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napo­leon",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.6
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napo Leon",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napooleon",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napoleon's",
+          "similarity": "88.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napo- leon",
+          "similarity": "88.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Napoleon",
+          "name2": "Napoleonin",
+          "similarity": "88.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoléon",
+          "name2": "Napoléon I",
+          "similarity": "88.9%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoléon",
+          "name2": "Napuléon",
+          "similarity": "87.5%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoléon",
+          "name2": "Napo léon",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Napoléon",
+          "name2": "Napoléons",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Napoleon Bonaparte",
+          "name2": "Napoléon Bonaparte",
+          "similarity": "94.4%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon Bonaparte",
+          "name2": "Napoleon Buonaparte",
+          "similarity": "97.3%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon Bonaparte",
+          "name2": "Napoleone Buonaparte",
+          "similarity": "94.7%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon Bonaparte",
+          "name2": "Napoleón Bonaparte",
+          "similarity": "94.4%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon Bonaparte",
+          "name2": "Napoléon Buonaparte",
+          "similarity": "91.9%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon Bonaparte",
+          "name2": "Napoleone Bonaparte",
+          "similarity": "97.3%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoléon III",
+          "similarity": "91.7%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoleon I",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoleon I.",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoleone I",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoleón III",
+          "similarity": "91.7%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoléon II",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoleons I",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napo léon III",
+          "similarity": "88.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoleon II",
+          "similarity": "95.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon III",
+          "name2": "Napoleone III",
+          "similarity": "96.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoléon III",
+          "name2": "Napoléon I",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoléon III",
+          "name2": "Napoléon II",
+          "similarity": "95.7%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoléon III",
+          "name2": "Napoléon IV",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoléon III",
+          "name2": "Napo léon III",
+          "similarity": "96.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Napoléon III",
+          "name2": "Napoleon II",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoléon III",
+          "name2": "Napoleone III",
+          "similarity": "88.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoléon I",
+          "similarity": "90.0%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleon I.",
+          "similarity": "95.2%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleone I",
+          "similarity": "95.2%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoléon II",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoléon IV",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleons I",
+          "similarity": "95.2%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleão I",
+          "similarity": "90.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleon II",
+          "similarity": "95.2%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleone III",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleon Ier",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Napoleon I",
+          "name2": "Napoleonin",
+          "similarity": "90.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        }
+      ],
+      "locations": [
+        {
+          "name1": "London",
+          "name2": "Lond on",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "London",
+          "name2": "London?",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London",
+          "name2": "LON DON",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "London",
+          "name2": "LONDONI",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "London",
+          "name2": "Londons",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London",
+          "name2": "Londdon",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London",
+          "name2": "Londo",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London",
+          "name2": "Londone",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.0
+        },
+        {
+          "name1": "London",
+          "name2": "London,",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London",
+          "name2": "LondN",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "London",
+          "name2": "Londo n",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London",
+          "name2": "Londono",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.6
+        },
+        {
+          "name1": "Londres",
+          "name2": "Londres?",
+          "similarity": "93.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Londres",
+          "name2": "Londes",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Londres",
+          "name2": "Londre",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Londres",
+          "name2": "Londrés",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London Bridge",
+          "name2": "London-Bridge",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "London Bridge",
+          "name2": "London Bridges",
+          "similarity": "96.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Long Island",
+          "name2": "Long-Island",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Long Island",
+          "name2": "Long Sand",
+          "similarity": "90.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Londonderry",
+          "name2": "London Derry",
+          "similarity": "95.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Londonderry",
+          "name2": "London-derry",
+          "similarity": "95.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Londonderry",
+          "name2": "Londonderry?",
+          "similarity": "95.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.2
+        },
+        {
+          "name1": "Lond on",
+          "name2": "London?",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Lond on",
+          "name2": "LON DON",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Lond on",
+          "name2": "LONDONI",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Lond on",
+          "name2": "Londons",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Lond on",
+          "name2": "Londdon",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Lond on",
+          "name2": "Londone",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.0
+        },
+        {
+          "name1": "Lond on",
+          "name2": "London,",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Lond on",
+          "name2": "Londo n",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Lond on",
+          "name2": "Londono",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.6
+        },
+        {
+          "name1": "Londen",
+          "name2": "LondN",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Londen",
+          "name2": "Londent",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Londra",
+          "name2": "Lon dra",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Londini",
+          "name2": "Londinium",
+          "similarity": "87.5%",
+          "confidence1": 1.0,
+          "confidence2": 1.0
+        },
+        {
+          "name1": "Londini",
+          "name2": "LONDONI",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Londini",
+          "name2": "LONDIN",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Londini",
+          "name2": "Londain",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Long Acre",
+          "name2": "Long-Acre",
+          "similarity": "88.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.8
+        },
+        {
+          "name1": "Long Acre",
+          "name2": "LongAcre",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Long Acre",
+          "name2": "Long- Acre",
+          "similarity": "94.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "London Road",
+          "name2": "LONDON BOARD",
+          "similarity": "87.0%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "London Road",
+          "name2": "London-road",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Long Island Sound",
+          "name2": "Long-Island Sound",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "London Wall",
+          "name2": "LONDON-WALL",
+          "similarity": "90.9%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Lontoo",
+          "name2": "Lontoon",
+          "similarity": "92.3%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        },
+        {
+          "name1": "Lontoo",
+          "name2": "Lontooiu",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.3
+        },
+        {
+          "name1": "Lontoo",
+          "name2": "Lontoose",
+          "similarity": "85.7%",
+          "confidence1": 1.0,
+          "confidence2": 0.5
+        },
+        {
+          "name1": "Londinium",
+          "name2": "Londinum",
+          "similarity": "94.1%",
+          "confidence1": 1.0,
+          "confidence2": 0.9
+        }
+      ]
+    }
+  },
+  "total_entities": 555211
+}

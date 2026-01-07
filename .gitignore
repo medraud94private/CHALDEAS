@@ -23,6 +23,9 @@ build/
 *.swo
 *~
 
+# Claude local settings (may contain API keys)
+.claude/settings.local.json
+
 # OS
 .DS_Store
 Thumbs.db
@@ -78,3 +81,30 @@ credentials.json
 nul
 NUL
 chaldeas_dump.sql
+
+# POC scripts with hardcoded keys (test files)
+poc/scripts/integrated_ner/regenerate_one.py
+poc/scripts/resubmit_failed_batches.py
+poc/scripts/test_minimal_reasoning.py
+poc/scripts/test_parallel_openai.py
+poc/scripts/test_batch_llm.py
+poc/scripts/check_test_batches.py
+poc/scripts/submit_minimal_batches.py
+poc/scripts/test_unlimited_batch.py
+
+# POC data (large, regenerable)
+poc/data/backup_*/
+poc/data/integrated_ner_full/
+poc/data/integrated_ner_pilot/
+poc/data/batch/
+poc/data/pilot/
+poc/data/test_v3/
+poc/data/archivist_results/
+poc/data/*.jsonl
+poc/data/*.json
+poc/data/*.json.bak
+poc/data/*.db
+!poc/data/seeds/
+
+# External data
+data/external/

@@ -21,6 +21,14 @@ from typing import Optional, Iterator
 from datetime import datetime
 
 
+def safe_print(text: str):
+    """Print text safely, handling encoding issues on Windows."""
+    try:
+        print(text)
+    except UnicodeEncodeError:
+        print(text.encode('ascii', 'replace').decode('ascii'))
+
+
 class OpenLibraryCollector:
     """
     Collector for Open Library bulk data.
@@ -106,7 +114,7 @@ class OpenLibraryCollector:
         seen_keys = set()
 
         for subject in self.HISTORICAL_SUBJECTS:
-            print(f"  Searching: {subject}...")
+            safe_print(f"  Searching: {subject}...")
             books = await self.search_historical_books(subject, limit_per_subject)
 
             for book in books:
@@ -123,7 +131,7 @@ class OpenLibraryCollector:
                         "source": "open_library"
                     })
 
-            print(f"    Found {len(books)} books")
+            safe_print(f"    Found {len(books)} books")
             await asyncio.sleep(1)  # Rate limiting
 
         return all_books

@@ -70,30 +70,31 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8100    # Dev server (MUST use port 8100)
 ```
 
-### Docker Compose (full stack)
+### Database (Native PostgreSQL)
 ```bash
-docker-compose up -d           # Start all services
-docker-compose down            # Stop services
+# 현재 네이티브 PostgreSQL 사용 (포트 5432)
+psql -U chaldeas -d chaldeas -h localhost -p 5432
+
+# Alembic 마이그레이션
+cd backend
+python -m alembic upgrade head
+python -m alembic current  # 현재 버전 확인
 ```
 
 ### Data Pipeline
 ```bash
 python data/scripts/collect_all.py      # Collect from sources
 python data/scripts/transform_data.py   # Transform to common format
-python backend/app/scripts/index_events.py   # Index to vector DB
-```
-
-### Database
-```bash
-docker-compose exec db psql -U chaldeas -d chaldeas
-# Or native: psql -U chaldeas -d chaldeas -h localhost -p 5433
+python poc/scripts/import_to_v1_db.py   # NER 데이터 DB 임포트
 ```
 
 ## Fixed Ports (Hardcoded)
-- Frontend: 5200 (dev) / 5173 (docker)
+- Frontend: 5200 (dev)
 - Backend API: 8100
-- PostgreSQL: 5433 (external) / 5432 (internal)
+- **PostgreSQL: 5432** (네이티브, Docker 미사용)
 - API Docs: http://localhost:8100/docs
+
+> **주의**: DATABASE_URL은 항상 `localhost:5432` 사용. Docker compose의 5433 포트는 더 이상 사용하지 않음.
 
 ---
 

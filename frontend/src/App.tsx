@@ -5,6 +5,7 @@ import { ChatPanel } from './components/chat'
 import { EventDetailPanel } from './components/detail'
 import { ShowcaseModal, ShowcaseMenu } from './components/showcase'
 import type { ShowcaseContent } from './components/showcase'
+import { ExplorePanel } from './components/explore/ExplorePanel'
 import { LanguageSelector } from './components/common'
 import { useTimelineStore } from './store/timelineStore'
 import { useGlobeStore } from './store/globeStore'
@@ -32,6 +33,7 @@ function App() {
   const [showAllEras, setShowAllEras] = useState(false) // Toggle for sidebar: nearby era by default
   const [showcaseContent, setShowcaseContent] = useState<ShowcaseContent | null>(null)
   const [isShowcaseOpen, setIsShowcaseOpen] = useState(false)
+  const [isExploreOpen, setIsExploreOpen] = useState(false)
 
   // Format year display
   const formatYear = (year: number) => {
@@ -309,6 +311,21 @@ function App() {
           ◎
         </button>
       )}
+
+      {/* Explore Toggle Button */}
+      <button
+        className="explore-toggle-btn"
+        onClick={() => setIsExploreOpen(true)}
+        title="Explore Entity Pool (Pre-Curation)"
+      >
+        ⋮⋮⋮
+      </button>
+
+      {/* Entity Explorer Panel */}
+      <ExplorePanel
+        isOpen={isExploreOpen}
+        onClose={() => setIsExploreOpen(false)}
+      />
 
       {/* Showcase Modal */}
       <ShowcaseModal

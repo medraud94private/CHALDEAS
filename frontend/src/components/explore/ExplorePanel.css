@@ -1,0 +1,457 @@
+/* ExplorePanel.css - Pre-curation entity explorer styles */
+
+.explore-panel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.explore-panel {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 1px solid #0f3460;
+  border-radius: 12px;
+  width: 90vw;
+  max-width: 1400px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+/* Header */
+.explore-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #0f3460;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.explore-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.explore-icon {
+  font-size: 24px;
+}
+
+.explore-title h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e94560;
+}
+
+.explore-subtitle {
+  font-size: 12px;
+  color: #888;
+  background: rgba(233, 69, 96, 0.15);
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(233, 69, 96, 0.3);
+}
+
+.explore-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.explore-close:hover {
+  color: #e94560;
+  background: rgba(233, 69, 96, 0.1);
+}
+
+/* Stats Summary */
+.explore-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 24px;
+  border-bottom: 1px solid #0f3460;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e94560;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Entity Type Tabs */
+.explore-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #0f3460;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.explore-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.explore-tab:hover {
+  background: rgba(233, 69, 96, 0.1);
+  color: #ccc;
+}
+
+.explore-tab.active {
+  background: rgba(233, 69, 96, 0.2);
+  border-color: #e94560;
+  color: #e94560;
+}
+
+.tab-icon {
+  font-size: 16px;
+}
+
+.tab-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Controls (Search & Filter) */
+.explore-controls {
+  display: flex;
+  gap: 12px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #0f3460;
+}
+
+.explore-search {
+  flex: 1;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #0f3460;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.explore-search::placeholder {
+  color: #666;
+}
+
+.explore-search:focus {
+  border-color: #e94560;
+}
+
+.explore-sort {
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #0f3460;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  min-width: 180px;
+}
+
+.explore-sort:focus {
+  border-color: #e94560;
+}
+
+.explore-sort option {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+/* Results Table */
+.explore-results {
+  flex: 1;
+  overflow: auto;
+  padding: 0 24px;
+}
+
+.explore-loading,
+.explore-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #888;
+  font-size: 16px;
+}
+
+.explore-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.explore-table th {
+  position: sticky;
+  top: 0;
+  background: #1a1a2e;
+  padding: 12px 8px;
+  text-align: left;
+  color: #888;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #0f3460;
+}
+
+.explore-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(15, 52, 96, 0.5);
+  color: #ccc;
+}
+
+.explore-table tr:hover td {
+  background: rgba(233, 69, 96, 0.05);
+}
+
+.name-cell {
+  font-weight: 500;
+  color: #fff;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.number-cell {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* Certainty Badge */
+.certainty-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.certainty-badge.fact {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.certainty-badge.probable {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.certainty-badge.legendary {
+  background: rgba(155, 89, 182, 0.2);
+  color: #9b59b6;
+  border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.certainty-badge.mythological {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.certainty-badge.unknown {
+  background: rgba(127, 140, 141, 0.2);
+  color: #7f8c8d;
+  border: 1px solid rgba(127, 140, 141, 0.3);
+}
+
+/* Archive Type Badge */
+.archive-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.archive-badge.gutenberg {
+  background: rgba(241, 196, 15, 0.2);
+  color: #f1c40f;
+  border: 1px solid rgba(241, 196, 15, 0.3);
+}
+
+.archive-badge.british_library {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border: 1px solid rgba(52, 152, 219, 0.3);
+}
+
+.archive-badge.perseus {
+  background: rgba(155, 89, 182, 0.2);
+  color: #9b59b6;
+  border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.archive-badge.internet_archive {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.archive-badge.unknown {
+  background: rgba(127, 140, 141, 0.2);
+  color: #7f8c8d;
+  border: 1px solid rgba(127, 140, 141, 0.3);
+}
+
+/* Pagination */
+.explore-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-top: 1px solid #0f3460;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  background: rgba(233, 69, 96, 0.1);
+  border: 1px solid #e94560;
+  border-radius: 6px;
+  color: #e94560;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: rgba(233, 69, 96, 0.2);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Scrollbar Styling */
+.explore-results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.explore-results::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.explore-results::-webkit-scrollbar-thumb {
+  background: #0f3460;
+  border-radius: 4px;
+}
+
+.explore-results::-webkit-scrollbar-thumb:hover {
+  background: #e94560;
+}
+
+/* Explore Toggle Button */
+.explore-toggle-btn {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e94560, #b83050);
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+  transition: all 0.3s;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.explore-toggle-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(233, 69, 96, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .explore-panel {
+    width: 95vw;
+    height: 90vh;
+  }
+
+  .explore-stats {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .stat-item {
+    flex: 1 1 calc(33% - 12px);
+  }
+
+  .explore-tabs {
+    flex-wrap: wrap;
+  }
+
+  .explore-tab {
+    flex: 1 1 calc(50% - 4px);
+    justify-content: center;
+  }
+
+  .explore-controls {
+    flex-direction: column;
+  }
+
+  .explore-sort {
+    width: 100%;
+  }
+}

@@ -34,7 +34,7 @@ def load_env():
 load_env()
 
 # Paths
-DATA_DIR = Path("C:/Projects/Chaldeas/data/raw/british_library/extracted/json")
+DATA_DIR = Path("C:/Projects/Chaldeas/data/raw")
 OUTPUT_DIR = Path(__file__).parent.parent.parent / "data" / "integrated_ner_full"
 OPENAI_URL = "https://api.openai.com/v1"
 
@@ -189,7 +189,7 @@ def create_batch_request(doc_id: str, text: str) -> dict:
                     "schema": get_json_schema()
                 }
             },
-            "max_completion_tokens": 3000
+            "max_completion_tokens": 999999
         }
     }
 

@@ -4,6 +4,7 @@ API v1 Router - Aggregates all API endpoints.
 from fastapi import APIRouter
 
 from app.api.v1 import events, locations, search, chat, categories, showcases
+from app.api.v1_new import explore
 
 api_router = APIRouter()
 
@@ -22,3 +23,6 @@ api_router.include_router(search.router, prefix="/search", tags=["Search"])
 
 # Chat/RAG endpoints (SHEBA + LOGOS)
 api_router.include_router(chat.router, prefix="/chat", tags=["Chat"])
+
+# V1 New: Explore pre-curation entity pool
+api_router.include_router(explore.router, tags=["Explore"])

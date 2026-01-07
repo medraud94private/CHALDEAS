@@ -86,42 +86,146 @@ backend/app/models/event.py (확장)
 
 ---
 
-### CP-1.5: Alembic 마이그레이션 생성
-- [ ] `periods` 테이블 마이그레이션
-- [ ] `locations` 확장 마이그레이션
-- [ ] `events` 확장 마이그레이션
-- [ ] 마이그레이션 테스트 (로컬 DB)
+### CP-1.5: Alembic 마이그레이션 생성 ✅ DONE
+- [x] `periods` 테이블 마이그레이션
+- [x] `locations` 확장 마이그레이션
+- [x] `events` 확장 마이그레이션
+- [x] 마이그레이션 테스트 (로컬 DB)
 
 **파일 목록**:
 ```
-backend/alembic/versions/xxxx_add_v1_models.py
+backend/alembic/versions/001_v1_schema_initial.py
 ```
 
-**예상 시간**: 30분
+**완료**: 2026-01-07
 **의존성**: CP-1.2, CP-1.3, CP-1.4
 
 ---
 
-## Phase 2: HistoricalChain 시스템
+## Phase 2: V1 스키마 재설계 (Batch NER 대응)
 
-### CP-2.1: HistoricalChain 모델 생성
-- [ ] `backend/app/models/v1/chain.py` 작성
-- [ ] HistoricalChain 모델 정의
-- [ ] ChainSegment 모델 정의
-- [ ] 관계 설정 (Person, Location, Period, Event)
+> **2026-01-07 대규모 업데이트**: 5.65M NER 엔티티를 수용하고 Historical Chain 개념을 구현하기 위한 통합 스키마 재설계 완료
+
+### CP-2.1: Polity 모델 생성 ✅ DONE
+- [x] `backend/app/models/v1/polity.py` 작성
+- [x] Polity 모델 정의 (empire, kingdom, dynasty 등)
+- [x] 계보 관계 (predecessor, successor)
+- [x] 벡터 임베딩 지원
 
 **파일 목록**:
 ```
-backend/app/models/v1/chain.py
-backend/app/schemas/v1/chain.py
+backend/app/models/v1/polity.py
 ```
 
-**예상 시간**: 45분
+**완료**: 2026-01-07
 **의존성**: CP-1.5
 
 ---
 
-### CP-2.2: Chain 서비스 레이어
+### CP-2.2: HistoricalChain 모델 생성 ✅ DONE
+- [x] `backend/app/models/v1/chain.py` 작성
+- [x] HistoricalChain 모델 정의 (4가지 chain_type)
+- [x] ChainSegment 모델 정의
+- [x] ChainEntityRole 모델 정의
+- [x] 승격 시스템 (user → cached → featured → system)
+- [x] 관계 설정 (Person, Location, Period, Event)
+
+**파일 목록**:
+```
+backend/app/models/v1/chain.py
+```
+
+**완료**: 2026-01-07
+**의존성**: CP-2.1
+
+---
+
+### CP-2.3: TextMention/EntityAlias 모델 생성 ✅ DONE
+- [x] `backend/app/models/v1/text_mention.py` 작성
+- [x] TextMention 모델 정의 (NER 출처 추적)
+- [x] EntityAlias 모델 정의 (중복 제거)
+- [x] ImportBatch 모델 정의 (배치 추적)
+- [x] PendingEntity 모델 정의 (해결 대기)
+
+**파일 목록**:
+```
+backend/app/models/v1/text_mention.py
+```
+
+**완료**: 2026-01-07
+**의존성**: CP-2.1
+
+---
+
+### CP-2.4: Person/Source 모델 확장 ✅ DONE
+- [x] Person 모델 V1 필드 추가
+  - canonical_id, role, era, floruit_start/end
+  - certainty, embedding, primary_polity_id
+  - mention_count, avg_confidence
+- [x] Source 모델 V1 필드 추가
+  - document_id, document_path, title, original_year, language
+
+**파일 목록**:
+```
+backend/app/models/person.py
+backend/app/models/source.py
+```
+
+**완료**: 2026-01-07
+**의존성**: CP-2.1
+**V0 호환성**: 모든 신규 필드는 nullable=True
+
+---
+
+### CP-2.5: Associations 확장 ✅ DONE
+- [x] person_relationships 확장 (strength, valid_from/until, confidence)
+- [x] event_relationships 확장 (certainty, evidence_type, confidence)
+- [x] polity_relationships 테이블 추가
+- [x] person_polities 테이블 추가
+
+**파일 목록**:
+```
+backend/app/models/associations.py
+```
+
+**완료**: 2026-01-07
+**의존성**: CP-2.1
+
+---
+
+### CP-2.6: Alembic 마이그레이션 실행 ✅ DONE
+- [x] 10개 신규 테이블 생성
+- [x] 기존 테이블 컬럼 추가 (IF NOT EXISTS 패턴)
+- [x] 성능 인덱스 생성
+- [x] 마이그레이션 테스트 완료
+
+**파일 목록**:
+```
+backend/alembic.ini
+backend/alembic/env.py
+backend/alembic/versions/001_v1_schema_initial.py
+```
+
+**완료**: 2026-01-07
+**의존성**: CP-2.5
+
+---
+
+### CP-2.7: 인덱스 최적화 ✅ DONE
+- [x] idx_events_temporal_range (시간 범위 쿼리)
+- [x] idx_events_period_date (시대별 이벤트)
+- [x] idx_event_persons_person (Person Story)
+- [x] idx_event_locations_location (Place Story)
+- [x] idx_event_rel_causal (Causal Chain)
+
+**완료**: 2026-01-07
+**의존성**: CP-2.6
+
+---
+
+## Phase 3: 서비스 레이어
+
+### CP-3.1: Chain 서비스 레이어
 - [ ] `backend/app/services/chain_service.py` 작성
 - [ ] 체인 생성 로직
 - [ ] 승격 로직 (user → cached → featured → system)
@@ -132,43 +236,7 @@ backend/app/schemas/v1/chain.py
 backend/app/services/chain_service.py
 ```
 
-**예상 시간**: 1시간
-**의존성**: CP-2.1
-
----
-
-### CP-2.3: Chain 마이그레이션
-- [ ] `historical_chains` 테이블 마이그레이션
-- [ ] `chain_segments` 테이블 마이그레이션
-- [ ] 인덱스 추가
-- [ ] 마이그레이션 테스트
-
-**파일 목록**:
-```
-backend/alembic/versions/xxxx_add_chain_tables.py
-```
-
-**예상 시간**: 20분
-**의존성**: CP-2.1
-
----
-
-## Phase 3: 텍스트-엔티티 연결
-
-### CP-3.1: TextSource/TextMention 모델
-- [ ] `backend/app/models/v1/text_mention.py` 작성
-- [ ] TextSource 모델 정의
-- [ ] TextMention 모델 정의
-- [ ] 스키마 작성
-
-**파일 목록**:
-```
-backend/app/models/v1/text_mention.py
-backend/app/schemas/v1/text_mention.py
-```
-
-**예상 시간**: 30분
-**의존성**: CP-1.5
+**의존성**: CP-2.2
 
 ---
 
@@ -185,23 +253,7 @@ backend/app/core/extraction/__init__.py
 backend/app/core/extraction/ner_pipeline.py
 ```
 
-**예상 시간**: 2시간
-**의존성**: CP-3.1
-
----
-
-### CP-3.3: Text 마이그레이션
-- [ ] `text_sources` 테이블 마이그레이션
-- [ ] `text_mentions` 테이블 마이그레이션
-- [ ] 인덱스 추가
-
-**파일 목록**:
-```
-backend/alembic/versions/xxxx_add_text_tables.py
-```
-
-**예상 시간**: 15분
-**의존성**: CP-3.1
+**의존성**: CP-2.3
 
 ---
 
@@ -258,24 +310,33 @@ backend/app/core/chain/generator.py
 
 ## 체크포인트 요약
 
-| ID | 작업 | 예상 시간 | 상태 |
-|----|------|----------|------|
-| CP-1.1 | V1 디렉토리 구조 | 5분 | ✅ |
-| CP-1.2 | Period 모델 | 30분 | ✅ |
-| CP-1.3 | Location 확장 | 20분 | ✅ |
-| CP-1.4 | Event 확장 | 15분 | ✅ |
-| CP-1.5 | Phase 1 마이그레이션 | 30분 | ⬜ |
-| CP-2.1 | Chain 모델 | 45분 | ⬜ |
-| CP-2.2 | Chain 서비스 | 1시간 | ⬜ |
-| CP-2.3 | Chain 마이그레이션 | 20분 | ⬜ |
-| CP-3.1 | Text 모델 | 30분 | ⬜ |
-| CP-3.2 | NER 파이프라인 | 2시간 | ⬜ |
-| CP-3.3 | Text 마이그레이션 | 15분 | ⬜ |
-| CP-4.1 | 큐레이션 API | 1시간 | ⬜ |
-| CP-4.2 | AI 체인 생성 | 3시간 | ⬜ |
-| CP-5.1 | 프론트엔드 | 4시간 | ⬜ |
+| ID | 작업 | 상태 | 완료일 |
+|----|------|------|--------|
+| **Phase 1: 데이터 모델 확장** ||||
+| CP-1.1 | V1 디렉토리 구조 | ✅ | 2026-01-01 |
+| CP-1.2 | Period 모델 | ✅ | 2026-01-01 |
+| CP-1.3 | Location 확장 | ✅ | 2026-01-01 |
+| CP-1.4 | Event 확장 | ✅ | 2026-01-01 |
+| CP-1.5 | Phase 1 마이그레이션 | ✅ | 2026-01-07 |
+| **Phase 2: V1 스키마 재설계** ||||
+| CP-2.1 | Polity 모델 | ✅ | 2026-01-07 |
+| CP-2.2 | HistoricalChain 모델 | ✅ | 2026-01-07 |
+| CP-2.3 | TextMention/EntityAlias 모델 | ✅ | 2026-01-07 |
+| CP-2.4 | Person/Source 확장 | ✅ | 2026-01-07 |
+| CP-2.5 | Associations 확장 | ✅ | 2026-01-07 |
+| CP-2.6 | Alembic 마이그레이션 | ✅ | 2026-01-07 |
+| CP-2.7 | 인덱스 최적화 | ✅ | 2026-01-07 |
+| **Phase 3: 서비스 레이어** ||||
+| CP-3.1 | Chain 서비스 | ⬜ | - |
+| CP-3.2 | NER 파이프라인 | ⬜ | - |
+| **Phase 4: 큐레이션 API** ||||
+| CP-4.1 | 큐레이션 엔드포인트 | ⬜ | - |
+| CP-4.2 | AI 체인 생성 로직 | ⬜ | - |
+| **Phase 5: 프론트엔드** ||||
+| CP-5.1 | Chain View 컴포넌트 | ⬜ | - |
 
-**총 예상 시간**: ~14시간
+**Phase 1-2 완료**: 12/12 체크포인트
+**전체 진행률**: 12/17 (71%)
 
 ---
 
@@ -284,3 +345,5 @@ backend/app/core/chain/generator.py
 | 날짜 | 변경 내용 |
 |-----|----------|
 | 2026-01-01 | V1 작업 계획 초안 작성 |
+| 2026-01-07 | Phase 2 대규모 업데이트: V1 스키마 재설계 (Batch NER 5.65M 엔티티 대응) |
+| 2026-01-07 | CP-1.5, CP-2.1~2.7 완료: Polity, HistoricalChain, TextMention 모델 + 마이그레이션 |

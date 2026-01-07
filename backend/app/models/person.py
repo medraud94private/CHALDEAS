@@ -2,9 +2,19 @@
 Person model.
 
 Represents historical figures with their biographical data.
+
+V1 Extension:
+- canonical_id: Link to canonical entity for alias deduplication
+- role, era: NER extraction fields
+- floruit_start/end: For unknown birth/death dates (fl. notation)
+- certainty: Same as Event (fact, probable, legendary, mythological)
+- embedding: Vector embedding for semantic search (pgvector)
+- primary_polity_id: Main political affiliation
+- mention_count, avg_confidence: Statistics from NER extraction
 """
-from sqlalchemy import Column, Integer, String, Text, ForeignKey
+from sqlalchemy import Column, Integer, String, Text, ForeignKey, Float, CheckConstraint
 from sqlalchemy.orm import relationship
+from pgvector.sqlalchemy import Vector
 
 from app.models.base import Base, TimestampMixin
 
@@ -40,6 +50,38 @@ class Person(Base, TimestampMixin):
     # Media
     image_url = Column(String(500))
     wikipedia_url = Column(String(500))
+    wikidata_id = Column(String(50))  # V1: Q-number for entity linking
+
+    # V1: Alias deduplication (link to canonical entity)
+    canonical_id = Column(Integer, ForeignKey("persons.id"), nullable=True, index=True)
+
+    # V1: NER extraction fields
+    role = Column(String(255))  # king, philosopher, general, etc.
+    era = Column(String(100))   # Classical Antiquity, Medieval, etc.
+
+    # V1: Floruit dates (for unknown birth/death - "fl." notation)
+    floruit_start = Column(Integer)
+    floruit_end = Column(Integer)
+
+    # V1: Certainty level (same as Event)
+    certainty = Column(
+        String(20),
+        CheckConstraint(
+            "certainty IN ('fact', 'probable', 'legendary', 'mythological')"
+        ),
+        default="fact",
+        nullable=True  # V0 compatibility
+    )
+
+    # V1: Vector embedding for semantic search (pgvector)
+    embedding = Column(Vector(1536), nullable=True)
+
+    # V1: Political affiliation
+    primary_polity_id = Column(Integer, ForeignKey("polities.id"), nullable=True)
+
+    # V1: Statistics from NER extraction
+    mention_count = Column(Integer, default=0)
+    avg_confidence = Column(Float, default=0.0)
 
     # Relationships
     category = relationship("Category", back_populates="persons")
@@ -59,6 +101,17 @@ class Person(Base, TimestampMixin):
         secondary="person_sources",
         back_populates="persons"
     )
+
+    # V1: Canonical entity relationship (for alias deduplication)
+    canonical = relationship(
+        "Person",
+        remote_side=[id],
+        foreign_keys=[canonical_id],
+        backref="aliases"
+    )
+
+    # V1: Political affiliation
+    primary_polity = relationship("Polity", foreign_keys=[primary_polity_id])
 
     def __repr__(self):
         return f"<Person(id={self.id}, name='{self.name}')>"

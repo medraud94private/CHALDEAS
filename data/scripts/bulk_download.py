@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 CHALDEAS Bulk Download Master Script
 
@@ -60,6 +61,14 @@ from collectors.dbpedia import DBpediaCollector
 from collectors.open_library import OpenLibraryCollector
 
 
+def safe_print(text: str):
+    """Print text safely, handling encoding issues on Windows."""
+    try:
+        print(text)
+    except UnicodeEncodeError:
+        print(text.encode('ascii', 'replace').decode('ascii'))
+
+
 class BulkDownloadManager:
     """Manages bulk downloads from all sources."""
 
@@ -76,7 +85,7 @@ class BulkDownloadManager:
 
     def log(self, message: str):
         """Print and optionally log a message."""
-        print(message)
+        safe_print(message)
 
     def update_log_file(self, source: str, status: str, count: int = 0, error: str = None):
         """Update the progress in the log file."""
