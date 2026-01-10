@@ -35,29 +35,33 @@ Persons (mention >= 3): 21,963명
 
 ## Phase 4: V1 API 구현
 
-### CP-4.1 Globe API
-- [ ] `/api/v1/globe/events` - 지도용 이벤트 조회 (좌표, 연도 필터)
-- [ ] `/api/v1/globe/locations` - 위치 목록 (country, region 필터)
-- [ ] `/api/v1/globe/heatmap` - 시대별 이벤트 밀도
-- [ ] 테스트: API 응답 검증
+### CP-4.1 Globe API ✅ (이미 구현됨)
+- [x] `/api/v1/globe/markers` - 마커 조회 (type, 연도, bounds 필터)
+- [x] `/api/v1/globe/markers/stats` - 마커 통계
+- [x] `/api/v1/globe/markers/density` - 시대별 밀도 (히트맵)
+- [x] `/api/v1/globe/clusters` - 줌아웃용 클러스터
+- [x] `/api/v1/globe/connections/{type}/{id}` - 엔티티 연결
 
-### CP-4.2 Search API
-- [ ] `/api/v1/search` - 통합 검색 (events, persons, locations)
-- [ ] 필터: 연도 범위, 지역, 카테고리
-- [ ] 정렬: 관련도, 연도, 이름
-- [ ] 페이지네이션
-- [ ] 테스트: 검색 품질 검증
+### CP-4.2 Search API ✅ (이미 구현됨)
+- [x] `/api/v1/search` - 통합 검색 (events, persons, locations)
+- [x] `/api/v1/search/basic` - BM25 키워드 검색
+- [x] `/api/v1/search/advanced` - AI 기반 고급 검색
+- [x] `/api/v1/search/date-location` - 시공간 검색
 
-### CP-4.3 Detail API
-- [ ] `/api/v1/events/{id}` - 이벤트 상세 (연관 persons, locations, sources)
-- [ ] `/api/v1/persons/{id}` - 인물 상세 (연관 events, sources)
-- [ ] `/api/v1/locations/{id}` - 위치 상세 (연관 events)
-- [ ] 테스트: 연관 데이터 정확성
+### CP-4.3 Detail API ✅ (이미 구현됨)
+- [x] `/api/v1/events` - 이벤트 목록
+- [x] `/api/v1/persons` - 인물 목록
+- [x] `/api/v1/locations` - 위치 목록
+- [ ] 상세 조회 엔드포인트 추가 (/{id} 라우트)
+- [ ] 연관 데이터 조회 기능 보강
 
-### CP-4.4 Statistics API
-- [ ] `/api/v1/stats/overview` - 전체 통계
-- [ ] `/api/v1/stats/timeline` - 연도별 이벤트 수
-- [ ] `/api/v1/stats/geography` - 지역별 분포
+### CP-4.4 Statistics API ✅
+- [x] `/api/v1/globe/markers/stats` - 기본 마커 통계
+- [x] `/api/v1/stats/overview` - 전체 DB 통계
+- [x] `/api/v1/stats/timeline` - 연도별 분포
+- [x] `/api/v1/stats/geography` - 지역별 분포
+- [x] `/api/v1/stats/categories` - 카테고리별 분포
+- [x] `/api/v1/stats/enrichment` - 엔리치먼트 현황
 
 ---
 
@@ -151,3 +155,4 @@ Phase 4 (V1 API) → Phase 5 (Frontend) → Phase 6 (품질검증) → Phase 7 (
 | 날짜 | 내용 |
 |-----|------|
 | 2026-01-10 | 문서 생성, Phase 4-7 계획 수립 |
+| 2026-01-10 | Phase 4 검토: 대부분 이미 구현됨, Stats API 추가 |
