@@ -226,6 +226,23 @@ CHAIN_PRIMARY_MODEL=gpt-5-nano
 
 ## Development Workflow
 
+### 작업 체크리스트 규칙 (필수!)
+
+**Claude Code는 반드시 작업 시작 전 체크리스트를 작성해야 함:**
+
+1. **TodoWrite 도구 사용**: 모든 비단순 작업에서 TodoWrite로 체크리스트 생성
+2. **작업 시작 전 계획**: 무엇을 할지 먼저 목록화
+3. **진행 상태 업데이트**: 작업 중 `in_progress` → 완료 시 `completed`
+4. **작은 단위로 분할**: 큰 작업은 작은 체크포인트로 나누기
+
+```
+예시:
+[ ] Globe API 생성
+[ ] 라우터 등록
+[ ] API 테스트
+[ ] 프론트엔드 연동
+```
+
 ### V1 작업 시
 
 1. **체크포인트 확인**: `docs/planning/V1_WORKPLAN.md`에서 다음 CP 확인

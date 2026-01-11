@@ -344,8 +344,12 @@ def import_locations(session, data_path: Path):
     return count
 
 
-def import_events(session, data_path: Path):
-    """Import NER-extracted events."""
+def import_events(session, data_path: Path, force_all: bool = False):
+    """Import NER-extracted events.
+
+    Args:
+        force_all: If True, import all events with unique slugs (add suffix if needed)
+    """
     events_file = data_path / "events.json"
     if not events_file.exists():
         return 0
@@ -354,22 +358,33 @@ def import_events(session, data_path: Path):
         events = json.load(f)
 
     count = 0
+    skipped = 0
     batch_size = 1000
 
     for i in range(0, len(events), batch_size):
         batch = events[i:i+batch_size]
-        for event in batch:
-            slug = generate_slug(event["name"])
+        for idx, event in enumerate(batch):
+            base_slug = generate_slug(event["name"])
             title = event["name"][:500]
 
-            # Skip if exists
-            exists = session.execute(
-                text("SELECT 1 FROM events WHERE slug = :slug"),
-                {"slug": slug}
-            ).fetchone()
+            # source_docs 정보 추출 (첫 번째 소스)
+            source_docs = event.get("source_docs", [])
+            first_source = source_docs[0] if source_docs else None
+            mention_count = event.get("mention_count", 1)
 
-            if exists:
-                continue
+            if force_all:
+                # 고유 slug 생성 (ner-{base}-{index})
+                slug = f"ner-{base_slug}-{i+idx:06d}"[:255]
+            else:
+                slug = base_slug
+                # Skip if exists
+                exists = session.execute(
+                    text("SELECT 1 FROM events WHERE slug = :slug"),
+                    {"slug": slug}
+                ).fetchone()
+                if exists:
+                    skipped += 1
+                    continue
 
             # Determine certainty
             confidence = event.get("confidence", 0.5)
@@ -382,29 +397,40 @@ def import_events(session, data_path: Path):
             else:
                 certainty = "mythological"
 
+            # description에 source 정보 임시 저장
+            source_info = f"[NER] mention_count={mention_count}"
+            if first_source:
+                source_info += f", first_source={first_source}"
+
             try:
-                session.execute(
-                    text("""
-                        INSERT INTO events (title, slug, date_start, certainty,
-                                           temporal_scale, created_at, updated_at)
-                        VALUES (:title, :slug, :year, :certainty,
-                                'evenementielle', NOW(), NOW())
-                    """),
-                    {
-                        "title": title,
-                        "slug": slug,
-                        "year": event.get("year"),
-                        "certainty": certainty
-                    }
-                )
+                # Use savepoint to prevent batch-wide rollback on individual failure
+                with session.begin_nested():
+                    session.execute(
+                        text("""
+                            INSERT INTO events (title, slug, date_start, certainty,
+                                               temporal_scale, description, created_at, updated_at)
+                            VALUES (:title, :slug, :year, :certainty,
+                                    'evenementielle', :description, NOW(), NOW())
+                        """),
+                        {
+                            "title": title[:500],  # Ensure truncation
+                            "slug": slug,
+                            "year": event.get("year"),
+                            "certainty": certainty,
+                            "description": source_info[:1000] if source_info else None
+                        }
+                    )
                 count += 1
-            except Exception:
-                session.rollback()
+            except Exception as e:
+                # Savepoint automatically rolled back, continue with next event
                 continue
 
         session.commit()
         if (i + batch_size) % 10000 == 0:
-            print(f"    Events: {i + batch_size:,} processed...")
+            print(f"    Events: {i + batch_size:,} processed... (imported: {count:,}, skipped: {skipped:,})")
+
+    if skipped > 0:
+        print(f"    [INFO] {skipped:,} events skipped (slug exists). Use --force-all to import all.")
 
     return count
 
@@ -445,11 +471,21 @@ def update_import_batch(session, batch_id: int, total: int, success: int, failed
 
 def main():
     """Main import process."""
+    import argparse
+    parser = argparse.ArgumentParser(description='Import NER data to V1 database')
+    parser.add_argument('--force-all', action='store_true',
+                        help='Import all events with unique slugs (even if name exists)')
+    parser.add_argument('--events-only', action='store_true',
+                        help='Only import events (skip periods, polities, persons, locations)')
+    args = parser.parse_args()
+
     print("=" * 60)
     print("CHALDEAS V1 Database Import")
     print("=" * 60)
     print(f"Database: {DATABASE_URL.split('@')[1] if '@' in DATABASE_URL else DATABASE_URL}")
     print(f"Started: {datetime.now().isoformat()}")
+    if args.force_all:
+        print("Mode: FORCE ALL (import all events with unique slugs)")
     print()
 
     session = Session()
@@ -462,12 +498,6 @@ def main():
 
         total_imported = 0
 
-        # 1. Import seed periods
-        print("[1/6] Importing seed periods...")
-        count = import_seed_periods(session)
-        print(f"  -> {count} seed periods imported")
-        total_imported += count
-
         # Data path
         data_path = Path(__file__).parent.parent / "data/integrated_ner_full/aggregated"
 
@@ -476,35 +506,50 @@ def main():
             print("Run aggregate_ner_results.py first.")
             return
 
-        # 2. Import NER periods
-        print("\n[2/6] Importing NER periods...")
-        count = import_aggregated_periods(session, data_path)
-        print(f"  -> {count} NER periods imported")
-        total_imported += count
+        if args.events_only:
+            # Events only mode - skip other entities
+            print("[Events Only Mode] Skipping periods, polities, persons, locations...")
+            print("\n[1/1] Importing events...")
+            count = import_events(session, data_path, force_all=args.force_all)
+            print(f"  -> {count} events imported")
+            total_imported += count
+        else:
+            # Full import mode
+            # 1. Import seed periods
+            print("[1/6] Importing seed periods...")
+            count = import_seed_periods(session)
+            print(f"  -> {count} seed periods imported")
+            total_imported += count
 
-        # 3. Import polities
-        print("\n[3/6] Importing polities...")
-        count = import_polities(session, data_path)
-        print(f"  -> {count} polities imported")
-        total_imported += count
+            # 2. Import NER periods
+            print("\n[2/6] Importing NER periods...")
+            count = import_aggregated_periods(session, data_path)
+            print(f"  -> {count} NER periods imported")
+            total_imported += count
 
-        # 4. Import persons
-        print("\n[4/6] Importing persons...")
-        count = import_persons(session, data_path)
-        print(f"  -> {count} persons imported")
-        total_imported += count
+            # 3. Import polities
+            print("\n[3/6] Importing polities...")
+            count = import_polities(session, data_path)
+            print(f"  -> {count} polities imported")
+            total_imported += count
 
-        # 5. Import locations
-        print("\n[5/6] Importing locations...")
-        count = import_locations(session, data_path)
-        print(f"  -> {count} locations imported")
-        total_imported += count
+            # 4. Import persons
+            print("\n[4/6] Importing persons...")
+            count = import_persons(session, data_path)
+            print(f"  -> {count} persons imported")
+            total_imported += count
 
-        # 6. Import events
-        print("\n[6/6] Importing events...")
-        count = import_events(session, data_path)
-        print(f"  -> {count} events imported")
-        total_imported += count
+            # 5. Import locations
+            print("\n[5/6] Importing locations...")
+            count = import_locations(session, data_path)
+            print(f"  -> {count} locations imported")
+            total_imported += count
+
+            # 6. Import events
+            print("\n[6/6] Importing events...")
+            count = import_events(session, data_path, force_all=args.force_all)
+            print(f"  -> {count} events imported")
+            total_imported += count
 
         # Update batch record
         update_import_batch(session, batch_id, total_imported, total_imported, 0)

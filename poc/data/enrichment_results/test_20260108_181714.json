@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "model": "gpt-5.1-chat-latest",
+    "count": 3,
+    "timestamp": "20260108_181714",
+    "total_input_tokens": 2895,
+    "total_output_tokens": 785,
+    "estimated_cost": 0.02625
+  },
+  "results": [
+    {
+      "id": 333287,
+      "record_type": "article",
+      "title_clean": "Münster Map Reproduction",
+      "year_start": 1530,
+      "year_end": 1530,
+      "year_precision": "year",
+      "era": "EARLY_MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Münster",
+      "location_modern": "Münster, Germany",
+      "latitude": 51.962,
+      "longitude": 7.628,
+      "location_type": "city",
+      "location_confidence": "medium",
+      "category": "art",
+      "civilization": "European",
+      "confidence": "medium",
+      "needs_review": false,
+      "_tokens": {
+        "input": 966,
+        "output": 302
+      }
+    },
+    {
+      "id": 378603,
+      "record_type": "event",
+      "title_clean": "Battle of Burgess Mill",
+      "year_start": 1864,
+      "year_end": 1864,
+      "year_precision": "exact",
+      "era": "MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Burgess Mill, Virginia",
+      "location_modern": "Petersburg, Virginia, United States",
+      "latitude": 37.139,
+      "longitude": -77.539,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "American",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 966,
+        "output": 242
+      }
+    },
+    {
+      "id": 395049,
+      "record_type": "event",
+      "title_clean": "Night Attack Upon Quebec",
+      "year_start": 1775,
+      "year_end": 1775,
+      "year_precision": "year",
+      "era": "EARLY_MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Quebec",
+      "location_modern": "Quebec City, Canada",
+      "latitude": 46.8139,
+      "longitude": -71.208,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "British / American Colonial",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 963,
+        "output": 241
+      }
+    }
+  ]
+}

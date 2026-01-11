@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "model": "gpt-5.1-chat-latest",
+    "count": 5,
+    "timestamp": "20260108_012319",
+    "total_input_tokens": 4806,
+    "total_output_tokens": 1144,
+    "estimated_cost": 0.04119
+  },
+  "results": [
+    {
+      "id": 295,
+      "record_type": "event",
+      "title_clean": "Battle of Saint Gotthard",
+      "year_start": 1664,
+      "year_end": 1664,
+      "year_precision": "exact",
+      "era": "EARLY_MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Saint Gotthard battlefield",
+      "location_modern": "Szentgotthárd, Hungary",
+      "latitude": 46.952,
+      "longitude": 16.272,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "Ottoman / Habsburg",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 961,
+        "output": 184
+      }
+    },
+    {
+      "id": 1676,
+      "record_type": "event",
+      "title_clean": "Battle of Lake Huleh",
+      "year_start": 1157,
+      "year_end": 1157,
+      "year_precision": "year",
+      "era": "MEDIEVAL",
+      "temporal_scale": "evenementielle",
+      "location_name": "Lake Huleh",
+      "location_modern": "Lake Hula, Israel",
+      "latitude": 33.1,
+      "longitude": 35.6,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "Crusader / Zengid",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 963,
+        "output": 245
+      }
+    },
+    {
+      "id": 2316,
+      "record_type": "event",
+      "title_clean": "Battle of Chauché",
+      "year_start": 1794,
+      "year_end": 1794,
+      "year_precision": "year",
+      "era": "EARLY_MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Chauché",
+      "location_modern": "Chauché, Vendée, France",
+      "latitude": 46.769,
+      "longitude": -1.233,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "French",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 952,
+        "output": 240
+      }
+    },
+    {
+      "id": 6212,
+      "record_type": "event",
+      "title_clean": "Malabo Convention",
+      "year_start": 2014,
+      "year_end": 2014,
+      "year_precision": "year",
+      "era": "CONTEMPORARY",
+      "temporal_scale": "evenementielle",
+      "location_name": "Malabo",
+      "location_modern": "Malabo, Equatorial Guinea",
+      "latitude": 3.75,
+      "longitude": 8.78,
+      "location_type": "city",
+      "location_confidence": "high",
+      "category": "politics",
+      "civilization": "African Union",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 971,
+        "output": 237
+      }
+    },
+    {
+      "id": 9256,
+      "record_type": "event",
+      "title_clean": "Great Fire of 1869",
+      "year_start": 1869,
+      "year_end": 1869,
+      "year_precision": "year",
+      "era": "MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Cape Province",
+      "location_modern": "Cape Province, South Africa",
+      "latitude": -32.5,
+      "longitude": 24.5,
+      "location_type": "region",
+      "location_confidence": "medium",
+      "category": "other",
+      "civilization": "Colonial South African",
+      "confidence": "medium",
+      "needs_review": false,
+      "_tokens": {
+        "input": 959,
+        "output": 238
+      }
+    }
+  ]
+}

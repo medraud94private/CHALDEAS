@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "model": "gpt-5.1-chat-latest",
+    "count": 15,
+    "timestamp": "20260107_230945",
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "estimated_cost": 0.0
+  },
+  "results": [
+    {
+      "id": 1882,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2949,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 4936,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6212,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6347,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6656,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29667,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29668,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30983,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30997,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31015,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31062,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31120,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31121,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 62473,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    }
+  ]
+}

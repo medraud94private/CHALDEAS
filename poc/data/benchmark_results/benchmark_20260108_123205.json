@@ -1,0 +1,437 @@
+{
+  "timestamp": "20260108_123205",
+  "events_tested": 5,
+  "gpt_baseline_file": "C:\\Projects\\Chaldeas\\poc\\data\\enrichment_results\\test_20260108_012319.json",
+  "benchmarks": {
+    "llama3.1:8b-instruct-q4_0": {
+      "model": "llama3.1:8b-instruct-q4_0",
+      "total_events": 5,
+      "errors": 0,
+      "success_rate": 100.0,
+      "total_elapsed_sec": 113.02355122566223,
+      "avg_time_per_event": 22.604710245132445,
+      "avg_tokens_per_sec": 5.441343802515055,
+      "results": [
+        {
+          "id": 295,
+          "record_type": "event",
+          "title_clean": "Battle of Saint Gotthard",
+          "year_start": -490,
+          "year_end": -490,
+          "year_precision": "exact",
+          "era": "CLASSICAL",
+          "location_name": "",
+          "location_modern": "Saint Gotthard, Switzerland",
+          "latitude": 46.5333,
+          "longitude": 9.2167,
+          "category": "battle",
+          "civilization": "",
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 31.689826011657715,
+            "input_tokens": 697,
+            "output_tokens": 123,
+            "tokens_per_sec": 3.881371893766538
+          }
+        },
+        {
+          "id": 1676,
+          "record_type": "event",
+          "title_clean": "Battle of Lake Huleh",
+          "year_start": -1157,
+          "year_end": -1157,
+          "year_precision": "exact",
+          "era": "CLASSICAL",
+          "location_name": "Lake Huleh",
+          "location_modern": "Lake Huleh, Israel",
+          "latitude": 33.233333,
+          "longitude": 35.783333,
+          "category": "battle",
+          "civilization": "Islamic",
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 21.975558519363403,
+            "input_tokens": 699,
+            "output_tokens": 133,
+            "tokens_per_sec": 6.052178372750309
+          }
+        },
+        {
+          "id": 2316,
+          "record_type": "event",
+          "title_clean": "Battle of Chauché",
+          "year_start": -1794,
+          "year_end": -1794,
+          "year_precision": "exact",
+          "era": "MODERN",
+          "location_name": "Chauché",
+          "location_modern": "Chauché, France",
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": null,
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 19.84759521484375,
+            "input_tokens": 689,
+            "output_tokens": 121,
+            "tokens_per_sec": 6.096456456825849
+          }
+        },
+        {
+          "id": 6212,
+          "record_type": "event",
+          "title_clean": "Malabo Convention",
+          "year_start": -490,
+          "year_end": -490,
+          "year_precision": "exact",
+          "era": "MODERN",
+          "location_name": null,
+          "location_modern": "Equatorial Guinea, Equatorial Guinea",
+          "latitude": null,
+          "longitude": null,
+          "category": "politics",
+          "civilization": null,
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 19.289544105529785,
+            "input_tokens": 706,
+            "output_tokens": 117,
+            "tokens_per_sec": 6.065462167478562
+          }
+        },
+        {
+          "id": 9256,
+          "record_type": "event",
+          "title_clean": "Great Fire of 1869",
+          "year_start": -1869,
+          "year_end": -1869,
+          "year_precision": "exact",
+          "era": "MODERN",
+          "location_name": null,
+          "location_modern": "Cape province, South Africa",
+          "latitude": null,
+          "longitude": null,
+          "category": "disaster",
+          "civilization": null,
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 20.221027374267578,
+            "input_tokens": 694,
+            "output_tokens": 121,
+            "tokens_per_sec": 5.98387004579102
+          }
+        }
+      ]
+    },
+    "mistral:7b-instruct-q4_0": {
+      "model": "mistral:7b-instruct-q4_0",
+      "total_events": 5,
+      "errors": 0,
+      "success_rate": 100.0,
+      "total_elapsed_sec": 106.63935375213623,
+      "avg_time_per_event": 21.327870750427245,
+      "avg_tokens_per_sec": 7.32375030905844,
+      "results": [
+        {
+          "id": 295,
+          "record_type": "event",
+          "title_clean": "Battle of Saint Gotthard",
+          "year_start": -490,
+          "year_end": -490,
+          "year_precision": "exact",
+          "era": "CLASSICAL",
+          "location_name": "Ancient name",
+          "location_modern": "Modern name, Country",
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": "Greek",
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 26.398507595062256,
+            "input_tokens": 848,
+            "output_tokens": 157,
+            "tokens_per_sec": 5.9473059010868585
+          }
+        },
+        {
+          "id": 1676,
+          "record_type": "event",
+          "title_clean": "Battle of Lake Huleh",
+          "year_start": -490,
+          "year_end": -490,
+          "year_precision": "exact",
+          "era": "CLASSICAL",
+          "location_name": "Ancient name",
+          "location_modern": "Modern name, Country",
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": "Greek",
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 20.256964206695557,
+            "input_tokens": 849,
+            "output_tokens": 158,
+            "tokens_per_sec": 7.799786699913113
+          }
+        },
+        {
+          "id": 2316,
+          "record_type": "event",
+          "title_clean": "Battle of Chauché",
+          "year_start": -490,
+          "year_end": -490,
+          "year_precision": "exact",
+          "era": "CLASSICAL",
+          "location_name": "Ancient name",
+          "location_modern": "Modern name, Country",
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": "Greek",
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 20.445115089416504,
+            "input_tokens": 839,
+            "output_tokens": 157,
+            "tokens_per_sec": 7.67909592650186
+          }
+        },
+        {
+          "id": 6212,
+          "record_type": "event",
+          "title_clean": "Malabo Convention",
+          "year_start": -490,
+          "year_end": -490,
+          "year_precision": "exact",
+          "era": "CLASSICAL",
+          "location_name": "Ancient name",
+          "location_modern": "Modern name, Country",
+          "latitude": null,
+          "longitude": null,
+          "category": "treaty",
+          "civilization": null,
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 19.665797472000122,
+            "input_tokens": 858,
+            "output_tokens": 155,
+            "tokens_per_sec": 7.881704274677229
+          }
+        },
+        {
+          "id": 9256,
+          "record_type": "event",
+          "title_clean": "Great Fire of 1869",
+          "year_start": -490,
+          "year_end": -490,
+          "year_precision": "exact",
+          "era": "CLASSICAL",
+          "location_name": "Cape province",
+          "location_modern": "South Africa",
+          "latitude": null,
+          "longitude": null,
+          "category": "discovery",
+          "civilization": null,
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 19.872969388961792,
+            "input_tokens": 844,
+            "output_tokens": 154,
+            "tokens_per_sec": 7.749219403796672
+          }
+        }
+      ]
+    },
+    "gemma2:9b-instruct-q4_0": {
+      "model": "gemma2:9b-instruct-q4_0",
+      "total_events": 5,
+      "errors": 0,
+      "success_rate": 100.0,
+      "total_elapsed_sec": 281.82439494132996,
+      "avg_time_per_event": 56.36487898826599,
+      "avg_tokens_per_sec": 2.678973195905115,
+      "results": [
+        {
+          "id": 295,
+          "record_type": "event",
+          "title_clean": "Battle of Saint Gotthard",
+          "year_start": 1664,
+          "year_end": 1664,
+          "year_precision": "exact",
+          "era": "EARLY_MODERN",
+          "location_name": null,
+          "location_modern": "Saint Gotthard Pass, Switzerland",
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": null,
+          "confidence": "medium",
+          "_meta": {
+            "elapsed_sec": 118.17483329772949,
+            "input_tokens": 756,
+            "output_tokens": 148,
+            "tokens_per_sec": 1.2523817116553828
+          }
+        },
+        {
+          "id": 1676,
+          "record_type": "event",
+          "title_clean": "Battle of Lake Huleh",
+          "year_start": 1157,
+          "year_end": 1157,
+          "year_precision": "exact",
+          "era": "EARLY_MODERN",
+          "location_name": "Lake Huleh",
+          "location_modern": "Israel",
+          "latitude": 32.8469,
+          "longitude": 35.7017,
+          "category": "battle",
+          "civilization": "Zengids, Kingdom of Jerusalem",
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 45.86522817611694,
+            "input_tokens": 760,
+            "output_tokens": 170,
+            "tokens_per_sec": 3.7065115940821336
+          }
+        },
+        {
+          "id": 2316,
+          "record_type": "event",
+          "title_clean": "Battle of Chauché",
+          "year_start": 1794,
+          "year_end": 1794,
+          "year_precision": "exact",
+          "era": "MODERN",
+          "location_name": null,
+          "location_modern": "Chauché, France",
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": null,
+          "confidence": "medium",
+          "_meta": {
+            "elapsed_sec": 38.813313245773315,
+            "input_tokens": 751,
+            "output_tokens": 146,
+            "tokens_per_sec": 3.761595900754468
+          }
+        },
+        {
+          "id": 6212,
+          "record_type": "event",
+          "title_clean": "Malabo Convention",
+          "year_start": 2014,
+          "year_end": 2014,
+          "year_precision": "exact",
+          "era": "MODERN",
+          "location_name": "Africa",
+          "location_modern": "Africa",
+          "latitude": null,
+          "longitude": null,
+          "category": "politics",
+          "civilization": null,
+          "confidence": "medium",
+          "_meta": {
+            "elapsed_sec": 39.75366497039795,
+            "input_tokens": 768,
+            "output_tokens": 142,
+            "tokens_per_sec": 3.571997704003856
+          }
+        },
+        {
+          "id": 9256,
+          "record_type": "event",
+          "title_clean": "Great Fire of 1869",
+          "year_start": 1869,
+          "year_end": 1869,
+          "year_precision": "exact",
+          "era": "MODERN",
+          "location_name": null,
+          "location_modern": "Cape Province, South Africa",
+          "latitude": null,
+          "longitude": null,
+          "category": "disaster",
+          "civilization": null,
+          "confidence": "medium",
+          "_meta": {
+            "elapsed_sec": 39.217355251312256,
+            "input_tokens": 756,
+            "output_tokens": 149,
+            "tokens_per_sec": 3.799338304308889
+          }
+        }
+      ]
+    },
+    "phi3:mini": {
+      "model": "phi3:mini",
+      "total_events": 5,
+      "errors": 5,
+      "success_rate": 0.0,
+      "total_elapsed_sec": 0,
+      "avg_time_per_event": 0.0,
+      "avg_tokens_per_sec": 0,
+      "results": [
+        {
+          "id": 295,
+          "error": "JSON parse error: Expecting property name enclosed in double quotes: line 6 column 1 (char 108)",
+          "raw_response": "```json\n{\n  \"id\": 295,\n  \"record_type\": \"event\",\n  \"title_clean\": \"Battle of Saint Gotthard\",\n  \"year_start\": -490,\n0b1010101, // Example binary representation for illustration purposes only. Actual conversion will depend on the specific number provided in a real scenario.\n```",
+          "elapsed_sec": 13.682296991348267
+        },
+        {
+          "id": 1676,
+          "error": "JSON parse error: Expecting property name enclosed in double quotes: line 6 column 1 (char 105)",
+          "raw_response": "```json\n{\n  \"id\": 1676,\n  \"record_type\": \"event\",\n  \"title_clean\": \"Battle of Lake Huleh\",\n  \"year_start\": -490,\n0bic.confidence\": \"high\"\n}\n```",
+          "elapsed_sec": 5.86935830116272
+        },
+        {
+          "id": 2316,
+          "error": "JSON parse error: Expecting property name enclosed in double quotes: line 6 column 1 (char 102)",
+          "raw_response": "```json\n{\n  \"id\": 2316,\n  \"record_type\": \"event\",\n  \"title_clean\": \"Battle of Chauché\",\n  \"year_start\": -490,\n0bicentury),\n  \"year_end\": -490,\n  \"year_precision\": \"exact\",\n  \"era\": \"ANCIENT\",\n  \"location_name\": \"Chauché (now in France)\",\n  \"location_modern\": \"France\",\n  \"latitude\": 38.123,\n  \"longit",
+          "elapsed_sec": 11.622414112091064
+        },
+        {
+          "id": 6212,
+          "error": "JSON parse error: Expecting property name enclosed in double quotes: line 6 column 1 (char 102)",
+          "raw_response": "```json\n{\n  \"id\": 6212,\n  \"record_type\": \"event\",\n  \"title_clean\": \"Malabo Convention\",\n  \"year_start\": -490,\n0bicentury | century\" : \"century\",\n  \"era\": \"CLASSICAL\",\n  \"location_name\": \"\",\n  \"location_modern\": \"\",\n  \"latitude\": null,\n  \"longitude\": null,\n  \"category\": \"law/policy\",\n  \"civilization\"",
+          "elapsed_sec": 9.410606384277344
+        },
+        {
+          "id": 9256,
+          "error": "JSON parse error: Expecting property name enclosed in double quotes: line 6 column 1 (char 112)",
+          "raw_response": "```json\n{\n  \"id\": 9256,\n  \"record_type\": \"event\",\n  \"title_clean\": \"Great Fire of Cape Province\",\n  \"year_start\": -490,\n0b11001100, // binary representation for the year -490 (negative)\n\"year_end\": -490,\n\"year_precision\": \"exact\",\n\"era\": \"ANCIENT\",\n\"location_name\": \"Cape Province, South Africa\",\n\"lo",
+          "elapsed_sec": 16.50425386428833
+        }
+      ]
+    }
+  },
+  "quality_comparison": {
+    "llama3.1:8b-instruct-q4_0": {
+      "era_match": 20.0,
+      "category_match": 80.0,
+      "year_match": 0.0,
+      "civilization_match": 0.0,
+      "record_type_match": 100.0,
+      "total_compared": 5
+    },
+    "mistral:7b-instruct-q4_0": {
+      "era_match": 0.0,
+      "category_match": 60.0,
+      "year_match": 0.0,
+      "civilization_match": 0.0,
+      "record_type_match": 100.0,
+      "total_compared": 5
+    },
+    "gemma2:9b-instruct-q4_0": {
+      "era_match": 40.0,
+      "category_match": 80.0,
+      "year_match": 100.0,
+      "civilization_match": 0.0,
+      "record_type_match": 100.0,
+      "total_compared": 5
+    }
+  }
+}

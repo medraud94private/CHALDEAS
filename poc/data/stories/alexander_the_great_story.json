@@ -1,0 +1,733 @@
+{
+  "person": {
+    "id": 22,
+    "name": "Alexander the Great",
+    "name_ko": null,
+    "birth_year": -356,
+    "death_year": -323,
+    "role": null,
+    "certainty": "fact",
+    "description": "Military Personnel. From: Greece",
+    "events": {
+      "direct_period": [
+        {
+          "id": 2772,
+          "title": "Battle of Cynoscephalae",
+          "date_start": -363,
+          "date_end": -363,
+          "location_name": "Argoura",
+          "latitude": 39.654629,
+          "longitude": 22.350561,
+          "description": "part of Thebes campaign against Alexander of Pherea"
+        },
+        {
+          "id": 31062,
+          "title": "Alexander the Great as a God",
+          "date_start": -356,
+          "date_end": -323,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "The age-old concept of the “divine right of kings” allowed that a country's ruler received his or her power or authority from\nGod\n. However, few, if any, were delusional enough to actually believe the"
+        },
+        {
+          "id": 31063,
+          "title": "Alexander the Great: A Case Study in Martial Leadership",
+          "date_start": -356,
+          "date_end": -323,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "History is not predictable; in many ways it can take on a life of its own. But sometimes, an individual's sheer presence is enough to bend history to his will. One such individual was\nAlexander the Gr"
+        },
+        {
+          "id": 3833,
+          "title": "Alexander's Balkan Campaign",
+          "date_start": -335,
+          "date_end": -335,
+          "location_name": "Cedonia",
+          "latitude": 45.781158,
+          "longitude": 24.156825,
+          "description": "campaign of Alexander the Great in 335 BCE against a number of rebellious vassals of the Macedonian kingdom"
+        },
+        {
+          "id": 916,
+          "title": "Battle of Thebes",
+          "date_start": -335,
+          "date_end": -335,
+          "location_name": "Erythrai",
+          "latitude": 38.23321967,
+          "longitude": 23.38026967,
+          "description": "battle between Alexander the Great and the Greek city state of Thebes in 335 BCE"
+        },
+        {
+          "id": 9748,
+          "title": "Siege of Halicarnassus",
+          "date_start": -334,
+          "date_end": -334,
+          "location_name": "Lide (mountain)",
+          "latitude": 37.07281402,
+          "longitude": 27.5045215,
+          "description": "siege between Alexander the Great and the Achaemenid Persian Empire in 334 BC"
+        },
+        {
+          "id": 10149,
+          "title": "Siege of Pelium",
+          "date_start": -334,
+          "date_end": -334,
+          "location_name": "Beue",
+          "latitude": 40.845999,
+          "longitude": 20.753371,
+          "description": "siege undertaken by Alexander the Great against the Illyrian tribes"
+        },
+        {
+          "id": 10043,
+          "title": "Siege of Miletus",
+          "date_start": -334,
+          "date_end": -334,
+          "location_name": "Theater of Miletus",
+          "latitude": 37.53085243,
+          "longitude": 27.27605589,
+          "description": "siege during the Wars of Alexander the Great (334 BC)"
+        },
+        {
+          "id": 63,
+          "title": "Battle of Issus",
+          "date_start": -333,
+          "date_end": -333,
+          "location_name": "Pinaros? (river)",
+          "latitude": 36.74943748,
+          "longitude": 36.22828267,
+          "description": "second great battle of Alexander's conquest of Asia"
+        },
+        {
+          "id": 31064,
+          "title": "Siege of Tyre",
+          "date_start": -332,
+          "date_end": -332,
+          "location_name": "Tyre Hippodrome",
+          "latitude": 33.26837959,
+          "longitude": 35.2097474,
+          "description": "After defeating\nDarius\nIII at the\nbattle of Issus\nin November 333 BCE,\nAlexander\nmarched his army (about 35,000-40,000 strong) into\nPhoenicia\n, where he received the capitulation of Byblus and\nSidon\n."
+        },
+        {
+          "id": 9932,
+          "title": "Siege of Tyre",
+          "date_start": -332,
+          "date_end": -332,
+          "location_name": "Tyre Hippodrome",
+          "latitude": 33.26837959,
+          "longitude": 35.2097474,
+          "description": "siege of the largest and most important city-state of Phoenicia by Alexander the Great"
+        },
+        {
+          "id": 10821,
+          "title": "Siege of Tyre",
+          "date_start": -332,
+          "date_end": -332,
+          "location_name": "Tyre Hippodrome",
+          "latitude": 33.26837959,
+          "longitude": 35.2097474,
+          "description": "siege of the largest and most important city-state of Phoenicia by Alexander the Great"
+        },
+        {
+          "id": 264,
+          "title": "Battle of Gaugamela",
+          "date_start": -331,
+          "date_end": -331,
+          "location_name": "Palace of Sennacherib",
+          "latitude": 36.3573924,
+          "longitude": 43.151983,
+          "description": "decisive battle of Alexander the Great's invasion of the Persian Achaemenid Empire"
+        },
+        {
+          "id": 31059,
+          "title": "Ai Khanum, Capital of Eucratides",
+          "date_start": -330,
+          "date_end": -145,
+          "location_name": "Ghuz tepe",
+          "latitude": 37.211431,
+          "longitude": 69.499902,
+          "description": "Ai Khanum (also spelled Ai-Khanoum or Ay-Khanum, lit. “Lady Moon” in Uzbek), was founded in the 4th century BC, following the conquests of\nAlexander the Great\nand was one of the primary\ncities\nof the\n"
+        },
+        {
+          "id": 31061,
+          "title": "Burning of Persepolis",
+          "date_start": -330,
+          "date_end": -330,
+          "location_name": "Ka'ba-ye Zartosht",
+          "latitude": 29.98848651,
+          "longitude": 52.87403032,
+          "description": "In the year 330 BCE\nAlexander the Great\n(l. 356-323 BCE) conquered the\nAchaemenid\nPersian Empire\nfollowing his victory over the Persian Emperor\nDarius\nIII (r. 336-330 BCE) at the\nBattle of Gaugamela\ni"
+        },
+        {
+          "id": 38,
+          "title": "Battle of the Persian Gate",
+          "date_start": -329,
+          "date_end": -329,
+          "location_name": "Near Yasuj, Iran",
+          "latitude": 30.85,
+          "longitude": 51.57,
+          "description": "battle between Alexander the Great and Ariobarzanes near Persepolis in a small mountainpass known as the Persian gate along the Royal road"
+        },
+        {
+          "id": 9714,
+          "title": "Siege of the Sogdian Rock",
+          "date_start": -327,
+          "date_end": -327,
+          "location_name": "Marakanda",
+          "latitude": 39.656498,
+          "longitude": 66.947223,
+          "description": "fortress located north of Bactria in Sogdiana (near Samarkand), was captured by the forces of Alexander the Great in the early spring of 327 BC as part of his conquest of the Achaemenid Empire"
+        },
+        {
+          "id": 4787,
+          "title": "Cophen Campaign",
+          "date_start": -327,
+          "date_end": -326,
+          "location_name": "Saidu Sharif Monastery",
+          "latitude": 34.75708444,
+          "longitude": 72.36246289,
+          "description": "campaign conducted by Alexander the Great between May 327 BCE to March 326 BCE in the modern-day Swat valley of Pakistan"
+        },
+        {
+          "id": 95,
+          "title": "Battle of the Hydaspes",
+          "date_start": -326,
+          "date_end": -326,
+          "location_name": "Jhelum River near Bhera, Pakistan",
+          "latitude": 32.933,
+          "longitude": 73.733,
+          "description": "battle fought by Alexander the Great in 326 BCE against King Porus of the Paurava kingdom on the banks of the Hydaspes River (Jhelum River) in the Punjab near Bhera"
+        },
+        {
+          "id": 4764,
+          "title": "Mallian Campaign",
+          "date_start": -326,
+          "date_end": -325,
+          "location_name": "Multan, Pakistan",
+          "latitude": 30.1978,
+          "longitude": 71.4711,
+          "description": "military campaign conducted by Alexander the Great from November 326 to February 325 BCE against the Malli of the eastern Punjab"
+        },
+        {
+          "id": 31126,
+          "title": "Athens in the Hellenistic World",
+          "date_start": -323,
+          "date_end": -31,
+          "location_name": "Ionic stoa",
+          "latitude": 37.97085785,
+          "longitude": 23.7263419,
+          "description": "When we think about ancient\nAthens\n, it is almost always about the classical\ncity\n. We think of such things as its numerous monuments (the\nParthenon\non the\nAcropolis\nfor example), beautifying everywhe"
+        },
+        {
+          "id": 5571,
+          "title": "Partition of Babylon",
+          "date_start": -323,
+          "date_end": -323,
+          "location_name": "Ešasurra",
+          "latitude": 32.530856,
+          "longitude": 44.424226,
+          "description": "323 BC conference dividing the territories of Alexander the Great"
+        },
+        {
+          "id": 5069,
+          "title": "Wars of the Diadochi",
+          "date_start": -322,
+          "date_end": -272,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "The Wars of the Diadochi or Wars of Alexander's Successors were a series of conflicts fought between the generals of Alexander the Great, known as the Diadochi, over who would rule his empire followin"
+        },
+        {
+          "id": 4399,
+          "title": "Second War of the Diadochi",
+          "date_start": -319,
+          "date_end": -315,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "319–315 BC war after Alexander the Great's death"
+        },
+        {
+          "id": 4302,
+          "title": "Third War of the Diadochi",
+          "date_start": -314,
+          "date_end": -311,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "The Wars of the Diadochi or Wars of Alexander's Successors were a series of conflicts fought between the generals of Alexander the Great, known as the Diadochi, over who would rule his empire followin"
+        },
+        {
+          "id": 5002,
+          "title": "Struggle for Control of Macedon",
+          "date_start": -297,
+          "date_end": -297,
+          "location_name": "Ichnai",
+          "latitude": 40.764014,
+          "longitude": 22.591256,
+          "description": "struggle for control of ancient Macedon after the death of Alexander the Great"
+        }
+      ],
+      "direct_other": [
+        {
+          "id": 31076,
+          "title": "Ancient Cyprus",
+          "date_start": -7000,
+          "date_end": 0,
+          "location_name": "Androklou Oikos",
+          "latitude": 35.139771,
+          "longitude": 33.405281,
+          "description": "Lying at the crossroads of the eastern\nMediterranean\n, the island of\nCyprus\nhas long been a meeting point for many of the world's great\ncivilizations\n. Situated where\nEurope\n, Asia and\nAfrica\nmeet, it"
+        },
+        {
+          "id": 31110,
+          "title": "Archaeological Excavations at Tel Kabri",
+          "date_start": -6400,
+          "date_end": 1948,
+          "location_name": "Nea Come?",
+          "latitude": 33.003565,
+          "longitude": 35.095194,
+          "description": "Tel Kabri\nis an archaeological site in northwestern\nIsrael\nthat is best known as the location of one of the largest palaces in\nCanaan\nin the Middle\nBronze Age\nor \"MB\" (ca. 2,000–1,500 BCE). Although T"
+        },
+        {
+          "id": 30976,
+          "title": "Discovering the Glories of Persia",
+          "date_start": -3000,
+          "date_end": 651,
+          "location_name": "Iran",
+          "latitude": 32.0,
+          "longitude": 53.0,
+          "description": "Iran, or\nPersia\nas it was formerly known, is a country with a long and rich history stretching back thousands of years and where many civilisations thrived. With 24 historical sites registered on the "
+        },
+        {
+          "id": 31101,
+          "title": "Angels in Ancient Judaism",
+          "date_start": -1000,
+          "date_end": 70,
+          "location_name": "Second Temple, Jerusalem",
+          "latitude": 31.7782502,
+          "longitude": 35.2353407,
+          "description": "The concept and function of angels in ancient\nJudaism\nwere some of the many elements incorporated from contemporary cultures and religious views. The Hebrew\nmalakh\nwas translated into the\nGreek\nangelo"
+        },
+        {
+          "id": 31102,
+          "title": "Angels in Christianity",
+          "date_start": -1000,
+          "date_end": 2024,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Angels in\nChristianity\nact as messengers of\nGod\n, bring good news, and help believers. Their role developed from the function of\nangels in ancient Judaism\nbut continued to evolve as Christianity becam"
+        },
+        {
+          "id": 30958,
+          "title": "Dogs and Their Collars in Ancient Greece",
+          "date_start": -800,
+          "date_end": -323,
+          "location_name": "Olympos (mountain in Greece)",
+          "latitude": 40.085556,
+          "longitude": 22.358611,
+          "description": "Dogs in ancient\nGreece\nare regularly depicted in art, on ceramics, in\nliterature\n, and other written works as loyal companions, guardians, hunters, and even as great intuitive thinkers; all of these e"
+        },
+        {
+          "id": 30960,
+          "title": "Noble and Notorious Women of Ancient Greece",
+          "date_start": -800,
+          "date_end": -300,
+          "location_name": "Temple of Athena Skiras on Salamis",
+          "latitude": 37.983355,
+          "longitude": 23.537097,
+          "description": "Women in ancient Greece\n, outside of\nSparta\n, had almost no rights and no political or legal power. Even so, some\nwomen\nbroke through the social and cultural restrictions to make their\nmark\non history"
+        },
+        {
+          "id": 31084,
+          "title": "Ancient Geography of India",
+          "date_start": -600,
+          "date_end": 100,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "The first text in\nGreek\ndevoted entirely to\nIndia\nwas written by Ctesias in the fourth century BCE. Only fragments of it survive. Yet he was probably the most widely quoted author on India, although\nA"
+        },
+        {
+          "id": 30989,
+          "title": "Cultural Links Between India and the Greco-Roman World",
+          "date_start": -558,
+          "date_end": 120,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Cyrus the Great\n(558-530 BCE) built the first universal\nempire\n, stretching from\nGreece\nto the Indus River. This was the famous\nAchaemenid Empire\nof\nPersia\n. An inscription at Naqsh-i-Rustam, the\ntomb"
+        },
+        {
+          "id": 30974,
+          "title": "Women in Ancient Persia",
+          "date_start": -550,
+          "date_end": 650,
+          "location_name": "*Naro/Aquae Persianae",
+          "latitude": 36.731005,
+          "longitude": 10.327692,
+          "description": "Women\nin ancient\nPersia\nwere not only highly respected but, in many cases, considered the equals of males. Women could own land, conduct business, received equal pay, could travel freely on their own,"
+        },
+        {
+          "id": 30971,
+          "title": "Twelve Great Women of Ancient Persia",
+          "date_start": -550,
+          "date_end": -330,
+          "location_name": "*Naro/Aquae Persianae",
+          "latitude": 36.731005,
+          "longitude": 10.327692,
+          "description": "Women in ancient Persia\nhad more rights and greater freedom than any other ancient\ncivilization\nincluding, according to some scholars, even ancient\nEgypt\nwhich is famous for its respect for the femini"
+        },
+        {
+          "id": 31050,
+          "title": "Achaemenid Kings List and Commentary",
+          "date_start": -550,
+          "date_end": -330,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "The\nAchaemenid Empire\n(c. 550-330 BCE) was the first great Persian political entity in Western and Central Asia which stretched, at its peak, from\nAsia Minor\nto the\nIndus Valley\nand\nMesopotamia\nthroug"
+        },
+        {
+          "id": 30970,
+          "title": "Ten Ancient Persia Facts You Need to Know",
+          "date_start": -550,
+          "date_end": 651,
+          "location_name": "*Naro/Aquae Persianae",
+          "latitude": 36.731005,
+          "longitude": 10.327692,
+          "description": "Ancient Persian culture\nexerted a powerful influence throughout the\nNear East\n, and beyond, for over a thousand years between c. 550 BCE - 651 CE and many aspects of their\nculture\ncontinued to influen"
+        },
+        {
+          "id": 30986,
+          "title": "Siege Warfare in Ancient India",
+          "date_start": -500,
+          "date_end": -300,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Forts and sieges held a key position in\nancient Indian warfare\n. Built on considerations of strategic location, topography, and the natural advantages provided by the site, forts would be heavily supp"
+        },
+        {
+          "id": 31070,
+          "title": "Ancient Ghost Story: Philinnion and Machates",
+          "date_start": -400,
+          "date_end": -300,
+          "location_name": "Amphipolis",
+          "latitude": 40.82581148,
+          "longitude": 23.84157943,
+          "description": "Ghost\nstories have existed for thousands of years, often in similar forms and frequently dealing with the same themes, in many of the most ancient cultures. The writer H.P. Lovecraft once wrote, \"As m"
+        },
+        {
+          "id": 5056,
+          "title": "Syrian Wars",
+          "date_start": -274,
+          "date_end": -168,
+          "location_name": "(Tri)Paradeisos",
+          "latitude": 34.443566,
+          "longitude": 36.594978,
+          "description": "The Syrian Wars were a series of six wars between the Seleucid Empire and the Ptolemaic Kingdom of Egypt, successor states to Alexander the Great's empire, during the 3rd and 2nd centuries BC over the"
+        },
+        {
+          "id": 519,
+          "title": "Battle of Cynoscephalae",
+          "date_start": -197,
+          "date_end": -197,
+          "location_name": "Argoura",
+          "latitude": 39.654629,
+          "longitude": 22.350561,
+          "description": "part of Thebes campaign against Alexander of Pherea"
+        },
+        {
+          "id": 31065,
+          "title": "Alexandros I Balas",
+          "date_start": -152,
+          "date_end": -145,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Alexandros I Balas was a\nSeleucid\nking from 152 BC to 145 BCE. As the Seleucid king Demetrius I Soter (162-150 BCE) became more and more unpopular due to his arrogance and drunkenness, it was quite an"
+        },
+        {
+          "id": 31024,
+          "title": "Medieval Christmas",
+          "date_start": 500,
+          "date_end": 1500,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Christmas was one of the highlights of the medieval calendar, not only for the rich but also for the peasantry. For the longest holiday of the year, typically the full twelve days of Christmas, people"
+        },
+        {
+          "id": 31118,
+          "title": "Artillery in Medieval Europe",
+          "date_start": 1100,
+          "date_end": 1500,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Artillery weapons in medieval\nEurope\nincluded the mounted crossbow (ballista) and single-arm torsion catapult (mangonel), both similar to ancient\nRoman\nmachines. As armies battled further afield such "
+        },
+        {
+          "id": 9768,
+          "title": "Siege of Maastricht",
+          "date_start": 1579,
+          "date_end": 1579,
+          "location_name": "Traiectus?",
+          "latitude": 50.84908,
+          "longitude": 5.6905045,
+          "description": "siege and capture of Maastricht by Alexander Farnese during the Eighty Years' War (1568-1648)"
+        },
+        {
+          "id": 31068,
+          "title": "A to Z of Pirate and Seafaring Expressions",
+          "date_start": 1690,
+          "date_end": 1730,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Pirates, especially those of the so-called\nGolden Age of Piracy\n(c. 1690-1730), are particularly famous for their pithy expressions which relate to all things nautical, general roistering, and life of"
+        },
+        {
+          "id": 59511,
+          "title": "Decrees and Manifestos of Alexander I",
+          "date_start": 1801,
+          "date_end": 1825,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": ""
+        },
+        {
+          "id": 31048,
+          "title": "A Weekend in Alexandria, Egypt",
+          "date_start": 1945,
+          "date_end": 2024,
+          "location_name": "Caesareum of Alexandria",
+          "latitude": 31.19998197,
+          "longitude": 29.90072784,
+          "description": "Visiting\nAlexandria\n,\nEgypt\n, once the greatest cultural center of the ancient world, rivaling\nAthens\n,\nGreece\n, is an unforgettable experience. The food, the wonderful people, and the history at ever"
+        }
+      ],
+      "context_only": [
+        {
+          "id": 4277,
+          "title": "Expansion of Macedonia under Philip II",
+          "date_start": -356,
+          "date_end": -340,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Under the reign of Philip II, the ancient kingdom of Macedonia, initially at the periphery of classical Greek affairs, came to dominate Ancient Greece in the span of less than 25 years, largely thanks"
+        },
+        {
+          "id": 4546,
+          "title": "Battle of Chaeronea",
+          "date_start": -338,
+          "date_end": -338,
+          "location_name": "Aiolidai?",
+          "latitude": 38.454516,
+          "longitude": 22.777364,
+          "description": "The Battle of Chaereonea was fought in 338 BC, near the city of Chaeronea in Boeotia, between Macedonia under Philip II and an alliance of city-states led by Athens and Thebes. The battle was the culm"
+        },
+        {
+          "id": 101,
+          "title": "Battle of Chaeronea",
+          "date_start": -338,
+          "date_end": -338,
+          "location_name": "Aiolidai?",
+          "latitude": 38.454516,
+          "longitude": 22.777364,
+          "description": "battle of 338 BCE during the expansion of Macedonia under Philip II"
+        },
+        {
+          "id": 3055,
+          "title": "Battle of Chaeronea",
+          "date_start": -338,
+          "date_end": -338,
+          "location_name": "Aiolidai?",
+          "latitude": 38.454516,
+          "longitude": 22.777364,
+          "description": "battle of 338 BCE during the expansion of Macedonia under Philip II"
+        },
+        {
+          "id": 57,
+          "title": "Battle of Chaeronea",
+          "date_start": -338,
+          "date_end": -338,
+          "location_name": "Aiolidai?",
+          "latitude": 38.454516,
+          "longitude": 22.777364,
+          "description": "battle of 338 BCE during the expansion of Macedonia under Philip II"
+        },
+        {
+          "id": 62,
+          "title": "Battle of the Granicus",
+          "date_start": -334,
+          "date_end": -334,
+          "location_name": "Untitled",
+          "latitude": 40.27955,
+          "longitude": 27.220635,
+          "description": "334 BC battle between Macedonians and Persians"
+        },
+        {
+          "id": 4139,
+          "title": "War of Agis III",
+          "date_start": -333,
+          "date_end": -331,
+          "location_name": "Amyklai",
+          "latitude": 37.03631839,
+          "longitude": 22.45026385,
+          "description": "4th c. BCE Macedonia-Sparta conflict"
+        },
+        {
+          "id": 3690,
+          "title": "Lamian War",
+          "date_start": -323,
+          "date_end": -322,
+          "location_name": "Dyras (river)",
+          "latitude": 38.84102042,
+          "longitude": 22.40284608,
+          "description": "fought by a coalition of Greek cities against Macedon and its ally Boeotia"
+        },
+        {
+          "id": 10704,
+          "title": "Siege of Lamia",
+          "date_start": -323,
+          "date_end": -322,
+          "location_name": "Dyras (river)",
+          "latitude": 38.84102042,
+          "longitude": 22.40284608,
+          "description": "siege of Lamia between the Macedonians and central Greece"
+        },
+        {
+          "id": 4476,
+          "title": "Babylonian War",
+          "date_start": -311,
+          "date_end": -309,
+          "location_name": "Ešasurra",
+          "latitude": 32.530856,
+          "longitude": 44.424226,
+          "description": "conflict fought between 311–309 BC between the Diadochi kings Antigonus I Monophthalmus and Seleucus I Nicator, ending in a victory for the latter"
+        },
+        {
+          "id": 8310,
+          "title": "Colossus of Rhodes",
+          "date_start": -305,
+          "date_end": -280,
+          "location_name": "Ancient Stadium of Rhodes",
+          "latitude": 36.438944,
+          "longitude": 28.211897,
+          "description": "The Colossus of Rhodes was a statue of the Greek sun god Helios, erected in the city of Rhodes, on the Greek island of the same name, by Chares of Lindos in 280 BC. One of the Seven Wonders of the Anc"
+        },
+        {
+          "id": 10388,
+          "title": "Siege of Athens",
+          "date_start": -296,
+          "date_end": -295,
+          "location_name": "Ionic stoa",
+          "latitude": 37.97085785,
+          "longitude": 23.7263419,
+          "description": "296-295 BCE siege during Demetrius I's struggle for the Macedonian throne"
+        },
+        {
+          "id": 10428,
+          "title": "Siege of Athens (296–295 BCE)",
+          "date_start": -296,
+          "date_end": -295,
+          "location_name": "Ionic stoa",
+          "latitude": 37.97085785,
+          "longitude": 23.7263419,
+          "description": "296-295 BCE siege during Demetrius I's struggle for the Macedonian throne"
+        }
+      ]
+    },
+    "locations": [],
+    "related_persons": []
+  },
+  "story": {
+    "summary": "Alexander the Great was a king of the ancient Greek kingdom of Macedon who conquered most of the known world in his short lifetime. His military genius and ambition led to the creation of one of history's largest empires, blending Greek culture with Eastern traditions.",
+    "life_phases": [
+      {
+        "name": "Early Life",
+        "years": "356-336 BCE",
+        "description": "Born into a royal family in Pella, Alexander received an exceptional education from the philosopher Aristotle. He developed a passion for military strategy and honed his leadership skills."
+      },
+      {
+        "name": "Conquest of Persia",
+        "years": "336-330 BCE",
+        "description": "Upon ascending to the throne, Alexander embarked on a series of campaigns against the Persian Empire. His victories at Granicus River, Issus, and Gaugamela shattered Persian resistance and paved the way for his conquest."
+      },
+      {
+        "name": "Eastern Expansion",
+        "years": "330-327 BCE",
+        "description": "Alexander led his army eastward, conquering vast territories in Central Asia and India. He founded numerous cities, spreading Greek culture and influence throughout the conquered lands."
+      },
+      {
+        "name": "Return to Babylon",
+        "years": "327-323 BCE",
+        "description": "Facing growing fatigue and dissent among his troops, Alexander turned back westward. His journey was marked by further campaigns and political maneuvering before he settled in Babylon."
+      }
+    ],
+    "key_events": [
+      {
+        "event_id": 62,
+        "title": "Battle of the Granicus River",
+        "year": -334,
+        "significance": "Marked the beginning of Alexander's conquest of Persia. His decisive victory over Persian forces established his military prowess and set the stage for further campaigns."
+      },
+      {
+        "event_id": 6,
+        "title": "Battle of Issus",
+        "year": -333,
+        "significance": "A crushing defeat for the Persian King Darius III, solidifying Alexander's control over the Middle East. It showcased his tactical brilliance and cemented his image as an invincible conqueror."
+      },
+      {
+        "event_id": 264,
+        "title": "Battle of Gaugamela",
+        "year": -331,
+        "significance": "The final decisive battle against Darius III, resulting in the complete collapse of the Persian Empire. It marked the culmination of Alexander's campaign and his undisputed dominance over the ancient world."
+      },
+      {
+        "event_id": 31064,
+        "title": "Siege of Tyre",
+        "year": -332,
+        "significance": "A lengthy and arduous siege that demonstrated Alexander's determination and strategic thinking. The capture of this strategically important island city showcased his ability to overcome seemingly insurmountable obstacles."
+      },
+      {
+        "event_id": 95,
+        "title": "Battle of the Hydaspes",
+        "year": -326,
+        "significance": "A hard-fought victory against King Porus of India. It marked the easternmost extent of Alexander's empire and highlighted his relentless pursuit of conquest."
+      }
+    ],
+    "connections": [
+      {
+        "name": "Philip II",
+        "relationship": "Father",
+        "significance": "Philip II, King of Macedon, laid the groundwork for Alexander's conquests by expanding Macedonian territory and strengthening its military."
+      },
+      {
+        "name": "Aristotle",
+        "relationship": "Tutor",
+        "significance": "Aristotle's teachings profoundly influenced Alexander's intellectual development and shaped his worldview."
+      },
+      {
+        "name": "Darius III",
+        "relationship": "Opponent",
+        "significance": "The Persian King Darius III was Alexander's primary adversary, and their clash of empires defined much of Alexander's military campaigns."
+      }
+    ],
+    "legacy": "Alexander the Great's legacy is multifaceted. He left behind a vast empire that facilitated cultural exchange between East and West, spreading Hellenistic culture throughout the ancient world. His military genius continues to be studied and admired, while his ambition and thirst for conquest serve as both inspiration and cautionary tale.",
+    "_meta": {
+      "model": "gemma2:9b-instruct-q4_0",
+      "primary_events": 26,
+      "context_events": 13,
+      "generated_at": "2026-01-08T16:39:18.798799"
+    }
+  }
+}

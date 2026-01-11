@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "model": "gpt-5",
+    "count": 20,
+    "timestamp": "20260108_004820",
+    "total_input_tokens": 2020,
+    "total_output_tokens": 2573,
+    "estimated_cost": 0.048695
+  },
+  "results": [
+    {
+      "id": 1588,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2104,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2241,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2315,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2891,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 4482,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5949,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6045,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6180,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6211,
+      "record_type": "event",
+      "title_clean": "Treaty of Friendship and Solidarity between the Republic of Poland and the French Republic",
+      "title_ko": "폴란드 공화국과 프랑스 공화국 간의 우호 및 연대 조약",
+      "year_start": 1991,
+      "year_end": 1991,
+      "year_precision": "exact",
+      "era": "CONTEMPORARY",
+      "temporal_scale": "evenementielle",
+      "location_name": "Paris",
+      "location_modern": "Paris, France",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "location_type": "city",
+      "location_confidence": "high",
+      "category": "treaty",
+      "civilization": "Franco-Polish",
+      "summary_en": "A Franco-Polish treaty signed in Paris on April 9, 1991, affirming friendship, solidarity, and cooperation between Poland and France in the post–Cold War context.",
+      "summary_ko": "1991년 4월 9일 파리에서 체결된 폴란드-프랑스 우호 및 연대 조약으로, 탈냉전기 양국의 우호·연대·협력을 확인하였다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 1012,
+        "output": 1217
+      }
+    },
+    {
+      "id": 6212,
+      "record_type": "event",
+      "title_clean": "Malabo Convention",
+      "title_ko": "말라보 협약",
+      "year_start": 2014,
+      "year_end": 2014,
+      "year_precision": "year",
+      "era": "CONTEMPORARY",
+      "temporal_scale": "evenementielle",
+      "location_name": "Malabo",
+      "location_modern": "Malabo, Equatorial Guinea",
+      "latitude": 3.75,
+      "longitude": 8.7833,
+      "location_type": "city",
+      "location_confidence": "high",
+      "category": "treaty",
+      "civilization": "African Union",
+      "summary_en": "Adopted by the African Union in Malabo in 2014, the Malabo Convention establishes a continental legal framework for cybersecurity, electronic transactions, and personal data protection. It aims to harmonize laws across African states, with entry into force dependent on sufficient ratifications.",
+      "summary_ko": "2014년 말라보에서 아프리카연합이 채택한 말라보 협약은 사이버보안, 전자거래, 개인정보 보호를 위한 범아프리카 법적 틀을 마련했다. 회원국 간 법제 조화를 목표로 하며, 발효는 충분한 비준 확보에 달려 있다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 1008,
+        "output": 1356
+      }
+    },
+    {
+      "id": 6736,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 10909,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29401,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29704,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30984,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31040,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31062,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31105,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31114,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    }
+  ]
+}

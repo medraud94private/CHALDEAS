@@ -1,0 +1,765 @@
+{
+  "person": {
+    "id": 124683,
+    "name": "Shakespeare",
+    "name_ko": null,
+    "birth_year": 1564,
+    "death_year": 1616,
+    "role": "quoted author",
+    "certainty": "fact",
+    "description": null,
+    "events": {
+      "direct_period": [
+        {
+          "id": 355671,
+          "title": "Shakespeare Comes to London",
+          "date_start": 1586,
+          "date_end": 1586,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=002552485_02_text"
+        },
+        {
+          "id": 368951,
+          "title": "Publication of Shakespeare's Works Edition",
+          "date_start": 1597,
+          "date_end": 1597,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003349853_09_text"
+        },
+        {
+          "id": 318986,
+          "title": "Publication of Shakespeare's Sonnets",
+          "date_start": 1609,
+          "date_end": 1609,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=000491910_01_text"
+        },
+        {
+          "id": 368984,
+          "title": "Publication of Twenty of the Plays of Shakespeare",
+          "date_start": 1611,
+          "date_end": 1611,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003350645_03_text"
+        },
+        {
+          "id": 340032,
+          "title": "Publication of Shakespeare's Macbeth Explained by Ludwig Herrig",
+          "date_start": 1623,
+          "date_end": 1623,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=001666055_01_text"
+        },
+        {
+          "id": 343420,
+          "title": "Publication of the Shakespeare First Folio",
+          "date_start": 1623,
+          "date_end": 1623,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=001836131_01_text"
+        },
+        {
+          "id": 385115,
+          "title": "Publication of the First Complete Edition of Shakespeare's Works",
+          "date_start": 1623,
+          "date_end": 1623,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=pg26763"
+        }
+      ],
+      "direct_other": [
+        {
+          "id": 30972,
+          "title": "Death and the Afterlife in Ancient Persia",
+          "date_start": -550,
+          "date_end": -330,
+          "location_name": "*Naro/Aquae Persianae",
+          "latitude": 36.731005,
+          "longitude": 10.327692,
+          "description": "A vision of the afterlife is articulated by every\nculture\n, ancient or modern, in an effort to answer the question of what happens after\ndeath\n. Ancient\nPersia\nhad the same interest in this as any cul"
+        },
+        {
+          "id": 31070,
+          "title": "Ancient Ghost Story: Philinnion and Machates",
+          "date_start": -400,
+          "date_end": -300,
+          "location_name": "Amphipolis",
+          "latitude": 40.82581148,
+          "longitude": 23.84157943,
+          "description": "Ghost\nstories have existed for thousands of years, often in similar forms and frequently dealing with the same themes, in many of the most ancient cultures. The writer H.P. Lovecraft once wrote, \"As m"
+        },
+        {
+          "id": 345361,
+          "title": "Publication of a Shakespeare Edition Reviewed",
+          "date_start": 1665,
+          "date_end": 1665,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=001950509_01_text"
+        },
+        {
+          "id": 368942,
+          "title": "Publication of The Plays of William Shakespeare, Volume X",
+          "date_start": 1713,
+          "date_end": 1713,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003349847_08_text"
+        },
+        {
+          "id": 374019,
+          "title": "Publication of Shakespeare Editions",
+          "date_start": 1726,
+          "date_end": 1726,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003608237_01_text"
+        },
+        {
+          "id": 369816,
+          "title": "Publication of Shakespeare Illustrated",
+          "date_start": 1753,
+          "date_end": 1753,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003403995_01_text"
+        },
+        {
+          "id": 345356,
+          "title": "Publication of Shakespeare Edition",
+          "date_start": 1774,
+          "date_end": 1774,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=001950490_01_text"
+        },
+        {
+          "id": 364484,
+          "title": "Publication of A Philosophical Analyses and Illustrations of Some of Shakespeare's Dramatic Characters",
+          "date_start": 1774,
+          "date_end": 1774,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003095120_01_text"
+        },
+        {
+          "id": 392260,
+          "title": "Translation of Shakespeare's Plays",
+          "date_start": 1776,
+          "date_end": 1776,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg62602"
+        },
+        {
+          "id": 369020,
+          "title": "New Edition of Shakespeare",
+          "date_start": 1782,
+          "date_end": 1782,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003355065_01_text"
+        },
+        {
+          "id": 383377,
+          "title": "First Norwegian Translation of Shakespeare",
+          "date_start": 1782,
+          "date_end": 1782,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg16416"
+        },
+        {
+          "id": 364485,
+          "title": "Publication of Essays on Shakespeare's Dramatic Characters",
+          "date_start": 1784,
+          "date_end": 1784,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003095120_01_text"
+        },
+        {
+          "id": 368953,
+          "title": "Publication of Stockdale's Edition of Shakespeare",
+          "date_start": 1784,
+          "date_end": 1784,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003349855_01_text"
+        },
+        {
+          "id": 351957,
+          "title": "Edition of Shakespeare’s Works",
+          "date_start": 1790,
+          "date_end": 1790,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002357662_01_text"
+        },
+        {
+          "id": 379181,
+          "title": "Edition of Shakespeare by Malone",
+          "date_start": 1790,
+          "date_end": 1790,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003911555_01_text"
+        },
+        {
+          "id": 379180,
+          "title": "Publication of A Specimen of a Commentary on Shakespeare",
+          "date_start": 1794,
+          "date_end": 1794,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003911555_01_text"
+        },
+        {
+          "id": 316958,
+          "title": "Publication of Shakespeare Papers",
+          "date_start": 1796,
+          "date_end": 1796,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=000384637_01_text"
+        },
+        {
+          "id": 353142,
+          "title": "Edition of Shakespeare",
+          "date_start": 1798,
+          "date_end": 1798,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002414234_01_text"
+        },
+        {
+          "id": 368967,
+          "title": "Publication of a New Edition of Shakespeare's Plays",
+          "date_start": 1802,
+          "date_end": 1802,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003349877_01_text"
+        },
+        {
+          "id": 347200,
+          "title": "Publication of Tales from Shakespeare",
+          "date_start": 1807,
+          "date_end": 1807,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002058064_07_text"
+        },
+        {
+          "id": 390563,
+          "title": "Publication of Shakespeare and His Times",
+          "date_start": 1817,
+          "date_end": 1817,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=pg53625"
+        },
+        {
+          "id": 358891,
+          "title": "Publication of a Shakespeare-Related Edition",
+          "date_start": 1818,
+          "date_end": 1818,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002737995_03_text"
+        },
+        {
+          "id": 368986,
+          "title": "Publication of School-Shakespeare Volume",
+          "date_start": 1822,
+          "date_end": 1822,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003350653_01_text"
+        },
+        {
+          "id": 341729,
+          "title": "Publication of Spirit of the Plays of Shakespeare",
+          "date_start": 1827,
+          "date_end": 1827,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=001746143_01_text"
+        },
+        {
+          "id": 328471,
+          "title": "Publication of Memorials of Shakespeare",
+          "date_start": 1828,
+          "date_end": 1828,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000979613_01_text"
+        },
+        {
+          "id": 378290,
+          "title": "Publication of Contemporains de Shakespeare",
+          "date_start": 1865,
+          "date_end": 1865,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003873800_01_text"
+        },
+        {
+          "id": 387819,
+          "title": "Publication of The Ornithology of Shakespeare",
+          "date_start": 1871,
+          "date_end": 1871,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=pg41860"
+        },
+        {
+          "id": 380123,
+          "title": "Shakespeare Memorial Dedication",
+          "date_start": 1879,
+          "date_end": 1879,
+          "location_name": "Stratford-upon-Avon, United Kingdom",
+          "latitude": 52.1917,
+          "longitude": -1.7073,
+          "description": "[NER] mention_count=1, first_source=003954034_01_text"
+        },
+        {
+          "id": 380124,
+          "title": "Publication Changes to Shakespeare's England",
+          "date_start": 1893,
+          "date_end": 1893,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003954034_01_text"
+        },
+        {
+          "id": 386500,
+          "title": "Publication of Shakespeare in the Theatre",
+          "date_start": 1913,
+          "date_end": 1913,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg35109"
+        }
+      ],
+      "context_only": [
+        {
+          "id": 338002,
+          "title": "Marching Toward Persia to Engage the Great Sophie",
+          "date_start": 1553,
+          "date_end": 1553,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=001565519_07_text"
+        },
+        {
+          "id": 392011,
+          "title": "Marriage of Philip and Mary",
+          "date_start": 1554,
+          "date_end": 1554,
+          "location_name": "Oram's Arbour",
+          "latitude": 51.06496391,
+          "longitude": -1.32258848,
+          "description": "[NER] mention_count=1, first_source=pg60790"
+        },
+        {
+          "id": 376519,
+          "title": "Cession of the Netherlands to Philip II",
+          "date_start": 1555,
+          "date_end": 1555,
+          "location_name": "Bruxelles",
+          "latitude": 50.8465573,
+          "longitude": 4.351697,
+          "description": "[NER] mention_count=1, first_source=003776708_01_text"
+        },
+        {
+          "id": 310342,
+          "title": "Charter of Incorporation Granted by Philip and Mary",
+          "date_start": 1555,
+          "date_end": 1555,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=000007630_01_text"
+        },
+        {
+          "id": 381427,
+          "title": "Ordinance of Philip II",
+          "date_start": 1556,
+          "date_end": 1556,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=004003705_03_text"
+        },
+        {
+          "id": 372227,
+          "title": "Reign of Philip II",
+          "date_start": 1556,
+          "date_end": 1598,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003515646_01_text"
+        },
+        {
+          "id": 369151,
+          "title": "Persecution by Philip II",
+          "date_start": 1560,
+          "date_end": 1598,
+          "location_name": "Madrid",
+          "latitude": 40.416782,
+          "longitude": -3.703507,
+          "description": "[NER] mention_count=1, first_source=003363186_01_text"
+        },
+        {
+          "id": 382734,
+          "title": "Augustinian Warrant Establishing Philippine Brotherhood Branch",
+          "date_start": 1564,
+          "date_end": 1564,
+          "location_name": "Mexico City, Mexico",
+          "latitude": 19.453,
+          "longitude": -99.137,
+          "description": "[NER] mention_count=1, first_source=pg13280"
+        },
+        {
+          "id": 7639,
+          "title": "Catholic Churches in Bohol",
+          "date_start": 1565,
+          "date_end": 1898,
+          "location_name": "Imus Pyreneus",
+          "latitude": 43.16415788,
+          "longitude": -1.19836234,
+          "description": "Roman Catholic churches in Bohol are a distinct group of churches established during the early Spanish colonial period on the island-province of Bohol in the Philippines. Four of these churches – Bacl"
+        },
+        {
+          "id": 389226,
+          "title": "Letter to Philip II",
+          "date_start": 1565,
+          "date_end": 1565,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg47927"
+        },
+        {
+          "id": 388494,
+          "title": "Dutch Revolt against Philip II",
+          "date_start": 1566,
+          "date_end": 1648,
+          "location_name": "Netherlands",
+          "latitude": 52.1326,
+          "longitude": 5.2913,
+          "description": "[NER] mention_count=1, first_source=pg44783"
+        },
+        {
+          "id": 383025,
+          "title": "Dutch Resistance to Philip II",
+          "date_start": 1568,
+          "date_end": 1648,
+          "location_name": "Netherlands",
+          "latitude": 52.1326,
+          "longitude": 5.2913,
+          "description": "[NER] mention_count=1, first_source=pg14971"
+        },
+        {
+          "id": 4504,
+          "title": "Dutch Revolt",
+          "date_start": 1568,
+          "date_end": 1648,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "1560s–80s revolt against Habsburg King Philip II of Spain"
+        },
+        {
+          "id": 309601,
+          "title": "Revolt of the Moors against Philip II",
+          "date_start": 1568,
+          "date_end": 1571,
+          "location_name": "Alpujarras, Andalusia, Spain",
+          "latitude": 36.95,
+          "longitude": -3.3,
+          "description": "[NER] mention_count=2, first_source=003363186_01_text"
+        },
+        {
+          "id": 324479,
+          "title": "Beheading of Philip de Montmorency",
+          "date_start": 1568,
+          "date_end": 1568,
+          "location_name": "Bruxelles",
+          "latitude": 50.8465573,
+          "longitude": 4.351697,
+          "description": "[NER] mention_count=1, first_source=000782665_04_text"
+        },
+        {
+          "id": 349068,
+          "title": "Revolt of the Netherlands Against Philip II",
+          "date_start": 1568,
+          "date_end": 1648,
+          "location_name": "Netherlands",
+          "latitude": 52.1326,
+          "longitude": 5.2913,
+          "description": "[NER] mention_count=1, first_source=002173473_01_text"
+        },
+        {
+          "id": 332983,
+          "title": "Edict of Philip II",
+          "date_start": 1572,
+          "date_end": 1572,
+          "location_name": "Madrid",
+          "latitude": 40.416782,
+          "longitude": -3.703507,
+          "description": "[NER] mention_count=1, first_source=001278826_01_text"
+        },
+        {
+          "id": 382626,
+          "title": "Limahon's Pirate Attack on the Philippines",
+          "date_start": 1576,
+          "date_end": 1576,
+          "location_name": "Manila, Philippines",
+          "latitude": 14.5995,
+          "longitude": 120.9842,
+          "description": "[NER] mention_count=1, first_source=pg12635"
+        },
+        {
+          "id": 4036,
+          "title": "Ottoman–Safavid War",
+          "date_start": 1578,
+          "date_end": 1590,
+          "location_name": "Tbilisi",
+          "latitude": 41.717722,
+          "longitude": 44.78057,
+          "description": "war between Safavid Persia and the Ottoman Empire"
+        },
+        {
+          "id": 337807,
+          "title": "Abjuration of King Philip",
+          "date_start": 1581,
+          "date_end": 1581,
+          "location_name": "Rijswijk",
+          "latitude": 52.03091842,
+          "longitude": 4.32674115,
+          "description": "[NER] mention_count=1, first_source=001554569_01_text"
+        },
+        {
+          "id": 383401,
+          "title": "Opening of the Inquisition in the Philippines",
+          "date_start": 1583,
+          "date_end": 1583,
+          "location_name": "Manila, Philippines",
+          "latitude": 14.5995,
+          "longitude": 120.9842,
+          "description": "[NER] mention_count=1, first_source=pg16501"
+        },
+        {
+          "id": 382706,
+          "title": "Letter to Philip II",
+          "date_start": 1584,
+          "date_end": 1584,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg13120"
+        },
+        {
+          "id": 30984,
+          "title": "English and Dutch East India Companies' Invasions of India",
+          "date_start": 1600,
+          "date_end": 1650,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "In the early 17th century, the Dutch and English East\nIndia\nCompanies turned their eyes towards India, as part of their grand schemes to develop extensive\ntrade\nnetworks across the Indian and\nChina\nSe"
+        },
+        {
+          "id": 4412,
+          "title": "Ottoman–Safavid War",
+          "date_start": 1603,
+          "date_end": 1618,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "war between Safavid Persia and the Ottoman Empire"
+        },
+        {
+          "id": 6061,
+          "title": "Treaty of Nasuh Pasha",
+          "date_start": 1612,
+          "date_end": 1612,
+          "location_name": "Obelisk of Theodosius",
+          "latitude": 41.00592759,
+          "longitude": 28.97540009,
+          "description": "Treaty of Nasuh Pasha \nwas a treaty between the Ottoman Empire and Safavid Persia after the war of 1603–1612, signed on 20 November 1612. It was made after a decisive Safavid victory. The main terms i"
+        },
+        {
+          "id": 366395,
+          "title": "Devastation by Persian Shah Abbas",
+          "date_start": 1617,
+          "date_end": 1617,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003196152_03_text"
+        },
+        {
+          "id": 29658,
+          "title": "Anglo-Persian Capture of Hormuz",
+          "date_start": 1622,
+          "date_end": 1622,
+          "location_name": "Organa/Turgana (island)",
+          "latitude": 27.06726355,
+          "longitude": 56.46027543,
+          "description": "battle event"
+        },
+        {
+          "id": 3751,
+          "title": "Ottoman–Safavid War",
+          "date_start": 1623,
+          "date_end": 1639,
+          "location_name": "Bagdata",
+          "latitude": 33.32167484,
+          "longitude": 44.37031991,
+          "description": "war between Safavid Persia and the Ottoman Empire"
+        }
+      ]
+    },
+    "locations": [],
+    "related_persons": []
+  },
+  "story": {
+    "summary": "William Shakespeare (1564–1616) was an English playwright, poet, and actor whose works reshaped English literature and drama. His plays and sonnets became foundational texts of the Western literary tradition and continued to gain prominence through multiple posthumous publications.",
+    "life_phases": [
+      {
+        "name": "Early Life in Stratford",
+        "years": "1564–1586",
+        "description": "Shakespeare grew up in Stratford-upon-Avon, receiving a grammar school education that grounded him in classical literature."
+      },
+      {
+        "name": "Arrival and Establishment in London",
+        "years": "1586–1597",
+        "description": "Shakespeare moved to London and became active as an actor and playwright, beginning to build his reputation in the city’s theatrical world."
+      },
+      {
+        "name": "Major Creative Period",
+        "years": "1597–1609",
+        "description": "Shakespeare produced many of his most influential plays and began to see his works published, marking his rise to national prominence."
+      },
+      {
+        "name": "Later Years and Final Works",
+        "years": "1609–1616",
+        "description": "He continued writing major plays while gradually retiring to Stratford, culminating in the final period of his life."
+      },
+      {
+        "name": "Posthumous Influence",
+        "years": "1616 onward",
+        "description": "After his death, his works were preserved and expanded through major editions that solidified his literary legacy."
+      }
+    ],
+    "key_events": [
+      {
+        "event_id": 355671,
+        "title": "Shakespeare Comes to London",
+        "year": 1586,
+        "significance": "Marks Shakespeare’s entry into the theatrical world where he would gain fame as a playwright and actor."
+      },
+      {
+        "event_id": 368951,
+        "title": "Publication of Shakespeare's Works Edition",
+        "year": 1597,
+        "significance": "An early publication that helped cement his growing reputation among London’s literate audiences."
+      },
+      {
+        "event_id": 318986,
+        "title": "Publication of Shakespeare's Sonnets",
+        "year": 1609,
+        "significance": "Established Shakespeare as one of the greatest lyric poets of the English language."
+      },
+      {
+        "event_id": 368984,
+        "title": "Publication of Twenty of the Plays of Shakespeare",
+        "year": 1611,
+        "significance": "Demonstrates Shakespeare’s increasing canonization even during his lifetime."
+      },
+      {
+        "event_id": 343420,
+        "title": "Publication of the Shakespeare First Folio",
+        "year": 1623,
+        "significance": "The most important posthumous collection, preserving many plays that might otherwise have been lost."
+      },
+      {
+        "event_id": 385115,
+        "title": "Publication of the First Complete Edition of Shakespeare's Works",
+        "year": 1623,
+        "significance": "Reinforced the First Folio’s role in defining Shakespeare’s oeuvre for future generations."
+      },
+      {
+        "event_id": 340032,
+        "title": "Publication of Shakespeare's Macbeth Explained by Ludwig Herrig",
+        "year": 1623,
+        "significance": "Reflects early scholarly engagement with Shakespeare’s work, contributing to his emerging status as a literary classic."
+      }
+    ],
+    "connections": [
+      {
+        "name": "Roman forum of London",
+        "relationship": "Place of publication",
+        "significance": "Served as the historical setting for many early printings of Shakespeare’s works, anchoring his literary output in London’s cultural center."
+      },
+      {
+        "name": "Philip II of Spain",
+        "relationship": "Contextual contemporary figure",
+        "significance": "His reign shaped the geopolitical climate of Europe during Shakespeare’s early life, influencing English politics and national identity reflected in some of Shakespeare’s history plays."
+      }
+    ],
+    "legacy": "Shakespeare’s plays and poems profoundly influenced English language, literature, and drama. Through landmark posthumous editions like the First Folio, his works became foundational to literary study worldwide, shaping storytelling, performance, and poetic expression for centuries.",
+    "_meta": {
+      "model": "gpt-5.1-chat-latest",
+      "primary_events": 7,
+      "context_events": 28,
+      "generated_at": "2026-01-10T23:36:39.293090"
+    }
+  }
+}

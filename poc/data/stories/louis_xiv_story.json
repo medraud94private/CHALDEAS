@@ -1,0 +1,1272 @@
+{
+  "person": {
+    "id": 124686,
+    "name": "LOUIS XIV",
+    "name_ko": null,
+    "birth_year": 1638,
+    "death_year": 1715,
+    "role": "king",
+    "certainty": "fact",
+    "description": null,
+    "events": {
+      "direct_period": [
+        {
+          "id": 343859,
+          "title": "Creation of Port Louis as a City",
+          "date_start": 1618,
+          "date_end": 1618,
+          "location_name": "Mauritius",
+          "latitude": -20.2,
+          "longitude": 57.5,
+          "description": "[NER] mention_count=1, first_source=001860127_01_text"
+        },
+        {
+          "id": 6526,
+          "title": "Treaty of Angoulême",
+          "date_start": 1619,
+          "date_end": 1619,
+          "location_name": "Iculisma/*Ecolisna",
+          "latitude": 45.648604,
+          "longitude": 0.156257,
+          "description": "accord signed on 10 August 1619 between Queen Marie de Medici and her son, King Louis XIII of France in Angoulême"
+        },
+        {
+          "id": 359870,
+          "title": "War Between Louis XIII and Marie de Medici",
+          "date_start": 1619,
+          "date_end": 1620,
+          "location_name": "Untitled",
+          "latitude": 46.5,
+          "longitude": 2.5,
+          "description": "[NER] mention_count=1, first_source=002799185_01_text"
+        },
+        {
+          "id": 336134,
+          "title": "Arrival of Louis XIII in Rouen",
+          "date_start": 1620,
+          "date_end": 1620,
+          "location_name": "Rotomagus",
+          "latitude": 49.440841,
+          "longitude": 1.096451,
+          "description": "[NER] mention_count=1, first_source=001471592_01_text"
+        },
+        {
+          "id": 331345,
+          "title": "Will of Louis XIII",
+          "date_start": 1643,
+          "date_end": 1643,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=001196548_01_text"
+        },
+        {
+          "id": 376613,
+          "title": "Death of Louis XIII",
+          "date_start": 1643,
+          "date_end": 1643,
+          "location_name": "Versailles",
+          "latitude": 48.8035403,
+          "longitude": 2.1266886,
+          "description": "[NER] mention_count=1, first_source=003785554_11_text"
+        },
+        {
+          "id": 326753,
+          "title": "Conquest of Artois by Louis XIV",
+          "date_start": 1657,
+          "date_end": 1659,
+          "location_name": "Nemetacum",
+          "latitude": 50.2927655,
+          "longitude": 2.778586,
+          "description": "[NER] mention_count=1, first_source=000889067_02_text"
+        },
+        {
+          "id": 366751,
+          "title": "Court Visit by Louis XIV and Mazarin",
+          "date_start": 1658,
+          "date_end": 1658,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003224111_01_text"
+        },
+        {
+          "id": 317752,
+          "title": "Marriage of Louis XIV",
+          "date_start": 1660,
+          "date_end": 1660,
+          "location_name": "Roman bridge at Ascain",
+          "latitude": 43.3502322,
+          "longitude": -1.62191432,
+          "description": "[NER] mention_count=1, first_source=000433666_01_text"
+        },
+        {
+          "id": 339337,
+          "title": "Age of Louis XIV",
+          "date_start": 1661,
+          "date_end": 1715,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=001629521_01_text"
+        },
+        {
+          "id": 358538,
+          "title": "Conquest of Besançon by Louis XIV",
+          "date_start": 1668,
+          "date_end": 1668,
+          "location_name": "Vesontio",
+          "latitude": 47.2372405,
+          "longitude": 6.027924,
+          "description": "[NER] mention_count=1, first_source=002715331_01_text"
+        },
+        {
+          "id": 341491,
+          "title": "Contest Between Charles II and Louis XIV at Newmarket",
+          "date_start": 1671,
+          "date_end": 1671,
+          "location_name": "Exning",
+          "latitude": 52.26513,
+          "longitude": 0.369462,
+          "description": "[NER] mention_count=1, first_source=001734564_01_text"
+        },
+        {
+          "id": 367660,
+          "title": "Battle Against Louis XIV’s Invasion of the Netherlands",
+          "date_start": 1672,
+          "date_end": 1672,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003278114_01_text"
+        },
+        {
+          "id": 356150,
+          "title": "War Against Louis XIV (Franco-Dutch War)",
+          "date_start": 1672,
+          "date_end": 1678,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002581303_02_text"
+        },
+        {
+          "id": 9647,
+          "title": "Siege of Maastricht",
+          "date_start": 1673,
+          "date_end": 1673,
+          "location_name": "Traiectus?",
+          "latitude": 50.84908,
+          "longitude": 5.6905045,
+          "description": "French siege of Maastricht by Louis XIV during the Franco-Dutch War (1672–1678)"
+        },
+        {
+          "id": 324317,
+          "title": "Massacre Ordered by Louis XIV",
+          "date_start": 1680,
+          "date_end": 1680,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000774292_01_text"
+        },
+        {
+          "id": 335583,
+          "title": "Founding of Settlement on the Bay of Saint Louis",
+          "date_start": 1680,
+          "date_end": 1680,
+          "location_name": "Bay St. Louis, Mississippi, United States",
+          "latitude": 30.33,
+          "longitude": -89.33,
+          "description": "[NER] mention_count=1, first_source=001437757_01_text"
+        },
+        {
+          "id": 329340,
+          "title": "Capture of Strasbourg by Louis XIV",
+          "date_start": 1681,
+          "date_end": 1681,
+          "location_name": "Auenheim",
+          "latitude": 48.605472,
+          "longitude": 7.836658,
+          "description": "[NER] mention_count=1, first_source=001021153_01_text"
+        },
+        {
+          "id": 332851,
+          "title": "Taking Possession of Louisiana",
+          "date_start": 1682,
+          "date_end": 1682,
+          "location_name": "Plaquemines Parish, Louisiana, USA",
+          "latitude": 29.0,
+          "longitude": -89.6,
+          "description": "[NER] mention_count=1, first_source=001272035_01_text"
+        },
+        {
+          "id": 352926,
+          "title": "Annals of Louisiana",
+          "date_start": 1682,
+          "date_end": 1815,
+          "location_name": "Louisiana, United States",
+          "latitude": 30.9843,
+          "longitude": -91.9623,
+          "description": "[NER] mention_count=1, first_source=002399708_01_text"
+        },
+        {
+          "id": 333507,
+          "title": "Louisiana Named",
+          "date_start": 1682,
+          "date_end": 1682,
+          "location_name": "Mississippi River Delta, Louisiana, USA",
+          "latitude": 29.15,
+          "longitude": -89.25,
+          "description": "[NER] mention_count=1, first_source=001323333_01_text"
+        },
+        {
+          "id": 314145,
+          "title": "Enumeration of the County of Foix under Louis XIV",
+          "date_start": 1685,
+          "date_end": 1685,
+          "location_name": "Foix, France",
+          "latitude": 42.9667,
+          "longitude": 1.6,
+          "description": "[NER] mention_count=1, first_source=000210492_01_text"
+        },
+        {
+          "id": 364098,
+          "title": "Victory of William of Orange and the Coalition over the Catholic Monarchy of Louis XIV",
+          "date_start": 1688,
+          "date_end": 1688,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003075348_04_text"
+        },
+        {
+          "id": 31068,
+          "title": "A to Z of Pirate and Seafaring Expressions",
+          "date_start": 1690,
+          "date_end": 1730,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "Pirates, especially those of the so-called\nGolden Age of Piracy\n(c. 1690-1730), are particularly famous for their pithy expressions which relate to all things nautical, general roistering, and life of"
+        },
+        {
+          "id": 334313,
+          "title": "Establishment of Louisiana",
+          "date_start": 1698,
+          "date_end": 1698,
+          "location_name": "Louisiana, United States",
+          "latitude": 30.0,
+          "longitude": -91.0,
+          "description": "[NER] mention_count=1, first_source=001368088_02_text"
+        },
+        {
+          "id": 352362,
+          "title": "Construction of Saint-Louis in Texas",
+          "date_start": 1699,
+          "date_end": 1699,
+          "location_name": "Garcitas Creek, Victoria County, Texas, USA",
+          "latitude": 28.55,
+          "longitude": -96.8,
+          "description": "[NER] mention_count=1, first_source=002380931_04_text"
+        },
+        {
+          "id": 356691,
+          "title": "Publication of the Journal of the Rules of the Reigns of Louis XIV and Louis XV",
+          "date_start": 1701,
+          "date_end": 1701,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002606768_01_text"
+        },
+        {
+          "id": 355534,
+          "title": "Construction of the Façade of the Church of the Holy Sepulchre in Cambrai by Louis Marbaix",
+          "date_start": 1703,
+          "date_end": 1703,
+          "location_name": "Untitled",
+          "latitude": 50.175165,
+          "longitude": 3.234282,
+          "description": "[NER] mention_count=1, first_source=002543017_01_text"
+        },
+        {
+          "id": 367903,
+          "title": "Treaty with Louis XIV",
+          "date_start": 1713,
+          "date_end": 1713,
+          "location_name": "Traiectum",
+          "latitude": 52.090934,
+          "longitude": 5.1220985,
+          "description": "[NER] mention_count=1, first_source=003287565_01_text"
+        },
+        {
+          "id": 334561,
+          "title": "Treaty or Concession of Louisiana to Crozat",
+          "date_start": 1713,
+          "date_end": 1713,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=001380133_01_text"
+        },
+        {
+          "id": 337038,
+          "title": "Death of Louis XIV",
+          "date_start": 1715,
+          "date_end": 1715,
+          "location_name": "Versailles",
+          "latitude": 48.8035403,
+          "longitude": 2.1266886,
+          "description": "[NER] mention_count=1, first_source=001512518_02_text"
+        },
+        {
+          "id": 321660,
+          "title": "Death of Louis XIV",
+          "date_start": 1715,
+          "date_end": 1715,
+          "location_name": "Versailles",
+          "latitude": 48.8035403,
+          "longitude": 2.1266886,
+          "description": "[NER] mention_count=1, first_source=000615384_01_text"
+        },
+        {
+          "id": 363522,
+          "title": "Death of Louis XIV",
+          "date_start": 1715,
+          "date_end": 1715,
+          "location_name": "Versailles",
+          "latitude": 48.8035403,
+          "longitude": 2.1266886,
+          "description": "[NER] mention_count=1, first_source=003046421_11_text"
+        },
+        {
+          "id": 31105,
+          "title": "Antoine Court and the Church of the Desert",
+          "date_start": 1715,
+          "date_end": 1760,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "In March 1715, Louis XIV of France (r. 1643-1715) issued a declaration stating that all subjects of the king were also subjects of the Catholic Church. In defiance of the king's decree, Antoine Court "
+        },
+        {
+          "id": 305383,
+          "title": "Death of Louis XIV",
+          "date_start": 1715,
+          "date_end": 1715,
+          "location_name": "Versailles",
+          "latitude": 48.8035403,
+          "longitude": 2.1266886,
+          "description": "[NER] mention_count=3, first_source=000433665_01_text"
+        },
+        {
+          "id": 325932,
+          "title": "Death of Louis XIV",
+          "date_start": 1715,
+          "date_end": 1715,
+          "location_name": "Versailles",
+          "latitude": 48.8035403,
+          "longitude": 2.1266886,
+          "description": "[NER] mention_count=1, first_source=000850410_03_text"
+        },
+        {
+          "id": 5881,
+          "title": "Persian Embassy to Louis XIV",
+          "date_start": 1715,
+          "date_end": 1715,
+          "location_name": "Versailles",
+          "latitude": 48.8035403,
+          "longitude": 2.1266886,
+          "description": "The Persian embassy to Louis XIV caused a dramatic flurry at the court of Louis XIV in 1715, the year of the Sun King's death. Mohammad Reza Beg, was a high-ranking official to the Persian governor of"
+        },
+        {
+          "id": 391905,
+          "title": "Founding of Louisbourg",
+          "date_start": 1720,
+          "date_end": 1720,
+          "location_name": "Louisbourg, Nova Scotia, Canada",
+          "latitude": 45.919,
+          "longitude": -59.973,
+          "description": "[NER] mention_count=1, first_source=pg6026"
+        },
+        {
+          "id": 343351,
+          "title": "Coronation of Louis XV",
+          "date_start": 1722,
+          "date_end": 1722,
+          "location_name": "Untitled",
+          "latitude": 49.2539525,
+          "longitude": 4.0332025,
+          "description": "[NER] mention_count=1, first_source=001833949_01_text"
+        },
+        {
+          "id": 326417,
+          "title": "Surrender of Louisiana to the French Crown",
+          "date_start": 1731,
+          "date_end": 1731,
+          "location_name": "Chalmette, Louisiana, USA",
+          "latitude": 29.933,
+          "longitude": -89.982,
+          "description": "[NER] mention_count=1, first_source=000874580_01_text"
+        },
+        {
+          "id": 6358,
+          "title": "Treaty of Turin",
+          "date_start": 1733,
+          "date_end": 1733,
+          "location_name": "Porta Palatina",
+          "latitude": 45.0749592,
+          "longitude": 7.6847552,
+          "description": "1733, between Louis XV of France and Charles Emmanuel III, Duke of Savoy"
+        },
+        {
+          "id": 5879,
+          "title": "Treaty of Turin",
+          "date_start": 1733,
+          "date_end": 1733,
+          "location_name": "Porta Palatina",
+          "latitude": 45.0749592,
+          "longitude": 7.6847552,
+          "description": "1733, between Louis XV of France and Charles Emmanuel III, Duke of Savoy"
+        },
+        {
+          "id": 5271,
+          "title": "Treaty of Turin",
+          "date_start": 1733,
+          "date_end": 1733,
+          "location_name": "Porta Palatina",
+          "latitude": 45.0749592,
+          "longitude": 7.6847552,
+          "description": "1733, between Louis XV of France and Charles Emmanuel III, Duke of Savoy"
+        },
+        {
+          "id": 5411,
+          "title": "Treaty of Turin",
+          "date_start": 1733,
+          "date_end": 1733,
+          "location_name": "Porta Palatina",
+          "latitude": 45.0749592,
+          "longitude": 7.6847552,
+          "description": "1733, between Louis XV of France and Charles Emmanuel III, Duke of Savoy"
+        },
+        {
+          "id": 5700,
+          "title": "Treaty of Turin",
+          "date_start": 1733,
+          "date_end": 1733,
+          "location_name": "Porta Palatina",
+          "latitude": 45.0749592,
+          "longitude": 7.6847552,
+          "description": "1733, between Louis XV of France and Charles Emmanuel III, Duke of Savoy"
+        },
+        {
+          "id": 389519,
+          "title": "Siege of Louisbourg",
+          "date_start": 1745,
+          "date_end": 1745,
+          "location_name": "Louisbourg, Nova Scotia, Canada",
+          "latitude": 45.919,
+          "longitude": -59.973,
+          "description": "[NER] mention_count=1, first_source=pg48758"
+        },
+        {
+          "id": 389522,
+          "title": "Plan for the Conquest of Louisbourg",
+          "date_start": 1745,
+          "date_end": 1745,
+          "location_name": "Louisbourg, Nova Scotia, Canada",
+          "latitude": 45.919,
+          "longitude": -59.973,
+          "description": "[NER] mention_count=1, first_source=pg48758"
+        },
+        {
+          "id": 321802,
+          "title": "First Siege of Louisbourg",
+          "date_start": 1745,
+          "date_end": 1745,
+          "location_name": "Louisbourg, Nova Scotia, Canada",
+          "latitude": 45.919,
+          "longitude": -59.973,
+          "description": "[NER] mention_count=1, first_source=000625050_01_text"
+        },
+        {
+          "id": 306237,
+          "title": "Siege of Louisbourg",
+          "date_start": 1745,
+          "date_end": 1745,
+          "location_name": "Louisbourg, Nova Scotia, Canada",
+          "latitude": 45.919,
+          "longitude": -59.973,
+          "description": "[NER] mention_count=3, first_source=003558892_01_text"
+        },
+        {
+          "id": 309276,
+          "title": "Capture of Louisbourg",
+          "date_start": 1745,
+          "date_end": 1745,
+          "location_name": "Louisbourg, Nova Scotia, Canada",
+          "latitude": 45.919,
+          "longitude": -59.973,
+          "description": "[NER] mention_count=2, first_source=002753096_04_text"
+        }
+      ],
+      "direct_other": [
+        {
+          "id": 31016,
+          "title": "History of the Rose",
+          "date_start": -33000000,
+          "date_end": -23000000,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "The rose that grows in many different forms in gardens all over the world today is an evolution of rose-like plants that lived in the northern hemisphere between 33 million and 23 million years ago. T"
+        },
+        {
+          "id": 31079,
+          "title": "Ancient Egyptian Medicine: Study and Practice",
+          "date_start": -3000,
+          "date_end": -30,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "In\nEurope\n, in the 19th century CE, an interesting device began appearing in graveyards and cemeteries: the mortsafe. This was an iron cage erected over a\ngrave\nto keep the body of the deceased safe f"
+        },
+        {
+          "id": 31100,
+          "title": "Ancient Roman Society",
+          "date_start": -1000,
+          "date_end": 476,
+          "location_name": "Roman villa, via Michelangelo Tilli",
+          "latitude": 41.93088631,
+          "longitude": 12.55150748,
+          "description": "Rome\nbegan as a small\ncity\non the banks of the Tiber River in\nItaly\n. The Latin tribes (also known as the\nLatini\nor Latians) inhabited the region c. 1000 BCE but the founding of the city is dated to 7"
+        },
+        {
+          "id": 359878,
+          "title": "Campaigns of Louis the German",
+          "date_start": 840,
+          "date_end": 876,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002800025_01_text"
+        },
+        {
+          "id": 6094,
+          "title": "Treaty of Verdun",
+          "date_start": 843,
+          "date_end": 843,
+          "location_name": "Viriodunum",
+          "latitude": 49.1592415,
+          "longitude": 5.383154,
+          "description": "The Treaty of Verdun, agreed to on 10 August 843, ended the Carolingian civil war and divided the Carolingian Empire between Lothair I, Louis II and Charles II, the surviving sons of the emperor Louis"
+        },
+        {
+          "id": 310578,
+          "title": "Diploma of Emperor Louis III in Favor of the Church of Asti",
+          "date_start": 1080,
+          "date_end": 1080,
+          "location_name": "Hasta",
+          "latitude": 44.900895,
+          "longitude": 8.206756,
+          "description": "[NER] mention_count=1, first_source=000021394_01_text"
+        },
+        {
+          "id": 1527,
+          "title": "Battle of Brémule",
+          "date_start": 1119,
+          "date_end": 1119,
+          "location_name": "Noyers-sur-Andelys",
+          "latitude": 49.256758,
+          "longitude": 1.409052,
+          "description": "1119 battle between Henry I of England and Louis VI the Fat of France"
+        },
+        {
+          "id": 306666,
+          "title": "Charter of Louis the Fat",
+          "date_start": 1119,
+          "date_end": 1119,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=2, first_source=000242474_03_text"
+        },
+        {
+          "id": 346918,
+          "title": "Marriage of Eleanor of Aquitaine and Louis the Young",
+          "date_start": 1137,
+          "date_end": 1137,
+          "location_name": "Burdigala",
+          "latitude": 44.837205,
+          "longitude": -0.576533,
+          "description": "[NER] mention_count=1, first_source=002046523_02_text"
+        },
+        {
+          "id": 391571,
+          "title": "Homage to Louis of France for the Duchy of Normandy",
+          "date_start": 1160,
+          "date_end": 1160,
+          "location_name": "Aregenoua",
+          "latitude": 49.10686765,
+          "longitude": -0.43271675,
+          "description": "[NER] mention_count=1, first_source=pg58310"
+        },
+        {
+          "id": 6199,
+          "title": "Treaty of Bruges",
+          "date_start": 1206,
+          "date_end": 1206,
+          "location_name": "Brugge",
+          "latitude": 51.209253,
+          "longitude": 3.22502,
+          "description": "Ada was Countess regnant of Holland between 1203 and 1207, ruling jointly with her husband, Louis II of Loon. She was deposed and exiled by her paternal uncle, William I."
+        },
+        {
+          "id": 313539,
+          "title": "Capture of La Rochelle by Louis VIII",
+          "date_start": 1214,
+          "date_end": 1214,
+          "location_name": "Barrington Atlas feature labeled 49",
+          "latitude": 46.143788,
+          "longitude": -1.162168,
+          "description": "[NER] mention_count=1, first_source=000178382_02_text"
+        },
+        {
+          "id": 324707,
+          "title": "Charter of Louis VIII",
+          "date_start": 1224,
+          "date_end": 1224,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000795093_02_text"
+        },
+        {
+          "id": 348251,
+          "title": "Charter of 1224 (Louis VIII)",
+          "date_start": 1224,
+          "date_end": 1224,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002118269_01_text"
+        },
+        {
+          "id": 10304,
+          "title": "Siege of Avignon",
+          "date_start": 1226,
+          "date_end": 1226,
+          "location_name": "Cypresseta",
+          "latitude": 44.007981,
+          "longitude": 4.881024,
+          "description": "1226 siege of Avignon by Louis VIII of France"
+        },
+        {
+          "id": 309137,
+          "title": "Coronation of Louis IX of France",
+          "date_start": 1226,
+          "date_end": 1226,
+          "location_name": "Untitled",
+          "latitude": 49.2539525,
+          "longitude": 4.0332025,
+          "description": "[NER] mention_count=2, first_source=002534021_01_text"
+        },
+        {
+          "id": 392249,
+          "title": "Return of St. Louis to France",
+          "date_start": 1254,
+          "date_end": 1254,
+          "location_name": "Montebras",
+          "latitude": 46.325578,
+          "longitude": 2.310528,
+          "description": "[NER] mention_count=1, first_source=pg62518"
+        },
+        {
+          "id": 337587,
+          "title": "Treaty of Paris between Louis IX and Henry III",
+          "date_start": 1259,
+          "date_end": 1259,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=001540833_03_text"
+        },
+        {
+          "id": 385478,
+          "title": "Death of Saint Louis",
+          "date_start": 1270,
+          "date_end": 1270,
+          "location_name": "Ad Aquas",
+          "latitude": 36.75,
+          "longitude": 10.25,
+          "description": "[NER] mention_count=1, first_source=pg28879"
+        },
+        {
+          "id": 312830,
+          "title": "Marriage of Louis of Forez and Eleanor of Savoy",
+          "date_start": 1271,
+          "date_end": 1271,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000138625_02_text"
+        },
+        {
+          "id": 388534,
+          "title": "Canonisation of Louis IX",
+          "date_start": 1297,
+          "date_end": 1297,
+          "location_name": "Roman villa, via Michelangelo Tilli",
+          "latitude": 41.93088631,
+          "longitude": 12.55150748,
+          "description": "[NER] mention_count=1, first_source=pg44906"
+        },
+        {
+          "id": 31131,
+          "title": "Ayutthaya: Venice of the East",
+          "date_start": 1350,
+          "date_end": 1767,
+          "location_name": "Ayutthaya, Thailand",
+          "latitude": 14.3556,
+          "longitude": 100.565,
+          "description": "The royal\ncity\nof Ayutthaya (\nah-you-tah-ya\n) was a small kingdom in Siam (modern Thailand), and it was an unrivalled commercial and maritime power from 1350-1767 CE. Ayutthaya became the second capit"
+        },
+        {
+          "id": 378720,
+          "title": "Settlement with the Sons of Emperor Louis",
+          "date_start": 1355,
+          "date_end": 1355,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003891886_02_text"
+        },
+        {
+          "id": 31137,
+          "title": "Ball of the Burning Men",
+          "date_start": 1393,
+          "date_end": 1393,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "It was supposed to be just another masquerade. As daylight turned to dusk on 28 January 1393, servants rushed through the halls of the Hôtel Saint-Pol in\nParis\n, making the final arrangements for what"
+        },
+        {
+          "id": 344701,
+          "title": "Assassination of Louis d'Orléans",
+          "date_start": 1407,
+          "date_end": 1407,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=001912204_01_text"
+        },
+        {
+          "id": 322642,
+          "title": "Marriage and Succession Dispute of Louis II de Poitiers",
+          "date_start": 1419,
+          "date_end": 1419,
+          "location_name": "Limonum",
+          "latitude": 46.5836465,
+          "longitude": 0.3459905,
+          "description": "[NER] mention_count=1, first_source=000680848_01_text"
+        },
+        {
+          "id": 314761,
+          "title": "Charter of Louis XI",
+          "date_start": 1464,
+          "date_end": 1464,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000240510_01_text"
+        },
+        {
+          "id": 343741,
+          "title": "Meeting at the Court of Louis XI",
+          "date_start": 1464,
+          "date_end": 1464,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=001854770_01_text"
+        },
+        {
+          "id": 5916,
+          "title": "War of the Public Weal",
+          "date_start": 1465,
+          "date_end": 1465,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "The War of the Public Weal was a conflict between the king of France and an alliance of feudal nobles, organized in 1465 in defiance of the centralized authority of King Louis XI of France. It was mas"
+        },
+        {
+          "id": 360413,
+          "title": "Peace Between Louis XI and Charles the Bold",
+          "date_start": 1470,
+          "date_end": 1470,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002823343_01_text"
+        }
+      ],
+      "context_only": [
+        {
+          "id": 29658,
+          "title": "Anglo-Persian Capture of Hormuz",
+          "date_start": 1622,
+          "date_end": 1622,
+          "location_name": "Organa/Turgana (island)",
+          "latitude": 27.06726355,
+          "longitude": 56.46027543,
+          "description": "battle event"
+        },
+        {
+          "id": 3751,
+          "title": "Ottoman–Safavid War",
+          "date_start": 1623,
+          "date_end": 1639,
+          "location_name": "Bagdata",
+          "latitude": 33.32167484,
+          "longitude": 44.37031991,
+          "description": "war between Safavid Persia and the Ottoman Empire"
+        },
+        {
+          "id": 9087,
+          "title": "1628 Camarines Earthquake",
+          "date_start": 1628,
+          "date_end": 1628,
+          "location_name": "Camarines Region, Philippines",
+          "latitude": 13.5,
+          "longitude": 123.3,
+          "description": "earthquake in the Philippines"
+        },
+        {
+          "id": 383817,
+          "title": "Letter to Philip IV",
+          "date_start": 1635,
+          "date_end": 1635,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg19118"
+        },
+        {
+          "id": 353224,
+          "title": "Death of Philip Massinger",
+          "date_start": 1638,
+          "date_end": 1638,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=002417052_01_text"
+        },
+        {
+          "id": 387157,
+          "title": "Events in the Philippines from 1638 to 1639",
+          "date_start": 1638,
+          "date_end": 1639,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg38748"
+        },
+        {
+          "id": 29001,
+          "title": "Siege of Philippsburg",
+          "date_start": 1644,
+          "date_end": 1644,
+          "location_name": "Altlussheim",
+          "latitude": 49.302221,
+          "longitude": 8.497719,
+          "description": "battle event"
+        },
+        {
+          "id": 305487,
+          "title": "Battle of Philiphaugh",
+          "date_start": 1645,
+          "date_end": 1645,
+          "location_name": "Oakwood Roman fort",
+          "latitude": 55.5145095,
+          "longitude": -2.9120829,
+          "description": "[NER] mention_count=3, first_source=000585062_02_text [MERGED INTO 2077]"
+        },
+        {
+          "id": 7065,
+          "title": "1645 Luzon Earthquake",
+          "date_start": 1645,
+          "date_end": 1645,
+          "location_name": "Manila, Philippines",
+          "latitude": 14.5995,
+          "longitude": 120.9842,
+          "description": "earthquake on Luzon Island in the Philippines that occurred on November 30, 1645"
+        },
+        {
+          "id": 351057,
+          "title": "Battle of Philiphaugh",
+          "date_start": 1645,
+          "date_end": 1645,
+          "location_name": "Oakwood Roman fort",
+          "latitude": 55.5145095,
+          "longitude": -2.9120829,
+          "description": "[NER] mention_count=1, first_source=002311311_01_text [MERGED INTO 2077]"
+        },
+        {
+          "id": 351333,
+          "title": "Battle of Philiphaugh",
+          "date_start": 1645,
+          "date_end": 1645,
+          "location_name": "Eildon Hill hill fort",
+          "latitude": 55.5869022,
+          "longitude": -2.7079725,
+          "description": "[NER] mention_count=1, first_source=002323220_02_text [MERGED INTO 2077]"
+        },
+        {
+          "id": 2077,
+          "title": "Battle of Philiphaugh",
+          "date_start": 1645,
+          "date_end": 1645,
+          "location_name": "Oakwood Roman fort",
+          "latitude": 55.5145095,
+          "longitude": -2.9120829,
+          "description": "battle in Scottish Borders, Scotland, UK"
+        },
+        {
+          "id": 4527,
+          "title": "Russo-Persian War of 1651–1653",
+          "date_start": 1651,
+          "date_end": 1653,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "first conflict of the Russo-Persian Wars"
+        },
+        {
+          "id": 387730,
+          "title": "Marriage Arrangements for Lady Jemimah Montagu and Philip Carteret",
+          "date_start": 1665,
+          "date_end": 1665,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg4157"
+        },
+        {
+          "id": 303541,
+          "title": "King Philip's War",
+          "date_start": 1675,
+          "date_end": 1678,
+          "location_name": "New England, United States",
+          "latitude": 41.7,
+          "longitude": -71.5,
+          "description": "[NER] mention_count=12, first_source=000188854_02_text [MERGED INTO 3940]"
+        },
+        {
+          "id": 304080,
+          "title": "King Philip's War",
+          "date_start": 1675,
+          "date_end": 1676,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=6, first_source=000212785_01_text [MERGED INTO 3940]"
+        },
+        {
+          "id": 306646,
+          "title": "King Philip's War",
+          "date_start": 1675,
+          "date_end": 1678,
+          "location_name": "Bristol, Rhode Island, USA",
+          "latitude": 41.682,
+          "longitude": -71.245,
+          "description": "[NER] mention_count=2, first_source=000235528_01_text [MERGED INTO 3940]"
+        },
+        {
+          "id": 309398,
+          "title": "King Philip's War",
+          "date_start": 1675,
+          "date_end": 1676,
+          "location_name": "New England, United States",
+          "latitude": 41.7,
+          "longitude": -71.5,
+          "description": "[NER] mention_count=2, first_source=003000157_01_text [MERGED INTO 3940]"
+        },
+        {
+          "id": 320924,
+          "title": "King Philip's War",
+          "date_start": 1675,
+          "date_end": 1676,
+          "location_name": "Bristol, Rhode Island, USA",
+          "latitude": 41.682,
+          "longitude": -71.245,
+          "description": "[NER] mention_count=1, first_source=000574721_01_text [MERGED INTO 3940]"
+        },
+        {
+          "id": 329492,
+          "title": "King Philip's War",
+          "date_start": 1675,
+          "date_end": 1676,
+          "location_name": "Bristol, Rhode Island, USA",
+          "latitude": 41.682,
+          "longitude": -71.245,
+          "description": "[NER] mention_count=1, first_source=001028138_01_text [MERGED INTO 3940]"
+        },
+        {
+          "id": 3940,
+          "title": "King Philip's War",
+          "date_start": 1675,
+          "date_end": 1676,
+          "location_name": "New England, United States",
+          "latitude": 41.7,
+          "longitude": -71.5,
+          "description": "conflict between Native American inhabitants of present-day New England and English colonists"
+        },
+        {
+          "id": 328494,
+          "title": "Beheading of King Philip",
+          "date_start": 1676,
+          "date_end": 1676,
+          "location_name": "Bristol, Rhode Island, USA",
+          "latitude": 41.682,
+          "longitude": -71.245,
+          "description": "[NER] mention_count=1, first_source=000979702_01_text"
+        },
+        {
+          "id": 317231,
+          "title": "Royal Land Grant to Frederick Philipse",
+          "date_start": 1686,
+          "date_end": 1686,
+          "location_name": "Pelham, New York, United States",
+          "latitude": 40.888,
+          "longitude": -73.805,
+          "description": "[NER] mention_count=1, first_source=000401821_03_text"
+        },
+        {
+          "id": 382100,
+          "title": "Distressed Innocence, or The Princess of Persia",
+          "date_start": 1691,
+          "date_end": 1691,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=004158032_04_text"
+        },
+        {
+          "id": 361104,
+          "title": "Revolutions of Persia in the Eighteenth Century",
+          "date_start": 1700,
+          "date_end": 1753,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002914911_01_text"
+        },
+        {
+          "id": 4127,
+          "title": "Russo-Persian War of 1722–23",
+          "date_start": 1722,
+          "date_end": 1723,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "conflict between the Russian Empire and Safavid Iran"
+        },
+        {
+          "id": 4324,
+          "title": "Ottoman–Persian War (1722–1726)",
+          "date_start": 1722,
+          "date_end": 1726,
+          "location_name": "Ecbatana/Hagmatana/Achmeta/Epiphaneia/Ahmadan",
+          "latitude": 34.80555515,
+          "longitude": 48.51640575,
+          "description": "1722-1726 war fought between the Ottoman Empire and Iran"
+        },
+        {
+          "id": 4376,
+          "title": "Ottoman–Persian War of 1730–1735",
+          "date_start": 1730,
+          "date_end": 1735,
+          "location_name": "Tabrīz",
+          "latitude": 38.07182135,
+          "longitude": 46.30063065,
+          "description": "series of conflicts fought between the Ottoman Empire and Safavid Iran from 1730 to 1735"
+        },
+        {
+          "id": 6555,
+          "title": "Treaty of Ahmet Pasha",
+          "date_start": 1732,
+          "date_end": 1732,
+          "location_name": "Obelisk of Theodosius",
+          "latitude": 41.00592759,
+          "longitude": 28.97540009,
+          "description": "treaty between the Ottoman Empire and Safavid Persia"
+        },
+        {
+          "id": 338491,
+          "title": "Persian Invasion under Nadir Shah",
+          "date_start": 1739,
+          "date_end": 1739,
+          "location_name": "Delhi, India",
+          "latitude": 28.65,
+          "longitude": 77.12,
+          "description": "[NER] mention_count=1, first_source=001591059_01_text"
+        },
+        {
+          "id": 1898,
+          "title": "Battle of Karnal",
+          "date_start": 1739,
+          "date_end": 1739,
+          "location_name": "Karnal, Haryana, India",
+          "latitude": 29.6857,
+          "longitude": 76.9905,
+          "description": "1739 part of the Persian Invasion of India"
+        },
+        {
+          "id": 4621,
+          "title": "Ottoman–Persian War of 1743–46",
+          "date_start": 1743,
+          "date_end": 1746,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "war between the Ottoman Empire and the Afsharid Iran (1743-46)"
+        },
+        {
+          "id": 10137,
+          "title": "Siege of Kars",
+          "date_start": 1744,
+          "date_end": 1744,
+          "location_name": "Kars",
+          "latitude": 40.60134912,
+          "longitude": 43.10403027,
+          "description": "siege during the Ottoman–Persian War of 1743–1746"
+        },
+        {
+          "id": 2695,
+          "title": "Siege of Kars",
+          "date_start": 1744,
+          "date_end": 1744,
+          "location_name": "Kars",
+          "latitude": 40.60134912,
+          "longitude": 43.10403027,
+          "description": "siege during the Ottoman–Persian War of 1743–1746"
+        }
+      ]
+    },
+    "locations": [],
+    "related_persons": []
+  },
+  "story": {
+    "summary": "Louis XIV, known as the Sun King, ruled France from 1643 to 1715, overseeing one of the longest and most influential monarchies in European history. His reign marked the height of French absolutism, military expansion, and cultural dominance. He transformed France into a centralized state and left a legacy that shaped European politics for generations.",
+    "life_phases": [
+      {
+        "name": "Childhood and Regency",
+        "years": "1638–1661",
+        "description": "From his birth to the death of Cardinal Mazarin, Louis XIV experienced political instability, the Fronde uprisings, and the early formation of his absolutist philosophy."
+      },
+      {
+        "name": "Rise of Absolute Monarchy",
+        "years": "1661–1680",
+        "description": "After Mazarin's death, Louis XIV began personal rule, centralizing power and directing military campaigns that expanded French influence."
+      },
+      {
+        "name": "Height of Power and Expansion",
+        "years": "1680–1700",
+        "description": "Louis XIV pursued territorial acquisitions such as Strasbourg and supported colonial expansion in the Americas, while also confronting major European coalitions."
+      },
+      {
+        "name": "Late Reign and Decline",
+        "years": "1700–1715",
+        "description": "His later years were marked by costly wars, internal strain, and efforts to secure his dynasty’s succession, culminating in a weakened but still influential French monarchy."
+      }
+    ],
+    "key_events": [
+      {
+        "event_id": 331345,
+        "title": "Will of Louis XIII",
+        "year": 1643,
+        "significance": "The will determined the regency arrangements upon Louis XIII’s death, shaping Louis XIV’s early political environment."
+      },
+      {
+        "event_id": 376613,
+        "title": "Death of Louis XIII",
+        "year": 1643,
+        "significance": "At age four, Louis XIV became king, initiating the long regency under Anne of Austria and Mazarin that deeply influenced his approach to absolute rule."
+      },
+      {
+        "event_id": 326753,
+        "title": "Conquest of Artois by Louis XIV",
+        "year": 1657,
+        "significance": "An early military success that enhanced France’s territorial strength and Louis XIV's emerging authority."
+      },
+      {
+        "event_id": 366751,
+        "title": "Court Visit by Louis XIV and Mazarin",
+        "year": 1658,
+        "significance": "Symbolized the political partnership that shaped Louis’s early reign and prepared him for independent rule."
+      },
+      {
+        "event_id": 317752,
+        "title": "Marriage of Louis XIV",
+        "year": 1660,
+        "significance": "His marriage to Maria Theresa of Spain helped solidify peace between France and Spain, influencing subsequent claims over Spanish territories."
+      },
+      {
+        "event_id": 339337,
+        "title": "Age of Louis XIV",
+        "year": 1661,
+        "significance": "Marks the beginning of his personal rule after Mazarin’s death, inaugurating the era of French absolutism."
+      },
+      {
+        "event_id": 358538,
+        "title": "Conquest of Besançon by Louis XIV",
+        "year": 1668,
+        "significance": "A key victory during the War of Devolution, contributing to the annexation of Franche-Comté and strengthening French eastern borders."
+      },
+      {
+        "event_id": 329340,
+        "title": "Capture of Strasbourg by Louis XIV",
+        "year": 1681,
+        "significance": "A major territorial acquisition that secured French control over the Rhine frontier."
+      },
+      {
+        "event_id": 332851,
+        "title": "Taking Possession of Louisiana",
+        "year": 1682,
+        "significance": "Asserted French colonial claims in North America, expanding France's global influence."
+      }
+    ],
+    "connections": [
+      {
+        "name": "Louis XIII",
+        "relationship": "Father",
+        "significance": "His death brought Louis XIV to the throne at a young age, shaping the need for a strong regency."
+      },
+      {
+        "name": "Cardinal Mazarin",
+        "relationship": "Regent and political mentor",
+        "significance": "His policies and guidance influenced Louis XIV’s development into an absolutist ruler."
+      },
+      {
+        "name": "Maria Theresa of Spain",
+        "relationship": "Wife",
+        "significance": "Their marriage had major diplomatic consequences, influencing claims that led to future wars."
+      },
+      {
+        "name": "Strasbourg and Louisiana",
+        "relationship": "Key territorial expansions",
+        "significance": "Both represent significant geographic components of Louis XIV’s imperial and continental ambitions."
+      }
+    ],
+    "legacy": "Louis XIV left an enduring legacy as the archetype of absolutist monarchy, expanding French military, cultural, and administrative power. His territorial ambitions reshaped Europe, while his patronage of arts and architecture, symbolized by Versailles, defined an era of royal grandeur. Though his wars strained France, his influence on statecraft and monarchy remained profound for centuries.",
+    "_meta": {
+      "model": "gpt-5.1-chat-latest",
+      "primary_events": 50,
+      "context_events": 34,
+      "generated_at": "2026-01-10T23:37:05.623498"
+    }
+  }
+}

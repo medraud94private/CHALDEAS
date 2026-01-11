@@ -1,0 +1,2743 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-08T15:41:34.040977",
+    "db_events_count": 50,
+    "ner_events_count": 10000
+  },
+  "statistics": {
+    "total_db_events": 50,
+    "auto_match": 5,
+    "review": 1,
+    "no_match": 44,
+    "avg_top_score": 78.4,
+    "score_distribution": {
+      "40": 1,
+      "60": 2,
+      "70": 25,
+      "80": 19,
+      "90": 2,
+      "100": 1
+    }
+  },
+  "matches": {
+    "2": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.87096774193549,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 83.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.9
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건의 장소와 연도가 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        }
+      },
+      {
+        "ner_source_id": "000045172_01_text",
+        "ner_name": "Battle of Pensacola",
+        "ner_year": 1861,
+        "ner_source_type": "unknown",
+        "score": 76.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 80,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 76.0
+        }
+      }
+    ],
+    "5": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.6,
+          "reason": "두 사건의 장소가 다르고, E2는 연도 정보가 없어 일치 여부를 확실히 판단하기 어렵습니다."
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.58823529411765,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.6
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.57142857142857,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.6
+        }
+      }
+    ],
+    "6": [
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.17073170731707,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 73.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.2
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.95,
+          "reason": "두 사건의 장소와 연도가 다릅니다. Battle of the Golden Spurs는 1302년에 Cortoriacum에서 일어났고, Battle of Tours는 다른 시점과 장소에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000034837_01_text",
+        "ner_name": "Battle of the Life",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "7": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났으며 관련 인물도 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      },
+      {
+        "ner_source_id": "000084239_01_text",
+        "ner_name": "Battle of Ghuzni",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.58823529411765,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.6
+        }
+      }
+    ],
+    "9": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.99,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났습니다. Battle of Jaxartes는 기원전 329년에 알렉산드리아 에스카테에서 일어난 전투이고, Battle of Orthes는 1814년 오르테즈에서 일어난 전투입니다."
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      }
+    ],
+    "11": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.6,
+          "reason": "두 사건의 장소와 관련 인물이 다릅니다. Battle of Civitate는 Corneli에서 일어났고, Battle of Nizit는 Constantinople, Ismid, Chalcedon과 관련되어 있습니다."
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      }
+    ],
+    "12": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 84.84848484848484,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 84.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 84.8
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건의 장소와 연도가 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      }
+    ],
+    "14": [
+      {
+        "ner_source_id": "000084719_02_text",
+        "ner_name": "Battle of Vera Cruz",
+        "ner_year": 1847,
+        "ner_source_type": "unknown",
+        "score": 77.55555555555554,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 77.6
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.95,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났습니다. Battle of Custoza는 1848년에 이탈리아에서 일어난 반면, Battle of Vera Cruz는 1847년에 멕시코에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      },
+      {
+        "ner_source_id": "000136958_01_text",
+        "ner_name": "Battle of Suez?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      }
+    ],
+    "17": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.17073170731707,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 73.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.2
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 장소와 관련된 전투입니다. Battle of White Mountain은 Thirty Years' War의 일부였지만, Battle of Limonet은 Augereau와 Lyons군이 관여한 전투입니다."
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.17073170731707,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.2
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        }
+      }
+    ],
+    "18": [
+      {
+        "ner_source_id": "000042862_05_text",
+        "ner_name": "Battle of Santa Fe",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 84.21052631578947,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 84.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 84.2
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.99,
+          "reason": "두 사건은 다른 장소와 시기에 일어났습니다. Battle of Saint-Omer는 1340년 프랑스에서, Battle of Santa Fe는 스페인의 Santa Fe에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      }
+    ],
+    "19": [
+      {
+        "ner_source_id": "000084232_01_text",
+        "ner_name": "Battle of Sadowa",
+        "ner_year": 1866,
+        "ner_source_type": "unknown",
+        "score": 73.66666666666666,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 73.7
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 1.0,
+          "reason": "두 전투는 다른 시기에, 다른 장소에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000145108_01_text",
+        "ner_name": "Battle of Mentana",
+        "ner_year": 1867,
+        "ner_source_type": "unknown",
+        "score": 73.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 80,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 73.0
+        }
+      },
+      {
+        "ner_source_id": "000060900_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      }
+    ],
+    "20": [
+      {
+        "ner_source_id": "000034837_01_text",
+        "ner_name": "Battle of the Life",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 91.42857142857143,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 91.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 91.4
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 85.71428571428571,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 85.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 85.7
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 85.71428571428571,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 85.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 85.7
+        }
+      }
+    ],
+    "21": [
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        },
+        "ai_result": {
+          "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30)",
+          "is_same": null
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "22": [
+      {
+        "ner_source_id": "000052378_08_text",
+        "ner_name": "Battle of Canton storming",
+        "ner_year": 1841,
+        "ner_source_type": "unknown",
+        "score": 76.4,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 52.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 76.4
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건의 장소와 관련된 정보가 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.11627906976744,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.1
+        }
+      }
+    ],
+    "23": [
+      {
+        "ner_source_id": "000043280_01_text",
+        "ner_name": "Battle of Blenheim",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 85.71428571428571,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 85.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 85.7
+        }
+      },
+      {
+        "ner_source_id": "000034928_03_text",
+        "ner_name": "battle of Naseby",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Hexham",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "24": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났으며 관련 인물도 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      },
+      {
+        "ner_source_id": "000005389_01_text",
+        "ner_name": "Battle of Lake Regillus",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "25": [
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.95,
+          "reason": "두 사건은 다른 장소와 시기에 일어났습니다. Battle of Jarama는 스페인의 Jarama Valley에서 1937년에 일어난 스페인 내전의 전투였고, Battle of Rome은 로마에서 일어난 것으로 추정됩니다."
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      }
+    ],
+    "26": [
+      {
+        "ner_source_id": "000034607_01_text",
+        "ner_name": "battle of Placenza",
+        "ner_year": 1746,
+        "ner_source_type": "unknown",
+        "score": 83.30882352941175,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 64.7,
+          "year_score": 100,
+          "person_score": 25.0,
+          "location_score": 0,
+          "weights": "t:0.65,y:0.30,p:0.05,l:0.00",
+          "total_score": 83.3
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.6,
+          "reason": "두 사건은 같은 연도에 일어났지만, 장소와 참전 세력이 다릅니다. Rocoux 전투는 프랑스 승리로 끝난 반면 Placenza 전투는 오스트리아의 승리로 알려져 있습니다."
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "27": [
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났습니다. 첫 번째는 십자군 전쟁의 일부였고 두 번째는 알프레드 대왕과 관련이 있습니다."
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Merxem",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "29": [
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Mohilow",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.67567567567568,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 75.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.7
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 장소와 시대적 배경을 가지고 있습니다."
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      },
+      {
+        "ner_source_id": "000060900_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      }
+    ],
+    "30": [
+      {
+        "ner_source_id": "000034928_03_text",
+        "ner_name": "battle of Naseby",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.2,
+          "reason": "두 사건의 장소와 연도가 다르며, 관련 인물 정보만으로는 동일성을 확신하기 어렵습니다."
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "31": [
+      {
+        "ner_source_id": "000052364_08_text",
+        "ner_name": "Battle of Saguntum",
+        "ner_year": 1810,
+        "ner_source_type": "unknown",
+        "score": 78.72340425531914,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 55.3,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 78.7
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.95,
+          "reason": "두 사건은 다른 장소와 관련된 전투입니다. Battle of Monte de las Cruces는 멕시코 독립 전쟁의 일부였고, Battle of Saguntum은 스페인과 프랑스 사이의 전투였습니다."
+        }
+      },
+      {
+        "ner_source_id": "000037770_03_text",
+        "ner_name": "Juramento de las Cortes de Cádiz",
+        "ner_year": 1810,
+        "ner_source_type": "unknown",
+        "score": 76.72131147540983,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 52.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 76.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Mortimer's Cross",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "32": [
+      {
+        "ner_source_id": "000101705_01_text",
+        "ner_name": "siege of Cyprus",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.33333333333333,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 73.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.3
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.99,
+          "reason": "두 사건의 장소와 시대가 다릅니다. 첫 번째 사건은 러시아의 Vyborg에서 1706년에 일어난 대북방전쟁 중 포위전이며 두 번째 사건은 키프로스를 배경으로 하는 포위전입니다."
+        }
+      },
+      {
+        "ner_source_id": "000018108_01_text",
+        "ner_name": "Siege of Acre",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      },
+      {
+        "ner_source_id": "000093187_01_text",
+        "ner_name": "siege of Acre",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      }
+    ],
+    "33": [
+      {
+        "ner_source_id": "000048378_02_text",
+        "ner_name": "Attack on the Kat River Settlement",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 60.317460317460316,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 60.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 60.3
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 장소와 시대적 배경을 가지고 있습니다."
+        }
+      },
+      {
+        "ner_source_id": "000047805_01_text",
+        "ner_name": "death of the poor friend",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 56.60377358490566,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 56.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 56.6
+        }
+      },
+      {
+        "ner_source_id": "000058810_01_text",
+        "ner_name": "A Tale of the Crimean War",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 55.55555555555556,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 55.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 55.6
+        }
+      }
+    ],
+    "34": [
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.99,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났습니다. Battle of Grunwald는 1410년에 폴란드에서 열렸고, Battle of lde는 영국에서 알프레드 대왕과 관련이 있습니다."
+        }
+      },
+      {
+        "ner_source_id": "000084239_01_text",
+        "ner_name": "Battle of Ghuzni",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "35": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.25,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 81.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.2
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건의 장소와 연도가 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.25,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.2
+        }
+      },
+      {
+        "ner_source_id": "000074634_01_text",
+        "ner_name": "Battle of Tofrik",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "36": [
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Smolensk",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.95,
+          "reason": "두 전투는 다른 시대와 장소에서 일어났습니다. Battle of Soissons는 718년 프랑스에서, Battle of Smolensk는 나폴레옹 전쟁 중인 1812년 러시아에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Mohilow",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "37": [
+      {
+        "ner_source_id": "000150264_01_text",
+        "ner_name": "Battle at Joazong",
+        "ner_year": 1827,
+        "ner_source_type": "unknown",
+        "score": 84.0,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 62.9,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.0
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 지역과 참전군에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "38": [
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.91304347826086,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 73.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.9
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건의 이름과 장소가 다릅니다. Battle of the Persian Gate는 페르시아 문 근처에서 일어났고, Battle of the Briton은 영국에서 일어난 것으로 추정됩니다."
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "39": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Merxem",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.2,
+          "reason": "두 사건의 연도와 관련 인물이 다르며, 장소 이름도 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      }
+    ],
+    "40": [
+      {
+        "ner_source_id": "000017041_01_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 88.125,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 68.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 88.1
+        }
+      },
+      {
+        "ner_source_id": "000017042_02_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 88.125,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 68.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 88.1
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "41": [
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "AI_VERIFIED",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        },
+        "ai_result": {
+          "is_same": true,
+          "confidence": 0.95,
+          "reason": "두 이벤트 모두 Battle of Pavia를 언급하며, 같은 연도(1525)와 장소(Ticinum)를 가진다."
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000157377_01_text",
+        "ner_name": "Battle of",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      }
+    ],
+    "45": [
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.75862068965517,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 82.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.8
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났습니다.  Battle of Denain은 1712년 프랑스에서 일어난 전투이고, Battle of lde는 알프레드 대왕과 관련된 영국의 전투입니다."
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "46": [
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건의 장소와 시대가 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.57142857142857,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.6
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.57142857142857,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.6
+        }
+      }
+    ],
+    "47": [
+      {
+        "ner_source_id": "000004402_01_text",
+        "ner_name": "battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 74.8048780487805,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 74.8
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.95,
+          "reason": "두 사건은 다른 장소에서 일어났고, 다른 해에 발생했습니다."
+        }
+      },
+      {
+        "ner_source_id": "000055429_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 74.8048780487805,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 74.8
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      }
+    ],
+    "48": [
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "AI_VERIFIED",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        },
+        "ai_result": {
+          "is_same": true,
+          "confidence": 0.95,
+          "reason": "두 이벤트 모두 1030년에 아랍과 비잔틴 제국 사이의 전투로,  Ḫazāzu 지역에서 일어났다고 언급합니다."
+        }
+      },
+      {
+        "ner_source_id": "000157377_01_text",
+        "ner_name": "Battle of",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.26086956521739,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.3
+        }
+      },
+      {
+        "ner_source_id": "000018173_05_text",
+        "ner_name": "Battle of",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.26086956521739,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.3
+        }
+      }
+    ],
+    "51": [
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.6,
+          "reason": "두 사건의 장소가 다르고, E2는 연도 정보가 없으며 관련 인물만 제공합니다."
+        }
+      },
+      {
+        "ner_source_id": "000043280_01_text",
+        "ner_name": "Battle of Blenheim",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "52": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of St. Albans",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.95,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났습니다. Battle of Westkapelle는 1253년 Domburg에서 일어난 반면, Battle of St. Albans는 중세 영국에서 Edward IV와 Lancastrians 사이의 전투입니다."
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.42105263157895,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.4
+        }
+      },
+      {
+        "ner_source_id": "000085389_01_text",
+        "ner_name": "Battle of Heathfield",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.29268292682927,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.3
+        }
+      }
+    ],
+    "53": [
+      {
+        "ner_source_id": "000119514_02_text",
+        "ner_name": "assault",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 48.275862068965516,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 48.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 48.3
+        }
+      },
+      {
+        "ner_source_id": "000033385_02_text",
+        "ner_name": "pursuit and assault in the streets of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 43.75,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 43.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 43.8
+        }
+      },
+      {
+        "ner_source_id": "000226598_01_text",
+        "ner_name": "Survey of Manor",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 43.24324324324324,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 43.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 43.2
+        }
+      }
+    ],
+    "54": [
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 66.66666666666666,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 66.7
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 장소와 시기에 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000034858_02_text",
+        "ner_name": "The Battle of ...",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 66.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 66.7
+        }
+      },
+      {
+        "ner_source_id": "000042862_05_text",
+        "ner_name": "Battle of Santa Fe",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.0
+        }
+      }
+    ],
+    "55": [
+      {
+        "ner_source_id": "000055429_01_text",
+        "ner_name": "Battle of Bunker Hill",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 84.39024390243902,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 63.4,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.4
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.8,
+          "reason": "두 전투는 같은 해에 일어났지만, 다른 장소에서 일어났고, Battle of Bunker Hill은 Charlestown (Bunker Hill)에서 일어났으며, Battle of Gloucester는 Gloucester, Massachusetts에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000004402_01_text",
+        "ner_name": "battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 83.07692307692307,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 61.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.1
+        }
+      },
+      {
+        "ner_source_id": "000055429_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 83.07692307692307,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 61.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.1
+        }
+      }
+    ],
+    "66": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건의 장소와 관련 인물이 다릅니다."
+        }
+      },
+      {
+        "ner_source_id": "000084239_01_text",
+        "ner_name": "Battle of Ghuzni",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Hexham",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      }
+    ],
+    "67": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.0,
+          "reason": "두 사건은 다른 장소와 관련 인물을 가지고 있습니다."
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Toulouse",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      }
+    ],
+    "68": [
+      {
+        "ner_source_id": "000017041_01_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 95.15151515151514,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 95.2
+        }
+      },
+      {
+        "ner_source_id": "000017042_02_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 95.15151515151514,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 95.2
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      }
+    ],
+    "70": [
+      {
+        "ner_source_id": "000052367_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 84.21052631578948,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 63.2,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.2
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.8,
+          "reason": "두 사건은 다른 전쟁에서 일어났습니다. DB는 포르투의 두 번째 전투를 언급하고 NER는 아스퍼른 전투를 언급합니다."
+        }
+      },
+      {
+        "ner_source_id": "000052369_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 84.21052631578948,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.2,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.2
+        }
+      },
+      {
+        "ner_source_id": "000052374_01_text",
+        "ner_name": "Battle of Corunna",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 83.07692307692307,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 61.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.1
+        }
+      }
+    ],
+    "71": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Agincourt",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 1.0,
+          "reason": "두 사건은 다른 시대와 장소에서 일어났습니다. Battle of Ain Jalut는 1260년에 발생한 Mamluk Sultanate와 Mongol Empire의 전투이고, Battle of Agincourt는 1415년에 발생한 Henry V가 이끄는 영국군과 프랑스군의 전투입니다."
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.67567567567568,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "72": [
+      {
+        "ner_source_id": "000216074_01_text",
+        "ner_name": "Second Battle of Valestinos",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.37037037037037,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 70.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.4
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.6,
+          "reason": "두 사건은 같은 장소에서 일어났지만, 이름이 다르고  Second Battle of Valestinos는 연도 정보가 없습니다."
+        }
+      },
+      {
+        "ner_source_id": "000043280_01_text",
+        "ner_name": "Battle of Blenheim",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 66.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 66.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.11627906976744,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.1
+        }
+      }
+    ],
+    "73": [
+      {
+        "ner_source_id": "000017041_01_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 79.48717948717947,
+        "classification": "AI_VERIFIED",
+        "details": {
+          "title_score": 56.4,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 79.5
+        },
+        "ai_result": {
+          "is_same": true,
+          "confidence": 0.95,
+          "reason": "두 사건 모두 1757년에 방글라데시의 플래시에서 일어난 영국군과 방갈 지도자 사이의 전투를 설명합니다. Chandannagar는 Plassey 근처 도시이므로 두 사건은 같은 전투를 가리키는 것으로 보입니다."
+        }
+      },
+      {
+        "ner_source_id": "000017042_02_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 79.48717948717947,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 56.4,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 79.5
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        }
+      }
+    ],
+    "76": [
+      {
+        "ner_source_id": "000214807_02_text",
+        "ner_name": "Battle of Mantinea",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 100.0,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 100.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 100.0
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        }
+      }
+    ],
+    "78": [
+      {
+        "ner_source_id": "000042862_05_text",
+        "ner_name": "Battle of Santa Fe",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "AI_REJECTED",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        },
+        "ai_result": {
+          "is_same": false,
+          "confidence": 0.99,
+          "reason": "두 사건은 다른 장소와 시기에 일어났습니다. Battle of Shizugatake는 일본에서 1583년에 일어난 전투이고, Battle of Santa Fe는 미국 뉴멕시코주 산타페에서 일어났습니다."
+        }
+      },
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      },
+      {
+        "ner_source_id": "000085389_01_text",
+        "ner_name": "Battle of Heathfield",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.29268292682927,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.3
+        }
+      }
+    ]
+  }
+}

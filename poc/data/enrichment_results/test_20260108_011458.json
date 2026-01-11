@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "model": "gpt-5.1-chat-latest",
+    "count": 5,
+    "timestamp": "20260108_011458",
+    "total_input_tokens": 4856,
+    "total_output_tokens": 1270,
+    "estimated_cost": 0.04333
+  },
+  "results": [
+    {
+      "id": 424,
+      "record_type": "event",
+      "title_clean": "Battle of Monte Porzio",
+      "title_ko": "몬테 포르치오 전투",
+      "year_start": 1167,
+      "year_end": 1167,
+      "year_precision": "year",
+      "era": "MEDIEVAL",
+      "temporal_scale": "evenementielle",
+      "location_name": "Monte Porzio",
+      "location_modern": "Monte Porzio Catone, Italy",
+      "latitude": 41.81,
+      "longitude": 12.72,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "Medieval Italian",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 962,
+        "output": 256
+      }
+    },
+    {
+      "id": 3137,
+      "record_type": "event",
+      "title_clean": "Battle of Sutherland's Station",
+      "title_ko": "서덜랜드스 스테이션 전투",
+      "year_start": 1865,
+      "year_end": 1865,
+      "year_precision": "year",
+      "era": "MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Sutherland's Station, Virginia",
+      "location_modern": "Sutherland, Virginia, United States",
+      "latitude": 37.2,
+      "longitude": -77.5,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "American",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 970,
+        "output": 260
+      }
+    },
+    {
+      "id": 3302,
+      "record_type": "event",
+      "title_clean": "Battle of Leeds",
+      "title_ko": "리즈 전투",
+      "year_start": 1643,
+      "year_end": 1643,
+      "year_precision": "exact",
+      "era": "EARLY_MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Leeds",
+      "location_modern": "Leeds, United Kingdom",
+      "latitude": 53.8008,
+      "longitude": -1.5491,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "English",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 988,
+        "output": 248
+      }
+    },
+    {
+      "id": 6285,
+      "record_type": "event",
+      "title_clean": "Optional Protocol to the Convention on the Rights of the Child on a Communications Procedure",
+      "title_ko": "아동권리협약 선택의정서: 진정 절차",
+      "year_start": 2011,
+      "year_end": 2011,
+      "year_precision": "year",
+      "era": "CONTEMPORARY",
+      "temporal_scale": "evenementielle",
+      "location_name": "",
+      "location_modern": "",
+      "latitude": null,
+      "longitude": null,
+      "location_type": "other",
+      "location_confidence": "none",
+      "category": "treaty",
+      "civilization": "",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 976,
+        "output": 191
+      }
+    },
+    {
+      "id": 76240,
+      "record_type": "article",
+      "title_clean": "The Harwich Guide",
+      "title_ko": "해리치 안내서",
+      "year_start": 1808,
+      "year_end": 1808,
+      "year_precision": "year",
+      "era": "MODERN",
+      "temporal_scale": "conjuncture",
+      "location_name": "Harwich",
+      "location_modern": "Harwich, United Kingdom",
+      "latitude": 51.943,
+      "longitude": 1.286,
+      "location_type": "city",
+      "location_confidence": "medium",
+      "category": "other",
+      "civilization": "British",
+      "confidence": "medium",
+      "needs_review": false,
+      "_tokens": {
+        "input": 960,
+        "output": 315
+      }
+    }
+  ]
+}

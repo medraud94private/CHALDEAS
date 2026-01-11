@@ -1,0 +1,239 @@
+/**
+ * TimelapseControls.css - Time travel animation styles
+ * FGO-inspired design with cyan/gold accents
+ */
+
+.timelapse-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background: rgba(10, 14, 23, 0.95);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+/* Main Control Buttons */
+.timelapse-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timelapse-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 50%;
+  color: var(--chaldea-text-bright);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.timelapse-btn:hover {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: rgba(0, 212, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.timelapse-btn:active {
+  transform: scale(0.95);
+}
+
+.timelapse-skip {
+  width: 32px;
+  height: 32px;
+  font-size: 0.9rem;
+}
+
+.timelapse-play {
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+}
+
+.timelapse-play.playing {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.3) 0%, rgba(168, 85, 247, 0.3) 100%);
+  border-color: var(--chaldea-cyan);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+  }
+}
+
+/* Progress Bar */
+.timelapse-progress-container {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.timelapse-progress-bar {
+  position: relative;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timelapse-progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--chaldea-cyan) 0%, #a855f7 100%);
+  border-radius: 4px;
+  transition: width 0.1s linear;
+}
+
+.timelapse-position {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: var(--chaldea-cyan);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+  z-index: 2;
+  transition: left 0.1s linear;
+}
+
+.timelapse-era-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background: rgba(251, 191, 36, 0.6);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.timelapse-era-marker:hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  background: #fbbf24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.8);
+}
+
+/* Year Display */
+.timelapse-year-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.timelapse-year-display .current-year {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--chaldea-cyan);
+  font-weight: 600;
+}
+
+.timelapse-year-display .current-era {
+  color: var(--chaldea-text);
+  opacity: 0.7;
+}
+
+/* Speed Controls */
+.timelapse-speed {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timelapse-speed .speed-label {
+  font-size: 0.7rem;
+  color: var(--chaldea-text);
+  opacity: 0.7;
+}
+
+.timelapse-speed .speed-presets {
+  display: flex;
+  gap: 4px;
+}
+
+.timelapse-speed .speed-btn {
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: var(--chaldea-text);
+  font-size: 0.65rem;
+  font-family: 'Roboto Mono', monospace;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timelapse-speed .speed-btn:hover {
+  background: rgba(0, 212, 255, 0.15);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.timelapse-speed .speed-btn.active {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: var(--chaldea-cyan);
+  color: var(--chaldea-cyan);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timelapse-controls {
+    flex-wrap: wrap;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .timelapse-main {
+    order: 1;
+  }
+
+  .timelapse-progress-container {
+    order: 3;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .timelapse-speed {
+    order: 2;
+  }
+
+  .timelapse-speed .speed-label {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .timelapse-play {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .timelapse-skip {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .timelapse-speed .speed-btn {
+    padding: 3px 6px;
+    font-size: 0.6rem;
+  }
+}

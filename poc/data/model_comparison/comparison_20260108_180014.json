@@ -1,0 +1,795 @@
+{
+  "metadata": {
+    "timestamp": "20260108_180014",
+    "event_count": 10,
+    "models_tested": [
+      "gpt-5.1-chat-latest",
+      "gpt-5-nano",
+      "gemma2:9b"
+    ]
+  },
+  "comparisons": [
+    {
+      "event_id": 1527,
+      "original_title": "Battle of Brémule",
+      "original_year": 1119,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 2.419409990310669,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 1.160693883895874,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of Brémule",
+          "year_start": 1119,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Brémule, France",
+          "elapsed_sec": 44.19,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 29069,
+      "original_title": "Battle of Kaprolat",
+      "original_year": 1944,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 1.2238388061523438,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.947697639465332,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of Kaprolat",
+          "year_start": 1944,
+          "record_type": "event",
+          "category": "battle",
+          "location": null,
+          "elapsed_sec": 32.47,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 3632,
+      "original_title": "Battle of Altafulla",
+      "original_year": 1812,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.3204483985900879,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 1.5819261074066162,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of Altafulla",
+          "year_start": 1812,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Altafulla, Spain",
+          "elapsed_sec": 36.25,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 709,
+      "original_title": "Battle of Épinal",
+      "original_year": 1814,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 1.0850017070770264,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.7308170795440674,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of Épinal",
+          "year_start": 1814,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Épinal, France",
+          "elapsed_sec": 35.98,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 9657,
+      "original_title": "Siege of Ostend",
+      "original_year": 1601,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 2.066770315170288,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.2594282627105713,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Siege of Ostend",
+          "year_start": 1601,
+          "record_type": "event",
+          "category": "war",
+          "location": "Ostend, Belgium",
+          "elapsed_sec": 34.66,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 6561,
+      "original_title": "Treaty of Kyakhta",
+      "original_year": 1727,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.49370598793029785,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.27029871940612793,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Treaty of Kyakhta",
+          "year_start": 1727,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Kyakhta, Russia",
+          "elapsed_sec": 36.76,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 1956,
+      "original_title": "Ual-Ual Incident",
+      "original_year": 1934,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.38808751106262207,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.27052855491638184,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Ual-Ual Incident",
+          "year_start": 1934,
+          "record_type": "event",
+          "category": "battle",
+          "location": null,
+          "elapsed_sec": 31.99,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 9907,
+      "original_title": "Siege of Massilia",
+      "original_year": 413,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.9940037727355957,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.21622753143310547,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Siege of Massilia",
+          "year_start": 413,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Marseille, France",
+          "elapsed_sec": 35.34,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 348948,
+      "original_title": "Entrée d'Erard de la Marck à Liège",
+      "original_year": 1506,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.27125120162963867,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.22921442985534668,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Entry of Erard de la Marck into Liege",
+          "year_start": 1506,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Liège, Belgium",
+          "elapsed_sec": 37.63,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 339210,
+      "original_title": "PREFACE TO THE THIRTEENTH EDITION",
+      "original_year": 1868,
+      "models": {
+        "gpt-5.1-chat-latest": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.24402976036071777,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.21022939682006836,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Preface to the Thirteenth Edition",
+          "year_start": 1868,
+          "record_type": "article",
+          "category": "other",
+          "location": null,
+          "elapsed_sec": 32.85,
+          "error": null
+        }
+      }
+    }
+  ],
+  "raw_results": [
+    {
+      "event": {
+        "id": 1527,
+        "title": "Battle of Brémule",
+        "description": "1119 battle between Henry I of England and Louis VI the Fat of France",
+        "year": 1119
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 1527,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 2.419409990310669
+          }
+        },
+        "gpt-5-nano": {
+          "id": 1527,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 1.160693883895874
+          }
+        },
+        "gemma2:9b": {
+          "id": 1527,
+          "record_type": "event",
+          "title_clean": "Battle of Brémule",
+          "year_start": 1119,
+          "year_end": 1119,
+          "era": "MEDIEVAL",
+          "location_name": "Brémule",
+          "location_modern": "Brémule, France",
+          "latitude": 48.75,
+          "longitude": 2.6,
+          "category": "battle",
+          "civilization": "Frankish",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 44.19
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 29069,
+        "title": "Battle of Kaprolat",
+        "description": "battle event",
+        "year": 1944
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 29069,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 1.2238388061523438
+          }
+        },
+        "gpt-5-nano": {
+          "id": 29069,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.947697639465332
+          }
+        },
+        "gemma2:9b": {
+          "id": 29069,
+          "record_type": "event",
+          "title_clean": "Battle of Kaprolat",
+          "year_start": 1944,
+          "year_end": 1944,
+          "era": "CONTEMPORARY",
+          "location_name": "Kaprolat",
+          "location_modern": null,
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": null,
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 32.47
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 3632,
+        "title": "Battle of Altafulla",
+        "description": "1812 battle during the Peninsular War",
+        "year": 1812
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 3632,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 0.3204483985900879
+          }
+        },
+        "gpt-5-nano": {
+          "id": 3632,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 1.5819261074066162
+          }
+        },
+        "gemma2:9b": {
+          "id": 3632,
+          "record_type": "event",
+          "title_clean": "Battle of Altafulla",
+          "year_start": 1812,
+          "year_end": 1812,
+          "era": "EARLY_MODERN",
+          "location_name": "Altafulla",
+          "location_modern": "Altafulla, Spain",
+          "latitude": 41.05,
+          "longitude": 1.13,
+          "category": "battle",
+          "civilization": "Spanish",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 36.25
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 709,
+        "title": "Battle of Épinal",
+        "description": "1814 battle",
+        "year": 1814
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 709,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 1.0850017070770264
+          }
+        },
+        "gpt-5-nano": {
+          "id": 709,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.7308170795440674
+          }
+        },
+        "gemma2:9b": {
+          "id": 709,
+          "record_type": "event",
+          "title_clean": "Battle of Épinal",
+          "year_start": 1814,
+          "year_end": 1814,
+          "era": "EARLY_MODERN",
+          "location_name": "Épinal",
+          "location_modern": "Épinal, France",
+          "latitude": 48.07,
+          "longitude": 6.59,
+          "category": "battle",
+          "civilization": "French",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 35.98
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 9657,
+        "title": "Siege of Ostend",
+        "description": "1604 three-year siege during the Eighty Years' War",
+        "year": 1601
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 9657,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 2.066770315170288
+          }
+        },
+        "gpt-5-nano": {
+          "id": 9657,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.2594282627105713
+          }
+        },
+        "gemma2:9b": {
+          "id": 9657,
+          "record_type": "event",
+          "title_clean": "Siege of Ostend",
+          "year_start": 1601,
+          "year_end": 1604,
+          "era": "EARLY_MODERN",
+          "location_name": "Ostend",
+          "location_modern": "Ostend, Belgium",
+          "latitude": 51.2,
+          "longitude": 3.4,
+          "category": "war",
+          "civilization": "Dutch",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 34.66
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 6561,
+        "title": "Treaty of Kyakhta",
+        "description": "1727 treaty between Qing China and Imperial Russia",
+        "year": 1727
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 6561,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 0.49370598793029785
+          }
+        },
+        "gpt-5-nano": {
+          "id": 6561,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.27029871940612793
+          }
+        },
+        "gemma2:9b": {
+          "id": 6561,
+          "record_type": "event",
+          "title_clean": "Treaty of Kyakhta",
+          "year_start": 1727,
+          "year_end": 1727,
+          "era": "EARLY_MODERN",
+          "location_name": "Kyakhta",
+          "location_modern": "Kyakhta, Russia",
+          "latitude": 50.9333,
+          "longitude": 108.6667,
+          "category": "politics",
+          "civilization": "Qing China",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 36.76
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 1956,
+        "title": "Ual-Ual Incident",
+        "description": "1934 battle",
+        "year": 1934
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 1956,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 0.38808751106262207
+          }
+        },
+        "gpt-5-nano": {
+          "id": 1956,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.27052855491638184
+          }
+        },
+        "gemma2:9b": {
+          "id": 1956,
+          "record_type": "event",
+          "title_clean": "Ual-Ual Incident",
+          "year_start": 1934,
+          "year_end": 1934,
+          "era": "CONTEMPORARY",
+          "location_name": null,
+          "location_modern": null,
+          "latitude": null,
+          "longitude": null,
+          "category": "battle",
+          "civilization": null,
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 31.99
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 9907,
+        "title": "Siege of Massilia",
+        "description": "military battle in 413 against the Roman city of Massilia, during the invasion of Visigoths in Gallia Narbonensis",
+        "year": 413
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 9907,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 0.9940037727355957
+          }
+        },
+        "gpt-5-nano": {
+          "id": 9907,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.21622753143310547
+          }
+        },
+        "gemma2:9b": {
+          "id": 9907,
+          "record_type": "event",
+          "title_clean": "Siege of Massilia",
+          "year_start": 413,
+          "year_end": 413,
+          "era": "EARLY_MODERN",
+          "location_name": "Massilia",
+          "location_modern": "Marseille, France",
+          "latitude": 43.29,
+          "longitude": 5.37,
+          "category": "battle",
+          "civilization": "Roman",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 35.34
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 348948,
+        "title": "Entrée d'Erard de la Marck à Liège",
+        "description": "[NER] mention_count=1, first_source=002166127_01_text",
+        "year": 1506
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 348948,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 0.27125120162963867
+          }
+        },
+        "gpt-5-nano": {
+          "id": 348948,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.22921442985534668
+          }
+        },
+        "gemma2:9b": {
+          "id": 348948,
+          "record_type": "event",
+          "title_clean": "Entry of Erard de la Marck into Liege",
+          "year_start": 1506,
+          "year_end": 1506,
+          "era": "EARLY_MODERN",
+          "location_name": "Liege",
+          "location_modern": "Liège, Belgium",
+          "latitude": 50.6,
+          "longitude": 5.3,
+          "category": "politics",
+          "civilization": "None",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 37.63
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 339210,
+        "title": "PREFACE TO THE THIRTEENTH EDITION",
+        "description": "[NER] mention_count=1, first_source=001625020_01_text",
+        "year": 1868
+      },
+      "results": {
+        "gpt-5.1-chat-latest": {
+          "id": 339210,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5.1-chat-latest",
+            "elapsed_sec": 0.24402976036071777
+          }
+        },
+        "gpt-5-nano": {
+          "id": 339210,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.21022939682006836
+          }
+        },
+        "gemma2:9b": {
+          "id": 339210,
+          "record_type": "article",
+          "title_clean": "Preface to the Thirteenth Edition",
+          "year_start": 1868,
+          "year_end": 1868,
+          "era": "EARLY_MODERN",
+          "location_name": null,
+          "location_modern": null,
+          "latitude": null,
+          "longitude": null,
+          "category": "other",
+          "civilization": null,
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 32.85
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "model": "gpt-5.1-chat-latest",
+    "count": 10,
+    "timestamp": "20260107_231655",
+    "total_input_tokens": 6247,
+    "total_output_tokens": 2148,
+    "estimated_cost": 0.063455
+  },
+  "results": [
+    {
+      "id": 206,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1997,
+      "record_type": "event",
+      "title_clean": "Battle of Othée",
+      "title_ko": "오테 전투",
+      "year_start": 1408,
+      "year_end": 1408,
+      "year_precision": "year",
+      "era": "MEDIEVAL",
+      "temporal_scale": "evenementielle",
+      "location_name": "Othée",
+      "location_modern": "Othée, Grace-Hollogne, Belgium",
+      "latitude": 50.693,
+      "longitude": 5.438,
+      "location_type": "battlefield",
+      "location_confidence": "high",
+      "category": "battle",
+      "civilization": "Medieval European",
+      "summary_en": "The Battle of Othée in 1408 was a decisive conflict in the Prince-Bishopric of Liège in which forces led by John of Bavaria defeated Liégeois rebels. The victory ended the revolt and consolidated external control over the region.",
+      "summary_ko": "1408년 오테 전투는 리에주 공국의 반란을 진압한 결정적 전투로, 바이에른의 요한이 이끄는 군대가 리에주 반군을 격파하였다. 이 승리는 반란을 종식시키고 지역에 대한 외부 지배를 강화하였다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 990,
+        "output": 391
+      }
+    },
+    {
+      "id": 5026,
+      "record_type": "event",
+      "title_clean": "Ethiopian Northern Resistance",
+      "title_ko": "에티오피아 북부 저항",
+      "year_start": 1928,
+      "year_end": 1930,
+      "year_precision": "year",
+      "era": "MODERN",
+      "temporal_scale": "evenementielle",
+      "location_name": "Northern Ethiopia",
+      "location_modern": "Northern Ethiopia, Ethiopia",
+      "latitude": null,
+      "longitude": null,
+      "location_type": "region",
+      "location_confidence": "medium",
+      "category": "war",
+      "civilization": "Ethiopian",
+      "summary_en": "The Ethiopian Northern Resistance was an inter-state conflict that occurred in northern Ethiopia between 1928 and 1930. It involved regional power struggles during a period of increasing political centralization in Ethiopia.",
+      "summary_ko": "에티오피아 북부 저항은 1928년부터 1930년까지 북부 에티오피아에서 발생한 국가 간 갈등이었다. 이는 에티오피아의 정치적 중앙집권화가 진행되던 시기 지역 권력 간의 충돌이었다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 1007,
+        "output": 363
+      }
+    },
+    {
+      "id": 5857,
+      "record_type": "event",
+      "title_clean": "Convention on the Reduction of Cases of Multiple Nationality and on Military Obligations in Cases of Multiple Nationality",
+      "title_ko": "다중 국적 사례 축소 및 다중 국적자의 군사 의무에 관한 협약",
+      "year_start": 1963,
+      "year_end": 1963,
+      "year_precision": "year",
+      "era": "CONTEMPORARY",
+      "temporal_scale": "evenementielle",
+      "location_name": "Strasbourg",
+      "location_modern": "Strasbourg, France",
+      "latitude": 48.5734,
+      "longitude": 7.7521,
+      "location_type": "city",
+      "location_confidence": "medium",
+      "category": "treaty",
+      "civilization": "European",
+      "summary_en": "A 1963 Council of Europe treaty aimed at reducing cases of multiple nationality and clarifying military obligations for individuals holding more than one nationality.",
+      "summary_ko": "1963년 유럽평의회가 채택한 협약으로, 다중 국적 사례를 줄이고 복수 국적자의 군사 의무를 명확히 하는 것을 목표로 한다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 1009,
+        "output": 307
+      }
+    },
+    {
+      "id": 6123,
+      "record_type": "event",
+      "title_clean": "Treaty of Friendship, Commerce and Navigation between the United States and the Republic of China",
+      "title_ko": "미국-중화민국 우호·통상·항해 조약",
+      "year_start": 1946,
+      "year_end": 1946,
+      "year_precision": "year",
+      "era": "CONTEMPORARY",
+      "temporal_scale": "evenementielle",
+      "location_name": "Nanjing",
+      "location_modern": "Nanjing, China",
+      "latitude": 32.058,
+      "longitude": 118.796,
+      "location_type": "city",
+      "location_confidence": "medium",
+      "category": "treaty",
+      "civilization": "American, Chinese",
+      "summary_en": "A 1946 treaty in which the United States and the Republic of China formalized agreements on friendship, commerce, and navigation. It aimed to strengthen bilateral relations in the early post–World War II era.",
+      "summary_ko": "1946년 미국과 중화민국이 우호·통상·항해에 관한 사항을 공식화한 조약으로, 제2차 세계대전 이후 양국 관계 강화를 목표로 체결되었다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 1009,
+        "output": 380
+      }
+    },
+    {
+      "id": 6740,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 8585,
+      "record_type": "event",
+      "title_clean": "1999 Jiji Earthquake",
+      "title_ko": "1999 지지 지진",
+      "year_start": 1999,
+      "year_end": 1999,
+      "year_precision": "exact",
+      "era": "CONTEMPORARY",
+      "temporal_scale": "evenementielle",
+      "location_name": "Chi-Chi, Nantou",
+      "location_modern": "Jiji (Chi-Chi), Nantou County, Taiwan",
+      "latitude": 23.828,
+      "longitude": 120.786,
+      "location_type": "city",
+      "location_confidence": "high",
+      "category": "other",
+      "civilization": "Taiwanese",
+      "summary_en": "The 1999 Jiji earthquake, also known as the 921 earthquake, struck Nantou County in central Taiwan, causing widespread destruction and heavy casualties. It was one of the most devastating earthquakes in Taiwan’s modern history.",
+      "summary_ko": "1999년 지지 지진(921 지진)은 대만 중부 난터우 현을 강타하여 막대한 피해와 많은 사상자를 낳았다. 이는 대만 현대사에서 가장 파괴적인 지진 중 하나였다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 997,
+        "output": 311
+      }
+    },
+    {
+      "id": 9256,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31056,
+      "record_type": "concept",
+      "title_clean": "Agoge, the Spartan Education Program",
+      "title_ko": "아고게, 스파르타 교육 제도",
+      "year_start": -900,
+      "year_end": -146,
+      "year_precision": "century",
+      "era": "CLASSICAL",
+      "temporal_scale": "longue_duree",
+      "location_name": "Sparta (Lacedaemon)",
+      "location_modern": "Sparti, Greece",
+      "latitude": 37.075,
+      "longitude": 22.429,
+      "location_type": "city",
+      "location_confidence": "high",
+      "category": "culture",
+      "civilization": "Greek",
+      "summary_en": "The agoge was the Spartan state-run education and training system that shaped boys into soldiers loyal to the Spartan state from childhood through adulthood. Instituted traditionally under Lycurgus, it remained central to Spartan society until the Roman conquest of Greece.",
+      "summary_ko": "아고게는 스파르타가 소년을 국가에 충성하는 병사로 양성하기 위해 운영한 국가 주도 교육·훈련 제도였다. 전통적으로 리쿠르고스가 창설한 것으로 여겨지며, 그리스가 로마에 정복될 때까지 스파르타 사회의 핵심이었다.",
+      "confidence": "high",
+      "needs_review": false,
+      "_tokens": {
+        "input": 1235,
+        "output": 396
+      }
+    },
+    {
+      "id": 31106,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "is_valid_event": null,
+      "needs_review": true
+    }
+  ]
+}

@@ -1,0 +1,915 @@
+{
+  "metadata": {
+    "timestamp": "20260108_180714",
+    "event_count": 10,
+    "models_tested": [
+      "gpt-5.1",
+      "gpt-5-nano",
+      "gemma2:9b"
+    ]
+  },
+  "comparisons": [
+    {
+      "event_id": 89018,
+      "original_title": "Battle of the Groeninge Field",
+      "original_year": 1302,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Battle of the Groeninge Field",
+          "year_start": 1302,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Kortrijk, West Flanders, Belgium",
+          "elapsed_sec": 2.97,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.18990683555603027,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of the Groeninge Field",
+          "year_start": 1302,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Ypres, Belgium",
+          "elapsed_sec": 34.11,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 29562,
+      "original_title": "Battle of Tacuarí",
+      "original_year": 1811,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Battle of Tacuarí",
+          "year_start": 1811,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Tacuarí River, Itapúa, Paraguay",
+          "elapsed_sec": 2.56,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.2319483757019043,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of Tacuarí",
+          "year_start": 1811,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Tacuarí, Argentina",
+          "elapsed_sec": 35.18,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 1781,
+      "original_title": "Battle of Zorndorf",
+      "original_year": 1758,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Battle of Zorndorf",
+          "year_start": 1758,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Sarbinowo, Lubusz Voivodeship, Poland",
+          "elapsed_sec": 2.71,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.22143077850341797,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of Zorndorf",
+          "year_start": 1758,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Zorndorf, Germany",
+          "elapsed_sec": 34.88,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 873,
+      "original_title": "Battle of Wenden",
+      "original_year": 1578,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Battle of Wenden",
+          "year_start": 1578,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Cēsis, Latvia",
+          "elapsed_sec": 5.23,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.18659043312072754,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Battle of Wenden",
+          "year_start": 1578,
+          "record_type": "event",
+          "category": "battle",
+          "location": "Ventspils, Latvia",
+          "elapsed_sec": 36.22,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 5906,
+      "original_title": "Treaty of Hampton Court",
+      "original_year": 1562,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Treaty of Hampton Court",
+          "year_start": 1562,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Hampton Court Palace, East Molesey, England, United Kingdom",
+          "elapsed_sec": 2.24,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.18901395797729492,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Treaty of Hampton Court",
+          "year_start": 1562,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Richmond upon Thames, England",
+          "elapsed_sec": 36.07,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 6222,
+      "original_title": "Treaty of Aleppo",
+      "original_year": -1300,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Treaty of Aleppo",
+          "year_start": -1300,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Aleppo, Syria",
+          "elapsed_sec": 2.65,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.22556090354919434,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Treaty of Aleppo",
+          "year_start": -1300,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Aleppo, Syria",
+          "elapsed_sec": 35.72,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 4998,
+      "original_title": "Roman–Bosporan War",
+      "original_year": 45,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Roman–Bosporan War",
+          "year_start": 44,
+          "record_type": "war",
+          "category": "war",
+          "location": "Kerch Strait region, Russia/Ukraine",
+          "elapsed_sec": 2.56,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.337601900100708,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Roman–Bosporan War",
+          "year_start": -45,
+          "record_type": "war",
+          "category": "war",
+          "location": "Crimea, Ukraine",
+          "elapsed_sec": 36.76,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 29666,
+      "original_title": "1976 Argentine Coup d'État",
+      "original_year": 1976,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "1976 Argentine Coup d'État",
+          "year_start": 1976,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Buenos Aires, Argentina",
+          "elapsed_sec": 2.33,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.4071660041809082,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "1976 Argentine Coup d'État",
+          "year_start": 1976,
+          "record_type": "event",
+          "category": "politics",
+          "location": "Buenos Aires, Argentina",
+          "elapsed_sec": 36.95,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 383754,
+      "original_title": "Elizabeth Canning case",
+      "original_year": 1753,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Elizabeth Canning Case",
+          "year_start": 1753,
+          "record_type": "event",
+          "category": "other",
+          "location": "London, United Kingdom",
+          "elapsed_sec": 2.59,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.19348669052124023,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Elizabeth Canning Case",
+          "year_start": 1753,
+          "record_type": "event",
+          "category": "politics",
+          "location": null,
+          "elapsed_sec": 31.6,
+          "error": null
+        }
+      }
+    },
+    {
+      "event_id": 372898,
+      "original_title": "rättelse/utgivning av band",
+      "original_year": 1862,
+      "models": {
+        "gpt-5.1": {
+          "title_clean": "Correction / Publication of Volume",
+          "year_start": 1862,
+          "record_type": "event",
+          "category": "culture",
+          "location": null,
+          "elapsed_sec": 2.14,
+          "error": null
+        },
+        "gpt-5-nano": {
+          "title_clean": "N/A",
+          "year_start": null,
+          "record_type": "N/A",
+          "category": "N/A",
+          "location": "N/A",
+          "elapsed_sec": 0.21777939796447754,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}"
+        },
+        "gemma2:9b": {
+          "title_clean": "Correction/Publication of Band",
+          "year_start": 1862,
+          "record_type": "event",
+          "category": "culture",
+          "location": null,
+          "elapsed_sec": 32.2,
+          "error": null
+        }
+      }
+    }
+  ],
+  "raw_results": [
+    {
+      "event": {
+        "id": 89018,
+        "title": "Battle of the Groeninge Field",
+        "description": "",
+        "year": 1302
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 89018,
+          "record_type": "event",
+          "title_clean": "Battle of the Groeninge Field",
+          "year_start": 1302,
+          "year_end": 1302,
+          "era": "MEDIEVAL",
+          "location_name": "Groeninge Field, near Kortrijk, County of Flanders",
+          "location_modern": "Kortrijk, West Flanders, Belgium",
+          "latitude": 50.828,
+          "longitude": 3.264,
+          "category": "battle",
+          "civilization": "Flemish",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.97,
+            "input_tokens": 379,
+            "output_tokens": 141
+          }
+        },
+        "gpt-5-nano": {
+          "id": 89018,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.18990683555603027
+          }
+        },
+        "gemma2:9b": {
+          "id": 89018,
+          "record_type": "event",
+          "title_clean": "Battle of the Groeninge Field",
+          "year_start": 1302,
+          "year_end": 1302,
+          "era": "MEDIEVAL",
+          "location_name": "Groeninge Field",
+          "location_modern": "Ypres, Belgium",
+          "latitude": 50.8,
+          "longitude": 3.0,
+          "category": "battle",
+          "civilization": "Flemish",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 34.11
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 29562,
+        "title": "Battle of Tacuarí",
+        "description": "battle event",
+        "year": 1811
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 29562,
+          "record_type": "event",
+          "title_clean": "Battle of Tacuarí",
+          "year_start": 1811,
+          "year_end": 1811,
+          "era": "MODERN",
+          "location_name": "Tacuarí River",
+          "location_modern": "Tacuarí River, Itapúa, Paraguay",
+          "latitude": -27.2667,
+          "longitude": -55.7833,
+          "category": "battle",
+          "civilization": "Spanish Colonial / Paraguayan",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.56,
+            "input_tokens": 379,
+            "output_tokens": 133
+          }
+        },
+        "gpt-5-nano": {
+          "id": 29562,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.2319483757019043
+          }
+        },
+        "gemma2:9b": {
+          "id": 29562,
+          "record_type": "event",
+          "title_clean": "Battle of Tacuarí",
+          "year_start": 1811,
+          "year_end": 1811,
+          "era": "EARLY_MODERN",
+          "location_name": "Tacuarí",
+          "location_modern": "Tacuarí, Argentina",
+          "latitude": -34.5,
+          "longitude": -60.5,
+          "category": "battle",
+          "civilization": "other",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 35.18
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 1781,
+        "title": "Battle of Zorndorf",
+        "description": "1758 battle",
+        "year": 1758
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 1781,
+          "record_type": "event",
+          "title_clean": "Battle of Zorndorf",
+          "year_start": 1758,
+          "year_end": 1758,
+          "era": "EARLY_MODERN",
+          "location_name": "Zorndorf, Neumark, Prussia",
+          "location_modern": "Sarbinowo, Lubusz Voivodeship, Poland",
+          "latitude": 52.6667,
+          "longitude": 14.8167,
+          "category": "battle",
+          "civilization": "Prussian",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.71,
+            "input_tokens": 382,
+            "output_tokens": 142
+          }
+        },
+        "gpt-5-nano": {
+          "id": 1781,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.22143077850341797
+          }
+        },
+        "gemma2:9b": {
+          "id": 1781,
+          "record_type": "event",
+          "title_clean": "Battle of Zorndorf",
+          "year_start": 1758,
+          "year_end": 1758,
+          "era": "EARLY_MODERN",
+          "location_name": "Zorndorf",
+          "location_modern": "Zorndorf, Germany",
+          "latitude": 52.0667,
+          "longitude": 14.3,
+          "category": "battle",
+          "civilization": "Prussian",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 34.88
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 873,
+        "title": "Battle of Wenden",
+        "description": "1578 battle",
+        "year": 1578
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 873,
+          "record_type": "event",
+          "title_clean": "Battle of Wenden",
+          "year_start": 1578,
+          "year_end": 1578,
+          "era": "EARLY_MODERN",
+          "location_name": "Wenden",
+          "location_modern": "Cēsis, Latvia",
+          "latitude": 57.3119,
+          "longitude": 25.2744,
+          "category": "battle",
+          "civilization": "Swedish",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 5.23,
+            "input_tokens": 379,
+            "output_tokens": 123
+          }
+        },
+        "gpt-5-nano": {
+          "id": 873,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.18659043312072754
+          }
+        },
+        "gemma2:9b": {
+          "id": 873,
+          "record_type": "event",
+          "title_clean": "Battle of Wenden",
+          "year_start": 1578,
+          "year_end": 1578,
+          "era": "EARLY_MODERN",
+          "location_name": "Wenden",
+          "location_modern": "Ventspils, Latvia",
+          "latitude": 57.2,
+          "longitude": 22.0,
+          "category": "battle",
+          "civilization": "other",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 36.22
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 5906,
+        "title": "Treaty of Hampton Court",
+        "description": "treaty signed between Queen Elizabeth I and French Huguenots for English military aid",
+        "year": 1562
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 5906,
+          "record_type": "event",
+          "title_clean": "Treaty of Hampton Court",
+          "year_start": 1562,
+          "year_end": 1562,
+          "era": "EARLY_MODERN",
+          "location_name": "Hampton Court",
+          "location_modern": "Hampton Court Palace, East Molesey, England, United Kingdom",
+          "latitude": 51.4036,
+          "longitude": -0.337,
+          "category": "politics",
+          "civilization": "English",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.24,
+            "input_tokens": 392,
+            "output_tokens": 135
+          }
+        },
+        "gpt-5-nano": {
+          "id": 5906,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.18901395797729492
+          }
+        },
+        "gemma2:9b": {
+          "id": 5906,
+          "record_type": "event",
+          "title_clean": "Treaty of Hampton Court",
+          "year_start": 1562,
+          "year_end": 1562,
+          "era": "EARLY_MODERN",
+          "location_name": "Hampton Court Palace",
+          "location_modern": "Richmond upon Thames, England",
+          "latitude": 51.47,
+          "longitude": -0.3,
+          "category": "politics",
+          "civilization": "English",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 36.07
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 6222,
+        "title": "Treaty of Aleppo",
+        "description": "13th-century BCE treaty and inscription",
+        "year": -1300
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 6222,
+          "record_type": "event",
+          "title_clean": "Treaty of Aleppo",
+          "year_start": -1300,
+          "year_end": -1201,
+          "era": "ANCIENT",
+          "location_name": "Aleppo",
+          "location_modern": "Aleppo, Syria",
+          "latitude": 36.2021,
+          "longitude": 37.1343,
+          "category": "politics",
+          "civilization": "Hittite",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.65,
+            "input_tokens": 384,
+            "output_tokens": 125
+          }
+        },
+        "gpt-5-nano": {
+          "id": 6222,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.22556090354919434
+          }
+        },
+        "gemma2:9b": {
+          "id": 6222,
+          "record_type": "event",
+          "title_clean": "Treaty of Aleppo",
+          "year_start": -1300,
+          "year_end": -1300,
+          "era": "ANCIENT",
+          "location_name": "Aleppo",
+          "location_modern": "Aleppo, Syria",
+          "latitude": 36.2,
+          "longitude": 37.1,
+          "category": "politics",
+          "civilization": "Mesopotamian",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 35.72
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 4998,
+        "title": "Roman–Bosporan War",
+        "description": "1st-century conflict in Cimmerian Bosporus",
+        "year": 45
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 4998,
+          "record_type": "war",
+          "title_clean": "Roman–Bosporan War",
+          "year_start": 44,
+          "year_end": 45,
+          "era": "CLASSICAL",
+          "location_name": "Cimmerian Bosporus",
+          "location_modern": "Kerch Strait region, Russia/Ukraine",
+          "latitude": 45.3,
+          "longitude": 36.5,
+          "category": "war",
+          "civilization": "Roman",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.56,
+            "input_tokens": 389,
+            "output_tokens": 126
+          }
+        },
+        "gpt-5-nano": {
+          "id": 4998,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.337601900100708
+          }
+        },
+        "gemma2:9b": {
+          "id": 4998,
+          "record_type": "war",
+          "title_clean": "Roman–Bosporan War",
+          "year_start": -45,
+          "year_end": -45,
+          "era": "ANCIENT",
+          "location_name": "Cimmerian Bosporus",
+          "location_modern": "Crimea, Ukraine",
+          "latitude": 46.0,
+          "longitude": 34.0,
+          "category": "war",
+          "civilization": "Roman",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 36.76
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 29666,
+        "title": "1976 Argentine Coup d'État",
+        "description": "battle event",
+        "year": 1976
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 29666,
+          "record_type": "event",
+          "title_clean": "1976 Argentine Coup d'État",
+          "year_start": 1976,
+          "year_end": 1976,
+          "era": "CONTEMPORARY",
+          "location_name": "Buenos Aires",
+          "location_modern": "Buenos Aires, Argentina",
+          "latitude": -34.6037,
+          "longitude": -58.3816,
+          "category": "politics",
+          "civilization": "Argentine",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.33,
+            "input_tokens": 381,
+            "output_tokens": 126
+          }
+        },
+        "gpt-5-nano": {
+          "id": 29666,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.4071660041809082
+          }
+        },
+        "gemma2:9b": {
+          "id": 29666,
+          "record_type": "event",
+          "title_clean": "1976 Argentine Coup d'État",
+          "year_start": 1976,
+          "year_end": 1976,
+          "era": "CONTEMPORARY",
+          "location_name": "Argentina",
+          "location_modern": "Buenos Aires, Argentina",
+          "latitude": -34.6,
+          "longitude": -58.4,
+          "category": "politics",
+          "civilization": "other",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 36.95
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 383754,
+        "title": "Elizabeth Canning case",
+        "description": "[NER] mention_count=1, first_source=pg18679",
+        "year": 1753
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 383754,
+          "record_type": "event",
+          "title_clean": "Elizabeth Canning Case",
+          "year_start": 1753,
+          "year_end": 1753,
+          "era": "EARLY_MODERN",
+          "location_name": "London",
+          "location_modern": "London, United Kingdom",
+          "latitude": 51.5074,
+          "longitude": -0.1278,
+          "category": "other",
+          "civilization": "British",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.59,
+            "input_tokens": 390,
+            "output_tokens": 121
+          }
+        },
+        "gpt-5-nano": {
+          "id": 383754,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.19348669052124023
+          }
+        },
+        "gemma2:9b": {
+          "id": 383754,
+          "record_type": "event",
+          "title_clean": "Elizabeth Canning Case",
+          "year_start": 1753,
+          "year_end": 1753,
+          "era": "EARLY_MODERN",
+          "location_name": null,
+          "location_modern": null,
+          "latitude": null,
+          "longitude": null,
+          "category": "politics",
+          "civilization": "British",
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 31.6
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "id": 372898,
+        "title": "rättelse/utgivning av band",
+        "description": "[NER] mention_count=1, first_source=003555189_02_text",
+        "year": 1862
+      },
+      "results": {
+        "gpt-5.1": {
+          "id": 372898,
+          "record_type": "event",
+          "title_clean": "Correction / Publication of Volume",
+          "year_start": 1862,
+          "year_end": 1862,
+          "era": "MODERN",
+          "location_name": null,
+          "location_modern": null,
+          "latitude": null,
+          "longitude": null,
+          "category": "culture",
+          "civilization": "Other",
+          "_meta": {
+            "model": "gpt-5.1",
+            "elapsed_sec": 2.14,
+            "input_tokens": 397,
+            "output_tokens": 107
+          }
+        },
+        "gpt-5-nano": {
+          "id": 372898,
+          "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+          "_meta": {
+            "model": "gpt-5-nano",
+            "elapsed_sec": 0.21777939796447754
+          }
+        },
+        "gemma2:9b": {
+          "id": 372898,
+          "record_type": "event",
+          "title_clean": "Correction/Publication of Band",
+          "year_start": 1862,
+          "year_end": 1862,
+          "era": "EARLY_MODERN",
+          "location_name": null,
+          "location_modern": null,
+          "latitude": null,
+          "longitude": null,
+          "category": "culture",
+          "civilization": null,
+          "_meta": {
+            "model": "gemma2:9b-instruct-q4_0",
+            "elapsed_sec": 32.2
+          }
+        }
+      }
+    }
+  ]
+}

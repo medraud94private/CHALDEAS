@@ -4,7 +4,7 @@ API v1 Router - Aggregates all API endpoints.
 from fastapi import APIRouter
 
 from app.api.v1 import events, locations, search, chat, categories, showcases
-from app.api.v1_new import explore
+from app.api.v1_new import explore, globe
 
 api_router = APIRouter()
 
@@ -26,3 +26,6 @@ api_router.include_router(chat.router, prefix="/chat", tags=["Chat"])
 
 # V1 New: Explore pre-curation entity pool
 api_router.include_router(explore.router, tags=["Explore"])
+
+# V1 New: Globe markers and connections
+api_router.include_router(globe.router, tags=["Globe"])

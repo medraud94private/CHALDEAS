@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "model": "gpt-5.1-chat-latest",
+    "count": 10,
+    "timestamp": "20260107_231336",
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "estimated_cost": 0.0
+  },
+  "results": [
+    {
+      "id": 415,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 723,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1132,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2214,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6089,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9256,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9398,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30954,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31088,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31125,
+      "error": "Completions.create() got an unexpected keyword argument 'max_completion_tokens'",
+      "is_valid_event": null,
+      "needs_review": true
+    }
+  ]
+}

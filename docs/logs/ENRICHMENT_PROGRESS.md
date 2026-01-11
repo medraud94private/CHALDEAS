@@ -232,3 +232,25 @@ Persons (mention >= 3): 21,963명
 | 2026-01-10 22:51 | Persons 3차 엔리치먼트 (mention >= 3) 완료 ($19.76) |
 | 2026-01-10 22:52 | Persons 3차 DB 적용 완료 (6,109명 추가) |
 | 2026-01-10 22:53 | **Phase 3 완료** - 총 비용 $266.45 |
+
+---
+
+## 7. Enrichment 완료 → Generation 전환
+
+### 7.1 Enrichment Phase 종료
+
+**Phase 1-3 완료** (2026-01-10)
+- 목적: 기존 데이터에 구조화된 메타데이터 추가
+- 방식: 1:1 변환 (원본 레코드 → 엔리치된 레코드)
+- 결과: Events 48,513개, Locations 40,613개, Persons 21,963명
+- 비용: **$266.45**
+
+### 7.2 Generation Phase 시작 (Phase 7)
+
+**다음 단계**: Historical Chain 생성
+- 목적: 엔리치된 데이터를 기반으로 새로운 내러티브 콘텐츠 생성
+- 방식: N:1 합성 (여러 레코드 → 하나의 스토리)
+- 대상: Person Story (364명), Place Story (21곳), Period Story (12개)
+- 예상 비용: ~$4.7
+
+**문서**: `docs/planning/PHASE7_HISTORICAL_CHAIN.md`

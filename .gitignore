@@ -108,3 +108,6 @@ poc/data/*.db
 
 # External data
 data/external/
+
+# Large backup files
+backups/*.json

@@ -1,0 +1,5024 @@
+{
+  "metadata": {
+    "timestamp": "2026-01-08T17:47:56.548354",
+    "db_events_count": 100,
+    "ner_events_count": 10000
+  },
+  "statistics": {
+    "total_db_events": 100,
+    "auto_match": 18,
+    "review": 81,
+    "no_match": 1,
+    "avg_top_score": 80.2,
+    "score_distribution": {
+      "40": 1,
+      "60": 4,
+      "70": 40,
+      "80": 45,
+      "90": 5,
+      "100": 5
+    }
+  },
+  "matches": {
+    "2": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.87096774193549,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.9
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        }
+      },
+      {
+        "ner_source_id": "000045172_01_text",
+        "ner_name": "Battle of Pensacola",
+        "ner_year": 1861,
+        "ner_source_type": "unknown",
+        "score": 76.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 80,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 76.0
+        }
+      }
+    ],
+    "5": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.58823529411765,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.6
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.57142857142857,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.6
+        }
+      }
+    ],
+    "6": [
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.17073170731707,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.2
+        }
+      },
+      {
+        "ner_source_id": "000034837_01_text",
+        "ner_name": "Battle of the Life",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "7": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      },
+      {
+        "ner_source_id": "000084239_01_text",
+        "ner_name": "Battle of Ghuzni",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.58823529411765,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.6
+        }
+      }
+    ],
+    "9": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      }
+    ],
+    "11": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      }
+    ],
+    "12": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 84.84848484848484,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 84.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 84.8
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      }
+    ],
+    "14": [
+      {
+        "ner_source_id": "000084719_02_text",
+        "ner_name": "Battle of Vera Cruz",
+        "ner_year": 1847,
+        "ner_source_type": "unknown",
+        "score": 77.55555555555554,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 77.6
+        }
+      },
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      },
+      {
+        "ner_source_id": "000136958_01_text",
+        "ner_name": "Battle of Suez?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      }
+    ],
+    "17": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.17073170731707,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.2
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.17073170731707,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.2
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        }
+      }
+    ],
+    "18": [
+      {
+        "ner_source_id": "000042862_05_text",
+        "ner_name": "Battle of Santa Fe",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 84.21052631578947,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 84.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 84.2
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      }
+    ],
+    "19": [
+      {
+        "ner_source_id": "000084232_01_text",
+        "ner_name": "Battle of Sadowa",
+        "ner_year": 1866,
+        "ner_source_type": "unknown",
+        "score": 73.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      },
+      {
+        "ner_source_id": "000145108_01_text",
+        "ner_name": "Battle of Mentana",
+        "ner_year": 1867,
+        "ner_source_type": "unknown",
+        "score": 73.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 80,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 73.0
+        }
+      },
+      {
+        "ner_source_id": "000060900_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      }
+    ],
+    "20": [
+      {
+        "ner_source_id": "000034837_01_text",
+        "ner_name": "Battle of the Life",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 91.42857142857143,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 91.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 91.4
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 85.71428571428571,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 85.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 85.7
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 85.71428571428571,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 85.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 85.7
+        }
+      }
+    ],
+    "21": [
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "22": [
+      {
+        "ner_source_id": "000052378_08_text",
+        "ner_name": "Battle of Canton storming",
+        "ner_year": 1841,
+        "ner_source_type": "unknown",
+        "score": 76.4,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 52.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 76.4
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.11627906976744,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.1
+        }
+      }
+    ],
+    "23": [
+      {
+        "ner_source_id": "000043280_01_text",
+        "ner_name": "Battle of Blenheim",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 85.71428571428571,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 85.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 85.7
+        }
+      },
+      {
+        "ner_source_id": "000034928_03_text",
+        "ner_name": "battle of Naseby",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Hexham",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "24": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      },
+      {
+        "ner_source_id": "000005389_01_text",
+        "ner_name": "Battle of Lake Regillus",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "25": [
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      }
+    ],
+    "26": [
+      {
+        "ner_source_id": "000034607_01_text",
+        "ner_name": "battle of Placenza",
+        "ner_year": 1746,
+        "ner_source_type": "unknown",
+        "score": 83.30882352941175,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 64.7,
+          "year_score": 100,
+          "person_score": 25.0,
+          "location_score": 0,
+          "weights": "t:0.65,y:0.30,p:0.05,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "27": [
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Merxem",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "29": [
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Mohilow",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.67567567567568,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      },
+      {
+        "ner_source_id": "000060900_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      }
+    ],
+    "30": [
+      {
+        "ner_source_id": "000034928_03_text",
+        "ner_name": "battle of Naseby",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "31": [
+      {
+        "ner_source_id": "000052364_08_text",
+        "ner_name": "Battle of Saguntum",
+        "ner_year": 1810,
+        "ner_source_type": "unknown",
+        "score": 78.72340425531914,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 55.3,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 78.7
+        }
+      },
+      {
+        "ner_source_id": "000037770_03_text",
+        "ner_name": "Juramento de las Cortes de Cádiz",
+        "ner_year": 1810,
+        "ner_source_type": "unknown",
+        "score": 76.72131147540983,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 52.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 76.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Mortimer's Cross",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "32": [
+      {
+        "ner_source_id": "000101705_01_text",
+        "ner_name": "siege of Cyprus",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.33333333333333,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.3
+        }
+      },
+      {
+        "ner_source_id": "000018108_01_text",
+        "ner_name": "Siege of Acre",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      },
+      {
+        "ner_source_id": "000093187_01_text",
+        "ner_name": "siege of Acre",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      }
+    ],
+    "33": [
+      {
+        "ner_source_id": "000048378_02_text",
+        "ner_name": "Attack on the Kat River Settlement",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 60.317460317460316,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 60.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 60.3
+        }
+      },
+      {
+        "ner_source_id": "000047805_01_text",
+        "ner_name": "death of the poor friend",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 56.60377358490566,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 56.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 56.6
+        }
+      },
+      {
+        "ner_source_id": "000058810_01_text",
+        "ner_name": "A Tale of the Crimean War",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 55.55555555555556,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 55.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 55.6
+        }
+      }
+    ],
+    "34": [
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      },
+      {
+        "ner_source_id": "000084239_01_text",
+        "ner_name": "Battle of Ghuzni",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "35": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.25,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.2
+        }
+      },
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.25,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.2
+        }
+      },
+      {
+        "ner_source_id": "000074634_01_text",
+        "ner_name": "Battle of Tofrik",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "36": [
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Smolensk",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Mohilow",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "37": [
+      {
+        "ner_source_id": "000150264_01_text",
+        "ner_name": "Battle at Joazong",
+        "ner_year": 1827,
+        "ner_source_type": "unknown",
+        "score": 84.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 62.9,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.0
+        }
+      },
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "38": [
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.91304347826086,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.9
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "39": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Merxem",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      }
+    ],
+    "40": [
+      {
+        "ner_source_id": "000017041_01_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 88.125,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 68.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 88.1
+        }
+      },
+      {
+        "ner_source_id": "000017042_02_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 88.125,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 68.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 88.1
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "41": [
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000157377_01_text",
+        "ner_name": "Battle of",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      }
+    ],
+    "45": [
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.75862068965517,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.8
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "46": [
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.57142857142857,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.6
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.57142857142857,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.6
+        }
+      }
+    ],
+    "47": [
+      {
+        "ner_source_id": "000004402_01_text",
+        "ner_name": "battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 74.8048780487805,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 74.8
+        }
+      },
+      {
+        "ner_source_id": "000055429_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 74.8048780487805,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 74.8
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      }
+    ],
+    "48": [
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000157377_01_text",
+        "ner_name": "Battle of",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.26086956521739,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.3
+        }
+      },
+      {
+        "ner_source_id": "000018173_05_text",
+        "ner_name": "Battle of",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.26086956521739,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.3
+        }
+      }
+    ],
+    "51": [
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000043280_01_text",
+        "ner_name": "Battle of Blenheim",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "52": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of St. Albans",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.42105263157895,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.4
+        }
+      },
+      {
+        "ner_source_id": "000085389_01_text",
+        "ner_name": "Battle of Heathfield",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.29268292682927,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.3
+        }
+      }
+    ],
+    "53": [
+      {
+        "ner_source_id": "000119514_02_text",
+        "ner_name": "assault",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 48.275862068965516,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 48.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 48.3
+        }
+      },
+      {
+        "ner_source_id": "000033385_02_text",
+        "ner_name": "pursuit and assault in the streets of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 43.75,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 43.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 43.8
+        }
+      },
+      {
+        "ner_source_id": "000226598_01_text",
+        "ner_name": "Survey of Manor",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 43.24324324324324,
+        "classification": "NO_MATCH",
+        "details": {
+          "title_score": 43.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 43.2
+        }
+      }
+    ],
+    "54": [
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 66.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 66.7
+        }
+      },
+      {
+        "ner_source_id": "000034858_02_text",
+        "ner_name": "The Battle of ...",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 66.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 66.7
+        }
+      },
+      {
+        "ner_source_id": "000042862_05_text",
+        "ner_name": "Battle of Santa Fe",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.0
+        }
+      }
+    ],
+    "55": [
+      {
+        "ner_source_id": "000055429_01_text",
+        "ner_name": "Battle of Bunker Hill",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 84.39024390243902,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.4,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.4
+        }
+      },
+      {
+        "ner_source_id": "000004402_01_text",
+        "ner_name": "battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 83.07692307692307,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 61.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.1
+        }
+      },
+      {
+        "ner_source_id": "000055429_01_text",
+        "ner_name": "Battle of Lexington",
+        "ner_year": 1775,
+        "ner_source_type": "unknown",
+        "score": 83.07692307692307,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 61.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.1
+        }
+      }
+    ],
+    "66": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000084239_01_text",
+        "ner_name": "Battle of Ghuzni",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Hexham",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      }
+    ],
+    "67": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Limonet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Toulouse",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      }
+    ],
+    "68": [
+      {
+        "ner_source_id": "000017041_01_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 95.15151515151514,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 95.2
+        }
+      },
+      {
+        "ner_source_id": "000017042_02_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 95.15151515151514,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 95.2
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      }
+    ],
+    "70": [
+      {
+        "ner_source_id": "000052367_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 84.21052631578948,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.2,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.2
+        }
+      },
+      {
+        "ner_source_id": "000052369_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 84.21052631578948,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.2,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.2
+        }
+      },
+      {
+        "ner_source_id": "000052374_01_text",
+        "ner_name": "Battle of Corunna",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 83.07692307692307,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 61.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.1
+        }
+      }
+    ],
+    "71": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Agincourt",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.67567567567568,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "72": [
+      {
+        "ner_source_id": "000216074_01_text",
+        "ner_name": "Second Battle of Valestinos",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.37037037037037,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.4
+        }
+      },
+      {
+        "ner_source_id": "000043280_01_text",
+        "ner_name": "Battle of Blenheim",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 66.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 66.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.11627906976744,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.1
+        }
+      }
+    ],
+    "73": [
+      {
+        "ner_source_id": "000017041_01_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 79.48717948717947,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 56.4,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 79.5
+        }
+      },
+      {
+        "ner_source_id": "000017042_02_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 79.48717948717947,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 56.4,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 79.5
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        }
+      }
+    ],
+    "76": [
+      {
+        "ner_source_id": "000214807_02_text",
+        "ner_name": "Battle of Mantinea",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 100.0,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 100.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 100.0
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        }
+      }
+    ],
+    "78": [
+      {
+        "ner_source_id": "000042862_05_text",
+        "ner_name": "Battle of Santa Fe",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        }
+      },
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      },
+      {
+        "ner_source_id": "000085389_01_text",
+        "ner_name": "Battle of Heathfield",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.29268292682927,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.3
+        }
+      }
+    ],
+    "79": [
+      {
+        "ner_source_id": "000216074_01_text",
+        "ner_name": "Second Battle of Valestinos",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.50980392156863,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.5
+        }
+      },
+      {
+        "ner_source_id": "000021119_01_text",
+        "ner_name": "The Battle of the Nile",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.21739130434783,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.2
+        }
+      },
+      {
+        "ner_source_id": "000092338_01_text",
+        "ner_name": "battle of Quebec",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.0
+        }
+      }
+    ],
+    "82": [
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.57142857142857,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.6
+        }
+      },
+      {
+        "ner_source_id": "000034928_03_text",
+        "ner_name": "battle of Naseby",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "83": [
+      {
+        "ner_source_id": "000216074_01_text",
+        "ner_name": "Second Battle of Valestinos",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.36363636363637,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.4
+        }
+      },
+      {
+        "ner_source_id": "000162343_01_text",
+        "ner_name": "Battle of Gettysburg",
+        "ner_year": 1863,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 50.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      },
+      {
+        "ner_source_id": "000162344_01_text",
+        "ner_name": "Battle of Gettysburg",
+        "ner_year": 1863,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 50.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      }
+    ],
+    "84": [
+      {
+        "ner_source_id": "000052369_09_text",
+        "ner_name": "Battle of Piave River",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 86.66666666666666,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 86.7
+        }
+      },
+      {
+        "ner_source_id": "000052367_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 85.5,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 65.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 85.5
+        }
+      },
+      {
+        "ner_source_id": "000052369_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 85.5,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 65.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 85.5
+        }
+      }
+    ],
+    "86": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.08108108108108,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.1
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "87": [
+      {
+        "ner_source_id": "000014984_01_text",
+        "ner_name": "Battle of Memphis",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Smolensk",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      }
+    ],
+    "88": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "89": [
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 89.35714285714286,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 91.4,
+          "year_score": 0,
+          "person_score": 50.0,
+          "location_score": 0,
+          "weights": "t:0.95,y:0.00,p:0.05,l:0.00",
+          "total_score": 89.4
+        }
+      },
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Orthes",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "91": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Hexham",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.87096774193549,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.9
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.75862068965517,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.8
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "92": [
+      {
+        "ner_source_id": "000013481_02_text",
+        "ner_name": "battle near Nicopolis",
+        "ner_year": 1396,
+        "ner_source_type": "unknown",
+        "score": 100,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 85.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 100,
+          "weights": "t:0.65,y:0.30,p:0.00,l:0.05",
+          "total_score": 100
+        }
+      },
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000014984_01_text",
+        "ner_name": "Battle of Memphis",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      }
+    ],
+    "94": [
+      {
+        "ner_source_id": "000216074_01_text",
+        "ner_name": "Second Battle of Valestinos",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.07692307692307,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.1
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.29268292682927,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.3
+        }
+      },
+      {
+        "ner_source_id": "000021119_01_text",
+        "ner_name": "The Battle of the Nile",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 63.829787234042556,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 63.8
+        }
+      }
+    ],
+    "96": [
+      {
+        "ner_source_id": "000013481_02_text",
+        "ner_name": "Battle of Angora",
+        "ner_year": 1402,
+        "ner_source_type": "unknown",
+        "score": 100,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 87.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 100
+        }
+      },
+      {
+        "ner_source_id": "000085341_01_text",
+        "ner_name": "Battle of Homildon Hill",
+        "ner_year": 1402,
+        "ner_source_type": "unknown",
+        "score": 79.48717948717947,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 56.4,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 79.5
+        }
+      },
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      }
+    ],
+    "97": [
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.94736842105263,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.9
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "98": [
+      {
+        "ner_source_id": "000052367_13_text",
+        "ner_name": "Battle of Toulouse",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 63.829787234042556,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 63.8
+        }
+      },
+      {
+        "ner_source_id": "000052369_13_text",
+        "ner_name": "Battle of Toulouse",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 63.829787234042556,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 63.8
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 62.22222222222222,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 62.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 62.2
+        }
+      }
+    ],
+    "99": [
+      {
+        "ner_source_id": "000052367_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 82.15151515151514,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 82.2
+        }
+      },
+      {
+        "ner_source_id": "000052369_09_text",
+        "ner_name": "Battle of Aspern",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 82.15151515151514,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 82.2
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      }
+    ],
+    "101": [
+      {
+        "ner_source_id": "000214807_07_text",
+        "ner_name": "Battle of Chaeronea",
+        "ner_year": -338,
+        "ner_source_type": "unknown",
+        "score": 100,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 100.0,
+          "year_score": 100,
+          "person_score": 33.3,
+          "location_score": 0,
+          "weights": "t:0.65,y:0.30,p:0.05,l:0.00",
+          "total_score": 100
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ],
+    "102": [
+      {
+        "ner_source_id": "000349419_04_text",
+        "ner_name": "Battle of Vienna",
+        "ner_year": 1683,
+        "ner_source_type": "unknown",
+        "score": 100,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 100.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 50.0,
+          "weights": "t:0.65,y:0.30,p:0.00,l:0.05",
+          "total_score": 100
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      }
+    ],
+    "103": [
+      {
+        "ner_source_id": "000052374_01_text",
+        "ner_name": "Battle of Corunna",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 83.875,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.2,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.9
+        }
+      },
+      {
+        "ner_source_id": "000052378_01_text",
+        "ner_name": "Battle of Wagram",
+        "ner_year": 1809,
+        "ner_source_type": "unknown",
+        "score": 81.19354838709677,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 81.2
+        }
+      },
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "105": [
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.48148148148148,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.5
+        }
+      },
+      {
+        "ner_source_id": "000034781_02_text",
+        "ner_name": "Battle of New Orleans",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "111": [
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000048379_01_text",
+        "ner_name": "Battle of Chateauguay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      }
+    ],
+    "112": [
+      {
+        "ner_source_id": "000048382_02_text",
+        "ner_name": "battle of the Blacks",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.3404255319149,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.3
+        }
+      },
+      {
+        "ner_source_id": "000034837_01_text",
+        "ner_name": "Battle of the Life",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.11111111111111,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.1
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.11111111111111,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.1
+        }
+      }
+    ],
+    "113": [
+      {
+        "ner_source_id": "000003729_01_text",
+        "ner_name": "Battle of Mobile Bay",
+        "ner_year": 1864,
+        "ner_source_type": "unknown",
+        "score": 85.5,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 65.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 85.5
+        }
+      },
+      {
+        "ner_source_id": "000056900_01_text",
+        "ner_name": "Battle of Yellow Tavern",
+        "ner_year": 1864,
+        "ner_source_type": "unknown",
+        "score": 82.32558139534882,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 60.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 82.3
+        }
+      },
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "115": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.25,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.2
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.67567567567568,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.7
+        }
+      }
+    ],
+    "116": [
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.41935483870968,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.4
+        }
+      },
+      {
+        "ner_source_id": "000014984_01_text",
+        "ner_name": "Battle of Memphis",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      }
+    ],
+    "118": [
+      {
+        "ner_source_id": "000034791_01_text",
+        "ner_name": "Battle of Nizit",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.35294117647058,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.4
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.08108108108108,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.1
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Barnet",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "119": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of St. Albans",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 84.44444444444444,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 84.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 84.4
+        }
+      },
+      {
+        "ner_source_id": "000127777_01_text",
+        "ner_name": "Battles of St. Albans",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 82.6086956521739,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 82.6
+        }
+      },
+      {
+        "ner_source_id": "000085366_01_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": 1461,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 57.1,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      }
+    ],
+    "120": [
+      {
+        "ner_source_id": "000251352_03_text",
+        "ner_name": "Battle of Fish Creek",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.55555555555556,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.6
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Agincourt",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 68.18181818181817,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 68.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 68.2
+        }
+      },
+      {
+        "ner_source_id": "000069614_02_text",
+        "ner_name": "Battle",
+        "ner_year": 1777,
+        "ner_source_type": "unknown",
+        "score": 67.09677419354838,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 38.7,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 67.1
+        }
+      }
+    ],
+    "123": [
+      {
+        "ner_source_id": "000052369_12_text",
+        "ner_name": "Battle of Bautzen",
+        "ner_year": 1813,
+        "ner_source_type": "unknown",
+        "score": 90.67567567567568,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 70.3,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 100,
+          "weights": "t:0.65,y:0.30,p:0.00,l:0.05",
+          "total_score": 90.7
+        }
+      },
+      {
+        "ner_source_id": "000052364_09_text",
+        "ner_name": "Battle of Dresden",
+        "ner_year": 1813,
+        "ner_source_type": "unknown",
+        "score": 89.1891891891892,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 70.3,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 89.2
+        }
+      },
+      {
+        "ner_source_id": "000052364_09_text",
+        "ner_name": "Battle of Lutzen",
+        "ner_year": 1813,
+        "ner_source_type": "unknown",
+        "score": 86.66666666666666,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 86.7
+        }
+      }
+    ],
+    "124": [
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.08108108108108,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.1
+        }
+      },
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        }
+      },
+      {
+        "ner_source_id": "000034928_03_text",
+        "ner_name": "battle of Naseby",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "125": [
+      {
+        "ner_source_id": "000052370_01_text",
+        "ner_name": "Battle of Zurich",
+        "ner_year": 1799,
+        "ner_source_type": "unknown",
+        "score": 92.0,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 92.0
+        }
+      },
+      {
+        "ner_source_id": "000052364_04_text",
+        "ner_name": "Battle of Trebbia",
+        "ner_year": 1799,
+        "ner_source_type": "unknown",
+        "score": 90.55555555555554,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 90.6
+        }
+      },
+      {
+        "ner_source_id": "000052367_08_text",
+        "ner_name": "Battle of Assaye",
+        "ner_year": 1799,
+        "ner_source_type": "unknown",
+        "score": 88.0,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 68.6,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 88.0
+        }
+      }
+    ],
+    "126": [
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.67567567567568,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.7
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Towton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      }
+    ],
+    "129": [
+      {
+        "ner_source_id": "000034837_01_text",
+        "ner_name": "Battle of the Life",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000048374_01_text",
+        "ner_name": "Battle of the Bees",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 83.33333333333334,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 83.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 83.3
+        }
+      }
+    ],
+    "130": [
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000124230_01_text",
+        "ner_name": "Battle of Camelot",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      }
+    ],
+    "131": [
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 75.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 75.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 75.0
+        }
+      },
+      {
+        "ner_source_id": "000156291_01_text",
+        "ner_name": "Battle of lde",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of Hexham",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.22222222222221,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.2
+        }
+      }
+    ],
+    "132": [
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 80.0
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Mohilow",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      },
+      {
+        "ner_source_id": "000101366_01_text",
+        "ner_name": "Battle of?",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.92307692307693,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.9,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.9
+        }
+      }
+    ],
+    "133": [
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      },
+      {
+        "ner_source_id": "000074634_01_text",
+        "ner_name": "Battle of Tofrik",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.47058823529412,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.5,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.5
+        }
+      },
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      }
+    ],
+    "135": [
+      {
+        "ner_source_id": "000047814_01_text",
+        "ner_name": "Battle of Königgrätz",
+        "ner_year": 1866,
+        "ner_source_type": "unknown",
+        "score": 86.66666666666666,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 86.7
+        }
+      },
+      {
+        "ner_source_id": "000232302_01_text",
+        "ner_name": "Gefecht bei Kissingen",
+        "ner_year": 1866,
+        "ner_source_type": "unknown",
+        "score": 84.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 60.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 100,
+          "weights": "t:0.65,y:0.30,p:0.00,l:0.05",
+          "total_score": 84.0
+        }
+      },
+      {
+        "ner_source_id": "000084232_01_text",
+        "ner_name": "Battle of Sadowa",
+        "ner_year": 1866,
+        "ner_source_type": "unknown",
+        "score": 84.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 62.9,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.0
+        }
+      }
+    ],
+    "136": [
+      {
+        "ner_source_id": "000052367_03_text",
+        "ner_name": "Battle of Wattignies",
+        "ner_year": 1793,
+        "ner_source_type": "unknown",
+        "score": 83.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 80.0,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 83.0
+        }
+      },
+      {
+        "ner_source_id": "000052364_04_text",
+        "ner_name": "Battle of Mantua",
+        "ner_year": 1796,
+        "ner_source_type": "unknown",
+        "score": 78.44444444444446,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 80,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 78.4
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      }
+    ],
+    "137": [
+      {
+        "ner_source_id": "000001484_07_text",
+        "ner_name": "Battle of Breda",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.0
+        }
+      },
+      {
+        "ner_source_id": "000043280_01_text",
+        "ner_name": "Battle of Blenheim",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 65.11627906976744,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 65.1,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 65.1
+        }
+      },
+      {
+        "ner_source_id": "000092338_01_text",
+        "ner_name": "battle of Quebec",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 63.41463414634146,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 63.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 63.4
+        }
+      }
+    ],
+    "140": [
+      {
+        "ner_source_id": "000055647_01_text",
+        "ner_name": "Battle of Edenton",
+        "ner_year": 1862,
+        "ner_source_type": "unknown",
+        "score": 80.52631578947368,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 57.9,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 80.5
+        }
+      },
+      {
+        "ner_source_id": "000003727_01_text",
+        "ner_name": "Battle of Bull Run",
+        "ner_year": 1861,
+        "ner_source_type": "unknown",
+        "score": 73.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      },
+      {
+        "ner_source_id": "000056900_01_text",
+        "ner_name": "Battle of Bull Run",
+        "ner_year": 1861,
+        "ner_source_type": "unknown",
+        "score": 73.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      }
+    ],
+    "143": [
+      {
+        "ner_source_id": "000004439_01_text",
+        "ner_name": "Battle of Tours",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 81.25,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.2
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 74.28571428571429,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 74.3,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 74.3
+        }
+      }
+    ],
+    "145": [
+      {
+        "ner_source_id": "000034837_01_text",
+        "ner_name": "Battle of the Life",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 80.95238095238095,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 81.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 81.0
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 76.19047619047619,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 76.2,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 76.2
+        }
+      },
+      {
+        "ner_source_id": "000116052_01_text",
+        "ner_name": "Battle of the Briton",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      }
+    ],
+    "146": [
+      {
+        "ner_source_id": "000052367_03_text",
+        "ner_name": "Battle of Wattignies",
+        "ner_year": 1793,
+        "ner_source_type": "unknown",
+        "score": 81.36363636363636,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 59.1,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 81.4
+        }
+      },
+      {
+        "ner_source_id": "000052367_03_text",
+        "ner_name": "Battle of Nerwinde / Neerwinden",
+        "ner_year": 1793,
+        "ner_source_type": "unknown",
+        "score": 79.62264150943396,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 56.6,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 79.6
+        }
+      },
+      {
+        "ner_source_id": "000070870_01_text",
+        "ner_name": "Battle of Tangiers",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.42857142857143,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.4
+        }
+      }
+    ],
+    "152": [
+      {
+        "ner_source_id": "000056900_01_text",
+        "ner_name": "Battle of Yellow Tavern",
+        "ner_year": 1864,
+        "ner_source_type": "unknown",
+        "score": 80.97560975609755,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 58.5,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 81.0
+        }
+      },
+      {
+        "ner_source_id": "000003729_01_text",
+        "ner_name": "Battle of Mobile Bay",
+        "ner_year": 1864,
+        "ner_source_type": "unknown",
+        "score": 80.52631578947368,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 57.9,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 80.5
+        }
+      },
+      {
+        "ner_source_id": "000052367_11_text",
+        "ner_name": "Battle of Valutina",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 77.77777777777779,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 77.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 77.8
+        }
+      }
+    ],
+    "153": [
+      {
+        "ner_source_id": "000021095_07_text",
+        "ner_name": "Battle of the Diamond",
+        "ner_year": 1795,
+        "ner_source_type": "unknown",
+        "score": 86.66666666666666,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 86.7
+        }
+      },
+      {
+        "ner_source_id": "000033838_02_text",
+        "ner_name": "Battle of Lodi",
+        "ner_year": 1796,
+        "ner_source_type": "unknown",
+        "score": 84.93103448275862,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.8,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.9
+        }
+      },
+      {
+        "ner_source_id": "000052364_03_text",
+        "ner_name": "Battle of Lodi",
+        "ner_year": 1796,
+        "ner_source_type": "unknown",
+        "score": 84.93103448275862,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 82.8,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 84.9
+        }
+      }
+    ],
+    "154": [
+      {
+        "ner_source_id": "000008239_01_text",
+        "ner_name": "Battle of the Plains of Abraham",
+        "ner_year": 1759,
+        "ner_source_type": "unknown",
+        "score": 79.29824561403508,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 56.1,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 79.3
+        }
+      },
+      {
+        "ner_source_id": "000005389_01_text",
+        "ner_name": "Battle of Lake Regillus",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 69.38775510204081,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 69.4,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 69.4
+        }
+      },
+      {
+        "ner_source_id": "000017041_01_text",
+        "ner_name": "Battle of Plassey",
+        "ner_year": 1757,
+        "ner_source_type": "unknown",
+        "score": 66.32558139534882,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 60.5,
+          "year_score": 80,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 66.3
+        }
+      }
+    ],
+    "155": [
+      {
+        "ner_source_id": "000016986_01_text",
+        "ner_name": "Battle of Ethandune",
+        "ner_year": 878,
+        "ner_source_type": "unknown",
+        "score": 85.5,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 65.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 85.5
+        }
+      },
+      {
+        "ner_source_id": "000113779_01_text",
+        "ner_name": "Battle of Carthage",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      },
+      {
+        "ner_source_id": "000061512_01_text",
+        "ner_name": "Battle of the Free",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 71.7948717948718,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 71.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 71.8
+        }
+      }
+    ],
+    "157": [
+      {
+        "ner_source_id": "000138696_02_text",
+        "ner_name": "Battle of St. Albans",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 73.68421052631578,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 73.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 73.7
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 72.72727272727273,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 72.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 72.7
+        }
+      },
+      {
+        "ner_source_id": "000000472_01_text",
+        "ner_name": "Battle of Badon",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 70.58823529411765,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 70.6,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 70.6
+        }
+      }
+    ],
+    "158": [
+      {
+        "ner_source_id": "000074411_01_text",
+        "ner_name": "battle of Chacabuco",
+        "ner_year": 1817,
+        "ner_source_type": "unknown",
+        "score": 67.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 57.1,
+          "year_score": 90,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 67.0
+        }
+      },
+      {
+        "ner_source_id": "000216074_01_text",
+        "ner_name": "Second Battle of Valestinos",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 66.66666666666666,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 66.7,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 66.7
+        }
+      },
+      {
+        "ner_source_id": "000003730_01_text",
+        "ner_name": "Battle of Manila Bay",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 64.0,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 64.0,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 64.0
+        }
+      }
+    ],
+    "160": [
+      {
+        "ner_source_id": "000205930_01_text",
+        "ner_name": "Battle of Prairie Grove",
+        "ner_year": 1862,
+        "ner_source_type": "unknown",
+        "score": 96.66666666666666,
+        "classification": "AUTO_MATCH",
+        "details": {
+          "title_score": 81.0,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 96.7
+        }
+      },
+      {
+        "ner_source_id": "000055647_01_text",
+        "ner_name": "Battle of Edenton",
+        "ner_year": 1862,
+        "ner_source_type": "unknown",
+        "score": 82.77777777777777,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 61.1,
+          "year_score": 100,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:0.70,y:0.30,p:0.00,l:0.00",
+          "total_score": 82.8
+        }
+      },
+      {
+        "ner_source_id": "000031858_01_text",
+        "ner_name": "Battle of Rome",
+        "ner_year": null,
+        "ner_source_type": "unknown",
+        "score": 78.78787878787878,
+        "classification": "REVIEW",
+        "details": {
+          "title_score": 78.8,
+          "year_score": 0,
+          "person_score": 0,
+          "location_score": 0,
+          "weights": "t:1.00,y:0.00,p:0.00,l:0.00",
+          "total_score": 78.8
+        }
+      }
+    ]
+  }
+}

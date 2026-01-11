@@ -1,0 +1,228 @@
+/**
+ * GlobeHeatmap.css - Heatmap control styles for the 3D globe
+ * FGO-inspired design with cyan/purple gradient theme
+ */
+
+/* Heatmap Toggle Button */
+.globe-heatmap-toggle {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: rgba(10, 14, 23, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 8px;
+  padding: 8px 14px;
+
+  color: var(--chaldea-text);
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.globe-heatmap-toggle:hover {
+  background: rgba(0, 212, 255, 0.15);
+  border-color: rgba(0, 212, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+}
+
+.globe-heatmap-toggle.active {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(168, 85, 247, 0.2) 100%);
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+}
+
+.globe-heatmap-toggle.active:hover {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.3) 0%, rgba(168, 85, 247, 0.3) 100%);
+}
+
+.globe-heatmap-toggle .heatmap-icon {
+  font-size: 1rem;
+}
+
+.globe-heatmap-toggle .heatmap-label {
+  font-weight: 500;
+}
+
+/* Heatmap Legend */
+.globe-heatmap-legend {
+  position: absolute;
+  bottom: 140px;
+  right: 20px;
+  z-index: 100;
+
+  background: rgba(10, 14, 23, 0.95);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  border-radius: 8px;
+  padding: 12px 16px;
+
+  min-width: 140px;
+  backdrop-filter: blur(8px);
+
+  animation: legendFadeIn 0.3s ease;
+}
+
+@keyframes legendFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.globe-heatmap-legend .legend-title {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--chaldea-text-bright);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.globe-heatmap-legend .legend-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.globe-heatmap-legend .legend-low,
+.globe-heatmap-legend .legend-high {
+  font-size: 0.6rem;
+  color: var(--chaldea-text);
+  opacity: 0.7;
+}
+
+.globe-heatmap-legend .legend-gradient {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 212, 255, 0.4) 0%,
+    rgba(50, 112, 200, 0.6) 33%,
+    rgba(100, 62, 200, 0.8) 66%,
+    rgba(255, 32, 255, 1) 100%
+  );
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.4);
+}
+
+.globe-heatmap-legend .legend-count {
+  margin-top: 10px;
+  font-size: 0.65rem;
+  color: var(--chaldea-cyan);
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .globe-heatmap-toggle {
+    bottom: 70px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .globe-heatmap-toggle .heatmap-label {
+    display: none;
+  }
+
+  .globe-heatmap-legend {
+    bottom: 120px;
+    right: 10px;
+    padding: 10px 12px;
+    min-width: 120px;
+  }
+}
+
+/* When globe is shifted (detail panel open) */
+.globe-container.shifted .globe-heatmap-toggle,
+.globe-container.shifted .globe-heatmap-legend,
+.globe-container.shifted .globe-cluster-toggle {
+  right: calc(320px + 20px); /* Panel width + margin */
+  transition: right 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .globe-container.shifted .globe-heatmap-toggle,
+  .globe-container.shifted .globe-heatmap-legend,
+  .globe-container.shifted .globe-cluster-toggle {
+    right: 10px;
+  }
+}
+
+/* Clustering Toggle Button */
+.globe-cluster-toggle {
+  position: absolute;
+  bottom: 130px;
+  right: 20px;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: rgba(10, 14, 23, 0.9);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 8px;
+  padding: 8px 14px;
+
+  color: var(--chaldea-text);
+  font-size: 0.75rem;
+  font-family: inherit;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
+}
+
+.globe-cluster-toggle:hover {
+  background: rgba(251, 191, 36, 0.15);
+  border-color: rgba(251, 191, 36, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+}
+
+.globe-cluster-toggle.active {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.2) 0%, rgba(255, 107, 107, 0.2) 100%);
+  border-color: rgba(251, 191, 36, 0.6);
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+}
+
+.globe-cluster-toggle.active:hover {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.3) 0%, rgba(255, 107, 107, 0.3) 100%);
+}
+
+.globe-cluster-toggle .cluster-icon {
+  font-size: 1rem;
+}
+
+.globe-cluster-toggle .cluster-label {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .globe-cluster-toggle {
+    bottom: 120px;
+    right: 10px;
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .globe-cluster-toggle .cluster-label {
+    display: none;
+  }
+}

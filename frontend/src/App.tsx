@@ -1,18 +1,44 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo, lazy, Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
-import { GlobeContainer } from './components/globe/GlobeContainer'
 import { ChatPanel } from './components/chat'
 import { EventDetailPanel } from './components/detail'
-import { ShowcaseModal, ShowcaseMenu } from './components/showcase'
+import { ShowcaseMenu } from './components/showcase'
 import type { ShowcaseContent } from './components/showcase'
-import { ExplorePanel } from './components/explore/ExplorePanel'
+import { FilterPanel, defaultFilters } from './components/filters'
+import type { FilterState } from './components/filters'
+import { SearchAutocomplete } from './components/search'
+import { TimelineBar, TimelapseControls } from './components/timeline'
+import { VirtualEventList } from './components/sidebar'
 import { LanguageSelector } from './components/common'
 import { useTimelineStore } from './store/timelineStore'
 import { useGlobeStore } from './store/globeStore'
+import { useBookmarkStore } from './store/bookmarkStore'
 import { useQuery } from '@tanstack/react-query'
 import { api } from './api/client'
 import { formatYearWithEra } from './utils/era'
 import type { Event } from './types'
+
+// Lazy load heavy components (Three.js/Globe, panels)
+const GlobeContainer = lazy(() => import('./components/globe/GlobeContainer').then(m => ({ default: m.GlobeContainer })))
+const PersonDetailView = lazy(() => import('./components/detail/PersonDetailView').then(m => ({ default: m.PersonDetailView })))
+const LocationDetailView = lazy(() => import('./components/detail/LocationDetailView').then(m => ({ default: m.LocationDetailView })))
+const ShowcaseModal = lazy(() => import('./components/showcase').then(m => ({ default: m.ShowcaseModal })))
+const ExplorePanel = lazy(() => import('./components/explore/ExplorePanel').then(m => ({ default: m.ExplorePanel })))
+const ChainPanel = lazy(() => import('./components/chain/ChainPanel'))
+
+// Loading fallback components
+const GlobeLoader = () => (
+  <div className="globe-loading">
+    <div className="globe-loading-spinner" />
+    <span>Initializing CHALDEAS Globe...</span>
+  </div>
+)
+
+const PanelLoader = () => (
+  <div className="panel-loading">
+    <div className="panel-loading-spinner" />
+  </div>
+)
 
 const CATEGORY_KEYS = [
   'all', 'battle', 'war', 'politics', 'religion', 'philosophy',
@@ -25,6 +51,7 @@ function App() {
   const { t } = useTranslation()
   const { currentYear, setCurrentYear, isPlaying, play, pause } = useTimelineStore()
   const { selectedEvent, setSelectedEvent } = useGlobeStore()
+  const { bookmarkedIds, toggleBookmark } = useBookmarkStore()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [searchQuery, setSearchQuery] = useState('')
   const [globeStyle, setGlobeStyle] = useState('default')
@@ -34,6 +61,27 @@ function App() {
   const [showcaseContent, setShowcaseContent] = useState<ShowcaseContent | null>(null)
   const [isShowcaseOpen, setIsShowcaseOpen] = useState(false)
   const [isExploreOpen, setIsExploreOpen] = useState(false)
+  const [isChainOpen, setIsChainOpen] = useState(false)
+  const [personDetailId, setPersonDetailId] = useState<number | null>(null)
+  const [locationDetailId, setLocationDetailId] = useState<number | null>(null)
+  const [advancedFilters, setAdvancedFilters] = useState<FilterState>(defaultFilters)
+  const [isFilterPanelOpen, setIsFilterPanelOpen] = useState(false)
+
+  // Handlers for entity detail views
+  const handlePersonClick = (personId: number) => {
+    setLocationDetailId(null) // Close location view if open
+    setPersonDetailId(personId)
+  }
+
+  const handleLocationClick = (locationId: number) => {
+    setPersonDetailId(null) // Close person view if open
+    setLocationDetailId(locationId)
+  }
+
+  const handleCloseEntityView = () => {
+    setPersonDetailId(null)
+    setLocationDetailId(null)
+  }
 
   // Format year display
   const formatYear = (year: number) => {
@@ -52,53 +100,62 @@ function App() {
     setSelectedEvent(null)
   }
 
+  // Fetch chain stats for sidebar
+  const { data: chainStats } = useQuery({
+    queryKey: ['chain-stats'],
+    queryFn: () => api.get('/chains/stats'),
+    select: (res) => res.data,
+    staleTime: 60000, // Cache for 1 minute
+  })
+
   // Fetch events for sidebar - filtered by current era
   const TIME_RANGE = 50 // ±50 years for nearby era filter
+  const WIDE_RANGE = 500 // ±500 years for "All Eras" mode (still centered on current year)
   const { data: allEventsData } = useQuery({
     queryKey: ['sidebar-events', currentYear, showAllEras],
     queryFn: () => api.get('/events', {
       params: showAllEras
-        ? { limit: 1000 }  // All eras: max 1000 (backend limit)
+        // "All Eras" mode: wider range centered on current year (moves with timeline)
+        ? { year_start: currentYear - WIDE_RANGE, year_end: currentYear + WIDE_RANGE, limit: 1000 }
         : { year_start: currentYear - TIME_RANGE, year_end: currentYear + TIME_RANGE, limit: 1000 }
     }),
     select: (res) => res.data.items,
   })
 
-  // Filter events for sidebar list (category & search only - era already filtered by API)
-  const filteredEvents = (allEventsData || [])
-    .filter((e: Event) => {
-      // Category filter
-      if (selectedCategory !== 'all') {
-        const cat = typeof e.category === 'string' ? e.category : e.category?.slug
-        if (cat?.toLowerCase() !== selectedCategory.toLowerCase()) return false
-      }
-      // Search filter
-      if (searchQuery) {
-        const q = searchQuery.toLowerCase()
-        if (!e.title.toLowerCase().includes(q)) return false
-      }
-      return true
-    })
-    .sort((a: Event, b: Event) => a.date_start - b.date_start)
-    .slice(0, 500)
+  // Filter events for sidebar list (category, search, and advanced filters)
+  const filteredEvents = useMemo(() => {
+    return (allEventsData || [])
+      .filter((e: Event) => {
+        // Category filter
+        if (selectedCategory !== 'all') {
+          const cat = typeof e.category === 'string' ? e.category : e.category?.slug
+          if (cat?.toLowerCase() !== selectedCategory.toLowerCase()) return false
+        }
+        // Search filter
+        if (searchQuery) {
+          const q = searchQuery.toLowerCase()
+          if (!e.title.toLowerCase().includes(q)) return false
+        }
+        // Advanced: Year range filter (if custom range set beyond API filter)
+        if (advancedFilters.yearRange.start > -3000 || advancedFilters.yearRange.end < 2025) {
+          if (e.date_start < advancedFilters.yearRange.start ||
+              e.date_start > advancedFilters.yearRange.end) {
+            return false
+          }
+        }
+        return true
+      })
+      .sort((a: Event, b: Event) => a.date_start - b.date_start)
+      .slice(0, 500)
+  }, [allEventsData, selectedCategory, searchQuery, advancedFilters.yearRange])
 
   const yearDisplay = formatYear(currentYear)
 
   // Get era information for current year
   const eraInfo = useMemo(() => formatYearWithEra(currentYear), [currentYear])
 
-  // Timeline playback - 1 year per 10 seconds
-  useEffect(() => {
-    if (!isPlaying) return
-
-    const interval = setInterval(() => {
-      useTimelineStore.setState((state) => ({
-        currentYear: state.currentYear + 1
-      }))
-    }, 5000) // 5 seconds per year
-
-    return () => clearInterval(interval)
-  }, [isPlaying])
+  // Note: Timeline playback is now handled by TimelapseControls component
+  // which uses requestAnimationFrame for smoother animation
 
   return (
     <div className="app-container">
@@ -129,12 +186,19 @@ function App() {
         </div>
 
         <div className="search-container">
-          <input
-            type="text"
-            className="search-input"
+          <SearchAutocomplete
             placeholder={t('sidebar.searchPlaceholder')}
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onSelectEvent={async (eventId) => {
+              try {
+                const res = await api.get(`/events/${eventId}`)
+                if (res.data) handleEventClick(res.data)
+              } catch (err) {
+                console.error('Failed to fetch event:', err)
+              }
+            }}
+            onSelectPerson={handlePersonClick}
+            onSelectLocation={handleLocationClick}
+            onSearch={setSearchQuery}
           />
         </div>
 
@@ -170,27 +234,53 @@ function App() {
           </button>
         </div>
 
-        <div className="event-list">
-          {filteredEvents.map((event: Event) => {
-            const year = formatYear(event.date_start)
-            const cat = typeof event.category === 'string' ? event.category : 'general'
-            return (
-              <div
-                key={event.id}
-                className={`event-item ${selectedEvent?.id === event.id ? 'selected' : ''}`}
-                onClick={() => handleEventClick(event)}
-              >
-                <div className="event-date">
-                  {year.era} {year.number}
-                </div>
-                <div className="event-title">{event.title}</div>
-                <span className={`event-category-badge ${cat}`}>
-                  {cat}
-                </span>
+        {/* Advanced Filters */}
+        <FilterPanel
+          filters={advancedFilters}
+          onChange={setAdvancedFilters}
+          isOpen={isFilterPanelOpen}
+          onToggle={() => setIsFilterPanelOpen(!isFilterPanelOpen)}
+        />
+
+        <VirtualEventList
+          events={filteredEvents}
+          selectedEventId={selectedEvent?.id}
+          onEventClick={handleEventClick}
+          onBookmarkToggle={toggleBookmark}
+          bookmarkedIds={bookmarkedIds}
+        />
+
+        {/* Historical Chain Stats Section */}
+        {chainStats && (
+          <div
+            className="chain-stats-section"
+            onClick={() => setIsChainOpen(true)}
+            title="Click to explore Historical Chain"
+          >
+            <div className="chain-stats-header">
+              <span className="chain-stats-icon">⧉</span>
+              <span className="chain-stats-title">{t('sidebar.chainStats', 'Historical Chain')}</span>
+            </div>
+            <div className="chain-stats-grid">
+              <div className="chain-stat-item">
+                <span className="chain-stat-value">{chainStats.total_connections?.toLocaleString()}</span>
+                <span className="chain-stat-label">{t('sidebar.connections', 'Connections')}</span>
               </div>
-            )
-          })}
-        </div>
+              <div className="chain-stat-item">
+                <span className="chain-stat-value">{chainStats.by_layer?.person?.toLocaleString() || 0}</span>
+                <span className="chain-stat-label">{t('sidebar.personLinks', 'Person')}</span>
+              </div>
+              <div className="chain-stat-item">
+                <span className="chain-stat-value">{chainStats.by_layer?.location?.toLocaleString() || 0}</span>
+                <span className="chain-stat-label">{t('sidebar.locationLinks', 'Location')}</span>
+              </div>
+              <div className="chain-stat-item">
+                <span className="chain-stat-value">{chainStats.by_layer?.causal?.toLocaleString() || 0}</span>
+                <span className="chain-stat-label">{t('sidebar.causalLinks', 'Causal')}</span>
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="sidebar-footer">
           <span>{t('sidebar.records')}: {filteredEvents.length} / {allEventsData?.length || 0}</span>
@@ -217,10 +307,26 @@ function App() {
           </div>
         </div>
 
-        <GlobeContainer onEventClick={handleEventClick} globeStyle={globeStyle} />
+        <Suspense fallback={<GlobeLoader />}>
+          <GlobeContainer onEventClick={handleEventClick} globeStyle={globeStyle} />
+        </Suspense>
 
-        <div className="globe-overlay-bottom" style={{ bottom: '100px' }}>
+        <div className="globe-overlay-bottom" style={{ bottom: '140px' }}>
           <div className="system-spec">{t('app.systemSpec')}</div>
+        </div>
+
+        {/* Enhanced Timeline Bar */}
+        <div className="timeline-bar-wrapper">
+          <TimelineBar
+            currentYear={currentYear}
+            onYearChange={setCurrentYear}
+            events={allEventsData || []}
+          />
+        </div>
+
+        {/* Timelapse Controls - Animated Time Travel */}
+        <div className="timelapse-wrapper">
+          <TimelapseControls />
         </div>
 
         {/* Timeline Controls - FGO Style */}
@@ -288,6 +394,8 @@ function App() {
           setInitialChatQuery(query)
           setIsChatOpen(true)
         }}
+        onPersonClick={handlePersonClick}
+        onLocationClick={handleLocationClick}
       />
 
       {/* SHEBA Chat Interface */}
@@ -322,28 +430,73 @@ function App() {
       </button>
 
       {/* Entity Explorer Panel */}
-      <ExplorePanel
-        isOpen={isExploreOpen}
-        onClose={() => setIsExploreOpen(false)}
-      />
+      <Suspense fallback={<PanelLoader />}>
+        <ExplorePanel
+          isOpen={isExploreOpen}
+          onClose={() => setIsExploreOpen(false)}
+        />
+      </Suspense>
+
+      {/* Historical Chain Panel */}
+      {isChainOpen && (
+        <div className="chain-panel-overlay">
+          <div className="chain-panel-container">
+            <button
+              className="chain-panel-close"
+              onClick={() => setIsChainOpen(false)}
+            >
+              ✕
+            </button>
+            <Suspense fallback={<PanelLoader />}>
+              <ChainPanel />
+            </Suspense>
+          </div>
+        </div>
+      )}
 
       {/* Showcase Modal */}
-      <ShowcaseModal
-        isOpen={isShowcaseOpen}
-        content={showcaseContent}
-        onClose={() => {
-          setIsShowcaseOpen(false)
-          setShowcaseContent(null)
-        }}
-        onEventClick={(eventId) => {
-          // Find and select the event, then close modal
-          const event = allEventsData?.find((e: Event) => e.id === eventId)
-          if (event) {
-            handleEventClick(event)
+      <Suspense fallback={<PanelLoader />}>
+        <ShowcaseModal
+          isOpen={isShowcaseOpen}
+          content={showcaseContent}
+          onClose={() => {
             setIsShowcaseOpen(false)
-          }
-        }}
-      />
+            setShowcaseContent(null)
+          }}
+          onEventClick={(eventId) => {
+            // Find and select the event, then close modal
+            const event = allEventsData?.find((e: Event) => e.id === eventId)
+            if (event) {
+              handleEventClick(event)
+              setIsShowcaseOpen(false)
+            }
+          }}
+        />
+      </Suspense>
+
+      {/* Person Detail View */}
+      {personDetailId && (
+        <Suspense fallback={<PanelLoader />}>
+          <PersonDetailView
+            personId={personDetailId}
+            onClose={handleCloseEntityView}
+            onEventClick={handleEventClick}
+            onPersonClick={handlePersonClick}
+          />
+        </Suspense>
+      )}
+
+      {/* Location Detail View */}
+      {locationDetailId && (
+        <Suspense fallback={<PanelLoader />}>
+          <LocationDetailView
+            locationId={locationDetailId}
+            onClose={handleCloseEntityView}
+            onEventClick={handleEventClick}
+            onLocationClick={handleLocationClick}
+          />
+        </Suspense>
+      )}
     </div>
   )
 }

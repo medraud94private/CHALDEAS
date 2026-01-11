@@ -1,0 +1,70 @@
+{
+  "timestamp": "20260108_140239",
+  "events_tested": 5,
+  "gpt_baseline_file": "C:\\Projects\\Chaldeas\\poc\\data\\enrichment_results\\test_20260108_012319.json",
+  "benchmarks": {
+    "qwen3:8b": {
+      "model": "qwen3:8b",
+      "total_events": 5,
+      "errors": 4,
+      "success_rate": 20.0,
+      "total_elapsed_sec": 110.9820282459259,
+      "avg_time_per_event": 22.19640564918518,
+      "avg_tokens_per_sec": 7.613845352758901,
+      "results": [
+        {
+          "id": 295,
+          "error": "Timeout (120s)",
+          "elapsed_sec": 120
+        },
+        {
+          "id": 1676,
+          "error": "Timeout (120s)",
+          "elapsed_sec": 120
+        },
+        {
+          "id": 2316,
+          "error": "Timeout (120s)",
+          "elapsed_sec": 120
+        },
+        {
+          "id": 6212,
+          "record_type": "event",
+          "title_clean": "Malabo Convention",
+          "year_start": 2014,
+          "year_end": 2014,
+          "year_precision": "exact",
+          "era": "CONTEMPORARY",
+          "location_name": "Malabo",
+          "location_modern": "Equatorial Guinea",
+          "latitude": 4.0,
+          "longitude": 12.0,
+          "category": "treaty",
+          "civilization": "African",
+          "confidence": "high",
+          "_meta": {
+            "elapsed_sec": 110.9820282459259,
+            "input_tokens": 756,
+            "output_tokens": 845,
+            "tokens_per_sec": 7.613845352758901
+          }
+        },
+        {
+          "id": 9256,
+          "error": "Timeout (120s)",
+          "elapsed_sec": 120
+        }
+      ]
+    }
+  },
+  "quality_comparison": {
+    "qwen3:8b": {
+      "era_match": 100.0,
+      "category_match": 0.0,
+      "year_match": 100.0,
+      "civilization_match": 0.0,
+      "record_type_match": 100.0,
+      "total_compared": 1
+    }
+  }
+}

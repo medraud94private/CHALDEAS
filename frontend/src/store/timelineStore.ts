@@ -15,7 +15,7 @@ interface TimelineState {
   playbackSpeed: number // years per second
 
   // Actions
-  setCurrentYear: (year: number) => void
+  setCurrentYear: (year: number | ((prev: number) => number)) => void
   setYearRange: (min: number, max: number) => void
   play: () => void
   pause: () => void
@@ -34,7 +34,9 @@ export const useTimelineStore = create<TimelineState>((set) => ({
   isPlaying: false,
   playbackSpeed: 10,
 
-  setCurrentYear: (year) => set({ currentYear: year }),
+  setCurrentYear: (year) => set((state) => ({
+    currentYear: typeof year === 'function' ? year(state.currentYear) : year
+  })),
 
   setYearRange: (min, max) => set({ yearRange: { min, max } }),
 

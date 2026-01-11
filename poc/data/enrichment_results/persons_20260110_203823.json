@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "total": 10,
+    "success": 10,
+    "errors": 0,
+    "input_tokens": 2067,
+    "output_tokens": 660,
+    "elapsed_seconds": 3.8371808528900146
+  },
+  "results": [
+    {
+      "birth_year": 1022,
+      "death_year": 1066,
+      "role": "King of England",
+      "era": "Medieval",
+      "is_real_person": true,
+      "id": 124737,
+      "name": "Harold"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "fictional character",
+      "era": "Medieval",
+      "is_real_person": false,
+      "id": 124709,
+      "name": "Alice"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "character",
+      "era": null,
+      "is_real_person": false,
+      "id": 124718,
+      "name": "Lucy"
+    },
+    {
+      "birth_year": 1894,
+      "death_year": 1986,
+      "role": "author",
+      "era": "20th century",
+      "is_real_person": true,
+      "id": 124764,
+      "name": "Dora Russell"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "monarch title",
+      "era": null,
+      "is_real_person": false,
+      "id": 124729,
+      "name": "Queen"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "location",
+      "era": null,
+      "is_real_person": false,
+      "id": 124720,
+      "name": "London"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "character (brother)",
+      "era": null,
+      "is_real_person": false,
+      "id": 124761,
+      "name": "Tom"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "protagonist",
+      "era": "fictional",
+      "is_real_person": false,
+      "id": 124743,
+      "name": "Jack"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "character",
+      "era": "18th century",
+      "is_real_person": false,
+      "id": 124744,
+      "name": "Dick"
+    },
+    {
+      "birth_year": null,
+      "death_year": null,
+      "role": "Abbot of Pershore",
+      "era": "Medieval",
+      "is_real_person": false,
+      "id": 124717,
+      "name": "Thomas"
+    }
+  ]
+}

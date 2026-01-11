@@ -1,0 +1,248 @@
+/**
+ * TimelineBar CSS - Enhanced Timeline Visualization
+ */
+
+.timeline-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+/* Era Labels */
+.timeline-eras {
+  position: relative;
+  height: 18px;
+  display: flex;
+}
+
+.timeline-era {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.timeline-era:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.timeline-era.active {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.era-label {
+  font-size: 0.55rem;
+  color: var(--chaldea-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.25rem;
+  opacity: 0.7;
+}
+
+.timeline-era.active .era-label {
+  opacity: 1;
+  color: var(--chaldea-text-bright);
+}
+
+/* Main Bar */
+.timeline-bar {
+  position: relative;
+  height: 24px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+.timeline-bar:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+/* Density Heat Map */
+.timeline-density {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+}
+
+.density-segment {
+  flex: 1;
+  transition: opacity 0.3s;
+}
+
+/* Era Background */
+.timeline-era-bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.era-bg-segment {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* Year Markers */
+.timeline-markers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.year-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.marker-line {
+  flex: 1;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.marker-year {
+  position: absolute;
+  bottom: -14px;
+  font-size: 0.55rem;
+  color: var(--chaldea-text);
+  font-family: 'Roboto Mono', monospace;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+
+.year-marker:hover .marker-year {
+  opacity: 1;
+  color: var(--chaldea-cyan);
+}
+
+/* Current Year Indicator */
+.timeline-indicator {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.indicator-line {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: var(--chaldea-cyan);
+  box-shadow: 0 0 8px var(--chaldea-cyan);
+}
+
+.indicator-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid var(--chaldea-cyan);
+}
+
+.indicator-year {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: 'Roboto Mono', monospace;
+  white-space: nowrap;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Quick Jump Buttons */
+.timeline-jumps {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.timeline-jumps button {
+  flex: 1;
+  padding: 0.375rem 0.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  color: var(--chaldea-text);
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.timeline-jumps button:hover {
+  background: rgba(0, 212, 255, 0.1);
+  border-color: rgba(0, 212, 255, 0.3);
+  color: var(--chaldea-cyan);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .timeline-bar-container {
+    padding: 0 0.5rem;
+  }
+
+  .era-label {
+    font-size: 0.5rem;
+  }
+
+  .timeline-bar {
+    height: 20px;
+  }
+
+  .timeline-jumps {
+    flex-wrap: wrap;
+  }
+
+  .timeline-jumps button {
+    flex: 1 1 30%;
+    font-size: 0.55rem;
+  }
+
+  .indicator-year {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-eras {
+    display: none;
+  }
+
+  .timeline-jumps button {
+    flex: 1 1 45%;
+  }
+}

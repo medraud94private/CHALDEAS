@@ -5,6 +5,7 @@ from fastapi import APIRouter
 from . import explore
 from . import globe
 from . import stats
+from . import chains
 
 router = APIRouter(prefix="/api/v1", tags=["v1"])
 
@@ -17,8 +18,5 @@ router.include_router(globe.router)
 # Stats: 데이터베이스 통계
 router.include_router(stats.router)
 
-# TODO: 라우터 등록은 각 모듈 구현 후 추가
-# from .curation import router as curation_router
-# from .periods import router as periods_router
-# router.include_router(curation_router)
-# router.include_router(periods_router)
+# Chains: 이벤트 연결 그래프 (Historical Chain)
+router.include_router(chains.router)

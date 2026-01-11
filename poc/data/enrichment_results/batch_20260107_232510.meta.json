@@ -1,0 +1,7 @@
+{
+  "batch_id": "batch_695e6d07a1148190acf9b5c9f73a1f7b",
+  "timestamp": "20260107_232510",
+  "event_count": 10428,
+  "model": "gpt-5.1-chat-latest",
+  "jsonl_path": "C:\\Projects\\Chaldeas\\poc\\data\\enrichment_results\\batch_20260107_232510.jsonl"
+}

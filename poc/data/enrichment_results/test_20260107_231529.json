@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "model": "gpt-5.1-chat-latest",
+    "count": 10,
+    "timestamp": "20260107_231529",
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "estimated_cost": 0.0
+  },
+  "results": [
+    {
+      "id": 1665,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 3175,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5678,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6190,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 8099,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9256,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 10415,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30983,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31057,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31084,
+      "error": "Error code: 400 - {'error': {'message': \"Unsupported value: 'temperature' does not support 0.1 with this model. Only the default (1) value is supported.\", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}",
+      "is_valid_event": null,
+      "needs_review": true
+    }
+  ]
+}

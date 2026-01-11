@@ -1,0 +1,612 @@
+{
+  "metadata": {
+    "model": "gpt-5-nano",
+    "count": 100,
+    "timestamp": "20260108_001018",
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "estimated_cost": 0.0
+  },
+  "results": [
+    {
+      "id": 103,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 240,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 315,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 655,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 666,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 708,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1107,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1128,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1202,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1276,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1322,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1426,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1592,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1651,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1681,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 1882,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2082,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2350,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2824,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2880,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 2984,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 3042,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 3058,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 3272,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 3278,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 3617,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 4331,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 4678,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5084,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5255,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5423,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5449,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5584,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5652,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5757,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 5784,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6212,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6277,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6383,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6393,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6410,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6428,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6671,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6673,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6701,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6711,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6717,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6731,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6737,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6815,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 6841,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 7564,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 7769,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 7816,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 8870,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9149,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9256,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9288,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9398,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9413,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9458,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 9836,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 10404,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 10909,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29083,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29125,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29234,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29534,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 29854,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30981,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30983,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30984,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30988,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30989,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30990,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30991,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 30998,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31000,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31001,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31002,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31009,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31019,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31033,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31036,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31041,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31048,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31049,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31058,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31081,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31099,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31103,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31108,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31110,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31112,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31122,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31127,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31128,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 31139,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 76239,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    },
+    {
+      "id": 76240,
+      "error": "Empty response from model",
+      "is_valid_event": null,
+      "needs_review": true
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "person": {
+    "id": 124685,
+    "name": "Byron",
+    "name_ko": null,
+    "birth_year": 1798,
+    "death_year": 1824,
+    "role": "poet quoted",
+    "certainty": "fact",
+    "description": null,
+    "events": {
+      "direct_period": [
+        {
+          "id": 394099,
+          "title": "Lord Byron as a Satirist in Verse",
+          "date_start": 1800,
+          "date_end": 1824,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=pg73176"
+        },
+        {
+          "id": 320619,
+          "title": "Marriage of Lord Byron and Lady Byron",
+          "date_start": 1815,
+          "date_end": 1815,
+          "location_name": "Ouedra/Adron (river)",
+          "latitude": 54.90793375,
+          "longitude": -1.43147639,
+          "description": "[NER] mention_count=1, first_source=000557793_01_text"
+        },
+        {
+          "id": 320617,
+          "title": "Publication of Poems by Byron",
+          "date_start": 1816,
+          "date_end": 1816,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=000557783_01_text"
+        },
+        {
+          "id": 328345,
+          "title": "Byron's Letter to Thomas Moore",
+          "date_start": 1817,
+          "date_end": 1817,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000975338_01_text"
+        },
+        {
+          "id": 309734,
+          "title": "Death of Lord Byron",
+          "date_start": 1824,
+          "date_end": 1824,
+          "location_name": "Arakynthos",
+          "latitude": 38.4577761,
+          "longitude": 21.4827733,
+          "description": "[NER] mention_count=2, first_source=003599308_01_text"
+        },
+        {
+          "id": 316759,
+          "title": "Last Days of Lord Byron",
+          "date_start": 1824,
+          "date_end": 1824,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000373586_01_text"
+        },
+        {
+          "id": 318316,
+          "title": "Death of Lord Byron",
+          "date_start": 1824,
+          "date_end": 1824,
+          "location_name": "Arakynthos",
+          "latitude": 38.4577761,
+          "longitude": 21.4827733,
+          "description": "[NER] mention_count=1, first_source=000462364_01_text"
+        },
+        {
+          "id": 320603,
+          "title": "Edition of Byron’s Works",
+          "date_start": 1825,
+          "date_end": 1825,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000557755_08_text"
+        },
+        {
+          "id": 320606,
+          "title": "Publication of Oeuvres Complètes de Lord Byron",
+          "date_start": 1830,
+          "date_end": 1830,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000557756_02_text"
+        },
+        {
+          "id": 320589,
+          "title": "Publication of Byron's Letters Collection",
+          "date_start": 1830,
+          "date_end": 1830,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=000557743_08_text"
+        },
+        {
+          "id": 320581,
+          "title": "Publication of The Works of Lord Byron",
+          "date_start": 1831,
+          "date_end": 1831,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=000557743_01_text"
+        },
+        {
+          "id": 320607,
+          "title": "Publication of the Complete Works of Lord Byron",
+          "date_start": 1850,
+          "date_end": 1850,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000557756_02_text"
+        },
+        {
+          "id": 360696,
+          "title": "Anniversary of Lord Byron's Birthday",
+          "date_start": 1853,
+          "date_end": 1853,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002889485_01_text"
+        }
+      ],
+      "direct_other": [
+        {
+          "id": 377649,
+          "title": "Duel between Mr. Chaworth and Lord Byron",
+          "date_start": 1765,
+          "date_end": 1765,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=003842478_02_text"
+        },
+        {
+          "id": 31019,
+          "title": "A Confederate Soldier's Tale",
+          "date_start": 1861,
+          "date_end": 1865,
+          "location_name": "Tennessee, United States",
+          "latitude": 35.5175,
+          "longitude": -86.5804,
+          "description": "Sam Watkins was only 21 when his home state of Tennessee seceded from the Union in the spring of 1861. Swept away by the patriotic fervor and thirst for adventure that gripped an entire generation of "
+        },
+        {
+          "id": 357992,
+          "title": "Centenary Celebration of Byron",
+          "date_start": 1889,
+          "date_end": 1889,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002690393_01_text"
+        },
+        {
+          "id": 320580,
+          "title": "Edition of Byron's Prose",
+          "date_start": 1896,
+          "date_end": 1896,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000557738_01_text"
+        }
+      ],
+      "context_only": [
+        {
+          "id": 385227,
+          "title": "Capitulation of Fort St Philip",
+          "date_start": 1782,
+          "date_end": 1782,
+          "location_name": "Es Trepucó",
+          "latitude": 39.87380216,
+          "longitude": 4.26552077,
+          "description": "[NER] mention_count=1, first_source=pg27372"
+        },
+        {
+          "id": 334589,
+          "title": "Civic Oath of Louis-Philippe and His Brothers",
+          "date_start": 1790,
+          "date_end": 1790,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=001380842_05_text"
+        },
+        {
+          "id": 341039,
+          "title": "Embassy to the Court of Persia",
+          "date_start": 1799,
+          "date_end": 1799,
+          "location_name": "Rhaga(i)/Europos/Arsakia/Ray",
+          "latitude": 35.594267,
+          "longitude": 51.447163,
+          "description": "[NER] mention_count=1, first_source=001714448_01_text"
+        },
+        {
+          "id": 350669,
+          "title": "Tour in Persia",
+          "date_start": 1800,
+          "date_end": 1830,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002299898_01_text"
+        },
+        {
+          "id": 350477,
+          "title": "Peace Treaty between Persia and Russia",
+          "date_start": 1800,
+          "date_end": 1828,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002292443_02_text"
+        },
+        {
+          "id": 5269,
+          "title": "Anglo-Persian Treaty of 1801",
+          "date_start": 1801,
+          "date_end": 1801,
+          "location_name": "Rhaga(i)/Europos/Arsakia/Ray",
+          "latitude": 35.594267,
+          "longitude": 51.447163,
+          "description": "1801 treaty between Great Britain and Persia"
+        },
+        {
+          "id": 4001,
+          "title": "Russo-Persian War",
+          "date_start": 1804,
+          "date_end": 1813,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "1804–1813 conflict"
+        },
+        {
+          "id": 28647,
+          "title": "Russo-Persian War (1804–1813)",
+          "date_start": 1804,
+          "date_end": 1813,
+          "location_name": "Republic of Armenia",
+          "latitude": 40.0691,
+          "longitude": 45.0382,
+          "description": "battle event"
+        },
+        {
+          "id": 5832,
+          "title": "Treaty of Finckenstein",
+          "date_start": 1807,
+          "date_end": 1807,
+          "location_name": "Kamieniec, Poland",
+          "latitude": 53.746,
+          "longitude": 19.099,
+          "description": "1807 treaty between France and Persia"
+        },
+        {
+          "id": 319473,
+          "title": "Mission to Persia",
+          "date_start": 1807,
+          "date_end": 1807,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=000511189_01_text"
+        },
+        {
+          "id": 377158,
+          "title": "Persian Campaign",
+          "date_start": 1808,
+          "date_end": 1808,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003817098_35_text"
+        },
+        {
+          "id": 10833,
+          "title": "Siege of Erivan",
+          "date_start": 1808,
+          "date_end": 1808,
+          "location_name": "Ptghnavank",
+          "latitude": 40.25497513,
+          "longitude": 44.58406902,
+          "description": "siege during the Russo-Persian War in 1808"
+        },
+        {
+          "id": 306609,
+          "title": "Capture of Macedonian",
+          "date_start": 1812,
+          "date_end": 1812,
+          "location_name": "Waters off Madeira, Portugal",
+          "latitude": 32.5,
+          "longitude": -17.0,
+          "description": "[NER] mention_count=2, first_source=000204779_01_text"
+        },
+        {
+          "id": 10479,
+          "title": "Siege of Fort St. Philip",
+          "date_start": 1815,
+          "date_end": 1815,
+          "location_name": "Plaquemines Parish, Louisiana, United States",
+          "latitude": 29.45,
+          "longitude": -89.61,
+          "description": "battle in the War of 1812"
+        },
+        {
+          "id": 346581,
+          "title": "Journey into Persia",
+          "date_start": 1817,
+          "date_end": 1817,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002013042_01_text"
+        },
+        {
+          "id": 357457,
+          "title": "Publication/Performance of The Persian Hunters; or, The Rose of Gurgistan",
+          "date_start": 1817,
+          "date_end": 1817,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=002663854_01_text"
+        },
+        {
+          "id": 344152,
+          "title": "The Persian Heroine",
+          "date_start": 1822,
+          "date_end": 1822,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=001878544_01_text"
+        },
+        {
+          "id": 5972,
+          "title": "Treaties of Erzurum",
+          "date_start": 1823,
+          "date_end": 1847,
+          "location_name": "Erzurum",
+          "latitude": 39.90799865,
+          "longitude": 41.27600464,
+          "description": "1823 and 1847 treaties that settled boundary disputes between the Ottoman Empire and Persia"
+        },
+        {
+          "id": 4150,
+          "title": "Russo-Persian War of 1826–1828",
+          "date_start": 1826,
+          "date_end": 1828,
+          "location_name": "Baku",
+          "latitude": 40.395278,
+          "longitude": 49.882222,
+          "description": "last major armed conflict between the Russian Empire and Qajar Iran"
+        },
+        {
+          "id": 363207,
+          "title": "Russo-Persian War (1826–1828)",
+          "date_start": 1826,
+          "date_end": 1828,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003034308_03_text"
+        },
+        {
+          "id": 360582,
+          "title": "Publication of Sketches of Persia",
+          "date_start": 1827,
+          "date_end": 1827,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=002877827_01_text"
+        },
+        {
+          "id": 336231,
+          "title": "Arrival of Louis-Philippe at the Tuileries",
+          "date_start": 1830,
+          "date_end": 1830,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=001476975_03_text"
+        },
+        {
+          "id": 311223,
+          "title": "Accession of Louis Philippe",
+          "date_start": 1830,
+          "date_end": 1830,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=000052367_07_text"
+        },
+        {
+          "id": 333353,
+          "title": "Residence of the Persian Princes in London",
+          "date_start": 1835,
+          "date_end": 1835,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=001314323_01_text"
+        },
+        {
+          "id": 356542,
+          "title": "Visit of the Persian Royal Family to England",
+          "date_start": 1836,
+          "date_end": 1836,
+          "location_name": "Roman forum of London",
+          "latitude": 51.51268776,
+          "longitude": -0.08356306,
+          "description": "[NER] mention_count=1, first_source=002602296_01_text"
+        },
+        {
+          "id": 6243,
+          "title": "Hamerton Treaty",
+          "date_start": 1845,
+          "date_end": 1845,
+          "location_name": "Zanzibar City, Tanzania",
+          "latitude": -6.165,
+          "longitude": 39.199,
+          "description": "1845 treaty outlawing the export of slaves from Zanzibar to the Persian Gulf area"
+        },
+        {
+          "id": 356422,
+          "title": "Escape and Concealment of Louis Philippe at Dammartin",
+          "date_start": 1848,
+          "date_end": 1848,
+          "location_name": "Claye-Souilly, France",
+          "latitude": 48.955,
+          "longitude": 2.663,
+          "description": "[NER] mention_count=1, first_source=002593459_01_text"
+        },
+        {
+          "id": 317812,
+          "title": "Fall of Louis-Philippe I",
+          "date_start": 1848,
+          "date_end": 1848,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=000436798_01_text"
+        },
+        {
+          "id": 360956,
+          "title": "Abdication of King Louis-Philippe",
+          "date_start": 1848,
+          "date_end": 1848,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=002905852_01_text"
+        },
+        {
+          "id": 361003,
+          "title": "Flight of Louis Philippe",
+          "date_start": 1848,
+          "date_end": 1848,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=002908852_01_text"
+        },
+        {
+          "id": 360677,
+          "title": "Abdication of King Louis-Philippe",
+          "date_start": 1848,
+          "date_end": 1848,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=002887148_06_text"
+        },
+        {
+          "id": 342047,
+          "title": "Flight of Louis-Philippe",
+          "date_start": 1848,
+          "date_end": 1848,
+          "location_name": "Thermes de Cluny",
+          "latitude": 48.8506016,
+          "longitude": 2.3432743,
+          "description": "[NER] mention_count=1, first_source=001761170_02_text"
+        },
+        {
+          "id": 375277,
+          "title": "Sale to Philip Jones",
+          "date_start": 1850,
+          "date_end": 1850,
+          "location_name": null,
+          "latitude": null,
+          "longitude": null,
+          "description": "[NER] mention_count=1, first_source=003678556_01_text"
+        }
+      ]
+    },
+    "locations": [],
+    "related_persons": []
+  },
+  "story": {
+    "summary": "Byron was a central figure of the Romantic era, celebrated for his poetic genius, biting satire, and deeply influential personal style. His works and persona shaped 19th‑century literature and left a legacy that continued to grow after his death through extensive posthumous publications.",
+    "life_phases": [
+      {
+        "name": "Formative and Early Literary Years",
+        "years": "1798–1814",
+        "description": "Byron’s early life was marked by education, travel, and the emergence of his poetic voice, culminating in early satirical works that established him within the English literary world."
+      },
+      {
+        "name": "Marriage and Public Recognition",
+        "years": "1815–1817",
+        "description": "During this period Byron married Lady Byron, gained public prominence, and published works that expanded his reputation, while also navigating personal turbulence."
+      },
+      {
+        "name": "Exile, Correspondence, and Later Works",
+        "years": "1817–1823",
+        "description": "Living abroad, Byron continued writing, maintained significant literary correspondence such as with Thomas Moore, and refined his poetic style."
+      },
+      {
+        "name": "Final Campaign and Death",
+        "years": "1824",
+        "description": "Byron’s last months were marked by his involvement in Greek causes and his declining health, culminating in his death at Arakynthos."
+      },
+      {
+        "name": "Posthumous Influence",
+        "years": "1825–1853",
+        "description": "After his death, numerous editions of his works were published, sustaining and expanding his literary legacy into the mid‑19th century."
+      }
+    ],
+    "key_events": [
+      {
+        "event_id": 394099,
+        "title": "Lord Byron as a Satirist in Verse",
+        "year": 1800,
+        "significance": "Marks an early stage of Byron’s literary development and his emergence as a satirical voice."
+      },
+      {
+        "event_id": 320619,
+        "title": "Marriage of Lord Byron and Lady Byron",
+        "year": 1815,
+        "significance": "A pivotal personal event that influenced his public image and later writings."
+      },
+      {
+        "event_id": 320617,
+        "title": "Publication of Poems by Byron",
+        "year": 1816,
+        "significance": "Strengthened his standing in literary circles and demonstrated his developing Romantic style."
+      },
+      {
+        "event_id": 328345,
+        "title": "Byron's Letter to Thomas Moore",
+        "year": 1817,
+        "significance": "Reflects his intellectual network and provides insight into his thoughts during his exile."
+      },
+      {
+        "event_id": 309734,
+        "title": "Death of Lord Byron",
+        "year": 1824,
+        "significance": "Marked the end of his active involvement in European cultural and political life."
+      },
+      {
+        "event_id": 316759,
+        "title": "Last Days of Lord Byron",
+        "year": 1824,
+        "significance": "Documents his final efforts and declining health, offering historical context to his death."
+      },
+      {
+        "event_id": 320603,
+        "title": "Edition of Byron’s Works",
+        "year": 1825,
+        "significance": "One of the earliest posthumous compilations that helped solidify his literary legacy."
+      },
+      {
+        "event_id": 320606,
+        "title": "Publication of Oeuvres Complètes de Lord Byron",
+        "year": 1830,
+        "significance": "Expanded his influence into the French-speaking world."
+      },
+      {
+        "event_id": 320581,
+        "title": "Publication of The Works of Lord Byron",
+        "year": 1831,
+        "significance": "A major English-language compilation that preserved his reputation for later generations."
+      },
+      {
+        "event_id": 360696,
+        "title": "Anniversary of Lord Byron's Birthday",
+        "year": 1853,
+        "significance": "Shows continued commemoration and cultural relevance decades after his death."
+      }
+    ],
+    "connections": [
+      {
+        "name": "Lady Byron",
+        "relationship": "Spouse",
+        "significance": "Their marriage and subsequent separation shaped Byron’s personal life and public perception."
+      },
+      {
+        "name": "Thomas Moore",
+        "relationship": "Friend and Correspondent",
+        "significance": "A key literary ally whose correspondence with Byron provides critical insight into his life."
+      },
+      {
+        "name": "Roman forum of London",
+        "relationship": "Publication Site",
+        "significance": "Location associated with several major editions of his works, symbolizing his enduring influence in English literary centers."
+      },
+      {
+        "name": "Arakynthos",
+        "relationship": "Place of Death",
+        "significance": "The site associated with his final days and passing, central to narratives of his later life."
+      }
+    ],
+    "legacy": "Byron’s poetry, personality, and political engagement helped define the Romantic movement and inspired generations of writers across Europe. His posthumous publications ensured that his influence extended well beyond his short life, securing his place as one of the most iconic literary figures of the 19th century.",
+    "_meta": {
+      "model": "gpt-5.1-chat-latest",
+      "primary_events": 13,
+      "context_events": 33,
+      "generated_at": "2026-01-10T23:37:27.559880"
+    }
+  }
+}

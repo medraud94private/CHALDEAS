@@ -25,6 +25,7 @@ class Settings(BaseSettings):
 
     # CORS - CHALDEAS fixed ports
     backend_cors_origins: list[str] = [
+        "*",  # Allow all in dev
         "http://localhost:5200",  # Chaldeas frontend (fixed)
         "http://localhost:5173",
         "http://localhost:3000",
