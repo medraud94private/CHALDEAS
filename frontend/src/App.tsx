@@ -7,7 +7,7 @@ import type { ShowcaseContent } from './components/showcase'
 import { FilterPanel, defaultFilters } from './components/filters'
 import type { FilterState } from './components/filters'
 import { SearchAutocomplete } from './components/search'
-import { TimelineBar, TimelapseControls } from './components/timeline'
+import { UnifiedTimeline } from './components/timeline'
 import { VirtualEventList } from './components/sidebar'
 import { LanguageSelector } from './components/common'
 import { useTimelineStore } from './store/timelineStore'
@@ -15,7 +15,6 @@ import { useGlobeStore } from './store/globeStore'
 import { useBookmarkStore } from './store/bookmarkStore'
 import { useQuery } from '@tanstack/react-query'
 import { api } from './api/client'
-import { formatYearWithEra } from './utils/era'
 import type { Event } from './types'
 
 // Lazy load heavy components (Three.js/Globe, panels)
@@ -49,7 +48,7 @@ const GLOBE_STYLE_KEYS = ['default', 'holo', 'night'] as const
 
 function App() {
   const { t } = useTranslation()
-  const { currentYear, setCurrentYear, isPlaying, play, pause } = useTimelineStore()
+  const { currentYear, setCurrentYear } = useTimelineStore()
   const { selectedEvent, setSelectedEvent } = useGlobeStore()
   const { bookmarkedIds, toggleBookmark } = useBookmarkStore()
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -81,13 +80,6 @@ function App() {
   const handleCloseEntityView = () => {
     setPersonDetailId(null)
     setLocationDetailId(null)
-  }
-
-  // Format year display
-  const formatYear = (year: number) => {
-    const absYear = Math.abs(year)
-    const era = year < 0 ? 'BC' : 'AD'
-    return { number: absYear, era }
   }
 
   const handleEventClick = (event: Event) => {
@@ -148,14 +140,6 @@ function App() {
       .sort((a: Event, b: Event) => a.date_start - b.date_start)
       .slice(0, 500)
   }, [allEventsData, selectedCategory, searchQuery, advancedFilters.yearRange])
-
-  const yearDisplay = formatYear(currentYear)
-
-  // Get era information for current year
-  const eraInfo = useMemo(() => formatYearWithEra(currentYear), [currentYear])
-
-  // Note: Timeline playback is now handled by TimelapseControls component
-  // which uses requestAnimationFrame for smoother animation
 
   return (
     <div className="app-container">
@@ -311,76 +295,13 @@ function App() {
           <GlobeContainer onEventClick={handleEventClick} globeStyle={globeStyle} />
         </Suspense>
 
-        <div className="globe-overlay-bottom" style={{ bottom: '140px' }}>
+        <div className="globe-overlay-bottom" style={{ bottom: '100px' }}>
           <div className="system-spec">{t('app.systemSpec')}</div>
         </div>
 
-        {/* Enhanced Timeline Bar */}
-        <div className="timeline-bar-wrapper">
-          <TimelineBar
-            currentYear={currentYear}
-            onYearChange={setCurrentYear}
-            events={allEventsData || []}
-          />
-        </div>
-
-        {/* Timelapse Controls - Animated Time Travel */}
-        <div className="timelapse-wrapper">
-          <TimelapseControls />
-        </div>
-
-        {/* Timeline Controls - FGO Style */}
-        <div className="timeline-container">
-          {/* Era Display */}
-          <div className="era-display">
-            <div className="era-badge" style={{ borderColor: eraInfo.eraColor, color: eraInfo.eraColor }}>
-              <span className="era-name">{t(`era.names.${eraInfo.eraName}`)}</span>
-            </div>
-            <div className="era-context">{t(`era.contexts.${eraInfo.eraName}`, t('era.observing'))}</div>
-          </div>
-
-          <div className="timeline-controls">
-            <button
-              className="timeline-btn"
-              onClick={() => setCurrentYear(currentYear - 100)}
-            >
-              ◀◀ 100
-            </button>
-            <button
-              className="timeline-btn"
-              onClick={() => setCurrentYear(currentYear - 10)}
-            >
-              ◀ 10
-            </button>
-
-            <div className="timeline-year-display">
-              <div className="timeline-year-label">{t('timeline.observingYear')}</div>
-              <div className="timeline-year-value">
-                <span className="year-number">{yearDisplay.number}</span>
-                <span className="year-era" style={{ color: eraInfo.eraColor }}>{yearDisplay.era}</span>
-              </div>
-            </div>
-
-            <button
-              className="timeline-btn play"
-              onClick={() => (isPlaying ? pause() : play())}
-            >
-              {isPlaying ? '⏸' : '▶'}
-            </button>
-
-            <button
-              className="timeline-btn"
-              onClick={() => setCurrentYear(currentYear + 10)}
-            >
-              10 ▶
-            </button>
-            <button
-              className="timeline-btn"
-              onClick={() => setCurrentYear(currentYear + 100)}
-            >
-              100 ▶▶
-            </button>
-          </div>
+        {/* Unified Timeline - switchable modes (compact/standard/expanded) */}
+        <div className="unified-timeline-wrapper">
+          <UnifiedTimeline events={allEventsData || []} />
         </div>
       </section>
 

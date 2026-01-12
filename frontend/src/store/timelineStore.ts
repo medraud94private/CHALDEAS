@@ -1,4 +1,8 @@
 import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
+
+// Timeline display modes
+export type TimelineDisplayMode = 'compact' | 'standard' | 'expanded'
 
 interface TimelineState {
   // Current year being observed
@@ -14,6 +18,9 @@ interface TimelineState {
   isPlaying: boolean
   playbackSpeed: number // years per second
 
+  // Display settings (persisted)
+  displayMode: TimelineDisplayMode
+
   // Actions
   setCurrentYear: (year: number | ((prev: number) => number)) => void
   setYearRange: (min: number, max: number) => void
@@ -21,33 +28,48 @@ interface TimelineState {
   pause: () => void
   setPlaybackSpeed: (speed: number) => void
   jumpToEra: (year: number) => void
+  setDisplayMode: (mode: TimelineDisplayMode) => void
 }
 
-export const useTimelineStore = create<TimelineState>((set) => ({
-  currentYear: -500, // Start at 500 BCE (Classical Greece)
+export const useTimelineStore = create<TimelineState>()(
+  persist(
+    (set) => ({
+      currentYear: -500, // Start at 500 BCE (Classical Greece)
 
-  yearRange: {
-    min: -3000,
-    max: 2024,
-  },
+      yearRange: {
+        min: -3000,
+        max: 2024,
+      },
 
-  isPlaying: false,
-  playbackSpeed: 10,
+      isPlaying: false,
+      playbackSpeed: 10,
+      displayMode: 'standard' as TimelineDisplayMode,
 
-  setCurrentYear: (year) => set((state) => ({
-    currentYear: typeof year === 'function' ? year(state.currentYear) : year
-  })),
+      setCurrentYear: (year) => set((state) => ({
+        currentYear: typeof year === 'function' ? year(state.currentYear) : year
+      })),
 
-  setYearRange: (min, max) => set({ yearRange: { min, max } }),
+      setYearRange: (min, max) => set({ yearRange: { min, max } }),
 
-  play: () => set({ isPlaying: true }),
+      play: () => set({ isPlaying: true }),
 
-  pause: () => set({ isPlaying: false }),
+      pause: () => set({ isPlaying: false }),
 
-  setPlaybackSpeed: (speed) => set({ playbackSpeed: speed }),
+      setPlaybackSpeed: (speed) => set({ playbackSpeed: speed }),
 
-  jumpToEra: (year) => set({ currentYear: year, isPlaying: false }),
-}))
+      jumpToEra: (year) => set({ currentYear: year, isPlaying: false }),
+
+      setDisplayMode: (mode) => set({ displayMode: mode }),
+    }),
+    {
+      name: 'chaldeas-timeline',
+      partialize: (state) => ({
+        displayMode: state.displayMode,
+        playbackSpeed: state.playbackSpeed
+      }),
+    }
+  )
+)
 
 // Era definitions for quick navigation
 export const ERAS = [

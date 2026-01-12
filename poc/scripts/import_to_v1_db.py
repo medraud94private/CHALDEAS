@@ -397,10 +397,8 @@ def import_events(session, data_path: Path, force_all: bool = False):
             else:
                 certainty = "mythological"
 
-            # description에 source 정보 임시 저장
-            source_info = f"[NER] mention_count={mention_count}"
-            if first_source:
-                source_info += f", first_source={first_source}"
+            # Note: description is left NULL for NER-extracted events
+            # Real descriptions should be enriched later from Wikipedia or other sources
 
             try:
                 # Use savepoint to prevent batch-wide rollback on individual failure
@@ -410,14 +408,13 @@ def import_events(session, data_path: Path, force_all: bool = False):
                             INSERT INTO events (title, slug, date_start, certainty,
                                                temporal_scale, description, created_at, updated_at)
                             VALUES (:title, :slug, :year, :certainty,
-                                    'evenementielle', :description, NOW(), NOW())
+                                    'evenementielle', NULL, NOW(), NOW())
                         """),
                         {
                             "title": title[:500],  # Ensure truncation
                             "slug": slug,
                             "year": event.get("year"),
-                            "certainty": certainty,
-                            "description": source_info[:1000] if source_info else None
+                            "certainty": certainty
                         }
                     )
                 count += 1
