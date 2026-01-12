@@ -131,6 +131,33 @@ steps:
     id: 'deploy-frontend'
     waitFor: ['push-frontend']
 
+  # ============================================
+  # Step 8: Deploy Frontend to us-central1 (for domain mapping)
+  # ============================================
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - '${_FRONTEND_SERVICE}'
+      - '--image'
+      - '${_AR_REPO}/${_FRONTEND_SERVICE}:latest'
+      - '--region'
+      - 'us-central1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--memory'
+      - '512Mi'
+      - '--cpu'
+      - '1'
+      - '--min-instances'
+      - '0'
+      - '--max-instances'
+      - '3'
+    id: 'deploy-frontend-us'
+    waitFor: ['push-frontend']
+
 images:
   - '${_AR_REPO}/${_BACKEND_SERVICE}:latest'
   - '${_AR_REPO}/${_FRONTEND_SERVICE}:latest'

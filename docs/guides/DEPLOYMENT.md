@@ -4,6 +4,49 @@
 
 이 가이드는 CHALDEAS를 Google Cloud Run에 배포하는 방법을 설명합니다.
 
+---
+
+## 중요: 리전 설정
+
+### Frontend는 us-central1에 배포해야 함!
+
+**문제**: Cloud Run의 커스텀 도메인 매핑은 특정 리전에서만 지원됩니다.
+
+| 리전 | 도메인 매핑 지원 |
+|------|-----------------|
+| us-central1 | **지원** |
+| asia-northeast3 (서울) | **미지원** |
+
+따라서 `www.chaldeas.site` 도메인은 반드시 **us-central1** 리전의 Cloud Run 서비스에 연결되어야 합니다.
+
+### 현재 배포 구조
+
+| 서비스 | 리전 | 용도 | 도메인 |
+|--------|------|------|--------|
+| chaldeas-backend | asia-northeast3 | API 서버 | - |
+| chaldeas-frontend | asia-northeast3 | 프론트엔드 (백업) | - |
+| chaldeas-frontend | **us-central1** | 프론트엔드 (메인) | www.chaldeas.site |
+
+### DNS 흐름
+
+```
+www.chaldeas.site
+    ↓ CNAME
+ghs.googlehosted.com
+    ↓
+Cloud Run (us-central1)  ← Frontend
+    ↓ API calls
+Cloud Run (asia-northeast3)  ← Backend
+    ↓
+Cloud SQL (asia-northeast3)
+```
+
+### cloudbuild.yaml 설정
+
+`cloudbuild.yaml`은 Frontend를 **양쪽 리전 모두**에 배포합니다:
+- `asia-northeast3`: 백업/테스트용
+- `us-central1`: 도메인 연결용 (실제 서비스)
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    배포 아키텍처                              │

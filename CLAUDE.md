@@ -98,6 +98,37 @@ python poc/scripts/import_to_v1_db.py   # NER 데이터 DB 임포트
 
 ---
 
+## Deployment (GCP Cloud Run)
+
+### 중요: 리전 설정
+
+| 서비스 | 리전 | 용도 | 도메인 |
+|--------|------|------|--------|
+| chaldeas-backend | asia-northeast3 | API 서버 | - |
+| chaldeas-frontend | **us-central1** | 프론트엔드 | www.chaldeas.site |
+
+> **주의**: Frontend는 반드시 **us-central1**에 배포해야 함. asia-northeast3는 커스텀 도메인 매핑을 지원하지 않음!
+
+### 배포 명령어
+
+```powershell
+# 전체 배포 (Cloud Build)
+gcloud builds submit --config=cloudbuild.yaml --project=chaldeas-archive
+
+# DB 동기화 (로컬 → 클라우드)
+.\scripts\sync-db.ps1 up
+```
+
+### Production URLs
+
+- **Frontend**: https://www.chaldeas.site
+- **Backend API**: https://chaldeas-backend-951004107180.asia-northeast3.run.app
+- **GCP Project**: `chaldeas-archive`
+
+상세 가이드: `docs/guides/DEPLOYMENT.md`
+
+---
+
 ## Architecture: 7-Layer World-Centric Model
 
 ```
