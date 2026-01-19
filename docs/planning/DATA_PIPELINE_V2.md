@@ -1,85 +1,118 @@
 # CHALDEAS Data Pipeline V2 Plan
 
 **Date**: 2026-01-08
-**Status**: Draft
+**Last Updated**: 2026-01-15
+**Status**: In Progress
 **Author**: Claude + User
 
 ---
 
-## 1. Background
+## 1. Core Principle: Document-First
 
-### Current Pipeline (V1) - Problems Identified
+> **"소스 문서가 Ground Truth다. Wikidata는 보강 수단일 뿐."**
+
+수만 권의 책을 처리할 시스템. Wikipedia에 없는 인물/사건도 많으므로,
+소스 문서 기반 추출이 핵심이고 Wikidata는 선택적 보강 레이어다.
 
 ```
-Source Documents (76,023)
-    ↓ NER Extraction (GPT-5-nano, ~$47)
-Raw Entities (events, persons, locations)
-    ↓ Simple String Matching (BROKEN)
-Events with wrong locations assigned
-    ↓ Enrichment Pass (GPT-5.1, ~$115)
-Fixed Events
+┌─────────────────────────────────────────────────────────────────┐
+│  PRIMARY: 소스 문서 → LLM 추출 → Entity Resolution → DB        │
+├─────────────────────────────────────────────────────────────────┤
+│  SECONDARY: Wikidata 매칭 → 메타데이터 보강 (Optional)          │
+├─────────────────────────────────────────────────────────────────┤
+│  TERTIARY: Wikipedia 링크 → 추가 관계 발견 (Optional)           │
+└─────────────────────────────────────────────────────────────────┘
 ```
-
-**Issues:**
-- Context lost during NER extraction
-- Location matching by string caused major errors (e.g., Battle of Thermopylae → Vasio, France)
-- Two-pass approach: cheap extraction + expensive fix = inefficient
-- Total cost: ~$162 for questionable quality
 
 ---
 
-## 2. Proposed Architecture
+## 2. Architecture Overview
 
-### Two-Track Approach
+```
+신규 문서 (수만 권)
+     │
+     ▼
+┌─────────────────────┐
+│  LLM 통합 추출      │  ← Primary Source of Truth
+│  (Events, Persons,  │
+│   Locations, Rels)  │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  Entity Resolution  │  기존 DB와 비교
+│  (Deduplication)    │
+└──────────┬──────────┘
+           │
+   ┌───────┼───────┬─────────────┐
+   ▼       ▼       ▼             ▼
+ 일치    신규    애매          노이즈
+(>90%)  (유의미) (50-90%)     (<50%)
+   │       │       │             │
+   ▼       ▼       ▼             ▼
+ 기존에   DB에   검토 큐        폐기
+ 소스추가 추가   (보류)
 
-| Track | Data | Method | Status |
-|-------|------|--------|--------|
-| **Track A** | Existing 10,428 events | Enrichment only (metadata fix) | In Progress |
-| **Track B** | New incoming documents | Integrated extraction + enrichment | To Build |
-
----
-
-## 3. Track A: Existing Data Enrichment
-
-### Scope
-- Fix metadata for 10,428 existing event records
-- NO summary generation (requires multi-source aggregation)
-
-### Output Fields
-```json
-{
-  "id": 57,
-  "record_type": "event | article | concept | period",
-  "title_clean": "Battle of Chaeronea",
-  "year_start": -338,
-  "year_end": -338,
-  "year_precision": "exact | year | decade | century",
-  "era": "CLASSICAL",
-  "location_name": "Chaeronea",
-  "location_modern": "Chaeronea, Greece",
-  "latitude": 38.482,
-  "longitude": 22.821,
-  "location_type": "battlefield | city | region | country",
-  "location_confidence": "high | medium | low",
-  "category": "battle | war | treaty | culture | ...",
-  "civilization": "Greek",
-  "confidence": "high | medium | low",
-  "needs_review": false
-}
+           │
+           ▼
+┌─────────────────────┐
+│  Wikidata 매칭      │  ← Optional Enrichment
+│  (검증 & 보강)      │
+└──────────┬──────────┘
+           │
+   ┌───────┴───────┐
+   ▼               ▼
+ 매칭됨         미매칭
+   │               │
+   ▼               ▼
+메타데이터     그대로 유지
+보강 + conf↑   (소스 기반)
 ```
 
-### Cost & Timeline
-- Model: gpt-5.1-chat-latest
-- Events: 10,428
-- Est. Cost: ~$80-85 (without summaries)
-- Script: `poc/scripts/enrich_events_llm.py`
+---
+
+## 3. Layer Roles
+
+| Layer | 역할 | 의존성 | 커버리지 |
+|-------|------|--------|----------|
+| **L1: 소스 문서** | Ground Truth, 엔티티/관계 생성 | 없음 | 100% |
+| **L2: Wikidata** | 검증, 메타데이터 보강 | L1 선행 | ~30-40% |
+| **L3: Wikipedia** | 추가 관계 발견 | L2 선행 | ~30-40% |
+
+### Wikidata의 가치 (무시하면 안 되는 이유)
+1. **검증**: "Socrates 470-399 BCE" → Wikidata 일치 시 confidence ↑
+2. **메타데이터**: 이미지, 정확한 좌표, 다국어 이름
+3. **관계 확장**: 소스 문서에 없는 연결 발견
+4. **정규화**: 소크라테스 = Socrates = Q913 통합
 
 ---
 
-## 4. Track B: Integrated Document Processing (New)
+## 4. Processing Tracks
+
+### Track A: 기존 데이터 보강 (Enrichment Only)
+
+| 항목 | 값 |
+|------|-----|
+| 대상 | 기존 10,428 이벤트 |
+| 목적 | 메타데이터 수정 (위치, 연도, 카테고리) |
+| 방법 | LLM enrichment (gpt-5.1-chat) |
+| 비용 | ~$80-85 |
+
+### Track B: 신규 문서 처리 (Full Pipeline)
+
+| 항목 | 값 |
+|------|-----|
+| 대상 | 신규 입수 문서 (수만 권 예정) |
+| 목적 | 통합 추출 + Entity Resolution |
+| 방법 | LLM 추출 → 중복 제거 → DB 반영 |
+| 핵심 | 문맥 보존, 관계 자동 추출 |
+
+---
+
+## 5. Track B Detail: 신규 문서 통합 추출
 
 ### Concept
-Process new source documents with extraction + enrichment in a single pass.
+소스 문서에서 LLM 한 번 호출로 모든 엔티티와 관계를 추출.
 
 ```
 New Source Document
@@ -89,7 +122,7 @@ New Source Document
     - Extract with full metadata
     - Geocode with context
     ↓
-Enriched Event Records (ready for DB)
+Enriched Records (ready for Entity Resolution)
 ```
 
 ### Advantages (왜 통합 추출인가?)
@@ -322,7 +355,9 @@ Enriched Event Records (ready for DB)
 
 ---
 
-## 5. Entity Resolution (Deduplication)
+## 6. Entity Resolution (핵심 로직)
+
+> **신규 추출 엔티티를 기존 DB와 비교하여 일치/신규/애매/폐기 분류**
 
 ### Problem
 새 문서에서 추출한 이벤트가 기존 이벤트와 같은 건지 판단 필요:
@@ -353,16 +388,29 @@ Enriched Event Records (ready for DB)
 └─────────────────────────────────┘
     ↓
 ┌─────────────────────────────────┐
-│  3. 판정                        │
-│     - AUTO MERGE: 유사도 > 95%  │
-│     - AUTO NEW: 유사도 < 50%    │
-│     - REVIEW: 50-95% (수동검토) │
+│  3. 판정 (4분류)                │
+│     - 일치: 유사도 > 90%        │
+│     - 신규: 유사도 < 50% + 유의미│
+│     - 애매: 50-90% (검토 필요)  │
+│     - 노이즈: < 50% + 무의미    │
 └─────────────────────────────────┘
     ↓
-┌───────────┬───────────┬─────────────┐
-│ MERGE     │ NEW       │ REVIEW      │
-│ 기존에 연결│ 새로 생성 │ 큐에 추가   │
-└───────────┴───────────┴─────────────┘
+┌──────────┬──────────┬──────────┬──────────┐
+│  일치    │  신규    │  애매    │  노이즈  │
+│  (>90%)  │ (유의미) │ (50-90%) │  (<50%)  │
+├──────────┼──────────┼──────────┼──────────┤
+│ 기존에   │ DB에     │ 검토 큐  │  폐기    │
+│ 소스추가 │ 추가     │ (보류)   │          │
+└──────────┴──────────┴──────────┴──────────┘
+
+### 유의미 vs 노이즈 판단
+
+| 조건 | 판정 | 예시 |
+|------|------|------|
+| 역사적 인물/사건 + 구체적 정보 | 유의미 (신규) | "General John Smith (1802-1867)" |
+| 일반 명사, 불완전한 정보 | 노이즈 (폐기) | "the king", "a battle" |
+| 소설/허구 캐릭터 | 애매 (검토) | "Sherlock Holmes" |
+| 출처에 따라 다름 | 애매 (검토) | 신화적 인물 |
 ```
 
 ### Similarity Scoring
@@ -445,110 +493,469 @@ CREATE TABLE entity_merge_history (
 
 ---
 
-## 6. Implementation Plan
+## 7. Implementation Plan
 
-### Phase 1: Complete Track A (Existing Data)
-- Current priority
-- [ ] Remove summary from enrichment prompt
-- [ ] Run full enrichment on 10,428 events (~$80)
-- [ ] Apply results to database
-- [ ] Validate sample of results
+### 우선순위 원칙
 
-### Phase 2: Build Track B Pipeline
-- [ ] Design integrated extraction prompt
-- [ ] Handle context window limits (chunking for long docs)
-- [ ] Implement deduplication logic
-- [ ] Build source ingestion API
-- [ ] Test on 10-50 new documents
+```
+1. Document-First: 소스 문서 기반 작업이 최우선
+2. Wikidata: 보강 수단, 병렬 진행 가능하나 필수 아님
+3. Wikipedia: Wikidata 매칭 후 선택적 확장
+```
 
-### Phase 3: Curation Layer (Future)
-- [ ] Multi-source aggregation for summaries
-- [ ] Historical Chain generation
-- [ ] This is SEPARATE from extraction/enrichment
+### Phase 1: Track A - 기존 데이터 보강
+- [ ] 기존 10,428 이벤트 메타데이터 보강 (~$80)
+- [ ] 빈 설명 채우기 (~25,000개)
+- [ ] 결과 DB 적용 및 검증
+
+### Phase 1.5: Wikidata 매칭 (병렬 진행 가능)
+- [x] Forward matching 진행 중 (39% → 100%)
+- [ ] Reverse matching 결과 DB 적용
+- [ ] 매칭된 인물 메타데이터 보강
+
+### Phase 2: Track B - 신규 문서 파이프라인 구축
+- [ ] 통합 추출 프롬프트 설계
+- [ ] Entity Resolution 로직 구현
+- [ ] 검토 큐 UI 구현
+- [ ] 10-50개 문서로 테스트
+
+### Phase 3: 대규모 처리
+- [ ] 배치 API 활용 (비용 50% 절감)
+- [ ] 수천 권 문서 처리
+- [ ] 검토 큐 처리 워크플로우
+
+### Phase 4: Wikipedia 링크 확장 (Optional)
+- [ ] Wikidata 매칭된 인물 대상
+- [ ] Wikipedia 링크 수집
+- [ ] 추가 관계 발견
 
 ---
 
-## 6. Architecture Diagram
+**Note**: Description Enrichment은 Track A의 일부로 처리
+
+---
+
+## 9. Database Schema
+
+### Core Entity Tables
+
+```sql
+persons:
+├── id (PK)
+├── name, name_ko, name_original
+├── birth_year, death_year        -- 생몰년
+├── biography, biography_ko
+├── wikidata_id                   -- Optional (있으면 보강)
+├── wikipedia_url                 -- Optional
+├── role, era, certainty
+├── mention_count, avg_confidence -- 데이터 품질 지표
+└── embedding                     -- 벡터 검색용
+
+events:
+├── id (PK)
+├── title, title_ko
+├── date_start, date_end          -- BCE는 음수
+├── description
+├── primary_location_id (FK)
+├── category_id (FK)
+└── temporal_scale                -- evenementielle/conjuncture/longue_duree
+
+locations:
+├── id (PK)
+├── name, name_ko
+├── latitude, longitude
+├── location_type
+└── parent_location_id
+
+sources:
+├── id (PK)
+├── name, title, author
+├── type                          -- book/article/document
+├── publication_year
+└── content                       -- 원문 (청킹용)
+```
+
+### Relationship Tables
+
+```sql
+event_persons:                    -- 인물 ↔ 이벤트
+├── event_id (FK)
+├── person_id (FK)
+├── role                          -- participant/leader/victim 등
+└── description
+
+person_relationships:             -- 인물 ↔ 인물
+├── person_id (FK)
+├── related_person_id (FK)
+├── relationship_type             -- teacher_of/parent_of/rival 등
+├── strength, confidence
+└── is_bidirectional
+
+event_relationships:              -- 이벤트 ↔ 이벤트 (인과관계)
+├── from_event_id (FK)
+├── to_event_id (FK)
+├── relationship_type             -- caused/preceded/influenced
+└── strength, confidence
+
+person_sources:                   -- 출처 추적
+├── person_id (FK)
+├── source_id (FK)
+└── page_reference
+
+event_sources:
+├── event_id (FK)
+├── source_id (FK)
+├── page_reference
+└── quote                         -- 인용문
+```
+
+### Key Design Principles
+
+1. **wikidata_id는 Optional**: NULL이어도 시스템 정상 동작
+2. **Source Attribution**: 모든 엔티티는 출처 추적 가능
+3. **Confidence Score**: 데이터 신뢰도 명시적 관리
+4. **BCE 날짜**: 음수로 저장 (-490 = 490 BCE)
+
+### Example: Socrates (id=343)
+
+```
+persons:
+  id: 343
+  name: "Socrates"
+  birth_year: -470
+  death_year: -399
+  wikidata_id: "Q913"        ← Wikidata 매칭됨 (optional)
+  wikipedia_url: "https://en.wikipedia.org/wiki/Socrates"
+
+event_persons:
+  (343, 501, "participant")  → 펠로폰네소스 전쟁
+  (343, 502, "defendant")    → 소크라테스 재판
+
+person_relationships:
+  (343, 344, "teacher_of")   → 플라톤
+  (343, 345, "teacher_of")   → 크세노폰
+
+person_sources:
+  (343, 12, "pp.45-67")      → "History of Greek Philosophy"
+```
+
+---
+
+## 10. Architecture Diagram
 
 ```
                     ┌─────────────────────────────────────┐
-                    │         SOURCE DOCUMENTS            │
+                    │      SOURCE DOCUMENTS (수만 권)      │
+                    │         PRIMARY DATA SOURCE          │
                     └─────────────────────────────────────┘
                                     │
                     ┌───────────────┴───────────────┐
                     ▼                               ▼
         ┌───────────────────┐           ┌───────────────────┐
         │   EXISTING DATA   │           │    NEW DOCS       │
-        │   (10,428 events) │           │   (incoming)      │
+        │   (기존 이벤트)    │           │   (신규 입수)      │
         └───────────────────┘           └───────────────────┘
                     │                               │
                     ▼                               ▼
         ┌───────────────────┐           ┌───────────────────┐
         │   Track A:        │           │   Track B:        │
-        │   Event Metadata  │           │   통합 추출       │
-        │   Enrichment      │           │   Events+Persons  │
-        │   (gpt-5.1-chat)  │           │   +Locations+Rels │
+        │   메타데이터 보강  │           │   LLM 통합 추출    │
         └───────────────────┘           └───────────────────┘
                     │                               │
                     │                               ▼
                     │                   ┌───────────────────┐
                     │                   │ Entity Resolution │
-                    │                   │ (Deduplication)   │
+                    │                   │ 일치/신규/애매/폐기│
                     │                   └───────────────────┘
                     │                               │
                     └───────────────┬───────────────┘
                                     ▼
                     ┌─────────────────────────────────────┐
-                    │         KNOWLEDGE BASE              │
+                    │         KNOWLEDGE BASE (DB)         │
                     ├─────────────────────────────────────┤
-                    │   Events     │ 10,428+ records      │
-                    │   Persons    │ enriched metadata    │
-                    │   Locations  │ accurate coords      │
-                    │   Relations  │ person↔event↔place   │
-                    │   Sources    │ 76,023 documents     │
+                    │   Events, Persons, Locations        │
+                    │   Relations, Sources                │
                     └─────────────────────────────────────┘
                                     │
-                                    ▼
-                    ┌─────────────────────────────────────┐
-                    │         CURATION LAYER              │
-                    │   (Multi-source aggregation)        │
-                    ├─────────────────────────────────────┤
-                    │   - Historical Chains (인과관계)    │
-                    │   - Person Stories (생애)           │
-                    │   - Place Stories (장소 역사)       │
-                    │   - Era Stories (시대 종합)         │
-                    │   - Synthesized Summaries           │
-                    └─────────────────────────────────────┘
+                         ┌──────────┴──────────┐
+                         ▼                     ▼
+              ┌─────────────────┐    ┌─────────────────┐
+              │ Wikidata 매칭   │    │ Curation Layer  │
+              │ (Optional)      │    │ Historical Chain│
+              │ 검증 & 보강     │    │ Person Story    │
+              └────────┬────────┘    └─────────────────┘
+                       │
+                       ▼
+              ┌─────────────────┐
+              │ Wikipedia Links │
+              │ (Optional)      │
+              │ 추가 관계 발견  │
+              └─────────────────┘
 ```
 
 ---
 
-## 7. File Locations
+## 10. File Locations
 
 | Component | Path |
 |-----------|------|
 | Track A Script | `poc/scripts/enrich_events_llm.py` |
 | Track B Script | `poc/scripts/extract_from_source.py` (TBD) |
+| Entity Resolution | `poc/scripts/entity_resolution.py` (TBD) |
+| Wikidata Matching | `poc/scripts/wikidata_reconcile.py` |
 | Results | `poc/data/enrichment_results/` |
 | This Doc | `docs/planning/DATA_PIPELINE_V2.md` |
 
 ---
 
-## 8. Open Questions
+## 11. Related Documents
 
-1. **Batch API**: Track B could use Batch API (gpt-5 supports it) for 50% cost reduction
-2. ~~**Chunking**: How to handle documents > 128K tokens?~~ → 해결: 하이브리드 방식 (청크별 추출 + 엔티티 통합)
-3. **Deduplication threshold**: How similar must events be to merge? (현재: >95% auto-merge, <50% auto-new)
-4. **Priority**: Which new documents to process first?
-5. **Chunk 내 동일 엔티티 인식**: 같은 청크 내에서 "Miltiades" = "밀티아데스" = "the Athenian general" 인식 방법
+| Document | Purpose |
+|----------|---------|
+| `WIKIDATA_PIPELINE.md` | Wikidata 매칭 상세 |
+| `WIKIDATA_ENRICHMENT_ROADMAP.md` | Wikidata/Wikipedia 보강 로드맵 |
+| `WIKIPEDIA_LINK_PIPELINE.md` | Wikipedia 링크 수집 (Optional) |
 
 ---
 
-## 9. Decision Log
+## 12. Decision Log
 
 | Date | Decision | Rationale |
 |------|----------|-----------|
 | 2026-01-08 | Two-track approach | Fix existing data cheaply, do new data right |
 | 2026-01-08 | No summaries in enrichment | Summaries need multi-source aggregation (curation) |
 | 2026-01-08 | gpt-5.1-chat-latest for Track A | 100% success rate, cheaper than alternatives |
-| 2026-01-08 | Track B: 통합 추출 (Events+Persons+Locations+Relations) | 문맥 보존, 관계 자동 추출, 고아 엔티티 방지 |
+| 2026-01-08 | Track B: 통합 추출 | 문맥 보존, 관계 자동 추출, 고아 엔티티 방지 |
+| **2026-01-15** | **Document-First principle** | **Wikidata에 없는 인물도 많음, 소스 문서가 Ground Truth** |
+| **2026-01-15** | **4분류 Entity Resolution** | **일치/신규/애매/폐기로 세분화** |
+| **2026-01-15** | **Wikidata = Optional Layer** | **보강 수단이지 필수 의존 아님** |
+
+---
+
+## 13. 현재 상황 분석 (2026-01-18)
+
+### 13.1 Wikipedia 추출 데이터 현황
+
+#### poc/data/wikipedia_extract/
+
+| 파일 | 레코드 수 | qid 있음 | 용량 |
+|------|----------|----------|------|
+| persons.jsonl | 200,427 | 84,680 (42%) | ~100MB |
+| events.jsonl | 267,364 | 22,101 (8%) | ~150MB |
+| locations.jsonl | 821,848 | 187,588 (23%) | ~500MB |
+
+**레코드 구조:**
+```json
+{
+  "title": "Albert Einstein",
+  "qid": "Q937",
+  "birth_year": 1879,
+  "death_year": 1955,
+  "summary": "Albert Einstein \n     \n     \n       \n     \n ...",  // ⚠️ HTML 잔해
+  "path": "Albert_Einstein"
+}
+```
+
+**문제점:**
+- `summary`가 전체 본문이 아님 (첫 문단 정도)
+- HTML 태그 잔해가 섞여서 텍스트가 깨짐
+- **full content가 없음**
+
+#### poc/data/wikipedia_persons/
+
+| 파일 | 레코드 수 | 용량 |
+|------|----------|------|
+| persons.jsonl | 405,014 | 187MB |
+
+비슷한 구조, 동일한 문제.
+
+### 13.2 DB 현황
+
+| 테이블 | 총 개수 | wikidata_id | wikipedia_url | 본문 |
+|--------|---------|-------------|---------------|------|
+| persons | 286,609 | 101,839 (35%) | 13,606 (4%) | 57,214 (19%) |
+| events | 46,704 | **0 (0%)** | 550 (1%) | 23,225 (49%) |
+| locations | 40,613 | **0 (0%)** | **0 (0%)** | 34,299 (84%) |
+
+**Sources 테이블:**
+| archive_type | 개수 |
+|--------------|------|
+| unknown | 76,013 |
+| wikipedia | 8,675 |
+| gutenberg | 10 |
+
+**Source-Entity 연결:**
+| 연결 테이블 | 연결 수 | 연결된 엔티티 |
+|------------|--------|--------------|
+| person_sources (wikipedia) | 3,134 | 3,113명 |
+| event_sources (wikipedia) | 5,466 | 5,454개 |
+| location_sources (wikipedia) | **0** | **0개** |
+
+**Sources.content: 모두 NULL** ← 본문 없음
+
+### 13.3 근본 문제
+
+1. **Events에 wikidata_id가 0%** - 출처 추적 불가
+2. **Locations에 wikidata_id, wikipedia_url 둘 다 0%**
+3. **Sources.content가 NULL** - 본문 저장 안 됨
+4. **추출 데이터에 full content 없음** - summary만 있고 그것도 깨짐
+5. **연결만 하고 데이터 반영 안 함**
+   - Sources 테이블에 연결은 했지만
+   - 엔티티 테이블의 wikidata_id/wikipedia_url 업데이트 안 함
+
+### 13.4 전임자가 한 것 vs 안 한 것
+
+**한 것:**
+- Wikipedia에서 데이터 추출 (Kiwix ZIM 사용)
+- 이름 매칭으로 DB 엔티티와 "연결" 시도
+- Sources 테이블에 레코드 생성
+- person_sources, event_sources 연결
+
+**안 한 것:**
+- ❌ 엔티티 테이블에 wikidata_id 직접 저장
+- ❌ 엔티티 테이블에 wikipedia_url 직접 저장
+- ❌ Sources.content에 본문 저장
+- ❌ 전체 본문 추출 (summary만 추출)
+- ❌ locations_sources 연결
+
+---
+
+## 14. 해야 할 것 (올바른 설계)
+
+### 목표
+
+Wikipedia 추출 데이터 **전체** (120만개)를 DB에 임포트.
+각 레코드에 다음 정보 **전부** 저장:
+- `wikidata_id` ← qid
+- `wikipedia_url` ← path로 생성
+- `biography/description` ← **전체 본문**
+
+### 현재 추출의 문제
+
+`kiwix_extract_all.py` 282-288줄:
+```python
+def extract_summary(html: str) -> str:
+    text = html_to_text(html[:5000])  # ← 5000자만 봄
+    sentences = text.split('.')
+    return sentences[0].strip()[:300]  # ← 첫 문장 300자만
+```
+
+**5000자 중 첫 문장 300자만 추출**. 전체 본문이 없음.
+
+---
+
+### Phase 1: 전체 본문 재추출
+
+**입력**: Kiwix ZIM 파일 (51GB)
+**출력**: 새 JSONL (전체 본문 포함)
+
+```python
+# 새 JSONL 구조
+{
+    "title": "Albert Einstein",
+    "qid": "Q937",
+    "path": "Albert_Einstein",
+    "birth_year": 1879,
+    "death_year": 1955,
+    "summary": "첫 문단...",           # 기존
+    "content": "전체 본문...",          # 신규 - 전체 텍스트
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Albert_Einstein"
+}
+```
+
+**수정 사항**:
+1. `html_to_text(html)` 전체 호출 (5000자 제한 제거)
+2. `content` 필드에 전체 본문 저장
+3. `wikipedia_url` 필드 추가
+
+**예상 결과**:
+| 파일 | 레코드 수 | 용량 (예상) |
+|------|----------|------------|
+| persons.jsonl | ~200,000 | ~2GB |
+| events.jsonl | ~267,000 | ~3GB |
+| locations.jsonl | ~821,000 | ~8GB |
+
+---
+
+### Phase 2: DB 임포트 (전체)
+
+**입력**: Phase 1 결과 JSONL
+**출력**: DB 테이블 (persons, events, locations, sources)
+
+```python
+for record in jsonl:
+    # 1. 엔티티 테이블에 직접 저장
+    entity = Person(
+        name=record['title'],
+        wikidata_id=record['qid'],
+        wikipedia_url=record['wikipedia_url'],
+        biography=record['content'],
+        birth_year=record['birth_year'],
+        death_year=record['death_year'],
+    )
+
+    # 2. Sources 테이블에도 저장
+    source = Source(
+        title=record['title'],
+        url=record['wikipedia_url'],
+        archive_type='wikipedia',
+        content=record['content'],  # 본문도 저장
+    )
+
+    # 3. 연결
+    entity_source = PersonSource(person=entity, source=source)
+```
+
+**중복 체크**: title + birth_year/death_year 또는 qid로 중복 판별
+
+---
+
+### Phase 3: Entity Resolution
+
+기존 DB 데이터 (286,609 persons, 46,704 events, 40,613 locations)와 병합.
+
+```
+Wikipedia 데이터 (Phase 1-2)
+         │
+         ▼
+┌─────────────────────┐
+│  중복 체크          │
+│  - qid 일치?        │
+│  - title 유사도?    │
+│  - 날짜 범위?       │
+└─────────────────────┘
+         │
+    ┌────┴────┐
+    ▼         ▼
+ 기존과     신규
+ 중복       추가
+    │
+    ▼
+  병합
+  (기존 데이터 보강)
+```
+
+**병합 규칙**:
+- qid가 같으면 → 같은 엔티티, 정보 병합
+- qid 없고 title 일치 + 날짜 유사 → 같은 엔티티, 정보 병합
+- 위 둘 다 아니면 → 새 엔티티로 추가
+
+---
+
+### 실행 순서
+
+| Phase | 작업 | 예상 시간 | 결과 |
+|-------|------|----------|------|
+| 1 | 전체 본문 재추출 | 수 시간 | 120만개 × 본문 JSONL |
+| 2 | DB 임포트 | 수 시간 | 모든 레코드에 qid/url/본문 |
+| 3 | Entity Resolution | 수 시간 | 기존 데이터와 병합 완료 |
+
+---
+
+### 스크립트 위치
+
+| Phase | 스크립트 | 상태 |
+|-------|----------|------|
+| 1 | `poc/scripts/kiwix_extract_full.py` | 작성 필요 |
+| 2 | `poc/scripts/import_wikipedia_to_db.py` | 작성 필요 |
+| 3 | `poc/scripts/entity_resolution.py` | 작성 필요 |

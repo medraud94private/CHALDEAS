@@ -13,11 +13,19 @@ import re
 from dataclasses import dataclass
 from typing import Optional
 from sqlalchemy.orm import Session
+from sqlalchemy import or_, not_
 
 from app.models.event import Event
 from app.models.person import Person
 from app.models.location import Location
 from app.schemas.chat import ChatContext
+
+# Noise patterns to exclude
+NOISE_PATTERNS = [
+    "Mrs.%", "Mrs %", "Miss %", "Mr. %", "Mr %",
+    "Sig.%", "Sig %", "Junr%", "Senr%",
+    "Madame %", "Mme.%", "Mlle.%",
+]
 
 
 @dataclass
@@ -172,16 +180,36 @@ class ShebaObserver:
 
     def _find_related_persons(self, query: str) -> list[Person]:
         """Find persons mentioned in the query."""
-        persons = self.db.query(Person).all()
+        # Exclude noise data
+        noise_filters = [Person.name.ilike(p) for p in NOISE_PATTERNS]
+        base_query = self.db.query(Person).filter(not_(or_(*noise_filters)))
 
+        # Search by name match instead of loading all
+        words = query.lower().split()
+        if not words:
+            return []
+
+        # Try to find persons whose name appears in query
         related = []
-        for person in persons:
-            if person.name.lower() in query:
-                related.append(person)
-            elif person.name_ko and person.name_ko in query:
-                related.append(person)
+        for word in words:
+            if len(word) > 2:
+                matches = base_query.filter(
+                    or_(
+                        Person.name.ilike(f"%{word}%"),
+                        Person.name_ko.ilike(f"%{word}%") if Person.name_ko else False
+                    )
+                ).limit(10).all()
+                related.extend(matches)
 
-        return related
+        # Deduplicate
+        seen = set()
+        unique = []
+        for p in related:
+            if p.id not in seen:
+                seen.add(p.id)
+                unique.append(p)
+
+        return unique[:20]
 
     def _find_related_locations(self, query: str) -> list[Location]:
         """Find locations mentioned in the query."""

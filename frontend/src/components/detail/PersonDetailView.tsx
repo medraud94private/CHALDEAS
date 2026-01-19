@@ -3,9 +3,10 @@
  *
  * Shows a person's biography, timeline of events, and connected persons.
  */
-import { useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../../api/client'
+import { StoryModal } from '../story'
 import type { Event } from '../../types'
 import './EntityDetailView.css'
 
@@ -35,6 +36,18 @@ interface ChainConnection {
   strength: number
 }
 
+interface PersonRelation {
+  id: number
+  name: string
+  name_ko?: string
+  birth_year?: number
+  death_year?: number
+  strength: number
+  time_distance?: number
+  relationship_type?: string
+  is_bidirectional: number
+}
+
 interface Props {
   personId: number
   onClose: () => void
@@ -43,6 +56,8 @@ interface Props {
 }
 
 export function PersonDetailView({ personId, onClose, onEventClick, onPersonClick }: Props) {
+  const [isStoryOpen, setIsStoryOpen] = useState(false)
+
   // Fetch person details
   const { data: person, isLoading: personLoading } = useQuery<PersonInfo>({
     queryKey: ['person-detail', personId],
@@ -52,20 +67,20 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
     },
   })
 
-  // Fetch person's events
-  const { data: eventsData } = useQuery({
-    queryKey: ['person-events', personId],
-    queryFn: async () => {
-      const res = await api.get(`/persons/${personId}/events`)
-      return res.data
-    },
-  })
-
   // Fetch person chain (connections)
   const { data: chainData } = useQuery({
     queryKey: ['person-chain', personId],
     queryFn: async () => {
       const res = await api.get(`/chains/person/${personId}`)
+      return res.data
+    },
+  })
+
+  // Fetch related persons with strength
+  const { data: relationsData } = useQuery<{ relations: PersonRelation[]; total: number }>({
+    queryKey: ['person-relations', personId],
+    queryFn: async () => {
+      const res = await api.get(`/persons/${personId}/relations?limit=20&min_strength=5`)
       return res.data
     },
   })
@@ -88,30 +103,26 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
       .sort((a, b) => (a.year || 0) - (b.year || 0))
   }, [chainData])
 
-  // Find connected persons (from events that share this person)
-  const connectedPersons = useMemo(() => {
-    if (!eventsData?.events) return []
+  // Use relations from API (with strength)
+  const relatedPersons = useMemo(() => {
+    if (!relationsData?.relations) return []
+    return relationsData.relations
+  }, [relationsData])
 
-    const personsMap = new Map<number, { id: number; name: string; count: number }>()
-    for (const event of eventsData.events) {
-      if (event.persons) {
-        for (const p of event.persons) {
-          if (p.id !== personId) {
-            const existing = personsMap.get(p.id)
-            if (existing) {
-              existing.count++
-            } else {
-              personsMap.set(p.id, { id: p.id, name: p.name, count: 1 })
-            }
-          }
-        }
-      }
-    }
+  // Format strength for display
+  const formatStrength = (strength: number): string => {
+    if (strength >= 1000) return `${(strength / 1000).toFixed(1)}k`
+    if (strength >= 100) return strength.toFixed(0)
+    return strength.toFixed(1)
+  }
 
-    return Array.from(personsMap.values())
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 10)
-  }, [eventsData, personId])
+  // Get strength level for styling
+  const getStrengthLevel = (strength: number): string => {
+    if (strength >= 100) return 'very-strong'
+    if (strength >= 30) return 'strong'
+    if (strength >= 10) return 'medium'
+    return 'weak'
+  }
 
   const formatYear = (year: number | null | undefined) => {
     if (year === null || year === undefined) return '?'
@@ -175,14 +186,26 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
           <span className="stat-label">Events</span>
         </div>
         <div className="stat-item">
-          <span className="stat-value">{connectedPersons.length}</span>
-          <span className="stat-label">Connected</span>
+          <span className="stat-value">{relatedPersons.length}</span>
+          <span className="stat-label">Relations</span>
         </div>
         <div className="stat-item">
           <span className="stat-value">{chainData?.total_connections || 0}</span>
           <span className="stat-label">Links</span>
         </div>
       </div>
+
+      {/* Story Button */}
+      {timelineEvents.length > 0 && (
+        <button
+          className="entity-story-btn"
+          onClick={() => setIsStoryOpen(true)}
+        >
+          <span className="story-btn-icon">🗺</span>
+          <span className="story-btn-text">View Story</span>
+          <span className="story-btn-arrow">→</span>
+        </button>
+      )}
 
       {/* Description */}
       {person.description && (
@@ -217,22 +240,35 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
         </div>
       </div>
 
-      {/* Connected Persons */}
-      {connectedPersons.length > 0 && (
+      {/* Related Persons with Strength */}
+      {relatedPersons.length > 0 && (
         <div className="entity-section">
           <div className="section-header">
             <span className="section-icon">🔗</span>
-            <span className="section-title">Connected Figures</span>
+            <span className="section-title">Related Figures</span>
           </div>
           <div className="connected-list">
-            {connectedPersons.map((p) => (
+            {relatedPersons.map((p) => (
               <div
                 key={p.id}
-                className="connected-item person"
+                className={`connected-item person strength-${getStrengthLevel(p.strength)}`}
                 onClick={() => onPersonClick(p.id)}
               >
-                <span className="connected-name">{p.name}</span>
-                <span className="connected-count">{p.count} shared</span>
+                <div className="connected-main">
+                  <span className="connected-name">{p.name}</span>
+                  {p.time_distance && p.time_distance > 0 && (
+                    <span className="connected-era historical">historical ref</span>
+                  )}
+                </div>
+                <div className="connected-strength">
+                  <span className="strength-value">{formatStrength(p.strength)}</span>
+                  <span className="strength-bar">
+                    <span
+                      className="strength-fill"
+                      style={{ width: `${Math.min(100, (p.strength / 100) * 100)}%` }}
+                    />
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -248,6 +284,17 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
           </span>
         )}
       </div>
+
+      {/* Story Modal */}
+      <StoryModal
+        isOpen={isStoryOpen}
+        personId={personId}
+        onClose={() => setIsStoryOpen(false)}
+        onEventClick={(eventId) => {
+          setIsStoryOpen(false)
+          handleEventClick(eventId)
+        }}
+      />
     </div>
   )
 }

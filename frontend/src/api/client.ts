@@ -77,6 +77,14 @@ export const chatApi = {
     api.post('/chat/agent', { query, api_key: apiKey || undefined, language }),
 }
 
+// Story API (Person/Place/Arc Story)
+export const storyApi = {
+  getPersonStory: (personId: number, minStrength?: number) =>
+    api.get(`/story/person/${personId}`, { params: minStrength ? { min_strength: minStrength } : undefined }),
+  checkPersonStory: (personId: number) =>
+    api.get(`/story/person/${personId}/check`),
+}
+
 // Showcase/Archive API
 export const showcaseApi = {
   // FGO content

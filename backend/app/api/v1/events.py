@@ -53,7 +53,8 @@ async def list_events(
     category: Optional[str] = Query(None, description="Filter by category slug"),
     category_id: Optional[int] = Query(None, description="Filter by category ID"),
     importance_min: Optional[int] = Query(None, description="Minimum importance (1-5)"),
-    limit: int = Query(100, ge=1, le=1000),
+    include_orphans: bool = Query(False, description="Include entities with no connections"),
+    limit: int = Query(100, ge=1, le=3000),  # Increased max for larger time ranges
     offset: int = Query(0, ge=0),
 ):
     """
@@ -61,6 +62,9 @@ async def list_events(
 
     Used by the globe view to display event markers.
     Supports temporal and categorical filtering.
+
+    By default, excludes orphan entities (those with no relationships).
+    Set include_orphans=true to see all entities.
     """
     # If category slug provided, convert to category_id
     if category and not category_id:
@@ -74,6 +78,7 @@ async def list_events(
         year_end=year_end,
         category_id=category_id,
         importance_min=importance_min,
+        include_orphans=include_orphans,
         limit=limit,
         offset=offset,
     )

@@ -58,6 +58,9 @@ class Location(Base, TimestampMixin):
     description = Column(Text)
     description_ko = Column(Text)
 
+    # Connection count for filtering orphans
+    connection_count = Column(Integer, default=0, index=True)
+
     # Relationships
     events = relationship(
         "Event",

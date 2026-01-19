@@ -1,5 +1,6 @@
 import { useState, useMemo, lazy, Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useDebounce } from './hooks/useDebounce'
 import { ChatPanel } from './components/chat'
 import { EventDetailPanel } from './components/detail'
 import { ShowcaseMenu } from './components/showcase'
@@ -49,6 +50,7 @@ const GLOBE_STYLE_KEYS = ['default', 'holo', 'night'] as const
 function App() {
   const { t } = useTranslation()
   const { currentYear, setCurrentYear } = useTimelineStore()
+  const debouncedYear = useDebounce(currentYear, 150) // Debounce API calls (synced with GlobeContainer)
   const { selectedEvent, setSelectedEvent } = useGlobeStore()
   const { bookmarkedIds, toggleBookmark } = useBookmarkStore()
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -65,6 +67,7 @@ function App() {
   const [locationDetailId, setLocationDetailId] = useState<number | null>(null)
   const [advancedFilters, setAdvancedFilters] = useState<FilterState>(defaultFilters)
   const [isFilterPanelOpen, setIsFilterPanelOpen] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)  // Mobile sidebar toggle
 
   // Handlers for entity detail views
   const handlePersonClick = (personId: number) => {
@@ -86,6 +89,8 @@ function App() {
     setSelectedEvent(event)
     // Timeline follows to event's year
     setCurrentYear(event.date_start)
+    // Close sidebar on mobile
+    setIsSidebarOpen(false)
   }
 
   const handleClosePanel = () => {
@@ -101,18 +106,21 @@ function App() {
   })
 
   // Fetch events for sidebar - filtered by current era
+  // Using debouncedYear to prevent API spam during timeline drag
   const TIME_RANGE = 50 // ±50 years for nearby era filter
   const WIDE_RANGE = 500 // ±500 years for "All Eras" mode (still centered on current year)
-  const { data: allEventsData } = useQuery({
-    queryKey: ['sidebar-events', currentYear, showAllEras],
+  const { data: sidebarEventsResponse } = useQuery({
+    queryKey: ['sidebar-events', debouncedYear, showAllEras],
     queryFn: () => api.get('/events', {
       params: showAllEras
         // "All Eras" mode: wider range centered on current year (moves with timeline)
-        ? { year_start: currentYear - WIDE_RANGE, year_end: currentYear + WIDE_RANGE, limit: 1000 }
-        : { year_start: currentYear - TIME_RANGE, year_end: currentYear + TIME_RANGE, limit: 1000 }
+        ? { year_start: debouncedYear - WIDE_RANGE, year_end: debouncedYear + WIDE_RANGE, limit: 2000 }
+        : { year_start: debouncedYear - TIME_RANGE, year_end: debouncedYear + TIME_RANGE, limit: 2000 }
     }),
-    select: (res) => res.data.items,
+    select: (res) => res.data, // Keep full response with total
   })
+  const allEventsData = sidebarEventsResponse?.items
+  const totalEventsCount = sidebarEventsResponse?.total || 0
 
   // Filter events for sidebar list (category, search, and advanced filters)
   const filteredEvents = useMemo(() => {
@@ -138,13 +146,30 @@ function App() {
         return true
       })
       .sort((a: Event, b: Event) => a.date_start - b.date_start)
-      .slice(0, 500)
+      // No slice - VirtualEventList handles large lists efficiently
   }, [allEventsData, selectedCategory, searchQuery, advancedFilters.yearRange])
 
   return (
     <div className="app-container">
+      {/* Mobile Menu Toggle Button */}
+      <button
+        className="mobile-menu-btn"
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        aria-label="Toggle menu"
+      >
+        {isSidebarOpen ? '✕' : '☰'}
+      </button>
+
+      {/* Mobile Overlay */}
+      {isSidebarOpen && (
+        <div
+          className="mobile-overlay"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
       {/* Left Sidebar */}
-      <aside className="sidebar">
+      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
         <div className="sidebar-header">
           <div className="logo">
             <div className="logo-icon">⊕</div>
@@ -267,7 +292,14 @@ function App() {
         )}
 
         <div className="sidebar-footer">
-          <span>{t('sidebar.records')}: {filteredEvents.length} / {allEventsData?.length || 0}</span>
+          <span>
+            {t('sidebar.records')}: {filteredEvents.length} / {allEventsData?.length || 0}
+            {totalEventsCount > (allEventsData?.length || 0) && (
+              <span style={{ color: '#fbbf24', marginLeft: '4px' }}>
+                ({totalEventsCount.toLocaleString()} total)
+              </span>
+            )}
+          </span>
           <span>{t('sidebar.latency')}: 3ms</span>
         </div>
       </aside>
@@ -292,7 +324,12 @@ function App() {
         </div>
 
         <Suspense fallback={<GlobeLoader />}>
-          <GlobeContainer onEventClick={handleEventClick} globeStyle={globeStyle} />
+          <GlobeContainer
+            onEventClick={handleEventClick}
+            onPersonClick={handlePersonClick}
+            onLocationClick={handleLocationClick}
+            globeStyle={globeStyle}
+          />
         </Suspense>
 
         <div className="globe-overlay-bottom" style={{ bottom: '100px' }}>

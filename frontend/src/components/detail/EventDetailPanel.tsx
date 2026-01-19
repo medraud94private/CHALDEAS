@@ -29,6 +29,30 @@ interface Connection {
 
 type TabType = 'overview' | 'connections'
 
+// Role icons for persons
+const ROLE_ICONS: Record<string, string> = {
+  commander: '⚔️',
+  general: '🛡️',
+  king: '👑',
+  emperor: '👑',
+  queen: '👑',
+  philosopher: '📖',
+  leader: '⭐',
+  opponent: '🎯',
+  ally: '🤝',
+  advisor: '💬',
+  default: '👤'
+}
+
+const getRoleIcon = (role?: string): string => {
+  if (!role) return ROLE_ICONS.default
+  const lowerRole = role.toLowerCase()
+  for (const [key, icon] of Object.entries(ROLE_ICONS)) {
+    if (lowerRole.includes(key)) return icon
+  }
+  return ROLE_ICONS.default
+}
+
 // Chain navigation state
 interface ChainNav {
   mode: 'person' | 'location' | 'causal' | null
@@ -56,6 +80,8 @@ export function EventDetailPanel({
     events: [],
     currentIndex: -1
   })
+  const [showAllPersons, setShowAllPersons] = useState(false)
+  const [showAllSources, setShowAllSources] = useState(false)
 
   // Fetch connections for current event
   const { data: connectionsData, isLoading: connectionsLoading } = useQuery({
@@ -430,12 +456,25 @@ export function EventDetailPanel({
                         }}
                         title={t('detail.followLocationChain', 'See history of this place')}
                       >
-                        {event.location?.name || event.locations?.[0]?.name}
+                        📍 {event.location?.name || event.locations?.[0]?.name}
                       </span>
                     </div>
+                    {/* Modern name if different */}
+                    {(event.location?.modern_name || event.locations?.[0]?.modern_name) && (
+                      <div className="element-extra" style={{ fontStyle: 'italic' }}>
+                        {t('detail.modernName', 'Today')}: {event.location?.modern_name || event.locations?.[0]?.modern_name}
+                      </div>
+                    )}
+                    {/* Country/Region */}
                     {(event.location?.country || event.locations?.[0]?.country) && (
                       <div className="element-extra">
                         {event.location?.country || event.locations?.[0]?.country}
+                      </div>
+                    )}
+                    {/* Coordinates (small) */}
+                    {(event.latitude && event.longitude) && (
+                      <div className="element-coords">
+                        {event.latitude.toFixed(2)}°, {event.longitude.toFixed(2)}°
                       </div>
                     )}
                   </>
@@ -463,12 +502,16 @@ export function EventDetailPanel({
                         }}
                         title={t('detail.followPersonChain', 'Follow this person\'s story')}
                       >
-                        {event.persons[0].name}
+                        {getRoleIcon(event.persons[0].role)} {event.persons[0].name}
                       </span>
                     </div>
                     {event.persons.length > 1 && (
-                      <div className="element-extra">
-                        +{event.persons.length - 1} {t('detail.others', 'others')}
+                      <div
+                        className="element-extra element-clickable"
+                        onClick={() => setShowAllPersons(!showAllPersons)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        {showAllPersons ? '▼ Hide' : `+${event.persons.length - 1} ${t('detail.others', 'others')} ▶`}
                       </div>
                     )}
                   </>
@@ -489,6 +532,35 @@ export function EventDetailPanel({
                 </div>
               </div>
             </div>
+
+            {/* Expanded Persons List */}
+            {showAllPersons && event.persons && event.persons.length > 1 && (
+              <div className="expanded-persons-list">
+                <div className="expanded-list-header">
+                  {t('detail.allParticipants', 'All Participants')} ({event.persons.length})
+                </div>
+                {event.persons.map((person) => (
+                  <div
+                    key={person.id}
+                    className="expanded-person-item"
+                    onClick={() => {
+                      if (onPersonClick) {
+                        onPersonClick(person.id)
+                      } else {
+                        startChainNav('person', person.id, person.name)
+                      }
+                    }}
+                  >
+                    <span className="person-icon">{getRoleIcon(person.role)}</span>
+                    <div className="person-info">
+                      <span className="person-name">{person.name}</span>
+                      {person.role && <span className="person-role">{person.role}</span>}
+                    </div>
+                    <span className="person-arrow">→</span>
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* Description */}
             <div className="detail-section">
@@ -609,19 +681,59 @@ export function EventDetailPanel({
             {event.sources && event.sources.length > 0 && (
               <div className="detail-section">
                 <div className="detail-section-header">
-                  {t('detail.historicalSources')}
+                  {t('detail.historicalSources')} ({event.sources.length})
                 </div>
-                <div className="sources-list">
-                  {event.sources.map((source) => (
-                    <div key={source.id} className="source-item">
-                      <span>{source.name}</span>
-                      {source.reliability && (
-                        <span className="source-reliability">
-                          {'★'.repeat(source.reliability)}
+                <div className="sources-list enhanced">
+                  {event.sources.slice(0, showAllSources ? event.sources.length : 2).map((source) => (
+                    <div key={source.id} className="source-item enhanced">
+                      <div className="source-header">
+                        <span className="source-icon">
+                          {source.type === 'primary' ? '📜' : '📚'}
                         </span>
+                        <span className="source-name">{source.name}</span>
+                        {source.reliability && (
+                          <span className="source-reliability">
+                            {'★'.repeat(source.reliability)}{'☆'.repeat(5 - source.reliability)}
+                          </span>
+                        )}
+                      </div>
+                      <div className="source-type-badge">
+                        {source.type === 'primary'
+                          ? t('detail.primarySource', 'Primary Source')
+                          : t('detail.secondarySource', 'Secondary Source')}
+                      </div>
+                      {source.quote && (
+                        <blockquote className="source-quote">
+                          "{source.quote}"
+                        </blockquote>
+                      )}
+                      {source.page_reference && (
+                        <div className="source-reference">
+                          {t('detail.reference', 'Ref')}: {source.page_reference}
+                        </div>
+                      )}
+                      {source.url && (
+                        <a
+                          href={source.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="source-link"
+                        >
+                          {t('detail.viewSource', 'View Source')} →
+                        </a>
                       )}
                     </div>
                   ))}
+                  {event.sources.length > 2 && (
+                    <button
+                      className="show-more-sources"
+                      onClick={() => setShowAllSources(!showAllSources)}
+                    >
+                      {showAllSources
+                        ? t('detail.showLess', 'Show less')
+                        : t('detail.showMore', `Show ${event.sources.length - 2} more sources`)}
+                    </button>
+                  )}
                 </div>
               </div>
             )}

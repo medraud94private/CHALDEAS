@@ -116,7 +116,7 @@ def build_person_chains(conn, dry_run=True):
         LIMIT 100
     ''')
 
-    # 더 간단한 접근: event에서 직접 person 언급 찾기
+    # 더 간단한 접근: event에서 직접 person 언급 찾기 (1개 이상 전부)
     cur.execute('''
         SELECT
             p.id as person_id,
@@ -125,18 +125,21 @@ def build_person_chains(conn, dry_run=True):
         FROM persons p
         JOIN text_mentions tm ON tm.entity_id = p.id AND tm.entity_type = 'person'
         GROUP BY p.id, p.name
-        HAVING COUNT(*) >= 2
+        HAVING COUNT(*) >= 1
         ORDER BY event_count DESC
     ''')
 
     persons = cur.fetchall()
-    print(f"2개+ 이벤트 연결된 인물: {len(persons)}명")
+    print(f"1개+ 멘션 인물: {len(persons)}명 (전체 처리)")
 
-    # 상위 인물들의 이벤트 쌍 생성
+    # 모든 인물의 이벤트 쌍 생성 (컷오프 제거)
     total_connections = 0
     connections_to_insert = []
+    total_persons = len(persons)
 
-    for person_id, person_name, event_count in persons[:500]:  # 상위 500명
+    for idx, (person_id, person_name, event_count) in enumerate(persons):  # 전체 처리
+        if idx % 1000 == 0:
+            print(f"  진행: {idx:,}/{total_persons:,} ({idx*100/total_persons:.1f}%)", flush=True)
         # 해당 인물 관련 이벤트들 조회
         cur.execute('''
             SELECT DISTINCT e.id, e.date_start
@@ -190,8 +193,7 @@ def build_person_chains(conn, dry_run=True):
     connections_to_insert = unique_connections
 
     if not dry_run and connections_to_insert:
-        # 기존 person 연결 삭제
-        cur.execute("DELETE FROM event_connections WHERE layer_type = 'person'")
+        # 기존 연결 유지 (ON CONFLICT로 중복 처리)
 
         # 배치 삽입
         execute_values(cur, '''
@@ -274,8 +276,7 @@ def build_location_chains(conn, dry_run=True):
     print(f"생성할 연결 수: {total_connections}")
 
     if not dry_run and connections_to_insert:
-        cur.execute("DELETE FROM event_connections WHERE layer_type = 'location'")
-
+        # 기존 연결 유지 (ON CONFLICT로 중복 처리)
         execute_values(cur, '''
             INSERT INTO event_connections
             (event_a_id, event_b_id, direction, layer_type, layer_entity_id,
@@ -363,8 +364,7 @@ def build_causal_chains(conn, dry_run=True):
         print(f"  - 매우 강함 (>=30): {len([s for s in strengths if s >= 30])}개")
 
     if not dry_run and connections_to_insert:
-        cur.execute("DELETE FROM event_connections WHERE layer_type = 'causal'")
-
+        # 기존 연결 유지 (ON CONFLICT로 중복 처리)
         execute_values(cur, '''
             INSERT INTO event_connections
             (event_a_id, event_b_id, direction, layer_type, layer_entity_id,

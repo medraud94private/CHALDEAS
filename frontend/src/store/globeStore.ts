@@ -1,10 +1,20 @@
 import { create } from 'zustand'
 import type { Event, Location, Category } from '../types'
 
+// Camera mode types
+export type CameraMode = 'orbit' | 'fly'
+
 interface CameraPosition {
   lat: number
   lng: number
   altitude: number
+}
+
+// Fly mode state for WASD navigation
+interface FlyState {
+  heading: number  // degrees, 0 = north
+  pitch: number    // degrees, 0 = level
+  speed: number    // movement speed multiplier
 }
 
 interface HighlightedLocation {
@@ -26,6 +36,8 @@ interface GlobeState {
   cameraPosition: CameraPosition
   autoRotate: boolean
   highlightedLocations: HighlightedLocation[]
+  cameraMode: CameraMode
+  flyState: FlyState
 
   // Filters
   selectedCategories: number[]
@@ -44,6 +56,8 @@ interface GlobeState {
   flyToLocation: (lat: number, lng: number) => void
   setHighlightedLocations: (locs: HighlightedLocation[]) => void
   clearHighlightedLocations: () => void
+  setCameraMode: (mode: CameraMode) => void
+  updateFlyState: (state: Partial<FlyState>) => void
 }
 
 export const useGlobeStore = create<GlobeState>((set, get) => ({
@@ -56,6 +70,8 @@ export const useGlobeStore = create<GlobeState>((set, get) => ({
   cameraPosition: { lat: 30, lng: 20, altitude: 2.5 },
   autoRotate: true,
   highlightedLocations: [],
+  cameraMode: 'orbit',
+  flyState: { heading: 0, pitch: 0, speed: 1.0 },
   selectedCategories: [],
   minImportance: 1,
 
@@ -109,4 +125,17 @@ export const useGlobeStore = create<GlobeState>((set, get) => ({
   },
 
   clearHighlightedLocations: () => set({ highlightedLocations: [] }),
+
+  setCameraMode: (mode) => {
+    set({ cameraMode: mode })
+    // Disable auto-rotate in fly mode
+    if (mode === 'fly') {
+      set({ autoRotate: false })
+    }
+  },
+
+  updateFlyState: (state) =>
+    set((prev) => ({
+      flyState: { ...prev.flyState, ...state },
+    })),
 }))

@@ -477,6 +477,51 @@
   color: #ef4444;
 }
 
+/* ========== Story Button ========== */
+.entity-story-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: calc(100% - 2.5rem);
+  margin: 0.75rem 1.25rem;
+  padding: 0.875rem 1.25rem;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(0, 150, 200, 0.1) 100%);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.entity-story-btn:hover {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.25) 0%, rgba(0, 150, 200, 0.2) 100%);
+  border-color: rgba(0, 212, 255, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+}
+
+.story-btn-icon {
+  font-size: 1.25rem;
+}
+
+.story-btn-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #00d4ff;
+  letter-spacing: 0.05em;
+}
+
+.story-btn-arrow {
+  font-size: 1rem;
+  color: rgba(0, 212, 255, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.entity-story-btn:hover .story-btn-arrow {
+  transform: translateX(4px);
+  color: #00d4ff;
+}
+
 /* ========== Mobile Responsive ========== */
 @media (max-width: 768px) {
   .entity-detail-view {
@@ -550,4 +595,94 @@
     width: 8px;
     height: 8px;
   }
+}
+
+/* ========== Relationship Strength Styles ========== */
+.connected-item {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.375rem;
+}
+
+.connected-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connected-era {
+  font-size: 0.6rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.connected-era.historical {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.connected-strength {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.strength-value {
+  font-size: 0.7rem;
+  color: #00d4ff;
+  font-family: 'Roboto Mono', monospace;
+  min-width: 32px;
+}
+
+.strength-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.strength-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #00d4ff, #22c55e);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Strength levels */
+.connected-item.strength-very-strong {
+  border-left-color: #22c55e;
+  background: rgba(34, 197, 94, 0.08);
+}
+
+.connected-item.strength-very-strong .strength-fill {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+}
+
+.connected-item.strength-strong {
+  border-left-color: #00d4ff;
+  background: rgba(0, 212, 255, 0.06);
+}
+
+.connected-item.strength-strong .strength-fill {
+  background: linear-gradient(90deg, #00d4ff, #0096c8);
+}
+
+.connected-item.strength-medium {
+  border-left-color: #fbbf24;
+}
+
+.connected-item.strength-medium .strength-fill {
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+}
+
+.connected-item.strength-weak {
+  border-left-color: rgba(100, 116, 139, 0.5);
+}
+
+.connected-item.strength-weak .strength-fill {
+  background: #64748b;
 }

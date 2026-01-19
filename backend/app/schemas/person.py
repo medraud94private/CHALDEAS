@@ -42,3 +42,27 @@ class PersonDetail(Person):
 class PersonList(BaseModel):
     items: list[Person]
     total: int
+
+
+class PersonRelation(BaseModel):
+    """Related person with relationship strength."""
+    id: int
+    name: str
+    name_ko: Optional[str] = None
+    birth_year: Optional[int] = None
+    death_year: Optional[int] = None
+    strength: int = 0
+    time_distance: Optional[int] = None
+    relationship_type: Optional[str] = None
+    is_bidirectional: int = 0
+
+    @property
+    def is_contemporary(self) -> bool:
+        """True if persons lived in the same era."""
+        return self.time_distance is None or self.time_distance <= 0
+
+
+class PersonRelationList(BaseModel):
+    person_id: int
+    relations: list[PersonRelation]
+    total: int

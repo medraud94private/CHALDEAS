@@ -108,3 +108,33 @@ person_polities = Table(
     Column("valid_until", Integer),  # When affiliation ended
     Column("is_primary", Integer, default=0),  # 1 if main affiliation
 )
+
+# Person <-> Location (Wikipedia link based)
+person_locations = Table(
+    "person_locations",
+    Base.metadata,
+    Column("person_id", Integer, ForeignKey("persons.id", ondelete="CASCADE"), primary_key=True),
+    Column("location_id", Integer, ForeignKey("locations.id", ondelete="CASCADE"), primary_key=True),
+    Column("role", String(50), default="mentioned"),  # mentioned, birthplace, deathplace, residence, visited
+    Column("confidence", Float, default=0.5),
+)
+
+# Location <-> Location (relationships)
+location_relationships = Table(
+    "location_relationships",
+    Base.metadata,
+    Column("location_id", Integer, ForeignKey("locations.id", ondelete="CASCADE"), primary_key=True),
+    Column("related_location_id", Integer, ForeignKey("locations.id", ondelete="CASCADE"), primary_key=True),
+    Column("relationship_type", String(50), default="related_to"),  # related_to, part_of, near, contains
+    Column("strength", Integer, default=2),
+    Column("confidence", Float, default=0.5),
+)
+
+# Location <-> Source
+location_sources = Table(
+    "location_sources",
+    Base.metadata,
+    Column("location_id", Integer, ForeignKey("locations.id", ondelete="CASCADE"), primary_key=True),
+    Column("source_id", Integer, ForeignKey("sources.id", ondelete="CASCADE"), primary_key=True),
+    Column("page_reference", String(100)),
+)

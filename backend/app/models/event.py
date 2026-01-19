@@ -86,6 +86,9 @@ class Event(Base, TimestampMixin):
     image_url = Column(String(500))
     wikipedia_url = Column(String(500))
 
+    # Connection count for filtering orphans
+    connection_count = Column(Integer, default=0, index=True)
+
     # Relationships
     category = relationship("Category", back_populates="events")
     primary_location = relationship(

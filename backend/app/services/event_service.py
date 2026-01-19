@@ -14,11 +14,16 @@ def get_events(
     year_end: Optional[int] = None,
     category_id: Optional[int] = None,
     importance_min: Optional[int] = None,
+    include_orphans: bool = False,
     limit: int = 100,
     offset: int = 0,
 ) -> tuple[list[Event], int]:
     """Get events with optional filtering."""
     query = db.query(Event)
+
+    # Exclude orphans (entities with no connections) by default
+    if not include_orphans:
+        query = query.filter(Event.connection_count > 0)
 
     # Apply filters
     if year_start is not None:

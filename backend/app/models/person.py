@@ -83,6 +83,9 @@ class Person(Base, TimestampMixin):
     mention_count = Column(Integer, default=0)
     avg_confidence = Column(Float, default=0.0)
 
+    # Connection count for filtering orphans
+    connection_count = Column(Integer, default=0, index=True)
+
     # Relationships
     category = relationship("Category", back_populates="persons")
     birthplace = relationship(
