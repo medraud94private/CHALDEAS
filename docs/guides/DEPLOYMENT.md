@@ -209,7 +209,7 @@ gcloud run services describe chaldeas-frontend --region asia-northeast3 --format
 # 2. 트리거 생성
 gcloud builds triggers create github \
   --repo-name=CHALDEAS \
-  --repo-owner=medraud94private \
+  --repo-owner=finis-chaldeas \
   --branch-pattern="^main$" \
   --build-config=cloudbuild.yaml \
   --substitutions=_BACKEND_URL=https://chaldeas-backend-xxxxx.run.app

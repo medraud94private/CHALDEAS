@@ -84,7 +84,7 @@ BCE 3000년부터 현재까지, 인류 역사의 모든 순간을 3D 지구본 �
 
 ```bash
 # Clone
-git clone https://github.com/medraud94private/CHALDEAS.git
+git clone https://github.com/finis-chaldeas/CHALDEAS.git
 cd CHALDEAS
 
 # Backend
