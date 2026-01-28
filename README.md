@@ -8,7 +8,7 @@
 
 Fate/Grand Order의 칼데아 시스템에서 영감받은 **3D 지구본 역사 탐색 플랫폼**
 
-![Version](https://img.shields.io/badge/version-0.5.0-blue)
+![Version](https://img.shields.io/badge/version-0.7.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
@@ -44,9 +44,10 @@ BCE 3000년부터 현재까지, 인류 역사의 모든 순간을 3D 지구본 �
 - **Timeline Travel**: BCE 3000 ~ Present with timelapse animation
 - **Historical Chain**: Event connections by Person/Location/Causal relationships
 - **Semantic Search**: AI-powered search with autocomplete across events, persons, locations
-- **Multi-language**: Korean / English / Japanese
+- **Multi-language**: Korean / English / Japanese with Wikipedia-sourced descriptions
+- **Settings Page**: Language preference, display options, data source attribution
 
-### v0.5.0 New Features
+### Recent Features (v0.5~v0.7)
 - **PWA Support**: Offline access, installable app
 - **Virtual Scrolling**: Smooth performance with 1000+ events
 - **Event Clustering**: Zoom-level based marker grouping
@@ -111,14 +112,15 @@ npm run dev -- --port 5200
 
 ## Data Sources
 
-| Source | Data | Status |
-|--------|------|--------|
-| **Pleiades** | Ancient Mediterranean locations | 34,000+ |
-| **Wikidata** | Historical events | 8,000+ |
-| **DBpedia** | Events with coordinates | 1,500+ |
-| **World History Encyclopedia** | Historical articles | 200+ |
-| **Stanford Encyclopedia** | Philosophy | 200+ |
-| **Theoi** | Greek Mythology | 200+ |
+| Source | Data | License |
+|--------|------|---------|
+| **Wikipedia** | Multilingual descriptions (en/ko/ja) | CC BY-SA 4.0 |
+| **Wikidata** | Entity linking, coordinates | CC0 1.0 |
+| **Pleiades** | Ancient Mediterranean locations (34k+) | CC BY 3.0 |
+| **Project Gutenberg** | Historical book extractions | Public Domain |
+| **DBpedia** | Events with coordinates | CC BY-SA 3.0 |
+| **World History Encyclopedia** | Historical articles | Fair Use |
+| **Stanford Encyclopedia** | Philosophy | Fair Use |
 
 ---
 
@@ -145,6 +147,43 @@ MIT License
 ---
 
 ## Changelog
+
+### v0.7.0 (2026-01-28) - Multilingual & Settings
+
+#### Multilingual Support
+- **3-Language Descriptions**: Korean (ko), Japanese (ja), English (en) for all entities
+- **Wikipedia Integration**: Fetch descriptions from language-specific Wikipedia via Wikidata
+- **Source Attribution**: Track and display data sources with Wikipedia/AI badges
+- **CC BY-SA License**: Proper attribution for Wikipedia-sourced content
+
+#### Settings Page
+| Feature | Description |
+|---------|-------------|
+| Language Preference | Auto/English/Korean/Japanese selection |
+| Display Settings | Hide entities without descriptions |
+| Globe Style | Default/Holographic/Night themes |
+| SHEBA API Key | Optional API key management |
+| License Info | Wikipedia CC BY-SA attribution |
+
+#### New Components
+- `SettingsPage`: Full settings modal with all preferences
+- `SourceBadge`: Wikipedia/AI source attribution badge
+- `settingsStore`: Zustand store with localStorage persistence
+
+---
+
+### v0.6.0 (2026-01-19) - Relationship Strength & DB Management
+
+#### Relationship System
+- **Strength Scoring**: 1-5 scale relationship strength
+- **Confidence Tracking**: Evidence-based confidence scores
+- **Auto-updating**: Relationships strengthen with more evidence
+
+#### Database
+- **Compact DB Management**: Optimized storage and queries
+- **DB Sync Automation**: Local ↔ Cloud sync scripts
+
+---
 
 ### v0.5.0 (2025-01-11) - UI/UX Major Update
 

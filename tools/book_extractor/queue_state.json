@@ -1,0 +1,479 @@
+{
+  "running": true,
+  "paused": false,
+  "current_model": "ollama",
+  "current_book": null,
+  "completed": 19,
+  "total": 91,
+  "start_time": 1769528188.822403,
+  "books_queue": [
+    {
+      "id": "The Arabian Nights Entertainments - Complete_5668",
+      "path": "The Arabian Nights Entertainments - Complete.5668",
+      "title": "The Arabian Nights Entertainments - Complete",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights' Entertainments_62687",
+      "path": "The Arabian Nights' Entertainments.62687",
+      "title": "The Arabian Nights' Entertainments",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights Entertainments - Volume 01_5612",
+      "path": "The Arabian Nights Entertainments - Volume 01.5612",
+      "title": "The Arabian Nights Entertainments - Volume 01",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights Entertainments \u2014 Volume 04_5667",
+      "path": "The Arabian Nights Entertainments \u2014 Volume 04.5667",
+      "title": "The Arabian Nights Entertainments \u2014 Volume 04",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights Entertainments \u2014 Volume 03_5666",
+      "path": "The Arabian Nights Entertainments \u2014 Volume 03.5666",
+      "title": "The Arabian Nights Entertainments \u2014 Volume 03",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights, Volume I of IV_62897",
+      "path": "The Arabian Nights, Volume I of IV.62897",
+      "title": "The Arabian Nights, Volume I of IV",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights, Volume II of IV_63306",
+      "path": "The Arabian Nights, Volume II of IV.63306",
+      "title": "The Arabian Nights, Volume II of IV",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights Entertainments \u2014 Volume 02_5665",
+      "path": "The Arabian Nights Entertainments \u2014 Volume 02.5665",
+      "title": "The Arabian Nights Entertainments \u2014 Volume 02",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights Entertainments \u2014 Volume 01_5664",
+      "path": "The Arabian Nights Entertainments \u2014 Volume 01.5664",
+      "title": "The Arabian Nights Entertainments \u2014 Volume 01",
+      "category": "Literature"
+    },
+    {
+      "id": "New Arabian Nights_839",
+      "path": "New Arabian Nights.839",
+      "title": "New Arabian Nights",
+      "category": "Literature"
+    },
+    {
+      "id": "The Thousand and One Days: A Companion to the \"Arabian Nights\"_36301",
+      "path": "The Thousand and One Days: A Companion to the \"Arabian Nights\".36301",
+      "title": "The Thousand and One Days: A Companion to the \"Arabian Nights\"",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights: Their Best-known Tales_20916",
+      "path": "The Arabian Nights: Their Best-known Tales.20916",
+      "title": "The Arabian Nights: Their Best-known Tales",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights Entertainments_128",
+      "path": "The Arabian Nights Entertainments.128",
+      "title": "The Arabian Nights Entertainments",
+      "category": "Literature"
+    },
+    {
+      "id": "The Arabian Nights, Volume 3 (of 4)_44105",
+      "path": "The Arabian Nights, Volume 3 (of 4).44105",
+      "title": "The Arabian Nights, Volume 3 (of 4)",
+      "category": "Literature"
+    },
+    {
+      "id": "Arabian Society in the Middle Ages: Studies From The Thousand and One Nights_41110",
+      "path": "Arabian Society in the Middle Ages: Studies From The Thousand and One Nights.41110",
+      "title": "Arabian Society in the Middle Ages: Studies From The Thousand and One Nights",
+      "category": "Literature"
+    },
+    {
+      "id": "Fairy Tales from the Arabian Nights_8599",
+      "path": "Fairy Tales from the Arabian Nights.8599",
+      "title": "Fairy Tales from the Arabian Nights",
+      "category": "Literature"
+    },
+    {
+      "id": "Sindbad the Sailor, & Other Stories from the Arabian Nights_47285",
+      "path": "Sindbad the Sailor, & Other Stories from the Arabian Nights.47285",
+      "title": "Sindbad the Sailor, & Other Stories from the Arabian Nights",
+      "category": "Literature"
+    },
+    {
+      "id": "Stories from The Arabian Nights_51432",
+      "path": "Stories from The Arabian Nights.51432",
+      "title": "Stories from The Arabian Nights",
+      "category": "Literature"
+    },
+    {
+      "id": "The cats' Arabian nights, or, King Grimalkum_69482",
+      "path": "The cats' Arabian nights, or, King Grimalkum.69482",
+      "title": "The cats' Arabian nights, or, King Grimalkum",
+      "category": "Literature"
+    },
+    {
+      "id": "Princess Badoura: A tale from the Arabian Nights_51219",
+      "path": "Princess Badoura: A tale from the Arabian Nights.51219",
+      "title": "Princess Badoura: A tale from the Arabian Nights",
+      "category": "Literature"
+    },
+    {
+      "id": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 6 (of 6)_64384",
+      "path": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 6 (of 6).64384",
+      "title": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 6 (of 6)",
+      "category": "Literature"
+    },
+    {
+      "id": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 3 (of 6)_3447",
+      "path": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 3 (of 6).3447",
+      "title": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 3 (of 6)",
+      "category": "Literature"
+    },
+    {
+      "id": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 5 (of 6)_63266",
+      "path": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 5 (of 6).63266",
+      "title": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 5 (of 6)",
+      "category": "Literature"
+    },
+    {
+      "id": "The Thousand and One Nights, Vol_ I__34206",
+      "path": "The Thousand and One Nights, Vol. I..34206",
+      "title": "The Thousand and One Nights, Vol. I.",
+      "category": "Literature"
+    },
+    {
+      "id": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 2 (of 6)_59953",
+      "path": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 2 (of 6).59953",
+      "title": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 2 (of 6)",
+      "category": "Literature"
+    },
+    {
+      "id": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 4 (of 6)_62140",
+      "path": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 4 (of 6).62140",
+      "title": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 4 (of 6)",
+      "category": "Literature"
+    },
+    {
+      "id": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 3 (of 6) Part 2_61974",
+      "path": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 3 (of 6) Part 2.61974",
+      "title": "Supplemental Nights to the Book of the Thousand and One Nights \u2014 Volume 3 (of 6) Part 2",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy of Dante Alighieri: The Inferno_41537",
+      "path": "The Divine Comedy of Dante Alighieri: The Inferno.41537",
+      "title": "The Divine Comedy of Dante Alighieri: The Inferno",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Purgatory, Complete_8795",
+      "path": "The Divine Comedy by Dante, Illustrated, Purgatory, Complete.8795",
+      "title": "The Divine Comedy by Dante, Illustrated, Purgatory, Complete",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Paradise, Complete_8799",
+      "path": "The Divine Comedy by Dante, Illustrated, Paradise, Complete.8799",
+      "title": "The Divine Comedy by Dante, Illustrated, Paradise, Complete",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 1_8796",
+      "path": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 1.8796",
+      "title": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 1",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 3_8798",
+      "path": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 3.8798",
+      "title": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 3",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy, Volume 2, Purgatory_1996",
+      "path": "The Divine Comedy, Volume 2, Purgatory.1996",
+      "title": "The Divine Comedy, Volume 2, Purgatory",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy, Volume 1, Hell_1995",
+      "path": "The Divine Comedy, Volume 1, Hell.1995",
+      "title": "The Divine Comedy, Volume 1, Hell",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 5_8794",
+      "path": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 5.8794",
+      "title": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 5",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy, Volume 3, Paradise_1997",
+      "path": "The Divine Comedy, Volume 3, Paradise.1997",
+      "title": "The Divine Comedy, Volume 3, Paradise",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 3_8792",
+      "path": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 3.8792",
+      "title": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 3",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 4_8793",
+      "path": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 4.8793",
+      "title": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 4",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 2_8797",
+      "path": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 2.8797",
+      "title": "The Divine Comedy by Dante, Illustrated, Paradise, Volume 2",
+      "category": "Literature"
+    },
+    {
+      "id": "Divine Comedy, Cary's Translation, Complete_1008",
+      "path": "Divine Comedy, Cary's Translation, Complete.1008",
+      "title": "Divine Comedy, Cary's Translation, Complete",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Hell, Volume 08_8786",
+      "path": "The Divine Comedy by Dante, Illustrated, Hell, Volume 08.8786",
+      "title": "The Divine Comedy by Dante, Illustrated, Hell, Volume 08",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 2_8791",
+      "path": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 2.8791",
+      "title": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 2",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Hell, Volume 06_8784",
+      "path": "The Divine Comedy by Dante, Illustrated, Hell, Volume 06.8784",
+      "title": "The Divine Comedy by Dante, Illustrated, Hell, Volume 06",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Hell, Volume 07_8785",
+      "path": "The Divine Comedy by Dante, Illustrated, Hell, Volume 07.8785",
+      "title": "The Divine Comedy by Dante, Illustrated, Hell, Volume 07",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 1_8790",
+      "path": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 1.8790",
+      "title": "The Divine Comedy by Dante, Illustrated, Purgatory, Volume 1",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Hell, Volume 05_8783",
+      "path": "The Divine Comedy by Dante, Illustrated, Hell, Volume 05.8783",
+      "title": "The Divine Comedy by Dante, Illustrated, Hell, Volume 05",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Hell, Volume 09_8787",
+      "path": "The Divine Comedy by Dante, Illustrated, Hell, Volume 09.8787",
+      "title": "The Divine Comedy by Dante, Illustrated, Hell, Volume 09",
+      "category": "Literature"
+    },
+    {
+      "id": "The Divine Comedy by Dante, Illustrated, Hell, Volume 10_8788",
+      "path": "The Divine Comedy by Dante, Illustrated, Hell, Volume 10.8788",
+      "title": "The Divine Comedy by Dante, Illustrated, Hell, Volume 10",
+      "category": "Literature"
+    },
+    {
+      "id": "Divine Comedy, Longfellow's Translation, Complete_1004",
+      "path": "Divine Comedy, Longfellow's Translation, Complete.1004",
+      "title": "Divine Comedy, Longfellow's Translation, Complete",
+      "category": "Literature"
+    },
+    {
+      "id": "Divine Comedy, Longfellow's Translation, Hell_1001",
+      "path": "Divine Comedy, Longfellow's Translation, Hell.1001",
+      "title": "Divine Comedy, Longfellow's Translation, Hell",
+      "category": "Literature"
+    },
+    {
+      "id": "Dracula_45839",
+      "path": "Dracula.45839",
+      "title": "Dracula",
+      "category": "Literature"
+    },
+    {
+      "id": "Dracula's Guest_10150",
+      "path": "Dracula's Guest.10150",
+      "title": "Dracula's Guest",
+      "category": "Literature"
+    },
+    {
+      "id": "Index of the Project Gutenberg Works of Arthur Conan Doyle_58574",
+      "path": "Index of the Project Gutenberg Works of Arthur Conan Doyle.58574",
+      "title": "Index of the Project Gutenberg Works of Arthur Conan Doyle",
+      "category": "Literature"
+    },
+    {
+      "id": "The Return of Sherlock Holmes_221",
+      "path": "The Return of Sherlock Holmes.221",
+      "title": "The Return of Sherlock Holmes",
+      "category": "Literature"
+    },
+    {
+      "id": "The case-book of Sherlock Holmes_69700",
+      "path": "The case-book of Sherlock Holmes.69700",
+      "title": "The case-book of Sherlock Holmes",
+      "category": "Literature"
+    },
+    {
+      "id": "Adventures of Sherlock Holmes_48320",
+      "path": "Adventures of Sherlock Holmes.48320",
+      "title": "Adventures of Sherlock Holmes",
+      "category": "Literature"
+    },
+    {
+      "id": "The Adventures of Sherlock Holmes_1661",
+      "path": "The Adventures of Sherlock Holmes.1661",
+      "title": "The Adventures of Sherlock Holmes",
+      "category": "Literature"
+    },
+    {
+      "id": "The Memoirs of Sherlock Holmes_834",
+      "path": "The Memoirs of Sherlock Holmes.834",
+      "title": "The Memoirs of Sherlock Holmes",
+      "category": "Literature"
+    },
+    {
+      "id": "A doctor enjoys Sherlock Holmes_75869",
+      "path": "A doctor enjoys Sherlock Holmes.75869",
+      "title": "A doctor enjoys Sherlock Holmes",
+      "category": "Literature"
+    },
+    {
+      "id": "His last bow : $b Some later reminiscences of Sherlock Holmes_2350",
+      "path": "His last bow : $b Some later reminiscences of Sherlock Holmes.2350",
+      "title": "His last bow : $b Some later reminiscences of Sherlock Holmes",
+      "category": "Literature"
+    },
+    {
+      "id": "Frankenstein; Or, The Modern Prometheus_42324",
+      "path": "Frankenstein; Or, The Modern Prometheus.42324",
+      "title": "Frankenstein; Or, The Modern Prometheus",
+      "category": "Literature"
+    },
+    {
+      "id": "The Phantom of the Opera_175",
+      "path": "The Phantom of the Opera.175",
+      "title": "The Phantom of the Opera",
+      "category": "Literature"
+    },
+    {
+      "id": "The Strange Case of Dr_ Jekyll and Mr_ Hyde_42",
+      "path": "The Strange Case of Dr. Jekyll and Mr. Hyde.42",
+      "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "category": "Literature"
+    },
+    {
+      "id": "The History of Don Quixote, Volume 1, Part 01_5903",
+      "path": "The History of Don Quixote, Volume 1, Part 01.5903",
+      "title": "The History of Don Quixote, Volume 1, Part 01",
+      "category": "Literature"
+    },
+    {
+      "id": "The History of Don Quixote, Volume 1, Complete_5921",
+      "path": "The History of Don Quixote, Volume 1, Complete.5921",
+      "title": "The History of Don Quixote, Volume 1, Complete",
+      "category": "Literature"
+    },
+    {
+      "id": "Wit and Wisdom of Don Quixote_24754",
+      "path": "Wit and Wisdom of Don Quixote.24754",
+      "title": "Wit and Wisdom of Don Quixote",
+      "category": "Literature"
+    },
+    {
+      "id": "The History of Don Quixote de la Mancha_35993",
+      "path": "The History of Don Quixote de la Mancha.35993",
+      "title": "The History of Don Quixote de la Mancha",
+      "category": "Literature"
+    },
+    {
+      "id": "Don Quixote_996",
+      "path": "Don Quixote.996",
+      "title": "Don Quixote",
+      "category": "Literature"
+    },
+    {
+      "id": "The history and adventures of the renowned Don Quixote_77095",
+      "path": "The history and adventures of the renowned Don Quixote.77095",
+      "title": "The history and adventures of the renowned Don Quixote",
+      "category": "Literature"
+    },
+    {
+      "id": "Bulfinch's Mythology_4928",
+      "path": "Bulfinch's Mythology.4928",
+      "title": "Bulfinch's Mythology",
+      "category": "Mythology"
+    },
+    {
+      "id": "Bulfinch's Mythology: The Age of Fable_3327",
+      "path": "Bulfinch's Mythology: The Age of Fable.3327",
+      "title": "Bulfinch's Mythology: The Age of Fable",
+      "category": "Mythology"
+    },
+    {
+      "id": "Asgard Stories: Tales from Norse Mythology_37488",
+      "path": "Asgard Stories: Tales from Norse Mythology.37488",
+      "title": "Asgard Stories: Tales from Norse Mythology",
+      "category": "Mythology"
+    }
+  ],
+  "total_cost": 0.0,
+  "errors": [
+    {
+      "book": "Cleopatra \u2014 Volume 04",
+      "error": "'cp949' codec can't encode character '\\u2014' in position 38: illegal multibyte sequence"
+    },
+    {
+      "book": "Cleopatra \u2014 Volume 03",
+      "error": "'cp949' codec can't encode character '\\u2014' in position 38: illegal multibyte sequence"
+    },
+    {
+      "book": "Cleopatra \u2014 Volume 02",
+      "error": "'cp949' codec can't encode character '\\u2014' in position 38: illegal multibyte sequence"
+    },
+    {
+      "book": "Cleopatra \u2014 Volume 06",
+      "error": "'cp949' codec can't encode character '\\u2014' in position 38: illegal multibyte sequence"
+    },
+    {
+      "book": "Cleopatra \u2014 Volume 05",
+      "error": "'cp949' codec can't encode character '\\u2014' in position 38: illegal multibyte sequence"
+    },
+    {
+      "book": "Personal Recollections of Joan of Arc \u2014 Volume 2",
+      "error": "'cp949' codec can't encode character '\\u2014' in position 66: illegal multibyte sequence"
+    },
+    {
+      "book": "Personal Recollections of Joan of Arc \u2014 Volume 1",
+      "error": "'cp949' codec can't encode character '\\u2014' in position 66: illegal multibyte sequence"
+    }
+  ],
+  "speed_mode": "medium",
+  "current_chunk": 32,
+  "total_chunks": 32,
+  "chunk_start_time": null,
+  "book_start_time": 1769574241.5965376
+}

@@ -112,11 +112,23 @@ class EntityAlias(Base):
     alias = Column(String(500), nullable=False, index=True)
 
     # Classification of alias type
+    # - canonical: 정규 이름
+    # - alternate: 대체 이름
+    # - abbreviation: 약어
+    # - translation: 번역명
+    # - misspelling: 오타/오기
+    # - historical: 역사적 이름
+    # - latinized/romanized: 라틴화/로마자화
+    # - wikidata: Wikidata에서 가져온 alias
+    # - learned: 책 처리 중 자동 학습된 매칭
+    # - merged: QID 중복 병합 시 저장된 변형
     alias_type = Column(
         String(50),
         CheckConstraint(
             "alias_type IN ('canonical', 'alternate', 'abbreviation', 'translation', "
-            "'misspelling', 'historical', 'latinized', 'romanized')"
+            "'misspelling', 'historical', 'latinized', 'romanized', "
+            "'wikidata', 'learned', 'merged')",
+            name='ck_alias_type'
         ),
         default='alternate'
     )

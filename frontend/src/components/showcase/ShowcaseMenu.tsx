@@ -12,6 +12,7 @@ import './showcase.css'
 
 interface Props {
   onSelectContent: (content: ShowcaseContent) => void
+  onOpenServantPanel?: () => void
 }
 
 type MainTab = 'fgo' | 'panHuman'
@@ -64,7 +65,7 @@ function transformApiItem(item: Record<string, unknown>, lang: string): Showcase
   }
 }
 
-export function ShowcaseMenu({ onSelectContent }: Props) {
+export function ShowcaseMenu({ onSelectContent, onOpenServantPanel }: Props) {
   const { t, i18n } = useTranslation()
   const lang = i18n.language
   const [isOpen, setIsOpen] = useState(false)
@@ -194,6 +195,18 @@ export function ShowcaseMenu({ onSelectContent }: Props) {
                   <span className="tab-icon" style={{ color: 'var(--chaldea-gold)' }}>▸</span>
                   {t('showcase.menu.servants')}
                 </button>
+                {onOpenServantPanel && (
+                  <button
+                    className="menu-tab menu-tab-action"
+                    onClick={() => {
+                      onOpenServantPanel()
+                      setIsOpen(false)
+                    }}
+                  >
+                    <span className="tab-icon" style={{ color: '#22c55e' }}>📚</span>
+                    {t('showcase.menu.servantBooks', '서번트 원전')}
+                  </button>
+                )}
               </>
             ) : (
               <>

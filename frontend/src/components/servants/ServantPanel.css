@@ -1,0 +1,488 @@
+.servant-panel-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servant-panel {
+  background: #1e293b;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+.servant-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #334155;
+  background: #0f172a;
+}
+
+.servant-panel-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+/* Stats */
+.servant-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #334155;
+}
+
+.servant-stats .stat {
+  text-align: center;
+}
+
+.servant-stats .value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.servant-stats .label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Filters */
+.servant-filters {
+  display: flex;
+  gap: 12px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #334155;
+}
+
+.servant-filters .search-form {
+  display: flex;
+  flex: 1;
+  gap: 8px;
+}
+
+.servant-filters input {
+  flex: 1;
+  padding: 8px 12px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: white;
+}
+
+.servant-filters input:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+
+.servant-filters button {
+  padding: 8px 16px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.servant-filters button:hover {
+  background: #2563eb;
+}
+
+.servant-filters select {
+  padding: 8px 12px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: white;
+}
+
+/* List */
+.servant-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 20px;
+}
+
+.servant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #0f172a;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.servant-item:hover {
+  background: #1e3a5f;
+}
+
+.servant-name {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rarity-small {
+  color: #fbbf24;
+  font-size: 0.75rem;
+}
+
+.fgo-badge {
+  font-size: 0.625rem;
+  background: #7c3aed;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.historical-name {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.mention-badge {
+  background: #22c55e;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #94a3b8;
+}
+
+/* Detail View */
+.servant-detail {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #60a5fa;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.servant-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.servant-detail-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.rarity {
+  color: #fbbf24;
+  font-size: 1.25rem;
+}
+
+.fgo-original-badge {
+  background: #7c3aed;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+}
+
+.servant-meta {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.historical-section {
+  background: #0f172a;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.historical-section h4 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.person-name {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.name-ko {
+  color: #94a3b8;
+  font-weight: normal;
+}
+
+.lifespan {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.biography {
+  margin: 12px 0;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.links a, .view-person-btn {
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.links a:hover, .view-person-btn:hover {
+  text-decoration: underline;
+}
+
+.book-mentions-section h4 {
+  margin: 0 0 12px;
+}
+
+.book-mentions-section h4 .count {
+  color: #22c55e;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-item {
+  background: #0f172a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.book-header:hover {
+  background: #1e3a5f;
+}
+
+.book-title {
+  font-weight: 500;
+}
+
+.book-author {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.book-header .mention-count {
+  background: #22c55e;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.book-contexts {
+  padding: 12px 16px;
+  border-top: 1px solid #334155;
+  background: #0a0f1a;
+}
+
+.context-quote {
+  padding: 10px;
+  background: #1e293b;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-style: italic;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+.context-quote:last-child {
+  margin-bottom: 0;
+}
+
+.no-books {
+  text-align: center;
+  padding: 24px;
+  color: #94a3b8;
+}
+
+/* Toggle Button */
+.servant-toggle-btn {
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(251, 191, 36, 0.4);
+  transition: all 0.3s;
+  z-index: 997;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servant-toggle-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(251, 191, 36, 0.6);
+}
+
+.servant-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .servant-panel {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .servant-panel-header {
+    padding: 12px 16px;
+  }
+
+  .servant-panel-header h2 {
+    font-size: 1rem;
+  }
+
+  .servant-stats {
+    padding: 12px 16px;
+    gap: 8px;
+  }
+
+  .servant-stats .value {
+    font-size: 1.25rem;
+  }
+
+  .servant-filters {
+    flex-direction: column;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
+  .servant-filters .search-form {
+    width: 100%;
+  }
+
+  .servant-filters select {
+    width: 100%;
+  }
+
+  .servant-list {
+    padding: 8px 12px;
+  }
+
+  .servant-item {
+    padding: 10px 12px;
+  }
+
+  .servant-detail {
+    padding: 16px;
+  }
+
+  .servant-detail-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .book-header {
+    padding: 10px 12px;
+  }
+
+  .book-contexts {
+    padding: 10px 12px;
+  }
+
+  .context-quote {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servant-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+
+  .servant-stats .value {
+    font-size: 1rem;
+  }
+
+  .servant-stats .label {
+    font-size: 0.65rem;
+  }
+
+  .rarity-small {
+    display: none;
+  }
+
+  .fgo-badge {
+    font-size: 0.5rem;
+    padding: 1px 4px;
+  }
+}

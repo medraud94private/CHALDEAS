@@ -321,6 +321,33 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
+/* Checkbox Filter */
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.filter-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--chaldea-cyan, #00d4ff);
+  cursor: pointer;
+}
+
+.filter-checkbox .checkbox-label {
+  font-size: 0.7rem;
+  color: var(--chaldea-text);
+  opacity: 0.8;
+}
+
+.filter-checkbox:hover .checkbox-label {
+  opacity: 1;
+  color: var(--chaldea-cyan, #00d4ff);
+}
+
 /* Reset Button */
 .filter-reset-btn {
   width: 100%;

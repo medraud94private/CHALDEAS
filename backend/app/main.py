@@ -8,6 +8,25 @@ Implements World-Centric Architecture with FGO-inspired naming.
 from dotenv import load_dotenv
 load_dotenv("../.env")
 
+import os
+import sentry_sdk
+
+# Initialize Sentry for error tracking (disabled by default)
+sentry_dsn = os.getenv("SENTRY_DSN")
+sentry_enabled = os.getenv("SENTRY_ENABLED", "false").lower() == "true"
+if sentry_dsn and sentry_enabled:
+    sentry_sdk.init(
+        dsn=sentry_dsn,
+        environment=os.getenv("ENVIRONMENT", "development"),
+        traces_sample_rate=0.1,  # 10% of requests for performance monitoring
+        profiles_sample_rate=0.1,
+    )
+    print(f"[Sentry] Initialized for {os.getenv('ENVIRONMENT', 'development')}")
+elif sentry_dsn:
+    print("[Sentry] DSN configured but SENTRY_ENABLED=false, error tracking disabled")
+else:
+    print("[Sentry] DSN not configured, error tracking disabled")
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse

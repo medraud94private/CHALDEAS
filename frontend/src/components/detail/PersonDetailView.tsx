@@ -3,22 +3,30 @@
  *
  * Shows a person's biography, timeline of events, and connected persons.
  */
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { api } from '../../api/client'
+import { api, personsApi } from '../../api/client'
 import { StoryModal } from '../story'
-import type { Event } from '../../types'
+import { ReportButton, SourceBadge } from '../common'
+import { useSettingsStore, getLocalizedText } from '../../store/settingsStore'
+import { trackEvent, AnalyticsEvents } from '../../lib/analytics'
+import type { Event, PersonSourceList } from '../../types'
 import './EntityDetailView.css'
 
 interface PersonInfo {
   id: number
   name: string
   name_ko?: string
+  name_ja?: string
   birth_year?: number
   death_year?: number
   role?: string
   certainty?: string
-  description?: string
+  biography?: string
+  biography_ko?: string
+  biography_ja?: string
+  biography_source?: string
+  biography_source_url?: string
 }
 
 interface ChainEvent {
@@ -57,6 +65,12 @@ interface Props {
 
 export function PersonDetailView({ personId, onClose, onEventClick, onPersonClick }: Props) {
   const [isStoryOpen, setIsStoryOpen] = useState(false)
+  const { preferredLanguage } = useSettingsStore()
+
+  // Track person view
+  useEffect(() => {
+    trackEvent(AnalyticsEvents.PERSON_VIEWED, { person_id: personId })
+  }, [personId])
 
   // Fetch person details
   const { data: person, isLoading: personLoading } = useQuery<PersonInfo>({
@@ -81,6 +95,15 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
     queryKey: ['person-relations', personId],
     queryFn: async () => {
       const res = await api.get(`/persons/${personId}/relations?limit=20&min_strength=5`)
+      return res.data
+    },
+  })
+
+  // Fetch sources (books) mentioning this person
+  const { data: sourcesData } = useQuery<PersonSourceList>({
+    queryKey: ['person-sources', personId],
+    queryFn: async () => {
+      const res = await personsApi.getSources(personId, { limit: 10, include_contexts: true, max_contexts: 2 })
       return res.data
     },
   })
@@ -207,12 +230,21 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
         </button>
       )}
 
-      {/* Description */}
-      {person.description && (
-        <div className="entity-description">
-          <p>{person.description}</p>
-        </div>
-      )}
+      {/* Biography */}
+      {(() => {
+        const biography = getLocalizedText(person as unknown as Record<string, unknown>, 'biography', preferredLanguage)
+        return biography ? (
+          <div className="entity-description">
+            <p>{biography}</p>
+            <div className="description-source">
+              <SourceBadge
+                source={person.biography_source}
+                sourceUrl={person.biography_source_url}
+              />
+            </div>
+          </div>
+        ) : null
+      })()}
 
       {/* Timeline */}
       <div className="entity-section">
@@ -275,6 +307,39 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
         </div>
       )}
 
+      {/* Sources (Books) mentioning this person */}
+      {sourcesData && sourcesData.sources.length > 0 && (
+        <div className="entity-section">
+          <div className="section-header">
+            <span className="section-icon">📚</span>
+            <span className="section-title">Mentioned in Books</span>
+            <span className="section-count">{sourcesData.total}</span>
+          </div>
+          <div className="sources-list">
+            {sourcesData.sources.map((source) => (
+              <div key={source.id} className="source-item">
+                <div className="source-header">
+                  <span className="source-title">{source.title || source.name}</span>
+                  <span className="source-mentions">{source.mention_count}x</span>
+                </div>
+                {source.author && (
+                  <div className="source-author">by {source.author}</div>
+                )}
+                {source.mentions.length > 0 && (
+                  <div className="source-contexts">
+                    {source.mentions.slice(0, 2).map((mention, idx) => (
+                      <div key={idx} className="mention-context">
+                        <span className="mention-quote">"{mention.context_text?.slice(0, 150)}..."</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Footer */}
       <div className="entity-footer">
         <span className="entity-id">PERSON #{personId}</span>
@@ -283,6 +348,7 @@ export function PersonDetailView({ personId, onClose, onEventClick, onPersonClic
             {person.certainty}
           </span>
         )}
+        <ReportButton entityType="person" entityId={personId} />
       </div>
 
       {/* Story Modal */}

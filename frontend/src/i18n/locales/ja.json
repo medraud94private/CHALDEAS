@@ -144,6 +144,62 @@
     },
     "observing": "観測中の時代"
   },
+  "legal": {
+    "terms": {
+      "title": "利用規約",
+      "link": "利用規約"
+    },
+    "privacy": {
+      "title": "プライバシーポリシー",
+      "link": "プライバシー"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語設定",
+    "languageDesc": "説明の表示言語を選択してください。",
+    "langAuto": "自動",
+    "langAutoDesc": "ブラウザの言語を使用",
+    "langEnDesc": "英語で表示",
+    "langKoDesc": "韓国語で表示",
+    "langJaDesc": "日本語で表示",
+    "display": "表示設定",
+    "hideEmpty": "説明のない項目を非表示",
+    "hideEmptyDesc": "説明のないイベント/人物/場所をフィルタリングします",
+    "globeStyle": "地球儀スタイル",
+    "apiKey": "SHEBA APIキー",
+    "apiKeyDesc": "拡張SHEBAクエリ用のオプションAPIキー。アクセスについてはサポートにお問い合わせください。",
+    "apiKeyPlaceholder": "APIキーを入力...",
+    "apiKeyActive": "APIキー有効",
+    "save": "保存",
+    "clear": "削除",
+    "license": "データソースとライセンス",
+    "licenseNotice": "Wikipediaソースとして表示された説明は、Creative Commons Attribution-ShareAlike 4.0ライセンスです。原文を見るにはソースリンクをクリックしてください。",
+    "resetAll": "すべての設定をリセット",
+    "confirmReset": "すべての設定をリセットしますか？"
+  },
+  "filters": {
+    "advanced": "高度なフィルター",
+    "connectionLayers": "接続レイヤー",
+    "personLayer": "人物",
+    "locationLayer": "場所",
+    "causalLayer": "因果",
+    "yearRange": "年代範囲",
+    "from": "開始",
+    "to": "終了",
+    "ancient": "古代",
+    "classical": "古典",
+    "medieval": "中世",
+    "modern": "近現代",
+    "minStrength": "最小接続強度",
+    "connectionStatus": "接続状態",
+    "anyConnection": "すべて",
+    "hasConnections": "接続あり",
+    "noConnections": "孤立",
+    "descriptionFilter": "説明フィルター",
+    "hideEmpty": "説明のない項目を非表示",
+    "reset": "すべてのフィルターをリセット"
+  },
   "showcase": {
     "types": {
       "singularity": "特異点",

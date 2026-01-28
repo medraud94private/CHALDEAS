@@ -48,6 +48,18 @@ export const personsApi = {
   list: (params?: Record<string, unknown>) => api.get('/persons', { params }),
   get: (id: number) => api.get(`/persons/${id}`),
   getEvents: (id: number) => api.get(`/persons/${id}/events`),
+  getSources: (id: number, params?: { limit?: number; include_contexts?: boolean; max_contexts?: number }) =>
+    api.get(`/persons/${id}/sources`, { params }),
+}
+
+export const sourcesApi = {
+  list: (params?: { type?: string; limit?: number; offset?: number }) =>
+    api.get('/sources', { params }),
+  get: (id: number) => api.get(`/sources/${id}`),
+  getPersons: (id: number, params?: { limit?: number; offset?: number; min_mentions?: number }) =>
+    api.get(`/sources/${id}/persons`, { params }),
+  getMentions: (id: number, params?: { entity_type?: string; limit?: number; offset?: number }) =>
+    api.get(`/sources/${id}/mentions`, { params }),
 }
 
 export const locationsApi = {

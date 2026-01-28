@@ -6,6 +6,8 @@
 import { useMemo } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../../api/client'
+import { ReportButton, SourceBadge } from '../common'
+import { useSettingsStore, getLocalizedText } from '../../store/settingsStore'
 import type { Event } from '../../types'
 import './EntityDetailView.css'
 
@@ -13,6 +15,7 @@ interface LocationInfo {
   id: number
   name: string
   name_ko?: string
+  name_ja?: string
   modern_name?: string
   country?: string
   region?: string
@@ -20,6 +23,10 @@ interface LocationInfo {
   longitude?: number
   type?: string
   description?: string
+  description_ko?: string
+  description_ja?: string
+  description_source?: string
+  description_source_url?: string
 }
 
 interface ChainEvent {
@@ -47,6 +54,7 @@ interface Props {
 export function LocationDetailView({ locationId, onClose, onEventClick, onLocationClick: _onLocationClick }: Props) {
   // Note: _onLocationClick reserved for future connected locations navigation
   void _onLocationClick
+  const { preferredLanguage } = useSettingsStore()
 
   // Fetch location details from DB
   const { data: location, isLoading: locationLoading } = useQuery<LocationInfo>({
@@ -180,11 +188,22 @@ export function LocationDetailView({ locationId, onClose, onEventClick, onLocati
       )}
 
       {/* Description */}
-      {location?.description && (
-        <div className="entity-description">
-          <p>{location.description}</p>
-        </div>
-      )}
+      {(() => {
+        const description = location ? getLocalizedText(location as unknown as Record<string, unknown>, 'description', preferredLanguage) : ''
+        return description ? (
+          <div className="entity-description">
+            <p>{description}</p>
+            {location?.description_source && (
+              <div className="description-source">
+                <SourceBadge
+                  source={location.description_source}
+                  sourceUrl={location.description_source_url}
+                />
+              </div>
+            )}
+          </div>
+        ) : null
+      })()}
 
       {/* History Timeline */}
       <div className="entity-section">
@@ -215,6 +234,7 @@ export function LocationDetailView({ locationId, onClose, onEventClick, onLocati
       {/* Footer */}
       <div className="entity-footer">
         <span className="entity-id">LOCATION #{locationId}</span>
+        <ReportButton entityType="location" entityId={locationId} />
       </div>
     </div>
   )

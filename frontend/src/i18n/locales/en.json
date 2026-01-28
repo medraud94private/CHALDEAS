@@ -144,6 +144,62 @@
     },
     "observing": "Observing era"
   },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "link": "Terms"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "link": "Privacy"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language Preferences",
+    "languageDesc": "Choose your preferred language for entity descriptions.",
+    "langAuto": "Auto",
+    "langAutoDesc": "Use browser language",
+    "langEnDesc": "Display in English",
+    "langKoDesc": "Display in Korean",
+    "langJaDesc": "Display in Japanese",
+    "display": "Display Settings",
+    "hideEmpty": "Hide items without descriptions",
+    "hideEmptyDesc": "Filter out events/persons/locations that have no description",
+    "globeStyle": "Globe Style",
+    "apiKey": "SHEBA API Key",
+    "apiKeyDesc": "Optional API key for enhanced SHEBA queries. Contact support for access.",
+    "apiKeyPlaceholder": "Enter API key...",
+    "apiKeyActive": "API key is active",
+    "save": "Save",
+    "clear": "Clear",
+    "license": "Data Sources & Licenses",
+    "licenseNotice": "Entity descriptions marked with Wikipedia source are licensed under Creative Commons Attribution-ShareAlike 4.0. Click on source links to view original articles.",
+    "resetAll": "Reset All Settings",
+    "confirmReset": "Reset all settings to defaults?"
+  },
+  "filters": {
+    "advanced": "Advanced Filters",
+    "connectionLayers": "Connection Layers",
+    "personLayer": "Person",
+    "locationLayer": "Location",
+    "causalLayer": "Causal",
+    "yearRange": "Year Range",
+    "from": "From",
+    "to": "To",
+    "ancient": "Ancient",
+    "classical": "Classical",
+    "medieval": "Medieval",
+    "modern": "Modern",
+    "minStrength": "Min Connection Strength",
+    "connectionStatus": "Connection Status",
+    "anyConnection": "Any",
+    "hasConnections": "Connected",
+    "noConnections": "Isolated",
+    "descriptionFilter": "Description Filter",
+    "hideEmpty": "Hide items without descriptions",
+    "reset": "Reset All Filters"
+  },
   "showcase": {
     "types": {
       "singularity": "Singularity",

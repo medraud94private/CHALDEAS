@@ -41,6 +41,14 @@ class Person(Base, TimestampMixin):
     # Biography
     biography = Column(Text)
     biography_ko = Column(Text)
+    biography_ja = Column(Text)  # Japanese biography
+
+    # Japanese name
+    name_ja = Column(String(255))
+
+    # Source tracking for biography
+    biography_source = Column(String(50))  # wikipedia_en, wikipedia_ko, wikipedia_ja, llm, manual
+    biography_source_url = Column(String(500))
 
     # Foreign keys
     category_id = Column(Integer, ForeignKey("categories.id"), index=True)

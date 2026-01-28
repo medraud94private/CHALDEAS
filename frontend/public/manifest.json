@@ -1,0 +1,20 @@
+{
+  "name": "CHALDEAS - Historical Knowledge System",
+  "short_name": "CHALDEAS",
+  "description": "Explore world history, philosophy, science, and mythology across time and space",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050810",
+  "theme_color": "#050810",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "reference"],
+  "lang": "en"
+}

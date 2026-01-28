@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>CHALDEAS - Historical Knowledge System</title>
-    <meta name="description" content="Explore world history, philosophy, science, and mythology across time and space" />
+    <meta name="description" content="Explore world history, philosophy, science, and mythology across time and space with an interactive 3D globe. Discover historical events, figures, and places from BCE 3000 to present." />
+    <meta name="keywords" content="history, historical events, world history, 3D globe, interactive map, historical figures, ancient history, mythology, philosophy, science history" />
+    <meta name="author" content="CHALDEAS" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.chaldeas.site/" />
 
     <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#050810" />
@@ -17,12 +21,95 @@
 
     <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
-    <link rel="apple-touch-icon" href="/icons/icon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.chaldeas.site/" />
+    <meta property="og:title" content="CHALDEAS - Historical Knowledge System" />
+    <meta property="og:description" content="Explore world history, philosophy, science, and mythology across time and space with an interactive 3D globe." />
+    <meta property="og:image" content="https://www.chaldeas.site/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="CHALDEAS" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CHALDEAS - Historical Knowledge System" />
+    <meta name="twitter:description" content="Explore world history across time and space with an interactive 3D globe." />
+    <meta name="twitter:image" content="https://www.chaldeas.site/og-image.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data - WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CHALDEAS",
+      "alternateName": "CHALDEAS Historical Knowledge System",
+      "description": "An interactive 3D globe interface for exploring world history, philosophy, science, and mythology across time and space.",
+      "url": "https://www.chaldeas.site",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Interactive 3D globe visualization",
+        "Historical timeline from BCE 3000 to present",
+        "Multilingual support (English, Korean, Japanese)",
+        "Historical event database",
+        "Person and location information",
+        "AI-powered historical queries"
+      ],
+      "screenshot": "https://www.chaldeas.site/og-image.png",
+      "inLanguage": ["en", "ko", "ja"]
+    }
+    </script>
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CHALDEAS",
+      "url": "https://www.chaldeas.site",
+      "logo": "https://www.chaldeas.site/icons/icon.svg",
+      "sameAs": [
+        "https://github.com/anthropics/claude-code"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - WebSite (for sitelinks search box) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CHALDEAS",
+      "url": "https://www.chaldeas.site",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.chaldeas.site/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

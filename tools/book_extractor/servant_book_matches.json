@@ -1,0 +1,3381 @@
+{
+  "summary": {
+    "total_servants": 314,
+    "with_keywords": 119,
+    "without_keywords": 195
+  },
+  "servants_with_keywords": [
+    {
+      "servant": {
+        "name": "Altria Pendragon",
+        "full_name": "Altria Pendragon",
+        "class": "saber",
+        "rarity": 5
+      },
+      "keywords": [
+        "arthur",
+        "king arthur",
+        "excalibur",
+        "camelot"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Nero Claudius",
+        "full_name": "Nero Claudius",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "nero",
+        "roman emperor",
+        "rome"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Siegfried",
+        "full_name": "Siegfried",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "siegfried",
+        "sigurd",
+        "nibelungen",
+        "fafnir"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Gaius Julius Caesar",
+        "full_name": "Gaius Julius Caesar",
+        "class": "saber",
+        "rarity": 3
+      },
+      "keywords": [
+        "julius caesar",
+        "caesar",
+        "rubicon",
+        "rome"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Gilgamesh",
+        "full_name": "Gilgamesh",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "gilgamesh",
+        "uruk",
+        "enkidu",
+        "mesopotamia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Atalante",
+        "full_name": "Atalante",
+        "class": "archer",
+        "rarity": 4
+      },
+      "keywords": [
+        "atalanta",
+        "atalante",
+        "argonaut",
+        "arcadia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Euryale",
+        "full_name": "Euryale",
+        "class": "archer",
+        "rarity": 3
+      },
+      "keywords": [
+        "euryale",
+        "gorgon"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Leonidas I",
+        "full_name": "Leonidas I",
+        "class": "lancer",
+        "rarity": 2
+      },
+      "keywords": [
+        "leonidas",
+        "sparta",
+        "thermopylae",
+        "300"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Romulus",
+        "full_name": "Romulus",
+        "class": "lancer",
+        "rarity": 3
+      },
+      "keywords": [
+        "romulus",
+        "remus",
+        "rome foundation"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Medusa",
+        "full_name": "Medusa",
+        "class": "rider",
+        "rarity": 3
+      },
+      "keywords": [
+        "medusa",
+        "gorgon",
+        "perseus"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Edward Teach",
+        "full_name": "Edward Teach",
+        "class": "rider",
+        "rarity": 2
+      },
+      "keywords": [
+        "blackbeard",
+        "edward teach",
+        "pirate"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Boudica",
+        "full_name": "Boudica",
+        "class": "rider",
+        "rarity": 3
+      },
+      "keywords": [
+        "boudica",
+        "boudicca",
+        "iceni",
+        "britain"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Marie Antoinette",
+        "full_name": "Marie Antoinette",
+        "class": "rider",
+        "rarity": 4
+      },
+      "keywords": [
+        "marie antoinette",
+        "french revolution",
+        "versailles"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Martha",
+        "full_name": "Martha",
+        "class": "rider",
+        "rarity": 4
+      },
+      "keywords": [
+        "martha",
+        "bethany",
+        "lazarus",
+        "bible"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Medea",
+        "full_name": "Medea",
+        "class": "caster",
+        "rarity": 3
+      },
+      "keywords": [
+        "medea",
+        "argonaut",
+        "jason",
+        "colchis"
+      ]
+    },
+    {
+      "servant": {
+        "name": "William Shakespeare",
+        "full_name": "William Shakespeare",
+        "class": "caster",
+        "rarity": 2
+      },
+      "keywords": [
+        "shakespeare",
+        "hamlet",
+        "macbeth",
+        "othello"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Zhuge Liang",
+        "full_name": "Zhuge Liang (Lord El-Melloi II)",
+        "class": "caster",
+        "rarity": 5
+      },
+      "keywords": [
+        "zhuge liang",
+        "kongming",
+        "three kingdoms"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Stheno",
+        "full_name": "Stheno",
+        "class": "assassin",
+        "rarity": 4
+      },
+      "keywords": [
+        "stheno",
+        "gorgon"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Phantom of the Opera",
+        "full_name": "Phantom of the Opera",
+        "class": "assassin",
+        "rarity": 2
+      },
+      "keywords": [
+        "phantom opera",
+        "erik",
+        "gaston leroux"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Heracles",
+        "full_name": "Heracles",
+        "class": "berserker",
+        "rarity": 4
+      },
+      "keywords": [
+        "hercules",
+        "heracles",
+        "twelve labors"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Lancelot",
+        "full_name": "Lancelot",
+        "class": "berserker",
+        "rarity": 4
+      },
+      "keywords": [
+        "lancelot",
+        "round table",
+        "guinevere"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Lu Bu Fengxian",
+        "full_name": "Lu Bu Fengxian",
+        "class": "berserker",
+        "rarity": 3
+      },
+      "keywords": [
+        "lu bu",
+        "three kingdoms",
+        "red hare"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Spartacus",
+        "full_name": "Spartacus",
+        "class": "berserker",
+        "rarity": 1
+      },
+      "keywords": [
+        "spartacus",
+        "gladiator",
+        "slave revolt"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Vlad III",
+        "full_name": "Vlad III",
+        "class": "berserker",
+        "rarity": 5
+      },
+      "keywords": [
+        "vlad",
+        "dracula",
+        "impaler",
+        "wallachia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Asterios",
+        "full_name": "Asterios",
+        "class": "berserker",
+        "rarity": 1
+      },
+      "keywords": [
+        "asterios",
+        "minotaur",
+        "crete"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Caligula",
+        "full_name": "Caligula",
+        "class": "berserker",
+        "rarity": 2
+      },
+      "keywords": [
+        "caligula",
+        "roman emperor"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Darius III",
+        "full_name": "Darius III",
+        "class": "berserker",
+        "rarity": 3
+      },
+      "keywords": [
+        "darius",
+        "persia",
+        "achaemenid"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Eric Bloodaxe",
+        "full_name": "Eric Bloodaxe",
+        "class": "berserker",
+        "rarity": 2
+      },
+      "keywords": [
+        "eric bloodaxe",
+        "viking",
+        "norway"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Jeanne d'Arc",
+        "full_name": "Jeanne d'Arc",
+        "class": "ruler",
+        "rarity": 5
+      },
+      "keywords": [
+        "joan of arc",
+        "jeanne darc",
+        "orleans",
+        "maid"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Orion",
+        "full_name": "Orion",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "orion",
+        "artemis",
+        "hunter"
+      ]
+    },
+    {
+      "servant": {
+        "name": "David",
+        "full_name": "David",
+        "class": "archer",
+        "rarity": 3
+      },
+      "keywords": [
+        "king david",
+        "goliath",
+        "psalms",
+        "israel"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Francis Drake",
+        "full_name": "Francis Drake",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "francis drake",
+        "privateer",
+        "armada"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Anne Bonny & Mary Read",
+        "full_name": "Anne Bonny & Mary Read",
+        "class": "rider",
+        "rarity": 4
+      },
+      "keywords": [
+        "anne bonny",
+        "mary read",
+        "pirate"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Oda Nobunaga",
+        "full_name": "Oda Nobunaga",
+        "class": "archer",
+        "rarity": 4
+      },
+      "keywords": [
+        "nobunaga",
+        "oda",
+        "sengoku"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Diarmuid Ua Duibhne",
+        "full_name": "Diarmuid Ua Duibhne",
+        "class": "lancer",
+        "rarity": 3
+      },
+      "keywords": [
+        "diarmuid",
+        "fianna",
+        "love spot"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Mordred",
+        "full_name": "Mordred",
+        "class": "saber",
+        "rarity": 5
+      },
+      "keywords": [
+        "mordred",
+        "camlann",
+        "round table"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Nikola Tesla",
+        "full_name": "Nikola Tesla",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "nikola tesla",
+        "electricity",
+        "inventor"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Henry Jekyll & Hyde",
+        "full_name": "Henry Jekyll & Hyde",
+        "class": "assassin",
+        "rarity": 3
+      },
+      "keywords": [
+        "jekyll",
+        "hyde",
+        "stevenson"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Frankenstein",
+        "full_name": "Frankenstein",
+        "class": "berserker",
+        "rarity": 4
+      },
+      "keywords": [
+        "frankenstein",
+        "mary shelley",
+        "monster"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Solomon",
+        "full_name": "Solomon",
+        "class": "loreGrandCaster",
+        "rarity": 5
+      },
+      "keywords": [
+        "king solomon",
+        "wisdom",
+        "temple",
+        "sheba"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Arjuna",
+        "full_name": "Arjuna",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "arjuna",
+        "mahabharata",
+        "pandava"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Karna",
+        "full_name": "Karna",
+        "class": "lancer",
+        "rarity": 5
+      },
+      "keywords": [
+        "karna",
+        "mahabharata",
+        "surya"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Fionn mac Cumhaill",
+        "full_name": "Fionn mac Cumhaill",
+        "class": "lancer",
+        "rarity": 4
+      },
+      "keywords": [
+        "fionn",
+        "finn mccool",
+        "fianna",
+        "fenian"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Brynhild",
+        "full_name": "Brynhild",
+        "class": "lancer",
+        "rarity": 5
+      },
+      "keywords": [
+        "brynhild",
+        "brunhild",
+        "valkyrie",
+        "sigurd"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Beowulf",
+        "full_name": "Beowulf",
+        "class": "berserker",
+        "rarity": 4
+      },
+      "keywords": [
+        "beowulf",
+        "grendel",
+        "hrothgar"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Astolfo",
+        "full_name": "Astolfo",
+        "class": "rider",
+        "rarity": 4
+      },
+      "keywords": [
+        "astolfo",
+        "orlando furioso",
+        "paladin"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Florence Nightingale",
+        "full_name": "Florence Nightingale",
+        "class": "berserker",
+        "rarity": 5
+      },
+      "keywords": [
+        "florence nightingale",
+        "nurse",
+        "crimea"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Queen Medb",
+        "full_name": "Queen Medb",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "medb",
+        "maeve",
+        "connacht",
+        "ulster"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Rama",
+        "full_name": "Rama",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "rama",
+        "ramayana",
+        "sita",
+        "ravana"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Thomas Edison",
+        "full_name": "Thomas Edison",
+        "class": "caster",
+        "rarity": 4
+      },
+      "keywords": [
+        "thomas edison",
+        "inventor",
+        "electric"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Geronimo",
+        "full_name": "Geronimo",
+        "class": "caster",
+        "rarity": 3
+      },
+      "keywords": [
+        "geronimo",
+        "apache",
+        "native american"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Billy the Kid",
+        "full_name": "Billy the Kid",
+        "class": "archer",
+        "rarity": 3
+      },
+      "keywords": [
+        "billy kid",
+        "outlaw",
+        "wild west"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Iskandar",
+        "full_name": "Iskandar",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "alexander",
+        "great",
+        "macedon",
+        "persia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Xuanzang Sanzang",
+        "full_name": "Xuanzang Sanzang",
+        "class": "caster",
+        "rarity": 5
+      },
+      "keywords": [
+        "xuanzang",
+        "journey west",
+        "tripitaka"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Ozymandias",
+        "full_name": "Ozymandias",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "ramesses",
+        "ozymandias",
+        "egypt pharaoh"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Nitocris",
+        "full_name": "Nitocris",
+        "class": "caster",
+        "rarity": 4
+      },
+      "keywords": [
+        "nitocris",
+        "egypt queen",
+        "pharaoh"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Tristan",
+        "full_name": "Tristan",
+        "class": "archer",
+        "rarity": 4
+      },
+      "keywords": [
+        "tristan",
+        "isolde",
+        "iseult",
+        "cornwall"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Gawain",
+        "full_name": "Gawain",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "gawain",
+        "green knight",
+        "round table"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Bedivere",
+        "full_name": "Bedivere",
+        "class": "saber",
+        "rarity": 3
+      },
+      "keywords": [
+        "bedivere",
+        "excalibur",
+        "round table"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Leonardo da Vinci",
+        "full_name": "Leonardo da Vinci",
+        "class": "caster",
+        "rarity": 5
+      },
+      "keywords": [
+        "leonardo",
+        "da vinci",
+        "renaissance"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Cleopatra",
+        "full_name": "Cleopatra",
+        "class": "assassin",
+        "rarity": 5
+      },
+      "keywords": [
+        "cleopatra",
+        "egypt",
+        "antony",
+        "caesar"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Jeanne d'Arc Alter Santa Lily",
+        "full_name": "Jeanne d'Arc Alter Santa Lily",
+        "class": "lancer",
+        "rarity": 4
+      },
+      "keywords": [
+        "joan of arc",
+        "jeanne darc",
+        "orleans",
+        "maid"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Ishtar",
+        "full_name": "Ishtar",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "ishtar",
+        "inanna",
+        "babylon",
+        "mesopotamia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Enkidu",
+        "full_name": "Enkidu",
+        "class": "lancer",
+        "rarity": 5
+      },
+      "keywords": [
+        "enkidu",
+        "gilgamesh",
+        "clay"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Quetzalcoatl",
+        "full_name": "Quetzalcoatl",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "quetzalcoatl",
+        "feathered serpent",
+        "aztec"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Gorgon",
+        "full_name": "Gorgon",
+        "class": "avenger",
+        "rarity": 4
+      },
+      "keywords": [
+        "gorgon",
+        "medusa"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Jaguar Warrior",
+        "full_name": "Jaguar Warrior",
+        "class": "lancer",
+        "rarity": 3
+      },
+      "keywords": [
+        "jaguar warrior",
+        "aztec",
+        "mesoamerica"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Tiamat",
+        "full_name": "Tiamat",
+        "class": "beastII",
+        "rarity": 5
+      },
+      "keywords": [
+        "tiamat",
+        "chaos",
+        "babylon"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Merlin",
+        "full_name": "Merlin",
+        "class": "caster",
+        "rarity": 5
+      },
+      "keywords": [
+        "merlin",
+        "wizard",
+        "arthur"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Miyamoto Musashi",
+        "full_name": "Miyamoto Musashi",
+        "class": "saber",
+        "rarity": 5
+      },
+      "keywords": [
+        "musashi",
+        "miyamoto",
+        "five rings",
+        "samurai"
+      ]
+    },
+    {
+      "servant": {
+        "name": "James Moriarty",
+        "full_name": "James Moriarty",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "moriarty",
+        "professor",
+        "sherlock"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Scheherazade",
+        "full_name": "Scheherazade",
+        "class": "caster",
+        "rarity": 5
+      },
+      "keywords": [
+        "scheherazade",
+        "arabian nights",
+        "thousand one nights"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Wu Zetian",
+        "full_name": "Wu Zetian",
+        "class": "assassin",
+        "rarity": 4
+      },
+      "keywords": [
+        "wu zetian",
+        "empress",
+        "tang",
+        "china"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Penthesilea",
+        "full_name": "Penthesilea",
+        "class": "berserker",
+        "rarity": 4
+      },
+      "keywords": [
+        "penthesilea",
+        "amazon",
+        "trojan war"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Christopher Columbus",
+        "full_name": "Christopher Columbus",
+        "class": "rider",
+        "rarity": 3
+      },
+      "keywords": [
+        "columbus",
+        "christopher",
+        "america discovery"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Sherlock Holmes",
+        "full_name": "Sherlock Holmes",
+        "class": "ruler",
+        "rarity": 5
+      },
+      "keywords": [
+        "sherlock holmes",
+        "conan doyle",
+        "detective"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Altria Pendragon Alter",
+        "full_name": "Altria Pendragon Alter (Rider)",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "arthur",
+        "king arthur",
+        "excalibur",
+        "camelot"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Circe",
+        "full_name": "Circe",
+        "class": "caster",
+        "rarity": 4
+      },
+      "keywords": [
+        "circe",
+        "odyssey",
+        "witch"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Queen of Sheba",
+        "full_name": "Queen of Sheba",
+        "class": "caster",
+        "rarity": 4
+      },
+      "keywords": [
+        "queen sheba",
+        "solomon",
+        "ethiopia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Abigail Williams",
+        "full_name": "Abigail Williams",
+        "class": "foreigner",
+        "rarity": 5
+      },
+      "keywords": [
+        "abigail williams",
+        "salem witch",
+        "massachusetts"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Ereshkigal",
+        "full_name": "Ereshkigal",
+        "class": "lancer",
+        "rarity": 5
+      },
+      "keywords": [
+        "ereshkigal",
+        "underworld",
+        "irkalla"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Semiramis",
+        "full_name": "Semiramis",
+        "class": "assassin",
+        "rarity": 5
+      },
+      "keywords": [
+        "semiramis",
+        "assyria",
+        "babylon queen"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Anastasia",
+        "full_name": "Anastasia",
+        "class": "caster",
+        "rarity": 5
+      },
+      "keywords": [
+        "anastasia",
+        "romanov",
+        "russia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Ivan the Terrible",
+        "full_name": "Ivan the Terrible",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "ivan",
+        "terrible",
+        "tsar",
+        "russia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Achilles",
+        "full_name": "Achilles",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "achilles",
+        "iliad",
+        "trojan war",
+        "patroclus"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Chiron",
+        "full_name": "Chiron",
+        "class": "archer",
+        "rarity": 4
+      },
+      "keywords": [
+        "chiron",
+        "centaur",
+        "achilles teacher"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Sieg",
+        "full_name": "Sieg",
+        "class": "caster",
+        "rarity": 4
+      },
+      "keywords": [
+        "siegfried",
+        "sigurd",
+        "nibelungen",
+        "fafnir"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Napoleon",
+        "full_name": "Napoleon",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "napoleon",
+        "bonaparte",
+        "waterloo"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Sigurd",
+        "full_name": "Sigurd",
+        "class": "saber",
+        "rarity": 5
+      },
+      "keywords": [
+        "sigurd",
+        "volsung",
+        "fafnir",
+        "brynhild"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Valkyrie",
+        "full_name": "Valkyrie",
+        "class": "lancer",
+        "rarity": 4
+      },
+      "keywords": [
+        "valkyrie",
+        "odin",
+        "valhalla"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Jeanne d'Arc Alter",
+        "full_name": "Jeanne d'Arc Alter (Berserker)",
+        "class": "berserker",
+        "rarity": 4
+      },
+      "keywords": [
+        "joan of arc",
+        "jeanne darc",
+        "orleans",
+        "maid"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Medb",
+        "full_name": "Medb (Saber)",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "medb",
+        "maeve",
+        "connacht",
+        "ulster"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Qin Shi Huang",
+        "full_name": "Qin Shi Huang",
+        "class": "ruler",
+        "rarity": 5
+      },
+      "keywords": [
+        "qin shi huang",
+        "first emperor",
+        "china"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Bradamante",
+        "full_name": "Bradamante",
+        "class": "lancer",
+        "rarity": 5
+      },
+      "keywords": [
+        "bradamante",
+        "orlando furioso",
+        "ruggiero"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Lakshmi Bai",
+        "full_name": "Lakshmi Bai",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "lakshmi bai",
+        "rani",
+        "jhansi"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Asclepius",
+        "full_name": "Asclepius",
+        "class": "caster",
+        "rarity": 3
+      },
+      "keywords": [
+        "asclepius",
+        "aesculapius",
+        "medicine god"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Jason",
+        "full_name": "Jason",
+        "class": "saber",
+        "rarity": 1
+      },
+      "keywords": [
+        "jason",
+        "argonaut",
+        "golden fleece",
+        "medea"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Paris",
+        "full_name": "Paris",
+        "class": "archer",
+        "rarity": 2
+      },
+      "keywords": [
+        "paris",
+        "iliad",
+        "helen of troy"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Gareth",
+        "full_name": "Gareth",
+        "class": "lancer",
+        "rarity": 2
+      },
+      "keywords": [
+        "gareth",
+        "round table",
+        "lynette"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Salome",
+        "full_name": "Salome",
+        "class": "berserker",
+        "rarity": 2
+      },
+      "keywords": [
+        "salome",
+        "john baptist",
+        "herod"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Space Ishtar",
+        "full_name": "Space Ishtar",
+        "class": "avenger",
+        "rarity": 5
+      },
+      "keywords": [
+        "ishtar",
+        "inanna",
+        "babylon",
+        "mesopotamia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Calamity Jane",
+        "full_name": "Calamity Jane",
+        "class": "archer",
+        "rarity": 4
+      },
+      "keywords": [
+        "calamity jane",
+        "wild west",
+        "deadwood"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Super Orion",
+        "full_name": "Super Orion",
+        "class": "archer",
+        "rarity": 5
+      },
+      "keywords": [
+        "orion",
+        "artemis",
+        "hunter"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Europa",
+        "full_name": "Europa",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "europa",
+        "zeus bull",
+        "crete"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Odysseus",
+        "full_name": "Odysseus",
+        "class": "rider",
+        "rarity": 5
+      },
+      "keywords": [
+        "odysseus",
+        "ulysses",
+        "odyssey",
+        "homer"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Dioscuri",
+        "full_name": "Dioscuri",
+        "class": "saber",
+        "rarity": 5
+      },
+      "keywords": [
+        "castor",
+        "pollux",
+        "dioscuri",
+        "gemini"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Caenis",
+        "full_name": "Caenis",
+        "class": "lancer",
+        "rarity": 4
+      },
+      "keywords": [
+        "caenis",
+        "caeneus",
+        "poseidon"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Romulus=Quirinus",
+        "full_name": "Romulus=Quirinus",
+        "class": "lancer",
+        "rarity": 5
+      },
+      "keywords": [
+        "romulus",
+        "remus",
+        "rome foundation"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Senji Muramasa",
+        "full_name": "Senji Muramasa",
+        "class": "saber",
+        "rarity": 5
+      },
+      "keywords": [
+        "rama",
+        "ramayana",
+        "sita",
+        "ravana"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Morgan",
+        "full_name": "Morgan",
+        "class": "berserker",
+        "rarity": 5
+      },
+      "keywords": [
+        "morgan le fay",
+        "morgana",
+        "avalon"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Tam Lin Gawain",
+        "full_name": "Tam Lin Gawain",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "gawain",
+        "green knight",
+        "round table"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Tam Lin Tristan",
+        "full_name": "Tam Lin Tristan",
+        "class": "archer",
+        "rarity": 4
+      },
+      "keywords": [
+        "tristan",
+        "isolde",
+        "iseult",
+        "cornwall"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Tam Lin Lancelot",
+        "full_name": "Tam Lin Lancelot",
+        "class": "lancer",
+        "rarity": 5
+      },
+      "keywords": [
+        "lancelot",
+        "round table",
+        "guinevere"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Percival",
+        "full_name": "Percival",
+        "class": "lancer",
+        "rarity": 4
+      },
+      "keywords": [
+        "percival",
+        "grail",
+        "round table"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Anastasia & Viy",
+        "full_name": "Anastasia & Viy",
+        "class": "archer",
+        "rarity": 4
+      },
+      "keywords": [
+        "anastasia",
+        "romanov",
+        "russia"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Charlemagne",
+        "full_name": "Charlemagne",
+        "class": "saber",
+        "rarity": 5
+      },
+      "keywords": [
+        "charlemagne",
+        "carolingian",
+        "roland"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Roland",
+        "full_name": "Roland",
+        "class": "saber",
+        "rarity": 4
+      },
+      "keywords": [
+        "roland",
+        "chanson",
+        "charlemagne",
+        "roncevaux"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Don Quixote",
+        "full_name": "Don Quixote",
+        "class": "lancer",
+        "rarity": 4
+      },
+      "keywords": [
+        "don quixote",
+        "cervantes",
+        "sancho"
+      ]
+    },
+    {
+      "servant": {
+        "name": "Larva/Tiamat",
+        "full_name": "Larva/Tiamat",
+        "class": "alterEgo",
+        "rarity": 5
+      },
+      "keywords": [
+        "tiamat",
+        "chaos",
+        "babylon"
+      ]
+    }
+  ],
+  "servants_without_keywords": [
+    {
+      "name": "Mash Kyrielight",
+      "full_name": "Mash Kyrielight",
+      "class": "shielder",
+      "rarity": 3
+    },
+    {
+      "name": "Altera",
+      "full_name": "Altera",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Gilles de Rais",
+      "full_name": "Gilles de Rais",
+      "class": "saber",
+      "rarity": 3
+    },
+    {
+      "name": "Chevalier d'Eon",
+      "full_name": "Chevalier d'Eon",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "Emiya",
+      "full_name": "Emiya",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Robin Hood",
+      "full_name": "Robin Hood",
+      "class": "archer",
+      "rarity": 3
+    },
+    {
+      "name": "Arash",
+      "full_name": "Arash",
+      "class": "archer",
+      "rarity": 1
+    },
+    {
+      "name": "Cú Chulainn",
+      "full_name": "Cú Chulainn",
+      "class": "lancer",
+      "rarity": 3
+    },
+    {
+      "name": "Elisabeth Báthory",
+      "full_name": "Elisabeth Báthory",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Musashibou Benkei",
+      "full_name": "Musashibou Benkei",
+      "class": "lancer",
+      "rarity": 2
+    },
+    {
+      "name": "Georgios",
+      "full_name": "Georgios",
+      "class": "rider",
+      "rarity": 2
+    },
+    {
+      "name": "Ushiwakamaru",
+      "full_name": "Ushiwakamaru",
+      "class": "rider",
+      "rarity": 3
+    },
+    {
+      "name": "Alexander",
+      "full_name": "Alexander",
+      "class": "rider",
+      "rarity": 3
+    },
+    {
+      "name": "Hans Christian Andersen",
+      "full_name": "Hans Christian Andersen",
+      "class": "caster",
+      "rarity": 2
+    },
+    {
+      "name": "Mephistopheles",
+      "full_name": "Mephistopheles",
+      "class": "caster",
+      "rarity": 3
+    },
+    {
+      "name": "Wolfgang Amadeus Mozart",
+      "full_name": "Wolfgang Amadeus Mozart",
+      "class": "caster",
+      "rarity": 1
+    },
+    {
+      "name": "Sasaki Kojirou",
+      "full_name": "Sasaki Kojirou",
+      "class": "assassin",
+      "rarity": 1
+    },
+    {
+      "name": "Hassan of the Cursed Arm",
+      "full_name": "Hassan of the Cursed Arm",
+      "class": "assassin",
+      "rarity": 2
+    },
+    {
+      "name": "Jing Ke",
+      "full_name": "Jing Ke",
+      "class": "assassin",
+      "rarity": 3
+    },
+    {
+      "name": "Charles-Henri Sanson",
+      "full_name": "Charles-Henri Sanson",
+      "class": "assassin",
+      "rarity": 2
+    },
+    {
+      "name": "Mata Hari",
+      "full_name": "Mata Hari",
+      "class": "assassin",
+      "rarity": 1
+    },
+    {
+      "name": "Carmilla",
+      "full_name": "Carmilla",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Sakata Kintoki",
+      "full_name": "Sakata Kintoki",
+      "class": "berserker",
+      "rarity": 5
+    },
+    {
+      "name": "Kiyohime",
+      "full_name": "Kiyohime",
+      "class": "berserker",
+      "rarity": 3
+    },
+    {
+      "name": "Tamamo Cat",
+      "full_name": "Tamamo Cat",
+      "class": "berserker",
+      "rarity": 4
+    },
+    {
+      "name": "Tamamo-no-Mae",
+      "full_name": "Tamamo-no-Mae",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Hektor",
+      "full_name": "Hektor",
+      "class": "lancer",
+      "rarity": 3
+    },
+    {
+      "name": "Okita Souji",
+      "full_name": "Okita Souji",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Scáthach",
+      "full_name": "Scáthach",
+      "class": "lancer",
+      "rarity": 5
+    },
+    {
+      "name": "Fergus mac Róich",
+      "full_name": "Fergus mac Róich",
+      "class": "saber",
+      "rarity": 3
+    },
+    {
+      "name": "Nursery Rhyme",
+      "full_name": "Nursery Rhyme",
+      "class": "caster",
+      "rarity": 4
+    },
+    {
+      "name": "Jack the Ripper",
+      "full_name": "Jack the Ripper",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Paracelsus von Hohenheim",
+      "full_name": "Paracelsus von Hohenheim",
+      "class": "caster",
+      "rarity": 3
+    },
+    {
+      "name": "Charles Babbage",
+      "full_name": "Charles Babbage",
+      "class": "caster",
+      "rarity": 3
+    },
+    {
+      "name": "Mysterious Heroine X",
+      "full_name": "Mysterious Heroine X",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Ryougi Shiki",
+      "full_name": "Ryougi Shiki (Saber)",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Amakusa Shirou",
+      "full_name": "Amakusa Shirou",
+      "class": "ruler",
+      "rarity": 5
+    },
+    {
+      "name": "Edmond Dantès",
+      "full_name": "Edmond Dantès",
+      "class": "avenger",
+      "rarity": 5
+    },
+    {
+      "name": "Helena Blavatsky",
+      "full_name": "Helena Blavatsky",
+      "class": "caster",
+      "rarity": 4
+    },
+    {
+      "name": "Li Shuwen",
+      "full_name": "Li Shuwen",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Aŋra Mainiiu",
+      "full_name": "Aŋra Mainiiu",
+      "class": "avenger",
+      "rarity": 0
+    },
+    {
+      "name": "Hassan of the Hundred Personas",
+      "full_name": "Hassan of the Hundred Personas",
+      "class": "assassin",
+      "rarity": 3
+    },
+    {
+      "name": "Irisviel",
+      "full_name": "Irisviel (Holy Grail)",
+      "class": "caster",
+      "rarity": 4
+    },
+    {
+      "name": "Shuten-Douji",
+      "full_name": "Shuten-Douji",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Minamoto-no-Raikou",
+      "full_name": "Minamoto-no-Raikou",
+      "class": "berserker",
+      "rarity": 5
+    },
+    {
+      "name": "Ibaraki-Douji",
+      "full_name": "Ibaraki-Douji",
+      "class": "berserker",
+      "rarity": 4
+    },
+    {
+      "name": "Fuuma \"Evil-wind\" Kotarou",
+      "full_name": "Fuuma \"Evil-wind\" Kotarou",
+      "class": "assassin",
+      "rarity": 3
+    },
+    {
+      "name": "Hassan of the Serenity",
+      "full_name": "Hassan of the Serenity",
+      "class": "assassin",
+      "rarity": 3
+    },
+    {
+      "name": "Tawara Touta",
+      "full_name": "Tawara Touta",
+      "class": "archer",
+      "rarity": 3
+    },
+    {
+      "name": "Illyasviel von Einzbern",
+      "full_name": "Illyasviel von Einzbern",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Chloe von Einzbern",
+      "full_name": "Chloe von Einzbern",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Goetia",
+      "full_name": "Goetia",
+      "class": "beastI",
+      "rarity": 5
+    },
+    {
+      "name": "\"First Hassan\"",
+      "full_name": "\"First Hassan\"",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Hessian Lobo",
+      "full_name": "Hessian Lobo",
+      "class": "avenger",
+      "rarity": 4
+    },
+    {
+      "name": "Yan Qing",
+      "full_name": "Yan Qing",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Arthur Pendragon",
+      "full_name": "Arthur Pendragon (Prototype)",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Hijikata Toshizo",
+      "full_name": "Hijikata Toshizo",
+      "class": "berserker",
+      "rarity": 5
+    },
+    {
+      "name": "Chacha",
+      "full_name": "Chacha",
+      "class": "berserker",
+      "rarity": 4
+    },
+    {
+      "name": "Meltryllis",
+      "full_name": "Meltryllis",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Passionlip",
+      "full_name": "Passionlip",
+      "class": "alterEgo",
+      "rarity": 4
+    },
+    {
+      "name": "Suzuka Gozen",
+      "full_name": "Suzuka Gozen",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "BB",
+      "full_name": "BB",
+      "class": "moonCancer",
+      "rarity": 4
+    },
+    {
+      "name": "Sessyoin Kiara",
+      "full_name": "Sessyoin Kiara",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Beast III/R",
+      "full_name": "Beast III/R",
+      "class": "beastIIIR",
+      "rarity": 5
+    },
+    {
+      "name": "Paul Bunyan",
+      "full_name": "Paul Bunyan",
+      "class": "berserker",
+      "rarity": 1
+    },
+    {
+      "name": "Pārvatī",
+      "full_name": "Pārvatī",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Tomoe Gozen",
+      "full_name": "Tomoe Gozen",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Mochizuki Chiyome",
+      "full_name": "Mochizuki Chiyome",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Houzouin Inshun",
+      "full_name": "Houzouin Inshun",
+      "class": "lancer",
+      "rarity": 3
+    },
+    {
+      "name": "Yagyu Tajima-no-kami Munenori",
+      "full_name": "Yagyu Tajima-no-kami Munenori",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "Katou \"Black Kite\" Danzo",
+      "full_name": "Katou \"Black Kite\" Danzo",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Osakabehime",
+      "full_name": "Osakabehime",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Mecha Eli-chan",
+      "full_name": "Mecha Eli-chan",
+      "class": "alterEgo",
+      "rarity": 4
+    },
+    {
+      "name": "Mecha Eli-chan Mk.II",
+      "full_name": "Mecha Eli-chan Mk.II",
+      "class": "alterEgo",
+      "rarity": 4
+    },
+    {
+      "name": "Nezha",
+      "full_name": "Nezha",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Attila the San",
+      "full_name": "Attila the San(ta)",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Katsushika Hokusai",
+      "full_name": "Katsushika Hokusai",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Asagami Fujino",
+      "full_name": "Asagami Fujino",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Avicebron",
+      "full_name": "Avicebron",
+      "class": "caster",
+      "rarity": 3
+    },
+    {
+      "name": "Antonio Salieri",
+      "full_name": "Antonio Salieri",
+      "class": "avenger",
+      "rarity": 3
+    },
+    {
+      "name": "Okada Izo",
+      "full_name": "Okada Izo",
+      "class": "assassin",
+      "rarity": 3
+    },
+    {
+      "name": "Sakamoto Ryouma",
+      "full_name": "Sakamoto Ryouma",
+      "class": "rider",
+      "rarity": 4
+    },
+    {
+      "name": "Scáthach-Skadi",
+      "full_name": "Scáthach-Skadi",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Mysterious Heroine XX",
+      "full_name": "Mysterious Heroine XX",
+      "class": "foreigner",
+      "rarity": 4
+    },
+    {
+      "name": "Sitonai",
+      "full_name": "Sitonai",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Xiang Yu",
+      "full_name": "Xiang Yu",
+      "class": "berserker",
+      "rarity": 5
+    },
+    {
+      "name": "Prince of Lan Ling",
+      "full_name": "Prince of Lan Ling",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "Qin Liangyu",
+      "full_name": "Qin Liangyu",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Yu Mei-ren",
+      "full_name": "Yu Mei-ren",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Red Hare",
+      "full_name": "Red Hare",
+      "class": "rider",
+      "rarity": 3
+    },
+    {
+      "name": "Beni-Enma",
+      "full_name": "Beni-Enma",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Miyu Edelfelt",
+      "full_name": "Miyu Edelfelt",
+      "class": "caster",
+      "rarity": 4
+    },
+    {
+      "name": "Murasaki Shikibu",
+      "full_name": "Murasaki Shikibu",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Kingprotea",
+      "full_name": "Kingprotea",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Kama",
+      "full_name": "Kama",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Beast III/L",
+      "full_name": "Beast III/L",
+      "class": "beastIIIL",
+      "rarity": 5
+    },
+    {
+      "name": "Sima Yi",
+      "full_name": "Sima Yi (Reines)",
+      "class": "rider",
+      "rarity": 5
+    },
+    {
+      "name": "Astraea",
+      "full_name": "Astraea",
+      "class": "ruler",
+      "rarity": 4
+    },
+    {
+      "name": "Gray",
+      "full_name": "Gray",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Great Stone Statue God",
+      "full_name": "Great Stone Statue God",
+      "class": "moonCancer",
+      "rarity": 5
+    },
+    {
+      "name": "William Tell",
+      "full_name": "William Tell",
+      "class": "archer",
+      "rarity": 3
+    },
+    {
+      "name": "Aśvatthāman",
+      "full_name": "Aśvatthāman",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Mori Nagayoshi",
+      "full_name": "Mori Nagayoshi",
+      "class": "berserker",
+      "rarity": 3
+    },
+    {
+      "name": "Nagao Kagetora",
+      "full_name": "Nagao Kagetora",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Bartholomew Roberts",
+      "full_name": "Bartholomew Roberts",
+      "class": "rider",
+      "rarity": 1
+    },
+    {
+      "name": "Chen Gong",
+      "full_name": "Chen Gong",
+      "class": "caster",
+      "rarity": 2
+    },
+    {
+      "name": "Charlotte Corday",
+      "full_name": "Charlotte Corday",
+      "class": "assassin",
+      "rarity": 1
+    },
+    {
+      "name": "Mysterious Alter Ego Λ",
+      "full_name": "Mysterious Alter Ego Λ",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Okita J. Souji",
+      "full_name": "Okita J. Souji",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Mandricardo",
+      "full_name": "Mandricardo",
+      "class": "rider",
+      "rarity": 3
+    },
+    {
+      "name": "Yang Guifei",
+      "full_name": "Yang Guifei",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Sei Shounagon",
+      "full_name": "Sei Shounagon",
+      "class": "archer",
+      "rarity": 5
+    },
+    {
+      "name": "Voyager",
+      "full_name": "Voyager",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Kijyo Koyo",
+      "full_name": "Kijyo Koyo",
+      "class": "berserker",
+      "rarity": 4
+    },
+    {
+      "name": "Utsumi Erice",
+      "full_name": "Utsumi Erice",
+      "class": "lancer",
+      "rarity": 4
+    },
+    {
+      "name": "Altria Caster",
+      "full_name": "Altria Caster",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Himiko",
+      "full_name": "Himiko",
+      "class": "ruler",
+      "rarity": 5
+    },
+    {
+      "name": "Saito Hajime",
+      "full_name": "Saito Hajime",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "Oda Nobukatsu",
+      "full_name": "Oda Nobukatsu",
+      "class": "archer",
+      "rarity": 1
+    },
+    {
+      "name": "Van Gogh",
+      "full_name": "Van Gogh",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Nemo",
+      "full_name": "Nemo",
+      "class": "rider",
+      "rarity": 5
+    },
+    {
+      "name": "Ashiya Douman",
+      "full_name": "Ashiya Douman",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Watanabe-no-Tsuna",
+      "full_name": "Watanabe-no-Tsuna",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "Ibuki-Douji",
+      "full_name": "Ibuki-Douji",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Vritra",
+      "full_name": "Vritra",
+      "class": "lancer",
+      "rarity": 5
+    },
+    {
+      "name": "Taira-no-Kagekiyo",
+      "full_name": "Taira-no-Kagekiyo",
+      "class": "avenger",
+      "rarity": 5
+    },
+    {
+      "name": "Kiichi Hogen",
+      "full_name": "Kiichi Hogen",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Amor",
+      "full_name": "Amor (Caren)",
+      "class": "ruler",
+      "rarity": 5
+    },
+    {
+      "name": "Galatea",
+      "full_name": "Galatea",
+      "class": "berserker",
+      "rarity": 5
+    },
+    {
+      "name": "Miss Crane",
+      "full_name": "Miss Crane",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Mysterious Idol X",
+      "full_name": "Mysterious Idol X (Alter)",
+      "class": "foreigner",
+      "rarity": 4
+    },
+    {
+      "name": "Koyanskaya of Light",
+      "full_name": "Koyanskaya of Light",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Habetrot",
+      "full_name": "Habetrot",
+      "class": "rider",
+      "rarity": 4
+    },
+    {
+      "name": "Oberon",
+      "full_name": "Oberon",
+      "class": "pretender",
+      "rarity": 5
+    },
+    {
+      "name": "Okita Souji Alter",
+      "full_name": "Okita Souji Alter (Saber)",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Jacques de Molay",
+      "full_name": "Jacques de Molay",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Zenobia",
+      "full_name": "Zenobia",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Izumo-no-Okuni",
+      "full_name": "Izumo-no-Okuni",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Mysterious Ranmaru X",
+      "full_name": "Mysterious Ranmaru X",
+      "class": "avenger",
+      "rarity": 4
+    },
+    {
+      "name": "Taigong Wang",
+      "full_name": "Taigong Wang",
+      "class": "rider",
+      "rarity": 5
+    },
+    {
+      "name": "Dobrynya Nikitich",
+      "full_name": "Dobrynya Nikitich",
+      "class": "rider",
+      "rarity": 4
+    },
+    {
+      "name": "Beast IV",
+      "full_name": "Beast IV",
+      "class": "beastIV",
+      "rarity": 5
+    },
+    {
+      "name": "Koyanskaya of Dark",
+      "full_name": "Koyanskaya of Dark",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Hephaistíon",
+      "full_name": "Hephaistíon",
+      "class": "pretender",
+      "rarity": 4
+    },
+    {
+      "name": "Manannan mac Lir",
+      "full_name": "Manannan mac Lir (Bazett)",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Hai Bà Trưng",
+      "full_name": "Hai Bà Trưng",
+      "class": "saber",
+      "rarity": 5
+    },
+    {
+      "name": "Taisui Xingjun",
+      "full_name": "Taisui Xingjun",
+      "class": "alterEgo",
+      "rarity": 4
+    },
+    {
+      "name": "Super Bunyan",
+      "full_name": "Super Bunyan",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Daikokuten",
+      "full_name": "Daikokuten",
+      "class": "caster",
+      "rarity": 4
+    },
+    {
+      "name": "Mary Anning",
+      "full_name": "Mary Anning",
+      "class": "lancer",
+      "rarity": 1
+    },
+    {
+      "name": "Kōnstantînos XI",
+      "full_name": "Kōnstantînos XI",
+      "class": "rider",
+      "rarity": 5
+    },
+    {
+      "name": "Kriemhild",
+      "full_name": "Kriemhild",
+      "class": "berserker",
+      "rarity": 4
+    },
+    {
+      "name": "Zhang Jue",
+      "full_name": "Zhang Jue",
+      "class": "caster",
+      "rarity": 3
+    },
+    {
+      "name": "Kyokutei Bakin",
+      "full_name": "Kyokutei Bakin",
+      "class": "rider",
+      "rarity": 5
+    },
+    {
+      "name": "Minamoto-no-Tametomo",
+      "full_name": "Minamoto-no-Tametomo",
+      "class": "archer",
+      "rarity": 5
+    },
+    {
+      "name": "Archetype: EARTH",
+      "full_name": "Archetype: EARTH",
+      "class": "moonCancer",
+      "rarity": 5
+    },
+    {
+      "name": "Xu Fu",
+      "full_name": "Xu Fu",
+      "class": "alterEgo",
+      "rarity": 3
+    },
+    {
+      "name": "Lady Avalon",
+      "full_name": "Lady Avalon",
+      "class": "pretender",
+      "rarity": 5
+    },
+    {
+      "name": "Thrúd",
+      "full_name": "Thrúd",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Hildr",
+      "full_name": "Hildr",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Ortlinde",
+      "full_name": "Ortlinde",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Sen-no-Rikyu",
+      "full_name": "Sen-no-Rikyu",
+      "class": "berserker",
+      "rarity": 5
+    },
+    {
+      "name": "Yamanami Keisuke",
+      "full_name": "Yamanami Keisuke",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "Iyo",
+      "full_name": "Iyo",
+      "class": "ruler",
+      "rarity": 4
+    },
+    {
+      "name": "Huyan Zhuo",
+      "full_name": "Huyan Zhuo",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Huang Feihu",
+      "full_name": "Huang Feihu",
+      "class": "rider",
+      "rarity": 4
+    },
+    {
+      "name": "Elisa the Nine-Tattooed Dragon",
+      "full_name": "Elisa the Nine-Tattooed Dragon",
+      "class": "pretender",
+      "rarity": 4
+    },
+    {
+      "name": "Britomart",
+      "full_name": "Britomart",
+      "class": "lancer",
+      "rarity": 5
+    },
+    {
+      "name": "Grigori Rasputin",
+      "full_name": "Grigori Rasputin",
+      "class": "alterEgo",
+      "rarity": 5
+    },
+    {
+      "name": "Tezcatlipoca",
+      "full_name": "Tezcatlipoca",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Tlāloc",
+      "full_name": "Tlāloc",
+      "class": "pretender",
+      "rarity": 4
+    },
+    {
+      "name": "Kukulcan",
+      "full_name": "Kukulcan",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Pope Johanna",
+      "full_name": "Pope Johanna",
+      "class": "ruler",
+      "rarity": 5
+    },
+    {
+      "name": "Takasugi Shinsaku",
+      "full_name": "Takasugi Shinsaku",
+      "class": "archer",
+      "rarity": 5
+    },
+    {
+      "name": "Sodom's Beast/Draco",
+      "full_name": "Sodom's Beast/Draco",
+      "class": "beast",
+      "rarity": 5
+    },
+    {
+      "name": "Locusta",
+      "full_name": "Locusta",
+      "class": "assassin",
+      "rarity": 4
+    },
+    {
+      "name": "Sétanta",
+      "full_name": "Sétanta",
+      "class": "saber",
+      "rarity": 4
+    },
+    {
+      "name": "Kashin Koji",
+      "full_name": "Kashin Koji",
+      "class": "assassin",
+      "rarity": 5
+    },
+    {
+      "name": "Bhīma",
+      "full_name": "Bhīma",
+      "class": "lancer",
+      "rarity": 5
+    },
+    {
+      "name": "Duryodhana",
+      "full_name": "Duryodhana",
+      "class": "berserker",
+      "rarity": 4
+    },
+    {
+      "name": "Durgā",
+      "full_name": "Durgā",
+      "class": "archer",
+      "rarity": 5
+    },
+    {
+      "name": "Aesc the Rain Witch",
+      "full_name": "Aesc the Rain Witch",
+      "class": "caster",
+      "rarity": 5
+    },
+    {
+      "name": "Cnoc na Riabh Yaraändoo",
+      "full_name": "Cnoc na Riabh Yaraändoo",
+      "class": "foreigner",
+      "rarity": 4
+    },
+    {
+      "name": "Mélusine",
+      "full_name": "Mélusine",
+      "class": "ruler",
+      "rarity": 5
+    },
+    {
+      "name": "UDK-Barghest",
+      "full_name": "UDK-Barghest",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Cait Cú MikoCer",
+      "full_name": "Cait Cú MikoCer",
+      "class": "pretender",
+      "rarity": 4
+    },
+    {
+      "name": "Wandjina",
+      "full_name": "Wandjina",
+      "class": "foreigner",
+      "rarity": 5
+    },
+    {
+      "name": "Ptolemaîos",
+      "full_name": "Ptolemaîos",
+      "class": "archer",
+      "rarity": 5
+    },
+    {
+      "name": "Sugitani Zenjubou",
+      "full_name": "Sugitani Zenjubou",
+      "class": "archer",
+      "rarity": 3
+    },
+    {
+      "name": "Thēseus",
+      "full_name": "Thēseus",
+      "class": "saber",
+      "rarity": 3
+    },
+    {
+      "name": "Takeda Harunobu",
+      "full_name": "Takeda Harunobu",
+      "class": "rider",
+      "rarity": 5
+    },
+    {
+      "name": "Nagakura Shinpachi",
+      "full_name": "Nagakura Shinpachi",
+      "class": "berserker",
+      "rarity": 4
+    },
+    {
+      "name": "Saika Magoichi",
+      "full_name": "Saika Magoichi",
+      "class": "archer",
+      "rarity": 4
+    },
+    {
+      "name": "Uesugi Kenshin",
+      "full_name": "Uesugi Kenshin",
+      "class": "ruler",
+      "rarity": 5
+    },
+    {
+      "name": "Yamato Takeru",
+      "full_name": "Yamato Takeru",
+      "class": "saber",
+      "rarity": 5
+    }
+  ],
+  "keyword_mapping": {
+    "Achilles": [
+      "achilles",
+      "iliad",
+      "trojan war",
+      "patroclus"
+    ],
+    "Hector": [
+      "hector",
+      "iliad",
+      "trojan war",
+      "troy"
+    ],
+    "Paris": [
+      "paris",
+      "iliad",
+      "helen of troy"
+    ],
+    "Penthesilea": [
+      "penthesilea",
+      "amazon",
+      "trojan war"
+    ],
+    "Odysseus": [
+      "odysseus",
+      "ulysses",
+      "odyssey",
+      "homer"
+    ],
+    "Circe": [
+      "circe",
+      "odyssey",
+      "witch"
+    ],
+    "Jason": [
+      "jason",
+      "argonaut",
+      "golden fleece",
+      "medea"
+    ],
+    "Medea": [
+      "medea",
+      "argonaut",
+      "jason",
+      "colchis"
+    ],
+    "Atalante": [
+      "atalanta",
+      "atalante",
+      "argonaut",
+      "arcadia"
+    ],
+    "Heracles": [
+      "hercules",
+      "heracles",
+      "twelve labors"
+    ],
+    "Perseus": [
+      "perseus",
+      "medusa",
+      "andromeda"
+    ],
+    "Theseus": [
+      "theseus",
+      "minotaur",
+      "ariadne",
+      "athens"
+    ],
+    "Orion": [
+      "orion",
+      "artemis",
+      "hunter"
+    ],
+    "Chiron": [
+      "chiron",
+      "centaur",
+      "achilles teacher"
+    ],
+    "Asclepius": [
+      "asclepius",
+      "aesculapius",
+      "medicine god"
+    ],
+    "Europa": [
+      "europa",
+      "zeus bull",
+      "crete"
+    ],
+    "Caenis": [
+      "caenis",
+      "caeneus",
+      "poseidon"
+    ],
+    "Dioscuri": [
+      "castor",
+      "pollux",
+      "dioscuri",
+      "gemini"
+    ],
+    "Medusa": [
+      "medusa",
+      "gorgon",
+      "perseus"
+    ],
+    "Euryale": [
+      "euryale",
+      "gorgon"
+    ],
+    "Stheno": [
+      "stheno",
+      "gorgon"
+    ],
+    "Asterios": [
+      "asterios",
+      "minotaur",
+      "crete"
+    ],
+    "Gorgon": [
+      "gorgon",
+      "medusa"
+    ],
+    "Gilgamesh": [
+      "gilgamesh",
+      "uruk",
+      "enkidu",
+      "mesopotamia"
+    ],
+    "Enkidu": [
+      "enkidu",
+      "gilgamesh",
+      "clay"
+    ],
+    "Ishtar": [
+      "ishtar",
+      "inanna",
+      "babylon",
+      "mesopotamia"
+    ],
+    "Ereshkigal": [
+      "ereshkigal",
+      "underworld",
+      "irkalla"
+    ],
+    "Tiamat": [
+      "tiamat",
+      "chaos",
+      "babylon"
+    ],
+    "Arjuna": [
+      "arjuna",
+      "mahabharata",
+      "pandava"
+    ],
+    "Karna": [
+      "karna",
+      "mahabharata",
+      "surya"
+    ],
+    "Rama": [
+      "rama",
+      "ramayana",
+      "sita",
+      "ravana"
+    ],
+    "Ashwatthama": [
+      "ashwatthama",
+      "drona",
+      "mahabharata"
+    ],
+    "Parvati": [
+      "parvati",
+      "shiva",
+      "hindu goddess"
+    ],
+    "Lakshmi Bai": [
+      "lakshmi bai",
+      "rani",
+      "jhansi"
+    ],
+    "Cu Chulainn": [
+      "cu chulainn",
+      "cuchulain",
+      "ulster",
+      "setanta",
+      "celtic"
+    ],
+    "Scathach": [
+      "scathach",
+      "shadow land",
+      "celtic warrior"
+    ],
+    "Fergus mac Roich": [
+      "fergus",
+      "ulster",
+      "celtic"
+    ],
+    "Diarmuid Ua Duibhne": [
+      "diarmuid",
+      "fianna",
+      "love spot"
+    ],
+    "Fionn mac Cumhaill": [
+      "fionn",
+      "finn mccool",
+      "fianna",
+      "fenian"
+    ],
+    "Medb": [
+      "medb",
+      "maeve",
+      "connacht",
+      "ulster"
+    ],
+    "Siegfried": [
+      "siegfried",
+      "sigurd",
+      "nibelungen",
+      "fafnir"
+    ],
+    "Sigurd": [
+      "sigurd",
+      "volsung",
+      "fafnir",
+      "brynhild"
+    ],
+    "Brynhild": [
+      "brynhild",
+      "brunhild",
+      "valkyrie",
+      "sigurd"
+    ],
+    "Valkyrie": [
+      "valkyrie",
+      "odin",
+      "valhalla"
+    ],
+    "Beowulf": [
+      "beowulf",
+      "grendel",
+      "hrothgar"
+    ],
+    "Eric Bloodaxe": [
+      "eric bloodaxe",
+      "viking",
+      "norway"
+    ],
+    "Altria Pendragon": [
+      "arthur",
+      "king arthur",
+      "excalibur",
+      "camelot"
+    ],
+    "Lancelot": [
+      "lancelot",
+      "round table",
+      "guinevere"
+    ],
+    "Tristan": [
+      "tristan",
+      "isolde",
+      "iseult",
+      "cornwall"
+    ],
+    "Gawain": [
+      "gawain",
+      "green knight",
+      "round table"
+    ],
+    "Mordred": [
+      "mordred",
+      "camlann",
+      "round table"
+    ],
+    "Bedivere": [
+      "bedivere",
+      "excalibur",
+      "round table"
+    ],
+    "Merlin": [
+      "merlin",
+      "wizard",
+      "arthur"
+    ],
+    "Galahad": [
+      "galahad",
+      "holy grail",
+      "round table"
+    ],
+    "Percival": [
+      "percival",
+      "grail",
+      "round table"
+    ],
+    "Gareth": [
+      "gareth",
+      "round table",
+      "lynette"
+    ],
+    "Morgan": [
+      "morgan le fay",
+      "morgana",
+      "avalon"
+    ],
+    "Charlemagne": [
+      "charlemagne",
+      "carolingian",
+      "roland"
+    ],
+    "Roland": [
+      "roland",
+      "chanson",
+      "charlemagne",
+      "roncevaux"
+    ],
+    "Astolfo": [
+      "astolfo",
+      "orlando furioso",
+      "paladin"
+    ],
+    "Bradamante": [
+      "bradamante",
+      "orlando furioso",
+      "ruggiero"
+    ],
+    "Romulus": [
+      "romulus",
+      "remus",
+      "rome foundation"
+    ],
+    "Julius Caesar": [
+      "julius caesar",
+      "caesar",
+      "rubicon",
+      "rome"
+    ],
+    "Nero Claudius": [
+      "nero",
+      "roman emperor",
+      "rome"
+    ],
+    "Caligula": [
+      "caligula",
+      "roman emperor"
+    ],
+    "Spartacus": [
+      "spartacus",
+      "gladiator",
+      "slave revolt"
+    ],
+    "Boudica": [
+      "boudica",
+      "boudicca",
+      "iceni",
+      "britain"
+    ],
+    "Ozymandias": [
+      "ramesses",
+      "ozymandias",
+      "egypt pharaoh"
+    ],
+    "Nitocris": [
+      "nitocris",
+      "egypt queen",
+      "pharaoh"
+    ],
+    "Cleopatra": [
+      "cleopatra",
+      "egypt",
+      "antony",
+      "caesar"
+    ],
+    "Sherlock Holmes": [
+      "sherlock holmes",
+      "conan doyle",
+      "detective"
+    ],
+    "James Moriarty": [
+      "moriarty",
+      "professor",
+      "sherlock"
+    ],
+    "Frankenstein": [
+      "frankenstein",
+      "mary shelley",
+      "monster"
+    ],
+    "Phantom": [
+      "phantom opera",
+      "erik",
+      "gaston leroux"
+    ],
+    "Jekyll": [
+      "jekyll",
+      "hyde",
+      "stevenson"
+    ],
+    "Edmond Dantes": [
+      "monte cristo",
+      "dantes",
+      "dumas"
+    ],
+    "Don Quixote": [
+      "don quixote",
+      "cervantes",
+      "sancho"
+    ],
+    "Hans Andersen": [
+      "hans andersen",
+      "fairy tales",
+      "denmark"
+    ],
+    "Shakespeare": [
+      "shakespeare",
+      "hamlet",
+      "macbeth",
+      "othello"
+    ],
+    "Dante": [
+      "dante alighieri",
+      "divine comedy",
+      "inferno"
+    ],
+    "Napoleon": [
+      "napoleon",
+      "bonaparte",
+      "waterloo"
+    ],
+    "Marie Antoinette": [
+      "marie antoinette",
+      "french revolution",
+      "versailles"
+    ],
+    "Jeanne d'Arc": [
+      "joan of arc",
+      "jeanne darc",
+      "orleans",
+      "maid"
+    ],
+    "Leonardo da Vinci": [
+      "leonardo",
+      "da vinci",
+      "renaissance"
+    ],
+    "Iskandar": [
+      "alexander",
+      "great",
+      "macedon",
+      "persia"
+    ],
+    "Darius III": [
+      "darius",
+      "persia",
+      "achaemenid"
+    ],
+    "Leonidas": [
+      "leonidas",
+      "sparta",
+      "thermopylae",
+      "300"
+    ],
+    "Vlad III": [
+      "vlad",
+      "dracula",
+      "impaler",
+      "wallachia"
+    ],
+    "Ivan the Terrible": [
+      "ivan",
+      "terrible",
+      "tsar",
+      "russia"
+    ],
+    "Qin Shi Huang": [
+      "qin shi huang",
+      "first emperor",
+      "china"
+    ],
+    "Wu Zetian": [
+      "wu zetian",
+      "empress",
+      "tang",
+      "china"
+    ],
+    "Miyamoto Musashi": [
+      "musashi",
+      "miyamoto",
+      "five rings",
+      "samurai"
+    ],
+    "Oda Nobunaga": [
+      "nobunaga",
+      "oda",
+      "sengoku"
+    ],
+    "Francis Drake": [
+      "francis drake",
+      "privateer",
+      "armada"
+    ],
+    "Edward Teach": [
+      "blackbeard",
+      "edward teach",
+      "pirate"
+    ],
+    "Anne Bonny": [
+      "anne bonny",
+      "mary read",
+      "pirate"
+    ],
+    "Columbus": [
+      "columbus",
+      "christopher",
+      "america discovery"
+    ],
+    "Geronimo": [
+      "geronimo",
+      "apache",
+      "native american"
+    ],
+    "Billy the Kid": [
+      "billy kid",
+      "outlaw",
+      "wild west"
+    ],
+    "Calamity Jane": [
+      "calamity jane",
+      "wild west",
+      "deadwood"
+    ],
+    "Florence Nightingale": [
+      "florence nightingale",
+      "nurse",
+      "crimea"
+    ],
+    "Nikola Tesla": [
+      "nikola tesla",
+      "electricity",
+      "inventor"
+    ],
+    "Thomas Edison": [
+      "thomas edison",
+      "inventor",
+      "electric"
+    ],
+    "Xuanzang": [
+      "xuanzang",
+      "journey west",
+      "tripitaka"
+    ],
+    "Lu Bu": [
+      "lu bu",
+      "three kingdoms",
+      "red hare"
+    ],
+    "Zhuge Liang": [
+      "zhuge liang",
+      "kongming",
+      "three kingdoms"
+    ],
+    "Scheherazade": [
+      "scheherazade",
+      "arabian nights",
+      "thousand one nights"
+    ],
+    "Queen of Sheba": [
+      "queen sheba",
+      "solomon",
+      "ethiopia"
+    ],
+    "Semiramis": [
+      "semiramis",
+      "assyria",
+      "babylon queen"
+    ],
+    "David": [
+      "king david",
+      "goliath",
+      "psalms",
+      "israel"
+    ],
+    "Solomon": [
+      "king solomon",
+      "wisdom",
+      "temple",
+      "sheba"
+    ],
+    "Martha": [
+      "martha",
+      "bethany",
+      "lazarus",
+      "bible"
+    ],
+    "Salome": [
+      "salome",
+      "john baptist",
+      "herod"
+    ],
+    "Abigail Williams": [
+      "abigail williams",
+      "salem witch",
+      "massachusetts"
+    ],
+    "Quetzalcoatl": [
+      "quetzalcoatl",
+      "feathered serpent",
+      "aztec"
+    ],
+    "Jaguar Warrior": [
+      "jaguar warrior",
+      "aztec",
+      "mesoamerica"
+    ],
+    "Anastasia": [
+      "anastasia",
+      "romanov",
+      "russia"
+    ]
+  }
+}

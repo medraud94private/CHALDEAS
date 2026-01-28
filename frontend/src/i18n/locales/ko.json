@@ -144,6 +144,62 @@
     },
     "observing": "관측 중인 시대"
   },
+  "legal": {
+    "terms": {
+      "title": "이용약관",
+      "link": "이용약관"
+    },
+    "privacy": {
+      "title": "개인정보처리방침",
+      "link": "개인정보"
+    }
+  },
+  "settings": {
+    "title": "설정",
+    "language": "언어 설정",
+    "languageDesc": "설명 표시 언어를 선택하세요.",
+    "langAuto": "자동",
+    "langAutoDesc": "브라우저 언어 사용",
+    "langEnDesc": "영어로 표시",
+    "langKoDesc": "한국어로 표시",
+    "langJaDesc": "일본어로 표시",
+    "display": "표시 설정",
+    "hideEmpty": "설명 없는 항목 숨기기",
+    "hideEmptyDesc": "설명이 없는 이벤트/인물/장소를 필터링합니다",
+    "globeStyle": "지구본 스타일",
+    "apiKey": "SHEBA API 키",
+    "apiKeyDesc": "향상된 SHEBA 쿼리를 위한 선택적 API 키. 액세스 문의는 지원팀에.",
+    "apiKeyPlaceholder": "API 키 입력...",
+    "apiKeyActive": "API 키 활성화됨",
+    "save": "저장",
+    "clear": "삭제",
+    "license": "데이터 출처 및 라이선스",
+    "licenseNotice": "Wikipedia 출처로 표시된 설명은 Creative Commons Attribution-ShareAlike 4.0 라이선스입니다. 원본 문서를 보려면 출처 링크를 클릭하세요.",
+    "resetAll": "모든 설정 초기화",
+    "confirmReset": "모든 설정을 초기화하시겠습니까?"
+  },
+  "filters": {
+    "advanced": "고급 필터",
+    "connectionLayers": "연결 레이어",
+    "personLayer": "인물",
+    "locationLayer": "장소",
+    "causalLayer": "인과",
+    "yearRange": "연도 범위",
+    "from": "시작",
+    "to": "종료",
+    "ancient": "고대",
+    "classical": "고전",
+    "medieval": "중세",
+    "modern": "근현대",
+    "minStrength": "최소 연결 강도",
+    "connectionStatus": "연결 상태",
+    "anyConnection": "모두",
+    "hasConnections": "연결됨",
+    "noConnections": "고립됨",
+    "descriptionFilter": "설명 필터",
+    "hideEmpty": "설명 없는 항목 숨기기",
+    "reset": "모든 필터 초기화"
+  },
   "showcase": {
     "types": {
       "singularity": "특이점",

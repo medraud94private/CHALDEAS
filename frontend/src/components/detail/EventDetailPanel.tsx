@@ -1,10 +1,13 @@
 /**
  * EventDetailPanel - FGO-style event detail with tabs (Overview / Connections)
  */
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../../api/client'
+import { ReportButton, SourceBadge } from '../common'
+import { useSettingsStore, getLocalizedText } from '../../store/settingsStore'
+import { trackEvent, AnalyticsEvents } from '../../lib/analytics'
 import type { Event } from '../../types'
 
 interface Props {
@@ -72,7 +75,15 @@ export function EventDetailPanel({
   onLocationClick
 }: Props) {
   const { t } = useTranslation()
+  const { preferredLanguage } = useSettingsStore()
   const [activeTab, setActiveTab] = useState<TabType>('overview')
+
+  // Track event view
+  useEffect(() => {
+    if (event?.id) {
+      trackEvent(AnalyticsEvents.EVENT_VIEWED, { event_id: event.id })
+    }
+  }, [event?.id])
   const [chainNav, setChainNav] = useState<ChainNav>({
     mode: null,
     entityId: null,
@@ -566,8 +577,16 @@ export function EventDetailPanel({
             <div className="detail-section">
               <div className="detail-section-header">{t('detail.description', 'Description')}</div>
               <p className="detail-description">
-                {event.description || t('detail.pendingDescription')}
+                {getLocalizedText(event as unknown as Record<string, unknown>, 'description', preferredLanguage) || t('detail.pendingDescription')}
               </p>
+              {(event as unknown as { description_source?: string; description_source_url?: string }).description_source && (
+                <div className="description-source">
+                  <SourceBadge
+                    source={(event as unknown as { description_source?: string }).description_source}
+                    sourceUrl={(event as unknown as { description_source_url?: string }).description_source_url}
+                  />
+                </div>
+              )}
             </div>
 
             {/* Ask SHEBA Button */}
@@ -839,6 +858,7 @@ export function EventDetailPanel({
         <div className="detail-status">
           {t('detail.verified')}
         </div>
+        <ReportButton entityType="event" entityId={event.id} />
       </div>
     </aside>
   )

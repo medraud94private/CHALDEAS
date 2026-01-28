@@ -93,6 +93,31 @@ export interface SourceReference extends Source {
   quote?: string
 }
 
+// Person Sources (Books mentioning a person)
+export interface MentionContext {
+  mention_text: string
+  context_text?: string
+  confidence: number
+  chunk_index?: number
+}
+
+export interface SourceWithMentions {
+  id: number
+  name: string
+  title?: string
+  type: string
+  author?: string
+  mention_count: number
+  person_count: number
+  mentions: MentionContext[]
+}
+
+export interface PersonSourceList {
+  person_id: number
+  sources: SourceWithMentions[]
+  total: number
+}
+
 // API Response types
 export interface PaginatedResponse<T> {
   items: T[]

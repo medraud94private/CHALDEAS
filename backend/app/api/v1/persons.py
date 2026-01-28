@@ -9,7 +9,8 @@ from typing import Optional
 
 from app.db.session import get_db
 from app.schemas.person import Person, PersonList, PersonDetail, PersonRelation, PersonRelationList
-from app.services import person_service
+from app.schemas.source import PersonSourceList, SourceWithMentions, MentionContext
+from app.services import person_service, source_service
 
 router = APIRouter()
 
@@ -90,4 +91,56 @@ async def get_person_relations(
         person_id=person_id,
         relations=[PersonRelation(**r) for r in relations],
         total=len(relations),
+    )
+
+
+@router.get("/{person_id}/sources", response_model=PersonSourceList)
+async def get_person_sources(
+    person_id: int,
+    limit: int = Query(20, ge=1, le=100, description="Max sources to return"),
+    include_contexts: bool = Query(True, description="Include mention contexts"),
+    max_contexts: int = Query(3, ge=1, le=10, description="Max contexts per source"),
+    db: Session = Depends(get_db),
+):
+    """
+    Get sources (books, documents) that mention this person.
+
+    Returns sources ordered by mention count, with optional context snippets.
+
+    Each source includes:
+    - Basic metadata (title, author, type)
+    - Total mention count in that source
+    - Sample mention contexts (the actual text where person is mentioned)
+
+    Use include_contexts=false for faster response without context snippets.
+    """
+    # Verify person exists
+    person = person_service.get_person_by_id(db, person_id)
+    if not person:
+        raise HTTPException(status_code=404, detail="Person not found")
+
+    sources, total = source_service.get_person_sources(
+        db,
+        person_id=person_id,
+        limit=limit,
+        include_contexts=include_contexts,
+        max_contexts=max_contexts,
+    )
+
+    return PersonSourceList(
+        person_id=person_id,
+        sources=[
+            SourceWithMentions(
+                id=s["id"],
+                name=s["name"],
+                title=s.get("title"),
+                type=s["type"],
+                author=s.get("author"),
+                mention_count=s["mention_count"],
+                person_count=s.get("person_count", 0),
+                mentions=[MentionContext(**m) for m in s.get("mentions", [])]
+            )
+            for s in sources
+        ],
+        total=total
     )

@@ -8,6 +8,7 @@
  */
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useSettingsStore } from '../../store/settingsStore'
 import './FilterPanel.css'
 
 export interface FilterState {
@@ -36,6 +37,7 @@ const YEAR_MAX = 2025
 
 export function FilterPanel({ filters, onChange, isOpen, onToggle }: Props) {
   const { t } = useTranslation()
+  const { hideEmptyDescriptions, setHideEmptyDescriptions } = useSettingsStore()
   const [localYearStart, setLocalYearStart] = useState(filters.yearRange.start.toString())
   const [localYearEnd, setLocalYearEnd] = useState(filters.yearRange.end.toString())
 
@@ -82,7 +84,8 @@ export function FilterPanel({ filters, onChange, isOpen, onToggle }: Props) {
     !filters.layers.person || !filters.layers.location || !filters.layers.causal,
     filters.yearRange.start !== YEAR_MIN || filters.yearRange.end !== YEAR_MAX,
     filters.minStrength > 0,
-    filters.hasConnections !== null
+    filters.hasConnections !== null,
+    hideEmptyDescriptions
   ].filter(Boolean).length
 
   return (
@@ -235,6 +238,24 @@ export function FilterPanel({ filters, onChange, isOpen, onToggle }: Props) {
               {t('filters.noConnections', 'Isolated')}
             </button>
           </div>
+        </div>
+
+        {/* Hide Empty Descriptions */}
+        <div className="filter-section">
+          <div className="filter-section-header">
+            <span className="filter-section-icon">📝</span>
+            <span>{t('filters.descriptionFilter', 'Description Filter')}</span>
+          </div>
+          <label className="filter-checkbox">
+            <input
+              type="checkbox"
+              checked={hideEmptyDescriptions}
+              onChange={(e) => setHideEmptyDescriptions(e.target.checked)}
+            />
+            <span className="checkbox-label">
+              {t('filters.hideEmpty', 'Hide items without descriptions')}
+            </span>
+          </label>
         </div>
 
         {/* Reset Button */}

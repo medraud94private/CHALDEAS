@@ -1,0 +1,734 @@
+{
+  "description": "1차 추가 편성표 - 서번트 겹침 최소화 우선순위",
+  "total_selected": 33,
+  "total_servants_covered": 86,
+  "covered_servants": [
+    "Artoria",
+    "Blackbeard",
+    "Arjuna",
+    "Mordred",
+    "Achilles",
+    "Orion",
+    "Circe",
+    "Florence Nightingale",
+    "Merlin",
+    "Don Quixote",
+    "Moriarty",
+    "Morgan",
+    "Jekyll",
+    "Medusa",
+    "Ozymandias",
+    "Lancelot",
+    "Edison",
+    "Heracles",
+    "Leonidas",
+    "Percival",
+    "Lu Bu",
+    "Hector",
+    "Alexander",
+    "Fionn",
+    "Diarmuid",
+    "Tesla",
+    "Charlemagne",
+    "Caesar",
+    "Egyptian Myths",
+    "Rama",
+    "Anne Bonny",
+    "Ishtar",
+    "Musashi",
+    "Norse Myths",
+    "William Tell",
+    "Jason",
+    "Edmond Dantes",
+    "Siegfried",
+    "Beowulf",
+    "Scheherazade",
+    "Galahad",
+    "Roland",
+    "Tristan",
+    "Robin Hood",
+    "Solomon",
+    "Darius",
+    "Salome",
+    "Gilgamesh",
+    "Theseus",
+    "Geronimo",
+    "Karna",
+    "David",
+    "Boudica",
+    "Odysseus",
+    "Shakespeare",
+    "Sherlock Holmes",
+    "Andersen",
+    "Leonardo",
+    "Billy the Kid",
+    "Phantom",
+    "Cu Chulainn",
+    "Nero",
+    "Medb",
+    "Gawain",
+    "Celtic Myths",
+    "Napoleon",
+    "Attila",
+    "Zhuge Liang",
+    "Jeanne d'Arc",
+    "Nitocris",
+    "Dante",
+    "Enkidu",
+    "Perseus",
+    "Sigurd",
+    "Brynhild",
+    "Xuanzang",
+    "Medea",
+    "Cleopatra",
+    "Vlad",
+    "Spartacus",
+    "Drake",
+    "Marie Antoinette",
+    "Astolfo",
+    "Scathach",
+    "Greek Myths",
+    "Frankenstein"
+  ],
+  "priority_books": [
+    {
+      "title": "The Classic Myths in English Literature and in Art (2nd ed.) (1911)",
+      "path": "The Classic Myths in English Literature and in Art (2nd ed.) (1911).46063",
+      "servants": [
+        "Greek Myths",
+        "Odysseus",
+        "Siegfried",
+        "Norse Myths",
+        "Theseus",
+        "Circe",
+        "Brynhild",
+        "Heracles",
+        "Sigurd",
+        "Orion",
+        "Medea",
+        "Medusa"
+      ],
+      "servant_count": 12,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Medusa",
+        "Orion",
+        "Heracles",
+        "Sigurd",
+        "Medea",
+        "Greek Myths",
+        "Norse Myths",
+        "Circe",
+        "Brynhild",
+        "Theseus",
+        "Odysseus",
+        "Siegfried"
+      ],
+      "new_count": 12,
+      "selection_order": 1
+    },
+    {
+      "title": "Myths of Babylonia and Assyria",
+      "path": "Myths of Babylonia and Assyria.16653",
+      "servants": [
+        "Karna",
+        "Celtic Myths",
+        "Enkidu",
+        "Arjuna",
+        "Egyptian Myths",
+        "Gilgamesh",
+        "Orion",
+        "Ishtar"
+      ],
+      "servant_count": 8,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Celtic Myths",
+        "Enkidu",
+        "Ishtar",
+        "Gilgamesh",
+        "Arjuna",
+        "Egyptian Myths",
+        "Karna"
+      ],
+      "new_count": 7,
+      "selection_order": 2
+    },
+    {
+      "title": "The Chronology of Ancient Kingdoms Amended",
+      "path": "The Chronology of Ancient Kingdoms Amended.15784",
+      "servants": [
+        "Solomon",
+        "Nitocris",
+        "Lu Bu",
+        "Ozymandias",
+        "Zhuge Liang",
+        "Darius"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "Zhuge Liang",
+        "Ozymandias",
+        "Nitocris",
+        "Lu Bu",
+        "Solomon",
+        "Darius"
+      ],
+      "new_count": 6,
+      "selection_order": 3
+    },
+    {
+      "title": "The Mythology of the British Islands",
+      "path": "The Mythology of the British Islands.54616",
+      "servants": [
+        "Celtic Myths",
+        "Greek Myths",
+        "Artoria",
+        "Cu Chulainn",
+        "Mordred",
+        "Fionn",
+        "Medb"
+      ],
+      "servant_count": 7,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Artoria",
+        "Fionn",
+        "Cu Chulainn",
+        "Mordred",
+        "Medb"
+      ],
+      "new_count": 5,
+      "selection_order": 4
+    },
+    {
+      "title": "The Heroic Age",
+      "path": "The Heroic Age.48426",
+      "servants": [
+        "Achilles",
+        "Odysseus",
+        "Siegfried",
+        "Norse Myths",
+        "Circe",
+        "Attila",
+        "Beowulf",
+        "Hector"
+      ],
+      "servant_count": 8,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Beowulf",
+        "Achilles",
+        "Hector",
+        "Attila"
+      ],
+      "new_count": 4,
+      "selection_order": 5
+    },
+    {
+      "title": "The Complete Opera Book",
+      "path": "The Complete Opera Book.40540",
+      "servants": [
+        "Siegfried",
+        "Musashi",
+        "Percival",
+        "Salome",
+        "Tristan"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Musashi",
+        "Tristan",
+        "Salome",
+        "Percival"
+      ],
+      "new_count": 4,
+      "selection_order": 6
+    },
+    {
+      "title": "Renaissance in Italy, Volume 4 (of 7)",
+      "path": "Renaissance in Italy, Volume 4 (of 7).35792",
+      "servants": [
+        "Astolfo",
+        "Dante",
+        "Charlemagne",
+        "Roland"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Astolfo",
+        "Charlemagne",
+        "Roland",
+        "Dante"
+      ],
+      "new_count": 4,
+      "selection_order": 7
+    },
+    {
+      "title": "The Book of Romance",
+      "path": "The Book of Romance.26646",
+      "servants": [
+        "Morgan",
+        "Lancelot",
+        "Gawain",
+        "Mordred",
+        "Fionn"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Roman",
+      "new_servants": [
+        "Gawain",
+        "Lancelot",
+        "Morgan"
+      ],
+      "new_count": 3,
+      "selection_order": 8
+    },
+    {
+      "title": "The English and Scottish popular ballads, volume 5 (of 5)",
+      "path": "The English and Scottish popular ballads, volume 5 (of 5).71104",
+      "servants": [
+        "Robin Hood",
+        "Vlad",
+        "Artoria",
+        "Anne Bonny",
+        "Mordred"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Vlad",
+        "Anne Bonny",
+        "Robin Hood"
+      ],
+      "new_count": 3,
+      "selection_order": 9
+    },
+    {
+      "title": "The Story of Greece: Told to Boys and Girls",
+      "path": "The Story of Greece: Told to Boys and Girls.66070",
+      "servants": [
+        "Alexander",
+        "Perseus",
+        "Leonidas",
+        "Darius",
+        "Medusa"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Alexander",
+        "Leonidas",
+        "Perseus"
+      ],
+      "new_count": 3,
+      "selection_order": 10
+    },
+    {
+      "title": "The Collected Works in Verse and Prose of William Butler Yeats, Vol. 4 (of 8)",
+      "path": "The Collected Works in Verse and Prose of William Butler Yeats, Vol. 4 (of 8).49611",
+      "servants": [
+        "Diarmuid",
+        "William Tell",
+        "Cu Chulainn",
+        "Scathach"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Scathach",
+        "Diarmuid",
+        "William Tell"
+      ],
+      "new_count": 3,
+      "selection_order": 11
+    },
+    {
+      "title": "Shakespeare's Roman plays and their background",
+      "path": "Shakespeare's Roman plays and their background.69937",
+      "servants": [
+        "Cleopatra",
+        "Shakespeare",
+        "Caesar"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Roman",
+      "new_servants": [
+        "Caesar",
+        "Cleopatra",
+        "Shakespeare"
+      ],
+      "new_count": 3,
+      "selection_order": 12
+    },
+    {
+      "title": "The Book of the Epic: The World's Great Epics Told in Story",
+      "path": "The Book of the Epic: The World's Great Epics Told in Story.13983",
+      "servants": [
+        "Galahad",
+        "Brynhild",
+        "Sigurd",
+        "Roland",
+        "Jason"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Literature",
+      "new_servants": [
+        "Galahad",
+        "Jason"
+      ],
+      "new_count": 2,
+      "selection_order": 13
+    },
+    {
+      "title": "Hinduism and Buddhism, An Historical Sketch, Vol. 2",
+      "path": "Hinduism and Buddhism, An Historical Sketch, Vol. 2.16546",
+      "servants": [
+        "Karna",
+        "Rama",
+        "Arjuna",
+        "Xuanzang"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Indian",
+      "new_servants": [
+        "Rama",
+        "Xuanzang"
+      ],
+      "new_count": 2,
+      "selection_order": 14
+    },
+    {
+      "title": "The Supernatural in Modern English Fiction",
+      "path": "The Supernatural in Modern English Fiction.47204",
+      "servants": [
+        "Celtic Myths",
+        "Frankenstein",
+        "Vlad",
+        "Jekyll"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Jekyll",
+        "Frankenstein"
+      ],
+      "new_count": 2,
+      "selection_order": 15
+    },
+    {
+      "title": "A History of Rome to 565 A. D.",
+      "path": "A History of Rome to 565 A. D..32624",
+      "servants": [
+        "Spartacus",
+        "Caesar",
+        "Boudica"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Roman",
+      "new_servants": [
+        "Spartacus",
+        "Boudica"
+      ],
+      "new_count": 2,
+      "selection_order": 16
+    },
+    {
+      "title": "Rebels and Reformers: Biographies for Young People",
+      "path": "Rebels and Reformers: Biographies for Young People.65267",
+      "servants": [
+        "Napoleon",
+        "Andersen"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Napoleon",
+        "Andersen"
+      ],
+      "new_count": 2,
+      "selection_order": 17
+    },
+    {
+      "title": "Memories and Adventures",
+      "path": "Memories and Adventures.66991",
+      "servants": [
+        "Moriarty",
+        "Sherlock Holmes"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Moriarty",
+        "Sherlock Holmes"
+      ],
+      "new_count": 2,
+      "selection_order": 18
+    },
+    {
+      "title": "That Marvel—The Movie",
+      "path": "That Marvel—The Movie.66368",
+      "servants": [
+        "Edison",
+        "Edmond Dantes"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Edison",
+        "Edmond Dantes"
+      ],
+      "new_count": 2,
+      "selection_order": 19
+    },
+    {
+      "title": "The Great Events by Famous Historians, Volume 10",
+      "path": "The Great Events by Famous Historians, Volume 10.19893",
+      "servants": [
+        "Don Quixote",
+        "Drake"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Don Quixote",
+        "Drake"
+      ],
+      "new_count": 2,
+      "selection_order": 20
+    },
+    {
+      "title": "The Standard Operas: Their Plots, Their Music, and Their Composers",
+      "path": "The Standard Operas: Their Plots, Their Music, and Their Composers.14968",
+      "servants": [
+        "Phantom",
+        "Brynhild",
+        "Sigurd",
+        "Percival",
+        "Tristan"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Phantom"
+      ],
+      "new_count": 1,
+      "selection_order": 21
+    },
+    {
+      "title": "Tales from Tennyson",
+      "path": "Tales from Tennyson.35598",
+      "servants": [
+        "Galahad",
+        "Merlin",
+        "Artoria",
+        "Lancelot"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Literature",
+      "new_servants": [
+        "Merlin"
+      ],
+      "new_count": 1,
+      "selection_order": 22
+    },
+    {
+      "title": "The early history of the Hebrews",
+      "path": "The early history of the Hebrews.75324",
+      "servants": [
+        "David",
+        "Ozymandias",
+        "Ishtar"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "David"
+      ],
+      "new_count": 1,
+      "selection_order": 23
+    },
+    {
+      "title": "Post-Augustan Poetry From Seneca to Juvenal",
+      "path": "Post-Augustan Poetry From Seneca to Juvenal.9303",
+      "servants": [
+        "Medea",
+        "Jason",
+        "Nero"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Nero"
+      ],
+      "new_count": 1,
+      "selection_order": 24
+    },
+    {
+      "title": "Memoirs of the Court of Marie Antoinette, Queen of France, Complete",
+      "path": "Memoirs of the Court of Marie Antoinette, Queen of France, Complete.3891",
+      "servants": [
+        "Marie Antoinette",
+        "Anne Bonny"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Marie Antoinette"
+      ],
+      "new_count": 1,
+      "selection_order": 25
+    },
+    {
+      "title": "A History of Art for Beginners and Students: Painting, Sculpture, Architecture",
+      "path": "A History of Art for Beginners and Students: Painting, Sculpture, Architecture.24726",
+      "servants": [
+        "Ozymandias",
+        "Leonardo"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "Leonardo"
+      ],
+      "new_count": 1,
+      "selection_order": 26
+    },
+    {
+      "title": "Heroines That Every Child Should Know",
+      "path": "Heroines That Every Child Should Know.35994",
+      "servants": [
+        "Florence Nightingale",
+        "Roland"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Florence Nightingale"
+      ],
+      "new_count": 1,
+      "selection_order": 27
+    },
+    {
+      "title": "The Boy's Book of New Inventions",
+      "path": "The Boy's Book of New Inventions.46232",
+      "servants": [
+        "Tesla",
+        "Edison"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Tesla"
+      ],
+      "new_count": 1,
+      "selection_order": 28
+    },
+    {
+      "title": "The Shaving of Shagpat; an Arabian entertainment — Complete",
+      "path": "The Shaving of Shagpat; an Arabian entertainment — Complete.4405",
+      "servants": [
+        "Scheherazade"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Scheherazade"
+      ],
+      "new_count": 1,
+      "selection_order": 29
+    },
+    {
+      "title": "Blackbeard: Buccaneer",
+      "path": "Blackbeard: Buccaneer.25472",
+      "servants": [
+        "Blackbeard"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Blackbeard"
+      ],
+      "new_count": 1,
+      "selection_order": 30
+    },
+    {
+      "title": "Poor Relations",
+      "path": "Poor Relations.38816",
+      "servants": [
+        "Jeanne d'Arc"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Jeanne d'Arc"
+      ],
+      "new_count": 1,
+      "selection_order": 31
+    },
+    {
+      "title": "Apache devil",
+      "path": "Apache devil.70101",
+      "servants": [
+        "Geronimo"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Geronimo"
+      ],
+      "new_count": 1,
+      "selection_order": 32
+    },
+    {
+      "title": "History of \"Billy the Kid\"",
+      "path": "History of \"Billy the Kid\".38039",
+      "servants": [
+        "Billy the Kid"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "Billy the Kid"
+      ],
+      "new_count": 1,
+      "selection_order": 33
+    }
+  ]
+}

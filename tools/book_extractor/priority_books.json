@@ -1,0 +1,185 @@
+{
+  "summary": {
+    "total_priority_books": 33,
+    "unique_sources": 9
+  },
+  "by_source": {
+    "Cattle-Raid": {
+      "category": "Celtic - Cu Chulainn, Medb",
+      "books": [
+        {
+          "title": "The Cattle-Raid of Cualnge (Tain Bo Cualnge) : An Old Irish Prose-Epic",
+          "path": "The Cattle-Raid of Cualnge (Tain Bo Cualnge) : An Old Irish Prose-Epic.14391"
+        }
+      ]
+    },
+    "Cuchulain": {
+      "category": "Celtic - Cu Chulainn",
+      "books": [
+        {
+          "title": "Cuchulain, the Hound of Ulster",
+          "path": "Cuchulain, the Hound of Ulster.52963"
+        }
+      ]
+    },
+    "Gilgamesh": {
+      "category": "Mesopotamia - Gilgamesh, Enkidu",
+      "books": [
+        {
+          "title": "An Old Babylonian Version of the Gilgamesh Epic",
+          "path": "An Old Babylonian Version of the Gilgamesh Epic.11000"
+        }
+      ]
+    },
+    "Plutarch": {
+      "category": "History - Caesar, Alexander, etc",
+      "books": [
+        {
+          "title": "Plutarch's Morals",
+          "path": "Plutarch's Morals.23639"
+        },
+        {
+          "title": "Complete Works of Plutarch — Volume 3: Essays and Miscellanies",
+          "path": "Complete Works of Plutarch — Volume 3: Essays and Miscellanies.3052"
+        }
+      ]
+    },
+    "Ramayana": {
+      "category": "India - Rama",
+      "books": [
+        {
+          "title": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 3 (of 4), Part 2 (of 2)",
+          "path": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 3 (of 4), Part 2 (of 2).46531"
+        },
+        {
+          "title": "Hindu literature : Comprising The Book of good counsels, Nala and Damayanti, The Ramayana, and Sakoontala",
+          "path": "Hindu literature : Comprising The Book of good counsels, Nala and Damayanti, The Ramayana, and Sakoontala.13268"
+        },
+        {
+          "title": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 1 (of 4)",
+          "path": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 1 (of 4).71326"
+        },
+        {
+          "title": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 2 (of 4), Part 2 (of 2)",
+          "path": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 2 (of 4), Part 2 (of 2).71064"
+        },
+        {
+          "title": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 4 (of 4), Part 2 (of 2)",
+          "path": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 4 (of 4), Part 2 (of 2).71249"
+        },
+        {
+          "title": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 2 (of 4), Part 1 (of 2)",
+          "path": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 2 (of 4), Part 1 (of 2).71063"
+        },
+        {
+          "title": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 3 (of 4), Part 1 (of 2)",
+          "path": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol. 3 (of 4), Part 1 (of 2).71095"
+        },
+        {
+          "title": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol 4 (of 4), Part 1 (of 2)",
+          "path": "The Yoga-Vasishtha Maharamayana of Valmiki, Vol 4 (of 4), Part 1 (of 2).71248"
+        }
+      ]
+    },
+    "The Argonautica": {
+      "category": "Greek - Jason, Medea",
+      "books": [
+        {
+          "title": "The Argonautica",
+          "path": "The Argonautica.13977"
+        }
+      ]
+    },
+    "The Iliad": {
+      "category": "Greek/Troy - Achilles, Hector, Paris",
+      "books": [
+        {
+          "title": "The Iliad of Homer",
+          "path": "The Iliad of Homer.16452"
+        },
+        {
+          "title": "The Iliads of Homer",
+          "path": "The Iliads of Homer.51355"
+        },
+        {
+          "title": "Homer: The Iliad; The Odyssey",
+          "path": "Homer: The Iliad; The Odyssey.59306"
+        },
+        {
+          "title": "The Iliad",
+          "path": "The Iliad.6130"
+        },
+        {
+          "title": "Stories from the Iliad",
+          "path": "Stories from the Iliad.43993"
+        },
+        {
+          "title": "The story of the Iliad",
+          "path": "The story of the Iliad.74231"
+        },
+        {
+          "title": "Stories from the Iliad; Or, the siege of Troy",
+          "path": "Stories from the Iliad; Or, the siege of Troy.68127"
+        }
+      ]
+    },
+    "The Mahabharata": {
+      "category": "India - Arjuna, Karna",
+      "books": [
+        {
+          "title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 3",
+          "path": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 3.15476"
+        },
+        {
+          "title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 2",
+          "path": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 2.15475"
+        },
+        {
+          "title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 1",
+          "path": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 1.15474"
+        },
+        {
+          "title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 4",
+          "path": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 4.15477"
+        },
+        {
+          "title": "The Mahabharata of Krishna-Dwaipayana Vyasa Translated into English Prose",
+          "path": "The Mahabharata of Krishna-Dwaipayana Vyasa Translated into English Prose.7864"
+        },
+        {
+          "title": "The Great Indian Epics : $b The Stories of the Ramayana and the Mahabharata",
+          "path": "The Great Indian Epics : $b The Stories of the Ramayana and the Mahabharata.73417"
+        }
+      ]
+    },
+    "The Odyssey": {
+      "category": "Greek/Troy - Odysseus, Circe",
+      "books": [
+        {
+          "title": "The Authoress of the Odyssey",
+          "path": "The Authoress of the Odyssey.49324"
+        },
+        {
+          "title": "The Odysseys of Homer, together with the shorter poems",
+          "path": "The Odysseys of Homer, together with the shorter poems.48895"
+        },
+        {
+          "title": "The Odyssey of Homer",
+          "path": "The Odyssey of Homer.24269"
+        },
+        {
+          "title": "The Odyssey",
+          "path": "The Odyssey.3160"
+        },
+        {
+          "title": "Stories from the Odyssey",
+          "path": "Stories from the Odyssey.13725"
+        },
+        {
+          "title": "The Story of the Odyssey",
+          "path": "The Story of the Odyssey.6370"
+        }
+      ]
+    }
+  }
+}

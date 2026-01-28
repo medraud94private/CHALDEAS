@@ -57,6 +57,14 @@ class Location(Base, TimestampMixin):
     # Description
     description = Column(Text)
     description_ko = Column(Text)
+    description_ja = Column(Text)  # Japanese description
+
+    # Japanese name
+    name_ja = Column(String(255))
+
+    # Source tracking for description
+    description_source = Column(String(50))  # wikipedia_en, wikipedia_ko, wikipedia_ja, llm, manual
+    description_source_url = Column(String(500))
 
     # Connection count for filtering orphans
     connection_count = Column(Integer, default=0, index=True)

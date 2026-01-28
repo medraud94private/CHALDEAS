@@ -1,0 +1,655 @@
+{
+  "priority_1_epic": {
+    "description": "서사시/핵심 (다수 서번트)",
+    "total_servants": 29,
+    "books": [
+      {
+        "id": "le_morte_darthur",
+        "file": "le_morte_darthur.txt",
+        "status": "pending",
+        "size_mb": 0.9,
+        "servants": [
+          "Altria Pendragon",
+          "Lancelot",
+          "Tristan",
+          "Gawain",
+          "Mordred",
+          "Bedivere",
+          "Galahad",
+          "Percival",
+          "Gareth"
+        ],
+        "servant_count": 9
+      },
+      {
+        "id": "plutarch_lives",
+        "file": "plutarch_lives.txt",
+        "status": "extracting",
+        "size_mb": 4.2,
+        "servants": [
+          "Iskandar",
+          "Julius Caesar",
+          "Cleopatra",
+          "Romulus",
+          "Spartacus",
+          "Alexander"
+        ],
+        "servant_count": 6
+      },
+      {
+        "id": "iliad_homer",
+        "file": "iliad_homer.txt",
+        "status": "pending",
+        "size_mb": 1.2,
+        "servants": [
+          "Achilles",
+          "Hector",
+          "Paris",
+          "Penthesilea",
+          "Diomedes"
+        ],
+        "servant_count": 5
+      },
+      {
+        "id": "mahabharata",
+        "file": "mahabharata.txt",
+        "status": "pending",
+        "size_mb": 1.4,
+        "servants": [
+          "Arjuna",
+          "Karna",
+          "Ashwatthama",
+          "Bhima",
+          "Duryodhana"
+        ],
+        "servant_count": 5
+      },
+      {
+        "id": "odyssey_homer",
+        "file": "odyssey_homer.txt",
+        "status": "pending",
+        "size_mb": 0.7,
+        "servants": [
+          "Odysseus",
+          "Circe",
+          "Penelope",
+          "Polyphemus"
+        ],
+        "servant_count": 4
+      }
+    ]
+  },
+  "priority_2_legend": {
+    "description": "전설/영웅담",
+    "total_servants": 32,
+    "books": [
+      {
+        "id": "orlando_furioso",
+        "file": "orlando_furioso.txt",
+        "status": "pending",
+        "size_mb": 1.7,
+        "servants": [
+          "Astolfo",
+          "Bradamante",
+          "Mandricardo",
+          "Charlemagne",
+          "Roland"
+        ],
+        "servant_count": 5
+      },
+      {
+        "id": "argonautica",
+        "file": "argonautica.txt",
+        "status": "pending",
+        "size_mb": 0.36,
+        "servants": [
+          "Jason",
+          "Medea",
+          "Atalante",
+          "Heracles"
+        ],
+        "servant_count": 4
+      },
+      {
+        "id": "celtic_mythology",
+        "file": "celtic_mythology.txt",
+        "status": "pending",
+        "size_mb": 0.89,
+        "servants": [
+          "Cu Chulainn",
+          "Scathach",
+          "Fionn mac Cumhaill",
+          "Diarmuid Ua Duibhne"
+        ],
+        "servant_count": 4
+      },
+      {
+        "id": "cattle_raid_cooley",
+        "file": "cattle_raid_cooley.txt",
+        "status": "pending",
+        "size_mb": 0.76,
+        "servants": [
+          "Cu Chulainn",
+          "Fergus mac Roich",
+          "Medb"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "herodotus_histories",
+        "file": "herodotus_histories.txt",
+        "status": "pending",
+        "size_mb": 0.9,
+        "servants": [
+          "Leonidas I",
+          "Darius III",
+          "Xerxes"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "nibelungenlied",
+        "file": "nibelungenlied.txt",
+        "status": "pending",
+        "size_mb": 0.68,
+        "servants": [
+          "Siegfried",
+          "Kriemhild",
+          "Brynhild"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "gilgamesh_epic",
+        "file": "gilgamesh_epic.txt",
+        "status": "pending",
+        "size_mb": 0.25,
+        "servants": [
+          "Gilgamesh",
+          "Enkidu"
+        ],
+        "servant_count": 2
+      },
+      {
+        "id": "gods_and_fighting_men",
+        "file": "gods_and_fighting_men.txt",
+        "status": "pending",
+        "size_mb": 0.9,
+        "servants": [
+          "Fionn mac Cumhaill",
+          "Diarmuid Ua Duibhne"
+        ],
+        "servant_count": 2
+      },
+      {
+        "id": "song_of_roland",
+        "file": "song_of_roland.txt",
+        "status": "pending",
+        "size_mb": 0.22,
+        "servants": [
+          "Charlemagne",
+          "Roland"
+        ],
+        "servant_count": 2
+      },
+      {
+        "id": "volsunga_saga",
+        "file": "volsunga_saga.txt",
+        "status": "pending",
+        "size_mb": 0.35,
+        "servants": [
+          "Sigurd",
+          "Brynhild"
+        ],
+        "servant_count": 2
+      },
+      {
+        "id": "beowulf",
+        "file": "beowulf.txt",
+        "status": "pending",
+        "size_mb": 0.3,
+        "servants": [
+          "Beowulf"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "ramayana",
+        "file": "ramayana.txt",
+        "status": "pending",
+        "size_mb": 2.4,
+        "servants": [
+          "Rama"
+        ],
+        "servant_count": 1
+      }
+    ]
+  },
+  "priority_3_history": {
+    "description": "역사 전기",
+    "total_servants": 9,
+    "books": [
+      {
+        "id": "french_revolution_carlyle",
+        "file": "french_revolution_carlyle.txt",
+        "status": "pending",
+        "size_mb": 2.1,
+        "servants": [
+          "Marie Antoinette",
+          "Charlotte Corday",
+          "Charles-Henri Sanson"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "joan_of_arc_twain",
+        "file": "joan_of_arc_twain.txt",
+        "status": "pending",
+        "size_mb": 0.4,
+        "servants": [
+          "Jeanne d'Arc",
+          "Gilles de Rais"
+        ],
+        "servant_count": 2
+      },
+      {
+        "id": "book_of_five_rings",
+        "file": "book_of_five_rings.txt",
+        "status": "pending",
+        "size_mb": 0.27,
+        "servants": [
+          "Miyamoto Musashi"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "geronimo_story",
+        "file": "geronimo_story.txt",
+        "status": "pending",
+        "size_mb": 0.16,
+        "servants": [
+          "Geronimo"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "lives_of_artists_vasari",
+        "file": "lives_of_artists_vasari.txt",
+        "status": "pending",
+        "size_mb": 0.51,
+        "servants": [
+          "Leonardo da Vinci"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "napoleon_biography",
+        "file": "napoleon_biography.txt",
+        "status": "pending",
+        "size_mb": 2.9,
+        "servants": [
+          "Napoleon"
+        ],
+        "servant_count": 1
+      }
+    ]
+  },
+  "priority_4_literature": {
+    "description": "문학 서번트",
+    "total_servants": 10,
+    "books": [
+      {
+        "id": "sherlock_holmes_complete",
+        "file": "sherlock_holmes_complete.txt",
+        "status": "pending",
+        "size_mb": 0.61,
+        "servants": [
+          "Sherlock Holmes",
+          "James Moriarty"
+        ],
+        "servant_count": 2
+      },
+      {
+        "id": "andersen_fairy_tales",
+        "file": "andersen_fairy_tales.txt",
+        "status": "pending",
+        "size_mb": 0.33,
+        "servants": [
+          "Hans Christian Andersen"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "complete_shakespeare",
+        "file": "complete_shakespeare.txt",
+        "status": "pending",
+        "size_mb": 5.8,
+        "servants": [
+          "William Shakespeare"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "count_of_monte_cristo",
+        "file": "count_of_monte_cristo.txt",
+        "status": "pending",
+        "size_mb": 2.8,
+        "servants": [
+          "Edmond Dantes"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "divine_comedy_dante",
+        "file": "divine_comedy_dante.txt",
+        "status": "pending",
+        "size_mb": 2.2,
+        "servants": [
+          "Dante Alighieri"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "don_quixote",
+        "file": "don_quixote.txt",
+        "status": "pending",
+        "size_mb": 2.4,
+        "servants": [
+          "Don Quixote"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "dr_jekyll_mr_hyde",
+        "file": "dr_jekyll_mr_hyde.txt",
+        "status": "pending",
+        "size_mb": 0.16,
+        "servants": [
+          "Henry Jekyll"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "frankenstein",
+        "file": "frankenstein.txt",
+        "status": "pending",
+        "size_mb": 0.45,
+        "servants": [
+          "Frankenstein"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "phantom_of_opera",
+        "file": "phantom_of_opera.txt",
+        "status": "pending",
+        "size_mb": 0.5,
+        "servants": [
+          "Phantom of the Opera"
+        ],
+        "servant_count": 1
+      }
+    ]
+  },
+  "priority_5_mythology": {
+    "description": "신화 종합",
+    "total_servants": 30,
+    "books": [
+      {
+        "id": "greek_roman_myths",
+        "file": "greek_roman_myths.txt",
+        "status": "done",
+        "size_mb": 0.87,
+        "servants": [
+          "Heracles",
+          "Perseus",
+          "Theseus",
+          "Medusa",
+          "Europa",
+          "Orion"
+        ],
+        "servant_count": 6
+      },
+      {
+        "id": "bulfinch_mythology",
+        "file": "bulfinch_mythology.txt",
+        "status": "pending",
+        "size_mb": 0.67,
+        "servants": [
+          "Heracles",
+          "Perseus",
+          "Theseus",
+          "Jason",
+          "Achilles"
+        ],
+        "servant_count": 5
+      },
+      {
+        "id": "japanese_mythology",
+        "file": "japanese_mythology.txt",
+        "status": "pending",
+        "size_mb": 0.39,
+        "servants": [
+          "Tamamo-no-Mae",
+          "Shuten-Douji",
+          "Kiyohime",
+          "Suzuka Gozen"
+        ],
+        "servant_count": 4
+      },
+      {
+        "id": "metamorphoses_ovid",
+        "file": "metamorphoses_ovid.txt",
+        "status": "pending",
+        "size_mb": 0.85,
+        "servants": [
+          "Medusa",
+          "Perseus",
+          "Europa",
+          "Orion"
+        ],
+        "servant_count": 4
+      },
+      {
+        "id": "babylonian_legends",
+        "file": "babylonian_legends.txt",
+        "status": "pending",
+        "size_mb": 0.69,
+        "servants": [
+          "Gilgamesh",
+          "Ishtar",
+          "Tiamat"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "egyptian_mythology",
+        "file": "egyptian_mythology.txt",
+        "status": "pending",
+        "size_mb": 0.58,
+        "servants": [
+          "Ozymandias",
+          "Nitocris",
+          "Cleopatra"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "norse_mythology",
+        "file": "norse_mythology.txt",
+        "status": "done",
+        "size_mb": 0.62,
+        "servants": [
+          "Valkyrie",
+          "Siegfried",
+          "Brynhild"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "chinese_mythology",
+        "file": "chinese_mythology.txt",
+        "status": "pending",
+        "size_mb": 0.7,
+        "servants": [
+          "Nezha",
+          "Xuanzang Sanzang"
+        ],
+        "servant_count": 2
+      }
+    ]
+  },
+  "priority_6_supplement": {
+    "description": "보조 자료",
+    "total_servants": 9,
+    "books": [
+      {
+        "id": "idylls_of_the_king",
+        "file": "idylls_of_the_king.txt",
+        "status": "pending",
+        "size_mb": 0.51,
+        "servants": [
+          "Altria Pendragon",
+          "Lancelot",
+          "Merlin"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "poetic_edda",
+        "file": "poetic_edda.txt",
+        "status": "pending",
+        "size_mb": 0.53,
+        "servants": [
+          "Valkyrie",
+          "Brynhild",
+          "Sigurd"
+        ],
+        "servant_count": 3
+      },
+      {
+        "id": "arabian_nights",
+        "file": "arabian_nights.txt",
+        "status": "done",
+        "size_mb": 0.62,
+        "servants": [
+          "Scheherazade"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "prose_edda",
+        "file": "prose_edda.txt",
+        "status": "pending",
+        "size_mb": 0.41,
+        "servants": [
+          "Valkyrie"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "tristan_and_iseult",
+        "file": "tristan_and_iseult.txt",
+        "status": "pending",
+        "size_mb": 0.16,
+        "servants": [
+          "Tristan"
+        ],
+        "servant_count": 1
+      },
+      {
+        "id": "aeneid_virgil",
+        "file": "aeneid_virgil.txt",
+        "status": "pending",
+        "size_mb": 0.74,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "arabian_nights_burton",
+        "file": "arabian_nights_burton.txt",
+        "status": "pending",
+        "size_mb": 0.06,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "book_of_dead_egyptian",
+        "file": "book_of_dead_egyptian.txt",
+        "status": "pending",
+        "size_mb": 0.09,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "grimm_fairy_tales",
+        "file": "grimm_fairy_tales.txt",
+        "status": "pending",
+        "size_mb": 0.56,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "history_british_kings",
+        "file": "history_british_kings.txt",
+        "status": "pending",
+        "size_mb": 0.1,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "irish_fairy_tales",
+        "file": "irish_fairy_tales.txt",
+        "status": "pending",
+        "size_mb": 0.39,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "japanese_fairy_tales",
+        "file": "japanese_fairy_tales.txt",
+        "status": "pending",
+        "size_mb": 0.4,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "marcus_aurelius_meditations",
+        "file": "marcus_aurelius_meditations.txt",
+        "status": "pending",
+        "size_mb": 0.73,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "paradise_lost_milton",
+        "file": "paradise_lost_milton.txt",
+        "status": "pending",
+        "size_mb": 0.14,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "plato_republic",
+        "file": "plato_republic.txt",
+        "status": "pending",
+        "size_mb": 1.3,
+        "servants": [],
+        "servant_count": 0
+      },
+      {
+        "id": "prince_machiavelli",
+        "file": "prince_machiavelli.txt",
+        "status": "pending",
+        "size_mb": 0.31,
+        "servants": [],
+        "servant_count": 0
+      }
+    ]
+  },
+  "_summary": {
+    "total_books": 56,
+    "total_servants_in_mapping": 92,
+    "total_keyword_mappings": 197
+  }
+}

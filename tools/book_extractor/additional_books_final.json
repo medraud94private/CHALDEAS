@@ -1,0 +1,3744 @@
+{
+  "generated_at": "2026-01-24T00:00:17.949492",
+  "description": "1차 추가 편성표 - 3가지 기준 통합",
+  "selection_criteria": {
+    "tier1_non_overlap": "서번트 겹침 최소화 (효율성)",
+    "tier2_high_coverage": "서번트 4명+ 고밀도 책",
+    "tier3_new_categories": "현재 274권과 다른 분야"
+  },
+  "summary": {
+    "total": 108,
+    "tier1_count": 33,
+    "tier2_count": 30,
+    "tier3_count": 45,
+    "new_categories": [
+      "Arts",
+      "Religion",
+      "Eastern",
+      "Modern History",
+      "Science",
+      "Biography",
+      "Literary Criticism",
+      "Exploration",
+      "Philosophy"
+    ]
+  },
+  "by_tier": {
+    "tier1_non_overlap": [
+      {
+        "title": "The Classic Myths in English Literature and in Art (2nd ed.) (1911)",
+        "path": "The Classic Myths in English Literature and in Art (2nd ed.) (1911).46063",
+        "servants": [
+          "Greek Myths",
+          "Odysseus",
+          "Siegfried",
+          "Norse Myths",
+          "Theseus",
+          "Circe",
+          "Brynhild",
+          "Heracles",
+          "Sigurd",
+          "Orion",
+          "Medea",
+          "Medusa"
+        ],
+        "servant_count": 12,
+        "total_score": 0,
+        "category": "Greek",
+        "new_servants": [
+          "Medusa",
+          "Orion",
+          "Heracles",
+          "Sigurd",
+          "Medea",
+          "Greek Myths",
+          "Norse Myths",
+          "Circe",
+          "Brynhild",
+          "Theseus",
+          "Odysseus",
+          "Siegfried"
+        ],
+        "new_count": 12,
+        "selection_order": 1,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Myths of Babylonia and Assyria",
+        "path": "Myths of Babylonia and Assyria.16653",
+        "servants": [
+          "Karna",
+          "Celtic Myths",
+          "Enkidu",
+          "Arjuna",
+          "Egyptian Myths",
+          "Gilgamesh",
+          "Orion",
+          "Ishtar"
+        ],
+        "servant_count": 8,
+        "total_score": 0,
+        "category": "Greek",
+        "new_servants": [
+          "Celtic Myths",
+          "Enkidu",
+          "Ishtar",
+          "Gilgamesh",
+          "Arjuna",
+          "Egyptian Myths",
+          "Karna"
+        ],
+        "new_count": 7,
+        "selection_order": 2,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Chronology of Ancient Kingdoms Amended",
+        "path": "The Chronology of Ancient Kingdoms Amended.15784",
+        "servants": [
+          "Solomon",
+          "Nitocris",
+          "Lu Bu",
+          "Ozymandias",
+          "Zhuge Liang",
+          "Darius"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "History",
+        "new_servants": [
+          "Zhuge Liang",
+          "Ozymandias",
+          "Nitocris",
+          "Lu Bu",
+          "Solomon",
+          "Darius"
+        ],
+        "new_count": 6,
+        "selection_order": 3,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Mythology of the British Islands",
+        "path": "The Mythology of the British Islands.54616",
+        "servants": [
+          "Celtic Myths",
+          "Greek Myths",
+          "Artoria",
+          "Cu Chulainn",
+          "Mordred",
+          "Fionn",
+          "Medb"
+        ],
+        "servant_count": 7,
+        "total_score": 0,
+        "category": "Greek",
+        "new_servants": [
+          "Artoria",
+          "Fionn",
+          "Cu Chulainn",
+          "Mordred",
+          "Medb"
+        ],
+        "new_count": 5,
+        "selection_order": 4,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Heroic Age",
+        "path": "The Heroic Age.48426",
+        "servants": [
+          "Achilles",
+          "Odysseus",
+          "Siegfried",
+          "Norse Myths",
+          "Circe",
+          "Attila",
+          "Beowulf",
+          "Hector"
+        ],
+        "servant_count": 8,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Beowulf",
+          "Achilles",
+          "Hector",
+          "Attila"
+        ],
+        "new_count": 4,
+        "selection_order": 5,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Complete Opera Book",
+        "path": "The Complete Opera Book.40540",
+        "servants": [
+          "Siegfried",
+          "Musashi",
+          "Percival",
+          "Salome",
+          "Tristan"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Musashi",
+          "Tristan",
+          "Salome",
+          "Percival"
+        ],
+        "new_count": 4,
+        "selection_order": 6,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Renaissance in Italy, Volume 4 (of 7)",
+        "path": "Renaissance in Italy, Volume 4 (of 7).35792",
+        "servants": [
+          "Astolfo",
+          "Dante",
+          "Charlemagne",
+          "Roland"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Astolfo",
+          "Charlemagne",
+          "Roland",
+          "Dante"
+        ],
+        "new_count": 4,
+        "selection_order": 7,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Book of Romance",
+        "path": "The Book of Romance.26646",
+        "servants": [
+          "Morgan",
+          "Lancelot",
+          "Gawain",
+          "Mordred",
+          "Fionn"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Roman",
+        "new_servants": [
+          "Gawain",
+          "Lancelot",
+          "Morgan"
+        ],
+        "new_count": 3,
+        "selection_order": 8,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The English and Scottish popular ballads, volume 5 (of 5)",
+        "path": "The English and Scottish popular ballads, volume 5 (of 5).71104",
+        "servants": [
+          "Robin Hood",
+          "Vlad",
+          "Artoria",
+          "Anne Bonny",
+          "Mordred"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Vlad",
+          "Anne Bonny",
+          "Robin Hood"
+        ],
+        "new_count": 3,
+        "selection_order": 9,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Story of Greece: Told to Boys and Girls",
+        "path": "The Story of Greece: Told to Boys and Girls.66070",
+        "servants": [
+          "Alexander",
+          "Perseus",
+          "Leonidas",
+          "Darius",
+          "Medusa"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Greek",
+        "new_servants": [
+          "Alexander",
+          "Leonidas",
+          "Perseus"
+        ],
+        "new_count": 3,
+        "selection_order": 10,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Collected Works in Verse and Prose of William Butler Yeats, Vol. 4 (of 8)",
+        "path": "The Collected Works in Verse and Prose of William Butler Yeats, Vol. 4 (of 8).49611",
+        "servants": [
+          "Diarmuid",
+          "William Tell",
+          "Cu Chulainn",
+          "Scathach"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Scathach",
+          "Diarmuid",
+          "William Tell"
+        ],
+        "new_count": 3,
+        "selection_order": 11,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Shakespeare's Roman plays and their background",
+        "path": "Shakespeare's Roman plays and their background.69937",
+        "servants": [
+          "Cleopatra",
+          "Shakespeare",
+          "Caesar"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Roman",
+        "new_servants": [
+          "Caesar",
+          "Cleopatra",
+          "Shakespeare"
+        ],
+        "new_count": 3,
+        "selection_order": 12,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Book of the Epic: The World's Great Epics Told in Story",
+        "path": "The Book of the Epic: The World's Great Epics Told in Story.13983",
+        "servants": [
+          "Galahad",
+          "Brynhild",
+          "Sigurd",
+          "Roland",
+          "Jason"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Literature",
+        "new_servants": [
+          "Galahad",
+          "Jason"
+        ],
+        "new_count": 2,
+        "selection_order": 13,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Hinduism and Buddhism, An Historical Sketch, Vol. 2",
+        "path": "Hinduism and Buddhism, An Historical Sketch, Vol. 2.16546",
+        "servants": [
+          "Karna",
+          "Rama",
+          "Arjuna",
+          "Xuanzang"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Indian",
+        "new_servants": [
+          "Rama",
+          "Xuanzang"
+        ],
+        "new_count": 2,
+        "selection_order": 14,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Supernatural in Modern English Fiction",
+        "path": "The Supernatural in Modern English Fiction.47204",
+        "servants": [
+          "Celtic Myths",
+          "Frankenstein",
+          "Vlad",
+          "Jekyll"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Jekyll",
+          "Frankenstein"
+        ],
+        "new_count": 2,
+        "selection_order": 15,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "A History of Rome to 565 A. D.",
+        "path": "A History of Rome to 565 A. D..32624",
+        "servants": [
+          "Spartacus",
+          "Caesar",
+          "Boudica"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Roman",
+        "new_servants": [
+          "Spartacus",
+          "Boudica"
+        ],
+        "new_count": 2,
+        "selection_order": 16,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Rebels and Reformers: Biographies for Young People",
+        "path": "Rebels and Reformers: Biographies for Young People.65267",
+        "servants": [
+          "Napoleon",
+          "Andersen"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Napoleon",
+          "Andersen"
+        ],
+        "new_count": 2,
+        "selection_order": 17,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Memories and Adventures",
+        "path": "Memories and Adventures.66991",
+        "servants": [
+          "Moriarty",
+          "Sherlock Holmes"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Moriarty",
+          "Sherlock Holmes"
+        ],
+        "new_count": 2,
+        "selection_order": 18,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "That Marvel—The Movie",
+        "path": "That Marvel—The Movie.66368",
+        "servants": [
+          "Edison",
+          "Edmond Dantes"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Edison",
+          "Edmond Dantes"
+        ],
+        "new_count": 2,
+        "selection_order": 19,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Great Events by Famous Historians, Volume 10",
+        "path": "The Great Events by Famous Historians, Volume 10.19893",
+        "servants": [
+          "Don Quixote",
+          "Drake"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Don Quixote",
+          "Drake"
+        ],
+        "new_count": 2,
+        "selection_order": 20,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Standard Operas: Their Plots, Their Music, and Their Composers",
+        "path": "The Standard Operas: Their Plots, Their Music, and Their Composers.14968",
+        "servants": [
+          "Phantom",
+          "Brynhild",
+          "Sigurd",
+          "Percival",
+          "Tristan"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Phantom"
+        ],
+        "new_count": 1,
+        "selection_order": 21,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Tales from Tennyson",
+        "path": "Tales from Tennyson.35598",
+        "servants": [
+          "Galahad",
+          "Merlin",
+          "Artoria",
+          "Lancelot"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Literature",
+        "new_servants": [
+          "Merlin"
+        ],
+        "new_count": 1,
+        "selection_order": 22,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The early history of the Hebrews",
+        "path": "The early history of the Hebrews.75324",
+        "servants": [
+          "David",
+          "Ozymandias",
+          "Ishtar"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "History",
+        "new_servants": [
+          "David"
+        ],
+        "new_count": 1,
+        "selection_order": 23,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Post-Augustan Poetry From Seneca to Juvenal",
+        "path": "Post-Augustan Poetry From Seneca to Juvenal.9303",
+        "servants": [
+          "Medea",
+          "Jason",
+          "Nero"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Nero"
+        ],
+        "new_count": 1,
+        "selection_order": 24,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Memoirs of the Court of Marie Antoinette, Queen of France, Complete",
+        "path": "Memoirs of the Court of Marie Antoinette, Queen of France, Complete.3891",
+        "servants": [
+          "Marie Antoinette",
+          "Anne Bonny"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Marie Antoinette"
+        ],
+        "new_count": 1,
+        "selection_order": 25,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "A History of Art for Beginners and Students: Painting, Sculpture, Architecture",
+        "path": "A History of Art for Beginners and Students: Painting, Sculpture, Architecture.24726",
+        "servants": [
+          "Ozymandias",
+          "Leonardo"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "History",
+        "new_servants": [
+          "Leonardo"
+        ],
+        "new_count": 1,
+        "selection_order": 26,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Heroines That Every Child Should Know",
+        "path": "Heroines That Every Child Should Know.35994",
+        "servants": [
+          "Florence Nightingale",
+          "Roland"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Florence Nightingale"
+        ],
+        "new_count": 1,
+        "selection_order": 27,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Boy's Book of New Inventions",
+        "path": "The Boy's Book of New Inventions.46232",
+        "servants": [
+          "Tesla",
+          "Edison"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Tesla"
+        ],
+        "new_count": 1,
+        "selection_order": 28,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "The Shaving of Shagpat; an Arabian entertainment — Complete",
+        "path": "The Shaving of Shagpat; an Arabian entertainment — Complete.4405",
+        "servants": [
+          "Scheherazade"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Scheherazade"
+        ],
+        "new_count": 1,
+        "selection_order": 29,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Blackbeard: Buccaneer",
+        "path": "Blackbeard: Buccaneer.25472",
+        "servants": [
+          "Blackbeard"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Blackbeard"
+        ],
+        "new_count": 1,
+        "selection_order": 30,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Poor Relations",
+        "path": "Poor Relations.38816",
+        "servants": [
+          "Jeanne d'Arc"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Jeanne d'Arc"
+        ],
+        "new_count": 1,
+        "selection_order": 31,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "Apache devil",
+        "path": "Apache devil.70101",
+        "servants": [
+          "Geronimo"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "new_servants": [
+          "Geronimo"
+        ],
+        "new_count": 1,
+        "selection_order": 32,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      },
+      {
+        "title": "History of \"Billy the Kid\"",
+        "path": "History of \"Billy the Kid\".38039",
+        "servants": [
+          "Billy the Kid"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "History",
+        "new_servants": [
+          "Billy the Kid"
+        ],
+        "new_count": 1,
+        "selection_order": 33,
+        "selection_reason": "non_overlap",
+        "tier": 1
+      }
+    ],
+    "tier2_high_coverage": [
+      {
+        "title": "A classical dictionary",
+        "path": "A classical dictionary.68769",
+        "servants": [
+          "Greek Myths",
+          "Hector",
+          "Odysseus",
+          "Achilles",
+          "Circe",
+          "Heracles",
+          "Darius",
+          "Medea",
+          "Jason"
+        ],
+        "servant_count": 9,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Epic and Romance: Essays on Medieval Literature",
+        "path": "Epic and Romance: Essays on Medieval Literature.20406",
+        "servants": [
+          "Celtic Myths",
+          "Odysseus",
+          "Norse Myths",
+          "Circe",
+          "Brynhild",
+          "Sigurd",
+          "Attila",
+          "Beowulf",
+          "Roland"
+        ],
+        "servant_count": 9,
+        "total_score": 0,
+        "category": "Roman",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "An Introduction to Mythology",
+        "path": "An Introduction to Mythology.45048",
+        "servants": [
+          "Celtic Myths",
+          "Greek Myths",
+          "Rama",
+          "Enkidu",
+          "Egyptian Myths",
+          "Norse Myths",
+          "Gilgamesh",
+          "Orion"
+        ],
+        "servant_count": 8,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "History of Greece, Volume 01 (of 12)",
+        "path": "History of Greece, Volume 01 (of 12).56342",
+        "servants": [
+          "Hector",
+          "Achilles",
+          "Odysseus",
+          "Theseus",
+          "Circe",
+          "Medea",
+          "Jason"
+        ],
+        "servant_count": 7,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Tales of Troy and Greece",
+        "path": "Tales of Troy and Greece.32326",
+        "servants": [
+          "Hector",
+          "Achilles",
+          "Odysseus",
+          "Perseus",
+          "Theseus",
+          "Circe",
+          "Jason"
+        ],
+        "servant_count": 7,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "The World of Homer",
+        "path": "The World of Homer.45896",
+        "servants": [
+          "Achilles",
+          "Odysseus",
+          "Theseus",
+          "Circe",
+          "Medea",
+          "Roland",
+          "Hector"
+        ],
+        "servant_count": 7,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "The Age of Chivalry",
+        "path": "The Age of Chivalry.4926",
+        "servants": [
+          "Greek Myths",
+          "Artoria",
+          "Cu Chulainn",
+          "Tristan",
+          "Gawain",
+          "Scathach"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "A Literary History of Ireland, from Earliest Times to the Present Day",
+        "path": "A Literary History of Ireland, from Earliest Times to the Present Day.53793",
+        "servants": [
+          "Celtic Myths",
+          "Diarmuid",
+          "Cu Chulainn",
+          "Fionn",
+          "Medb",
+          "Scathach"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Celtic",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Myths & Legends of the Celtic Race",
+        "path": "Myths & Legends of the Celtic Race.34081",
+        "servants": [
+          "Celtic Myths",
+          "Cu Chulainn",
+          "Boudica",
+          "Fionn",
+          "Medb",
+          "Scathach"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Celtic",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Richard Wagner His Life and His Dramas",
+        "path": "Richard Wagner His Life and His Dramas.44767",
+        "servants": [
+          "Siegfried",
+          "Norse Myths",
+          "Brynhild",
+          "Sigurd",
+          "Percival",
+          "Tristan"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "The Epic",
+        "path": "The Epic.10716",
+        "servants": [
+          "Achilles",
+          "Brynhild",
+          "Sigurd",
+          "Jason",
+          "Roland",
+          "Hector"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Famous Tales of Fact and Fancy",
+        "path": "Famous Tales of Fact and Fancy.24935",
+        "servants": [
+          "Perseus",
+          "Brynhild",
+          "Heracles",
+          "Beowulf",
+          "Jason",
+          "Medusa"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Literature",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Myths and Legends of All Nations",
+        "path": "Myths and Legends of All Nations.20740",
+        "servants": [
+          "Perseus",
+          "Brynhild",
+          "Heracles",
+          "Beowulf",
+          "Jason",
+          "Medusa"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "English Translations from the Greek: A Bibliographical Survey",
+        "path": "English Translations from the Greek: A Bibliographical Survey.48950",
+        "servants": [
+          "Hector",
+          "Achilles",
+          "Odysseus",
+          "Circe",
+          "Medea",
+          "Jason"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Gods and Heroes; or, The Kingdom of Jupiter",
+        "path": "Gods and Heroes; or, The Kingdom of Jupiter.45416",
+        "servants": [
+          "Perseus",
+          "Theseus",
+          "Heracles",
+          "Orion",
+          "Jason",
+          "Medusa"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "National Epics",
+        "path": "National Epics.8072",
+        "servants": [
+          "Rama",
+          "Arjuna",
+          "Siegfried",
+          "Astolfo",
+          "Beowulf",
+          "Roland"
+        ],
+        "servant_count": 6,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "1000 Mythological Characters Briefly Described",
+        "path": "1000 Mythological Characters Briefly Described.42474",
+        "servants": [
+          "Greek Myths",
+          "Egyptian Myths",
+          "Heracles",
+          "Jason",
+          "Medusa"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Studies on Homer and the Homeric Age, Vol. 2 of 3",
+        "path": "Studies on Homer and the Homeric Age, Vol. 2 of 3.49858",
+        "servants": [
+          "Greek Myths",
+          "Achilles",
+          "Odysseus",
+          "Circe",
+          "Hector"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Myths and Myth-Makers",
+        "path": "Myths and Myth-Makers.1061",
+        "servants": [
+          "Celtic Myths",
+          "Greek Myths",
+          "Achilles",
+          "Norse Myths",
+          "Hector"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "The music of the spheres : $b A nature lover's astronomy",
+        "path": "The music of the spheres : $b A nature lover's astronomy.70382",
+        "servants": [
+          "Greek Myths",
+          "Perseus",
+          "Heracles",
+          "Orion",
+          "Medusa"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "The literature of the Celts",
+        "path": "The literature of the Celts.76961",
+        "servants": [
+          "Celtic Myths",
+          "Norse Myths",
+          "Cu Chulainn",
+          "Fionn",
+          "Medb"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "The Religion of the Ancient Celts",
+        "path": "The Religion of the Ancient Celts.14672",
+        "servants": [
+          "Celtic Myths",
+          "Cu Chulainn",
+          "Boudica",
+          "Fionn",
+          "Medb"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "History",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Celtic Folklore: Welsh and Manx (Volume 2 of 2)",
+        "path": "Celtic Folklore: Welsh and Manx (Volume 2 of 2).55989",
+        "servants": [
+          "Celtic Myths",
+          "Artoria",
+          "Cu Chulainn",
+          "Mordred",
+          "Boudica"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Celtic",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Legends of the Middle Ages",
+        "path": "Legends of the Middle Ages.12455",
+        "servants": [
+          "Siegfried",
+          "Charlemagne",
+          "Brynhild",
+          "Beowulf",
+          "Roland"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Literature",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Young Folks' Treasury, Volume 2 (of 12)",
+        "path": "Young Folks' Treasury, Volume 2 (of 12).15202",
+        "servants": [
+          "Siegfried",
+          "Perseus",
+          "Brynhild",
+          "Heracles",
+          "Jason"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Literature",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Indian Myth and Legend",
+        "path": "Indian Myth and Legend.47228",
+        "servants": [
+          "Karna",
+          "Celtic Myths",
+          "Rama",
+          "Arjuna",
+          "Egyptian Myths"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Hero-Myths & Legends of the British Race",
+        "path": "Hero-Myths & Legends of the British Race.25502",
+        "servants": [
+          "Charlemagne",
+          "Cu Chulainn",
+          "Beowulf",
+          "Roland",
+          "Scathach"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "The Golden Fleece and The Heroes Who Lived Before Achilles",
+        "path": "The Golden Fleece and The Heroes Who Lived Before Achilles.37881",
+        "servants": [
+          "Achilles",
+          "Perseus",
+          "Theseus",
+          "Jason",
+          "Medusa"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "A Wonder Book and Tanglewood Tales, for Girls and Boys",
+        "path": "A Wonder Book and Tanglewood Tales, for Girls and Boys.35377",
+        "servants": [
+          "Perseus",
+          "Theseus",
+          "Heracles",
+          "Jason",
+          "Medusa"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Literature",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      },
+      {
+        "title": "Stories of the Old World",
+        "path": "Stories of the Old World.43982",
+        "servants": [
+          "Achilles",
+          "Odysseus",
+          "Heracles",
+          "Jason",
+          "Hector"
+        ],
+        "servant_count": 5,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "high_servant_coverage",
+        "tier": 2
+      }
+    ],
+    "tier3_new_categories": [
+      {
+        "title": "The Story of the Grail and the Passing of Arthur",
+        "path": "The Story of the Grail and the Passing of Arthur.60405",
+        "servants": [
+          "Galahad",
+          "Mordred",
+          "Artoria",
+          "Gawain"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Arthurian",
+        "selection_reason": "new_category_Arts",
+        "tier": 3,
+        "new_category": "Arts"
+      },
+      {
+        "title": "The Art and Craft of Printing",
+        "path": "The Art and Craft of Printing.31596",
+        "servants": [
+          "Mordred",
+          "Brynhild",
+          "Sigurd",
+          "Artoria"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Arts",
+        "tier": 3,
+        "new_category": "Arts"
+      },
+      {
+        "title": "The mythology of Greece and Rome, with special reference to its use in art",
+        "path": "The mythology of Greece and Rome, with special reference to its use in art.61901",
+        "servants": [
+          "Theseus",
+          "Greek Myths",
+          "Medusa"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Arts",
+        "tier": 3,
+        "new_category": "Arts"
+      },
+      {
+        "title": "Myths of northern lands : $b Narrated with special reference to literature and art",
+        "path": "Myths of northern lands : $b Narrated with special reference to literature and art.73021",
+        "servants": [
+          "Norse Myths",
+          "Brynhild",
+          "Sigurd"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Arts",
+        "tier": 3,
+        "new_category": "Arts"
+      },
+      {
+        "title": "Stories of the Wagner Opera",
+        "path": "Stories of the Wagner Opera.16840",
+        "servants": [
+          "Siegfried",
+          "Brynhild",
+          "Percival"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Arts",
+        "tier": 3,
+        "new_category": "Arts"
+      },
+      {
+        "title": "Introduction to the History of Religions",
+        "path": "Introduction to the History of Religions.27829",
+        "servants": [
+          "Gilgamesh",
+          "Egyptian Myths",
+          "Enkidu",
+          "Ishtar"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "History",
+        "selection_reason": "new_category_Religion",
+        "tier": 3,
+        "new_category": "Religion"
+      },
+      {
+        "title": "The Astronomy of the Bible",
+        "path": "The Astronomy of the Bible.28536",
+        "servants": [
+          "Gilgamesh",
+          "Enkidu",
+          "Orion",
+          "Ishtar"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Religion",
+        "tier": 3,
+        "new_category": "Religion"
+      },
+      {
+        "title": "Bible Myths and their Parallels in other Religions",
+        "path": "Bible Myths and their Parallels in other Religions.31885",
+        "servants": [
+          "Egyptian Myths",
+          "Greek Myths",
+          "Heracles"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Religion",
+        "tier": 3,
+        "new_category": "Religion"
+      },
+      {
+        "title": "The Bible, Douay-Rheims, Old Testament — Part 1",
+        "path": "The Bible, Douay-Rheims, Old Testament — Part 1.1609",
+        "servants": [
+          "David",
+          "Solomon",
+          "Ozymandias"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Religion",
+        "tier": 3,
+        "new_category": "Religion"
+      },
+      {
+        "title": "The Religion of Babylonia and Assyria",
+        "path": "The Religion of Babylonia and Assyria.20758",
+        "servants": [
+          "Gilgamesh",
+          "Enkidu",
+          "Ishtar"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Mesopotamian",
+        "selection_reason": "new_category_Religion",
+        "tier": 3,
+        "new_category": "Religion"
+      },
+      {
+        "title": "Myths of China and Japan",
+        "path": "Myths of China and Japan.67344",
+        "servants": [
+          "Karna",
+          "Egyptian Myths",
+          "Gilgamesh",
+          "Enkidu"
+        ],
+        "servant_count": 4,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Eastern",
+        "tier": 3,
+        "new_category": "Eastern"
+      },
+      {
+        "title": "A History of Babylon, from the Foundation of the Monarchy to the Persian Conquest",
+        "path": "A History of Babylon, from the Foundation of the Monarchy to the Persian Conquest.56667",
+        "servants": [
+          "Gilgamesh",
+          "Enkidu",
+          "Ishtar"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Mesopotamian",
+        "selection_reason": "new_category_Eastern",
+        "tier": 3,
+        "new_category": "Eastern"
+      },
+      {
+        "title": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 2 (of 2)",
+        "path": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 2 (of 2).42551",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Asian",
+        "selection_reason": "new_category_Eastern",
+        "tier": 3,
+        "new_category": "Eastern"
+      },
+      {
+        "title": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 1 (of 2)",
+        "path": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 1 (of 2).39009",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Asian",
+        "selection_reason": "new_category_Eastern",
+        "tier": 3,
+        "new_category": "Eastern"
+      },
+      {
+        "title": "The Influence of India and Persia on the Poetry of Germany",
+        "path": "The Influence of India and Persia on the Poetry of Germany.17928",
+        "servants": [
+          "Karna",
+          "Arjuna"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Indian",
+        "selection_reason": "new_category_Eastern",
+        "tier": 3,
+        "new_category": "Eastern"
+      },
+      {
+        "title": "Heathen mythology, Illustrated by extracts from the most celebrated writers, both ancient and modern",
+        "path": "Heathen mythology, Illustrated by extracts from the most celebrated writers, both ancient and modern.34170",
+        "servants": [
+          "Theseus",
+          "Greek Myths",
+          "Medusa"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Modern History",
+        "tier": 3,
+        "new_category": "Modern History"
+      },
+      {
+        "title": "Persian Literature, Ancient and Modern",
+        "path": "Persian Literature, Ancient and Modern.56248",
+        "servants": [
+          "Darius",
+          "Rama",
+          "Ishtar"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "History",
+        "selection_reason": "new_category_Modern History",
+        "tier": 3,
+        "new_category": "Modern History"
+      },
+      {
+        "title": "Modern Prose And Poetry; For Secondary Schools",
+        "path": "Modern Prose And Poetry; For Secondary Schools.17160",
+        "servants": [
+          "Greek Myths",
+          "Ozymandias"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Modern History",
+        "tier": 3,
+        "new_category": "Modern History"
+      },
+      {
+        "title": "Modern Musical Drift",
+        "path": "Modern Musical Drift.54426",
+        "servants": [
+          "Percival",
+          "Tristan"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Modern History",
+        "tier": 3,
+        "new_category": "Modern History"
+      },
+      {
+        "title": "Aspects of Modern Opera: Estimates and Inquiries",
+        "path": "Aspects of Modern Opera: Estimates and Inquiries.38268",
+        "servants": [
+          "Salome",
+          "Tristan"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Modern History",
+        "tier": 3,
+        "new_category": "Modern History"
+      },
+      {
+        "title": "Queer questions and ready replies : $b A collection of four hundred questions in history, geography, biography, mythology, philosophy, natural history, science, philology, etc., etc., with their answers",
+        "path": "Queer questions and ready replies : $b A collection of four hundred questions in history, geography, biography, mythology, philosophy, natural history, science, philology, etc., etc., with their answers.71466",
+        "servants": [
+          "Celtic Myths",
+          "Greek Myths",
+          "Xuanzang"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Science",
+        "tier": 3,
+        "new_category": "Science"
+      },
+      {
+        "title": "Folklore as an Historical Science",
+        "path": "Folklore as an Historical Science.21852",
+        "servants": [
+          "Celtic Myths",
+          "Boudica"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Literature",
+        "selection_reason": "new_category_Science",
+        "tier": 3,
+        "new_category": "Science"
+      },
+      {
+        "title": "The Story of Great Inventions",
+        "path": "The Story of Great Inventions.37609",
+        "servants": [
+          "Tesla",
+          "Edison"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Literature",
+        "selection_reason": "new_category_Science",
+        "tier": 3,
+        "new_category": "Science"
+      },
+      {
+        "title": "Machine-Gun Tactics",
+        "path": "Machine-Gun Tactics.66305",
+        "servants": [
+          "Diarmuid"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Science",
+        "tier": 3,
+        "new_category": "Science"
+      },
+      {
+        "title": "Lippincott's Magazine of Popular Literature and Science, Volume 26, July 1880.",
+        "path": "Lippincott's Magazine of Popular Literature and Science, Volume 26, July 1880..31365",
+        "servants": [
+          "Ozymandias"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Science",
+        "tier": 3,
+        "new_category": "Science"
+      },
+      {
+        "title": "Life of Wagner",
+        "path": "Life of Wagner.31526",
+        "servants": [
+          "Siegfried",
+          "Percival",
+          "Tristan"
+        ],
+        "servant_count": 3,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Biography",
+        "tier": 3,
+        "new_category": "Biography"
+      },
+      {
+        "title": "A Life of William Shakespeare",
+        "path": "A Life of William Shakespeare.23464",
+        "servants": [
+          "Greek Myths",
+          "Shakespeare"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Biography",
+        "tier": 3,
+        "new_category": "Biography"
+      },
+      {
+        "title": "The life of Isambard Kingdom Brunel, Civil Engineer",
+        "path": "The life of Isambard Kingdom Brunel, Civil Engineer.41210",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Biography",
+        "tier": 3,
+        "new_category": "Biography"
+      },
+      {
+        "title": "The Life of St. Mochuda of Lismore",
+        "path": "The Life of St. Mochuda of Lismore.10937",
+        "servants": [
+          "Diarmuid"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Biography",
+        "tier": 3,
+        "new_category": "Biography"
+      },
+      {
+        "title": "Life of St. Declan of Ardmore and Life of St. Mochuda of Lismore",
+        "path": "Life of St. Declan of Ardmore and Life of St. Mochuda of Lismore.11168",
+        "servants": [
+          "Diarmuid"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Biography",
+        "tier": 3,
+        "new_category": "Biography"
+      },
+      {
+        "title": "Where the forest murmurs : $b Nature essays",
+        "path": "Where the forest murmurs : $b Nature essays.70192",
+        "servants": [
+          "Fionn",
+          "Orion"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Literary Criticism",
+        "tier": 3,
+        "new_category": "Literary Criticism"
+      },
+      {
+        "title": "Elementary Guide to Literary Criticism",
+        "path": "Elementary Guide to Literary Criticism.24326",
+        "servants": [
+          "Mordred",
+          "Artoria"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Literary Criticism",
+        "tier": 3,
+        "new_category": "Literary Criticism"
+      },
+      {
+        "title": "The Humour of Homer and Other Essays",
+        "path": "The Humour of Homer and Other Essays.12651",
+        "servants": [
+          "Circe",
+          "Odysseus"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Literary Criticism",
+        "tier": 3,
+        "new_category": "Literary Criticism"
+      },
+      {
+        "title": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 1 (of 3)",
+        "path": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 1 (of 3).65030",
+        "servants": [
+          "Astolfo",
+          "Dante"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Literary Criticism",
+        "tier": 3,
+        "new_category": "Literary Criticism"
+      },
+      {
+        "title": "Essays of Robert Louis Stevenson",
+        "path": "Essays of Robert Louis Stevenson.10761",
+        "servants": [
+          "Jekyll",
+          "Edmond Dantes"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Literary Criticism",
+        "tier": 3,
+        "new_category": "Literary Criticism"
+      },
+      {
+        "title": "Travels and discoveries in North and Central Africa : $b Including accounts of Tripoli, the Sahara, the remarkable kingdom of Bornu, and the countries around Lake Chad",
+        "path": "Travels and discoveries in North and Central Africa : $b Including accounts of Tripoli, the Sahara, the remarkable kingdom of Bornu, and the countries around Lake Chad.73138",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Exploration",
+        "tier": 3,
+        "new_category": "Exploration"
+      },
+      {
+        "title": "Travels in southern Abyssinia, Volume 1 (of 2) : $b through the country of Adal to the kingdom of Shoa",
+        "path": "Travels in southern Abyssinia, Volume 1 (of 2) : $b through the country of Adal to the kingdom of Shoa.72155",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Exploration",
+        "tier": 3,
+        "new_category": "Exploration"
+      },
+      {
+        "title": "The Cotton Kingdom, volume 1 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States",
+        "path": "The Cotton Kingdom, volume 1 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States.72676",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Exploration",
+        "tier": 3,
+        "new_category": "Exploration"
+      },
+      {
+        "title": "Travels in southern Abyssinia, Volume 2 (of 2) : $b through the country of Adal to the kingdom of Shoa",
+        "path": "Travels in southern Abyssinia, Volume 2 (of 2) : $b through the country of Adal to the kingdom of Shoa.73260",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Exploration",
+        "tier": 3,
+        "new_category": "Exploration"
+      },
+      {
+        "title": "The Cotton Kingdom, volume 2 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States",
+        "path": "The Cotton Kingdom, volume 2 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States.72677",
+        "servants": [
+          "Lu Bu",
+          "Zhuge Liang"
+        ],
+        "servant_count": 2,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Exploration",
+        "tier": 3,
+        "new_category": "Exploration"
+      },
+      {
+        "title": "Primitive culture, vol. 1 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom",
+        "path": "Primitive culture, vol. 1 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom.70458",
+        "servants": [
+          "Greek Myths"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Philosophy",
+        "tier": 3,
+        "new_category": "Philosophy"
+      },
+      {
+        "title": "Primitive culture, vol. 2 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom",
+        "path": "Primitive culture, vol. 2 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom.70484",
+        "servants": [
+          "Greek Myths"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Philosophy",
+        "tier": 3,
+        "new_category": "Philosophy"
+      },
+      {
+        "title": "The Funny Philosophers, or Wags and Sweethearts.  A Novel",
+        "path": "The Funny Philosophers, or Wags and Sweethearts.  A Novel.35599",
+        "servants": [
+          "Heracles"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Philosophy",
+        "tier": 3,
+        "new_category": "Philosophy"
+      },
+      {
+        "title": "Feminism in Greek Literature from Homer to Aristotle",
+        "path": "Feminism in Greek Literature from Homer to Aristotle.59205",
+        "servants": [
+          "Medea"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Greek",
+        "selection_reason": "new_category_Philosophy",
+        "tier": 3,
+        "new_category": "Philosophy"
+      },
+      {
+        "title": "A Woman's Philosophy of Woman; or, Woman affranchised.",
+        "path": "A Woman's Philosophy of Woman; or, Woman affranchised..53937",
+        "servants": [
+          "Phantom"
+        ],
+        "servant_count": 1,
+        "total_score": 0,
+        "category": "Other",
+        "selection_reason": "new_category_Philosophy",
+        "tier": 3,
+        "new_category": "Philosophy"
+      }
+    ]
+  },
+  "all_books": [
+    {
+      "title": "The Classic Myths in English Literature and in Art (2nd ed.) (1911)",
+      "path": "The Classic Myths in English Literature and in Art (2nd ed.) (1911).46063",
+      "servants": [
+        "Greek Myths",
+        "Odysseus",
+        "Siegfried",
+        "Norse Myths",
+        "Theseus",
+        "Circe",
+        "Brynhild",
+        "Heracles",
+        "Sigurd",
+        "Orion",
+        "Medea",
+        "Medusa"
+      ],
+      "servant_count": 12,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Medusa",
+        "Orion",
+        "Heracles",
+        "Sigurd",
+        "Medea",
+        "Greek Myths",
+        "Norse Myths",
+        "Circe",
+        "Brynhild",
+        "Theseus",
+        "Odysseus",
+        "Siegfried"
+      ],
+      "new_count": 12,
+      "selection_order": 1,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Myths of Babylonia and Assyria",
+      "path": "Myths of Babylonia and Assyria.16653",
+      "servants": [
+        "Karna",
+        "Celtic Myths",
+        "Enkidu",
+        "Arjuna",
+        "Egyptian Myths",
+        "Gilgamesh",
+        "Orion",
+        "Ishtar"
+      ],
+      "servant_count": 8,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Celtic Myths",
+        "Enkidu",
+        "Ishtar",
+        "Gilgamesh",
+        "Arjuna",
+        "Egyptian Myths",
+        "Karna"
+      ],
+      "new_count": 7,
+      "selection_order": 2,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Chronology of Ancient Kingdoms Amended",
+      "path": "The Chronology of Ancient Kingdoms Amended.15784",
+      "servants": [
+        "Solomon",
+        "Nitocris",
+        "Lu Bu",
+        "Ozymandias",
+        "Zhuge Liang",
+        "Darius"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "Zhuge Liang",
+        "Ozymandias",
+        "Nitocris",
+        "Lu Bu",
+        "Solomon",
+        "Darius"
+      ],
+      "new_count": 6,
+      "selection_order": 3,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Mythology of the British Islands",
+      "path": "The Mythology of the British Islands.54616",
+      "servants": [
+        "Celtic Myths",
+        "Greek Myths",
+        "Artoria",
+        "Cu Chulainn",
+        "Mordred",
+        "Fionn",
+        "Medb"
+      ],
+      "servant_count": 7,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Artoria",
+        "Fionn",
+        "Cu Chulainn",
+        "Mordred",
+        "Medb"
+      ],
+      "new_count": 5,
+      "selection_order": 4,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Heroic Age",
+      "path": "The Heroic Age.48426",
+      "servants": [
+        "Achilles",
+        "Odysseus",
+        "Siegfried",
+        "Norse Myths",
+        "Circe",
+        "Attila",
+        "Beowulf",
+        "Hector"
+      ],
+      "servant_count": 8,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Beowulf",
+        "Achilles",
+        "Hector",
+        "Attila"
+      ],
+      "new_count": 4,
+      "selection_order": 5,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Complete Opera Book",
+      "path": "The Complete Opera Book.40540",
+      "servants": [
+        "Siegfried",
+        "Musashi",
+        "Percival",
+        "Salome",
+        "Tristan"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Musashi",
+        "Tristan",
+        "Salome",
+        "Percival"
+      ],
+      "new_count": 4,
+      "selection_order": 6,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Renaissance in Italy, Volume 4 (of 7)",
+      "path": "Renaissance in Italy, Volume 4 (of 7).35792",
+      "servants": [
+        "Astolfo",
+        "Dante",
+        "Charlemagne",
+        "Roland"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Astolfo",
+        "Charlemagne",
+        "Roland",
+        "Dante"
+      ],
+      "new_count": 4,
+      "selection_order": 7,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Book of Romance",
+      "path": "The Book of Romance.26646",
+      "servants": [
+        "Morgan",
+        "Lancelot",
+        "Gawain",
+        "Mordred",
+        "Fionn"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Roman",
+      "new_servants": [
+        "Gawain",
+        "Lancelot",
+        "Morgan"
+      ],
+      "new_count": 3,
+      "selection_order": 8,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The English and Scottish popular ballads, volume 5 (of 5)",
+      "path": "The English and Scottish popular ballads, volume 5 (of 5).71104",
+      "servants": [
+        "Robin Hood",
+        "Vlad",
+        "Artoria",
+        "Anne Bonny",
+        "Mordred"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Vlad",
+        "Anne Bonny",
+        "Robin Hood"
+      ],
+      "new_count": 3,
+      "selection_order": 9,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Story of Greece: Told to Boys and Girls",
+      "path": "The Story of Greece: Told to Boys and Girls.66070",
+      "servants": [
+        "Alexander",
+        "Perseus",
+        "Leonidas",
+        "Darius",
+        "Medusa"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Greek",
+      "new_servants": [
+        "Alexander",
+        "Leonidas",
+        "Perseus"
+      ],
+      "new_count": 3,
+      "selection_order": 10,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Collected Works in Verse and Prose of William Butler Yeats, Vol. 4 (of 8)",
+      "path": "The Collected Works in Verse and Prose of William Butler Yeats, Vol. 4 (of 8).49611",
+      "servants": [
+        "Diarmuid",
+        "William Tell",
+        "Cu Chulainn",
+        "Scathach"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Scathach",
+        "Diarmuid",
+        "William Tell"
+      ],
+      "new_count": 3,
+      "selection_order": 11,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Shakespeare's Roman plays and their background",
+      "path": "Shakespeare's Roman plays and their background.69937",
+      "servants": [
+        "Cleopatra",
+        "Shakespeare",
+        "Caesar"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Roman",
+      "new_servants": [
+        "Caesar",
+        "Cleopatra",
+        "Shakespeare"
+      ],
+      "new_count": 3,
+      "selection_order": 12,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Book of the Epic: The World's Great Epics Told in Story",
+      "path": "The Book of the Epic: The World's Great Epics Told in Story.13983",
+      "servants": [
+        "Galahad",
+        "Brynhild",
+        "Sigurd",
+        "Roland",
+        "Jason"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Literature",
+      "new_servants": [
+        "Galahad",
+        "Jason"
+      ],
+      "new_count": 2,
+      "selection_order": 13,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Hinduism and Buddhism, An Historical Sketch, Vol. 2",
+      "path": "Hinduism and Buddhism, An Historical Sketch, Vol. 2.16546",
+      "servants": [
+        "Karna",
+        "Rama",
+        "Arjuna",
+        "Xuanzang"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Indian",
+      "new_servants": [
+        "Rama",
+        "Xuanzang"
+      ],
+      "new_count": 2,
+      "selection_order": 14,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Supernatural in Modern English Fiction",
+      "path": "The Supernatural in Modern English Fiction.47204",
+      "servants": [
+        "Celtic Myths",
+        "Frankenstein",
+        "Vlad",
+        "Jekyll"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Jekyll",
+        "Frankenstein"
+      ],
+      "new_count": 2,
+      "selection_order": 15,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "A History of Rome to 565 A. D.",
+      "path": "A History of Rome to 565 A. D..32624",
+      "servants": [
+        "Spartacus",
+        "Caesar",
+        "Boudica"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Roman",
+      "new_servants": [
+        "Spartacus",
+        "Boudica"
+      ],
+      "new_count": 2,
+      "selection_order": 16,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Rebels and Reformers: Biographies for Young People",
+      "path": "Rebels and Reformers: Biographies for Young People.65267",
+      "servants": [
+        "Napoleon",
+        "Andersen"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Napoleon",
+        "Andersen"
+      ],
+      "new_count": 2,
+      "selection_order": 17,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Memories and Adventures",
+      "path": "Memories and Adventures.66991",
+      "servants": [
+        "Moriarty",
+        "Sherlock Holmes"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Moriarty",
+        "Sherlock Holmes"
+      ],
+      "new_count": 2,
+      "selection_order": 18,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "That Marvel—The Movie",
+      "path": "That Marvel—The Movie.66368",
+      "servants": [
+        "Edison",
+        "Edmond Dantes"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Edison",
+        "Edmond Dantes"
+      ],
+      "new_count": 2,
+      "selection_order": 19,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Great Events by Famous Historians, Volume 10",
+      "path": "The Great Events by Famous Historians, Volume 10.19893",
+      "servants": [
+        "Don Quixote",
+        "Drake"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Don Quixote",
+        "Drake"
+      ],
+      "new_count": 2,
+      "selection_order": 20,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Standard Operas: Their Plots, Their Music, and Their Composers",
+      "path": "The Standard Operas: Their Plots, Their Music, and Their Composers.14968",
+      "servants": [
+        "Phantom",
+        "Brynhild",
+        "Sigurd",
+        "Percival",
+        "Tristan"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Phantom"
+      ],
+      "new_count": 1,
+      "selection_order": 21,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Tales from Tennyson",
+      "path": "Tales from Tennyson.35598",
+      "servants": [
+        "Galahad",
+        "Merlin",
+        "Artoria",
+        "Lancelot"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Literature",
+      "new_servants": [
+        "Merlin"
+      ],
+      "new_count": 1,
+      "selection_order": 22,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The early history of the Hebrews",
+      "path": "The early history of the Hebrews.75324",
+      "servants": [
+        "David",
+        "Ozymandias",
+        "Ishtar"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "David"
+      ],
+      "new_count": 1,
+      "selection_order": 23,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Post-Augustan Poetry From Seneca to Juvenal",
+      "path": "Post-Augustan Poetry From Seneca to Juvenal.9303",
+      "servants": [
+        "Medea",
+        "Jason",
+        "Nero"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Nero"
+      ],
+      "new_count": 1,
+      "selection_order": 24,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Memoirs of the Court of Marie Antoinette, Queen of France, Complete",
+      "path": "Memoirs of the Court of Marie Antoinette, Queen of France, Complete.3891",
+      "servants": [
+        "Marie Antoinette",
+        "Anne Bonny"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Marie Antoinette"
+      ],
+      "new_count": 1,
+      "selection_order": 25,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "A History of Art for Beginners and Students: Painting, Sculpture, Architecture",
+      "path": "A History of Art for Beginners and Students: Painting, Sculpture, Architecture.24726",
+      "servants": [
+        "Ozymandias",
+        "Leonardo"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "Leonardo"
+      ],
+      "new_count": 1,
+      "selection_order": 26,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Heroines That Every Child Should Know",
+      "path": "Heroines That Every Child Should Know.35994",
+      "servants": [
+        "Florence Nightingale",
+        "Roland"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Florence Nightingale"
+      ],
+      "new_count": 1,
+      "selection_order": 27,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Boy's Book of New Inventions",
+      "path": "The Boy's Book of New Inventions.46232",
+      "servants": [
+        "Tesla",
+        "Edison"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Tesla"
+      ],
+      "new_count": 1,
+      "selection_order": 28,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "The Shaving of Shagpat; an Arabian entertainment — Complete",
+      "path": "The Shaving of Shagpat; an Arabian entertainment — Complete.4405",
+      "servants": [
+        "Scheherazade"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Scheherazade"
+      ],
+      "new_count": 1,
+      "selection_order": 29,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Blackbeard: Buccaneer",
+      "path": "Blackbeard: Buccaneer.25472",
+      "servants": [
+        "Blackbeard"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Blackbeard"
+      ],
+      "new_count": 1,
+      "selection_order": 30,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Poor Relations",
+      "path": "Poor Relations.38816",
+      "servants": [
+        "Jeanne d'Arc"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Jeanne d'Arc"
+      ],
+      "new_count": 1,
+      "selection_order": 31,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "Apache devil",
+      "path": "Apache devil.70101",
+      "servants": [
+        "Geronimo"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "new_servants": [
+        "Geronimo"
+      ],
+      "new_count": 1,
+      "selection_order": 32,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "History of \"Billy the Kid\"",
+      "path": "History of \"Billy the Kid\".38039",
+      "servants": [
+        "Billy the Kid"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "History",
+      "new_servants": [
+        "Billy the Kid"
+      ],
+      "new_count": 1,
+      "selection_order": 33,
+      "selection_reason": "non_overlap",
+      "tier": 1
+    },
+    {
+      "title": "A classical dictionary",
+      "path": "A classical dictionary.68769",
+      "servants": [
+        "Greek Myths",
+        "Hector",
+        "Odysseus",
+        "Achilles",
+        "Circe",
+        "Heracles",
+        "Darius",
+        "Medea",
+        "Jason"
+      ],
+      "servant_count": 9,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Epic and Romance: Essays on Medieval Literature",
+      "path": "Epic and Romance: Essays on Medieval Literature.20406",
+      "servants": [
+        "Celtic Myths",
+        "Odysseus",
+        "Norse Myths",
+        "Circe",
+        "Brynhild",
+        "Sigurd",
+        "Attila",
+        "Beowulf",
+        "Roland"
+      ],
+      "servant_count": 9,
+      "total_score": 0,
+      "category": "Roman",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "An Introduction to Mythology",
+      "path": "An Introduction to Mythology.45048",
+      "servants": [
+        "Celtic Myths",
+        "Greek Myths",
+        "Rama",
+        "Enkidu",
+        "Egyptian Myths",
+        "Norse Myths",
+        "Gilgamesh",
+        "Orion"
+      ],
+      "servant_count": 8,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "History of Greece, Volume 01 (of 12)",
+      "path": "History of Greece, Volume 01 (of 12).56342",
+      "servants": [
+        "Hector",
+        "Achilles",
+        "Odysseus",
+        "Theseus",
+        "Circe",
+        "Medea",
+        "Jason"
+      ],
+      "servant_count": 7,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Tales of Troy and Greece",
+      "path": "Tales of Troy and Greece.32326",
+      "servants": [
+        "Hector",
+        "Achilles",
+        "Odysseus",
+        "Perseus",
+        "Theseus",
+        "Circe",
+        "Jason"
+      ],
+      "servant_count": 7,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The World of Homer",
+      "path": "The World of Homer.45896",
+      "servants": [
+        "Achilles",
+        "Odysseus",
+        "Theseus",
+        "Circe",
+        "Medea",
+        "Roland",
+        "Hector"
+      ],
+      "servant_count": 7,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The Age of Chivalry",
+      "path": "The Age of Chivalry.4926",
+      "servants": [
+        "Greek Myths",
+        "Artoria",
+        "Cu Chulainn",
+        "Tristan",
+        "Gawain",
+        "Scathach"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "A Literary History of Ireland, from Earliest Times to the Present Day",
+      "path": "A Literary History of Ireland, from Earliest Times to the Present Day.53793",
+      "servants": [
+        "Celtic Myths",
+        "Diarmuid",
+        "Cu Chulainn",
+        "Fionn",
+        "Medb",
+        "Scathach"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Celtic",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Myths & Legends of the Celtic Race",
+      "path": "Myths & Legends of the Celtic Race.34081",
+      "servants": [
+        "Celtic Myths",
+        "Cu Chulainn",
+        "Boudica",
+        "Fionn",
+        "Medb",
+        "Scathach"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Celtic",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Richard Wagner His Life and His Dramas",
+      "path": "Richard Wagner His Life and His Dramas.44767",
+      "servants": [
+        "Siegfried",
+        "Norse Myths",
+        "Brynhild",
+        "Sigurd",
+        "Percival",
+        "Tristan"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The Epic",
+      "path": "The Epic.10716",
+      "servants": [
+        "Achilles",
+        "Brynhild",
+        "Sigurd",
+        "Jason",
+        "Roland",
+        "Hector"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Famous Tales of Fact and Fancy",
+      "path": "Famous Tales of Fact and Fancy.24935",
+      "servants": [
+        "Perseus",
+        "Brynhild",
+        "Heracles",
+        "Beowulf",
+        "Jason",
+        "Medusa"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Literature",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Myths and Legends of All Nations",
+      "path": "Myths and Legends of All Nations.20740",
+      "servants": [
+        "Perseus",
+        "Brynhild",
+        "Heracles",
+        "Beowulf",
+        "Jason",
+        "Medusa"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "English Translations from the Greek: A Bibliographical Survey",
+      "path": "English Translations from the Greek: A Bibliographical Survey.48950",
+      "servants": [
+        "Hector",
+        "Achilles",
+        "Odysseus",
+        "Circe",
+        "Medea",
+        "Jason"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Gods and Heroes; or, The Kingdom of Jupiter",
+      "path": "Gods and Heroes; or, The Kingdom of Jupiter.45416",
+      "servants": [
+        "Perseus",
+        "Theseus",
+        "Heracles",
+        "Orion",
+        "Jason",
+        "Medusa"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "National Epics",
+      "path": "National Epics.8072",
+      "servants": [
+        "Rama",
+        "Arjuna",
+        "Siegfried",
+        "Astolfo",
+        "Beowulf",
+        "Roland"
+      ],
+      "servant_count": 6,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "1000 Mythological Characters Briefly Described",
+      "path": "1000 Mythological Characters Briefly Described.42474",
+      "servants": [
+        "Greek Myths",
+        "Egyptian Myths",
+        "Heracles",
+        "Jason",
+        "Medusa"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Studies on Homer and the Homeric Age, Vol. 2 of 3",
+      "path": "Studies on Homer and the Homeric Age, Vol. 2 of 3.49858",
+      "servants": [
+        "Greek Myths",
+        "Achilles",
+        "Odysseus",
+        "Circe",
+        "Hector"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Myths and Myth-Makers",
+      "path": "Myths and Myth-Makers.1061",
+      "servants": [
+        "Celtic Myths",
+        "Greek Myths",
+        "Achilles",
+        "Norse Myths",
+        "Hector"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The music of the spheres : $b A nature lover's astronomy",
+      "path": "The music of the spheres : $b A nature lover's astronomy.70382",
+      "servants": [
+        "Greek Myths",
+        "Perseus",
+        "Heracles",
+        "Orion",
+        "Medusa"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The literature of the Celts",
+      "path": "The literature of the Celts.76961",
+      "servants": [
+        "Celtic Myths",
+        "Norse Myths",
+        "Cu Chulainn",
+        "Fionn",
+        "Medb"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The Religion of the Ancient Celts",
+      "path": "The Religion of the Ancient Celts.14672",
+      "servants": [
+        "Celtic Myths",
+        "Cu Chulainn",
+        "Boudica",
+        "Fionn",
+        "Medb"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "History",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Celtic Folklore: Welsh and Manx (Volume 2 of 2)",
+      "path": "Celtic Folklore: Welsh and Manx (Volume 2 of 2).55989",
+      "servants": [
+        "Celtic Myths",
+        "Artoria",
+        "Cu Chulainn",
+        "Mordred",
+        "Boudica"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Celtic",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Legends of the Middle Ages",
+      "path": "Legends of the Middle Ages.12455",
+      "servants": [
+        "Siegfried",
+        "Charlemagne",
+        "Brynhild",
+        "Beowulf",
+        "Roland"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Literature",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Young Folks' Treasury, Volume 2 (of 12)",
+      "path": "Young Folks' Treasury, Volume 2 (of 12).15202",
+      "servants": [
+        "Siegfried",
+        "Perseus",
+        "Brynhild",
+        "Heracles",
+        "Jason"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Literature",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Indian Myth and Legend",
+      "path": "Indian Myth and Legend.47228",
+      "servants": [
+        "Karna",
+        "Celtic Myths",
+        "Rama",
+        "Arjuna",
+        "Egyptian Myths"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Hero-Myths & Legends of the British Race",
+      "path": "Hero-Myths & Legends of the British Race.25502",
+      "servants": [
+        "Charlemagne",
+        "Cu Chulainn",
+        "Beowulf",
+        "Roland",
+        "Scathach"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The Golden Fleece and The Heroes Who Lived Before Achilles",
+      "path": "The Golden Fleece and The Heroes Who Lived Before Achilles.37881",
+      "servants": [
+        "Achilles",
+        "Perseus",
+        "Theseus",
+        "Jason",
+        "Medusa"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "A Wonder Book and Tanglewood Tales, for Girls and Boys",
+      "path": "A Wonder Book and Tanglewood Tales, for Girls and Boys.35377",
+      "servants": [
+        "Perseus",
+        "Theseus",
+        "Heracles",
+        "Jason",
+        "Medusa"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Literature",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "Stories of the Old World",
+      "path": "Stories of the Old World.43982",
+      "servants": [
+        "Achilles",
+        "Odysseus",
+        "Heracles",
+        "Jason",
+        "Hector"
+      ],
+      "servant_count": 5,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "high_servant_coverage",
+      "tier": 2
+    },
+    {
+      "title": "The Story of the Grail and the Passing of Arthur",
+      "path": "The Story of the Grail and the Passing of Arthur.60405",
+      "servants": [
+        "Galahad",
+        "Mordred",
+        "Artoria",
+        "Gawain"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Arthurian",
+      "selection_reason": "new_category_Arts",
+      "tier": 3,
+      "new_category": "Arts"
+    },
+    {
+      "title": "The Art and Craft of Printing",
+      "path": "The Art and Craft of Printing.31596",
+      "servants": [
+        "Mordred",
+        "Brynhild",
+        "Sigurd",
+        "Artoria"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Arts",
+      "tier": 3,
+      "new_category": "Arts"
+    },
+    {
+      "title": "The mythology of Greece and Rome, with special reference to its use in art",
+      "path": "The mythology of Greece and Rome, with special reference to its use in art.61901",
+      "servants": [
+        "Theseus",
+        "Greek Myths",
+        "Medusa"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Arts",
+      "tier": 3,
+      "new_category": "Arts"
+    },
+    {
+      "title": "Myths of northern lands : $b Narrated with special reference to literature and art",
+      "path": "Myths of northern lands : $b Narrated with special reference to literature and art.73021",
+      "servants": [
+        "Norse Myths",
+        "Brynhild",
+        "Sigurd"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Arts",
+      "tier": 3,
+      "new_category": "Arts"
+    },
+    {
+      "title": "Stories of the Wagner Opera",
+      "path": "Stories of the Wagner Opera.16840",
+      "servants": [
+        "Siegfried",
+        "Brynhild",
+        "Percival"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Arts",
+      "tier": 3,
+      "new_category": "Arts"
+    },
+    {
+      "title": "Introduction to the History of Religions",
+      "path": "Introduction to the History of Religions.27829",
+      "servants": [
+        "Gilgamesh",
+        "Egyptian Myths",
+        "Enkidu",
+        "Ishtar"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "History",
+      "selection_reason": "new_category_Religion",
+      "tier": 3,
+      "new_category": "Religion"
+    },
+    {
+      "title": "The Astronomy of the Bible",
+      "path": "The Astronomy of the Bible.28536",
+      "servants": [
+        "Gilgamesh",
+        "Enkidu",
+        "Orion",
+        "Ishtar"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Religion",
+      "tier": 3,
+      "new_category": "Religion"
+    },
+    {
+      "title": "Bible Myths and their Parallels in other Religions",
+      "path": "Bible Myths and their Parallels in other Religions.31885",
+      "servants": [
+        "Egyptian Myths",
+        "Greek Myths",
+        "Heracles"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Religion",
+      "tier": 3,
+      "new_category": "Religion"
+    },
+    {
+      "title": "The Bible, Douay-Rheims, Old Testament — Part 1",
+      "path": "The Bible, Douay-Rheims, Old Testament — Part 1.1609",
+      "servants": [
+        "David",
+        "Solomon",
+        "Ozymandias"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Religion",
+      "tier": 3,
+      "new_category": "Religion"
+    },
+    {
+      "title": "The Religion of Babylonia and Assyria",
+      "path": "The Religion of Babylonia and Assyria.20758",
+      "servants": [
+        "Gilgamesh",
+        "Enkidu",
+        "Ishtar"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Mesopotamian",
+      "selection_reason": "new_category_Religion",
+      "tier": 3,
+      "new_category": "Religion"
+    },
+    {
+      "title": "Myths of China and Japan",
+      "path": "Myths of China and Japan.67344",
+      "servants": [
+        "Karna",
+        "Egyptian Myths",
+        "Gilgamesh",
+        "Enkidu"
+      ],
+      "servant_count": 4,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Eastern",
+      "tier": 3,
+      "new_category": "Eastern"
+    },
+    {
+      "title": "A History of Babylon, from the Foundation of the Monarchy to the Persian Conquest",
+      "path": "A History of Babylon, from the Foundation of the Monarchy to the Persian Conquest.56667",
+      "servants": [
+        "Gilgamesh",
+        "Enkidu",
+        "Ishtar"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Mesopotamian",
+      "selection_reason": "new_category_Eastern",
+      "tier": 3,
+      "new_category": "Eastern"
+    },
+    {
+      "title": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 2 (of 2)",
+      "path": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 2 (of 2).42551",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Asian",
+      "selection_reason": "new_category_Eastern",
+      "tier": 3,
+      "new_category": "Eastern"
+    },
+    {
+      "title": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 1 (of 2)",
+      "path": "The History of the Great and Mighty Kingdom of China and the Situation Thereof, Volume 1 (of 2).39009",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Asian",
+      "selection_reason": "new_category_Eastern",
+      "tier": 3,
+      "new_category": "Eastern"
+    },
+    {
+      "title": "The Influence of India and Persia on the Poetry of Germany",
+      "path": "The Influence of India and Persia on the Poetry of Germany.17928",
+      "servants": [
+        "Karna",
+        "Arjuna"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Indian",
+      "selection_reason": "new_category_Eastern",
+      "tier": 3,
+      "new_category": "Eastern"
+    },
+    {
+      "title": "Heathen mythology, Illustrated by extracts from the most celebrated writers, both ancient and modern",
+      "path": "Heathen mythology, Illustrated by extracts from the most celebrated writers, both ancient and modern.34170",
+      "servants": [
+        "Theseus",
+        "Greek Myths",
+        "Medusa"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Modern History",
+      "tier": 3,
+      "new_category": "Modern History"
+    },
+    {
+      "title": "Persian Literature, Ancient and Modern",
+      "path": "Persian Literature, Ancient and Modern.56248",
+      "servants": [
+        "Darius",
+        "Rama",
+        "Ishtar"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "History",
+      "selection_reason": "new_category_Modern History",
+      "tier": 3,
+      "new_category": "Modern History"
+    },
+    {
+      "title": "Modern Prose And Poetry; For Secondary Schools",
+      "path": "Modern Prose And Poetry; For Secondary Schools.17160",
+      "servants": [
+        "Greek Myths",
+        "Ozymandias"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Modern History",
+      "tier": 3,
+      "new_category": "Modern History"
+    },
+    {
+      "title": "Modern Musical Drift",
+      "path": "Modern Musical Drift.54426",
+      "servants": [
+        "Percival",
+        "Tristan"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Modern History",
+      "tier": 3,
+      "new_category": "Modern History"
+    },
+    {
+      "title": "Aspects of Modern Opera: Estimates and Inquiries",
+      "path": "Aspects of Modern Opera: Estimates and Inquiries.38268",
+      "servants": [
+        "Salome",
+        "Tristan"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Modern History",
+      "tier": 3,
+      "new_category": "Modern History"
+    },
+    {
+      "title": "Queer questions and ready replies : $b A collection of four hundred questions in history, geography, biography, mythology, philosophy, natural history, science, philology, etc., etc., with their answers",
+      "path": "Queer questions and ready replies : $b A collection of four hundred questions in history, geography, biography, mythology, philosophy, natural history, science, philology, etc., etc., with their answers.71466",
+      "servants": [
+        "Celtic Myths",
+        "Greek Myths",
+        "Xuanzang"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Science",
+      "tier": 3,
+      "new_category": "Science"
+    },
+    {
+      "title": "Folklore as an Historical Science",
+      "path": "Folklore as an Historical Science.21852",
+      "servants": [
+        "Celtic Myths",
+        "Boudica"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Literature",
+      "selection_reason": "new_category_Science",
+      "tier": 3,
+      "new_category": "Science"
+    },
+    {
+      "title": "The Story of Great Inventions",
+      "path": "The Story of Great Inventions.37609",
+      "servants": [
+        "Tesla",
+        "Edison"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Literature",
+      "selection_reason": "new_category_Science",
+      "tier": 3,
+      "new_category": "Science"
+    },
+    {
+      "title": "Machine-Gun Tactics",
+      "path": "Machine-Gun Tactics.66305",
+      "servants": [
+        "Diarmuid"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Science",
+      "tier": 3,
+      "new_category": "Science"
+    },
+    {
+      "title": "Lippincott's Magazine of Popular Literature and Science, Volume 26, July 1880.",
+      "path": "Lippincott's Magazine of Popular Literature and Science, Volume 26, July 1880..31365",
+      "servants": [
+        "Ozymandias"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Science",
+      "tier": 3,
+      "new_category": "Science"
+    },
+    {
+      "title": "Life of Wagner",
+      "path": "Life of Wagner.31526",
+      "servants": [
+        "Siegfried",
+        "Percival",
+        "Tristan"
+      ],
+      "servant_count": 3,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Biography",
+      "tier": 3,
+      "new_category": "Biography"
+    },
+    {
+      "title": "A Life of William Shakespeare",
+      "path": "A Life of William Shakespeare.23464",
+      "servants": [
+        "Greek Myths",
+        "Shakespeare"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Biography",
+      "tier": 3,
+      "new_category": "Biography"
+    },
+    {
+      "title": "The life of Isambard Kingdom Brunel, Civil Engineer",
+      "path": "The life of Isambard Kingdom Brunel, Civil Engineer.41210",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Biography",
+      "tier": 3,
+      "new_category": "Biography"
+    },
+    {
+      "title": "The Life of St. Mochuda of Lismore",
+      "path": "The Life of St. Mochuda of Lismore.10937",
+      "servants": [
+        "Diarmuid"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Biography",
+      "tier": 3,
+      "new_category": "Biography"
+    },
+    {
+      "title": "Life of St. Declan of Ardmore and Life of St. Mochuda of Lismore",
+      "path": "Life of St. Declan of Ardmore and Life of St. Mochuda of Lismore.11168",
+      "servants": [
+        "Diarmuid"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Biography",
+      "tier": 3,
+      "new_category": "Biography"
+    },
+    {
+      "title": "Where the forest murmurs : $b Nature essays",
+      "path": "Where the forest murmurs : $b Nature essays.70192",
+      "servants": [
+        "Fionn",
+        "Orion"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Literary Criticism",
+      "tier": 3,
+      "new_category": "Literary Criticism"
+    },
+    {
+      "title": "Elementary Guide to Literary Criticism",
+      "path": "Elementary Guide to Literary Criticism.24326",
+      "servants": [
+        "Mordred",
+        "Artoria"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Literary Criticism",
+      "tier": 3,
+      "new_category": "Literary Criticism"
+    },
+    {
+      "title": "The Humour of Homer and Other Essays",
+      "path": "The Humour of Homer and Other Essays.12651",
+      "servants": [
+        "Circe",
+        "Odysseus"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Literary Criticism",
+      "tier": 3,
+      "new_category": "Literary Criticism"
+    },
+    {
+      "title": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 1 (of 3)",
+      "path": "Eminent literary and scientific men of Italy, Spain, and Portugal. Vol. 1 (of 3).65030",
+      "servants": [
+        "Astolfo",
+        "Dante"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Literary Criticism",
+      "tier": 3,
+      "new_category": "Literary Criticism"
+    },
+    {
+      "title": "Essays of Robert Louis Stevenson",
+      "path": "Essays of Robert Louis Stevenson.10761",
+      "servants": [
+        "Jekyll",
+        "Edmond Dantes"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Literary Criticism",
+      "tier": 3,
+      "new_category": "Literary Criticism"
+    },
+    {
+      "title": "Travels and discoveries in North and Central Africa : $b Including accounts of Tripoli, the Sahara, the remarkable kingdom of Bornu, and the countries around Lake Chad",
+      "path": "Travels and discoveries in North and Central Africa : $b Including accounts of Tripoli, the Sahara, the remarkable kingdom of Bornu, and the countries around Lake Chad.73138",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Exploration",
+      "tier": 3,
+      "new_category": "Exploration"
+    },
+    {
+      "title": "Travels in southern Abyssinia, Volume 1 (of 2) : $b through the country of Adal to the kingdom of Shoa",
+      "path": "Travels in southern Abyssinia, Volume 1 (of 2) : $b through the country of Adal to the kingdom of Shoa.72155",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Exploration",
+      "tier": 3,
+      "new_category": "Exploration"
+    },
+    {
+      "title": "The Cotton Kingdom, volume 1 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States",
+      "path": "The Cotton Kingdom, volume 1 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States.72676",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Exploration",
+      "tier": 3,
+      "new_category": "Exploration"
+    },
+    {
+      "title": "Travels in southern Abyssinia, Volume 2 (of 2) : $b through the country of Adal to the kingdom of Shoa",
+      "path": "Travels in southern Abyssinia, Volume 2 (of 2) : $b through the country of Adal to the kingdom of Shoa.73260",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Exploration",
+      "tier": 3,
+      "new_category": "Exploration"
+    },
+    {
+      "title": "The Cotton Kingdom, volume 2 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States",
+      "path": "The Cotton Kingdom, volume 2 (of 2) : $b A traveller's observations on cotton and slavery in the American Slave States.72677",
+      "servants": [
+        "Lu Bu",
+        "Zhuge Liang"
+      ],
+      "servant_count": 2,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Exploration",
+      "tier": 3,
+      "new_category": "Exploration"
+    },
+    {
+      "title": "Primitive culture, vol. 1 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom",
+      "path": "Primitive culture, vol. 1 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom.70458",
+      "servants": [
+        "Greek Myths"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Philosophy",
+      "tier": 3,
+      "new_category": "Philosophy"
+    },
+    {
+      "title": "Primitive culture, vol. 2 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom",
+      "path": "Primitive culture, vol. 2 (of 2) : $b Researches into the development of mythology, philosophy, religion, language, art, and custom.70484",
+      "servants": [
+        "Greek Myths"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Philosophy",
+      "tier": 3,
+      "new_category": "Philosophy"
+    },
+    {
+      "title": "The Funny Philosophers, or Wags and Sweethearts.  A Novel",
+      "path": "The Funny Philosophers, or Wags and Sweethearts.  A Novel.35599",
+      "servants": [
+        "Heracles"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Philosophy",
+      "tier": 3,
+      "new_category": "Philosophy"
+    },
+    {
+      "title": "Feminism in Greek Literature from Homer to Aristotle",
+      "path": "Feminism in Greek Literature from Homer to Aristotle.59205",
+      "servants": [
+        "Medea"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Greek",
+      "selection_reason": "new_category_Philosophy",
+      "tier": 3,
+      "new_category": "Philosophy"
+    },
+    {
+      "title": "A Woman's Philosophy of Woman; or, Woman affranchised.",
+      "path": "A Woman's Philosophy of Woman; or, Woman affranchised..53937",
+      "servants": [
+        "Phantom"
+      ],
+      "servant_count": 1,
+      "total_score": 0,
+      "category": "Other",
+      "selection_reason": "new_category_Philosophy",
+      "tier": 3,
+      "new_category": "Philosophy"
+    }
+  ]
+}

@@ -1,13 +1,15 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../../api/client'
 import { useGlobeStore } from '../../store/globeStore'
+import { trackEvent, AnalyticsEvents } from '../../lib/analytics'
 import type { Event, Person, Location } from '../../types'
 
 export function SearchBar() {
   const [query, setQuery] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   const { setSelectedEvent, flyToLocation } = useGlobeStore()
+  const lastTrackedQuery = useRef('')
 
   // Search query
   const { data: results, isLoading } = useQuery({
@@ -17,8 +19,21 @@ export function SearchBar() {
     enabled: query.length >= 2,
   })
 
+  // Track search when results are loaded
+  useEffect(() => {
+    if (results && query.length >= 2 && query !== lastTrackedQuery.current) {
+      lastTrackedQuery.current = query
+      const totalResults = (results.events?.length || 0) + (results.persons?.length || 0) + (results.locations?.length || 0)
+      trackEvent(AnalyticsEvents.SEARCH_PERFORMED, {
+        query_length: query.length,
+        results_count: totalResults
+      })
+    }
+  }, [results, query])
+
   const handleEventClick = useCallback(
     (event: Event) => {
+      trackEvent(AnalyticsEvents.SEARCH_RESULT_CLICKED, { type: 'event' })
       setSelectedEvent(event)
       setIsOpen(false)
       setQuery('')
@@ -28,6 +43,7 @@ export function SearchBar() {
 
   const handleLocationClick = useCallback(
     (location: Location) => {
+      trackEvent(AnalyticsEvents.SEARCH_RESULT_CLICKED, { type: 'location' })
       flyToLocation(location.latitude, location.longitude)
       setIsOpen(false)
       setQuery('')

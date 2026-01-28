@@ -42,16 +42,83 @@ CHALDEAS is a world-centric historical knowledge system inspired by Fate/Grand O
 
 | 모델 | 용도 | 비용 |
 |-----|------|------|
-| `gpt-5-nano` | NER 검증, 체인 생성 (기본) | ~$0.001/1K tokens |
-| `gpt-5.1-chat-latest` | 복잡한 체인 (폴백) | ~$0.01/1K tokens |
-| `spaCy en_core_web_lg` | 1차 NER 추출 | 무료 (로컬) |
-| `text-embedding-3-small` | 벡터 검색 | ~$0.00002/1K tokens |
+| `llama3.1:8b-instruct-q4_0` | 엔티티 추출 (기본, Ollama) | 무료 (로컬) |
+| `gpt-5-mini` | 엔티티 추출 (폴백) | ~$0.25/1M tokens |
+| `gpt-5.1-chat-latest` | 복잡한 체인 생성 | ~$1.25/1M tokens |
+| `text-embedding-3-small` | 벡터 검색, 엔티티 매칭 | ~$0.02/1M tokens |
 
 ### 비용 예산
 
 - **초기 구축**: ~$47 (일회성)
 - **월간 운영**: ~$7/월
 - 상세: `docs/planning/COST_ESTIMATION.md`
+
+---
+
+## Data Pipeline (Book Extractor)
+
+### 핵심 도구: `tools/book_extractor/`
+
+```
+http://localhost:8200  # Book Extractor 대시보드
+```
+
+### 파이프라인 흐름
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  1. ZIM 파일 (Gutenberg)                                    │
+│     └─ data/kiwix/gutenberg_en_all.zim                      │
+└─────────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│  2. Hierarchical Chunking                                   │
+│     └─ BOOK/CHAPTER/SECTION 구조 자동 감지                  │
+│     └─ 2500자 청크 + 200자 오버랩                           │
+└─────────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│  3. LLM 엔티티 추출 (NER 아님!)                             │
+│     └─ Ollama (llama3.1) 또는 OpenAI (gpt-5-mini)          │
+│     └─ 프롬프트: "Extract named entities from this text..." │
+│     └─ 출력: {persons: [], locations: [], events: []}       │
+└─────────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│  4. EntityMatcher (DB 매칭)                                 │
+│     └─ tools/book_extractor/entity_matcher.py               │
+│     └─ 기존 DB 엔티티와 매칭                                │
+│     └─ Wikidata QID로 중복 병합                             │
+└─────────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────────┐
+│  5. Post-Processing                                         │
+│     └─ context 추출 (청크별 엔티티 위치)                    │
+│     └─ text_mentions 생성 (출처 추적)                       │
+│     └─ 관계 분석 (TODO: event_relationships 업데이트)       │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Book Extractor 실행
+
+```bash
+cd tools/book_extractor
+python server.py
+# Open http://localhost:8200
+```
+
+### 관련 파일
+
+| 파일 | 설명 |
+|------|------|
+| `tools/book_extractor/server.py` | FastAPI 서버 (메인) |
+| `tools/book_extractor/entity_matcher.py` | DB 엔티티 매칭 |
+| `tools/book_extractor/index.html` | 대시보드 UI |
+| `poc/data/book_samples/extraction_results/` | 추출 결과 저장 |
 
 ---
 
@@ -81,11 +148,16 @@ python -m alembic upgrade head
 python -m alembic current  # 현재 버전 확인
 ```
 
-### Data Pipeline
+### Book Extractor (from `tools/book_extractor/`)
 ```bash
-python data/scripts/collect_all.py      # Collect from sources
-python data/scripts/transform_data.py   # Transform to common format
-python poc/scripts/import_to_v1_db.py   # NER 데이터 DB 임포트
+python server.py                        # 대시보드 시작 (localhost:8200)
+```
+
+### Data Scripts (from `poc/scripts/`)
+```bash
+python import_entities_to_db.py         # 추출 결과 DB 임포트
+python link_persons_persons_via_source.py  # 관계 생성
+python update_person_relationship_strength.py  # 관계 강도 계산
 ```
 
 ## Fixed Ports (Hardcoded)
@@ -214,10 +286,13 @@ POSTGRES_DB=chaldeas
 OPENAI_API_KEY=sk-...
 VITE_API_URL=http://localhost:8100
 
-# V1 Model Settings
-NER_PRIMARY_MODEL=gpt-5-nano
-NER_FALLBACK_MODEL=gpt-5.1-chat-latest
-CHAIN_PRIMARY_MODEL=gpt-5-nano
+# Book Extractor (tools/book_extractor/)
+OLLAMA_URL=http://localhost:11434
+OLLAMA_MODEL=llama3.1:8b-instruct-q4_0
+
+# Sentry (비활성화 상태 - true로 변경 시 활성화)
+SENTRY_ENABLED=false
+VITE_SENTRY_ENABLED=false
 ```
 
 ---

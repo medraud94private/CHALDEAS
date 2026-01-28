@@ -26,6 +26,14 @@ class Event(Base, TimestampMixin):
     # Content
     description = Column(Text)
     description_ko = Column(Text)
+    description_ja = Column(Text)  # Japanese description
+
+    # Japanese title
+    title_ja = Column(String(500))
+
+    # Source tracking for description
+    description_source = Column(String(50))  # wikipedia_en, wikipedia_ko, wikipedia_ja, llm, manual
+    description_source_url = Column(String(500))
 
     # Temporal data (BCE support: negative numbers)
     # -490 = 490 BCE, 476 = 476 CE

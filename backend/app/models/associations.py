@@ -7,6 +7,7 @@ V1 Extension:
 - polity_relationships: New table for political succession and relationships
 """
 from sqlalchemy import Table, Column, Integer, String, Text, ForeignKey, Float
+from sqlalchemy.dialects.postgresql import JSONB
 
 from app.models.base import Base
 
@@ -37,6 +38,7 @@ event_sources = Table(
     Column("source_id", Integer, ForeignKey("sources.id", ondelete="CASCADE"), primary_key=True),
     Column("page_reference", String(100)),
     Column("quote", Text),
+    Column("chunk_references", JSONB, default=[]),  # All chunk positions where entity appears
 )
 
 # Person <-> Source
@@ -46,6 +48,7 @@ person_sources = Table(
     Column("person_id", Integer, ForeignKey("persons.id", ondelete="CASCADE"), primary_key=True),
     Column("source_id", Integer, ForeignKey("sources.id", ondelete="CASCADE"), primary_key=True),
     Column("page_reference", String(100)),
+    Column("chunk_references", JSONB, default=[]),  # All chunk positions where entity appears
 )
 
 # Person <-> Person (relationships) - Enhanced for Prosopography
@@ -137,4 +140,5 @@ location_sources = Table(
     Column("location_id", Integer, ForeignKey("locations.id", ondelete="CASCADE"), primary_key=True),
     Column("source_id", Integer, ForeignKey("sources.id", ondelete="CASCADE"), primary_key=True),
     Column("page_reference", String(100)),
+    Column("chunk_references", JSONB, default=[]),  # All chunk positions where entity appears
 )

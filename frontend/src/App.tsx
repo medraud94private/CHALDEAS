@@ -11,9 +11,12 @@ import { SearchAutocomplete } from './components/search'
 import { UnifiedTimeline } from './components/timeline'
 import { VirtualEventList } from './components/sidebar'
 import { LanguageSelector } from './components/common'
+import { SettingsPage } from './components/settings'
+import { TermsPage, PrivacyPage } from './pages'
 import { useTimelineStore } from './store/timelineStore'
 import { useGlobeStore } from './store/globeStore'
 import { useBookmarkStore } from './store/bookmarkStore'
+import { useSettingsStore, getLocalizedText } from './store/settingsStore'
 import { useQuery } from '@tanstack/react-query'
 import { api } from './api/client'
 import type { Event } from './types'
@@ -25,6 +28,7 @@ const LocationDetailView = lazy(() => import('./components/detail/LocationDetail
 const ShowcaseModal = lazy(() => import('./components/showcase').then(m => ({ default: m.ShowcaseModal })))
 const ExplorePanel = lazy(() => import('./components/explore/ExplorePanel').then(m => ({ default: m.ExplorePanel })))
 const ChainPanel = lazy(() => import('./components/chain/ChainPanel'))
+const ServantPanel = lazy(() => import('./components/servants/ServantPanel').then(m => ({ default: m.ServantPanel })))
 
 // Loading fallback components
 const GlobeLoader = () => (
@@ -53,9 +57,15 @@ function App() {
   const debouncedYear = useDebounce(currentYear, 150) // Debounce API calls (synced with GlobeContainer)
   const { selectedEvent, setSelectedEvent } = useGlobeStore()
   const { bookmarkedIds, toggleBookmark } = useBookmarkStore()
+  const { hideEmptyDescriptions, preferredLanguage, globeStyle: settingsGlobeStyle, setGlobeStyle: setSettingsGlobeStyle } = useSettingsStore()
   const [selectedCategory, setSelectedCategory] = useState('all')
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false)
+  const [isTermsOpen, setIsTermsOpen] = useState(false)
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
-  const [globeStyle, setGlobeStyle] = useState('default')
+  // Use settings store for globe style, but allow local override
+  const globeStyle = settingsGlobeStyle
+  const setGlobeStyle = setSettingsGlobeStyle
   const [isChatOpen, setIsChatOpen] = useState(false)
   const [initialChatQuery, setInitialChatQuery] = useState<string | null>(null)
   const [showAllEras, setShowAllEras] = useState(false) // Toggle for sidebar: nearby era by default
@@ -63,6 +73,7 @@ function App() {
   const [isShowcaseOpen, setIsShowcaseOpen] = useState(false)
   const [isExploreOpen, setIsExploreOpen] = useState(false)
   const [isChainOpen, setIsChainOpen] = useState(false)
+  const [isServantOpen, setIsServantOpen] = useState(false)
   const [personDetailId, setPersonDetailId] = useState<number | null>(null)
   const [locationDetailId, setLocationDetailId] = useState<number | null>(null)
   const [advancedFilters, setAdvancedFilters] = useState<FilterState>(defaultFilters)
@@ -143,14 +154,19 @@ function App() {
             return false
           }
         }
+        // Hide empty descriptions filter
+        if (hideEmptyDescriptions) {
+          const description = getLocalizedText(e as unknown as Record<string, unknown>, 'description', preferredLanguage)
+          if (!description || !description.trim()) return false
+        }
         return true
       })
       .sort((a: Event, b: Event) => a.date_start - b.date_start)
       // No slice - VirtualEventList handles large lists efficiently
-  }, [allEventsData, selectedCategory, searchQuery, advancedFilters.yearRange])
+  }, [allEventsData, selectedCategory, searchQuery, advancedFilters.yearRange, hideEmptyDescriptions, preferredLanguage])
 
   return (
-    <div className="app-container">
+    <div className="app-container" role="application" aria-label="CHALDEAS Historical Knowledge System">
       {/* Mobile Menu Toggle Button */}
       <button
         className="mobile-menu-btn"
@@ -169,7 +185,7 @@ function App() {
       )}
 
       {/* Left Sidebar */}
-      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`} role="navigation" aria-label="Main navigation">
         <div className="sidebar-header">
           <div className="logo">
             <div className="logo-icon">⊕</div>
@@ -191,6 +207,7 @@ function App() {
               setShowcaseContent(content)
               setIsShowcaseOpen(true)
             }}
+            onOpenServantPanel={() => setIsServantOpen(true)}
           />
         </div>
 
@@ -292,20 +309,29 @@ function App() {
         )}
 
         <div className="sidebar-footer">
-          <span>
-            {t('sidebar.records')}: {filteredEvents.length} / {allEventsData?.length || 0}
-            {totalEventsCount > (allEventsData?.length || 0) && (
-              <span style={{ color: '#fbbf24', marginLeft: '4px' }}>
-                ({totalEventsCount.toLocaleString()} total)
-              </span>
-            )}
-          </span>
-          <span>{t('sidebar.latency')}: 3ms</span>
+          <div className="footer-stats">
+            <span>
+              {t('sidebar.records')}: {filteredEvents.length} / {allEventsData?.length || 0}
+              {totalEventsCount > (allEventsData?.length || 0) && (
+                <span style={{ color: '#fbbf24', marginLeft: '4px' }}>
+                  ({totalEventsCount.toLocaleString()} total)
+                </span>
+              )}
+            </span>
+            <span>{t('sidebar.latency')}: 3ms</span>
+          </div>
+          <div className="footer-links">
+            <button onClick={() => setIsTermsOpen(true)}>{t('legal.terms.link', 'Terms')}</button>
+            <span className="footer-divider">|</span>
+            <button onClick={() => setIsPrivacyOpen(true)}>{t('legal.privacy.link', 'Privacy')}</button>
+            <span className="footer-divider">|</span>
+            <span className="footer-attribution">Data: Wikipedia (CC BY-SA)</span>
+          </div>
         </div>
       </aside>
 
       {/* Center - Globe */}
-      <section className="globe-section">
+      <main className="globe-section" role="main" aria-label="Interactive historical globe">
         <div className="globe-overlay-top">
           <div className="globe-control">
             {t('globe.camMode')}: <span>{t('globe.orbit')}</span>
@@ -340,7 +366,7 @@ function App() {
         <div className="unified-timeline-wrapper">
           <UnifiedTimeline events={allEventsData || []} />
         </div>
-      </section>
+      </main>
 
       {/* Right Panel - Event Detail (FGO Style) */}
       <EventDetailPanel
@@ -373,6 +399,7 @@ function App() {
           className="chat-toggle-btn"
           onClick={() => setIsChatOpen(true)}
           title="Open SHEBA Chat"
+          aria-label="Open SHEBA AI Chat"
         >
           ◎
         </button>
@@ -383,15 +410,55 @@ function App() {
         className="explore-toggle-btn"
         onClick={() => setIsExploreOpen(true)}
         title="Explore Entity Pool (Pre-Curation)"
+        aria-label="Open Entity Explorer"
       >
         ⋮⋮⋮
       </button>
+
+      {/* Servant Toggle Button */}
+      <button
+        className="servant-toggle-btn"
+        onClick={() => setIsServantOpen(true)}
+        title="FGO Servants & Historical Sources"
+        aria-label="Open FGO Servants Panel"
+      >
+        ⚔
+      </button>
+
+      {/* Settings Toggle Button */}
+      <button
+        className="settings-toggle-btn"
+        onClick={() => setIsSettingsOpen(true)}
+        title="Settings"
+        aria-label="Open Settings"
+      >
+        ⚙
+      </button>
+
+      {/* Settings Page Modal */}
+      <SettingsPage
+        isOpen={isSettingsOpen}
+        onClose={() => setIsSettingsOpen(false)}
+      />
+
+      {/* Legal Pages */}
+      {isTermsOpen && <TermsPage onClose={() => setIsTermsOpen(false)} />}
+      {isPrivacyOpen && <PrivacyPage onClose={() => setIsPrivacyOpen(false)} />}
 
       {/* Entity Explorer Panel */}
       <Suspense fallback={<PanelLoader />}>
         <ExplorePanel
           isOpen={isExploreOpen}
           onClose={() => setIsExploreOpen(false)}
+        />
+      </Suspense>
+
+      {/* FGO Servant Panel */}
+      <Suspense fallback={<PanelLoader />}>
+        <ServantPanel
+          isOpen={isServantOpen}
+          onClose={() => setIsServantOpen(false)}
+          onPersonClick={handlePersonClick}
         />
       </Suspense>
 
