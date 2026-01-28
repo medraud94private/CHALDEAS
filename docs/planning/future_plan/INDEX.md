@@ -10,13 +10,11 @@
 | 파일 | 설명 | 우선순위 |
 |------|------|---------|
 | [README.md](./README.md) | V3 전체 로드맵 | 참조 |
-| [UNIFIED_HISTORICAL_UNIT.md](./UNIFIED_HISTORICAL_UNIT.md) | Event/Period 통합 모델 | 중 |
 | [DATA_INGESTION_PIPELINE.md](./DATA_INGESTION_PIPELINE.md) | V3 데이터 진입 파이프라인 | 중 |
 | [MULTIVERSE_DATA_MODEL.md](./MULTIVERSE_DATA_MODEL.md) | 역사+창작물 통합 (Universe) | 낮음 |
 | [SYSTEM_GAPS_AND_SOLUTIONS.md](./SYSTEM_GAPS_AND_SOLUTIONS.md) | 검색, 성능, 품질관리 | 중 |
 | [POST_EXTRACTION_TASKS.md](./POST_EXTRACTION_TASKS.md) | 추출 후 작업 체크리스트 | 참조 |
 | [WIKIDATA_AUTO_ENRICHMENT.md](./WIKIDATA_AUTO_ENRICHMENT.md) | Wikidata 자동 보강 | 중 |
-| [PERIOD_EXTRACTION_PLAN.md](./PERIOD_EXTRACTION_PLAN.md) | 시대/기간 추출 | 중 |
 
 ---
 
@@ -70,15 +68,15 @@
 
 ---
 
-## 이번 대개선에 통합된 항목
+## 이번 대개선에 통합된 항목 (event_hierarchy/)
 
-다음 항목들은 `event_hierarchy/`에 통합됨:
+다음 항목들은 `event_hierarchy/`로 이동됨:
 
 | 원본 | 통합 위치 |
 |------|----------|
 | `HIERARCHICAL_LOCATION_SYSTEM.md` | `event_hierarchy/10_LOCATION_HIERARCHY.md` |
-| `UNIFIED_HISTORICAL_UNIT.md` 일부 | `event_hierarchy/01_SCHEMA.md` |
-| `PERIOD_EXTRACTION_PLAN.md` 일부 | `event_hierarchy/00_OVERVIEW.md` (Level 0-1) |
+| `UNIFIED_HISTORICAL_UNIT.md` | `event_hierarchy/11_UNIFIED_MODEL.md` |
+| `PERIOD_EXTRACTION_PLAN.md` | `event_hierarchy/12_PERIOD_EXTRACTION.md` |
 
 ---
 
