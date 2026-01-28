@@ -1,25 +1,34 @@
 # CHALDEAS 마스터 플랜
 
-> 최종 수정: 2026-01-27
+> 최종 수정: 2026-01-28
+
+## 현재 버전: v0.7.0
+
+### 완료된 주요 기능
+- ✅ 3D Globe + Timeline (BCE 3000 ~ 현재)
+- ✅ 다언어 지원 (ko/ja/en) + Wikipedia 출처 추적
+- ✅ 설정 페이지 (언어, 표시 옵션, API 키)
+- ✅ PWA, SEO, 접근성, Analytics, Sentry
+- ✅ 법적 문서 (이용약관, 개인정보처리방침)
+
+---
 
 ## 관련 문서
 
 | 문서 | 설명 | 상태 |
 |------|------|------|
-| **핵심 기획** |||
-| [CURATION_AND_FGO_MASTER_PLAN.md](CURATION_AND_FGO_MASTER_PLAN.md) | 큐레이션 & FGO 통합 기획 | 📋 기획확정 |
+| **이번 대개선 (Event Hierarchy)** |||
+| [event_hierarchy/INDEX.md](event_hierarchy/INDEX.md) | 이벤트 계층화 인덱스 | 🔥 진행중 |
 | **파이프라인** |||
-| [PIPELINE_GUIDE.md](PIPELINE_GUIDE.md) | 책 추가 파이프라인 (LLM 기반) | 📋 계획 |
+| [PIPELINE_GUIDE.md](PIPELINE_GUIDE.md) | 책 추가 파이프라인 (LLM 기반) | ✅ 운영 |
 | [SOURCE_BOOK_MANAGEMENT.md](SOURCE_BOOK_MANAGEMENT.md) | 소스/책 관리 | ✅ 운영 |
 | [BOOK_CONTEXT_TRACKING_PLAN.md](BOOK_CONTEXT_TRACKING_PLAN.md) | 책 Context 역추적 | 📋 계획 |
-| **데이터/DB** |||
-| [CLEANUP_REPORT_20260127.md](CLEANUP_REPORT_20260127.md) | 정리 작업 결과 보고서 | ✅ 완료 |
 | [BOOK_INTEGRATION_STATUS.md](BOOK_INTEGRATION_STATUS.md) | 책 통합 현황 | ✅ 운영 |
-| [LEGACY_SYSTEM_ANALYSIS.md](LEGACY_SYSTEM_ANALYSIS.md) | 레거시 시스템 분석 | 📝 참고 |
-| **프론트엔드** |||
-| [FRONTEND_IMPROVEMENTS.md](FRONTEND_IMPROVEMENTS.md) | 프론트엔드 개선 계획 | 📋 계획 |
-| **FGO 연동** |||
-| [JOAN_OF_ARC_SHOWCASE.md](JOAN_OF_ARC_SHOWCASE.md) | 잔다르크 쇼케이스 예제 | ✅ 완료 |
+| **미래 계획** |||
+| [future_plan/INDEX.md](future_plan/INDEX.md) | V3, 큐레이션, FGO 등 미래 계획 | 📋 계획 |
+| **참고** |||
+| [JOAN_OF_ARC_SHOWCASE.md](JOAN_OF_ARC_SHOWCASE.md) | 잔다르크 쇼케이스 예제 | 📝 참고 |
+| [GPU_THERMAL_MANAGEMENT.md](GPU_THERMAL_MANAGEMENT.md) | GPU 온도 관리 | 📝 참고 |
 
 ---
 
@@ -260,35 +269,32 @@ def match_entity(extracted: dict) -> MatchResult:
 docs/planning/
 ├── MASTER_PLAN.md               ← 이 문서 (최상위)
 │
+├── event_hierarchy/             ← 🔥 이번 대개선
+│   ├── INDEX.md                 ← 인덱스
+│   ├── 00_OVERVIEW.md           ← 마스터 플랜
+│   ├── 01_SCHEMA.md             ← DB 스키마
+│   ├── 02_WARS.md ~ 06_RELIGION.md  ← 카테고리별 이벤트
+│   ├── 07_EVENT_RELATIONS.md    ← 이벤트 간 관계
+│   ├── 08_VECTOR_MODEL.md       ← 벡터 기반 역사 모델
+│   └── 09_RELATION_PIPELINE.md  ← 관계 후처리 파이프라인
+│
+├── curation/                    ← ⏸️ 보류 (대규모 작업)
+│   ├── CURATION_AND_FGO_MASTER_PLAN.md
+│   ├── CURATION_SYSTEM.md
+│   └── OPEN_CURATION_VISION.md
+│
 ├── [파이프라인]
-│   ├── PIPELINE_GUIDE.md        ← 책 추가 파이프라인
+│   ├── PIPELINE_GUIDE.md
 │   ├── SOURCE_BOOK_MANAGEMENT.md
-│   └── BOOK_CONTEXT_TRACKING_PLAN.md
+│   ├── BOOK_CONTEXT_TRACKING_PLAN.md
+│   └── BOOK_INTEGRATION_STATUS.md
 │
-├── [데이터/DB]
-│   ├── CLEANUP_REPORT_20260127.md  ← 정리 결과
-│   ├── ONETIME_CLEANUP_GUIDE.md
-│   ├── DATA_RECONSTRUCTION_PLAN.md
-│   ├── FULL_GAP_ANALYSIS.md
-│   └── LEGACY_SYSTEM_ANALYSIS.md
-│
-├── [프론트엔드]
-│   ├── FRONTEND_IMPROVEMENTS.md
-│   ├── STORY_IMPLEMENTATION.md
-│   └── STORY_CURATION_SYSTEM.md
-│
-├── [FGO 연동]
-│   ├── FGO_DATA_LAYER_AND_SOURCES.md
-│   ├── FGO_SERVANT_BOOK_MAPPING.md
-│   └── JOAN_OF_ARC_SHOWCASE.md
-│
-├── [인프라]
+├── [참고]
+│   ├── JOAN_OF_ARC_SHOWCASE.md
 │   └── GPU_THERMAL_MANAGEMENT.md
 │
-├── deprecated/                   ← 완료/대체된 문서
-│   └── (17개 문서)
-│
-└── road_to_v3/                   ← V3 관련
+├── deprecated/                   ← 완료/대체된 문서 (40+)
+└── completed/                    ← 완료된 Phase 보고서
 ```
 
 ---

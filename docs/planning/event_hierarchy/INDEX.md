@@ -15,6 +15,7 @@
 | [07_EVENT_RELATIONS.md](./07_EVENT_RELATIONS.md) | 이벤트 간 비계층 관계 (인과/영향) | 완료 |
 | [08_VECTOR_MODEL.md](./08_VECTOR_MODEL.md) | 벡터 기반 역사 모델, 숨은 연결 발견 | 완료 |
 | [09_RELATION_PIPELINE.md](./09_RELATION_PIPELINE.md) | Book Extractor 관계 후처리 파이프라인 | 완료 |
+| [10_LOCATION_HIERARCHY.md](./10_LOCATION_HIERARCHY.md) | 장소 계층 구조 (future_plan 통합) | 완료 |
 
 ### 카테고리별 이벤트 목록
 | 파일 | 내용 | 상태 |
