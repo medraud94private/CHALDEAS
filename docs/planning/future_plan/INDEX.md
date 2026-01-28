@@ -33,8 +33,13 @@
 | 파일 | 설명 | 우선순위 |
 |------|------|---------|
 | [FGO_DATA_LAYER_AND_SOURCES.md](./FGO_DATA_LAYER_AND_SOURCES.md) | FGO 데이터 레이어 | 중 |
+| [FGO_DATA_ENHANCEMENT.md](./FGO_DATA_ENHANCEMENT.md) | FGO 데이터 강화 | 중 |
 | [FGO_MINI_CHALDEAS.md](./FGO_MINI_CHALDEAS.md) | FGO 미니 프로젝트 | 낮음 |
-| [FGO_SERVANT_BOOK_MAPPING.md](./FGO_SERVANT_BOOK_MAPPING.md) | 서번트-책 매핑 | 중 |
+
+> **Note**: `FGO_SERVANT_BOOK_MAPPING.md`는 이미 구현됨 → deprecated/
+> - `backend/app/api/v1/servants.py`
+> - `poc/scripts/*servant*.py`
+> - `tools/book_extractor/match_servants_to_gutenberg.py`
 
 ---
 
@@ -52,9 +57,10 @@
 
 | 파일 | 설명 | 우선순위 |
 |------|------|---------|
-| [WIKIDATA_ENRICHMENT_ROADMAP.md](./WIKIDATA_ENRICHMENT_ROADMAP.md) | Wikidata 보강 로드맵 | 중 |
+| [WIKIDATA_AUTO_ENRICHMENT.md](./WIKIDATA_AUTO_ENRICHMENT.md) | Wikidata 자동 보강 | 중 |
 | [WIKIDATA_FACTGRID_EXPANSION.md](./WIKIDATA_FACTGRID_EXPANSION.md) | Wikidata FactGrid 확장 | 낮음 |
-| [WIKIDATA_PIPELINE.md](./WIKIDATA_PIPELINE.md) | Wikidata 파이프라인 | 중 |
+
+> **Note**: `WIKIDATA_PIPELINE.md`, `WIKIDATA_ENRICHMENT_ROADMAP.md`는 이미 구현됨 → deprecated/
 
 ---
 
@@ -68,15 +74,23 @@
 
 ---
 
-## 이번 대개선에 통합된 항목 (event_hierarchy/)
+## 이번 대개선에 통합/구현된 항목
 
-다음 항목들은 `event_hierarchy/`로 이동됨:
+### event_hierarchy/로 이동
 
 | 원본 | 통합 위치 |
 |------|----------|
 | `HIERARCHICAL_LOCATION_SYSTEM.md` | `event_hierarchy/10_LOCATION_HIERARCHY.md` |
 | `UNIFIED_HISTORICAL_UNIT.md` | `event_hierarchy/11_UNIFIED_MODEL.md` |
 | `PERIOD_EXTRACTION_PLAN.md` | `event_hierarchy/12_PERIOD_EXTRACTION.md` |
+
+### 이미 구현됨 → deprecated/
+
+| 문서 | 구현 위치 |
+|------|----------|
+| `FGO_SERVANT_BOOK_MAPPING.md` | `backend/app/api/v1/servants.py`, `poc/scripts/*servant*.py` |
+| `WIKIDATA_PIPELINE.md` | `poc/scripts/wikidata_*.py` |
+| `WIKIDATA_ENRICHMENT_ROADMAP.md` | `poc/scripts/fetch_wikidata_*.py` |
 
 ---
 
