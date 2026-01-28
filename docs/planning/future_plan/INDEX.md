@@ -11,7 +11,6 @@
 |------|------|---------|
 | [README.md](./README.md) | V3 전체 로드맵 | 참조 |
 | [DATA_INGESTION_PIPELINE.md](./DATA_INGESTION_PIPELINE.md) | V3 데이터 진입 파이프라인 | 중 |
-| [MULTIVERSE_DATA_MODEL.md](./MULTIVERSE_DATA_MODEL.md) | 역사+창작물 통합 (Universe) | 낮음 |
 | [SYSTEM_GAPS_AND_SOLUTIONS.md](./SYSTEM_GAPS_AND_SOLUTIONS.md) | 검색, 성능, 품질관리 | 중 |
 | [POST_EXTRACTION_TASKS.md](./POST_EXTRACTION_TASKS.md) | 추출 후 작업 체크리스트 | 참조 |
 | [WIKIDATA_AUTO_ENRICHMENT.md](./WIKIDATA_AUTO_ENRICHMENT.md) | Wikidata 자동 보강 | 중 |
@@ -27,19 +26,6 @@
 | [OPEN_CURATION_VISION.md](./OPEN_CURATION_VISION.md) | 오픈 큐레이션 비전 | 중 |
 
 ---
-
-## FGO 연동
-
-| 파일 | 설명 | 우선순위 |
-|------|------|---------|
-| [FGO_DATA_LAYER_AND_SOURCES.md](./FGO_DATA_LAYER_AND_SOURCES.md) | FGO 데이터 레이어 | 중 |
-| [FGO_DATA_ENHANCEMENT.md](./FGO_DATA_ENHANCEMENT.md) | FGO 데이터 강화 | 중 |
-| [FGO_MINI_CHALDEAS.md](./FGO_MINI_CHALDEAS.md) | FGO 미니 프로젝트 | 낮음 |
-
-> **Note**: `FGO_SERVANT_BOOK_MAPPING.md`는 이미 구현됨 → deprecated/
-> - `backend/app/api/v1/servants.py`
-> - `poc/scripts/*servant*.py`
-> - `tools/book_extractor/match_servants_to_gutenberg.py`
 
 ---
 
@@ -83,6 +69,10 @@
 | `HIERARCHICAL_LOCATION_SYSTEM.md` | `event_hierarchy/10_LOCATION_HIERARCHY.md` |
 | `UNIFIED_HISTORICAL_UNIT.md` | `event_hierarchy/11_UNIFIED_MODEL.md` |
 | `PERIOD_EXTRACTION_PLAN.md` | `event_hierarchy/12_PERIOD_EXTRACTION.md` |
+| `FGO_DATA_LAYER_AND_SOURCES.md` | `event_hierarchy/13_FGO_DATA_LAYER.md` |
+| `FGO_DATA_ENHANCEMENT.md` | `event_hierarchy/14_FGO_ENHANCEMENT.md` |
+| `FGO_MINI_CHALDEAS.md` | `event_hierarchy/15_FGO_MINI.md` |
+| `MULTIVERSE_DATA_MODEL.md` | `event_hierarchy/16_MULTIVERSE_MODEL.md` |
 
 ### 이미 구현됨 → deprecated/
 

@@ -19,6 +19,14 @@
 | [11_UNIFIED_MODEL.md](./11_UNIFIED_MODEL.md) | HistoricalUnit 통합 모델 (future_plan 통합) | 완료 |
 | [12_PERIOD_EXTRACTION.md](./12_PERIOD_EXTRACTION.md) | Period/Era 추출 전략 (future_plan 통합) | 완료 |
 
+### FGO 데이터 분리 (Multiverse)
+| 파일 | 내용 | 상태 |
+|------|------|------|
+| [13_FGO_DATA_LAYER.md](./13_FGO_DATA_LAYER.md) | FGO 데이터 레이어 & 소스 | 완료 |
+| [14_FGO_ENHANCEMENT.md](./14_FGO_ENHANCEMENT.md) | FGO 데이터 강화 | 완료 |
+| [15_FGO_MINI.md](./15_FGO_MINI.md) | FGO 미니 프로젝트 | 완료 |
+| [16_MULTIVERSE_MODEL.md](./16_MULTIVERSE_MODEL.md) | 역사+창작물 분리 (Universe) | 완료 |
+
 ### 카테고리별 이벤트 목록
 | 파일 | 내용 | 상태 |
 |------|------|------|
